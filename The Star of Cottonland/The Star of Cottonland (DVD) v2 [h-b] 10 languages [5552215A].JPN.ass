@@ -1,0 +1,1203 @@
+﻿[Script Info]
+Title: The Star of Cottonland (綿の国星 Wata no Kuni-Hoshi)
+Original Script: #honobono@irc.aniverse.com ( Version 1 - 20050821 )
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 704
+PlayResY: 432
+Timer: 100.0000
+Script Updated By: #honobono
+Update Details: For Version 2 RC1 - 20061223; RC2 - 20070112;
+
+[V4+ Styles]
+Format:  Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,20,&H0000ffff,&Hff00ffff,&H80000008,&H80000008,-1,0,0,0,100,100,0,0.00,1,3,0,2,30,30,30,0
+Style: socDefault,MS UI Gothic,28,&H00d0fcfc,&Hff000000,&H40000000,&H40000000,-1,0,0,0,100,100,0,0.00,1,1,1,2,20,20,20,128
+Style: socNote,MS UI Gothic,18,&H00fffff9,&Hff000000,&H00ff0000,&Haa000000,-1,0,0,0,100,100,0,0.00,1,1,0,8,10,10,10,128
+Style: socSong,MS UI Gothic,28,&H00d0fcfc,&Hff000000,&H80000000,&Hff000000,-1,-1,0,0,100,100,0,0.00,1,1,1,2,20,20,20,128
+Style: socTitle,Times New Roman,42,&He3ece3&,&Hff000000,&Hdab136&,&HAA000000,-1,0,0,0,100,100,0,0.00,1,2,0,2,0,0,0,0
+Style: socCredit,Tahoma,24,&H00eeeeee,&Hff000000,&Haa000000,&Haa000000,-1,0,0,0,100,100,0,0.00,1,2,0,2,0,0,0,0
+Style: socCredit2,MS UI Gothic,26,&Heff2ef,&Hff000000,0,0,-1,0,0,0,100,100,0,0.00,1,0,0,2,0,20,20,0
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+
+
+Dialogue: 0,0:00:36.70,0:00:40.87,socDefault,Chibi,0000,0000,0000,,{\i1}どうして こんなに降るのか さっぱり分からない{\i0}
+Dialogue: 0,0:00:45.04,0:00:49.92,socDefault,Chibi,0000,0000,0000,,{\i1}どうして 急に 誰もいなくなったのか さっぱり分からない{\i0}
+Dialogue: 0,0:01:05.43,0:01:08.60,socDefault,Chibi,0000,0000,0000,,{\i1}だめだ… 力が出ない{\i0}
+Dialogue: 0,0:01:09.52,0:01:11.44,socDefault,Chibi,0000,0000,0000,,{\i1}あ 人だ{\i0}
+Dialogue: 0,0:01:11.44,0:01:14.03,socDefault,Chibi,0000,0000,0000,,{\i1}なにか 食べ物 持ってないかな{\i0}
+Dialogue: 0,0:01:18.91,0:01:20.41,socDefault,Girl A,0000,0000,0000,,あっ 見て！
+Dialogue: 0,0:01:20.66,0:01:22.37,socDefault,Girl B,0000,0000,0000,,わっ 子猫
+Dialogue: 0,0:01:22.74,0:01:24.12,socDefault,Chibi,0000,0000,0000,,なんかくれ
+Dialogue: 0,0:01:25.25,0:01:27.54,socDefault,Girl A,0000,0000,0000,,かわいそう 捨てられたんじゃない
+Dialogue: 0,0:01:27.71,0:01:29.17,socDefault,Girl B,0000,0000,0000,,おなか すいてる みたい
+Dialogue: 0,0:01:29.17,0:01:30.04,socDefault,Girl B,0000,0000,0000,,なんか ない？
+Dialogue: 0,0:01:30.04,0:01:32.13,socDefault,Girl A,0000,0000,0000,,お昼に全部 食べちゃった
+Dialogue: 0,0:01:34.63,0:01:38.43,socDefault,Girl B,0000,0000,0000,,ごめん うちアパートで 猫 飼えないのよね
+Dialogue: 0,0:01:38.80,0:01:39.97,socDefault,Girl A,0000,0000,0000,,うちも
+Dialogue: 0,0:01:40.55,0:01:42.97,socDefault,Girl A,0000,0000,0000,,ここにいれば きっと誰かに ひろわれるわよ
+Dialogue: 0,0:01:43.18,0:01:44.43,socDefault,Girl B,0000,0000,0000,,うん 行こ
+Dialogue: 0,0:01:44.93,0:01:46.98,socDefault,Chibi,0000,0000,0000,,待ってくれ
+Dialogue: 0,0:01:47.23,0:01:48.31,socDefault,Girls,0000,0000,0000,,グッドラック！
+Dialogue: 0,0:01:48.85,0:01:51.90,socDefault,Chibi,0000,0000,0000,,ポリバケツのふた 開けてってくれ
+Dialogue: 0,0:01:53.44,0:01:54.82,socDefault,Chibi,0000,0000,0000,,ポリバケツ
+Dialogue: 0,0:01:55.69,0:01:57.78,socDefault,Chibi,0000,0000,0000,,ポリ… バ… ケ… ツ…
+Dialogue: 0,0:01:58.24,0:01:59.32,socDefault,Chibi,0000,0000,0000,,…ふた…
+Dialogue: 0,0:02:02.45,0:02:06.04,socDefault,Chibi,0000,0000,0000,,{\i1}おかかの おにぎりか なんか 落ちてないかな{\i0}
+Dialogue: 0,0:02:10.21,0:02:12.63,socDefault,Chibi,0000,0000,0000,,{\i1}寒いな{\i0}
+Dialogue: 0,0:02:21.05,0:02:25.39,socDefault,Chibi,0000,0000,0000,,{\i1}なんだか 気が遠く なるみたい{\i0}
+Dialogue: 0,0:03:16.57,0:03:22.99,socCredit2,Text,0000,0000,0130,,{\fad(250,200)}
+Dialogue: 0,0:03:26.99,0:03:33.37,socCredit2,Text,0000,0000,0100,,{\fad(100,200)}日本語字幕: Pekkakun
+Dialogue: 0,0:03:37.17,0:03:43.55,socCredit2,Text,0000,0000,0020,,{\fad(100,200)}
+Dialogue: 0,0:03:48.03,0:03:54.40,socCredit2,Text,0000,0000,0070,,{\fad(100,200)}
+Dialogue: 0,0:03:58.98,0:04:05.41,socCredit2,Text,0000,0000,0070,,{\fad(100,200)}
+Dialogue: 0,0:04:09.08,0:04:15.46,socCredit2,Text,0000,0000,0050,,{\fad(100,200)}
+Dialogue: 0,0:04:22.09,0:04:28.55,socCredit2,Text,0000,0000,0050,,{\fad(150,200)}
+Dialogue: 0,0:04:32.43,0:04:39.44,socCredit2,Text,0000,0000,0120,,{\fad(100,200)}
+Dialogue: 0,0:04:44.45,0:04:46.70,socDefault,Chibi,0000,0000,0000,,{\i1}あったかい{\i0}
+Dialogue: 0,0:04:47.99,0:04:50.16,socDefault,Chibi,0000,0000,0000,,{\i1}お湯のわく 音がする{\i0}
+Dialogue: 0,0:04:51.62,0:04:55.25,socDefault,Chibi,0000,0000,0000,,{\i1}そうだ ここ 元のアパートだわ{\i0}
+Dialogue: 0,0:04:56.62,0:05:02.38,socDefault,Chibi,0000,0000,0000,,{\i1}良かった あたしを 置いてっちゃった お母さんが 連れ戻してくれたんだわ{\i0}
+Dialogue: 0,0:05:03.46,0:05:04.97,socDefault,Chibi,0000,0000,0000,,{\i1}良かった{\i0}
+Dialogue: 0,0:05:07.59,0:05:08.59,socDefault,Chibi,0000,0000,0000,,お母…
+Dialogue: 0,0:05:11.43,0:05:12.72,socDefault,Tokio,0000,0000,0000,,あったまったかい
+Dialogue: 0,0:05:13.68,0:05:15.48,socDefault,Chibi,0000,0000,0000,,{\i1}お母さんと違う{\i0}
+Dialogue: 0,0:05:18.69,0:05:20.40,socDefault,Tokio,0000,0000,0000,,さ ミルクをお飲み
+Dialogue: 0,0:05:21.40,0:05:23.82,socDefault,Tokio,0000,0000,0000,,急がないで ゆっくり ゆっくり お飲み
+Dialogue: 0,0:05:25.53,0:05:26.99,socDefault,Tokio,0000,0000,0000,,よーし よーし
+Dialogue: 0,0:05:29.45,0:05:30.62,socDefault,Chibi,0000,0000,0000,,{\i1}おいしい{\i0}
+Dialogue: 0,0:05:33.20,0:05:35.87,socDefault,Chibi,0000,0000,0000,,{\i1}おいしくて 夢みたい{\i0}
+Dialogue: 0,0:05:42.46,0:05:43.96,socDefault,Mom (Fumiko),0000,0000,0000,,どう 猫？
+Dialogue: 0,0:05:44.21,0:05:45.63,socDefault,Mom (Fumiko),0000,0000,0000,,元気になりそう？
+Dialogue: 0,0:05:46.47,0:05:50.34,socDefault,Tokio,0000,0000,0000,,うん まだ ミルクをスポイト一本しか 飲まないけど
+Dialogue: 0,0:05:51.60,0:05:53.18,socDefault,Tokio,0000,0000,0000,,どうせ おれ 夜中 起きてるから
+Dialogue: 0,0:05:53.51,0:05:56.23,socDefault,Tokio,0000,0000,0000,,目が覚めるのを 見計らって 少しずつ飲ませるよ
+Dialogue: 0,0:05:57.35,0:05:58.85,socDefault,Mom (Fumiko),0000,0000,0000,,時夫 あのね
+Dialogue: 0,0:05:59.44,0:06:02.61,socDefault,Tokio,0000,0000,0000,,分かってるよ 母さんの猫アレルギーは
+Dialogue: 0,0:06:02.94,0:06:05.44,socDefault,Tokio,0000,0000,0000,,元気になったら 引き取り手を探す
+Dialogue: 0,0:06:05.65,0:06:07.36,socDefault,Mom (Fumiko),0000,0000,0000,,違うのよ 時夫
+Dialogue: 0,0:06:10.32,0:06:16.54,socDefault,Mom (Fumiko),0000,0000,0000,,あのね 母さんね このごろ少し 猫アレルギー 治ってきたみたいなの
+Dialogue: 0,0:06:19.87,0:06:20.62,socDefault,Dad (Tobio),0000,0000,0000,,それで？
+Dialogue: 0,0:06:21.00,0:06:23.09,socDefault,Dad (Tobio),0000,0000,0000,,きみは 猫 飼っていいって 言ったのか
+Dialogue: 0,0:06:23.84,0:06:25.88,socDefault,Mom (Fumiko),0000,0000,0000,,ええ いいって
+Dialogue: 0,0:06:28.26,0:06:30.38,socDefault,Dad (Tobio),0000,0000,0000,,アレルギーが治ったなんて うそだろう
+Dialogue: 0,0:06:30.72,0:06:34.68,socDefault,Dad (Tobio),0000,0000,0000,,このうちに 猫がいるだけで あおい顔 してるじゃないか
+Dialogue: 0,0:06:35.06,0:06:39.44,socDefault,Mom (Fumiko),0000,0000,0000,,だって お父さん 近ごろの時夫を見て 気がつかない？
+Dialogue: 0,0:06:39.69,0:06:42.61,socDefault,Mom (Fumiko),0000,0000,0000,,口数も めっきり減って 目も うつろで
+Dialogue: 0,0:06:43.31,0:06:45.02,socDefault,Dad (Tobio),0000,0000,0000,,そりゃ そうだろうよ
+Dialogue: 0,0:06:45.02,0:06:48.03,socDefault,Dad (Tobio),0000,0000,0000,,肝心の受験日に 風邪っ引きで
+Dialogue: 0,0:06:48.03,0:06:50.65,socDefault,Dad (Tobio),0000,0000,0000,,高校三年間の苦労は パー
+Dialogue: 0,0:06:51.91,0:06:57.04,socDefault,Mom (Fumiko),0000,0000,0000,,あなたは 知らないでしょうけどね あの子 このごろ ひとり言を言うんですよ
+Dialogue: 0,0:06:58.12,0:06:59.75,socDefault,Dad (Tobio),0000,0000,0000,,知ってるよ
+Dialogue: 0,0:07:00.00,0:07:01.25,socDefault,Dad (Tobio),0000,0000,0000,,じゃ これ知ってるか
+Dialogue: 0,0:07:03.96,0:07:05.92,socDefault,Dad (Tobio),0000,0000,0000,,「今なら少年Aで済む」
+Dialogue: 0,0:07:06.21,0:07:08.63,socDefault,Dad (Tobio),0000,0000,0000,,「今なら少年Aで済む」
+Dialogue: 0,0:07:03.96,0:07:08.96,socNote,Text,0000,0000,0000,,
+Dialogue: 0,0:07:11.72,0:07:14.30,socDefault,Mom (Fumiko),0000,0000,0000,,なにをして 少年Aで済ませるんですよ
+Dialogue: 0,0:07:14.80,0:07:16.14,socDefault,Dad (Tobio),0000,0000,0000,,なにを やってもだよ
+Dialogue: 0,0:07:17.18,0:07:20.10,socDefault,Dad (Tobio),0000,0000,0000,,暴力 殺人 自殺 などなど
+Dialogue: 0,0:07:20.27,0:07:22.19,socDefault,Mom (Fumiko),0000,0000,0000,,あなた！
+Dialogue: 0,0:07:22.35,0:07:25.48,socDefault,Mom (Fumiko),0000,0000,0000,,だから わたしは あの猫を飼うんです
+Dialogue: 0,0:07:26.11,0:07:30.40,socDefault,Mom (Fumiko),0000,0000,0000,,あの猫の看病 してるときの 時夫は 目が 生き生きして いました
+Dialogue: 0,0:07:30.40,0:07:33.36,socDefault,Mom (Fumiko),0000,0000,0000,,昔のままの 元気な 時夫でした
+Dialogue: 0,0:07:34.53,0:07:39.83,socDefault,Mom (Fumiko),0000,0000,0000,,捨て猫 一匹で あの子の なぐさめになるなら これに越したことは ないじゃ ありませんか
+Dialogue: 0,0:08:01.43,0:08:05.15,socDefault,Tokio,0000,0000,0000,,おまえ うちで飼えることになったよ チビ猫
+Dialogue: 0,0:08:05.90,0:08:08.23,socDefault,Tokio,0000,0000,0000,,ぼくは 時夫… 諏訪野時夫
+Dialogue: 0,0:08:08.23,0:08:09.86,socDefault,Tokio,0000,0000,0000,,以後よろしく
+Dialogue: 0,0:08:10.23,0:08:14.03,socDefault,Chibi,0000,0000,0000,,{\i1}す わ の… と き お…{\i0}
+Dialogue: 0,0:08:16.53,0:08:20.66,socDefault,Chibi,0000,0000,0000,,{\i1}時夫 あたし元気になったら あんたにネズミ とってあげる{\i0}
+Dialogue: 0,0:08:21.08,0:08:26.25,socDefault,Chibi,0000,0000,0000,,{\i1}そいでもって あたしが 人間になったら 一番初めに ありがとうって言う{\i0}
+Dialogue: 0,0:08:34.59,0:08:36.34,socDefault,Tokio,0000,0000,0000,,じゃあ チビ猫 出掛けるからな
+Dialogue: 0,0:08:36.64,0:08:37.97,socDefault,Tokio,0000,0000,0000,,帰るまで ちゃんとしてろよ
+Dialogue: 0,0:08:38.30,0:08:38.85,socDefault,Chibi,0000,0000,0000,,はい
+Dialogue: 0,0:08:45.60,0:08:46.27,socDefault,Tokio,0000,0000,0000,,そいじゃ
+Dialogue: 0,0:08:47.19,0:08:48.48,socDefault,Mom (Fumiko),0000,0000,0000,,行ってらっしゃい
+Dialogue: 0,0:09:16.93,0:09:18.39,socDefault,Mom (Fumiko),0000,0000,0000,,あなた！ あなた！
+Dialogue: 0,0:09:18.39,0:09:19.80,socDefault,Dad (Tobio),0000,0000,0000,,どうしたんだい
+Dialogue: 0,0:09:19.80,0:09:22.97,socDefault,Mom (Fumiko),0000,0000,0000,,だって 鳴くんですもの 鳴くんですもの
+Dialogue: 0,0:09:23.39,0:09:25.73,socDefault,Dad (Tobio),0000,0000,0000,,そりゃあ 猫は鳴くよ
+Dialogue: 0,0:09:26.31,0:09:27.90,socDefault,Dad (Tobio),0000,0000,0000,,腹 すいてるんじゃ ないのか
+Dialogue: 0,0:09:28.90,0:09:31.07,socDefault,Mom (Fumiko),0000,0000,0000,,そ そうね
+Dialogue: 0,0:09:40.07,0:09:41.33,socDefault,Dad (Tobio),0000,0000,0000,,それっぽっち？
+Dialogue: 0,0:09:41.58,0:09:44.79,socDefault,Mom (Fumiko),0000,0000,0000,,あ そうよね スズメじゃないものね
+Dialogue: 0,0:09:45.12,0:09:46.96,socDefault,Mom (Fumiko),0000,0000,0000,,つぎたしてあげるから どいて
+Dialogue: 0,0:09:48.46,0:09:49.42,socDefault,Chibi,0000,0000,0000,,どいたわ
+Dialogue: 0,0:09:50.21,0:09:51.63,socDefault,Mom (Fumiko),0000,0000,0000,,もっと遠くに
+Dialogue: 0,0:09:51.92,0:09:53.30,socDefault,Mom (Fumiko),0000,0000,0000,,もっと 遠くに
+Dialogue: 0,0:09:54.63,0:09:56.97,socDefault,Mom (Fumiko),0000,0000,0000,,お願いだから どいてください！
+Dialogue: 0,0:09:57.34,0:09:59.59,socDefault,Dad (Tobio),0000,0000,0000,,もう おれが やるよ
+Dialogue: 0,0:10:03.97,0:10:05.81,socDefault,Dad (Tobio),0000,0000,0000,,ほら うまいぞ
+Dialogue: 0,0:10:09.73,0:10:12.82,socDefault,Chibi,0000,0000,0000,,{\i1}この人 お父さんと お母さん{\i0}
+Dialogue: 0,0:10:16.57,0:10:17.61,socDefault,Dad (Tobio),0000,0000,0000,,さてと
+Dialogue: 0,0:10:17.74,0:10:19.40,socDefault,Chibi,0000,0000,0000,,あ その持ち方…
+Dialogue: 0,0:10:19.53,0:10:22.78,socDefault,Chibi,0000,0000,0000,,いいけど 服 ひっつれるのよね いっちょうらの服
+Dialogue: 0,0:10:23.08,0:10:25.74,socDefault,Dad (Tobio),0000,0000,0000,,ちょっと 仕事部屋へ来てくれや… な！
+Dialogue: 0,0:10:35.34,0:10:38.26,socDefault,Dad (Tobio),0000,0000,0000,,ペルシャの血が 入ってるのかもしれんな
+Dialogue: 0,0:10:38.26,0:10:39.05,socDefault,Chibi,0000,0000,0000,,ペルシャ？
+Dialogue: 0,0:10:39.68,0:10:42.93,socDefault,Dad (Tobio),0000,0000,0000,,ペルシャ… 太陽と砂の国 ペルシャ か
+Dialogue: 0,0:10:43.55,0:10:47.35,socDefault,Dad (Tobio),0000,0000,0000,,うーん ストーリーが浮かばんなあ
+Dialogue: 0,0:10:47.81,0:10:51.23,socDefault,Chibi,0000,0000,0000,,{\i1}お父さん 机の前で 腕を組むのが お仕事みたい{\i0}
+Dialogue: 0,0:11:05.24,0:11:08.75,socDefault,Chibi,0000,0000,0000,,{\i1}お母さんは 騒ぎ好きの 忙し好き{\i0}
+Dialogue: 0,0:11:10.91,0:11:13.96,socDefault,Chibi,0000,0000,0000,,{\i1}知ってる あれは… ため息{\i0}
+Dialogue: 0,0:11:23.34,0:11:25.05,socDefault,Man,0000,0000,0000,,{\shad0\1a&H20&}もう ため息はよせ
+Dialogue: 0,0:11:25.68,0:11:26.56,socDefault,Man,0000,0000,0000,,{\shad0\1a&H20&}行くぞ
+Dialogue: 0,0:11:27.18,0:11:29.39,socDefault,Chibi,0000,0000,0000,,{\shad0\1a&H20}どこ行くの お母さんたち？
+Dialogue: 0,0:11:33.48,0:11:36.52,socDefault,Chibi,0000,0000,0000,,{\shad0\1a&H20&}お母さん待って あたしも行く
+Dialogue: 0,0:11:37.61,0:11:39.82,socDefault,Chibi,0000,0000,0000,,{\fad(0,400)}{\shad0\1a&H20&}お母さん！
+Dialogue: 0,0:11:41.40,0:11:44.57,socDefault,Chibi,0000,0000,0000,,{\i1}そうだ 迎えに来てるかもしれない{\i0}
+Dialogue: 0,0:11:46.24,0:11:47.87,socDefault,Chibi,0000,0000,0000,,{\i1}きっと迎えに 来てる{\i0}
+Dialogue: 0,0:11:48.91,0:11:52.25,socDefault,Chibi,0000,0000,0000,,{\i1}迎えに来ても あたしが いないので 困ってる{\i0}
+Dialogue: 0,0:12:12.68,0:12:14.14,socDefault,Woman A,0000,0000,0000,,あら 見て
+Dialogue: 0,0:12:14.14,0:12:16.77,socDefault,Woman B,0000,0000,0000,,あら… ふびんね
+Dialogue: 0,0:12:16.98,0:12:20.57,socDefault,Woman A,0000,0000,0000,,あの部屋のご夫婦 仕事に失敗したんでしょ？
+Dialogue: 0,0:12:20.57,0:12:24.15,socDefault,Woman B,0000,0000,0000,,家賃も払えないで 夜逃げ同然 引っ越してったんですって
+Dialogue: 0,0:12:24.40,0:12:28.45,socDefault,Woman A,0000,0000,0000,,ふぅん 猫にまでは 手が回らないわよね
+Dialogue: 0,0:12:34.04,0:12:37.75,socDefault,Landlord,0000,0000,0000,,猫は 家につくから 飼っちゃいかんと あれほど 言っておいたのに
+Dialogue: 0,0:12:38.25,0:12:41.00,socDefault,Landlord,0000,0000,0000,,このまま いつかれたんじゃ 新入居者の ハンデに なっちまう
+Dialogue: 0,0:12:41.80,0:12:44.13,socDefault,Landlord,0000,0000,0000,,どっか 遠くへ 捨ててくるしか ねえな
+Dialogue: 0,0:12:45.05,0:12:46.51,socDefault,Landlord,0000,0000,0000,,こっちへ来い！
+Dialogue: 0,0:12:52.68,0:12:54.73,socDefault,Landlord,0000,0000,0000,,二度と来たら 承知せんぞ！
+Dialogue: 0,0:12:55.14,0:12:56.77,socDefault,Chibi,0000,0000,0000,,あっかんべーだ
+Dialogue: 0,0:13:10.45,0:13:13.08,socDefault,Chibi,0000,0000,0000,,あーあ くたびれちゃった
+Dialogue: 0,0:13:15.58,0:13:18.13,socDefault,Tokio,0000,0000,0000,,あれ？ チビ猫じゃないか
+Dialogue: 0,0:13:19.58,0:13:21.13,socDefault,Tokio,0000,0000,0000,,なんで こんなところに？
+Dialogue: 0,0:13:21.55,0:13:25.13,socDefault,Tokio,0000,0000,0000,,というよりか… こんなところまで 歩けたってことか
+Dialogue: 0,0:13:26.63,0:13:27.68,socDefault,Tokio,0000,0000,0000,,よーし！
+Dialogue: 0,0:13:29.30,0:13:30.30,socDefault,Tokio,0000,0000,0000,,チビ猫！
+Dialogue: 0,0:13:32.89,0:13:33.85,socDefault,Tokio,0000,0000,0000,,走れるか
+Dialogue: 0,0:13:34.43,0:13:35.77,socDefault,Tokio,0000,0000,0000,,ここまで 走ってみな
+Dialogue: 0,0:13:36.39,0:13:38.19,socDefault,Tokio,0000,0000,0000,,ほら！ チビ猫！
+Dialogue: 0,0:13:41.48,0:13:42.32,socDefault,Tokio,0000,0000,0000,,さあ！
+Dialogue: 0,0:13:49.74,0:13:52.78,socDefault,Tokio,0000,0000,0000,,やった やった やった やった やった
+Dialogue: 0,0:13:52.78,0:13:53.95,socDefault,Tokio,0000,0000,0000,,やったぜ
+Dialogue: 0,0:13:55.54,0:13:57.54,socDefault,Tokio,0000,0000,0000,,あいて あいててて
+Dialogue: 0,0:13:57.54,0:13:58.87,socDefault,Tokio,0000,0000,0000,,こいつ
+Dialogue: 0,0:14:00.00,0:14:04.34,socDefault,Chibi,0000,0000,0000,,{\i1}もう つめ立てて しがみついて おまけに かみついて しまった{\i0}
+Dialogue: 0,0:14:04.34,0:14:05.76,socDefault,Chibi,0000,0000,0000,,{\i1}あんた 優しいわ{\i0}
+Dialogue: 0,0:14:06.97,0:14:08.88,socDefault,Chibi,0000,0000,0000,,{\i1}眠って起きて ミルク飲んで…{\i0}
+Dialogue: 0,0:14:09.05,0:14:11.01,socDefault,Chibi,0000,0000,0000,,{\i1}眠って起きて ミルク飲んで…{\i0}
+Dialogue: 0,0:14:11.01,0:14:13.26,socDefault,Chibi,0000,0000,0000,,{\i1}だんだん 力がわいてくる！{\i0}
+Dialogue: 0,0:14:14.56,0:14:16.98,socDefault,Chibi,0000,0000,0000,,{\i1}あたし いつかは人間になるんだ{\i0}
+Dialogue: 0,0:14:17.64,0:14:20.02,socDefault,Chibi,0000,0000,0000,,{\i1}人間には 人間の赤ん坊から大人になるのと{\i0}
+Dialogue: 0,0:14:20.02,0:14:23.02,socDefault,Chibi,0000,0000,0000,,{\i1}猫があるとき 変身して人間になるのと{\i0}
+Dialogue: 0,0:14:23.02,0:14:26.23,socDefault,Chibi,0000,0000,0000,,{\i1}二つのルートがある{\i0}
+Dialogue: 0,0:14:26.32,0:14:28.78,socDefault,Chibi,0000,0000,0000,,{\i1}いまのとこ こういうかっこ してるけど{\i0}
+Dialogue: 0,0:14:28.78,0:14:31.45,socDefault,Chibi,0000,0000,0000,,{\i1}いつかは 耳もとれて しっぽも消えて{\i0}
+Dialogue: 0,0:14:31.45,0:14:33.66,socDefault,Chibi,0000,0000,0000,,{\i1}人間と おんなじになる{\i0}
+Dialogue: 0,0:14:33.87,0:14:36.83,socDefault,Chibi,0000,0000,0000,,{\i1}早く 人間になりたい{\i0}
+Dialogue: 0,0:14:38.71,0:14:40.83,socDefault,Chibi,0000,0000,0000,,{\i1}え なに？{\i0}
+Dialogue: 0,0:14:41.54,0:14:44.13,socDefault,Chibi,0000,0000,0000,,{\i1}やだ 勉強してると 思ったのに{\i0}
+Dialogue: 0,0:14:48.67,0:14:50.01,socDefault,Chibi,0000,0000,0000,,{\i1}なに してるんだろ{\i0}
+Dialogue: 0,0:14:51.30,0:14:53.43,socDefault,Chibi,0000,0000,0000,,{\i1}あっちに なにか あんのかな{\i0}
+Dialogue: 0,0:14:57.52,0:14:58.89,socDefault,Chibi,0000,0000,0000,,{\i1}あたしを 見てる{\i0}
+Dialogue: 0,0:14:59.68,0:15:01.06,socDefault,Chibi,0000,0000,0000,,{\i1}分かんない{\i0}
+Dialogue: 0,0:15:04.36,0:15:06.36,socDefault,Chibi,0000,0000,0000,,あ ああ！
+Dialogue: 0,0:15:06.36,0:15:08.07,socDefault,Chibi,0000,0000,0000,,{\i1}分かった{\i0}
+Dialogue: 0,0:15:09.24,0:15:11.41,socDefault,Chibi,0000,0000,0000,,{\i1}わー おもしろい 時夫{\i0}
+Dialogue: 0,0:15:11.41,0:15:12.91,socDefault,Chibi,0000,0000,0000,,{\i1}あたしのまね してるんだ{\i0}
+Dialogue: 0,0:15:12.91,0:15:15.62,socDefault,Chibi,0000,0000,0000,,{\i1}あたしが こんなことすれば 時夫もする{\i0}
+Dialogue: 0,0:15:15.62,0:15:17.91,socDefault,Chibi,0000,0000,0000,,{\i1}あたしが つめを とげば…{\i0}
+Dialogue: 0,0:15:17.91,0:15:19.54,socDefault,Chibi,0000,0000,0000,,{\i1}ほらね 時夫も{\i0}
+Dialogue: 0,0:15:19.83,0:15:22.58,socDefault,Chibi,0000,0000,0000,,{\i1}うわあ すてき すてき{\i0}
+Dialogue: 0,0:15:22.58,0:15:24.71,socDefault,Chibi,0000,0000,0000,,{\i1}じゃあ じゃあ こんなのは？{\i0}
+Dialogue: 0,0:15:26.13,0:15:27.59,socDefault,Chibi,0000,0000,0000,,飛び降り！
+Dialogue: 0,0:15:32.63,0:15:33.84,socDefault,Dad (Tobio),0000,0000,0000,,なんだい 今の？
+Dialogue: 0,0:15:34.39,0:15:35.60,socDefault,Mom (Fumiko),0000,0000,0000,,飛び降りたみたい
+Dialogue: 0,0:15:36.39,0:15:37.97,socDefault,Mom (Fumiko),0000,0000,0000,,飛び降り…？
+Dialogue: 0,0:15:37.97,0:15:40.39,socDefault,Mom (Fumiko),0000,0000,0000,,あなた！ 時夫！
+Dialogue: 0,0:15:41.56,0:15:43.65,socDefault,Tokio,0000,0000,0000,,なんだい 血相かえて
+Dialogue: 0,0:15:44.27,0:15:45.73,socDefault,Tokio,0000,0000,0000,,飛び降り運動 しただけだよ
+Dialogue: 0,0:15:55.91,0:15:59.33,socDefault,Chibi,0000,0000,0000,,{\i1}あたし 時夫と 一晩中でも遊んでいたい{\i0}
+Dialogue: 0,0:16:00.25,0:16:03.25,socDefault,Chibi,0000,0000,0000,,{\i1}あたしが遊んでいれば 時夫も遊ぶ{\i0}
+Dialogue: 0,0:16:04.21,0:16:08.80,socDefault,Chibi,0000,0000,0000,,{\i1}でも 遊んで疲れて いつか 知らないうちに 眠ってしまうの{\i0}
+Dialogue: 0,0:16:10.01,0:16:14.51,socDefault,Chibi,0000,0000,0000,,{\i1}お魚の すり身でできた コンペイトウ のお星さまと{\i0}
+Dialogue: 0,0:16:14.51,0:16:16.72,socDefault,Chibi,0000,0000,0000,,{\i1}エビ入りお好み焼きの お月さまの あいだを{\i0}
+Dialogue: 0,0:16:16.72,0:16:19.64,socDefault,Chibi,0000,0000,0000,,{\i1}煮干しの頭を カリカリ 食べながら{\i0}
+Dialogue: 0,0:16:19.64,0:16:21.85,socDefault,Chibi,0000,0000,0000,,{\i1}飛んでいく 夢を 見られますように{\i0}
+Dialogue: 0,0:16:31.86,0:16:34.86,socDefault,Mom (Fumiko),0000,0000,0000,,{\i1}慣れれば なんとも ないんだわ きっと{\i0}
+Dialogue: 0,0:16:41.41,0:16:43.33,socDefault,Mom (Fumiko),0000,0000,0000,,{\i1}今なら 大丈夫{\i0}
+Dialogue: 0,0:16:43.33,0:16:45.21,socDefault,Mom (Fumiko),0000,0000,0000,,{\i1}後ろからなら 怖くない{\i0}
+Dialogue: 0,0:16:45.67,0:16:49.17,socDefault,Mom (Fumiko),0000,0000,0000,,{\i1}そう ひとなで ひとなですれば いいんだわ{\i0}
+Dialogue: 0,0:16:49.59,0:16:51.96,socDefault,Mom (Fumiko),0000,0000,0000,,{\i1}時夫のためにも 好きにならなきゃ{\i0}
+Dialogue: 0,0:16:51.96,0:16:55.80,socDefault,Mom (Fumiko),0000,0000,0000,,{\i1}この子は わたしの子ども 時夫の妹だと思えば{\i0}
+Dialogue: 0,0:16:55.80,0:16:57.22,socDefault,Mom (Fumiko),0000,0000,0000,,{\i1}怖くない{\i0}
+Dialogue: 0,0:17:02.43,0:17:05.48,socDefault,Mom (Fumiko),0000,0000,0000,,{\i1}ひとなでよ…{\i0}
+Dialogue: 0,0:17:12.61,0:17:14.24,socDefault,Dad (Tobio),0000,0000,0000,,言わんこっちゃない
+Dialogue: 0,0:17:14.24,0:17:16.28,socDefault,Dad (Tobio),0000,0000,0000,,おい 歩けるか
+Dialogue: 0,0:17:20.33,0:17:22.62,socDefault,Chibi,0000,0000,0000,,{\i1}お母さん すぐいなくなる{\i0}
+Dialogue: 0,0:17:22.99,0:17:24.16,socDefault,Chibi,0000,0000,0000,,{\i1}どうしてだろう{\i0}
+Dialogue: 0,0:17:24.58,0:17:28.29,socDefault,Chibi,0000,0000,0000,,{\i1}すてきな プレゼントしたら もっと そばに いてくれるかしら{\i0}
+Dialogue: 0,0:17:33.00,0:17:35.97,socDefault,Chibi,0000,0000,0000,,{\i1}おつめを よーく といで っと{\i0}
+Dialogue: 0,0:17:39.47,0:17:40.43,socDefault,Chibi,0000,0000,0000,,{\i1}プレゼント{\i0}
+Dialogue: 0,0:17:43.18,0:17:46.06,socDefault,Chibi,0000,0000,0000,,{\i1}プレゼント… プレゼント…{\i0}
+Dialogue: 0,0:17:51.65,0:17:52.48,socDefault,Chibi,0000,0000,0000,,{\i1}プレゼント！{\i0}
+Dialogue: 0,0:17:58.41,0:18:01.12,socDefault,Dad (Tobio),0000,0000,0000,,おいおい まだやる気か
+Dialogue: 0,0:18:01.12,0:18:02.49,socDefault,Dad (Tobio),0000,0000,0000,,熱が上がるぜ
+Dialogue: 0,0:18:03.29,0:18:06.08,socDefault,Mom (Fumiko),0000,0000,0000,,40度に上がっても わたしやります
+Dialogue: 0,0:18:03.29,0:18:08.25,socNote,Text,0000,0000,0000,,
+Dialogue: 0,0:18:06.29,0:18:07.71,socDefault,Mom (Fumiko),0000,0000,0000,,時夫のためです
+Dialogue: 0,0:18:10.88,0:18:11.88,socDefault,Mom (Fumiko),0000,0000,0000,,猫さん
+Dialogue: 0,0:18:12.17,0:18:13.25,socDefault,Mom (Fumiko),0000,0000,0000,,どこ？
+Dialogue: 0,0:18:14.92,0:18:16.55,socDefault,Chibi,0000,0000,0000,,はい あげる
+Dialogue: 0,0:18:22.72,0:18:25.72,socDefault,Chibi,0000,0000,0000,,{\i1}ネズミ お気に 召さなかった みたい{\i0}
+Dialogue: 0,0:18:26.10,0:18:28.52,socDefault,Chibi,0000,0000,0000,,{\i1}どうしてかな？ あんな おもしろいもの{\i0}
+Dialogue: 0,0:18:29.44,0:18:30.65,socDefault,Chibi,0000,0000,0000,,{\i1}まあ いいや{\i0}
+Dialogue: 0,0:18:31.94,0:18:33.77,socDefault,Chibi,0000,0000,0000,,{\i1}うわあ きれいだ{\i0}
+Dialogue: 0,0:18:40.07,0:18:43.41,socDefault,Chibi,0000,0000,0000,,{\i1}早く 時夫 この道 帰ってこないかな{\i0}
+Dialogue: 0,0:18:54.79,0:18:56.88,socDefault,Man,0000,0000,0000,,いらっしゃい いらっしゃい！ 奥さん毎度！
+Dialogue: 0,0:18:56.88,0:18:59.17,socDefault,Man,0000,0000,0000,,そりゃいいよ ホント 安くしとくから
+Dialogue: 0,0:19:02.30,0:19:03.97,socDefault,Tokio,0000,0000,0000,,{\i1}やっぱり あの男が ついてくる{\i0}
+Dialogue: 0,0:19:05.35,0:19:09.31,socDefault,Tokio,0000,0000,0000,,{\i1}猫ばっかり集めて マンション借りて住んでるっつう 猫マニアが…{\i0}
+Dialogue: 0,0:19:09.31,0:19:12.44,socDefault,Tokio,0000,0000,0000,,{\i1}なんで おれの後を 追いかけてんのかな{\i0}
+Dialogue: 0,0:19:13.90,0:19:16.82,socDefault,Chibi,0000,0000,0000,,{\i1}と… き… お…{\i0}
+Dialogue: 0,0:19:20.95,0:19:21.99,socDefault,Chibi,0000,0000,0000,,{\i1}ん？{\i0}
+Dialogue: 0,0:19:21.99,0:19:23.37,socDefault,Chibi,0000,0000,0000,,{\i1}ああ 時夫だ{\i0}
+Dialogue: 0,0:19:23.62,0:19:25.91,socDefault,Chibi,0000,0000,0000,,時夫 おかえり！
+Dialogue: 0,0:19:29.70,0:19:30.62,socDefault,Tokio,0000,0000,0000,,はい ただいま
+Dialogue: 0,0:19:30.62,0:19:32.12,socDefault,Tokio,0000,0000,0000,,相手するのは あとだよ
+Dialogue: 0,0:19:32.79,0:19:34.54,socDefault,Tokio,0000,0000,0000,,追跡者に 質問が あるんでね
+Dialogue: 0,0:19:44.18,0:19:45.64,socDefault,Tokio,0000,0000,0000,,猫マニアさん！
+Dialogue: 0,0:19:45.93,0:19:48.14,socDefault,Ruri,0000,0000,0000,,驚いたな いつのまに
+Dialogue: 0,0:19:48.14,0:19:49.93,socDefault,Tokio,0000,0000,0000,,驚いているのは こっちです
+Dialogue: 0,0:19:50.68,0:19:54.15,socDefault,Tokio,0000,0000,0000,,あなたが追いかける ということは ぼくは猫って ことですか
+Dialogue: 0,0:19:54.35,0:19:56.36,socDefault,Ruri,0000,0000,0000,,あ いやあ 失礼
+Dialogue: 0,0:19:56.56,0:19:58.02,socDefault,Ruri,0000,0000,0000,,気がついて いましたか
+Dialogue: 0,0:19:58.02,0:20:03.28,socDefault,Ruri,0000,0000,0000,,じつは わたしが一年ほど前から 恋こがれている 一匹の猫が いるんです
+Dialogue: 0,0:20:03.45,0:20:06.91,socDefault,Ruri,0000,0000,0000,,銀色の毛に おおわれた 無駄のない 流線型をして
+Dialogue: 0,0:20:06.91,0:20:07.87,socDefault,Ruri,0000,0000,0000,,目は緑
+Dialogue: 0,0:20:07.87,0:20:13.12,socDefault,Ruri,0000,0000,0000,,その猫が 昨日今日 どういうわけか あなたの背後に 出没するんです
+Dialogue: 0,0:20:13.87,0:20:18.25,socDefault,Tokio,0000,0000,0000,,え？ ぼくの背後にいるのは この猫だけなんですけど
+Dialogue: 0,0:20:18.96,0:20:20.13,socDefault,Ruri,0000,0000,0000,,そんな もんじゃない
+Dialogue: 0,0:20:20.88,0:20:23.47,socDefault,Ruri,0000,0000,0000,,もっと美しい 青年の猫です
+Dialogue: 0,0:20:24.18,0:20:25.80,socDefault,Ruri,0000,0000,0000,,きっとあれは 野生です
+Dialogue: 0,0:20:26.26,0:20:29.64,socDefault,Ruri,0000,0000,0000,,あれを 初めて 見たときには わが目を疑いました
+Dialogue: 0,0:20:30.14,0:20:33.10,socDefault,Ruri,0000,0000,0000,,世の中に こんなに美しい猫が いるものかと
+Dialogue: 0,0:20:33.77,0:20:35.31,socDefault,Ruri,0000,0000,0000,,願いはただ一つ
+Dialogue: 0,0:20:35.31,0:20:38.44,socDefault,Ruri,0000,0000,0000,,あの猫を つかまえて この胸に抱きしめたい！
+Dialogue: 0,0:20:39.11,0:20:40.11,socDefault,Ruri,0000,0000,0000,,それだけです
+Dialogue: 0,0:20:40.44,0:20:47.20,socDefault,Ruri,0000,0000,0000,,あの猫のために 金モール 銀モール クッションに寝椅子 あらゆる ぜいたくな 調度品も そろえました
+Dialogue: 0,0:20:47.74,0:20:49.53,socDefault,Ruri,0000,0000,0000,,トイレの砂は 砂金入りです
+Dialogue: 0,0:20:50.33,0:20:54.08,socDefault,Tokio,0000,0000,0000,,どうして その猫は ぼくのあとになんて ついてきたり するんでしょう
+Dialogue: 0,0:20:54.66,0:20:56.67,socDefault,Ruri,0000,0000,0000,,そこんところは 疑問ですが
+Dialogue: 0,0:20:57.54,0:21:00.96,socDefault,Ruri,0000,0000,0000,,とにかく もし見つけたら 連絡を頼みます
+Dialogue: 0,0:21:01.55,0:21:02.96,socDefault,Ruri,0000,0000,0000,,お礼は山ほど
+Dialogue: 0,0:21:03.21,0:21:03.84,socDefault,Tokio,0000,0000,0000,,はあ
+Dialogue: 0,0:21:05.05,0:21:06.93,socDefault,Ruri,0000,0000,0000,,それでは よろしく
+Dialogue: 0,0:21:11.14,0:21:13.35,socDefault,Tokio,0000,0000,0000,,「詩人 瑠璃動静」
+Dialogue: 0,0:21:14.02,0:21:14.93,socDefault,Tokio,0000,0000,0000,,すげえ
+Dialogue: 0,0:21:15.60,0:21:17.90,socDefault,Tokio,0000,0000,0000,,世の中 ますます けだるくなるな
+Dialogue: 0,0:21:27.41,0:21:29.07,socDefault,Dad (Tobio),0000,0000,0000,,あー おかえり
+Dialogue: 0,0:21:29.16,0:21:30.74,socDefault,Tokio,0000,0000,0000,,あれ 母さんは？
+Dialogue: 0,0:21:30.99,0:21:31.91,socDefault,Dad (Tobio),0000,0000,0000,,寝とるよ
+Dialogue: 0,0:21:33.41,0:21:35.54,socDefault,Tokio,0000,0000,0000,,おなか こわしたの？
+Dialogue: 0,0:21:39.58,0:21:41.54,socDefault,Dad (Tobio),0000,0000,0000,,おれの 料理のせいじゃない！
+Dialogue: 0,0:21:42.34,0:21:45.13,socDefault,Dad (Tobio),0000,0000,0000,,アレルギーの ぶり返しだよ ぶり返し
+Dialogue: 0,0:21:45.26,0:21:46.80,socDefault,Tokio,0000,0000,0000,,ぶり返しか
+Dialogue: 0,0:21:47.18,0:21:48.38,socDefault,Dad (Tobio),0000,0000,0000,,熱も あるんだぜ
+Dialogue: 0,0:21:48.38,0:21:49.34,socDefault,Tokio,0000,0000,0000,,ふうん
+Dialogue: 0,0:21:52.97,0:21:57.35,socDefault,Dad (Tobio),0000,0000,0000,,あしたも このまま猫と いっしょに生活すると 心臓にまで 負担が かかって くるぞ
+Dialogue: 0,0:21:57.85,0:21:59.56,socDefault,Dad (Tobio),0000,0000,0000,,なんか いい案 ないかなあ
+Dialogue: 0,0:22:00.56,0:22:03.32,socDefault,Dad (Tobio),0000,0000,0000,,夜は おまえの部屋に 入れておけばいいが
+Dialogue: 0,0:22:03.32,0:22:04.90,socDefault,Dad (Tobio),0000,0000,0000,,問題は 昼間だよ
+Dialogue: 0,0:22:05.65,0:22:07.03,socDefault,Dad (Tobio),0000,0000,0000,,おりにでも 入れておくか
+Dialogue: 0,0:22:07.03,0:22:08.15,socDefault,Dad (Tobio),0000,0000,0000,,ペット屋みたいに
+Dialogue: 0,0:22:09.36,0:22:10.24,socDefault,Tokio,0000,0000,0000,,連れてくよ
+Dialogue: 0,0:22:10.62,0:22:11.49,socDefault,Dad (Tobio),0000,0000,0000,,どこへ
+Dialogue: 0,0:22:11.66,0:22:12.49,socDefault,Tokio,0000,0000,0000,,予備校
+Dialogue: 0,0:22:12.99,0:22:13.95,socDefault,Chibi,0000,0000,0000,,よびこう？
+Dialogue: 0,0:22:23.13,0:22:25.88,socDefault,Chibi,0000,0000,0000,,{\i1}「よびこう」って どこだろう{\i0}
+Dialogue: 0,0:22:28.22,0:22:29.47,socDefault,Chibi,0000,0000,0000,,{\i1}銀猫って？{\i0}
+Dialogue: 0,0:22:31.43,0:22:32.85,socDefault,Chibi,0000,0000,0000,,{\i1}アレルギーって？{\i0}
+Dialogue: 0,0:22:33.43,0:22:36.56,socDefault,Chibi,0000,0000,0000,,{\i1}お母さん やっぱり猫 嫌いなのかな{\i0}
+Dialogue: 0,0:22:42.98,0:22:44.23,socDefault,Chibi,0000,0000,0000,,{\i1}でも いいじゃない{\i0}
+Dialogue: 0,0:22:44.52,0:22:47.53,socDefault,Chibi,0000,0000,0000,,{\i1}あしたは 時夫と いっしょに 「よびこう」 に行くんだ{\i0}
+Dialogue: 0,0:22:58.29,0:22:59.54,socDefault,Chibi,0000,0000,0000,,{\i1}なんて すごい{\i0}
+Dialogue: 0,0:22:59.54,0:23:01.00,socDefault,Chibi,0000,0000,0000,,{\i1}すごい すごい{\i0}
+Dialogue: 0,0:23:01.00,0:23:02.04,socDefault,Chibi,0000,0000,0000,,{\i1}人 ばっかし{\i0}
+Dialogue: 0,0:23:02.04,0:23:04.17,socDefault,Chibi,0000,0000,0000,,{\i1}猫は いない 全然 いないわ{\i0}
+Dialogue: 0,0:23:05.88,0:23:09.63,socDefault,Announce,0000,0000,0000,,まもなく 三番線に 下り電車が 参ります
+Dialogue: 0,0:23:05.88,0:23:12.39,socNote,Text,0000,0000,0000,,{\i1}{\i0}
+Dialogue: 0,0:23:09.63,0:23:12.39,socDefault,Announce,0000,0000,0000,,白線の内側まで…
+Dialogue: 0,0:23:10.72,0:23:12.26,socDefault,Chibi,0000,0000,0000,,{\i1}なになになに？{\i0}
+Dialogue: 0,0:23:12.26,0:23:13.68,socDefault,Chibi,0000,0000,0000,,{\i1}これ 動物？{\i0}
+Dialogue: 0,0:23:13.68,0:23:15.56,socDefault,Chibi,0000,0000,0000,,{\i1}これ 電車という動物？{\i0}
+Dialogue: 0,0:23:17.27,0:23:19.68,socDefault,Chibi,0000,0000,0000,,うわあ 人が出てくる
+Dialogue: 0,0:23:21.48,0:23:22.94,socDefault,Chibi,0000,0000,0000,,今度は 人が乗る
+Dialogue: 0,0:23:22.94,0:23:25.98,socDefault,Chibi,0000,0000,0000,,平気かしら 苦しくないのかしら
+Dialogue: 0,0:23:31.20,0:23:32.82,socDefault,Chibi,0000,0000,0000,,うわ 閉まった
+Dialogue: 0,0:23:32.82,0:23:33.95,socDefault,Chibi,0000,0000,0000,,動いた
+Dialogue: 0,0:23:34.78,0:23:37.04,socDefault,Chibi,0000,0000,0000,,だんだん 速くなる
+Dialogue: 0,0:23:37.62,0:23:41.29,socDefault,Chibi,0000,0000,0000,,速いぞ！ 電信柱！
+Dialogue: 0,0:23:42.08,0:23:45.04,socDefault,Chibi,0000,0000,0000,,見て見て 人が 後ろ向きに 走ってく
+Dialogue: 0,0:23:45.04,0:23:47.88,socDefault,Chibi,0000,0000,0000,,すごい すんごい特技！
+Dialogue: 0,0:23:49.51,0:23:51.51,socDefault,Chibi,0000,0000,0000,,あれには 負けるわ
+Dialogue: 0,0:23:51.72,0:23:55.14,socDefault,Tokio,0000,0000,0000,,ほら 興奮して にゃあにゃあ 騒がない！
+Dialogue: 0,0:23:59.02,0:24:02.27,socDefault,Chibi,0000,0000,0000,,{\i1}あ 今 すごい答えが めっかった{\i0}
+Dialogue: 0,0:24:02.73,0:24:06.27,socDefault,Chibi,0000,0000,0000,,{\i1}猫だった人間と 赤ん坊だった人間の 見分け方{\i0}
+Dialogue: 0,0:24:06.52,0:24:10.44,socDefault,Chibi,0000,0000,0000,,{\i1}猫だった人間は つり革に つかまらずに 立っていられる{\i0}
+Dialogue: 0,0:24:10.78,0:24:14.70,socDefault,Chibi,0000,0000,0000,,{\i1}赤ん坊だった人間は 座ったり つかまったりしてる{\i0}
+Dialogue: 0,0:24:14.70,0:24:16.45,socDefault,Chibi,0000,0000,0000,,{\i1}じゃあ 時夫は？{\i0}
+Dialogue: 0,0:24:16.66,0:24:19.70,socDefault,Chibi,0000,0000,0000,,猫だったんだ！ ほら！ つかまってない！
+Dialogue: 0,0:24:27.00,0:24:28.09,socDefault,Chibi,0000,0000,0000,,止まった
+Dialogue: 0,0:24:41.14,0:24:43.23,socDefault,Chibi,0000,0000,0000,,「よびこう」 もうすぐかしら
+Dialogue: 0,0:24:43.56,0:24:45.10,socDefault,Chibi,0000,0000,0000,,どんな とこかしら
+Dialogue: 0,0:24:45.52,0:24:47.90,socDefault,Chibi,0000,0000,0000,,うわあ 胸が ドキドキする
+Dialogue: 0,0:24:48.27,0:24:51.53,socDefault,Chibi,0000,0000,0000,,バスケットを 降りたとこが きっと「よびこう」 なんだわ
+Dialogue: 0,0:24:52.36,0:24:53.95,socDefault,Chibi,0000,0000,0000,,早く行きたい
+Dialogue: 0,0:24:53.95,0:24:55.11,socDefault,Chibi,0000,0000,0000,,早く
+Dialogue: 0,0:25:00.66,0:25:01.83,socDefault,Tokio,0000,0000,0000,,さあ ついたよ
+Dialogue: 0,0:25:02.45,0:25:03.75,socDefault,Chibi,0000,0000,0000,,出てもいいよ チビ
+Dialogue: 0,0:25:06.42,0:25:10.63,socDefault,Chibi,0000,0000,0000,,うわあ ここが「よびこう」か
+Dialogue: 0,0:25:11.13,0:25:13.46,socDefault,Chibi,0000,0000,0000,,時夫が毎日 通ってるとこか
+Dialogue: 0,0:25:14.09,0:25:16.09,socDefault,Chibi,0000,0000,0000,,なんて いっぱい 木があるんだろ
+Dialogue: 0,0:25:16.30,0:25:18.01,socDefault,Chibi,0000,0000,0000,,なんて 広いんだろ
+Dialogue: 0,0:25:22.14,0:25:25.10,socDefault,Chibi,0000,0000,0000,,広い広い 道が ひとっつもない
+Dialogue: 0,0:25:25.52,0:25:27.10,socDefault,Chibi,0000,0000,0000,,うわーい
+Dialogue: 0,0:25:29.69,0:25:31.07,socDefault,Tokio,0000,0000,0000,,適当に 遊んどいで
+Dialogue: 0,0:25:31.77,0:25:34.61,socDefault,Tokio,0000,0000,0000,,昼になったら パンとミルクを 買ってきてやるよ
+Dialogue: 0,0:27:54.13,0:27:57.71,socDefault,Chibi,0000,0000,0000,,あっ！ びっくりした！ 夢だったか…
+Dialogue: 0,0:28:09.52,0:28:12.10,socDefault,Chibi,0000,0000,0000,,どうしたの 時夫？
+Dialogue: 0,0:28:19.78,0:28:20.61,socDefault,Mitsuami,0000,0000,0000,,なにか？
+Dialogue: 0,0:28:21.32,0:28:23.95,socDefault,Tokio,0000,0000,0000,,あ いや なんでもないんです
+Dialogue: 0,0:28:26.66,0:28:29.58,socDefault,Mitsuami,0000,0000,0000,,あら かわいい
+Dialogue: 0,0:28:55.77,0:28:58.02,socDefault,Chibi,0000,0000,0000,,時夫 遊ぼ
+Dialogue: 0,0:28:58.27,0:28:59.61,socDefault,Chibi,0000,0000,0000,,飛び降りっこ しよ
+Dialogue: 0,0:28:59.82,0:29:01.28,socDefault,Chibi,0000,0000,0000,,まね遊び しよう
+Dialogue: 0,0:29:03.40,0:29:04.40,socDefault,Chibi,0000,0000,0000,,ねえねえ
+Dialogue: 0,0:29:06.49,0:29:08.66,socDefault,Chibi,0000,0000,0000,,ねえ 遊ぼ！ 遊ぼ！
+Dialogue: 0,0:29:17.00,0:29:19.04,socDefault,Chibi,0000,0000,0000,,そんな顔 してないで 遊ぼ
+Dialogue: 0,0:29:20.80,0:29:23.26,socDefault,Chibi,0000,0000,0000,,{\i1}駄目だ 遊ぼうとしない{\i0}
+Dialogue: 0,0:29:24.05,0:29:27.47,socDefault,Chibi,0000,0000,0000,,{\i1}どうしよう どうしよう どうしようって 鳴ってる{\i0}
+Dialogue: 0,0:29:28.03,0:29:29.64,socDefault,Tokio,0000,0000,0000,,{\fad(200,200)}{\i1}どうしよう{\i0}
+Dialogue: 0,0:29:30.66,0:29:32.14,socDefault,Tokio,0000,0000,0000,,{\fad(200,200)}{\i1}どうしよう{\i0}
+Dialogue: 0,0:29:32.49,0:29:34.35,socDefault,Tokio,0000,0000,0000,,{\fad(200,200)}{\i1}どうしよう{\i0}
+Dialogue: 0,0:29:35.23,0:29:39.90,socDefault,Chibi,0000,0000,0000,,{\i1}あたしは まだ子どもの猫だから 直感だって 確かなものじゃない{\i0}
+Dialogue: 0,0:29:40.82,0:29:45.78,socDefault,Chibi,0000,0000,0000,,{\i1}だけど… もしあの女の人が 時夫をとっちゃうと しても{\i0}
+Dialogue: 0,0:29:45.78,0:29:48.41,socDefault,Chibi,0000,0000,0000,,{\i1}それより先に あたしが 人間になって{\i0}
+Dialogue: 0,0:29:48.41,0:29:49.91,socDefault,Chibi,0000,0000,0000,,{\i1}時夫を とっちゃうんだ{\i0}
+Dialogue: 0,0:29:50.45,0:29:52.99,socDefault,Chibi,0000,0000,0000,,{\i1}だって あたしのほうが 早いんだもの{\i0}
+Dialogue: 0,0:29:53.20,0:29:55.71,socDefault,Chibi,0000,0000,0000,,{\i1}あたしのほうが 早いんだもの{\i0}
+Dialogue: 0,0:30:02.96,0:30:07.88,socDefault,Chibi,0000,0000,0000,,満月の夜に 変身するのは… えっと… なんだっけ？
+Dialogue: 0,0:30:08.22,0:30:10.51,socDefault,Chibi,0000,0000,0000,,人間になれ 人間になれ！
+Dialogue: 0,0:30:10.51,0:30:12.60,socDefault,Chibi,0000,0000,0000,,今すぐ 人間になれ！
+Dialogue: 0,0:30:18.89,0:30:20.35,socDefault,Chibi,0000,0000,0000,,まだ 猫だ
+Dialogue: 0,0:30:26.82,0:30:29.41,socDefault,Chibi,0000,0000,0000,,人間になれ 人間になれ！
+Dialogue: 0,0:30:33.70,0:30:36.00,socDefault,Chibi,0000,0000,0000,,だめだ 人間に なってない
+Dialogue: 0,0:30:36.00,0:30:36.95,socDefault,Chibi,0000,0000,0000,,もう一度！
+Dialogue: 0,0:30:41.13,0:30:42.84,socDefault,Raphael,0000,0000,0000,,猫は人間に なれないよ
+Dialogue: 0,0:30:43.00,0:30:45.38,socDefault,Chibi,0000,0000,0000,,えっ？ だあれ？
+Dialogue: 0,0:30:46.21,0:30:47.05,socDefault,Raphael,0000,0000,0000,,ラフィエル
+Dialogue: 0,0:30:54.26,0:30:55.64,socDefault,Raphael,0000,0000,0000,,ラフィエルだよ
+Dialogue: 0,0:30:56.02,0:30:57.68,socDefault,Raphael,0000,0000,0000,,ちっとは 有名だろ？
+Dialogue: 0,0:31:00.02,0:31:00.94,socDefault,Chibi,0000,0000,0000,,有名？
+Dialogue: 0,0:31:01.65,0:31:05.82,socDefault,Chibi,0000,0000,0000,,{\i1}あ！ 緑色の目 銀色の毛…{\i0}
+Dialogue: 0,0:31:05.82,0:31:07.61,socDefault,Chibi,0000,0000,0000,,{\i1}マニアが 探してる猫{\i0}
+Dialogue: 0,0:31:08.57,0:31:12.95,socDefault,Chibi,0000,0000,0000,,あんた 駄目よ！ 時夫について回ったって… 時夫には もう いるんだから
+Dialogue: 0,0:31:13.24,0:31:17.79,socDefault,Raphael,0000,0000,0000,,誰が？ あんたが？ それとも あの みつ編みの女かな
+Dialogue: 0,0:31:21.71,0:31:23.42,socDefault,Raphael,0000,0000,0000,,あんたを 泣かせるつもりは ないよ
+Dialogue: 0,0:31:24.04,0:31:25.63,socDefault,Raphael,0000,0000,0000,,あんたは いい猫だ
+Dialogue: 0,0:31:25.63,0:31:27.51,socDefault,Raphael,0000,0000,0000,,人間に つれそうなんぞ もったいない
+Dialogue: 0,0:31:28.76,0:31:31.59,socDefault,Raphael,0000,0000,0000,,おれが あいつを つけ回していたのは あんたのためさ
+Dialogue: 0,0:31:31.76,0:31:34.05,socDefault,Raphael,0000,0000,0000,,時夫が どんな男か 知りたくてね
+Dialogue: 0,0:31:37.31,0:31:40.06,socDefault,Raphael,0000,0000,0000,,悩みともいえぬ悩みに うつつを抜かし
+Dialogue: 0,0:31:40.06,0:31:42.56,socDefault,Raphael,0000,0000,0000,,予備校に行くと いつわっては 毎日ぶらぶら
+Dialogue: 0,0:31:42.94,0:31:44.27,socDefault,Raphael,0000,0000,0000,,つまんねえ男だった
+Dialogue: 0,0:31:44.56,0:31:46.57,socDefault,Chibi,0000,0000,0000,,時夫のこと 悪く 言わないで
+Dialogue: 0,0:31:46.57,0:31:48.28,socDefault,Chibi,0000,0000,0000,,あんた なんにも 知らないでしょ
+Dialogue: 0,0:31:48.28,0:31:50.65,socDefault,Chibi,0000,0000,0000,,時夫がどんなに… どんなに…
+Dialogue: 0,0:31:50.65,0:31:56.45,socDefault,Raphael,0000,0000,0000,,その時夫を もう一歩 前進させるのは あの みつ編みだろうという 気がするのさ…
+Dialogue: 0,0:31:56.74,0:31:57.79,socDefault,Raphael,0000,0000,0000,,…おれは！
+Dialogue: 0,0:32:01.71,0:32:03.75,socDefault,Chibi,0000,0000,0000,,まだ 勝負は 決まったわけじゃない
+Dialogue: 0,0:32:03.75,0:32:05.75,socDefault,Chibi,0000,0000,0000,,あたしが 先に 人間になって…
+Dialogue: 0,0:32:06.13,0:32:09.88,socDefault,Raphael,0000,0000,0000,,だから 猫が人間になるなんて 不可能だって 言ったでしょう
+Dialogue: 0,0:32:16.10,0:32:17.47,socDefault,Chibi,0000,0000,0000,,じゃあ アヒルは
+Dialogue: 0,0:32:17.68,0:32:18.72,socDefault,Raphael,0000,0000,0000,,同じさ
+Dialogue: 0,0:32:19.43,0:32:21.81,socDefault,Chibi,0000,0000,0000,,子どもだと思って ばかにしないで
+Dialogue: 0,0:32:22.18,0:32:24.27,socDefault,Raphael,0000,0000,0000,,じゃあ なんになると 思ってんだい
+Dialogue: 0,0:32:25.35,0:32:26.31,socDefault,Chibi,0000,0000,0000,,白鳥！
+Dialogue: 0,0:32:26.73,0:32:28.11,socDefault,Raphael,0000,0000,0000,,じゃあ コウモリは？
+Dialogue: 0,0:32:28.52,0:32:29.61,socDefault,Chibi,0000,0000,0000,,吸血鬼！
+Dialogue: 0,0:32:30.03,0:32:30.90,socDefault,Raphael,0000,0000,0000,,オオカミは？
+Dialogue: 0,0:32:30.90,0:32:32.03,socDefault,Chibi,0000,0000,0000,,オオカミ男！
+Dialogue: 0,0:32:34.53,0:32:36.82,socDefault,Raphael,0000,0000,0000,,あんた 人間に影響 されすぎたな
+Dialogue: 0,0:32:37.45,0:32:39.12,socDefault,Raphael,0000,0000,0000,,ちょっと そこまで つき合いたまえ
+Dialogue: 0,0:32:39.74,0:32:40.58,socDefault,Chibi,0000,0000,0000,,いいけど
+Dialogue: 0,0:32:40.87,0:32:42.62,socDefault,Chibi,0000,0000,0000,,竹やぶじゃない ここ
+Dialogue: 0,0:32:42.96,0:32:44.58,socDefault,Chibi,0000,0000,0000,,すごく 葉っぱが 散るわ
+Dialogue: 0,0:32:45.04,0:32:46.00,socDefault,Raphael,0000,0000,0000,,春だからね
+Dialogue: 0,0:32:49.34,0:32:51.05,socDefault,Chibi,0000,0000,0000,,どうして 春だと 散るの
+Dialogue: 0,0:32:51.71,0:32:53.17,socDefault,Chibi,0000,0000,0000,,どうして ここへ 来たの
+Dialogue: 0,0:32:53.59,0:32:54.13,socDefault,Raphael,0000,0000,0000,,見ろや
+Dialogue: 0,0:33:04.52,0:33:05.73,socDefault,Chibi,0000,0000,0000,,どうしたの
+Dialogue: 0,0:33:06.19,0:33:07.10,socDefault,Chibi,0000,0000,0000,,病気？
+Dialogue: 0,0:33:08.15,0:33:10.11,socDefault,Raphael,0000,0000,0000,,死んだんだ… 老衰で
+Dialogue: 0,0:33:10.11,0:33:11.28,socDefault,Chibi,0000,0000,0000,,「死んだ」って？
+Dialogue: 0,0:33:11.28,0:33:14.20,socDefault,Raphael,0000,0000,0000,,魂と肉体が 分離して 魂は空に
+Dialogue: 0,0:33:14.20,0:33:16.03,socDefault,Raphael,0000,0000,0000,,肉体は 朽ちること
+Dialogue: 0,0:33:19.03,0:33:20.83,socDefault,Chibi,0000,0000,0000,,「くちる」って？ くさること？
+Dialogue: 0,0:33:20.95,0:33:21.70,socDefault,Raphael,0000,0000,0000,,そうだ
+Dialogue: 0,0:33:22.04,0:33:23.62,socDefault,Chibi,0000,0000,0000,,そんなの イヤだ
+Dialogue: 0,0:33:23.62,0:33:24.75,socDefault,Raphael,0000,0000,0000,,仕方ないんだよ
+Dialogue: 0,0:33:25.79,0:33:28.54,socDefault,Raphael,0000,0000,0000,,でも この顔 笑ってるみたいだろ
+Dialogue: 0,0:33:28.54,0:33:29.92,socDefault,Chibi,0000,0000,0000,,少しね
+Dialogue: 0,0:33:30.17,0:33:35.80,socDefault,Raphael,0000,0000,0000,,もう 息が 薄くなったころ おれが 腕枕をしてやると
+Dialogue: 0,0:33:35.80,0:33:36.93,socDefault,Raphael,0000,0000,0000,,こいつ 言ったんだ
+Dialogue: 0,0:33:37.72,0:33:39.05,socDefault,Raphael,0000,0000,0000,,「綿の国だ…」
+Dialogue: 0,0:33:39.80,0:33:41.43,socDefault,Raphael,0000,0000,0000,,「とても すてきだ」って
+Dialogue: 0,0:33:46.56,0:33:49.48,socDefault,Raphael,0000,0000,0000,,気ままな 一生を送った いいやつさ
+Dialogue: 0,0:33:49.98,0:33:55.36,socDefault,Raphael,0000,0000,0000,,おれが 子どもの時分に よく 綿の国の 夢物語を 聞かせてくれた
+Dialogue: 0,0:33:56.40,0:33:58.07,socDefault,Chibi,0000,0000,0000,,綿の国って？
+Dialogue: 0,0:33:58.07,0:34:00.12,socDefault,Raphael,0000,0000,0000,,架空の国さ
+Dialogue: 0,0:34:00.12,0:34:03.95,socDefault,Raphael,0000,0000,0000,,いつか 探し当てようという 真綿の原の ある国で
+Dialogue: 0,0:34:05.20,0:34:13.71,socDefault,Raphael,0000,0000,0000,,真っ白で 身も心も 沈みこむような すてきな 香りがする 一面の 綿の原
+Dialogue: 0,0:34:15.30,0:34:18.84,socDefault,Raphael,0000,0000,0000,,そこには 目も覚めるような 美しいお姫様がいて
+Dialogue: 0,0:34:18.84,0:34:22.85,socDefault,Raphael,0000,0000,0000,,たどり着くと 優しく せっぷんして くれるんだとさ
+Dialogue: 0,0:34:32.90,0:34:34.19,socDefault,Chibi,0000,0000,0000,,すごいじゃない！
+Dialogue: 0,0:34:34.78,0:34:40.82,socDefault,Chibi,0000,0000,0000,,え じゃあ… あの おじいさん猫は 人間にならないで 猫のまま ってことじゃない
+Dialogue: 0,0:34:41.07,0:34:42.83,socDefault,Raphael,0000,0000,0000,,待ちに待った ご正解
+Dialogue: 0,0:34:42.83,0:34:45.66,socDefault,Raphael,0000,0000,0000,,分かっただろ 猫は 人間にならない
+Dialogue: 0,0:34:46.25,0:34:49.04,socDefault,Raphael,0000,0000,0000,,猫は 猫から生まれて 猫で 終わる
+Dialogue: 0,0:34:49.37,0:34:51.79,socDefault,Chibi,0000,0000,0000,,じゃあ あたしも 猫から生まれたの？
+Dialogue: 0,0:34:52.21,0:34:54.30,socDefault,Chibi,0000,0000,0000,,じゃ 行ってしまった お母さんは？
+Dialogue: 0,0:34:54.84,0:34:58.26,socDefault,Raphael,0000,0000,0000,,きっと きみを拾ったか どこからか もらったんだ
+Dialogue: 0,0:35:00.30,0:35:03.18,socDefault,Chibi,0000,0000,0000,,じゃあ あたしの お母さん猫は どこにいるの
+Dialogue: 0,0:35:03.47,0:35:05.06,socDefault,Raphael,0000,0000,0000,,それは誰にも 分からない
+Dialogue: 0,0:35:05.68,0:35:07.18,socDefault,Raphael,0000,0000,0000,,猫の ほとんどは そうだよ
+Dialogue: 0,0:35:07.68,0:35:08.98,socDefault,Raphael,0000,0000,0000,,この おれだって…
+Dialogue: 0,0:35:10.39,0:35:12.35,socDefault,Raphael,0000,0000,0000,,もうひとつ 言いたいことがあるんだ
+Dialogue: 0,0:35:13.02,0:35:15.77,socDefault,Raphael,0000,0000,0000,,その 綿の国で待ってる お姫様っていうのが…
+Dialogue: 0,0:35:17.15,0:35:19.65,socDefault,Raphael,0000,0000,0000,,ホワイトフィールド という 名前なんだそうだけど
+Dialogue: 0,0:35:21.53,0:35:22.66,socDefault,Raphael,0000,0000,0000,,おい 聞きなよ
+Dialogue: 0,0:35:22.95,0:35:23.78,socDefault,Chibi,0000,0000,0000,,聞いてるよ
+Dialogue: 0,0:35:24.16,0:35:30.41,socDefault,Raphael,0000,0000,0000,,おれ あんたを 初めてみたとき 猫の直感で 「これが おれの ホワイトフィールドだ」 って思ったんだ
+Dialogue: 0,0:35:31.79,0:35:33.08,socDefault,Raphael,0000,0000,0000,,直感は 確かだぜ
+Dialogue: 0,0:35:33.38,0:35:35.00,socDefault,Raphael,0000,0000,0000,,おれは あんたに一目ぼれさ
+Dialogue: 0,0:35:35.25,0:35:38.51,socDefault,Raphael,0000,0000,0000,,あんたは 成長したら 誰もかなわぬ 美しい猫になるよ
+Dialogue: 0,0:35:41.93,0:35:43.84,socDefault,Raphael,0000,0000,0000,,だから おれと旅に出よう
+Dialogue: 0,0:35:44.47,0:35:46.97,socDefault,Raphael,0000,0000,0000,,猫の猫たる 素晴らしさを 見つけるために！
+Dialogue: 0,0:35:47.26,0:35:50.14,socDefault,Chibi,0000,0000,0000,,「猫の直感」って あたし 信じてないんだ！
+Dialogue: 0,0:35:50.56,0:35:51.52,socDefault,Raphael,0000,0000,0000,,ホワイトフィールド！
+Dialogue: 0,0:35:52.56,0:35:53.90,socDefault,Raphael,0000,0000,0000,,ホワイトフィールド！
+Dialogue: 0,0:35:54.94,0:35:56.94,socDefault,Chibi,0000,0000,0000,,{\i1}人間に なれない なんて{\i0}
+Dialogue: 0,0:35:57.19,0:35:59.15,socDefault,Chibi,0000,0000,0000,,{\i1}猫のまま 死ぬなんて{\i0}
+Dialogue: 0,0:36:10.87,0:36:14.54,socDefault,Chibi,0000,0000,0000,,{\i1}それじゃ あんまり… あんまり…{\i0}
+Dialogue: 0,0:36:14.54,0:36:16.96,socDefault,Chibi,0000,0000,0000,,{\i1}あんまり ハンデが ありすぎるじゃない{\i0}
+Dialogue: 0,0:36:18.05,0:36:19.96,socDefault,Chibi,0000,0000,0000,,{\i1}なんで そんなこと 教えるのよ{\i0}
+Dialogue: 0,0:36:19.96,0:36:23.30,socDefault,Chibi,0000,0000,0000,,{\i1}なんで そんなこと… 教えるのよ{\i0}
+Dialogue: 0,0:36:24.55,0:36:28.43,socDefault,Chibi,0000,0000,0000,,{\i1}あたし… もう 砂 け散らかして トイレなんか しない{\i0}
+Dialogue: 0,0:36:29.26,0:36:31.06,socDefault,Chibi,0000,0000,0000,,{\i1}ゆかで 眠ることなんかしない{\i0}
+Dialogue: 0,0:36:31.81,0:36:33.94,socDefault,Chibi,0000,0000,0000,,{\i1}股間の お掃除も おおっぴらに しない{\i0}
+Dialogue: 0,0:36:34.69,0:36:36.19,socDefault,Chibi,0000,0000,0000,,{\i1}洗顔方法も 変える{\i0}
+Dialogue: 0,0:36:37.19,0:36:41.24,socDefault,Chibi,0000,0000,0000,,{\i1}人間と おんなじことをして 人間になる！{\i0}
+Dialogue: 0,0:37:00.75,0:37:03.63,socDefault,Chibi,0000,0000,0000,,まず初めは… トイレ！
+Dialogue: 0,0:37:08.93,0:37:10.64,socDefault,Chibi,0000,0000,0000,,砂がない
+Dialogue: 0,0:37:12.98,0:37:14.69,socDefault,Chibi,0000,0000,0000,,どっかに あるのかな？
+Dialogue: 0,0:37:17.35,0:37:18.86,socDefault,Chibi,0000,0000,0000,,あれ なんだろう？
+Dialogue: 0,0:37:20.77,0:37:22.99,socDefault,Chibi,0000,0000,0000,,あそこに 砂が入ってるのかな
+Dialogue: 0,0:37:38.21,0:37:39.84,socDefault,Chibi,0000,0000,0000,,あれに つかまって のぼるか
+Dialogue: 0,0:37:43.46,0:37:44.67,socDefault,Chibi,0000,0000,0000,,よいしょ
+Dialogue: 0,0:37:51.60,0:37:52.60,socDefault,Chibi,0000,0000,0000,,よいしょ
+Dialogue: 0,0:38:00.77,0:38:01.82,socDefault,Chibi,0000,0000,0000,,よーし！
+Dialogue: 0,0:38:13.99,0:38:14.91,socDefault,Mom,0000,0000,0000,,あら？
+Dialogue: 0,0:38:16.71,0:38:19.25,socDefault,Mom,0000,0000,0000,,トイレ 誰も入ってないはずなのに
+Dialogue: 0,0:38:23.00,0:38:25.38,socDefault,Mom,0000,0000,0000,,お父さん お父さん！
+Dialogue: 0,0:38:27.05,0:38:29.13,socDefault,Mom,0000,0000,0000,,猫が トイレに つ つ 詰まってる！
+Dialogue: 0,0:38:29.13,0:38:30.09,socDefault,Dad,0000,0000,0000,,なんだって？
+Dialogue: 0,0:38:35.56,0:38:38.19,socDefault,Dad,0000,0000,0000,,発見が 早くて 良かった
+Dialogue: 0,0:38:40.94,0:38:43.40,socDefault,Dad,0000,0000,0000,,さあ 部屋に 入ってなさい
+Dialogue: 0,0:38:44.98,0:38:47.69,socDefault,Mom,0000,0000,0000,,あの 出しといても いいんじゃ ありません
+Dialogue: 0,0:38:48.15,0:38:51.11,socDefault,Mom,0000,0000,0000,,それじゃ いつまでも アレルギー 治りませんし
+Dialogue: 0,0:38:52.41,0:38:56.16,socDefault,Dad,0000,0000,0000,,しかしなあ また熱 出されちゃ かなわんよ
+Dialogue: 0,0:38:59.16,0:39:01.67,socDefault,Dad,0000,0000,0000,,治るどころか 悪循環だ
+Dialogue: 0,0:39:04.00,0:39:07.76,socDefault,Mom,0000,0000,0000,,ひとなで ひとなで できればね…
+Dialogue: 0,0:39:08.34,0:39:11.89,socDefault,Mom,0000,0000,0000,,どうして あんな小さな生き物 一匹 好きに なれないんでしょう
+Dialogue: 0,0:39:12.30,0:39:13.43,socDefault,Mom,0000,0000,0000,,わたしのからだは
+Dialogue: 0,0:39:13.85,0:39:16.47,socDefault,Dad,0000,0000,0000,,そりゃ 猫アレルギー だからだろ？
+Dialogue: 0,0:39:17.39,0:39:23.06,socDefault,Mom,0000,0000,0000,,あなたの答って ときどき どうしてそう 夢がないんでしょ
+Dialogue: 0,0:39:23.52,0:39:24.61,socDefault,Dad,0000,0000,0000,,いやあ 済まん
+Dialogue: 0,0:39:32.82,0:39:35.49,socDefault,Mom,0000,0000,0000,,きゃあ ね ね ね ね 猫が来てる
+Dialogue: 0,0:39:35.49,0:39:36.70,socDefault,Mom,0000,0000,0000,,あなた！
+Dialogue: 0,0:39:36.70,0:39:38.41,socDefault,Mom,0000,0000,0000,,あ あなた！
+Dialogue: 0,0:39:38.41,0:39:40.66,socDefault,Dad,0000,0000,0000,,どこから 抜け出たんだ
+Dialogue: 0,0:39:41.46,0:39:44.00,socDefault,Chibi,0000,0000,0000,,{\i1}人間のように こうして食べて{\i0}
+Dialogue: 0,0:39:44.00,0:39:45.59,socDefault,Chibi,0000,0000,0000,,{\i1}人間になる！{\i0}
+Dialogue: 0,0:39:47.88,0:39:48.46,socDefault,Dad,0000,0000,0000,,こら
+Dialogue: 0,0:39:48.92,0:39:49.76,socDefault,Dad,0000,0000,0000,,チビ
+Dialogue: 0,0:39:52.22,0:39:53.14,socDefault,Dad,0000,0000,0000,,こいつ！
+Dialogue: 0,0:39:53.89,0:39:57.10,socDefault,Dad,0000,0000,0000,,逆らう 気だな！
+Dialogue: 0,0:39:58.31,0:39:59.56,socDefault,Dad,0000,0000,0000,,よーし
+Dialogue: 0,0:40:02.94,0:40:04.40,socDefault,Dad,0000,0000,0000,,いててて
+Dialogue: 0,0:40:20.29,0:40:23.17,socDefault,Dad,0000,0000,0000,,ほら おいで チビ！ こっちおいで ほら
+Dialogue: 0,0:40:23.17,0:40:25.58,socDefault,Dad,0000,0000,0000,,ほらほらほら ほら！
+Dialogue: 0,0:40:29.00,0:40:31.47,socDefault,Dad,0000,0000,0000,,ほら いい物あげるよ
+Dialogue: 0,0:40:31.47,0:40:33.63,socDefault,Dad,0000,0000,0000,,おいしいよ ほら
+Dialogue: 0,0:40:34.22,0:40:35.30,socDefault,Dad,0000,0000,0000,,よーし！
+Dialogue: 0,0:40:35.76,0:40:37.26,socDefault,Dad,0000,0000,0000,,なにがなんでも つかまえて やるぞ
+Dialogue: 0,0:40:44.14,0:40:44.90,socDefault,Dad,0000,0000,0000,,二三子！
+Dialogue: 0,0:40:45.06,0:40:45.77,socDefault,Tokio,0000,0000,0000,,やっぱり
+Dialogue: 0,0:40:46.36,0:40:49.73,socDefault,Dad,0000,0000,0000,,時夫 どうしたんだ？ 猫は バスケットに 入れたんじゃ なかったのかい
+Dialogue: 0,0:40:50.23,0:40:53.28,socDefault,Tokio,0000,0000,0000,,途中で 気がついたんだ… 入ってたのは ネズミだった
+Dialogue: 0,0:40:58.12,0:40:58.78,socDefault,Tokio,0000,0000,0000,,チビ？
+Dialogue: 0,0:41:01.62,0:41:02.62,socDefault,Tokio,0000,0000,0000,,ばか！
+Dialogue: 0,0:41:09.71,0:41:11.76,socDefault,Tokio,0000,0000,0000,,チビ！ バスケットに戻れ
+Dialogue: 0,0:41:11.76,0:41:12.84,socDefault,Tokio,0000,0000,0000,,チビ！
+Dialogue: 0,0:41:21.64,0:41:25.39,socDefault,Chibi,0000,0000,0000,,時夫が 「ばか」 って あたしの頭ぶったら
+Dialogue: 0,0:41:25.39,0:41:27.81,socDefault,Chibi,0000,0000,0000,,あたしの頭が 返事した
+Dialogue: 0,0:41:27.81,0:41:29.40,socDefault,Chibi,0000,0000,0000,,「ばかだよ」って
+Dialogue: 0,0:41:30.40,0:41:32.65,socDefault,Chibi,0000,0000,0000,,あー 救われない
+Dialogue: 0,0:41:33.74,0:41:35.61,socDefault,Chibi,0000,0000,0000,,あの猫 呼んでみよ…
+Dialogue: 0,0:41:37.16,0:41:38.62,socDefault,Chibi,0000,0000,0000,,ラフィエル！
+Dialogue: 0,0:41:44.45,0:41:47.17,socDefault,Raphael,0000,0000,0000,,ご用は 姫君？
+Dialogue: 0,0:41:49.00,0:41:56.76,socDefault,Chibi,0000,0000,0000,,ラフィエル あたし 本当に 誰にも負けない 美しい猫になれる？
+Dialogue: 0,0:41:59.43,0:42:00.60,socDefault,Raphael,0000,0000,0000,,なれるとも
+Dialogue: 0,0:42:01.68,0:42:02.76,socDefault,Raphael,0000,0000,0000,,保証するぜ
+Dialogue: 0,0:42:02.76,0:42:06.44,socDefault,Raphael,0000,0000,0000,,空色の目 全身 真綿色… 素晴らしい！
+Dialogue: 0,0:42:08.94,0:42:13.53,socDefault,Raphael,0000,0000,0000,,ただし！ このマニアは まだ その価値を 全然 分かってないがね
+Dialogue: 0,0:42:14.48,0:42:17.65,socDefault,Raphael,0000,0000,0000,,ホワイトフィールド… おれと 旅に出たくなったら
+Dialogue: 0,0:42:17.65,0:42:19.95,socDefault,Raphael,0000,0000,0000,,いつでも あの竹やぶに 来いよ
+Dialogue: 0,0:42:20.62,0:42:21.45,socDefault,Maniac,0000,0000,0000,,待ってくれ
+Dialogue: 0,0:42:23.16,0:42:25.79,socDefault,Raphael,0000,0000,0000,,ここまでおいで 猫マニア！
+Dialogue: 0,0:42:26.20,0:42:27.16,socDefault,Maniac,0000,0000,0000,,待ってくれ！
+Dialogue: 0,0:42:37.88,0:42:38.72,socDefault,Tokio,0000,0000,0000,,行こう
+Dialogue: 0,0:42:39.18,0:42:41.05,socDefault,Tokio,0000,0000,0000,,もう 怒ってないよ
+Dialogue: 0,0:43:13.21,0:43:15.80,socDefault,Chibi,0000,0000,0000,,{\i1}昨日のように バスケットに乗って{\i0}
+Dialogue: 0,0:43:17.13,0:43:19.34,socDefault,Chibi,0000,0000,0000,,{\i1}昨日のように 予備校へ行って{\i0}
+Dialogue: 0,0:43:20.01,0:43:23.14,socDefault,Chibi,0000,0000,0000,,{\i1}そいでもって 昨日の道を 通る{\i0}
+Dialogue: 0,0:43:30.56,0:43:31.19,socDefault,Chibi,0000,0000,0000,,にゃあ！
+Dialogue: 0,0:43:31.90,0:43:32.44,socDefault,Tokio,0000,0000,0000,,チビ
+Dialogue: 0,0:43:32.81,0:43:34.82,socDefault,Tokio,0000,0000,0000,,チビ こら 待ちな
+Dialogue: 0,0:43:35.23,0:43:37.53,socDefault,Tokio,0000,0000,0000,,チビ！ チビ！
+Dialogue: 0,0:43:37.78,0:43:38.65,socDefault,Tokio,0000,0000,0000,,チビ！
+Dialogue: 0,0:43:47.16,0:43:49.66,socDefault,Tokio,0000,0000,0000,,{\i1}やっぱり 無理だったんだ…{\i0}
+Dialogue: 0,0:43:50.71,0:43:53.29,socDefault,Tokio,0000,0000,0000,,{\i1}こんな狭いバスケットに入れて 連れて歩くなんて{\i0}
+Dialogue: 0,0:43:53.79,0:43:56.04,socDefault,Mitsuami,0000,0000,0000,,これ… あなたの猫？
+Dialogue: 0,0:43:58.71,0:44:00.17,socDefault,Tokio,0000,0000,0000,,そ そうです
+Dialogue: 0,0:44:03.39,0:44:05.47,socDefault,Mitsuami,0000,0000,0000,,わたしに 飛びついてきたの
+Dialogue: 0,0:44:06.30,0:44:06.97,socDefault,Mitsuami,0000,0000,0000,,はい
+Dialogue: 0,0:44:10.93,0:44:13.23,socDefault,Tokio,0000,0000,0000,,この猫… もらってください
+Dialogue: 0,0:44:13.81,0:44:14.35,socDefault,Chibi,0000,0000,0000,,{\i1}え？{\i0}
+Dialogue: 0,0:44:17.07,0:44:20.03,socDefault,Tokio,0000,0000,0000,,うちにいると 無理じい しなきゃ ならないんです
+Dialogue: 0,0:44:20.03,0:44:22.53,socDefault,Tokio,0000,0000,0000,,だから… もらって ください
+Dialogue: 0,0:44:23.16,0:44:23.95,socDefault,Mitsuami,0000,0000,0000,,いいわ
+Dialogue: 0,0:44:24.87,0:44:26.28,socDefault,Tokio,0000,0000,0000,,バスケットは 付録です
+Dialogue: 0,0:44:27.20,0:44:28.08,socDefault,Chibi,0000,0000,0000,,{\i1}時夫…{\i0}
+Dialogue: 0,0:44:28.08,0:44:29.29,socDefault,Chibi,0000,0000,0000,,{\i1}行っちゃだめ！{\i0}
+Dialogue: 0,0:44:29.29,0:44:31.54,socDefault,Chibi,0000,0000,0000,,{\i1}この人と 話をしなきゃ だめ！{\i0}
+Dialogue: 0,0:44:34.62,0:44:35.79,socDefault,Tokio,0000,0000,0000,,{\i1}これでいいんだ{\i0}
+Dialogue: 0,0:44:36.46,0:44:38.09,socDefault,Tokio,0000,0000,0000,,{\i1}猫を 好きそうな子だった{\i0}
+Dialogue: 0,0:44:38.09,0:44:41.09,socDefault,Tokio,0000,0000,0000,,{\i1}小さな頭を たたいてしまった あの感触{\i0}
+Dialogue: 0,0:44:41.09,0:44:43.09,socDefault,Tokio,0000,0000,0000,,{\i1}この手の どえらい痛み{\i0}
+Dialogue: 0,0:44:43.09,0:44:45.14,socDefault,Tokio,0000,0000,0000,,{\i1}もう あんな気分は たくさんだ{\i0}
+Dialogue: 0,0:44:45.55,0:44:47.51,socDefault,Tokio,0000,0000,0000,,{\i1}忘れること！ 忘れること！{\i0}
+Dialogue: 0,0:44:53.39,0:44:54.39,socDefault,Mitsuami,0000,0000,0000,,あの…
+Dialogue: 0,0:44:58.40,0:45:00.32,socDefault,Mitsuami,0000,0000,0000,,猫を 探してください
+Dialogue: 0,0:45:02.15,0:45:03.65,socDefault,Mitsuami,0000,0000,0000,,どこかに 行っちゃったんです
+Dialogue: 0,0:45:03.65,0:45:04.99,socDefault,Mitsuami,0000,0000,0000,,探してください
+Dialogue: 0,0:45:06.16,0:45:08.58,socDefault,Tokio,0000,0000,0000,,チビ！ チビ猫！
+Dialogue: 0,0:45:11.75,0:45:12.95,socDefault,Mitsuami,0000,0000,0000,,子猫さん！
+Dialogue: 0,0:45:13.58,0:45:14.41,socDefault,Tokio,0000,0000,0000,,チビ！
+Dialogue: 0,0:45:18.96,0:45:21.38,socDefault,Tokio,0000,0000,0000,,ぼくは こっちを… きみは向こうを…
+Dialogue: 0,0:45:21.38,0:45:22.01,socDefault,Mitsuami,0000,0000,0000,,ええ
+Dialogue: 0,0:45:25.51,0:45:26.68,socDefault,Tokio,0000,0000,0000,,チビ猫！
+Dialogue: 0,0:45:27.76,0:45:28.85,socDefault,Tokio,0000,0000,0000,,チビ！
+Dialogue: 0,0:45:35.94,0:45:37.02,socDefault,Mitsuami,0000,0000,0000,,子猫さん！
+Dialogue: 0,0:45:45.61,0:45:46.86,socDefault,Tokio,0000,0000,0000,,チビ猫 いた？
+Dialogue: 0,0:45:46.99,0:45:47.82,socDefault,Mitsuami,0000,0000,0000,,ううん
+Dialogue: 0,0:45:48.95,0:45:49.95,socDefault,Chibi,0000,0000,0000,,にゃあ
+Dialogue: 0,0:45:52.29,0:45:54.25,socDefault,Tokio & Mitsuami,0000,0000,0000,,あ！ いた！
+Dialogue: 0,0:45:54.83,0:45:56.08,socDefault,Tokio,0000,0000,0000,,チビ猫！
+Dialogue: 0,0:45:56.08,0:45:58.33,socDefault,Tokio,0000,0000,0000,,良かった チビ！
+Dialogue: 0,0:46:07.05,0:46:10.89,socDefault,Mitsuami,0000,0000,0000,,やっぱり 少し 無理でも あなたが 飼うほうが いいみたい
+Dialogue: 0,0:46:11.18,0:46:12.89,socDefault,Tokio,0000,0000,0000,,うん そうする
+Dialogue: 0,0:46:14.06,0:46:16.64,socDefault,Tokio (to Chibi),0000,0000,0000,,ごめんよ よそに やるなんて 言って
+Dialogue: 0,0:46:17.52,0:46:22.94,socDefault,Mitsuami,0000,0000,0000,,この前 本屋さんで この猫のこと 頼みたかったのね
+Dialogue: 0,0:46:23.19,0:46:24.65,socDefault,Tokio,0000,0000,0000,,あれは 違うんだ
+Dialogue: 0,0:46:24.94,0:46:26.19,socDefault,Tokio,0000,0000,0000,,あれは その…
+Dialogue: 0,0:46:26.86,0:46:30.24,socDefault,Tokio,0000,0000,0000,,きみが 法律関係の本 買うのを見て ぐさっときて
+Dialogue: 0,0:46:30.24,0:46:31.83,socDefault,Tokio,0000,0000,0000,,なにか 言いたかったんだ
+Dialogue: 0,0:46:32.45,0:46:36.45,socDefault,Mitsuami,0000,0000,0000,,ふーん… それは二通りの意味に 取れるわね
+Dialogue: 0,0:46:36.71,0:46:39.87,socDefault,Mitsuami,0000,0000,0000,,ひとつは わたしの買う本に ぐさっときた
+Dialogue: 0,0:46:39.87,0:46:43.04,socDefault,Mitsuami,0000,0000,0000,,もうひとつは 本を買うわたしに ぐさっときた
+Dialogue: 0,0:46:43.50,0:46:47.17,socDefault,Tokio,0000,0000,0000,,うん… それは こんな感じだった
+Dialogue: 0,0:46:48.17,0:46:53.39,socDefault,Tokio,0000,0000,0000,,かわききった 荒野で 冷たい水を 持った女神に 出会った ショック
+Dialogue: 0,0:46:53.76,0:46:55.81,socDefault,Mitsuami,0000,0000,0000,,あなたも 法律 勉強してるの？
+Dialogue: 0,0:46:56.47,0:46:58.64,socDefault,Tokio,0000,0000,0000,,目指してた… でも…
+Dialogue: 0,0:46:59.35,0:47:01.15,socDefault,Tokio,0000,0000,0000,,かわいちまった と いうことかな
+Dialogue: 0,0:47:02.69,0:47:05.32,socDefault,Mitsuami,0000,0000,0000,,じゃあ はい 女神から コーラ
+Dialogue: 0,0:47:05.57,0:47:06.61,socDefault,Tokio,0000,0000,0000,,サンキュー
+Dialogue: 0,0:47:07.86,0:47:09.49,socDefault,Tokio,0000,0000,0000,,おれ 諏訪野時夫
+Dialogue: 0,0:47:09.74,0:47:11.32,socDefault,Tokio,0000,0000,0000,,きみ 大学生？
+Dialogue: 0,0:47:12.07,0:47:13.99,socDefault,Mitsuami,0000,0000,0000,,ええ 法科の一年
+Dialogue: 0,0:47:13.99,0:47:15.41,socDefault,Mitsuami,0000,0000,0000,,稲田 美津子
+Dialogue: 0,0:47:16.16,0:47:21.42,socDefault,Mitsuami,0000,0000,0000,,そうね わたしの 女神の水はね きっと あれだろうと思うわ
+Dialogue: 0,0:47:21.67,0:47:22.75,socDefault,Tokio,0000,0000,0000,,あれって？
+Dialogue: 0,0:47:22.92,0:47:29.97,socDefault,Mitsuami,0000,0000,0000,,父よ… 若いころ わたしが生まれる前 法律 勉強してて 無理が たたって 死んでしまったんですって
+Dialogue: 0,0:47:30.30,0:47:34.76,socDefault,Mitsuami,0000,0000,0000,,でも それ聞いたの わたしが法科の大学 受かってから なのよね
+Dialogue: 0,0:47:35.22,0:47:39.18,socDefault,Mitsuami,0000,0000,0000,,父の情熱が たやされないで わたしのなかに あるわけよ
+Dialogue: 0,0:47:39.39,0:47:40.98,socDefault,Mitsuami,0000,0000,0000,,これは すごいと思わない？
+Dialogue: 0,0:47:40.98,0:47:45.61,socDefault,Mitsuami,0000,0000,0000,,一度も 会ったことのない 一度も 話したことのない わたしによ
+Dialogue: 0,0:47:48.36,0:47:50.65,socDefault,Chibi,0000,0000,0000,,{\i1}一度も 会ったことのない お父さん{\i0}
+Dialogue: 0,0:47:50.90,0:47:53.32,socDefault,Chibi,0000,0000,0000,,{\i1}一度も 会ったことのない お母さん{\i0}
+Dialogue: 0,0:47:55.91,0:47:58.24,socDefault,Chibi,0000,0000,0000,,{\i1}あたし 今 元気です{\i0}
+Dialogue: 0,0:47:58.62,0:48:01.54,socDefault,Chibi,0000,0000,0000,,{\i1}万事 計画通り うまく いきました{\i0}
+Dialogue: 0,0:48:01.54,0:48:04.33,socDefault,Chibi,0000,0000,0000,,{\i1}とても うまく いきました…{\i0}
+Dialogue: 0,0:48:05.54,0:48:07.05,socDefault,Mitsuami,0000,0000,0000,,それじゃ
+Dialogue: 0,0:48:08.55,0:48:10.84,socDefault,Mitsuami,0000,0000,0000,,わたし 夕食の したくもあるし
+Dialogue: 0,0:48:11.30,0:48:13.18,socDefault,Mitsuami,0000,0000,0000,,子猫さん バイバイ
+Dialogue: 0,0:48:13.68,0:48:14.89,socDefault,Chibi,0000,0000,0000,,バイバイ
+Dialogue: 0,0:48:15.68,0:48:17.26,socDefault,Tokio,0000,0000,0000,,また 会える？
+Dialogue: 0,0:48:17.56,0:48:20.93,socDefault,Mitsuami,0000,0000,0000,,ええ あの本屋さんには よく行くから…
+Dialogue: 0,0:48:21.77,0:48:22.60,socDefault,Mitsuami,0000,0000,0000,,さよなら
+Dialogue: 50,0:48:22.60,0:48:31.44,socSong,Song,0000,0000,0000,,{\i1}少しずつ大人になる{\i0}
+Dialogue: 50,0:48:31.44,0:48:41.00,socSong,Song,0000,0000,0000,,{\i1}悲しみをかぞえるたびに{\i0}
+Dialogue: 50,0:48:41.00,0:48:50.42,socSong,Song,0000,0000,0000,,{\i1}鳥には鳥の名前がある{\i0}
+Dialogue: 50,0:48:50.42,0:48:59.06,socSong,Song,0000,0000,0000,,{\i1}鳥は知らないわたしの名前{\i0}
+Dialogue: 50,0:48:59.06,0:49:09.40,socSong,Song,0000,0000,0000,,{\i1}いつの日か みんな 一つになれるまで{\i0}
+Dialogue: 50,0:49:09.40,0:49:14.57,socSong,Song,0000,0000,0000,,{\i1}鳥は鳥に 人は人に{\i0}
+Dialogue: 50,0:49:14.57,0:49:18.74,socSong,Song,0000,0000,0000,,{\i1}それぞれの時{\i0}
+Dialogue: 50,0:49:18.74,0:49:24.08,socSong,Song,0000,0000,0000,,{\i1}風は風に 星は星に{\i0}
+Dialogue: 50,0:49:24.08,0:49:30.25,socSong,Song,0000,0000,0000,,{\fad(0,2000)}{\i1}それぞれの夢{\i0}
+Dialogue: 0,0:49:47.77,0:49:50.27,socDefault,Chibi,0000,0000,0000,,あっ ラフィエルの 声だ
+Dialogue: 0,0:49:50.77,0:49:52.23,socDefault,Maniac,0000,0000,0000,,やった
+Dialogue: 0,0:49:52.23,0:49:53.86,socDefault,Maniac,0000,0000,0000,,とうとう つかまえたぞ
+Dialogue: 0,0:49:53.86,0:49:56.70,socDefault,Raphael,0000,0000,0000,,しまった 夜だと思って 油断した
+Dialogue: 0,0:49:57.32,0:49:58.62,socDefault,Maniac,0000,0000,0000,,長い夢だった
+Dialogue: 0,0:49:58.78,0:50:00.95,socDefault,Maniac,0000,0000,0000,,ああ ふるえがくる
+Dialogue: 0,0:50:02.24,0:50:03.33,socDefault,Chibi,0000,0000,0000,,時夫！
+Dialogue: 0,0:50:05.25,0:50:07.54,socDefault,Chibi,0000,0000,0000,,{\i1}ラフィエルが つかまった！{\i0}
+Dialogue: 0,0:50:07.79,0:50:08.54,socDefault,Tokio,0000,0000,0000,,どうした？
+Dialogue: 0,0:50:08.54,0:50:09.92,socDefault,Chibi,0000,0000,0000,,{\i1}ラフィエル！ ラフィエル！{\i0}
+Dialogue: 0,0:50:09.92,0:50:10.96,socDefault,Chibi,0000,0000,0000,,{\i1}マニアに マニアに…{\i0}
+Dialogue: 0,0:50:10.96,0:50:12.42,socDefault,Chibi,0000,0000,0000,,{\i1}助けて 時夫！{\i0}
+Dialogue: 0,0:50:12.42,0:50:14.34,socDefault,Tokio,0000,0000,0000,,もう 腹 すかしたのか？
+Dialogue: 0,0:50:12.80,0:50:14.38,socDefault,Chibi,0000,0000,0000,,{\i1}マニアに… 時夫！{\i0}
+Dialogue: 0,0:50:14.96,0:50:17.88,socDefault,Chibi,0000,0000,0000,,{\i1}違う違う ラフィエルが つかまった{\i0}
+Dialogue: 0,0:50:17.88,0:50:19.97,socDefault,Chibi,0000,0000,0000,,{\i1}マニアに 連れてかれた{\i0}
+Dialogue: 0,0:50:19.97,0:50:22.10,socDefault,Chibi,0000,0000,0000,,{\i1}あっち！ あっち！{\i0}
+Dialogue: 0,0:50:22.10,0:50:23.97,socDefault,Chibi,0000,0000,0000,,{\i1}ラフィエル ラフィエル{\i0}
+Dialogue: 0,0:50:24.52,0:50:25.98,socDefault,Tokio,0000,0000,0000,,なにか あるのかな？
+Dialogue: 0,0:50:26.73,0:50:28.39,socDefault,Tokio,0000,0000,0000,,あ 猫マニアだ
+Dialogue: 0,0:50:29.06,0:50:31.06,socDefault,Chibi,0000,0000,0000,,{\i1}こっち！ こっち！{\i0}
+Dialogue: 0,0:50:44.29,0:50:46.41,socDefault,Tokio,0000,0000,0000,,あの もしかしたら…
+Dialogue: 0,0:50:46.70,0:50:48.33,socDefault,Maniac,0000,0000,0000,,ああ きみですか
+Dialogue: 0,0:50:48.75,0:50:50.50,socDefault,Maniac,0000,0000,0000,,あの猫 やっと つかまえましたよ
+Dialogue: 0,0:50:51.00,0:50:52.67,socDefault,Maniac,0000,0000,0000,,これで 夢がかないました
+Dialogue: 0,0:50:53.38,0:50:55.42,socDefault,Tokio,0000,0000,0000,,この猫 野生のはずでしょ
+Dialogue: 0,0:50:55.67,0:50:58.76,socDefault,Tokio,0000,0000,0000,,野生ならば 放しておくのが マニアってもんじゃ ないんですか
+Dialogue: 0,0:50:59.18,0:51:00.47,socDefault,Maniac,0000,0000,0000,,それは違う
+Dialogue: 0,0:51:00.47,0:51:03.56,socDefault,Maniac,0000,0000,0000,,確保する 飼育する 分析する
+Dialogue: 0,0:51:03.76,0:51:05.27,socDefault,Maniac,0000,0000,0000,,それがマニアです
+Dialogue: 0,0:51:05.97,0:51:06.68,socDefault,Tokio,0000,0000,0000,,しかし！
+Dialogue: 0,0:51:06.68,0:51:08.27,socDefault,Maniac,0000,0000,0000,,失礼 急ぎますんで…
+Dialogue: 0,0:51:08.39,0:51:09.56,socDefault,Chibi,0000,0000,0000,,{\i1}ラフィエル{\i0}
+Dialogue: 0,0:51:10.65,0:51:11.77,socDefault,Chibi,0000,0000,0000,,{\i1}時夫！{\i0}
+Dialogue: 0,0:51:13.44,0:51:14.69,socDefault,Chibi,0000,0000,0000,,{\i1}今だ！{\i0}
+Dialogue: 0,0:51:18.03,0:51:19.65,socDefault,Maniac,0000,0000,0000,,わたしの猫！
+Dialogue: 0,0:51:32.08,0:51:33.75,socDefault,Maniac,0000,0000,0000,,ま 待ってくれ
+Dialogue: 0,0:51:33.84,0:51:35.00,socDefault,Maniac,0000,0000,0000,,待ってくれ
+Dialogue: 0,0:51:38.72,0:51:41.88,socDefault,Chibi,0000,0000,0000,,{\i1}ラフィエル… ふしぎな目 してた{\i0}
+Dialogue: 0,0:51:46.89,0:51:49.02,socDefault,Chibi,0000,0000,0000,,{\i1}時夫 ありがとう{\i0}
+Dialogue: 0,0:51:49.39,0:51:50.35,socDefault,Chibi,0000,0000,0000,,{\i1}ありがとうね{\i0}
+Dialogue: 0,0:51:53.86,0:51:54.77,socDefault,Mom,0000,0000,0000,,はい
+Dialogue: 0,0:52:12.46,0:52:14.13,socDefault,Mom,0000,0000,0000,,すごい食欲
+Dialogue: 0,0:52:14.13,0:52:15.75,socDefault,Mom,0000,0000,0000,,見とれて しまうわ
+Dialogue: 0,0:52:15.75,0:52:20.34,socDefault,Tokio,0000,0000,0000,,うん いろいろあって エネルギーが どんどん 必要に なりそうな気が するんだ
+Dialogue: 0,0:52:20.80,0:52:22.13,socDefault,Mom,0000,0000,0000,,ああ うれしい
+Dialogue: 0,0:52:22.13,0:52:25.80,socDefault,Mom,0000,0000,0000,,時夫が そんなふうに なるの わたし とっても うれしい
+Dialogue: 0,0:52:26.35,0:52:28.56,socDefault,Mom,0000,0000,0000,,うん なんだか 大丈夫みたい
+Dialogue: 0,0:52:28.97,0:52:30.31,socDefault,Dad,0000,0000,0000,,なにが？
+Dialogue: 0,0:52:30.43,0:52:31.85,socDefault,Mom,0000,0000,0000,,猫よ 猫
+Dialogue: 0,0:52:31.85,0:52:33.56,socDefault,Mom,0000,0000,0000,,なでられそうな 気分
+Dialogue: 0,0:52:33.90,0:52:36.69,socDefault,Tokio,0000,0000,0000,,よしなよ！ また発作 起きたら…
+Dialogue: 0,0:52:36.98,0:52:38.57,socDefault,Dad,0000,0000,0000,,おい 二三子
+Dialogue: 0,0:52:38.94,0:52:40.11,socDefault,Mom,0000,0000,0000,,猫さん！
+Dialogue: 0,0:52:41.49,0:52:42.32,socDefault,Mom,0000,0000,0000,,猫さん？
+Dialogue: 0,0:52:48.58,0:52:49.49,socDefault,Dad,0000,0000,0000,,言わんこっちゃない
+Dialogue: 0,0:52:49.49,0:52:51.16,socDefault,Dad,0000,0000,0000,,時夫 早くドアを閉めて！
+Dialogue: 0,0:52:52.75,0:52:53.83,socDefault,Tokio,0000,0000,0000,,ああ
+Dialogue: 0,0:52:54.58,0:52:57.09,socDefault,Chibi,0000,0000,0000,,{\i1}いいの 近づかなくても{\i0}
+Dialogue: 0,0:52:57.54,0:52:59.71,socDefault,Chibi,0000,0000,0000,,{\i1}あたし お母さん好きよ{\i0}
+Dialogue: 0,0:53:00.09,0:53:01.09,socDefault,Dad,0000,0000,0000,,大丈夫か
+Dialogue: 0,0:53:01.46,0:53:02.67,socDefault,Chibi,0000,0000,0000,,{\i1}お父さんも 好き{\i0}
+Dialogue: 0,0:53:02.97,0:53:04.51,socDefault,Tokio,0000,0000,0000,,水 持ってこようか？
+Dialogue: 0,0:53:06.55,0:53:09.85,socDefault,Chibi,0000,0000,0000,,{\i1}時夫は やっぱり いちばん好き{\i0}
+Dialogue: 0,0:53:14.77,0:53:17.77,socNote,Text,0000,0000,0000,,
+Dialogue: 0,0:53:17.11,0:53:19.19,socDefault,Chibi,0000,0000,0000,,{\i1}これ もらって行きます{\i0}
+Dialogue: 0,0:53:33.00,0:53:33.87,socDefault,Chibi,0000,0000,0000,,{\i1}さようなら{\i0}
+Dialogue: 0,0:53:34.08,0:53:37.58,socDefault,Chibi,0000,0000,0000,,{\i1}あたし ラフィエルと いっしょに 旅に出ます{\i0}
+Dialogue: 0,0:53:48.55,0:53:49.76,socDefault,Chibi,0000,0000,0000,,ラフィエル…？
+Dialogue: 0,0:53:55.44,0:53:57.15,socDefault,Chibi,0000,0000,0000,,ラフィエル どこ？
+Dialogue: 0,0:53:59.40,0:54:01.73,socDefault,Chibi,0000,0000,0000,,ラフィエル どこ？
+Dialogue: 0,0:54:19.79,0:54:21.84,socDefault,Chibi,0000,0000,0000,,ラフィエル！
+Dialogue: 0,0:54:22.46,0:54:24.26,socDefault,Chibi,0000,0000,0000,,ラフィエル！
+Dialogue: 0,0:54:25.34,0:54:27.84,socDefault,Chibi,0000,0000,0000,,ラフィエル…
+Dialogue: 0,0:54:37.77,0:54:44.11,socDefault,Chibi,0000,0000,0000,,一晩中 待ってたけど ラフィエルは とうとう 姿を現さなかった
+Dialogue: 0,0:54:45.40,0:54:48.74,socDefault,Chibi,0000,0000,0000,,どこ 行ってしまったんだろう ラフィエル
+Dialogue: 0,0:54:50.78,0:54:54.04,socDefault,Chibi,0000,0000,0000,,それにしても おなか すいた
+Dialogue: 0,0:54:59.33,0:55:00.25,socDefault,Chibi,0000,0000,0000,,だめだ
+Dialogue: 0,0:55:00.25,0:55:01.67,socDefault,Man,0000,0000,0000,,いらっしゃい いらっしゃい
+Dialogue: 0,0:55:01.67,0:55:03.96,socDefault,Man,0000,0000,0000,,刺身が うまいよ 奥さん どう？
+Dialogue: 0,0:55:03.96,0:55:05.34,socDefault,Man,0000,0000,0000,,安くしとくよ
+Dialogue: 0,0:55:05.92,0:55:07.63,socDefault,Chibi,0000,0000,0000,,うまそう！
+Dialogue: 0,0:55:09.51,0:55:11.34,socDefault,Woman,0000,0000,0000,,お刺身 もらおうかしら
+Dialogue: 0,0:55:11.76,0:55:13.60,socDefault,Man,0000,0000,0000,,いらっしゃい！ 刺身ね
+Dialogue: 0,0:55:13.60,0:55:15.10,socDefault,Chibi,0000,0000,0000,,{\i1}あたしも この刺身{\i0}
+Dialogue: 0,0:55:18.06,0:55:20.31,socDefault,Chibi,0000,0000,0000,,{\i1}いてて なんで ぶつんだよ{\i0}
+Dialogue: 0,0:55:20.90,0:55:24.44,socDefault,Chibi,0000,0000,0000,,{\i1}人間だって ああやって 指さして あいさつすれば{\i0}
+Dialogue: 0,0:55:24.44,0:55:26.32,socDefault,Chibi,0000,0000,0000,,{\i1}ちゃんと おじさんが 包んでくれて{\i0}
+Dialogue: 0,0:55:26.57,0:55:27.61,socDefault,Man,0000,0000,0000,,はい 毎度！
+Dialogue: 0,0:55:27.61,0:55:29.11,socDefault,Chibi,0000,0000,0000,,{\i1}って 言ってくれるのに{\i0}
+Dialogue: 0,0:55:29.82,0:55:32.99,socDefault,Chibi,0000,0000,0000,,{\i1}あっ あれれ 紙を渡した{\i0}
+Dialogue: 0,0:55:33.24,0:55:34.99,socDefault,Chibi,0000,0000,0000,,{\i1}そうか 正体はあれか{\i0}
+Dialogue: 0,0:55:34.99,0:55:37.20,socDefault,Chibi,0000,0000,0000,,{\i1}紙を 渡せば いいんだ きっと{\i0}
+Dialogue: 0,0:55:38.29,0:55:39.46,socDefault,Chibi,0000,0000,0000,,紙…
+Dialogue: 0,0:55:39.83,0:55:40.83,socDefault,Chibi,0000,0000,0000,,紙？
+Dialogue: 0,0:55:41.67,0:55:42.50,socDefault,Chibi,0000,0000,0000,,紙…
+Dialogue: 0,0:55:42.71,0:55:44.17,socDefault,Chibi,0000,0000,0000,,あった！
+Dialogue: 0,0:55:47.30,0:55:49.22,socDefault,Chibi,0000,0000,0000,,{\i1}おじさん 刺身 くれ{\i0}
+Dialogue: 0,0:55:53.97,0:55:56.39,socDefault,Chibi,0000,0000,0000,,{\i1}なんでよ 紙 持ってきた じゃない{\i0}
+Dialogue: 0,0:55:57.35,0:55:58.52,socDefault,Man,0000,0000,0000,,はい 毎度あり！
+Dialogue: 0,0:55:58.52,0:55:59.77,socDefault,Chibi,0000,0000,0000,,{\i1}おじさんたら{\i0}
+Dialogue: 0,0:55:59.77,0:56:01.23,socDefault,Chibi,0000,0000,0000,,{\i1}なにすんの{\i0}
+Dialogue: 0,0:56:03.19,0:56:04.19,socDefault,Chibi,0000,0000,0000,,{\i1}しゅわっ！{\i0}
+Dialogue: 0,0:56:04.56,0:56:06.27,socDefault,Man,0000,0000,0000,,あっ しまった
+Dialogue: 0,0:56:06.27,0:56:08.07,socDefault,Man,0000,0000,0000,,仲間が いたのか
+Dialogue: 0,0:56:08.07,0:56:09.24,socDefault,Man,0000,0000,0000,,くそ！
+Dialogue: 0,0:56:13.78,0:56:16.03,socDefault,Cat A,0000,0000,0000,,あいつ うまくやったな
+Dialogue: 0,0:56:16.87,0:56:21.37,socDefault,Cat B,0000,0000,0000,,あのチビ もう一回ぐらい 魚屋の目を そらしてくれるかも しれねえぞ
+Dialogue: 0,0:56:21.37,0:56:23.04,socDefault,Cat A,0000,0000,0000,,やるか おれたちも
+Dialogue: 0,0:56:23.04,0:56:23.46,socDefault,Cat B,0000,0000,0000,,うん
+Dialogue: 0,0:56:27.34,0:56:28.46,socDefault,Chibi,0000,0000,0000,,分かんない
+Dialogue: 0,0:56:28.46,0:56:31.51,socDefault,Chibi,0000,0000,0000,,どうして 猫には 魚を くんないのかな
+Dialogue: 0,0:56:32.72,0:56:34.59,socDefault,Chibi,0000,0000,0000,,{\i1}おじさん 刺身！{\i0}
+Dialogue: 0,0:56:34.84,0:56:36.39,socDefault,Man,0000,0000,0000,,よし 待ってろ
+Dialogue: 0,0:56:39.14,0:56:39.97,socDefault,Man,0000,0000,0000,,ほらよ！
+Dialogue: 0,0:56:43.27,0:56:45.10,socDefault,Man,0000,0000,0000,,また一匹 こっちへ来るな…
+Dialogue: 0,0:56:45.86,0:56:46.94,socDefault,Man,0000,0000,0000,,ばかめ
+Dialogue: 0,0:56:48.57,0:56:50.44,socDefault,Man,0000,0000,0000,,目は 後ろに あるんだ！
+Dialogue: 0,0:56:51.82,0:56:53.03,socDefault,Man,0000,0000,0000,,あ また やられた
+Dialogue: 0,0:56:53.61,0:56:56.95,socDefault,Man,0000,0000,0000,,ちきしょう 三匹も グルだったのか
+Dialogue: 0,0:56:57.28,0:56:59.79,socDefault,Chibi,0000,0000,0000,,{\i1}おじさん… 刺身…{\i0}
+Dialogue: 0,0:57:01.08,0:57:02.46,socDefault,Man,0000,0000,0000,,ええかげんに せい！
+Dialogue: 0,0:57:03.08,0:57:04.62,socDefault,Chibi,0000,0000,0000,,{\i1}いやー つめて{\i0}
+Dialogue: 0,0:57:04.62,0:57:05.46,socDefault,Man,0000,0000,0000,,待て！
+Dialogue: 0,0:57:06.71,0:57:09.09,socDefault,Man,0000,0000,0000,,もう 勘弁できねえぞ
+Dialogue: 0,0:57:17.22,0:57:19.85,socDefault,Man,0000,0000,0000,,猫ども！ 待て！
+Dialogue: 0,0:57:22.31,0:57:24.60,socDefault,Chibi,0000,0000,0000,,刺身 ほしい…
+Dialogue: 0,0:57:25.27,0:57:30.40,socDefault,Cat A,0000,0000,0000,,ふーぅ もたもたしてると 冷凍にされて あんたが 刺身に されちまうぜ
+Dialogue: 0,0:57:30.40,0:57:32.82,socDefault,Cat B,0000,0000,0000,,まったくだ 危ないところ だった
+Dialogue: 0,0:57:34.11,0:57:36.66,socDefault,Cat A,0000,0000,0000,,あんたには 猫の本能ってのが ないのか
+Dialogue: 0,0:57:36.86,0:57:37.82,socDefault,Chibi,0000,0000,0000,,本能って？
+Dialogue: 0,0:57:38.70,0:57:42.62,socDefault,Cat B,0000,0000,0000,,勘だよ 猫の勘… 命がけってこと
+Dialogue: 0,0:57:43.00,0:57:43.87,socDefault,Chibi,0000,0000,0000,,勘？
+Dialogue: 0,0:57:44.12,0:57:47.38,socDefault,Chibi,0000,0000,0000,,人間も 命がけで お魚 もらってるわけ？
+Dialogue: 0,0:57:47.38,0:57:50.42,socDefault,Cat B,0000,0000,0000,,人間は 金使って のたのた 買い物 するの
+Dialogue: 0,0:57:50.42,0:57:53.88,socDefault,Cat B,0000,0000,0000,,猫は 金持ってないから 命がけで 狩りをするんだ
+Dialogue: 0,0:57:54.09,0:57:56.76,socDefault,Chibi,0000,0000,0000,,お店から もらうときも 狩りなの？
+Dialogue: 0,0:57:56.93,0:57:57.72,socDefault,Cat A,0000,0000,0000,,そう
+Dialogue: 0,0:57:58.14,0:58:00.05,socDefault,Cat B,0000,0000,0000,,ごみ箱を あさるときも 狩り
+Dialogue: 0,0:58:00.35,0:58:02.35,socDefault,Cat B,0000,0000,0000,,台所から とるときも 狩りだ
+Dialogue: 0,0:58:02.35,0:58:03.56,socDefault,Chibi,0000,0000,0000,,ふうん
+Dialogue: 0,0:58:03.93,0:58:05.14,socDefault,Cat A,0000,0000,0000,,コーチしてやろう
+Dialogue: 0,0:58:05.39,0:58:07.77,socDefault,Cat A,0000,0000,0000,,今ここに さっき取った 魚がある
+Dialogue: 0,0:58:08.73,0:58:10.52,socDefault,Chibi,0000,0000,0000,,あ お魚！
+Dialogue: 0,0:58:11.19,0:58:15.82,socDefault,Cat A,0000,0000,0000,,おれさまの すきをうかがって これを 命がけっつう 雰囲気で 取ってみな
+Dialogue: 0,0:58:19.53,0:58:21.37,socDefault,Cat A,0000,0000,0000,,ちっとも すきを 狙ってない
+Dialogue: 0,0:58:21.74,0:58:28.17,socDefault,Cat A,0000,0000,0000,,すきというものは あっちを 向いてるときとか なにかに 気をとられてるときを いうんだよ
+Dialogue: 0,0:58:31.92,0:58:34.59,socDefault,Cat A,0000,0000,0000,,すげえ よだれだな…
+Dialogue: 0,0:58:34.59,0:58:36.55,socDefault,Chibi,0000,0000,0000,,今だ！ いただきます！
+Dialogue: 0,0:58:36.55,0:58:37.38,socDefault,Cat B,0000,0000,0000,,待った！
+Dialogue: 0,0:58:37.59,0:58:37.93,socDefault,Chibi,0000,0000,0000,,えっ？
+Dialogue: 0,0:58:37.97,0:58:39.76,socDefault,Cat B,0000,0000,0000,,猫は 現場では 食べないの
+Dialogue: 0,0:58:40.05,0:58:42.81,socDefault,Cat A,0000,0000,0000,,獲物を 持って さっと 隠れる さっと！
+Dialogue: 0,0:58:42.81,0:58:43.93,socDefault,Cat B,0000,0000,0000,,もたもた すんな！
+Dialogue: 0,0:58:49.98,0:58:53.07,socDefault,Chibi,0000,0000,0000,,初めて しっぽまで 生の お魚 食べた
+Dialogue: 0,0:58:53.90,0:58:56.03,socDefault,Chibi,0000,0000,0000,,とっても おいしかった
+Dialogue: 0,0:58:59.66,0:59:02.37,socDefault,Chibi,0000,0000,0000,,あれ？ さっきのコーチ猫たちは？
+Dialogue: 0,0:59:02.99,0:59:05.49,socDefault,Chibi,0000,0000,0000,,ごちそうさま 言おうと思ったのに
+Dialogue: 0,0:59:07.87,0:59:10.37,socDefault,Chibi,0000,0000,0000,,まあ いいか… ラフィエルを 探そ
+Dialogue: 0,0:59:18.01,0:59:20.97,socDefault,Chibi,0000,0000,0000,,あれから あちこち 探したけど
+Dialogue: 0,0:59:20.97,0:59:23.68,socDefault,Chibi,0000,0000,0000,,ラフィエルは どこにも いなかった
+Dialogue: 0,0:59:25.06,0:59:29.56,socDefault,Chibi,0000,0000,0000,,ひょっとして もう ひとりで 旅に 出ちゃったんじゃ ないかしら
+Dialogue: 0,0:59:32.65,0:59:35.90,socDefault,Chibi,0000,0000,0000,,ずっと ずっと 遠いところへ…
+Dialogue: 0,0:59:48.12,0:59:48.95,socDefault,Chibi,0000,0000,0000,,ごめん
+Dialogue: 0,1:00:03.14,1:00:09.02,socDefault,TV news,0000,0000,0000,,{\i1}本日 昼ごろ 国電中央線の 下り電車が 荻窪・西荻間で 突然 停止し{\i0}
+Dialogue: 0,1:00:03.14,1:00:10.68,socNote,Text,0000,0000,0000,,
+Dialogue: 0,1:00:09.02,1:00:10.68,socDefault,TV news,0000,0000,0000,,{\i1}乗客の足が乱れました{\i0}
+Dialogue: 0,1:00:11.02,1:00:14.90,socDefault,TV news,0000,0000,0000,,{\i1}原因は 猫が一匹 3両目の車両に 紛れ込み{\i0}
+Dialogue: 0,1:00:14.90,1:00:18.98,socDefault,TV news,0000,0000,0000,,{\i1}猫嫌いの 乗客が 非常停止ボタンを 押したためと いうことです{\i0}
+Dialogue: 0,1:00:18.44,1:00:19.99,socDefault,Dad,0000,0000,0000,,ばかなニュース
+Dialogue: 0,1:00:19.99,1:00:22.11,socDefault,Dad,0000,0000,0000,,おれが 小説に 書きそうな 話だ
+Dialogue: 0,1:00:24.57,1:00:27.03,socDefault,Mom,0000,0000,0000,,笑いごとじゃ ないわ あなた
+Dialogue: 0,1:00:27.54,1:00:30.25,socDefault,Mom,0000,0000,0000,,もしかして… うちの チビじゃ ないかしら
+Dialogue: 0,1:00:30.66,1:00:32.79,socDefault,Dad,0000,0000,0000,,ん？ チビが？
+Dialogue: 0,1:00:33.33,1:00:34.50,socDefault,Dad,0000,0000,0000,,まさか
+Dialogue: 0,1:00:34.75,1:00:38.50,socDefault,Mom,0000,0000,0000,,だって 今日は まだ 一度も姿 見せないんですもの
+Dialogue: 0,1:00:38.67,1:00:41.63,socDefault,Mom,0000,0000,0000,,時夫も バスケット 持たずに 予備校へ 行ったし…
+Dialogue: 0,1:00:44.18,1:00:47.47,socDefault,Chibi,0000,0000,0000,,あたしは ペルシャを 探してみることにした
+Dialogue: 0,1:00:47.47,1:00:51.31,socDefault,Chibi,0000,0000,0000,,いつか お父さんが 言ってた 「太陽と砂の国」ペルシャ
+Dialogue: 0,1:00:51.89,1:00:55.52,socDefault,Chibi,0000,0000,0000,,ラフィエルは ペルシャの猫だって 猫マニアが言ってたし
+Dialogue: 0,1:00:55.52,1:00:58.32,socDefault,Chibi,0000,0000,0000,,そこ行けば 会えるんじゃないかと 思ったから
+Dialogue: 0,1:00:59.02,1:01:03.45,socDefault,Chibi,0000,0000,0000,,でも 電車 途中で 降ろされちゃって 予定が狂ったわ
+Dialogue: 0,1:01:03.61,1:01:05.78,socDefault,Chibi,0000,0000,0000,,こうなったら 歩いて いくしかない
+Dialogue: 0,1:01:08.28,1:01:12.08,socDefault,Chibi,0000,0000,0000,,さーて おなか いっぱいに なったし 出かけますか
+Dialogue: 0,1:01:12.20,1:01:13.08,socDefault,Chibi,0000,0000,0000,,あれ？
+Dialogue: 0,1:01:15.62,1:01:16.83,socDefault,Chibi,0000,0000,0000,,ちょっと？
+Dialogue: 0,1:01:23.34,1:01:26.55,socDefault,Chibi,0000,0000,0000,,あたしの からだ すごい重さに なっちゃった みたい
+Dialogue: 0,1:01:30.35,1:01:32.18,socDefault,Chibi,0000,0000,0000,,沈む！ 沈む！
+Dialogue: 0,1:01:32.18,1:01:33.56,socDefault,Chibi,0000,0000,0000,,助けて！
+Dialogue: 0,1:01:34.52,1:01:35.98,socDefault,Suzuki,0000,0000,0000,,そういう 気が するだけだよ
+Dialogue: 0,1:01:36.90,1:01:38.65,socDefault,Suzuki,0000,0000,0000,,早く その草 食べて
+Dialogue: 0,1:01:39.19,1:01:42.07,socDefault,Chibi,0000,0000,0000,,えっ 草食べるの…？ 猫が？
+Dialogue: 0,1:01:42.07,1:01:42.82,socDefault,Suzuki,0000,0000,0000,,そうだよ
+Dialogue: 0,1:01:51.70,1:01:52.75,socDefault,Chibi,0000,0000,0000,,食べたけど？
+Dialogue: 0,1:01:53.62,1:01:56.04,socDefault,Suzuki,0000,0000,0000,,もうじき おなかが ゴロゴロ 鳴ってくるからね
+Dialogue: 0,1:01:56.04,1:01:57.42,socDefault,Suzuki,0000,0000,0000,,その茂みを トイレにして！
+Dialogue: 0,1:02:12.06,1:02:12.93,socDefault,Chibi,0000,0000,0000,,終わり！
+Dialogue: 0,1:02:13.43,1:02:14.68,socDefault,Chibi,0000,0000,0000,,楽に なった
+Dialogue: 0,1:02:16.73,1:02:19.86,socDefault,Suzuki,0000,0000,0000,,悪いものを 食べちゃったとき 草を食べると いいんだよ
+Dialogue: 0,1:02:20.40,1:02:23.03,socDefault,Suzuki,0000,0000,0000,,きみ 親猫に なんにも 教わらなかったの？
+Dialogue: 0,1:02:23.15,1:02:23.73,socDefault,Chibi,0000,0000,0000,,うん
+Dialogue: 0,1:02:24.49,1:02:25.82,socDefault,Suzuki,0000,0000,0000,,きみ 野良？
+Dialogue: 0,1:02:25.99,1:02:27.45,socDefault,Chibi,0000,0000,0000,,うん 昨日から
+Dialogue: 0,1:02:27.82,1:02:29.20,socDefault,Chibi,0000,0000,0000,,ラフィエル 探してんの
+Dialogue: 0,1:02:29.41,1:02:30.66,socDefault,Chibi,0000,0000,0000,,ラフィエルって 知らない
+Dialogue: 0,1:02:31.03,1:02:35.62,socDefault,Suzuki,0000,0000,0000,,ラフィエル？ 名前は聞いたこと あるような 気もするけど…
+Dialogue: 0,1:02:36.46,1:02:37.83,socDefault,Chibi,0000,0000,0000,,すごいんだから！
+Dialogue: 0,1:02:39.33,1:02:42.71,socDefault,Chibi,0000,0000,0000,,こんな 高い木でも ふわっと 飛んじゃうんだから！
+Dialogue: 0,1:02:43.13,1:02:45.63,socDefault,Suzuki,0000,0000,0000,,え あんな 高い木でも
+Dialogue: 0,1:02:46.17,1:02:49.01,socDefault,Chibi,0000,0000,0000,,そう あんな 屋根でも
+Dialogue: 0,1:02:50.05,1:02:53.18,socDefault,Suzuki,0000,0000,0000,,すごい猫 なんだな その猫
+Dialogue: 0,1:02:54.01,1:02:56.31,socDefault,Chibi,0000,0000,0000,,あたし ラフィエルと 旅に出んの
+Dialogue: 0,1:02:56.31,1:02:59.65,socDefault,Chibi,0000,0000,0000,,きっと 今ごろ ペルシャに いるんじゃないかと思うんだ
+Dialogue: 0,1:03:00.02,1:03:01.11,socDefault,Suzuki,0000,0000,0000,,ペルシャって？
+Dialogue: 0,1:03:01.27,1:03:03.02,socDefault,Chibi,0000,0000,0000,,太陽と砂の国 だって
+Dialogue: 0,1:03:03.57,1:03:06.49,socDefault,Chibi,0000,0000,0000,,ということは 見渡す限り 広い砂場！
+Dialogue: 0,1:03:06.90,1:03:09.07,socDefault,Chibi,0000,0000,0000,,猫のトイレ ばっかしの とこじゃない
+Dialogue: 0,1:03:09.49,1:03:12.37,socDefault,Suzuki,0000,0000,0000,,えっ？ 見渡す限りの トイレ？
+Dialogue: 0,1:03:15.12,1:03:16.95,socDefault,Suzuki,0000,0000,0000,,ぼくも 行く い いっしょに！
+Dialogue: 0,1:03:16.95,1:03:21.46,socDefault,Suzuki,0000,0000,0000,,ぼくは カタカナなら 人間の文字も 読めるし 食べ物の 分別もできるし
+Dialogue: 0,1:03:16.95,1:03:22.84,socNote,Text,0000,0000,0000,,
+Dialogue: 0,1:03:21.46,1:03:22.84,socDefault,Suzuki,0000,0000,0000,,ぼくは 便利だよ
+Dialogue: 0,1:03:23.29,1:03:26.09,socDefault,Chibi,0000,0000,0000,,あたしは あんまり 便利じゃありませんが…
+Dialogue: 0,1:03:27.17,1:03:30.43,socDefault,Suzuki,0000,0000,0000,,ぼく 鈴木家の ブチ猫 オス 5カ月
+Dialogue: 0,1:03:30.43,1:03:33.72,socDefault,Chibi,0000,0000,0000,,あたし 諏訪野チビ猫 メス 2カ月
+Dialogue: 0,1:03:33.72,1:03:37.43,socDefault,Suzuki,0000,0000,0000,,よし 決まり！ ではペルシャをめざして
+Dialogue: 0,1:03:37.43,1:03:38.93,socDefault,Chibi & Suzuki,0000,0000,0000,,行こうね！
+Dialogue: 0,1:03:40.48,1:03:41.52,socDefault,Dad,0000,0000,0000,,いたか？
+Dialogue: 0,1:03:42.73,1:03:43.73,socDefault,Tokio,0000,0000,0000,,いない
+Dialogue: 0,1:03:45.57,1:03:48.40,socDefault,Mom,0000,0000,0000,,誰かに 連れていかれたんじゃ ないかしら
+Dialogue: 0,1:03:48.40,1:03:51.11,socDefault,Tokio,0000,0000,0000,,連れていかれたんなら 声ぐらい出すよ
+Dialogue: 0,1:03:51.11,1:03:55.41,socDefault,Dad,0000,0000,0000,,猫っていうのは 死期が近づくと 姿を消す っていうぜ
+Dialogue: 0,1:03:55.41,1:03:58.95,socDefault,Tokio,0000,0000,0000,,まだ子どもだよ 死期なんて 近づかないよ
+Dialogue: 0,1:03:58.95,1:04:01.00,socDefault,Tokio,0000,0000,0000,,きっと 道に 迷ったんだ
+Dialogue: 0,1:04:01.00,1:04:03.46,socDefault,Tokio,0000,0000,0000,,すぐ 迷うんだから あいつ
+Dialogue: 0,1:04:03.46,1:04:05.29,socDefault,Dad,0000,0000,0000,,あっちのほうも 探してみるか
+Dialogue: 0,1:04:06.00,1:04:08.34,socDefault,Tokio,0000,0000,0000,,そう遠くへは 行かないと 思うけど
+Dialogue: 0,1:04:18.06,1:04:20.89,socDefault,Man A,0000,0000,0000,,ほい ほい ほい…
+Dialogue: 0,1:04:21.60,1:04:22.77,socDefault,Chibi,0000,0000,0000,,なんだろ
+Dialogue: 0,1:04:22.77,1:04:23.94,socDefault,Chibi,0000,0000,0000,,呼んでるみたい
+Dialogue: 0,1:04:24.73,1:04:27.15,socDefault,Chibi,0000,0000,0000,,わあ 魚 持ってる
+Dialogue: 0,1:04:27.15,1:04:28.69,socDefault,Suzuki,0000,0000,0000,,あっ 行くな！
+Dialogue: 0,1:04:28.69,1:04:30.69,socDefault,Man A,0000,0000,0000,,うまい！ 白いほうだけ来た
+Dialogue: 0,1:04:30.69,1:04:32.91,socDefault,Man B,0000,0000,0000,,メスなら なお 三味線むき
+Dialogue: 0,1:04:30.74,1:04:35.74,socNote,Text,0000,0000,0000,,
+Dialogue: 0,1:04:33.70,1:04:36.28,socDefault,Chibi,0000,0000,0000,,おじさん その魚 くれるの？
+Dialogue: 0,1:04:36.28,1:04:37.28,socDefault,Man A,0000,0000,0000,,うん
+Dialogue: 0,1:04:38.83,1:04:40.12,socDefault,Man A,0000,0000,0000,,ほれ
+Dialogue: 0,1:04:41.54,1:04:42.71,socDefault,Chibi,0000,0000,0000,,いやだ
+Dialogue: 0,1:04:42.71,1:04:43.75,socDefault,Man A,0000,0000,0000,,おい メスだ
+Dialogue: 0,1:04:43.75,1:04:45.63,socDefault,Man B,0000,0000,0000,,万歳！ やった！
+Dialogue: 0,1:04:45.63,1:04:46.38,socDefault,Man A,0000,0000,0000,,袋に入れろ
+Dialogue: 0,1:04:46.38,1:04:47.42,socDefault,Man B,0000,0000,0000,,おう
+Dialogue: 0,1:04:52.13,1:04:53.43,socDefault,Man A,0000,0000,0000,,
+Dialogue: 0,1:04:53.43,1:04:54.55,socDefault,Man B,0000,0000,0000,,痛い！ 痛い！
+Dialogue: 0,1:05:05.48,1:05:07.02,socDefault,Chibi,0000,0000,0000,,魚 食べてたのに…
+Dialogue: 0,1:05:07.02,1:05:08.44,socDefault,Suzuki,0000,0000,0000,,ばかだなあ
+Dialogue: 0,1:05:08.44,1:05:10.61,socDefault,Suzuki,0000,0000,0000,,つかまったら 三味線に されちまうんだよ
+Dialogue: 0,1:05:11.61,1:05:14.07,socDefault,Chibi,0000,0000,0000,,三味線って…
+Dialogue: 0,1:05:14.07,1:05:15.86,socDefault,Chibi,0000,0000,0000,,あれ 猫 だったの？
+Dialogue: 0,1:05:16.62,1:05:18.37,socDefault,Suzuki,0000,0000,0000,,皮 はがされてさ…
+Dialogue: 0,1:05:18.37,1:05:20.20,socDefault,Suzuki,0000,0000,0000,,なんにも 知らないんだな
+Dialogue: 0,1:05:20.74,1:05:22.45,socDefault,Chibi,0000,0000,0000,,文句 言ってくる あたし
+Dialogue: 0,1:05:22.45,1:05:24.54,socDefault,Chibi,0000,0000,0000,,皮が なかったら どんなに困るか
+Dialogue: 0,1:05:24.54,1:05:26.17,socDefault,Suzuki,0000,0000,0000,,よ よしなよ
+Dialogue: 0,1:05:26.17,1:05:28.04,socDefault,Suzuki,0000,0000,0000,,また つかまる だけだよ
+Dialogue: 0,1:05:30.13,1:05:31.26,socDefault,Suzuki,0000,0000,0000,,それよりさ
+Dialogue: 0,1:05:31.26,1:05:33.47,socDefault,Suzuki,0000,0000,0000,,ペルシャへ 行くんだろ ラフィエル 探しに
+Dialogue: 0,1:05:33.92,1:05:34.93,socDefault,Chibi,0000,0000,0000,,うん
+Dialogue: 0,1:05:34.55,1:05:36.18,socDefault,Suzuki,0000,0000,0000,,急ごう… 日が暮れるよ
+Dialogue: 0,1:05:36.18,1:05:37.64,socDefault,Chibi,0000,0000,0000,,べーっ だ
+Dialogue: 0,1:05:51.36,1:05:53.86,socDefault,Chibi,0000,0000,0000,,この風景 見たことある
+Dialogue: 0,1:05:57.28,1:05:59.12,socDefault,Chibi,0000,0000,0000,,ここ 予備校だ！
+Dialogue: 0,1:05:59.58,1:06:03.62,socDefault,Chibi,0000,0000,0000,,ねえねえ あたしね 時夫に ここに 連れてきて もらったんだよ
+Dialogue: 0,1:06:04.25,1:06:06.67,socDefault,Suzuki,0000,0000,0000,,だあれ 時夫って？ 飼い主？
+Dialogue: 0,1:06:06.67,1:06:09.21,socDefault,Chibi,0000,0000,0000,,そう あたしの第一の恋人
+Dialogue: 0,1:06:10.17,1:06:11.75,socDefault,Chibi,0000,0000,0000,,第二が ラフィエル
+Dialogue: 0,1:06:11.75,1:06:16.93,socDefault,Chibi,0000,0000,0000,,第三は 時夫のお母さん 時夫のお父さん みつ編みの美津子
+Dialogue: 0,1:06:16.93,1:06:19.26,socDefault,Suzuki,0000,0000,0000,,第三の恋人が 多いんだなあ
+Dialogue: 0,1:06:19.26,1:06:20.43,socDefault,Chibi,0000,0000,0000,,へへっ
+Dialogue: 0,1:06:19.26,1:06:25.27,socNote,Text,0000,0000,0000,,
+Dialogue: 0,1:06:23.35,1:06:24.81,socDefault,Suzuki,0000,0000,0000,,このへんから 探してみよ
+Dialogue: 0,1:06:26.35,1:06:28.90,socDefault,Suzuki,0000,0000,0000,,えーと ペルシャは…と
+Dialogue: 0,1:06:28.90,1:06:30.02,socDefault,Chibi,0000,0000,0000,,ペルシャ
+Dialogue: 0,1:06:29.90,1:06:32.23,socNote,Sign,0000,0000,0000,,
+Dialogue: 0,1:06:31.52,1:06:32.73,socDefault,Chibi,0000,0000,0000,,ペルシャ…
+Dialogue: 0,1:06:32.23,1:06:34.57,socNote,Sign,0000,0000,0000,,
+Dialogue: 0,1:06:32.77,1:06:33.98,socDefault,Suzuki,0000,0000,0000,,ペルシャ
+Dialogue: 0,1:06:34.07,1:06:35.57,socDefault,Suzuki,0000,0000,0000,,ペルシャ…
+Dialogue: 0,1:06:35.74,1:06:36.70,socDefault,Chibi,0000,0000,0000,,ペルシャ
+Dialogue: 0,1:06:36.74,1:06:37.61,socDefault,Chibi,0000,0000,0000,,ペルシャ！
+Dialogue: 0,1:06:42.66,1:06:46.66,socNote,Sign,0000,0000,0000,,
+Dialogue: 0,1:06:46.66,1:06:52.67,socNote,Sign,0000,0000,0000,,
+Dialogue: 0,1:06:47.21,1:06:49.21,socDefault,Suzuki,0000,0000,0000,,ペ… ル… シャ
+Dialogue: 0,1:06:49.71,1:06:51.04,socDefault,Suzuki,0000,0000,0000,,あった！ あった！
+Dialogue: 0,1:06:51.04,1:06:52.09,socDefault,Suzuki,0000,0000,0000,,ペルシャだ
+Dialogue: 0,1:06:57.22,1:06:59.09,socDefault,Chibi,0000,0000,0000,,ここが ペルシャなの？
+Dialogue: 0,1:07:17.65,1:07:19.07,socDefault,Chibi,0000,0000,0000,,砂場は？
+Dialogue: 0,1:07:19.07,1:07:20.53,socDefault,Chibi,0000,0000,0000,,ラフィエルは？
+Dialogue: 0,1:07:30.79,1:07:32.58,socDefault,Suzuki,0000,0000,0000,,きみ！ あっちにも ペルシャがあるよ
+Dialogue: 0,1:07:32.58,1:07:35.59,socNote,Sign,0000,0000,0000,,
+Dialogue: 0,1:07:37.30,1:07:39.42,socDefault,Chibi,0000,0000,0000,,ここも ペルシャ？
+Dialogue: 0,1:07:43.93,1:07:45.60,socDefault,Chibi,0000,0000,0000,,砂場 ないみたい
+Dialogue: 0,1:07:58.61,1:08:02.66,socDefault,Woman,0000,0000,0000,,あら おたく かわいい猫が いるのね
+Dialogue: 0,1:08:06.41,1:08:08.20,socDefault,Woman,0000,0000,0000,,それ ペルシャでしょ
+Dialogue: 0,1:08:08.20,1:08:09.37,socDefault,Seller,0000,0000,0000,,え ええ
+Dialogue: 0,1:08:09.37,1:08:13.58,socDefault,Woman,0000,0000,0000,,うちはね シャムの ブルーポイントを 飼ってるの
+Dialogue: 0,1:08:26.68,1:08:28.52,socNote,Sign,0000,0000,0000,,
+Dialogue: 0,1:08:29.35,1:08:31.02,socDefault,Suzuki,0000,0000,0000,,また ペルシャがあった
+Dialogue: 0,1:08:42.40,1:08:44.28,socDefault,Suzuki,0000,0000,0000,,だめだ… あかないや
+Dialogue: 0,1:08:51.00,1:08:54.75,socDefault,Chibi,0000,0000,0000,,あたしたちは 扉があくまで 待つことにした
+Dialogue: 0,1:08:55.63,1:09:01.21,socDefault,Chibi,0000,0000,0000,,中に 入ると 今度こそ 本当に 広い 広い 砂場があって…
+Dialogue: 0,1:09:01.21,1:09:04.38,socDefault,Chibi,0000,0000,0000,,ラフィエルにも きっと 会えるんじゃないかと 思ったから
+Dialogue: 0,1:09:05.47,1:09:08.35,socDefault,Chibi,0000,0000,0000,,こうして 待っていると
+Dialogue: 0,1:09:08.35,1:09:11.02,socDefault,Chibi,0000,0000,0000,,そのうちに 扉があく
+Dialogue: 0,1:09:14.98,1:09:17.48,socDefault,Chibi,0000,0000,0000,,うわあ
+Dialogue: 0,1:09:18.57,1:09:21.44,socDefault,Suzuki,0000,0000,0000,,見渡す限りの トイレだ
+Dialogue: 0,1:09:21.44,1:09:23.28,socDefault,Chibi,0000,0000,0000,,広い
+Dialogue: 0,1:09:24.15,1:09:25.86,socDefault,Suzuki,0000,0000,0000,,広い 広い
+Dialogue: 0,1:09:27.99,1:09:29.03,socDefault,Suzuki,0000,0000,0000,,それ
+Dialogue: 0,1:09:29.95,1:09:31.16,socDefault,Chibi,0000,0000,0000,,やだ…
+Dialogue: 0,1:09:38.71,1:09:39.80,socDefault,Chibi,0000,0000,0000,,ラフィエル
+Dialogue: 0,1:09:39.80,1:09:41.76,socDefault,Chibi,0000,0000,0000,,ラフィエルが 向こうで 手を振ってる！
+Dialogue: 0,1:09:42.30,1:09:44.42,socDefault,Chibi,0000,0000,0000,,ラフィエル！
+Dialogue: 0,1:09:46.22,1:09:48.39,socDefault,Chibi,0000,0000,0000,,ラフィエル！
+Dialogue: 0,1:09:49.18,1:09:51.56,socDefault,Chibi,0000,0000,0000,,あ… 埋まってく
+Dialogue: 0,1:09:52.22,1:09:53.64,socDefault,Chibi,0000,0000,0000,,どうしよう？
+Dialogue: 0,1:09:53.64,1:09:55.64,socDefault,Chibi,0000,0000,0000,,ラフィエル！
+Dialogue: 0,1:09:56.14,1:09:57.65,socDefault,Suzuki,0000,0000,0000,,チビ猫くん！
+Dialogue: 0,1:10:01.90,1:10:03.74,socDefault,Suzuki,0000,0000,0000,,チビくん 起きて
+Dialogue: 0,1:10:03.74,1:10:05.24,socDefault,Suzuki,0000,0000,0000,,ほら 起きて
+Dialogue: 0,1:10:05.24,1:10:06.49,socDefault,Suzuki,0000,0000,0000,,扉があくよ
+Dialogue: 0,1:10:06.49,1:10:07.74,socDefault,Suzuki,0000,0000,0000,,ほら ペルシャの
+Dialogue: 0,1:10:07.74,1:10:10.20,socDefault,Chibi,0000,0000,0000,,うーん 夢 見てたのか
+Dialogue: 0,1:10:17.79,1:10:18.96,socDefault,Chibi,0000,0000,0000,,ラフィエ…
+Dialogue: 0,1:10:20.84,1:10:23.67,socDefault,Girl,0000,0000,0000,,あら 最初の お客は 猫？
+Dialogue: 0,1:10:24.05,1:10:25.38,socDefault,Chibi,0000,0000,0000,,砂場は？
+Dialogue: 0,1:10:27.18,1:10:28.84,socDefault,Chibi,0000,0000,0000,,ねえ 砂場は？
+Dialogue: 0,1:10:30.60,1:10:34.81,socDefault,Girl,0000,0000,0000,,悪いけどね 猫の お相手してる 暇は ないのよね
+Dialogue: 0,1:10:47.45,1:10:48.82,socDefault,Suzuki,0000,0000,0000,,おなか すいたね
+Dialogue: 0,1:10:48.82,1:10:49.66,socDefault,Chibi,0000,0000,0000,,うん
+Dialogue: 0,1:10:56.58,1:10:57.58,socDefault,Chibi,0000,0000,0000,,どうしたの？
+Dialogue: 0,1:10:58.17,1:10:59.54,socDefault,Suzuki,0000,0000,0000,,しっ！ 待ってな
+Dialogue: 0,1:10:59.88,1:11:01.88,socDefault,Suzuki,0000,0000,0000,,今 食べ物を つかまえてくるから
+Dialogue: 0,1:11:01.88,1:11:02.71,socDefault,Chibi,0000,0000,0000,,え？
+Dialogue: 0,1:11:02.71,1:11:04.05,socDefault,Suzuki,0000,0000,0000,,狩りだよ
+Dialogue: 0,1:11:04.05,1:11:06.13,socDefault,Suzuki,0000,0000,0000,,母ちゃん 秘伝の 鳥取りの術
+Dialogue: 0,1:11:06.92,1:11:08.01,socDefault,Suzuki,0000,0000,0000,,黙って 見てなよ
+Dialogue: 0,1:11:13.68,1:11:14.85,socDefault,Chibi,0000,0000,0000,,{\i1}食べ物？{\i0}
+Dialogue: 0,1:11:16.18,1:11:17.23,socDefault,Chibi,0000,0000,0000,,{\i1}狩り…？{\i0}
+Dialogue: 0,1:11:41.29,1:11:42.29,socDefault,Chibi,0000,0000,0000,,分かった
+Dialogue: 0,1:11:42.92,1:11:44.13,socDefault,Chibi,0000,0000,0000,,分かったわ…
+Dialogue: 0,1:11:44.92,1:11:48.67,socDefault,Chibi,0000,0000,0000,,食べ物って 初めから 死んでた わけじゃない
+Dialogue: 0,1:11:50.05,1:11:51.18,socDefault,Chibi,0000,0000,0000,,生きてたんだ
+Dialogue: 0,1:11:51.80,1:11:54.39,socDefault,Chibi,0000,0000,0000,,みんな 生きてたんだ
+Dialogue: 0,1:12:02.44,1:12:03.52,socDefault,Suzuki,0000,0000,0000,,ちゃんと 見てた？
+Dialogue: 0,1:12:04.27,1:12:07.98,socDefault,Suzuki,0000,0000,0000,,これから 野良になるなら このくらいのこと できなきゃ 駄目だよ
+Dialogue: 0,1:12:38.89,1:12:41.43,socDefault,Suzuki,0000,0000,0000,,なんか ほかの食べ物 探してくる
+Dialogue: 0,1:12:52.20,1:12:56.74,socDefault,Chibi,0000,0000,0000,,さつま揚げも ちくわも みりん干しも
+Dialogue: 0,1:12:56.74,1:12:59.33,socDefault,Chibi,0000,0000,0000,,おせんべいも サンドイッチも
+Dialogue: 0,1:12:59.33,1:13:02.62,socDefault,Chibi,0000,0000,0000,,みんな… みんな 生きてたのよね？
+Dialogue: 0,1:13:38.16,1:13:41.54,socDefault,Suzuki,0000,0000,0000,,{\i1}チビ猫くん なんにも 食べようとしないし{\i0}
+Dialogue: 0,1:13:44.58,1:13:47.17,socDefault,Suzuki,0000,0000,0000,,{\i1}このままじゃ 先へは 進めないや{\i0}
+Dialogue: 0,1:13:48.04,1:13:49.96,socDefault,Suzuki,0000,0000,0000,,{\i1}もうペルシャを 探すのは よそう{\i0}
+Dialogue: 0,1:13:51.21,1:13:52.84,socDefault,Suzuki,0000,0000,0000,,{\i1}あの 突き当たりまでだ{\i0}
+Dialogue: 0,1:13:53.76,1:13:55.72,socDefault,Suzuki,0000,0000,0000,,{\i1}あの 壁まで 行ったら 折り返そう{\i0}
+Dialogue: 0,1:13:56.84,1:14:01.06,socDefault,Suzuki,0000,0000,0000,,{\i1}結局 広い砂場のある ペルシャなんて どこにもないし{\i0}
+Dialogue: 0,1:14:01.81,1:14:03.64,socDefault,Suzuki,0000,0000,0000,,{\i1}ラフィエルも 見つかりそうも ないし{\i0}
+Dialogue: 0,1:14:04.56,1:14:07.06,socDefault,Suzuki,0000,0000,0000,,{\i1}あの壁まで… あの壁までだ{\i0}
+Dialogue: 0,1:14:07.06,1:14:08.06,socDefault,Suzuki,0000,0000,0000,,ああっ？！
+Dialogue: 0,1:14:07.65,1:14:12.65,socNote,Text,0000,0000,0000,,
+Dialogue: 0,1:14:10.32,1:14:11.36,socDefault,Suzuki,0000,0000,0000,,あった！
+Dialogue: 0,1:14:11.36,1:14:13.57,socDefault,Suzuki,0000,0000,0000,,ペルシャだ！
+Dialogue: 0,1:14:20.33,1:14:21.79,socDefault,Suzuki,0000,0000,0000,,これが ペルシャか？
+Dialogue: 0,1:14:21.79,1:14:23.37,socDefault,Chibi,0000,0000,0000,,砂場も あるね！
+Dialogue: 0,1:14:23.37,1:14:25.96,socDefault,Chibi,0000,0000,0000,,ラフィエル ここに いるかもしれない！
+Dialogue: 0,1:14:41.01,1:14:42.93,socDefault,Suzuki,0000,0000,0000,,これは 紙に かかれた絵だ
+Dialogue: 0,1:14:43.56,1:14:44.85,socDefault,Suzuki,0000,0000,0000,,中には入れないよ
+Dialogue: 0,1:14:46.39,1:14:48.14,socDefault,Chibi,0000,0000,0000,,かいたものなの これ？
+Dialogue: 0,1:14:49.35,1:14:51.44,socDefault,Chibi,0000,0000,0000,,でも まるで 本物みたい
+Dialogue: 0,1:14:54.03,1:14:55.53,socDefault,Chibi,0000,0000,0000,,そうか
+Dialogue: 0,1:14:55.53,1:14:57.24,socDefault,Chibi,0000,0000,0000,,ペルシャって 絵なのか
+Dialogue: 0,1:14:58.82,1:15:01.95,socDefault,Chibi,0000,0000,0000,,じゃあ ラフィエルも ここに いないって わけ？
+Dialogue: 0,1:15:01.95,1:15:02.99,socDefault,Suzuki,0000,0000,0000,,うん
+Dialogue: 0,1:15:02.99,1:15:05.29,socDefault,Suzuki,0000,0000,0000,,きっと ラフィエルは ほかにいるんだ
+Dialogue: 0,1:15:05.29,1:15:06.66,socDefault,Suzuki,0000,0000,0000,,ほかを 探したほうが いい
+Dialogue: 0,1:15:11.92,1:15:13.09,socDefault,Suzuki,0000,0000,0000,,さっ
+Dialogue: 0,1:15:13.09,1:15:14.84,socDefault,Suzuki,0000,0000,0000,,これを食べて 元気を出しな
+Dialogue: 0,1:15:18.84,1:15:21.26,socDefault,Suzuki,0000,0000,0000,,食べないと このまま おっちんで
+Dialogue: 0,1:15:21.26,1:15:26.18,socDefault,Suzuki,0000,0000,0000,,ラフィエルとも それに 第一の恋人の 時夫とも もう二度と 会えなく なるんだよ
+Dialogue: 0,1:15:31.02,1:15:32.98,socDefault,Tokio,0000,0000,0000,,{\bord0\1a&H40&}待てよチビ！ よーし…
+Dialogue: 0,1:15:48.66,1:15:49.58,socDefault,Suzuki,0000,0000,0000,,食べた！
+Dialogue: 0,1:15:50.08,1:15:51.79,socDefault,Suzuki,0000,0000,0000,,食べた 食べた 食べた！
+Dialogue: 0,1:15:52.63,1:15:54.59,socDefault,Suzuki,0000,0000,0000,,食べたぞー！
+Dialogue: 0,1:15:55.05,1:15:56.92,socDefault,Suzuki,0000,0000,0000,,やったー！
+Dialogue: 0,1:15:59.84,1:16:01.18,socDefault,Chibi,0000,0000,0000,,その晩…
+Dialogue: 0,1:16:01.18,1:16:04.22,socDefault,Chibi,0000,0000,0000,,あたしは 生まれて 初めて 猫と 眠った
+Dialogue: 0,1:16:05.93,1:16:10.23,socDefault,Chibi,0000,0000,0000,,ブチ猫の 心臓の鼓動は 時夫の 倍以上も 速かった
+Dialogue: 0,1:16:11.81,1:16:14.06,socDefault,Chibi,0000,0000,0000,,猫の心音を 聞き…
+Dialogue: 0,1:16:14.06,1:16:15.98,socDefault,Chibi,0000,0000,0000,,人間の心音を 思うと
+Dialogue: 0,1:16:16.52,1:16:20.07,socDefault,Chibi,0000,0000,0000,,その差の分だけ あたしは 悲しかった
+Dialogue: 0,1:16:21.40,1:16:23.87,socDefault,Chibi,0000,0000,0000,,なぜだか とっても 悲しかった
+Dialogue: 0,1:16:26.45,1:16:31.21,socDefault,Chibi,0000,0000,0000,,だけど 次の朝 たっぷり眠って 起きると 元気が出た
+Dialogue: 0,1:16:33.88,1:16:36.46,socDefault,Suzuki,0000,0000,0000,,そいじゃあ こっから ぼくは帰る
+Dialogue: 0,1:16:36.46,1:16:37.88,socDefault,Suzuki,0000,0000,0000,,母ちゃん 心配すっから
+Dialogue: 0,1:16:37.88,1:16:38.88,socDefault,Chibi,0000,0000,0000,,うん
+Dialogue: 0,1:16:39.71,1:16:41.72,socDefault,Suzuki,0000,0000,0000,,きみも 引き返したほうがいいよ
+Dialogue: 0,1:16:41.72,1:16:45.30,socDefault,Suzuki,0000,0000,0000,,ラフィエルはさあ 案外 元の場所で きみを待ってるかも しれないし
+Dialogue: 0,1:16:45.85,1:16:46.43,socDefault,Chibi,0000,0000,0000,,うん
+Dialogue: 0,1:16:46.43,1:16:49.10,socDefault,Chibi,0000,0000,0000,,ペルシャが 絵だったんで がっかりした？
+Dialogue: 0,1:16:49.10,1:16:50.14,socDefault,Suzuki,0000,0000,0000,,いいよ
+Dialogue: 0,1:16:50.14,1:16:52.73,socDefault,Suzuki,0000,0000,0000,,見渡す限りの 砂トイレも 見たかったけど…
+Dialogue: 0,1:16:53.39,1:16:54.56,socDefault,Suzuki,0000,0000,0000,,でも いいんだ
+Dialogue: 0,1:16:55.48,1:16:57.90,socDefault,Suzuki,0000,0000,0000,,きみは ぼくの妹と よく似てるし
+Dialogue: 0,1:16:57.90,1:16:59.90,socDefault,Suzuki,0000,0000,0000,,なんだか ほっとけなかったんだ
+Dialogue: 0,1:17:00.53,1:17:01.90,socDefault,Suzuki,0000,0000,0000,,そいじゃ 気をつけて
+Dialogue: 0,1:17:02.36,1:17:03.82,socDefault,Chibi,0000,0000,0000,,じゃあね
+Dialogue: 0,1:17:04.53,1:17:05.82,socDefault,Suzuki,0000,0000,0000,,またな！
+Dialogue: 0,1:17:06.91,1:17:08.62,socDefault,Chibi,0000,0000,0000,,またね！
+Dialogue: 0,1:17:10.87,1:17:14.87,socDefault,Chibi,0000,0000,0000,,{\i1}三番目の 次の恋人は 鈴木ブチ猫くんに しよ{\i0}
+Dialogue: 0,1:17:15.33,1:17:18.17,socDefault,Mom,0000,0000,0000,,「子猫の一人旅は 特に危険なり」
+Dialogue: 0,1:17:18.17,1:17:22.76,socDefault,Mom,0000,0000,0000,,「野良犬 または 凶暴な野良猫に かみ殺されること多く」
+Dialogue: 0,1:17:22.76,1:17:27.60,socDefault,Mom,0000,0000,0000,,「水の威力 恐れず 川に はまって 流されることもあり」
+Dialogue: 0,1:17:27.60,1:17:28.93,socDefault,Tokio,0000,0000,0000,,母さん！
+Dialogue: 0,1:17:29.43,1:17:31.43,socDefault,Tokio,0000,0000,0000,,そのうち ふらっと 帰ってくるよ
+Dialogue: 0,1:17:33.18,1:17:34.31,socDefault,Mom,0000,0000,0000,,そうかしら？
+Dialogue: 0,1:17:34.31,1:17:35.40,socDefault,Tokio,0000,0000,0000,,帰ってきたら…
+Dialogue: 0,1:17:35.40,1:17:38.02,socDefault,Tokio,0000,0000,0000,,また にゃあにゃあ ミルクを せがむに 決まってるんだ
+Dialogue: 0,1:17:40.19,1:17:42.40,socDefault,Mom,0000,0000,0000,,ミルクって いえばね
+Dialogue: 0,1:17:42.40,1:17:44.45,socDefault,Mom,0000,0000,0000,,わたし 知らなかったら
+Dialogue: 0,1:17:44.45,1:17:47.49,socDefault,Mom,0000,0000,0000,,ミルクの中に お砂糖 入れて あげてたのよ
+Dialogue: 0,1:17:47.49,1:17:48.41,socDefault,Tokio,0000,0000,0000,,え？
+Dialogue: 0,1:17:49.83,1:17:51.20,socDefault,Mom,0000,0000,0000,,この本 読むと
+Dialogue: 0,1:17:51.20,1:17:54.46,socDefault,Mom,0000,0000,0000,,猫は 人間の味つけには 合わない って書いてあるけど
+Dialogue: 0,1:17:54.46,1:17:58.96,socDefault,Mom,0000,0000,0000,,だって… わたし 子どものころ 甘いミルクじゃ ないと 飲めなかったから
+Dialogue: 0,1:17:59.71,1:18:02.76,socDefault,Dad,0000,0000,0000,,チビの 家出の原因は それかも しれんなあ
+Dialogue: 0,1:18:03.46,1:18:04.72,socDefault,Tokio,0000,0000,0000,,そんなこと ないよ！
+Dialogue: 0,1:18:05.13,1:18:07.59,socDefault,Tokio,0000,0000,0000,,とにかく 二階の窓は 閉めないで おいてよ？
+Dialogue: 0,1:18:08.05,1:18:09.14,socDefault,Mom,0000,0000,0000,,あ はい
+Dialogue: 0,1:18:08.47,1:18:09.97,socDefault,Tokio,0000,0000,0000,,じゃあ 行ってくる
+Dialogue: 0,1:18:09.97,1:18:11.47,socDefault,Mom,0000,0000,0000,,いってらっしゃい
+Dialogue: 0,1:18:12.31,1:18:16.35,socDefault,Dad,0000,0000,0000,,「もたもたして 車にひかれることも あり」と 書いてないか そこに？
+Dialogue: 0,1:18:16.64,1:18:18.35,socDefault,Mom,0000,0000,0000,,あなた！
+Dialogue: 0,1:19:26.17,1:19:28.63,socDefault,Chibi,0000,0000,0000,,ここ… どこ？
+Dialogue: 0,1:19:52.41,1:19:54.28,socDefault,Chibi,0000,0000,0000,,なに この音？
+Dialogue: 0,1:19:54.28,1:19:55.87,socDefault,Chibi,0000,0000,0000,,電車の 来る音？
+Dialogue: 0,1:19:57.29,1:19:59.46,socDefault,Chibi,0000,0000,0000,,電車が 空からなんか 来るわけ…
+Dialogue: 0,1:20:05.96,1:20:08.09,socDefault,Chibi,0000,0000,0000,,なに これ いやっ
+Dialogue: 0,1:20:08.97,1:20:10.47,socDefault,Chibi,0000,0000,0000,,こわーい
+Dialogue: 0,1:20:13.09,1:20:14.68,socDefault,Chibi,0000,0000,0000,,こわいよー
+Dialogue: 0,1:20:34.74,1:20:37.08,socDefault,Chibi,0000,0000,0000,,なんだろう この音？
+Dialogue: 0,1:20:40.83,1:20:43.46,socDefault,Chibi,0000,0000,0000,,なんだか 呼んでる みたいだ
+Dialogue: 0,1:20:50.05,1:20:52.34,socDefault,Chibi,0000,0000,0000,,「こっちだよ」 って 言ってる
+Dialogue: 0,1:21:32.01,1:21:33.67,socDefault,Chibi,0000,0000,0000,,{\i1}時夫の うちだ{\i0}
+Dialogue: 0,1:21:34.63,1:21:36.55,socDefault,Chibi,0000,0000,0000,,{\i1}ちゃんと 帰ってこれたんだ{\i0}
+Dialogue: 0,1:21:37.14,1:21:40.06,socDefault,Chibi,0000,0000,0000,,{\i1}あたしにも 「猫の勘」は あったんだ{\i0}
+Dialogue: 0,1:21:56.86,1:21:59.58,socDefault,Mom,0000,0000,0000,,なかなか 雨 やまないわね…
+Dialogue: 0,1:22:00.49,1:22:01.83,socDefault,Dad,0000,0000,0000,,ああ
+Dialogue: 0,1:22:07.83,1:22:10.21,socDefault,Mom,0000,0000,0000,,猫 どうしてるかしら？
+Dialogue: 0,1:22:10.80,1:22:12.00,socDefault,Dad,0000,0000,0000,,うん…
+Dialogue: 0,1:22:39.95,1:22:41.70,socDefault,Chibi,0000,0000,0000,,ラフィエル！
+Dialogue: 0,1:23:02.85,1:23:05.68,socDefault,Mysterious Voice,0000,0000,0000,,魂を返す…
+Dialogue: 0,1:23:12.69,1:23:15.74,socDefault,Mysterious Voice,0000,0000,0000,,魂を返す！
+Dialogue: 0,1:23:20.07,1:23:22.12,socDefault,Mysterious Voice,0000,0000,0000,,起き上がれ
+Dialogue: 0,1:23:27.25,1:23:28.41,socDefault,Chibi,0000,0000,0000,,起きないで
+Dialogue: 0,1:23:35.05,1:23:37.17,socDefault,Mysterious Voice,0000,0000,0000,,起き上がれ！
+Dialogue: 0,1:23:37.26,1:23:38.72,socDefault,Chibi,0000,0000,0000,,起きないで…
+Dialogue: 0,1:23:39.55,1:23:41.39,socDefault,Chibi,0000,0000,0000,,起きないで！
+Dialogue: 0,1:23:47.06,1:23:49.44,socDefault,Chibi,0000,0000,0000,,そのまま 消えて！
+Dialogue: 0,1:23:51.65,1:23:53.81,socDefault,Chibi,0000,0000,0000,,ラフィエル！
+Dialogue: 0,1:23:55.27,1:23:58.24,socDefault,Chibi,0000,0000,0000,,ラフィエル！
+Dialogue: 0,1:25:00.01,1:25:00.97,socDefault,Mom,0000,0000,0000,,{\i1}駄目！{\i0}
+Dialogue: 0,1:25:00.97,1:25:02.17,socDefault,Mom,0000,0000,0000,,{\i1}逃げちゃ 駄目！{\i0}
+Dialogue: 0,1:25:03.63,1:25:05.68,socDefault,Mom,0000,0000,0000,,{\i1}なんのための ミトン{\i0}
+Dialogue: 0,1:25:05.68,1:25:07.56,socDefault,Mom,0000,0000,0000,,{\i1}なんのための ずきん{\i0}
+Dialogue: 0,1:25:07.56,1:25:09.35,socDefault,Mom,0000,0000,0000,,{\i1}なんのための 完全武装{\i0}
+Dialogue: 0,1:25:12.06,1:25:14.98,socDefault,Mom,0000,0000,0000,,{\i1}どうか 神様 お守りください{\i0}
+Dialogue: 0,1:25:16.90,1:25:17.90,socDefault,Mom (to Chibi),0000,0000,0000,,おいで
+Dialogue: 0,1:25:33.96,1:25:38.13,socDefault,Mom,0000,0000,0000,,{\i1}どうか… 心臓が 変調 きたしませんように{\i0}
+Dialogue: 0,1:25:40.25,1:25:43.72,socDefault,Mom (to Chibi),0000,0000,0000,,おいで… 頭をなでる だけよ
+Dialogue: 0,1:25:45.93,1:25:48.05,socDefault,Mom,0000,0000,0000,,{\i1}どうか 神様…{\i0}
+Dialogue: 0,1:25:48.05,1:25:50.56,socDefault,Mom,0000,0000,0000,,{\i1}吐き気を もよおしません ように{\i0}
+Dialogue: 0,1:27:03.46,1:27:06.30,socDefault,Mom,0000,0000,0000,,{\i1}感謝… します{\i0}
+Dialogue: 0,1:28:42.56,1:28:44.36,socDefault,Chibi,0000,0000,0000,,ラフィエルだ
+Dialogue: 0,1:28:45.19,1:28:47.19,socDefault,Chibi,0000,0000,0000,,ラフィエル！
+Dialogue: 0,1:28:52.61,1:28:53.66,socDefault,Raphael,0000,0000,0000,,しばらくだったね
+Dialogue: 0,1:28:54.62,1:28:57.91,socDefault,Chibi,0000,0000,0000,,ラフィエル あんた どうして ひとりで いなくなっちゃたの
+Dialogue: 0,1:28:57.91,1:28:59.91,socDefault,Chibi,0000,0000,0000,,あたし 探したのに
+Dialogue: 0,1:29:01.08,1:29:03.29,socDefault,Raphael,0000,0000,0000,,あんたが ひとりで やってけるように
+Dialogue: 0,1:29:03.29,1:29:05.33,socDefault,Raphael,0000,0000,0000,,しばらく 姿を消したのさ
+Dialogue: 0,1:29:06.29,1:29:09.55,socDefault,Raphael,0000,0000,0000,,おれが いなくても あんたは ちゃんと旅ができた
+Dialogue: 0,1:29:09.76,1:29:11.30,socDefault,Chibi,0000,0000,0000,,旅？
+Dialogue: 0,1:29:11.30,1:29:13.30,socDefault,Chibi,0000,0000,0000,,いろんなこと あったけど
+Dialogue: 0,1:29:13.30,1:29:15.05,socDefault,Chibi,0000,0000,0000,,あれが 旅なの？
+Dialogue: 0,1:29:16.18,1:29:17.68,socDefault,Raphael,0000,0000,0000,,りっぱな 旅だよ
+Dialogue: 0,1:29:18.51,1:29:21.93,socDefault,Chibi,0000,0000,0000,,ねえ これからは ずっと ここに いてくれる？
+Dialogue: 0,1:29:23.06,1:29:25.60,socDefault,Raphael,0000,0000,0000,,あんたの 夢が 覚めるまで いるよ
+Dialogue: 0,1:29:27.15,1:29:28.40,socDefault,Chibi,0000,0000,0000,,夢でもいい
+Dialogue: 0,1:29:28.40,1:29:32.03,socDefault,Chibi,0000,0000,0000,,この夢 ずーっと ずーっと 覚めないで！
+Dialogue: 0,1:29:56.97,1:30:00.60,socDefault,Chibi,0000,0000,0000,,うわあ ラフィエルが こんなにいっぱい！
+Dialogue: 0,1:30:00.60,1:30:03.23,socDefault,Chibi,0000,0000,0000,,ぜんぶ ぜーんぶ ラフィエルだ！
+Dialogue: 0,1:30:13.90,1:30:15.40,socDefault,Chibi,0000,0000,0000,,うわーっ！
+Dialogue: 0,1:31:03.49,1:31:04.87,socDefault,Chibi,0000,0000,0000,,{\i1}あたしは…{\i0}
+Dialogue: 0,1:31:04.87,1:31:07.75,socDefault,Chibi,0000,0000,0000,,{\i1}時夫と いっしょに 歳を とれるのでしょうか{\i0}
+Dialogue: 0,1:31:10.04,1:31:14.34,socDefault,Chibi,0000,0000,0000,,{\i1}あの 雨の中の声は なんだったのでしょうか{\i0}
+Dialogue: 0,1:31:20.01,1:31:22.14,socDefault,Chibi,0000,0000,0000,,{\i1}思いは 移り変わり{\i0}
+Dialogue: 0,1:31:22.14,1:31:23.51,socDefault,Chibi,0000,0000,0000,,{\i1}移り変わり…{\i0}
+Dialogue: 0,1:31:23.81,1:31:25.47,socDefault,Chibi,0000,0000,0000,,{\i1}かげろうの よう{\i0}
+Dialogue: 0,1:31:26.27,1:31:28.89,socDefault,Chibi,0000,0000,0000,,{\i1}ひとつのことを 考えようと しても{\i0}
+Dialogue: 0,1:31:29.65,1:31:32.36,socDefault,Chibi,0000,0000,0000,,{\i1}もう 次の考えに 移って しまいます{\i0}
+Dialogue: 0,1:31:33.65,1:31:38.24,socDefault,Chibi,0000,0000,0000,,{\i1}外の景色が 一日一日と 移り変わって ゆくからです{\i0}
+Dialogue: 0,1:31:40.03,1:31:43.58,socDefault,Chibi,0000,0000,0000,,{\i1}おばけのような 桜が 終わったかと 思うと{\i0}
+Dialogue: 0,1:31:43.58,1:31:45.29,socDefault,Chibi,0000,0000,0000,,{\i1}遅咲きの 八重桜{\i0}
+Dialogue: 0,1:31:46.16,1:31:49.75,socDefault,Chibi,0000,0000,0000,,{\i1}スミレや レンギョウ… ハナズオウ{\i0}
+Dialogue: 0,1:31:50.83,1:31:52.42,socDefault,Chibi,0000,0000,0000,,{\i1}黄色いヤマブキ{\i0}
+Dialogue: 0,1:31:52.42,1:31:53.75,socDefault,Chibi,0000,0000,0000,,{\i1}ユキヤナギ{\i0}
+Dialogue: 0,1:31:54.50,1:31:58.42,socDefault,Chibi,0000,0000,0000,,{\i1}なんとすごい… なんとすごい 季節でしょう！{\i0}
+Dialogue: 0,1:32:02.72,1:32:07.68,socDefault,Chibi,0000,0000,0000,,{\i1}お母さんの 猫アレルギーは あれから だんだんと 良くなって いくみたいです{\i0}
+Dialogue: 0,1:32:08.64,1:32:11.90,socDefault,Chibi,0000,0000,0000,,{\i1}お父さんは 自分の世界に 行っちゃって{\i0}
+Dialogue: 0,1:32:11.90,1:32:16.03,socDefault,Chibi,0000,0000,0000,,{\i1}仕事が終わるまで いないような ものに なってるのだ そうです{\i0}
+Dialogue: 0,1:32:30.91,1:32:32.62,socDefault,Chibi,0000,0000,0000,,ああ 眠い…
+Dialogue: 0,1:32:34.29,1:32:36.25,socDefault,Chibi,0000,0000,0000,,{\i1}一眠りして 起きたら{\i0}
+Dialogue: 0,1:32:36.80,1:32:41.34,socDefault,Chibi,0000,0000,0000,,{\i1}あたしは ホワイトフィールドに 一歩 近づいているのです{\i0}
+Dialogue: 50,1:32:59.44,1:33:12.08,socSong,ED,0000,0000,0000,,{\fad(1000,0)}ふと遠い気分よ あなたを想う夜は
+Dialogue: 50,1:33:12.08,1:33:19.21,socSong,ED,0000,0000,0000,,夜空の星さえ まばらにさみしそうで
+Dialogue: 50,1:33:19.21,1:33:25.34,socSong,ED,0000,0000,0000,,冷えた頬をさすっている
+Dialogue: 50,1:33:25.34,1:33:36.94,socSong,ED,0000,0000,0000,,カゲのある笑顔より 素直に笑って
+Dialogue: 50,1:33:36.94,1:33:43.90,socSong,ED,0000,0000,0000,,そんなあなたがいちばん好きだから
+Dialogue: 50,1:33:43.90,1:33:49.24,socSong,ED,0000,0000,0000,,戻って来てよ
+Dialogue: 50,1:33:49.24,1:33:57.75,socSong,ED,0000,0000,0000,,Darlin イヤよ ひとり頬杖の時間は
+Dialogue: 50,1:33:57.75,1:34:04.76,socSong,ED,0000,0000,0000,,So cold このままじゃ 夢も冷たそう
+Dialogue: 50,1:34:04.76,1:34:19.15,socSong,ED,0000,0000,0000,,{\fad(0,2000)}Smile me ここまで 愛するあなた 届けてよ
+Dialogue: 50,1:34:29.16,1:34:41.96,socSong,ED,0000,0000,0000,,{\fad(1000,0)}私のハートなら 星形にとがってる
+Dialogue: 50,1:34:41.96,1:34:49.01,socSong,ED,0000,0000,0000,,さみしいブルーの光を放ちながら
+Dialogue: 50,1:34:49.01,1:34:55.52,socSong,ED,0000,0000,0000,,遠いあなた 想ってる
+Dialogue: 50,1:34:55.52,1:35:06.90,socSong,ED,0000,0000,0000,,今度会える時には 素直に笑って
+Dialogue: 50,1:35:06.90,1:35:19.12,socSong,ED,0000,0000,0000,,春の陽射しが恋まで あたためてくれる真昼に
+Dialogue: 50,1:35:19.12,1:35:27.59,socSong,ED,0000,0000,0000,,Darlin イヤよ 夜に頬杖の毎日
+Dialogue: 50,1:35:27.59,1:35:34.51,socSong,ED,0000,0000,0000,,So cold このままじゃ夢も冷たそう
+Dialogue: 50,1:35:34.51,1:35:47.69,socSong,ED,0000,0000,0000,,{\fad(0,1500)}Smile me このまま とても春まで待てないわ
+Dialogue: 50,1:35:47.69,1:35:53.95,socSong,ED,0000,0000,0000,,{\fad(0,1500)}待てないわ
+Dialogue: 50,1:35:53.95,1:36:01.21,socSong,ED,0000,0000,0000,,{\fad(0,3000)}待てないわ
