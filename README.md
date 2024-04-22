@@ -1,6 +1,6 @@
 # kitsunekko mirror
 
-This repository contains all `srt` and `ass` subitles files from kitsunekko.
+This repository contains all `srt` and `ass` subtitle files from kitsunekko.
 It was created using [kitsunekko-tools](https://github.com/Ajatt-Tools/kitsunekko-tools),
 a simple program that downloads all files from `kitsunekko`
 and saves them in a specified directory on your hard drive.
