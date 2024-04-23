@@ -16,6 +16,8 @@ Run the following command.
 git clone "https://github.com/Ajatt-Tools/kitsunekko-mirror.git"
 ```
 
+## Usage
+
 Once you have the subtitles downloaded,
 you can use
 [lf](https://wiki.archlinux.org/title/Lf) to browse the catalog,
