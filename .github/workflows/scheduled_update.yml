@@ -1,0 +1,35 @@
+name: Scheduled Kitsunekko sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install kitsunekko-tools
+        run: >-
+          python3 -m
+          pip install
+          kitsunekko-tools
+          --user
+
+      - name: Synchronize with kitsunekko
+        run: |
+          python -m kitsunekko_tools -c ktools.toml sync
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Synchronize Mirror with Kitsunekko
