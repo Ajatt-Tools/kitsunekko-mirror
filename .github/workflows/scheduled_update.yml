@@ -3,10 +3,11 @@ name: Scheduled Kitsunekko sync
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 */2 * * *"
 
 jobs:
   run-script:
+    name: Synchronize with Kitsunekko
     runs-on: ubuntu-latest
 
     steps:
@@ -26,11 +27,19 @@ jobs:
           --user
 
       - name: Synchronize with kitsunekko
-        run: |
-          python -m kitsunekko_tools -c ktools.toml sync
+        shell: bash
+        env:
+          KITSU_API_URL: ${{ secrets.KITSUAPIURL }}
+          KITSU_API_KEY: ${{ secrets.KITSUAPIKEY }}
+        run: >-
+          python -m
+          kitsunekko_tools -c ktools.toml
+          sync --api
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Synchronize Mirror with Kitsunekko
+          commit_user_name: GitHub Actions
+          commit_user_email: noreply@github.com
           commit_author: GitHub <noreply@github.com>
