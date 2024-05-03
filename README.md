@@ -13,7 +13,7 @@ use [git](https://wiki.archlinux.org/title/Git).
 Run the following command.
 
 ```
-git clone "https://github.com/Ajatt-Tools/kitsunekko-mirror.git"
+git clone --depth 1 "https://github.com/Ajatt-Tools/kitsunekko-mirror.git"
 ```
 
 ## Usage
