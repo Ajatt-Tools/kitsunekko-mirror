@@ -23,3 +23,8 @@ you can use
 [lf](https://wiki.archlinux.org/title/Lf) to browse the catalog,
 and [fzf](https://wiki.archlinux.org/title/Fzf) to search it.
 [Watch a demonstration on ![YouTube](https://raw.githubusercontent.com/Ajatt-Tools/BrowserPlayButton/05300c61bf4abe6adff9a1fcd3b7056bd82efb90/.github/youtube_logo.webp)](https://redirect.invidious.io/watch?v=WVDRbR7C6js).
+
+## Modifications
+
+If you want to add, edit, or remove subtitle files in this repository,
+you can do so by [creating a pull request](https://github.com/Ajatt-Tools/kitsunekko-mirror/pulls).
