@@ -18,13 +18,10 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: "pip"
 
       - name: Install kitsunekko-tools
-        run: >-
-          python3 -m
-          pip install
-          kitsunekko-tools
-          --user
+        run: pip install -r requirements.txt
 
       - name: Synchronize with kitsunekko
         shell: bash
