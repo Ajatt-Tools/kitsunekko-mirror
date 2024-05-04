@@ -36,6 +36,15 @@ jobs:
           kitsunekko_tools -c ktools.toml
           sync --api
 
+      - name: Install fdupes
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: fdupes
+          version: 1.0
+
+      - name: Remove duplicates
+        run: bash scripts/remove-duplicates.sh
+
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
