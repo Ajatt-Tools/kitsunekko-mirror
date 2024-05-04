@@ -21,7 +21,7 @@ main() {
 		exit 1
 	fi
 
-	fdupes -rdNI --order=time --reverse .
+	fdupes -q -rdNI --order=time --reverse .
 }
 
 main "$@"
