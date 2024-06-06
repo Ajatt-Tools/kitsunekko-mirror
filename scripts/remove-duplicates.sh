@@ -22,6 +22,7 @@ main() {
 	fi
 
 	fdupes -q -rdNI --order=time --reverse .
+	find . -empty -delete
 }
 
 main "$@"
