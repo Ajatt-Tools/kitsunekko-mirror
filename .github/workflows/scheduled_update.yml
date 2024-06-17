@@ -3,7 +3,7 @@ name: Scheduled Kitsunekko sync
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */2 * * *"
+    - cron: "0 */3 * * *"
 
 jobs:
   run-script:
@@ -17,7 +17,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"
           cache: "pip"
 
       - name: Install kitsunekko-tools
