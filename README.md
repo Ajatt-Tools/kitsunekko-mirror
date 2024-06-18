@@ -1,8 +1,9 @@
 # kitsunekko mirror
 
-This repository contains all `srt` and `ass` subtitle files
-from [kitsunekko](https://kitsunekko.net/subtitles/japanese/).
-It was created using [kitsunekko-tools](https://github.com/Ajatt-Tools/kitsunekko-tools),
+This repository contains `srt` and `ass` subtitle files for Japanese anime and TV shows.
+Additionally, it includes all subtitle files
+from Japanese [kitsunekko](https://kitsunekko.net/subtitles/japanese/).
+The kitsunekko mirror was created using [kitsunekko-tools](https://github.com/Ajatt-Tools/kitsunekko-tools),
 a simple program that downloads all files from `kitsunekko`
 and saves them in a specified directory on your hard drive.
 
