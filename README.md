@@ -26,6 +26,12 @@ you can use
 and [fzf](https://wiki.archlinux.org/title/Fzf) to search it.
 [Watch a demonstration on ![YouTube](https://raw.githubusercontent.com/Ajatt-Tools/BrowserPlayButton/05300c61bf4abe6adff9a1fcd3b7056bd82efb90/.github/youtube_logo.webp)](https://redirect.invidious.io/watch?v=WVDRbR7C6js).
 
+
+## Github search
+
+Search files on GitHub without cloning the repo
+[like this](https://github.com/search?q=repo%3AAjatt-Tools%2Fkitsunekko-mirror+mushoku+tensei).
+
 ## Modifications
 
 If you want to add, edit, or remove subtitle files in this repository,
