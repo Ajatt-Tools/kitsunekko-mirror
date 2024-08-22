@@ -1,5 +1,7 @@
 # kitsunekko mirror
 
+### *📣 updates every 3 hours*
+
 This repository contains `srt` and `ass` subtitle files for Japanese anime and TV shows.
 Additionally, it includes all subtitle files
 from Japanese [kitsunekko](https://kitsunekko.net/subtitles/japanese/).
