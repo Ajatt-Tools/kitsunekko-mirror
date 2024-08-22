@@ -1,0 +1,623 @@
+[Script Info]
+; This is an Advanced Sub Station Alpha v4+ script.
+ScriptType: v4.00+
+Collisions: Normal
+PlayDepth: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: JPN TOP,Noto Sans,24,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,1.7,1,8,10,10,5,1
+Style: Gen_Main,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,1,2,0010,0010,0018,1
+Style: Gen_Italics,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,-1,0,0,100,100,0,0,1,2,1,2,0010,0010,0018,1
+Style: Gen_Main_Up,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00000000,&H00090909,0,0,0,0,100,100,0,0,1,2,1,8,0010,0010,0018,1
+Style: Gen_Italics_top,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,-1,0,0,100,100,0,0,1,2,1,8,0010,0010,0018,1
+Style: Gen_TitleEp,Trebuchet MS,20,&H000121C8,&H000000FF,&H00060503,&H00060503,-1,0,0,0,100,100,0,0,1,3,1,8,0020,0020,0030,1
+Style: Gen_Avance,Arial,20,&H000D00D3,&H000000FF,&H00060503,&H00000000,-1,0,0,0,100,100,0,0,1,3,2,8,0020,0020,0100,1
+Style: Gen_Name,Times New Roman,20,&H001845E6,&H000000FF,&H00FFFFFF,&H00FFFFFF,-1,0,0,0,100,100,0,0,1,2,1,9,0035,0035,0020,1
+Style: Naruto_Nota,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00262626,&H00505050,0,-1,0,0,100,100,0,0,1,2,1,8,0010,0010,0018,1
+Style: Cart_A_Tre,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00303030,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+Style: Cart_B_Tre,Trebuchet MS,20,&H00323232,&H000000FF,&H00D9D9D9,&H00D9D9D9,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+Style: Cart_C_Tre,Trebuchet MS,20,&H00323232,&H000000FF,&H00FFFFFF,&H00FFFFFF,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+Style: Cart_A_Tim,Times New Roman,20,&H00FFFFFF,&H000000FF,&H00060606,&H00060606,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+Style: Cart_B_Tim,Times New Roman,20,&H00323232,&H000000FF,&H00D9D9D9,&H00D9D9D9,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+Style: Cart_C_Tim,Times New Roman,20,&H00323232,&H000000FF,&H00FFFFFF,&H00FFFFFF,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,00:00:01.85,00:00:04.86,JPN TOP,,0,0,0,,♬ 踏み込むぜアクセル
+Dialogue: 0,00:00:04.86,00:00:08.87,JPN TOP,,0,0,0,,♬ 駆け引きは無いさ､そうだよ
+Dialogue: 0,00:00:08.87,00:00:12.88,JPN TOP,,0,0,0,,♬ 夜をぬける
+Dialogue: 0,00:00:12.88,00:00:15.88,JPN TOP,,0,0,0,,♬ ねじ込むさ最後に
+Dialogue: 0,00:00:15.88,00:00:19.39,JPN TOP,,0,0,0,,♬ 差し引きゼロさ､そうだよ
+Dialogue: 0,00:00:19.39,00:00:24.90,JPN TOP,,0,0,0,,♬ 日々を削る
+Dialogue: 0,00:00:24.90,00:00:27.91,JPN TOP,,0,0,0,,♬ 心をそっと
+Dialogue: 0,00:00:27.91,00:00:30.41,JPN TOP,,0,0,0,,♬ 開いて ギュっと
+Dialogue: 0,00:00:30.41,00:00:33.92,JPN TOP,,0,0,0,,♬ 引き寄せたら
+Dialogue: 0,00:00:33.92,00:00:35.92,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:00:35.92,00:00:38.43,JPN TOP,,0,0,0,,♬ 届くよきっと
+Dialogue: 0,00:00:38.43,00:00:43.44,JPN TOP,,0,0,0,,♬ 伝うよもっと さあ
+Dialogue: 0,00:00:43.44,00:00:51.45,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:00:51.45,00:00:53.96,JPN TOP,,0,0,0,,♬ 生き急いで
+Dialogue: 0,00:00:53.96,00:00:56.90,JPN TOP,,0,0,0,,♬ 搾り取って
+Dialogue: 0,00:00:56.90,00:00:59.40,JPN TOP,,0,0,0,,♬ 縺れる足だけど前より
+Dialogue: 0,00:00:59.40,00:01:02.41,JPN TOP,,0,0,0,,♬ ずっとそう､遠くへ
+Dialogue: 0,00:01:02.41,00:01:04.91,JPN TOP,,0,0,0,,♬ 奪い取って
+Dialogue: 0,00:01:04.91,00:01:07.92,JPN TOP,,0,0,0,,♬ 掴んだって
+Dialogue: 0,00:01:07.92,00:01:10.42,JPN TOP,,0,0,0,,♬ 君じゃないなら意味は無いのさ
+Dialogue: 0,00:01:10.42,00:01:12.43,JPN TOP,,0,0,0,,♬ だから､嗚呼､
+Dialogue: 0,00:01:12.43,00:01:16.94,JPN TOP,,0,0,0,,♬ 遥か彼方
+Dialogue: 0,00:01:16.94,00:01:23.44,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:01:31.92,00:01:39.94,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:01:39.94,00:01:43.44,JPN TOP,,0,0,0,,(ﾅﾙﾄ)おい むっつりスケべ｡
+Dialogue: 0,0:01:40.16,0:01:42.56,Gen_Main,,0,0,0,,¿Pervertido encubierto?
+Dialogue: 0,00:01:43.44,00:01:47.95,JPN TOP,,0,0,0,,木ノ葉隠れ秘伝 体術奥義…｡
+Dialogue: 0,0:01:44.03,0:01:47.23,Gen_Main,,0,0,0,,Técnica secreta\Nde la Aldea Oculta de la Hoja.
+Dialogue: 0,00:01:47.95,00:01:50.46,JPN TOP,,0,0,0,,千年殺し｡
+Dialogue: 0,0:01:48.45,0:01:50.27,Gen_Main,,0,0,0,,¡Sennen Goroshi!
+Dialogue: 0,0:01:48.45,0:01:50.27,Naruto_Nota,,0,0,0,,Mil Años de Dolor
+Dialogue: 0,00:01:52.90,00:01:55.40,JPN TOP,,0,0,0,,完全に のびてるってばよ｡
+Dialogue: 0,0:01:53.64,0:01:55.87,Gen_Main,,0,0,0,,Está fuera de combate.
+Dialogue: 0,00:01:55.40,00:01:58.41,JPN TOP,,0,0,0,,やっぱり弱いじゃん こいつ｡
+Dialogue: 0,0:01:55.87,0:01:58.09,Gen_Main,,0,0,0,,Ya sabía yo que era un debilucho.
+Dialogue: 0,00:01:58.41,00:02:01.41,JPN TOP,,0,0,0,,何だ！そのでっかいカエルってば！
+Dialogue: 0,0:01:58.97,0:02:01.78,Gen_Main,,0,0,0,,¿Y esa rana enorme?
+Dialogue: 0,00:02:01.41,00:02:03.92,JPN TOP,,0,0,0,,お前 一体 何者だ～！
+Dialogue: 0,0:02:01.78,0:02:03.78,Gen_Main,,0,0,0,,¿Quién eres tú?
+Dialogue: 0,00:02:06.93,00:02:09.43,JPN TOP,,0,0,0,,(自来也)よくぞ 聞いたり｡
+Dialogue: 0,0:02:07.52,0:02:09.62,Gen_Main,,0,0,0,,¡Gracias por preguntar!
+Dialogue: 0,00:02:09.43,00:02:13.44,JPN TOP,,0,0,0,,妙木山 ガマの精霊仙素道人
+Dialogue: 0,0:02:10.02,0:02:13.75,Gen_Main,,0,0,0,,El sabio maestro de sapos\Ndel Monte Myouboku.
+Dialogue: 0,00:02:13.44,00:02:17.44,JPN TOP,,0,0,0,,通称 ガマ仙人と見知りおけ！
+Dialogue: 0,0:02:13.75,0:02:17.36,Gen_Main,,0,0,0,,¡También conocido como el Sabio Sapo!
+Dialogue: 0,0:02:18.19,0:02:24.23,Cart_A_Tre,,0,0,0,,¡Cuánto tiempo!\N¡La llegada del Sabio Pervertido!
+Dialogue: 0,0:02:20.19,0:02:23.40,Gen_Main,,0,0,0,,¡Cuánto tiempo!\N¡La llegada del Sabio Pervertido!
+Dialogue: 0,0:02:24.23,0:02:26.23,Gen_Main,,0,0,0,,¿Sabio?
+Dialogue: 0,00:02:24.46,00:02:26.46,JPN TOP,,0,0,0,,せ… 仙人？
+Dialogue: 0,0:02:26.23,0:02:27.85,Gen_Main,,0,0,0,,Efectivamente.
+Dialogue: 0,00:02:26.46,00:02:28.47,JPN TOP,,0,0,0,,(自来也)しかり｡
+Dialogue: 0,00:02:32.48,00:02:34.98,JPN TOP,,0,0,0,,おい こら！ こら エロ仙人！
+Dialogue: 0,0:02:32.99,0:02:37.24,Gen_Main,,0,0,0,,¿Qué voy a hacer ahora,\NSabio Pervertido?
+Dialogue: 0,00:02:34.98,00:02:36.99,JPN TOP,,0,0,0,,どうしてくれんだってばよ！
+Dialogue: 0,00:02:36.99,00:02:39.49,JPN TOP,,0,0,0,,修業を見てもらうはずだったのに
+Dialogue: 0,0:02:37.24,0:02:42.22,Gen_Main,,0,0,0,,Noqueaste al que me estaba entrenando.
+Dialogue: 0,00:02:39.49,00:02:42.00,JPN TOP,,0,0,0,,こいつを こんなにしやがってよ！
+Dialogue: 0,00:02:42.00,00:02:45.50,JPN TOP,,0,0,0,,(自来也)そいつが取材の邪魔をしたからだっての｡
+Dialogue: 0,0:02:42.22,0:02:45.61,Gen_Main,,0,0,0,,Porque me estorbó mientras me informaba.
+Dialogue: 0,00:02:45.50,00:02:49.01,JPN TOP,,0,0,0,,取材？わしゃ 物書きでな｡
+Dialogue: 0,0:02:45.61,0:02:46.95,Gen_Main,,0,0,0,,¿Informarte?
+Dialogue: 0,0:02:46.95,0:02:51.17,Gen_Main,,0,0,0,,Soy escritor de novelas.
+Dialogue: 0,00:02:49.01,00:02:52.51,JPN TOP,,0,0,0,,小説を書いとる これだ！
+Dialogue: 0,0:02:51.17,0:02:52.43,Gen_Main,,0,0,0,,¡De esta!
+Dialogue: 0,0:02:52.83,0:02:55.50,Cart_C_Tre,,0,0,0,,{\c&H414CA4&}Paraíso de la Seducción
+Dialogue: 0,00:02:55.46,00:02:56.96,JPN TOP,,0,0,0,,ん？
+Dialogue: 0,00:02:56.96,00:03:00.97,JPN TOP,,0,0,0,,(ｶｶｼ)《フフ～ フフフ…》
+Dialogue: 0,0:03:00.93,0:03:03.24,Gen_Main,,0,0,0,,¡Esa es…!
+Dialogue: 0,00:03:00.97,00:03:02.97,JPN TOP,,0,0,0,,あ～！ それってば…｡
+Dialogue: 0,00:03:02.97,00:03:05.48,JPN TOP,,0,0,0,,えっ お前 知ってんの？ これ｡
+Dialogue: 0,0:03:03.24,0:03:05.65,Gen_Main,,0,0,0,,¿La conoces?
+Dialogue: 0,00:03:05.48,00:03:08.98,JPN TOP,,0,0,0,,(自来也)《ククク～かなり有名になったのう》
+Dialogue: 0,0:03:07.25,0:03:09.34,Gen_Italics,,0,0,0,,Vaya, se hizo muy famosa.
+Dialogue: 0,00:03:08.98,00:03:11.99,JPN TOP,,0,0,0,,それ ろくな小説じゃねえだろ！
+Dialogue: 0,0:03:09.34,0:03:11.81,Gen_Main,,0,0,0,,¡Esa novela es obscena!
+Dialogue: 0,00:03:11.99,00:03:14.49,JPN TOP,,0,0,0,,大体 何が取材だってばよ｡
+Dialogue: 0,0:03:12.21,0:03:16.88,Gen_Main,,0,0,0,,Y no te estabas informando.\NSolo espiabas el baño de mujeres.
+Dialogue: 0,00:03:14.49,00:03:16.50,JPN TOP,,0,0,0,,ただ女湯のぞいてただけじゃねえか！
+Dialogue: 0,00:03:16.50,00:03:20.00,JPN TOP,,0,0,0,,(女性たち)いや～！(自来也)あわわわわ…｡
+Dialogue: 0,00:03:20.00,00:03:23.51,JPN TOP,,0,0,0,,バカ バカ バカ！のぞき見がバレちゃっただろうが｡
+Dialogue: 0,0:03:20.11,0:03:23.69,Gen_Main,,0,0,0,,¡Idiota! ¡Ahora descubrieron\Nque las estaba espiando!
+Dialogue: 0,00:03:23.51,00:03:26.52,JPN TOP,,0,0,0,,このスケベ｡バカ者！
+Dialogue: 0,0:03:23.69,0:03:25.29,Gen_Main,,0,0,0,,Depravado.
+Dialogue: 0,0:03:25.29,0:03:29.29,Gen_Main,,0,0,0,,¡No soy un simple depravado, tonto!
+Dialogue: 0,00:03:26.52,00:03:29.02,JPN TOP,,0,0,0,,わしは ただのスケベではない！
+Dialogue: 0,00:03:29.02,00:03:31.53,JPN TOP,,0,0,0,,のぞきによってインスピレーションを受けて
+Dialogue: 0,0:03:29.29,0:03:33.51,Gen_Main,,0,0,0,,Espiarlas me inspira\Npara crear grandes obras.
+Dialogue: 0,00:03:31.53,00:03:33.53,JPN TOP,,0,0,0,,よりよい作品をだな…｡
+Dialogue: 0,0:03:33.51,0:03:36.31,Gen_Main,,0,0,0,,Déjate de excusas, mentiroso.
+Dialogue: 0,00:03:33.53,00:03:36.04,JPN TOP,,0,0,0,,ウソつけ 言い訳はいいってばよ｡
+Dialogue: 0,00:03:36.04,00:03:39.04,JPN TOP,,0,0,0,,それより修業 どうしてくれんだよ!?
+Dialogue: 0,0:03:36.31,0:03:39.17,Gen_Main,,0,0,0,,¿Qué vas a hacer\Nrespecto a mi entrenamiento?
+Dialogue: 0,00:03:39.04,00:03:41.05,JPN TOP,,0,0,0,,ん？ 修業って
+Dialogue: 0,0:03:39.97,0:03:44.64,Gen_Main,,0,0,0,,¿Entrenamiento? ¿Te refieres\Na lo de caminar sobre el agua?
+Dialogue: 0,00:03:41.05,00:03:44.55,JPN TOP,,0,0,0,,さっきやってた水面歩行の業のことか？
+Dialogue: 0,00:03:44.55,00:03:46.56,JPN TOP,,0,0,0,,知ってんのか？
+Dialogue: 0,0:03:44.64,0:03:46.24,Gen_Main,,0,0,0,,¿Sabes hacerlo?
+Dialogue: 0,00:03:46.56,00:03:50.06,JPN TOP,,0,0,0,,んじゃ 責任 取って俺の修業につきあえってばよ！
+Dialogue: 0,0:03:46.64,0:03:50.65,Gen_Main,,0,0,0,,¡Responsabilízate y ayúdame a entrenar!
+Dialogue: 0,00:03:50.06,00:03:53.00,JPN TOP,,0,0,0,,フン！そんなこと わしが知るか！
+Dialogue: 0,0:03:51.47,0:03:53.45,Gen_Main,,0,0,0,,Eso no me concierne.
+Dialogue: 0,00:03:53.00,00:03:57.51,JPN TOP,,0,0,0,,ク～… やいやいやい！待てこら エロ仙人！
+Dialogue: 0,0:03:55.05,0:03:57.45,Gen_Main,,0,0,0,,¡Espera, Sabio Pervertido!
+Dialogue: 0,0:03:57.45,0:04:00.88,Gen_Main,,0,0,0,,¡Entréname, maldito!
+Dialogue: 0,00:03:57.51,00:04:00.52,JPN TOP,,0,0,0,,俺の修業につきあえ こら～！
+Dialogue: 0,00:04:00.52,00:04:02.52,JPN TOP,,0,0,0,,じゃかぁしい！
+Dialogue: 0,0:04:00.88,0:04:02.61,Gen_Main,,0,0,0,,¡Silencio!
+Dialogue: 0,00:04:02.52,00:04:06.03,JPN TOP,,0,0,0,,わしは 口の利き方を知らんヤツが大嫌いでのう！
+Dialogue: 0,0:04:02.61,0:04:06.23,Gen_Main,,0,0,0,,Odio a la gente sin modales.
+Dialogue: 0,00:04:06.03,00:04:07.53,JPN TOP,,0,0,0,,ギクッ！
+Dialogue: 0,00:04:07.53,00:04:10.04,JPN TOP,,0,0,0,,(自来也)それに 男は好かん｡
+Dialogue: 0,0:04:07.67,0:04:09.83,Gen_Main,,0,0,0,,Y no me interesan los hombres.
+Dialogue: 0,00:04:10.04,00:04:12.04,JPN TOP,,0,0,0,,あっ えっと えっと…｡
+Dialogue: 0,0:04:10.20,0:04:12.21,Gen_Main,,0,0,0,,A ver, a ver…
+Dialogue: 0,00:04:12.04,00:04:15.05,JPN TOP,,0,0,0,,あの ｢ｲﾁｬｲﾁｬﾊﾟﾗﾀﾞｲｽ｣ってすっげぇワクワクして
+Dialogue: 0,0:04:12.21,0:04:17.41,Gen_Main,,0,0,0,,El {\i1}Paraíso de la Seducción{\i0}\Nes muy emocionante e interesante.
+Dialogue: 0,00:04:15.05,00:04:17.55,JPN TOP,,0,0,0,,カッコよくっておもしろかったってばよ｡
+Dialogue: 0,0:04:17.41,0:04:21.81,Gen_Main,,0,0,0,,Los menores de 18años \Nno pueden comprar esa novela.
+Dialogue: 0,00:04:17.55,00:04:21.56,JPN TOP,,0,0,0,,(自来也)あの小説は 18歳未満購入 および 閲覧禁止だぞ｡
+Dialogue: 0,00:04:21.56,00:04:23.56,JPN TOP,,0,0,0,,ウソこけ！
+Dialogue: 0,0:04:21.81,0:04:23.18,Gen_Main,,0,0,0,,No mientas.
+Dialogue: 0,00:04:23.56,00:04:25.57,JPN TOP,,0,0,0,,っていう評判が すんごくて…｡
+Dialogue: 0,0:04:23.58,0:04:25.98,Gen_Main,,0,0,0,,No, es que todo el mundo opina eso.
+Dialogue: 0,00:04:25.57,00:04:28.07,JPN TOP,,0,0,0,,おだてても むだだっての！
+Dialogue: 0,0:04:25.98,0:04:27.98,Gen_Main,,0,0,0,,Los elogios no servirán de nada.
+Dialogue: 0,0:04:27.98,0:04:34.22,Gen_Main,,0,0,0,,Soy un sabio. No me dejaré engañar\Npor un principiante como tú.
+Dialogue: 0,00:04:28.07,00:04:31.08,JPN TOP,,0,0,0,,わしは仙人だ！お前のような ひよっこに
+Dialogue: 0,00:04:31.08,00:04:34.59,JPN TOP,,0,0,0,,言いくるめられるようなアホではないのう｡
+Dialogue: 0,00:04:34.59,00:04:36.59,JPN TOP,,0,0,0,,あぁ ちょちょ… ちょっと！
+Dialogue: 0,0:04:35.15,0:04:38.80,Gen_Main,,0,0,0,,¡Oye! ¡Espera!
+Dialogue: 0,00:04:36.59,00:04:39.09,JPN TOP,,0,0,0,,待てってばよ！
+Dialogue: 0,00:04:41.10,00:04:44.61,JPN TOP,,0,0,0,,(自来也)ハハハ…！ さらばじゃ小僧！
+Dialogue: 0,0:04:42.37,0:04:44.70,Gen_Main,,0,0,0,,¡Adiós, mocoso!
+Dialogue: 0,00:04:44.61,00:04:46.61,JPN TOP,,0,0,0,,すんげぇ！
+Dialogue: 0,0:04:45.10,0:04:46.91,Gen_Main,,0,0,0,,Es increíble.
+Dialogue: 0,00:04:46.61,00:04:50.61,JPN TOP,,0,0,0,,スケベのくせにカッコいいってばよ～！
+Dialogue: 0,0:04:46.91,0:04:50.71,Gen_Main,,0,0,0,,Aunque sea un pervertido,\Neso fue genial.
+Dialogue: 0,00:04:58.57,00:05:02.07,JPN TOP,,0,0,0,,お～い エロ仙人！
+Dialogue: 0,0:04:58.98,0:05:01.68,Gen_Main,,0,0,0,,¡Sabio Pervertido!
+Dialogue: 0,00:05:03.58,00:05:06.58,JPN TOP,,0,0,0,,どこ行っちまったんだ？
+Dialogue: 0,0:05:03.69,0:05:06.09,Gen_Main,,0,0,0,,¿Dónde se metió?
+Dialogue: 0,0:05:07.16,0:05:10.13,Cart_A_Tre,,0,0,0,,Pastelería
+Dialogue: 0,00:05:08.59,00:05:10.59,JPN TOP,,0,0,0,,(女性の悲鳴)
+Dialogue: 0,00:05:10.59,00:05:13.10,JPN TOP,,0,0,0,,(自来也)う～わ！(頬をたたく音)
+Dialogue: 0,00:05:13.10,00:05:16.10,JPN TOP,,0,0,0,,(女性)何すんのよ！このエロおやじ！
+Dialogue: 0,0:05:13.33,0:05:15.70,Gen_Main,,0,0,0,,¿Qué haces, viejo verde?
+Dialogue: 0,00:05:17.61,00:05:20.61,JPN TOP,,0,0,0,,(自来也)いやいや…すまんかったのう お嬢ちゃん｡
+Dialogue: 0,0:05:17.70,0:05:20.91,Gen_Main,,0,0,0,,Discúlpame, señorita.
+Dialogue: 0,00:05:20.61,00:05:24.62,JPN TOP,,0,0,0,,いや しかし まぁ なんとすてきなバインバインっぷり！
+Dialogue: 0,0:05:20.91,0:05:25.01,Gen_Main,,0,0,0,,Es que tienes\Nunos pechos despampanantes.
+Dialogue: 0,00:05:24.62,00:05:27.63,JPN TOP,,0,0,0,,(女性)エッチ！(頬をたたく音)
+Dialogue: 0,0:05:25.01,0:05:26.21,Gen_Main,,0,0,0,,¡Pervertido!
+Dialogue: 0,00:05:27.63,00:05:30.63,JPN TOP,,0,0,0,,痛たた… あぁ｡
+Dialogue: 0,00:05:30.63,00:05:34.14,JPN TOP,,0,0,0,,いい大人がみっともねえってばよ｡
+Dialogue: 0,0:05:31.01,0:05:34.05,Gen_Main,,0,0,0,,Es un adulto lamentable.
+Dialogue: 0,0:05:34.05,0:05:36.62,Gen_Main,,0,0,0,,Quizás no sea gran cosa.
+Dialogue: 0,00:05:34.14,00:05:36.64,JPN TOP,,0,0,0,,やっぱり大したことねえのかな｡
+Dialogue: 0,0:05:36.62,0:05:39.03,Gen_Main,,0,0,0,,Pero no tengo a nadie más.
+Dialogue: 0,00:05:36.64,00:05:40.15,JPN TOP,,0,0,0,,でもな ほかに いねえし｡
+Dialogue: 0,00:05:40.15,00:05:42.66,JPN TOP,,0,0,0,,(自来也)はぁ… やれやれ｡
+Dialogue: 0,0:05:40.59,0:05:45.57,Gen_Main,,0,0,0,,Cielos, las mujeres de esta aldea\Nsiguen teniendo carácter.
+Dialogue: 0,00:05:42.66,00:05:45.66,JPN TOP,,0,0,0,,相変わらずこの里の女は気が強いのう｡
+Dialogue: 0,0:05:45.57,0:05:47.61,Gen_Main,,0,0,0,,Pero eso es lo bueno.
+Dialogue: 0,00:05:45.66,00:05:47.67,JPN TOP,,0,0,0,,しかし そこがまた よし｡
+Dialogue: 0,0:05:47.61,0:05:51.00,Gen_Main,,0,0,0,,¿Significa que ya has venido antes?
+Dialogue: 0,00:05:47.67,00:05:51.11,JPN TOP,,0,0,0,,｢相変わらず｣って前にも来たことあんのか？
+Dialogue: 0,00:05:51.11,00:05:53.11,JPN TOP,,0,0,0,,お前…｡そんで
+Dialogue: 0,0:05:51.40,0:05:52.57,Gen_Main,,0,0,0,,Tú…
+Dialogue: 0,0:05:52.57,0:05:56.57,Gen_Main,,0,0,0,,Seguro que solo te dedicaste a espiar,\NSabio Pervertido.
+Dialogue: 0,00:05:53.11,00:05:56.62,JPN TOP,,0,0,0,,のぞきばっか やってたんだろこのエロ仙人！
+Dialogue: 0,00:05:56.62,00:06:00.63,JPN TOP,,0,0,0,,シ～！ あんまり大きい声でエロ エロって言うな！
+Dialogue: 0,0:05:57.77,0:06:00.55,Gen_Main,,0,0,0,,No me llames pervertido a gritos.
+Dialogue: 0,0:06:00.55,0:06:05.35,Gen_Main,,0,0,0,,¡Cállate! Apuesto a que noqueaste\Nal pervertido reservado de casualidad.
+Dialogue: 0,00:06:00.63,00:06:02.63,JPN TOP,,0,0,0,,うるせぇよ！ さてはさては
+Dialogue: 0,00:06:02.63,00:06:05.13,JPN TOP,,0,0,0,,むっつりスケベの一撃だってまぐれだな！
+Dialogue: 0,00:06:05.13,00:06:08.64,JPN TOP,,0,0,0,,とにかく 俺の修業をダメにした責任だけは
+Dialogue: 0,0:06:05.35,0:06:10.97,Gen_Main,,0,0,0,,De todos modos, me aseguraré de que\Nte responsabilices de mi entrenamiento.
+Dialogue: 0,00:06:08.64,00:06:12.15,JPN TOP,,0,0,0,,きっちり取ってもらうってばよあ… あっ！
+Dialogue: 0,0:06:11.77,0:06:14.41,Gen_Main,,0,0,0,,Qué ruidoso eres.
+Dialogue: 0,00:06:12.15,00:06:16.16,JPN TOP,,0,0,0,,全く 騒がしいガキだのう！がっ！
+Dialogue: 0,00:06:16.16,00:06:19.66,JPN TOP,,0,0,0,,しばらく この中でおとなしゅう しとれや｡
+Dialogue: 0,0:06:16.39,0:06:19.33,Gen_Main,,0,0,0,,Quédate aquí un rato.
+Dialogue: 0,00:06:19.66,00:06:22.17,JPN TOP,,0,0,0,,ハハハハ…！
+Dialogue: 0,0:06:22.13,0:06:25.31,Gen_Main,,0,0,0,,¡Oye!
+Dialogue: 0,00:06:22.17,00:06:25.17,JPN TOP,,0,0,0,,≪ こら！ 出せ～！ こら～！
+Dialogue: 0,00:06:30.69,00:06:33.69,JPN TOP,,0,0,0,,(自来也)フゥ～｡
+Dialogue: 0,00:06:33.69,00:06:36.20,JPN TOP,,0,0,0,,ムチムチお姉ちゃんと
+Dialogue: 0,0:06:34.04,0:06:39.01,Gen_Main,,0,0,0,,Quiero conocer a una señorita\Ncon unas buenas curvas.
+Dialogue: 0,00:06:36.20,00:06:39.20,JPN TOP,,0,0,0,,胸のときめく出会いがしたいのう｡
+Dialogue: 0,00:06:47.72,00:06:49.72,JPN TOP,,0,0,0,,(女性１)《ウッフフフ》
+Dialogue: 0,00:06:55.17,00:06:58.67,JPN TOP,,0,0,0,,(女性２)《フフフ…》
+Dialogue: 0,00:06:58.67,00:07:01.68,JPN TOP,,0,0,0,,ダハハハハ…｡
+Dialogue: 0,00:07:01.68,00:07:03.68,JPN TOP,,0,0,0,,うわ…｡
+Dialogue: 0,00:07:03.68,00:07:05.69,JPN TOP,,0,0,0,,あ～！
+Dialogue: 0,0:07:05.34,0:07:07.57,Gen_Main,,0,0,0,,Me las pagarás por lo de antes.
+Dialogue: 0,00:07:05.69,00:07:08.19,JPN TOP,,0,0,0,,さっきは よくもやったな！
+Dialogue: 0,0:07:10.19,0:07:11.84,Gen_Main,,0,0,0,,¿Un sustituto?
+Dialogue: 0,00:07:10.20,00:07:12.20,JPN TOP,,0,0,0,,変わり身の術｡
+Dialogue: 0,0:07:11.84,0:07:15.45,Gen_Main,,0,0,0,,Ese viejo es mejor de lo que parece.
+Dialogue: 0,00:07:12.20,00:07:16.21,JPN TOP,,0,0,0,,やっぱり あのおっさんただ者じゃねえってばよ｡
+Dialogue: 0,00:07:19.22,00:07:21.22,JPN TOP,,0,0,0,,プハ～｡
+Dialogue: 0,00:07:21.22,00:07:25.23,JPN TOP,,0,0,0,,フゥ～… フン 青二才が！
+Dialogue: 0,0:07:23.85,0:07:25.46,Gen_Main,,0,0,0,,Qué novato.
+Dialogue: 0,0:07:25.46,0:07:29.86,Gen_Main,,0,0,0,,Le faltan 100,000 años\Npara estar a mi nivel.
+Dialogue: 0,0:07:30.26,0:07:33.06,Gen_Main,,0,0,0,,No creas.
+Dialogue: 0,0:07:35.70,0:07:39.11,Gen_Main,,0,0,0,,Tienes algo de potencial.
+Dialogue: 0,0:07:39.11,0:07:41.51,Gen_Main,,0,0,0,,Entonces, ¿me entrenarás?
+Dialogue: 0,0:07:41.51,0:07:42.91,Gen_Main,,0,0,0,,Dar y recibir.
+Dialogue: 0,0:07:42.91,0:07:45.31,Gen_Main,,0,0,0,,Si haces lo que te pida,
+Dialogue: 0,0:07:45.31,0:07:49.71,Gen_Main,,0,0,0,,no niego que no vaya a negarme\Na hacer lo que tú digas.
+Dialogue: 0,0:07:49.71,0:07:51.31,Gen_Main,,0,0,0,,¿Eso es un sí?
+Dialogue: 0,0:07:52.52,0:07:56.92,Gen_Main,,0,0,0,,Escúchame,\Nquiero que sea así, así y así.
+Dialogue: 0,0:07:56.92,0:07:59.31,Gen_Main,,0,0,0,,Que sea voluptuosa.
+Dialogue: 0,0:07:59.31,0:08:03.33,Gen_Main,,0,0,0,,Si me traes una, te entrenaré.
+Dialogue: 0,0:08:03.33,0:08:04.53,Gen_Main,,0,0,0,,¿De verdad?
+Dialogue: 0,0:08:04.53,0:08:06.93,Gen_Main,,0,0,0,,El Sabio Sapo no miente.
+Dialogue: 0,0:08:06.93,0:08:09.10,Gen_Main,,0,0,0,,Muy bien, espera aquí.
+Dialogue: 0,0:08:19.67,0:08:24.49,Gen_Main,,0,0,0,,Las previsiones no son fijas.
+Dialogue: 0,0:08:24.85,0:08:28.32,Gen_Main,,0,0,0,,¡Hola, señoritas!
+Dialogue: 0,0:08:38.23,0:08:41.03,Gen_Main,,0,0,0,,Eres muy divertido.
+Dialogue: 0,0:08:41.03,0:08:45.43,Gen_Main,,0,0,0,,Les prometo que es una historia cierta.
+Dialogue: 0,0:08:46.03,0:08:47.19,Gen_Main,,0,0,0,,Cuéntanos más.
+Dialogue: 0,0:08:47.19,0:08:50.04,Gen_Main,,0,0,0,,¡Sabio Pervertido!
+Dialogue: 0,0:08:50.04,0:08:52.77,Gen_Main,,0,0,0,,¿Oíste? Sabio Pervertido, dice.
+Dialogue: 0,0:08:53.09,0:08:56.63,Gen_Main,,0,0,0,,¿A quién llamas Sabio Pervertido, enano?
+Dialogue: 0,0:08:57.07,0:08:58.78,Gen_Main,,0,0,0,,Traje lo que prometí.
+Dialogue: 0,0:08:59.18,0:09:01.58,Gen_Main,,0,0,0,,Una sandía bien voluptuosa.
+Dialogue: 0,0:09:04.52,0:09:07.99,Gen_Main,,0,0,0,,¡Idiota, no era eso!
+Dialogue: 0,0:09:13.19,0:09:15.06,Gen_Main,,0,0,0,,Qué buena pinta.
+Dialogue: 0,0:09:15.06,0:09:17.86,Gen_Main,,0,0,0,,Adelante, come toda la que quieras.
+Dialogue: 0,0:09:17.86,0:09:19.87,Gen_Main,,0,0,0,,¡Buen provecho!
+Dialogue: 0,0:09:20.53,0:09:24.30,Gen_Main,,0,0,0,,¡No! ¿Adónde se fueron las señoritas?
+Dialogue: 0,0:09:28.37,0:09:31.01,Gen_Main,,0,0,0,,Comí hasta reventar.
+Dialogue: 0,0:09:31.81,0:09:33.98,Gen_Main,,0,0,0,,Señoritas…
+Dialogue: 0,0:09:36.38,0:09:39.19,Gen_Italics,,0,0,0,,No hay duda, ese es…
+Dialogue: 0,0:09:41.22,0:09:46.03,Gen_Main,,0,0,0,,Rayos, perdí mucho tiempo.
+Dialogue: 0,0:09:46.43,0:09:48.83,Gen_Main,,0,0,0,,Un momento, ¿adónde crees que vas?
+Dialogue: 0,0:09:48.83,0:09:51.63,Gen_Main,,0,0,0,,¿No vas a entrenarme?
+Dialogue: 0,0:09:51.63,0:09:52.83,Gen_Main,,0,0,0,,¡No!
+Dialogue: 0,0:09:52.83,0:09:56.20,Gen_Main,,0,0,0,,Por tu culpa perdí mi oportunidad\Nde informarme.
+Dialogue: 0,0:09:56.60,0:09:58.41,Gen_Main,,0,0,0,,No te estabas informando.
+Dialogue: 0,0:09:58.41,0:10:02.81,Gen_Main,,0,0,0,,Y déjame decirte que yo tampoco\Npuedo perder el tiempo.
+Dialogue: 0,0:10:02.81,0:10:07.55,Gen_Main,,0,0,0,,Debo entrenar mucho para ser más fuerte\Nque nadie, aprobar el examen de chuunin
+Dialogue: 0,0:10:07.55,0:10:10.52,Gen_Main,,0,0,0,,¡y luego superar al Hokage!
+Dialogue: 0,0:10:13.18,0:10:15.49,Gen_Main,,0,0,0,,Eso no me incumbe.
+Dialogue: 0,0:10:15.49,0:10:19.46,Gen_Main,,0,0,0,,No me agradas, mocoso.\NNo haces más que estorbarme.
+Dialogue: 0,0:10:19.46,0:10:26.20,Gen_Main,,0,0,0,,Necesito mujeres voluptuosas\Npara realizar mi trabajo de escritura.
+Dialogue: 0,0:10:27.00,0:10:31.19,Gen_Main,,0,0,0,,Entonces, querías que trajera\Na una mujer voluptuosa, ¿no?
+Dialogue: 0,0:10:31.19,0:10:32.60,Gen_Main,,0,0,0,,Muy bien.
+Dialogue: 0,0:11:04.10,0:11:06.64,Gen_Main,,0,0,0,,No puedo creerlo.
+Dialogue: 0,0:11:07.05,0:11:10.61,Gen_Main,,0,0,0,,Si me miras tanto, me da vergüenza.
+Dialogue: 0,0:11:16.61,0:11:20.61,Gen_Main,,0,0,0,,Qué chica tan perfecta.
+Dialogue: 0,0:11:20.61,0:11:22.41,Gen_Main,,0,0,0,,¡Me gustas!
+Dialogue: 0,0:11:22.89,0:11:25.02,Gen_Main,,0,0,0,,¡Aprobado!
+Dialogue: 0,0:11:23.67,0:11:25.02,Cart_C_Tre,,0,0,0,,Puntuación máxima
+Dialogue: 0,0:11:25.92,0:11:27.29,Gen_Italics,,0,0,0,,Es idiota.
+Dialogue: 0,0:11:27.29,0:11:30.45,Gen_Main,,0,0,0,,Es mi tipo de mujer.
+Dialogue: 0,0:11:30.45,0:11:34.03,Gen_Main,,0,0,0,,¿Qué técnica usaste?
+Dialogue: 0,0:11:34.43,0:11:37.90,Gen_Main,,0,0,0,,Se llama Oiroke no Jutsu.
+Dialogue: 0,0:11:34.43,0:11:37.90,Naruto_Nota,,0,0,0,,Técnica Sexy
+Dialogue: 0,0:11:37.90,0:11:40.70,Gen_Main,,0,0,0,,Es una idea maravillosa.
+Dialogue: 0,0:11:40.70,0:11:42.70,Gen_Main,,0,0,0,,Eres un genio.
+Dialogue: 0,0:11:42.70,0:11:46.67,Gen_Italics,,0,0,0,,Siento que todos los adultos\Nson débiles ante esta técnica.
+Dialogue: 0,0:11:47.08,0:11:49.49,Gen_Main,,0,0,0,,Entonces, ¿me entrenarás?
+Dialogue: 0,0:11:49.49,0:11:52.68,Gen_Main,,0,0,0,,Sí, pero con una condición.
+Dialogue: 0,0:11:53.71,0:11:57.19,Gen_Main,,0,0,0,,¿Qué condición?
+Dialogue: 0,0:12:08.05,0:12:12.05,Gen_Main,,0,0,0,,Que cuando estés conmigo\Nsiempre mantengas ese aspecto.
+Dialogue: 0,0:12:15.37,0:12:19.24,Gen_Main,,0,0,0,,¡No eres más que un depravado,\NSabio Pervertido!
+Dialogue: 0,0:12:19.24,0:12:22.04,Gen_Main,,0,0,0,,Te equivocas, no soy un mero depravado.
+Dialogue: 0,0:12:22.04,0:12:24.21,Gen_Main,,0,0,0,,¡No lo niegues!
+Dialogue: 0,0:12:27.83,0:12:29.18,Gen_Main,,0,0,0,,Soy un gran depravado.
+Dialogue: 0,0:12:29.18,0:12:33.59,Gen_Main,,0,0,0,,Maldita sea, lo aceptó sin pestañear.
+Dialogue: 0,0:12:39.43,0:12:42.21,Gen_Main,,0,0,0,,Considera una broma lo que te dije.
+Dialogue: 0,0:12:42.21,0:12:43.99,Gen_Main,,0,0,0,,Te entrenaré.
+Dialogue: 0,0:12:43.99,0:12:45.93,Gen_Main,,0,0,0,,¿Lo dices en serio?
+Dialogue: 0,0:12:45.93,0:12:48.75,Gen_Main,,0,0,0,,Un sabio no retira su palabra, muchacho.
+Dialogue: 0,0:12:48.75,0:12:52.79,Gen_Main,,0,0,0,,Continúa con el entrenamiento\Nque estabas haciendo antes.
+Dialogue: 0,0:12:53.20,0:12:54.17,Gen_Main,,0,0,0,,Bien.
+Dialogue: 0,0:12:59.17,0:13:01.17,Gen_Main,,0,0,0,,Muy bien.
+Dialogue: 0,0:13:31.89,0:13:33.47,Gen_Main,,0,0,0,,Maldición.
+Dialogue: 0,0:13:36.69,0:13:39.48,Gen_Main,,0,0,0,,Lo haces fatal.
+Dialogue: 0,0:13:39.48,0:13:40.55,Gen_Main,,0,0,0,,¡Cállate!
+Dialogue: 0,0:13:40.95,0:13:43.52,Gen_Main,,0,0,0,,La ropa no me ayudará.
+Dialogue: 0,0:13:43.52,0:13:46.72,Gen_Main,,0,0,0,,Concentra el chakra otra vez.
+Dialogue: 0,0:13:46.72,0:13:48.32,Gen_Main,,0,0,0,,¿Otra vez?
+Dialogue: 0,0:13:48.32,0:13:49.92,Gen_Main,,0,0,0,,Tú hazlo.
+Dialogue: 0,0:13:59.17,0:14:00.20,Gen_Main,,0,0,0,,¡Eres…!
+Dialogue: 0,0:14:01.00,0:14:05.00,Gen_Main,,0,0,0,,Eres bastante sexy al desnudo.
+Dialogue: 0,0:14:06.09,0:14:09.65,Gen_Main,,0,0,0,,¡No me interrumpas\Nmientras me concentro!
+Dialogue: 0,0:14:09.65,0:14:12.61,Gen_Main,,0,0,0,,Perdón, perdón. Continúa.
+Dialogue: 0,0:14:12.61,0:14:14.17,Gen_Main,,0,0,0,,Me desconcentras.
+Dialogue: 0,0:14:36.13,0:14:40.57,Gen_Italics,,0,0,0,,Conque este es el sello del Kyuubi.
+Dialogue: 0,0:14:41.39,0:14:45.38,Gen_Italics,,0,0,0,,Dos sellos de cuatro marcas\Ny un doble sellado.
+Dialogue: 0,0:14:45.54,0:14:47.78,Gen_Italics,,0,0,0,,¿Será el estilo Hakke?
+Dialogue: 0,0:14:47.78,0:14:51.41,Gen_Italics,,0,0,0,,El chakra del Kyuubi\Nsale entre los sellos
+Dialogue: 0,0:14:51.41,0:14:54.85,Gen_Italics,,0,0,0,,y se puede mezclar con el del muchacho.
+Dialogue: 0,0:14:55.65,0:15:00.76,Gen_Italics,,0,0,0,,Cuarto, lo hiciste\Npara protegerlo, ¿verdad?
+Dialogue: 0,0:15:02.35,0:15:07.05,Gen_Italics,,0,0,0,,No obstante,\Nalguien inutilizó el sello con otro.
+Dialogue: 0,0:15:07.05,0:15:10.40,Gen_Italics,,0,0,0,,Sellos pares e impares uno sobre otro…
+Dialogue: 0,0:15:10.80,0:15:16.41,Gen_Italics,,0,0,0,,El chakra del chico y el del Kyuubi\Nse mezclaron y se desestabilizaron.
+Dialogue: 0,0:15:17.03,0:15:21.21,Gen_Italics,,0,0,0,,No me extraña\Nque le cueste concentrarlo.
+Dialogue: 0,0:15:24.47,0:15:27.42,Gen_Main,,0,0,0,,Me haces cosquillas.
+Dialogue: 0,0:15:27.81,0:15:30.23,Gen_Main,,0,0,0,,Lo siento.
+Dialogue: 0,0:15:30.53,0:15:34.99,Gen_Italics,,0,0,0,,El segundo sellado es burdo.\NDebió hacerlo un tercero.
+Dialogue: 0,0:15:35.31,0:15:38.99,Gen_Italics,,0,0,0,,Imagino que fue Orochimaru.
+Dialogue: 0,0:15:45.83,0:15:48.64,Gen_Main,,0,0,0,,Levanta los brazos.
+Dialogue: 0,0:15:49.33,0:15:52.64,Gen_Main,,0,0,0,,Vamos, levántalos. ¡Arriba!
+Dialogue: 0,0:15:55.21,0:15:58.43,Gen_Main,,0,0,0,,No deja de pedirme cosas.
+Dialogue: 0,0:16:02.75,0:16:04.82,Gen_Main,,0,0,0,,¡Gogyou Kaiin!
+Dialogue: 0,0:16:02.75,0:16:04.82,Naruto_Nota,,0,0,0,,Desellado de los Cinco Elementos
+Dialogue: 0,0:16:24.54,0:16:26.17,Gen_Main,,0,0,0,,¿A qué vino eso?
+Dialogue: 0,0:16:26.17,0:16:30.14,Gen_Main,,0,0,0,,Toqué un punto de acupuntura\Npara relajarte.
+Dialogue: 0,0:16:30.54,0:16:34.15,Gen_Main,,0,0,0,,Prueba a caminar sobre el agua de nuevo.
+Dialogue: 0,0:16:43.59,0:16:44.56,Gen_Main,,0,0,0,,¿Eh?
+Dialogue: 0,0:16:51.40,0:16:55.87,Gen_Main,,0,0,0,,No sé por qué, pero ahora puedo hacerlo.
+Dialogue: 0,0:16:56.67,0:16:57.87,Gen_Main,,0,0,0,,¡Viva!
+Dialogue: 0,0:16:59.07,0:17:01.25,Gen_Main,,0,0,0,,¡Soy genial!
+Dialogue: 0,0:17:02.44,0:17:06.58,Gen_Italics,,0,0,0,,Debería enseñarle\Na controlar el chakra del Kyuubi.
+Dialogue: 0,0:17:06.58,0:17:08.58,Gen_Main,,0,0,0,,Sal de ahí, muchacho.
+Dialogue: 0,0:17:09.37,0:17:12.18,Gen_Main,,0,0,0,,Te enseñaré una gran técnica.
+Dialogue: 0,0:17:12.18,0:17:15.55,Gen_Main,,0,0,0,,¿Cuál? ¿Es una técnica mortal?
+Dialogue: 0,0:17:25.13,0:17:30.10,Gen_Main,,0,0,0,,Antes de enseñártela,\Ndebes comprender muy bien algo.
+Dialogue: 0,0:17:30.50,0:17:35.34,Gen_Main,,0,0,0,,Puede que no te hayas dado cuenta,\Npero tú tienes dos tipos de chakra.
+Dialogue: 0,0:17:35.34,0:17:37.74,Gen_Main,,0,0,0,,¿Dos tipos?
+Dialogue: 0,0:17:37.74,0:17:41.35,Gen_Main,,0,0,0,,¿Nunca notaste un chakra peculiar?
+Dialogue: 0,0:17:41.35,0:17:42.95,Gen_Main,,0,0,0,,Peculiar…
+Dialogue: 0,0:17:46.55,0:17:48.62,Gen_Main,,0,0,0,,Ahora que lo pienso…
+Dialogue: 0,0:17:49.42,0:17:52.99,Gen_Main,,0,0,0,,alguna vez noté que fluía\Nmucho chakra en mí
+Dialogue: 0,0:17:52.99,0:17:58.46,Gen_Main,,0,0,0,,y obtuve muchísima fuerza, o eso creo.
+Dialogue: 0,0:17:58.46,0:18:03.67,Gen_Main,,0,0,0,,Pero la verdad\Nes que no lo recuerdo muy bien.
+Dialogue: 0,0:18:03.99,0:18:04.93,Gen_Main,,0,0,0,,Ya veo.
+Dialogue: 0,0:18:04.93,0:18:10.11,Gen_Main,,0,0,0,,Pero sí me acuerdo\Nde que no parecía el chakra de siempre.
+Dialogue: 0,0:18:10.11,0:18:12.11,Gen_Main,,0,0,0,,Si los describiera con colores…
+Dialogue: 0,0:18:13.71,0:18:15.58,Gen_Main,,0,0,0,,el normal es azul,
+Dialogue: 0,0:18:15.98,0:18:19.19,Gen_Main,,0,0,0,,pero ese chakra parecía rojo.
+Dialogue: 0,0:18:19.19,0:18:20.55,Gen_Main,,0,0,0,,Ya veo.
+Dialogue: 0,0:18:31.89,0:18:35.60,Gen_Main,,0,0,0,,Terminaremos de entrenar por hoy.
+Dialogue: 0,0:18:35.60,0:18:39.20,Gen_Main,,0,0,0,,¿Ya? ¿Y qué pasó con la gran técnica?
+Dialogue: 0,0:18:39.20,0:18:41.20,Gen_Main,,0,0,0,,Todavía puedo seguir.
+Dialogue: 0,0:18:41.20,0:18:43.61,Gen_Main,,0,0,0,,No te precipites al entrenar.
+Dialogue: 0,0:18:44.01,0:18:46.81,Gen_Main,,0,0,0,,Aprovechemos para tomarnos un baño.
+Dialogue: 0,0:18:46.81,0:18:49.58,Gen_Main,,0,0,0,,Un baño de verdad.
+Dialogue: 0,0:19:03.62,0:19:05.89,Gen_Main,,0,0,0,,Qué calentito.
+Dialogue: 0,0:19:09.10,0:19:11.86,Gen_Main,,0,0,0,,Las copas tras entrenar\Nsaben mejor que nunca,
+Dialogue: 0,0:19:12.29,0:19:16.34,Gen_Main,,0,0,0,,Oye, Sabio Pervertido,\N¿qué técnica me enseñarás?
+Dialogue: 0,0:19:16.34,0:19:18.33,Gen_Main,,0,0,0,,Mañana lo verás.
+Dialogue: 0,0:19:18.33,0:19:20.33,Gen_Main,,0,0,0,,Tacaño.
+Dialogue: 0,0:19:30.71,0:19:34.73,Gen_Main,,0,0,0,,Si pasas mucho tiempo en el agua,\Ncenaremos ancas de rana hervidas.
+Dialogue: 0,0:20:01.95,0:20:07.12,Gen_Main,,0,0,0,,Siento haberte quitado\Nel discípulo, Ebisu.
+Dialogue: 0,0:20:07.12,0:20:08.32,Gen_Main,,0,0,0,,No se preocupe.
+Dialogue: 0,0:20:08.72,0:20:10.73,Gen_Main,,0,0,0,,Me sorprendió mucho verlo.
+Dialogue: 0,0:20:10.73,0:20:16.66,Gen_Main,,0,0,0,,El Hokage-sama ordenó buscarlo,\Npero no sabíamos nada de su paradero.
+Dialogue: 0,0:20:17.06,0:20:21.87,Gen_Main,,0,0,0,,Se alegrará de saber\Nque está en la aldea.
+Dialogue: 0,0:20:23.07,0:20:25.89,Gen_Main,,0,0,0,,¿Le dijiste al Tercero que estoy aquí?
+Dialogue: 0,0:20:25.89,0:20:27.64,Gen_Main,,0,0,0,,Todavía no.
+Dialogue: 0,0:20:28.44,0:20:31.24,Gen_Main,,0,0,0,,Así es mejor.
+Dialogue: 0,0:20:31.24,0:20:33.64,Gen_Main,,0,0,0,,¿Vino por Orochimaru?
+Dialogue: 0,0:20:33.64,0:20:36.38,Gen_Main,,0,0,0,,Por desgracia, no.
+Dialogue: 0,0:20:37.62,0:20:42.02,Gen_Main,,0,0,0,,Simplemente pasé a buscar\Ninspiración para mi novela.
+Dialogue: 0,0:20:42.02,0:20:45.43,Gen_Main,,0,0,0,,No me gusta involucrarme en problemas.
+Dialogue: 0,0:20:45.43,0:20:47.63,Gen_Main,,0,0,0,,¿Cómo puede decir eso?
+Dialogue: 0,0:20:47.63,0:20:49.59,Gen_Main,,0,0,0,,¡Debería saberlo!
+Dialogue: 0,0:20:49.59,0:20:54.53,Gen_Main,,0,0,0,,Para derrotar a Orochimaru,\Nuno de los tres legendarios,
+Dialogue: 0,0:20:54.53,0:20:57.19,Gen_Main,,0,0,0,,necesitamos a otro\Nde esos tres legendarios.
+Dialogue: 0,0:20:58.40,0:21:00.00,Gen_Main,,0,0,0,,¡A usted, Jiraiya-sama!
+Dialogue: 0,null,null,JPN TOP,,0,0,0,,万年 早いっての｡
+Dialogue: 0,00:07:30.24,00:07:33.24,JPN TOP,,0,0,0,,そうでもねえんだってばよ｡うわ～！
+Dialogue: 0,00:07:35.75,00:07:39.26,JPN TOP,,0,0,0,,(自来也)お前 少しは見どころがあるようだのう｡
+Dialogue: 0,00:07:39.26,00:07:41.26,JPN TOP,,0,0,0,,そんじゃ修業を見てくれるんだな？
+Dialogue: 0,00:07:41.26,00:07:43.26,JPN TOP,,0,0,0,,(自来也)ギブ アンド テイク｡
+Dialogue: 0,00:07:43.26,00:07:45.27,JPN TOP,,0,0,0,,わしの頼みを聞いてくれれば
+Dialogue: 0,00:07:45.27,00:07:49.78,JPN TOP,,0,0,0,,お前の頼みを聞いてやらんこともやぶさかでないかぎりだのう｡
+Dialogue: 0,00:07:49.78,00:07:53.22,JPN TOP,,0,0,0,,それは どっちなんだ？(自来也)あぁ いいか？
+Dialogue: 0,00:07:53.22,00:07:57.23,JPN TOP,,0,0,0,,こうなって こうなってこうなっとる
+Dialogue: 0,00:07:57.23,00:07:59.73,JPN TOP,,0,0,0,,たわわに実った果実じゃ｡
+Dialogue: 0,00:07:59.73,00:08:03.24,JPN TOP,,0,0,0,,そういうの連れてくればお前の修業 見てやろう｡
+Dialogue: 0,00:08:03.24,00:08:06.74,JPN TOP,,0,0,0,,本当だな？このガマ仙人 ウソはつかん｡
+Dialogue: 0,00:08:06.74,00:08:09.25,JPN TOP,,0,0,0,,よ～っしゃ 待ってろ！
+Dialogue: 0,00:08:12.26,00:08:15.26,JPN TOP,,0,0,0,,ん？ うわ～～！
+Dialogue: 0,00:08:18.77,00:08:21.77,JPN TOP,,0,0,0,,…が 予定は予定｡
+Dialogue: 0,00:08:21.77,00:08:24.78,JPN TOP,,0,0,0,,決定にあらずっと｡
+Dialogue: 0,00:08:24.78,00:08:28.78,JPN TOP,,0,0,0,,もしも～し そこのお嬢さん方～！
+Dialogue: 0,00:08:34.30,00:08:38.31,JPN TOP,,0,0,0,,(自来也)カッハハハ！ ガハハハハ！
+Dialogue: 0,00:08:38.31,00:08:41.31,JPN TOP,,0,0,0,,(女性１)ヤッダ おじさん おもしろい｡
+Dialogue: 0,00:08:41.31,00:08:45.32,JPN TOP,,0,0,0,,いやいや これはウソ偽りのない誠の話よ｡
+Dialogue: 0,00:08:45.32,00:08:47.33,JPN TOP,,0,0,0,,(女性２)フフッ それで？ それで？
+Dialogue: 0,00:08:47.33,00:08:49.83,JPN TOP,,0,0,0,,お～い エロ仙人！
+Dialogue: 0,00:08:49.83,00:08:52.77,JPN TOP,,0,0,0,,ヤッダ エロ仙人だって｡(女性１)フフフ…｡
+Dialogue: 0,00:08:52.77,00:08:56.78,JPN TOP,,0,0,0,,この たわけが！誰がエロ仙人だっての！
+Dialogue: 0,00:08:56.78,00:08:59.28,JPN TOP,,0,0,0,,約束のもの 持ってきたぞ｡
+Dialogue: 0,00:08:59.28,00:09:01.78,JPN TOP,,0,0,0,,たわわに実った果実だぜ｡
+Dialogue: 0,00:09:04.29,00:09:08.30,JPN TOP,,0,0,0,,バカ バカ バカ バカ～！違～う！
+Dialogue: 0,00:09:11.81,00:09:15.31,JPN TOP,,0,0,0,,タァ～！ うまそうだってばよ！
+Dialogue: 0,00:09:15.31,00:09:18.32,JPN TOP,,0,0,0,,さぁさぁ遠慮なく食べてくれのう｡
+Dialogue: 0,00:09:18.32,00:09:20.82,JPN TOP,,0,0,0,,いただきま～す！
+Dialogue: 0,00:09:20.82,00:09:24.33,JPN TOP,,0,0,0,,(自来也)ノー！ お嬢さん方はいずこへ？
+Dialogue: 0,00:09:28.34,00:09:31.85,JPN TOP,,0,0,0,,いや～ 食った 食った｡
+Dialogue: 0,00:09:31.85,00:09:34.35,JPN TOP,,0,0,0,,お嬢さん…｡
+Dialogue: 0,00:09:36.36,00:09:39.86,JPN TOP,,0,0,0,,(ｴﾋﾞｽ)《間違いない あのお方は…》
+Dialogue: 0,00:09:41.37,00:09:46.38,JPN TOP,,0,0,0,,はぁ… やれやれむだな時間を潰してしもうたのう｡
+Dialogue: 0,00:09:46.38,00:09:48.88,JPN TOP,,0,0,0,,ちょっと待て！どこ行くんだってばよ？
+Dialogue: 0,00:09:48.88,00:09:51.89,JPN TOP,,0,0,0,,俺の修業は どうすんだよ？どうすんだよ！
+Dialogue: 0,00:09:51.89,00:09:53.89,JPN TOP,,0,0,0,,知るか！ お前のせいで
+Dialogue: 0,00:09:53.89,00:09:56.40,JPN TOP,,0,0,0,,せっかくの取材が台なしだっての！
+Dialogue: 0,00:09:56.40,00:09:58.40,JPN TOP,,0,0,0,,フン 何が取材だ｡
+Dialogue: 0,00:09:58.40,00:10:00.40,JPN TOP,,0,0,0,,俺だってな こんな所で
+Dialogue: 0,00:10:00.40,00:10:03.41,JPN TOP,,0,0,0,,もたもたしてるわけにはいかねえんだってばよ！
+Dialogue: 0,00:10:03.41,00:10:05.92,JPN TOP,,0,0,0,,うんと修業して誰よりも強くなって
+Dialogue: 0,00:10:05.92,00:10:08.92,JPN TOP,,0,0,0,,中忍試験を突破してんでもって
+Dialogue: 0,00:10:08.92,00:10:10.92,JPN TOP,,0,0,0,,火影を超すんだ！
+Dialogue: 0,00:10:12.43,00:10:15.94,JPN TOP,,0,0,0,,フン そんなことわしの知ったこっちゃない｡
+Dialogue: 0,00:10:15.94,00:10:17.94,JPN TOP,,0,0,0,,人の邪魔ばっかしくさってからに
+Dialogue: 0,00:10:17.94,00:10:19.94,JPN TOP,,0,0,0,,ったく！ 気に食わんガキだのう｡
+Dialogue: 0,00:10:19.94,00:10:22.45,JPN TOP,,0,0,0,,わしの 大いなる執筆活動には
+Dialogue: 0,00:10:22.45,00:10:24.45,JPN TOP,,0,0,0,,さっきのようなムチムチの姉ちゃんが
+Dialogue: 0,00:10:24.45,00:10:26.96,JPN TOP,,0,0,0,,必要不可欠なんだってぇの！
+Dialogue: 0,00:10:26.96,00:10:31.47,JPN TOP,,0,0,0,,そうか ムチムチ姉ちゃんを連れてくればいいんだな？
+Dialogue: 0,00:10:31.47,00:10:34.47,JPN TOP,,0,0,0,,よ～し｡(関節を鳴らす音)
+Dialogue: 0,00:10:35.98,00:10:37.98,JPN TOP,,0,0,0,,はっ！
+Dialogue: 0,00:10:41.99,00:10:45.49,JPN TOP,,0,0,0,,うお～｡(ｴﾋﾞｽ)うお～！
+Dialogue: 0,00:10:45.49,00:10:52.94,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:10:52.94,00:10:55.95,JPN TOP,,0,0,0,,おぉ…｡
+Dialogue: 0,00:10:55.95,00:10:59.45,JPN TOP,,0,0,0,,あぁ…！
+Dialogue: 0,00:11:03.97,00:11:06.97,JPN TOP,,0,0,0,,(自来也)な… なんと…｡
+Dialogue: 0,00:11:06.97,00:11:10.98,JPN TOP,,0,0,0,,そんなに見つめちゃ 恥ずかしい｡
+Dialogue: 0,00:11:10.98,00:11:15.49,JPN TOP,,0,0,0,,(自来也)お～～！
+Dialogue: 0,00:11:15.49,00:11:17.99,JPN TOP,,0,0,0,,ウフッ｡(自来也)何ちゅう…
+Dialogue: 0,00:11:17.99,00:11:21.00,JPN TOP,,0,0,0,,何ちゅう めんこいおなごじゃ｡
+Dialogue: 0,00:11:21.00,00:11:23.00,JPN TOP,,0,0,0,,気に入った～！
+Dialogue: 0,00:11:23.00,00:11:26.01,JPN TOP,,0,0,0,,合格～！
+Dialogue: 0,00:11:26.01,00:11:28.01,JPN TOP,,0,0,0,,《アホだ》
+Dialogue: 0,00:11:28.01,00:11:30.52,JPN TOP,,0,0,0,,すっげぇ好みの女の子だってぇの！
+Dialogue: 0,00:11:30.52,00:11:34.53,JPN TOP,,0,0,0,,一体 何という術だ？ それは！
+Dialogue: 0,00:11:34.53,00:11:38.03,JPN TOP,,0,0,0,,いや～おいろけの術っていうんすけど｡
+Dialogue: 0,00:11:38.03,00:11:43.04,JPN TOP,,0,0,0,,お～ 何という発想かのうお前は天才だのう！
+Dialogue: 0,00:11:43.04,00:11:47.05,JPN TOP,,0,0,0,,《大人って みんな この術にすっごい弱い気がするってばよ》
+Dialogue: 0,00:11:47.05,00:11:50.06,JPN TOP,,0,0,0,,じゃあ 修業を見てくれるのね？
+Dialogue: 0,00:11:50.06,00:11:54.00,JPN TOP,,0,0,0,,(自来也)うん ただし 条件がある｡
+Dialogue: 0,00:11:54.00,00:11:58.01,JPN TOP,,0,0,0,,条件？ 何？
+Dialogue: 0,00:11:58.01,00:12:08.02,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:12:08.03,00:12:13.03,JPN TOP,,0,0,0,,わ… わしの前では常に そのカッコでいろ｡
+Dialogue: 0,00:12:15.54,00:12:19.55,JPN TOP,,0,0,0,,こら！ やっぱ ただのスケベじゃねえかよ このエロ仙人！
+Dialogue: 0,00:12:19.55,00:12:22.55,JPN TOP,,0,0,0,,(自来也)いや 違うただのスケベではない！
+Dialogue: 0,00:12:22.55,00:12:24.56,JPN TOP,,0,0,0,,何を… しらばっくれやがって！
+Dialogue: 0,00:12:24.56,00:12:28.07,JPN TOP,,0,0,0,,カ～ッカッカッカ～！
+Dialogue: 0,00:12:28.07,00:12:30.07,JPN TOP,,0,0,0,,ドスケベだ～｡
+Dialogue: 0,00:12:30.07,00:12:34.57,JPN TOP,,0,0,0,,ク… クソ 開き直りやがった｡
+Dialogue: 0,00:12:38.61,00:12:43.06,JPN TOP,,0,0,0,,まぁ 今までのは冗談として修業を見てやろう｡
+Dialogue: 0,00:12:43.06,00:12:47.06,JPN TOP,,0,0,0,,それ 本当だろうな？仙人に二言はない｡
+Dialogue: 0,00:12:47.06,00:12:50.07,JPN TOP,,0,0,0,,さぁ 坊主もう一度 さっきやっていた
+Dialogue: 0,00:12:50.07,00:12:52.57,JPN TOP,,0,0,0,,修業の続きをやってみろ｡
+Dialogue: 0,00:12:52.57,00:12:54.58,JPN TOP,,0,0,0,,よっしゃ！
+Dialogue: 0,00:12:58.59,00:13:01.09,JPN TOP,,0,0,0,,よ～し｡
+Dialogue: 0,00:13:01.09,00:13:02.59,JPN TOP,,0,0,0,,フン！
+Dialogue: 0,00:13:08.61,00:13:12.61,JPN TOP,,0,0,0,,あっ… はっ…｡
+Dialogue: 0,00:13:12.61,00:13:15.62,JPN TOP,,0,0,0,,あぁ… あ…｡
+Dialogue: 0,00:13:20.63,00:13:24.13,JPN TOP,,0,0,0,,あっ… あ～！
+Dialogue: 0,00:13:27.14,00:13:30.65,JPN TOP,,0,0,0,,プッ ハハハハ…！
+Dialogue: 0,00:13:30.65,00:13:34.15,JPN TOP,,0,0,0,,ハハハハ…！クソ～！
+Dialogue: 0,00:13:35.66,00:13:39.17,JPN TOP,,0,0,0,,(自来也)全く…全然 なってないのう｡
+Dialogue: 0,00:13:39.17,00:13:43.11,JPN TOP,,0,0,0,,うるへぇ！ 服なんか着てても意味ねえってばよ｡
+Dialogue: 0,00:13:43.11,00:13:46.11,JPN TOP,,0,0,0,,おい もう一度チャクラを練ってみろ｡
+Dialogue: 0,00:13:46.11,00:13:48.12,JPN TOP,,0,0,0,,え？ もう一度って？
+Dialogue: 0,00:13:48.12,00:13:50.62,JPN TOP,,0,0,0,,ええから 早く！ん…｡
+Dialogue: 0,00:13:56.13,00:13:58.64,JPN TOP,,0,0,0,,ん～… はっ｡
+Dialogue: 0,00:13:58.64,00:14:00.64,JPN TOP,,0,0,0,,お前！ん？
+Dialogue: 0,00:14:00.64,00:14:04.65,JPN TOP,,0,0,0,,お前！ 裸になるとなかなかセクシーだの｡
+Dialogue: 0,00:14:04.65,00:14:06.66,JPN TOP,,0,0,0,,だっ！ ったく！
+Dialogue: 0,00:14:06.66,00:14:09.16,JPN TOP,,0,0,0,,精神統一してんだから邪魔すんなよ！
+Dialogue: 0,00:14:09.16,00:14:12.17,JPN TOP,,0,0,0,,あ～ すまん すまん続けてくれ｡
+Dialogue: 0,00:14:12.17,00:14:14.17,JPN TOP,,0,0,0,,調子 狂うってばよ｡
+Dialogue: 0,00:14:22.69,00:14:32.70,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:14:35.21,00:14:40.66,JPN TOP,,0,0,0,,(自来也)《そっか…これが九尾の封印式か｡
+Dialogue: 0,00:14:40.66,00:14:45.17,JPN TOP,,0,0,0,,四象封印が２つ… 二重封印｡
+Dialogue: 0,00:14:45.17,00:14:47.17,JPN TOP,,0,0,0,,八卦の封印式かの｡
+Dialogue: 0,00:14:47.17,00:14:50.68,JPN TOP,,0,0,0,,四象封印の間から漏れ出す九尾のチャクラを
+Dialogue: 0,00:14:50.68,00:14:55.19,JPN TOP,,0,0,0,,この子のチャクラに還元できるように組んである｡
+Dialogue: 0,00:14:55.19,00:14:57.19,JPN TOP,,0,0,0,,四代目よ｡
+Dialogue: 0,00:14:57.19,00:15:01.20,JPN TOP,,0,0,0,,この子を守るためだな｡
+Dialogue: 0,00:15:01.20,00:15:06.21,JPN TOP,,0,0,0,,しかし その後 五行封印でそれを止められとる｡
+Dialogue: 0,00:15:06.21,00:15:10.22,JPN TOP,,0,0,0,,偶数封印に奇数封印なんぞ しおって｡
+Dialogue: 0,00:15:10.22,00:15:12.22,JPN TOP,,0,0,0,,この子と九尾のチャクラが
+Dialogue: 0,00:15:12.22,00:15:16.23,JPN TOP,,0,0,0,,バラバラに交ざり合って安定しなくなっとる｡
+Dialogue: 0,00:15:16.23,00:15:20.74,JPN TOP,,0,0,0,,これでは チャクラをうまく練れねえはずだのう》
+Dialogue: 0,00:15:20.74,00:15:24.74,JPN TOP,,0,0,0,,フフフ… ハハハ…！
+Dialogue: 0,00:15:24.74,00:15:26.75,JPN TOP,,0,0,0,,くすぐってぇってばよ！
+Dialogue: 0,00:15:26.75,00:15:29.75,JPN TOP,,0,0,0,,ハハハ…｡おぉ すまん すまん｡
+Dialogue: 0,00:15:29.75,00:15:32.76,JPN TOP,,0,0,0,,(自来也)《恐らく別のヤツがやったものだな｡
+Dialogue: 0,00:15:32.76,00:15:34.76,JPN TOP,,0,0,0,,式が荒い｡
+Dialogue: 0,00:15:34.76,00:15:38.27,JPN TOP,,0,0,0,,まぁ大蛇丸ってとこだろうがのう》
+Dialogue: 0,00:15:38.27,00:15:40.27,JPN TOP,,0,0,0,,(関節を鳴らす音)
+Dialogue: 0,00:15:45.22,00:15:48.73,JPN TOP,,0,0,0,,坊主 ちょっと万歳してみろ｡ん？
+Dialogue: 0,00:15:48.73,00:15:52.23,JPN TOP,,0,0,0,,いいから 万歳しろ ほれ 万歳！
+Dialogue: 0,00:15:52.23,00:15:54.74,JPN TOP,,0,0,0,,う～ん…｡
+Dialogue: 0,00:15:54.74,00:15:58.74,JPN TOP,,0,0,0,,《いちいち注文 多いってばよ》
+Dialogue: 0,00:16:02.25,00:16:04.26,JPN TOP,,0,0,0,,五行解印！
+Dialogue: 0,00:16:04.26,00:16:06.26,JPN TOP,,0,0,0,,どわっ！
+Dialogue: 0,00:16:08.77,00:16:10.77,JPN TOP,,0,0,0,,ハッ｡
+Dialogue: 0,00:16:21.79,00:16:25.80,JPN TOP,,0,0,0,,うっ あっ あぁ…何すんだってばよ！
+Dialogue: 0,00:16:25.80,00:16:29.81,JPN TOP,,0,0,0,,な～に リラックスするツボを突いたのよ｡
+Dialogue: 0,00:16:29.81,00:16:33.82,JPN TOP,,0,0,0,,いいから もう一度水の上を歩いてみろ のう｡
+Dialogue: 0,00:16:33.82,00:16:35.82,JPN TOP,,0,0,0,,ったく…｡
+Dialogue: 0,00:16:41.26,00:16:44.27,JPN TOP,,0,0,0,,あ～ あっ あれ？
+Dialogue: 0,00:16:49.28,00:16:51.28,JPN TOP,,0,0,0,,おっ？ えっ？ ハハッ｡
+Dialogue: 0,00:16:51.28,00:16:55.29,JPN TOP,,0,0,0,,何か 知んねえけどうまく行くってばよ！
+Dialogue: 0,00:16:55.29,00:16:58.30,JPN TOP,,0,0,0,,うわ うわ ヤッホ～イ！ ヘヘ～！
+Dialogue: 0,00:16:58.30,00:17:00.80,JPN TOP,,0,0,0,,俺ってば すっげぇ！
+Dialogue: 0,00:17:00.80,00:17:02.81,JPN TOP,,0,0,0,,(自来也)《フッ そろそろ
+Dialogue: 0,00:17:02.81,00:17:06.31,JPN TOP,,0,0,0,,九尾のチャクラのコントロールを教えておくか》
+Dialogue: 0,00:17:06.31,00:17:08.82,JPN TOP,,0,0,0,,(自来也)よ～し 坊主 上がれ｡あ？
+Dialogue: 0,00:17:08.82,00:17:11.83,JPN TOP,,0,0,0,,(自来也)これから取って置きの技を教えてやる｡
+Dialogue: 0,00:17:11.83,00:17:15.83,JPN TOP,,0,0,0,,何 何？ 取って置きの技！必殺技か？
+Dialogue: 0,00:17:24.35,00:17:26.35,JPN TOP,,0,0,0,,(自来也)技を教える前に
+Dialogue: 0,00:17:26.35,00:17:29.86,JPN TOP,,0,0,0,,お前には よ～く理解してもらっとくことがある｡
+Dialogue: 0,00:17:29.86,00:17:32.37,JPN TOP,,0,0,0,,たぶん 気付いておらんだろうが
+Dialogue: 0,00:17:32.37,00:17:35.37,JPN TOP,,0,0,0,,お前は チャクラを２種類 持っとる｡
+Dialogue: 0,00:17:35.37,00:17:37.38,JPN TOP,,0,0,0,,は？ ２種類？
+Dialogue: 0,00:17:37.38,00:17:40.82,JPN TOP,,0,0,0,,(自来也)今まで 特別なチャクラを感じたことはないか？
+Dialogue: 0,00:17:40.82,00:17:44.82,JPN TOP,,0,0,0,,特別… う～ん…｡
+Dialogue: 0,00:17:46.33,00:17:48.83,JPN TOP,,0,0,0,,そういえば…｡
+Dialogue: 0,00:17:48.83,00:17:52.84,JPN TOP,,0,0,0,,そういえば急にチャクラが湧いてきて
+Dialogue: 0,00:17:52.84,00:17:58.35,JPN TOP,,0,0,0,,すっげぇ力が出たような時があったような気すっけど…｡
+Dialogue: 0,00:17:58.35,00:18:03.36,JPN TOP,,0,0,0,,だけど そん時のことはあんまり覚えてねえんだよな｡
+Dialogue: 0,00:18:03.36,00:18:04.87,JPN TOP,,0,0,0,,そうか…｡
+Dialogue: 0,00:18:04.87,00:18:08.37,JPN TOP,,0,0,0,,でも いつも練ってるチャクラと違う感じがしたのは
+Dialogue: 0,00:18:08.37,00:18:10.38,JPN TOP,,0,0,0,,覚えてるってばよ｡
+Dialogue: 0,00:18:10.38,00:18:12.88,JPN TOP,,0,0,0,,色で例えると…｡
+Dialogue: 0,00:18:12.88,00:18:15.39,JPN TOP,,0,0,0,,いつも青なのに
+Dialogue: 0,00:18:15.39,00:18:18.89,JPN TOP,,0,0,0,,赤い感じっていうか何つうか…｡
+Dialogue: 0,00:18:18.89,00:18:20.90,JPN TOP,,0,0,0,,そうか｡
+Dialogue: 0,00:18:20.90,00:18:30.91,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:18:31.42,00:18:35.43,JPN TOP,,0,0,0,,(自来也)よし きょうの修業はこれで終わりにする｡
+Dialogue: 0,00:18:35.43,00:18:38.93,JPN TOP,,0,0,0,,え～！ もう？取って置きは どうしたんだよ？
+Dialogue: 0,00:18:38.93,00:18:40.87,JPN TOP,,0,0,0,,俺はまだ できるってばよ！
+Dialogue: 0,00:18:40.87,00:18:43.38,JPN TOP,,0,0,0,,(自来也)修業に 焦りは禁物だ｡
+Dialogue: 0,00:18:43.38,00:18:46.38,JPN TOP,,0,0,0,,あっ せっかくだから温泉にでも つかろう｡
+Dialogue: 0,00:18:46.38,00:18:49.39,JPN TOP,,0,0,0,,落っこちるんじゃなくてのう｡
+Dialogue: 0,00:18:49.39,00:18:59.40,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:19:01.91,00:19:06.92,JPN TOP,,0,0,0,,ん～… 温まるってばよ｡
+Dialogue: 0,00:19:06.92,00:19:08.43,JPN TOP,,0,0,0,,プハ～｡
+Dialogue: 0,00:19:08.43,00:19:11.93,JPN TOP,,0,0,0,,修業のあとの この一杯がたまらんのう！
+Dialogue: 0,00:19:11.93,00:19:13.94,JPN TOP,,0,0,0,,ねぇ ねぇ？ エロ仙人｡
+Dialogue: 0,00:19:13.94,00:19:15.94,JPN TOP,,0,0,0,,取って置きの技って どんなの？
+Dialogue: 0,00:19:15.94,00:19:17.94,JPN TOP,,0,0,0,,あすになれば 分かる｡
+Dialogue: 0,00:19:17.94,00:19:19.95,JPN TOP,,0,0,0,,チェッ ケチ！
+Dialogue: 0,00:19:19.95,00:19:28.97,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:19:28.97,00:19:30.97,JPN TOP,,0,0,0,,(鳴き声)
+Dialogue: 0,00:19:30.97,00:19:32.97,JPN TOP,,0,0,0,,(自来也)あんまり 湯につかっとると
+Dialogue: 0,00:19:32.97,00:19:34.98,JPN TOP,,0,0,0,,ゆでガエルに なっちまうのう｡
+Dialogue: 0,00:19:34.98,00:19:39.48,JPN TOP,,0,0,0,,ハハハハ…！ハハハハ…！
+Dialogue: 0,00:19:51.51,00:19:55.02,JPN TOP,,0,0,0,,(足音)
+Dialogue: 0,00:20:01.53,00:20:04.04,JPN TOP,,0,0,0,,(自来也)悪いの エビス｡
+Dialogue: 0,00:20:04.04,00:20:06.54,JPN TOP,,0,0,0,,教え子を横取りしちまってのう｡
+Dialogue: 0,00:20:06.54,00:20:10.55,JPN TOP,,0,0,0,,(ｴﾋﾞｽ)いえ それより驚きました｡
+Dialogue: 0,00:20:10.55,00:20:13.56,JPN TOP,,0,0,0,,火影様があなたの行方をずっと捜させて
+Dialogue: 0,00:20:13.56,00:20:17.06,JPN TOP,,0,0,0,,一向に消息がつかめなかったのに…｡
+Dialogue: 0,00:20:17.06,00:20:19.57,JPN TOP,,0,0,0,,まさか この里におられたとは｡
+Dialogue: 0,00:20:19.57,00:20:22.57,JPN TOP,,0,0,0,,火影様も喜ばれるでしょう｡
+Dialogue: 0,00:20:22.57,00:20:25.58,JPN TOP,,0,0,0,,三代目には わしのことを？
+Dialogue: 0,00:20:25.58,00:20:28.08,JPN TOP,,0,0,0,,(ｴﾋﾞｽ)いえ まだ｡
+Dialogue: 0,00:20:28.08,00:20:31.09,JPN TOP,,0,0,0,,そうか そのほうがいい｡
+Dialogue: 0,00:20:31.09,00:20:33.09,JPN TOP,,0,0,0,,(ｴﾋﾞｽ)やはり 大蛇丸のことで…｡
+Dialogue: 0,00:20:33.09,00:20:37.60,JPN TOP,,0,0,0,,いや 残念ながら違うっての｡(ｴﾋﾞｽ)えっ？
+Dialogue: 0,00:20:37.60,00:20:42.05,JPN TOP,,0,0,0,,わしは ただ 小説のネタ探しに立ち寄っただけだ｡
+Dialogue: 0,00:20:42.05,00:20:45.05,JPN TOP,,0,0,0,,面倒には 首を突っ込まねえたちなんでのう｡
+Dialogue: 0,00:20:45.05,00:20:49.56,JPN TOP,,0,0,0,,な… 何をおっしゃるんですか！あなたも ご存じのはずです！
+Dialogue: 0,00:20:49.56,00:20:52.57,JPN TOP,,0,0,0,,伝説の三忍とうたわれた大蛇丸を止めるには
+Dialogue: 0,00:20:52.57,00:20:58.08,JPN TOP,,0,0,0,,同じ三忍の一人あなたの力が必要なのですよ！
+Dialogue: 0,00:20:58.08,00:21:00.58,JPN TOP,,0,0,0,,自来也様！
+Dialogue: 0,00:21:42.13,00:21:47.64,JPN TOP,,0,0,0,,♬(ｴﾝﾃﾞｨﾝｸﾞﾃｰﾏ)
+Dialogue: 0,00:21:47.64,00:21:51.15,JPN TOP,,0,0,0,,♬ ジャンプ一番スラムダンクかますタイソン
+Dialogue: 0,00:21:51.15,00:21:54.66,JPN TOP,,0,0,0,,♬ あれもこれも土足でハグ･キッス･I LOVE YOU
+Dialogue: 0,00:21:54.66,00:21:58.16,JPN TOP,,0,0,0,,♬ ヨガを極めますカレー嫌いマサラさん
+Dialogue: 0,00:21:58.16,00:22:01.67,JPN TOP,,0,0,0,,♬ へたれ闘牛士サンチェス オーレイ！
+Dialogue: 0,00:22:01.67,00:22:04.68,JPN TOP,,0,0,0,,♬ 世界中ほら 笑ってる空
+Dialogue: 0,00:22:04.68,00:22:08.12,JPN TOP,,0,0,0,,♬ 見上げて さあ立ち上がって
+Dialogue: 0,00:22:08.12,00:22:13.63,JPN TOP,,0,0,0,,♬ Oh Yeah
+Dialogue: 0,00:22:13.63,00:22:23.64,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:22:25.65,00:22:28.66,JPN TOP,,0,0,0,,♬ 黒鉛掘りに没頭ポディマハッタヤサンも
+Dialogue: 0,00:22:28.66,00:22:32.67,JPN TOP,,0,0,0,,♬ 北京ダック ﾜｲﾔｰｱｸｼｮﾝチャリで急ぐチェン･リー
+Dialogue: 0,00:22:32.67,00:22:36.17,JPN TOP,,0,0,0,,♬ ＭＹコテカ大事に磨き上げるポポさん
+Dialogue: 0,00:22:36.17,00:22:39.18,JPN TOP,,0,0,0,,♬ お手を拝借ジャパニーズ･ピーポー
+Dialogue: 0,00:22:39.18,00:22:42.69,JPN TOP,,0,0,0,,♬ 世界中ほら 笑ってる空
+Dialogue: 0,00:22:42.69,00:22:45.69,JPN TOP,,0,0,0,,♬ 見上げて さあ立ち上がって
+Dialogue: 0,00:22:45.69,00:22:51.20,JPN TOP,,0,0,0,,♬ Oh Yeah
+Dialogue: 0,00:22:51.20,00:22:52.71,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:22:52.71,00:22:55.71,JPN TOP,,0,0,0,,♬ 世界中ほら 変わってく
+Dialogue: 0,00:22:55.71,00:22:59.22,JPN TOP,,0,0,0,,♬ 皆頑張って Ｓｏ立ち上がって
+Dialogue: 0,00:22:59.22,00:23:04.73,JPN TOP,,0,0,0,,♬ Oh Yeah
+Dialogue: 0,00:23:04.73,00:23:10.24,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:23:12.68,00:23:15.69,JPN TOP,,0,0,0,,〈まずは この契約書に血でサインを書いて
+Dialogue: 0,00:23:15.69,00:23:18.69,JPN TOP,,0,0,0,,片手の指すべての血判を押すっと｡
+Dialogue: 0,00:23:18.69,00:23:22.70,JPN TOP,,0,0,0,,それでチャクラをん～… ひねり出し～！
+Dialogue: 0,00:23:22.70,00:23:25.21,JPN TOP,,0,0,0,,印は ｢亥 戌 酉 申 未｣｡
+Dialogue: 0,00:23:25.21,00:23:29.21,JPN TOP,,0,0,0,,あとは 呼び出したい場所に契約したほうの手を突き出す！〉
+Dialogue: 0,00:23:30.72,00:23:32.72,JPN TOP,,0,0,0,,〈どうだ！〉
+Dialogue: 0,00:23:37.23,00:23:40.23,JPN TOP,,0,0,0,,〈何じゃ!? こりゃあ！〉

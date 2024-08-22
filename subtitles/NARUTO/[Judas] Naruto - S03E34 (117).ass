@@ -1,0 +1,508 @@
+[Script Info]
+; This is an Advanced Sub Station Alpha v4+ script.
+ScriptType: v4.00+
+Collisions: Normal
+PlayDepth: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: JPN TOP,Noto Sans,24,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,1.7,1,8,10,10,5,1
+Style: Gen_Main,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,1,2,0010,0010,0018,1
+Style: Gen_Italics,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,-1,0,0,100,100,0,0,1,2,1,2,0010,0010,0018,1
+Style: Gen_Main_Up,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00000000,&H00090909,0,0,0,0,100,100,0,0,1,2,1,8,0010,0010,0018,1
+Style: Gen_Italics_top,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,-1,0,0,100,100,0,0,1,2,1,8,0010,0010,0018,1
+Style: Gen_TitleEp,Trebuchet MS,20,&H000121C8,&H000000FF,&H00060503,&H00060503,-1,0,0,0,100,100,0,0,1,3,1,8,0020,0020,0030,1
+Style: Gen_Avance,Arial,20,&H000D00D3,&H000000FF,&H00060503,&H00000000,-1,0,0,0,100,100,0,0,1,3,2,8,0020,0020,0100,1
+Style: Gen_Name,Times New Roman,20,&H001845E6,&H000000FF,&H00FFFFFF,&H00FFFFFF,-1,0,0,0,100,100,0,0,1,2,1,9,0035,0035,0020,1
+Style: Naruto_Nota,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00262626,&H00505050,0,-1,0,0,100,100,0,0,1,2,1,8,0010,0010,0018,1
+Style: Cart_A_Tre,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00303030,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+Style: Cart_B_Tre,Trebuchet MS,20,&H00323232,&H000000FF,&H00D9D9D9,&H00D9D9D9,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+Style: Cart_C_Tre,Trebuchet MS,20,&H00323232,&H000000FF,&H00FFFFFF,&H00FFFFFF,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+Style: Cart_A_Tim,Times New Roman,20,&H00FFFFFF,&H000000FF,&H00060606,&H00060606,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+Style: Cart_B_Tim,Times New Roman,20,&H00323232,&H000000FF,&H00D9D9D9,&H00D9D9D9,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+Style: Cart_C_Tim,Times New Roman,20,&H00323232,&H000000FF,&H00FFFFFF,&H00FFFFFF,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,00:00:02.04,00:00:10.06,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:00:10.06,00:00:16.07,JPN TOP,,0,0,0,,♬ ひからびた言葉をつないで
+Dialogue: 0,00:00:16.07,00:00:20.58,JPN TOP,,0,0,0,,♬ それでも僕等シンプルな
+Dialogue: 0,00:00:20.58,00:00:24.59,JPN TOP,,0,0,0,,♬ 想いを伝えたいだけなの
+Dialogue: 0,00:00:24.59,00:00:30.60,JPN TOP,,0,0,0,,♬ 吹き抜けるくすんだあの日の風は
+Dialogue: 0,00:00:30.60,00:00:35.11,JPN TOP,,0,0,0,,♬ 昨日の廃虚に打ち捨てて
+Dialogue: 0,00:00:35.11,00:00:40.12,JPN TOP,,0,0,0,,♬ 君と笑う 今を生きるのだ
+Dialogue: 0,00:00:40.12,00:00:44.63,JPN TOP,,0,0,0,,♬ それでもあの出来事が
+Dialogue: 0,00:00:44.63,00:00:49.14,JPN TOP,,0,0,0,,♬ 君を苦しめるだろ？
+Dialogue: 0,00:00:49.14,00:00:52.64,JPN TOP,,0,0,0,,♬ だからこそサヨナラなんだ
+Dialogue: 0,00:00:52.64,00:00:56.08,JPN TOP,,0,0,0,,♬ このまま何も残らずに
+Dialogue: 0,00:00:56.08,00:00:59.59,JPN TOP,,0,0,0,,♬ あなたと分かち合うだけ
+Dialogue: 0,00:00:59.59,00:01:02.60,JPN TOP,,0,0,0,,♬ やがて僕等は
+Dialogue: 0,00:01:02.60,00:01:06.61,JPN TOP,,0,0,0,,♬ それが全てだと気がついて
+Dialogue: 0,00:01:06.61,00:01:10.11,JPN TOP,,0,0,0,,♬ 悲しみは頬を伝って
+Dialogue: 0,00:01:10.11,00:01:13.62,JPN TOP,,0,0,0,,♬ 涙の河になるだけ
+Dialogue: 0,00:01:13.62,00:01:19.63,JPN TOP,,0,0,0,,♬ 揺れる想いは強い渦になって
+Dialogue: 0,00:01:19.63,00:01:24.14,JPN TOP,,0,0,0,,♬ 溶け合うのよ
+Dialogue: 0,00:01:49.15,00:01:52.15,JPN TOP,,0,0,0,,(鬼童丸)《フッ 終わった》
+Dialogue: 0,0:01:49.80,0:01:51.36,Default,,0,0,0,,{\i1}Acabou...{\i0}
+Dialogue: 0,0:01:53.80,0:01:58.60,Default,,0,0,0,,Perder Não É Uma Opção
+Dialogue: 0,00:01:59.60,00:02:01.60,JPN TOP,,0,0,0,,(鬼童丸)《ん！ 何!?》
+Dialogue: 0,0:01:59.64,0:02:00.72,Default,,0,0,0,,{\i1}O quê?!{\i0}
+Dialogue: 0,00:02:01.60,00:02:05.61,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:02:05.61,00:02:08.12,JPN TOP,,0,0,0,,(ネジ)ハァ ハァ…｡
+Dialogue: 0,00:02:08.12,00:02:11.62,JPN TOP,,0,0,0,,(ネジ)《ギリギリだ…今のは危なかった｡
+Dialogue: 0,0:02:08.32,0:02:09.39,Default,,0,0,0,,{\i1}Quase...{\i0}
+Dialogue: 0,0:02:09.52,0:02:10.80,Default,,0,0,0,,{\i1}Essa passou perto.{\i0}
+Dialogue: 0,00:02:11.62,00:02:15.13,JPN TOP,,0,0,0,,が ほんの少しズラせた｡
+Dialogue: 0,0:02:11.64,0:02:14.32,Default,,0,0,0,,{\i1}Mas deu para a desviar um pouco.{\i0}
+Dialogue: 0,00:02:15.13,00:02:17.64,JPN TOP,,0,0,0,,やはり間違いない｡
+Dialogue: 0,0:02:15.44,0:02:16.64,Default,,0,0,0,,{\i1}Não há dúvidas.{\i0}
+Dialogue: 0,00:02:17.64,00:02:21.14,JPN TOP,,0,0,0,,ヤツはもう白眼の秘密に気付いている》
+Dialogue: 0,0:02:17.72,0:02:20.67,Default,,0,0,0,,{\i1}Ele já descobriu\No segredo do Byakugan.{\i0}
+Dialogue: 0,00:02:21.14,00:02:23.15,JPN TOP,,0,0,0,,(鬼童丸)《あっ…｡
+Dialogue: 0,00:02:23.15,00:02:27.16,JPN TOP,,0,0,0,,どういうことだ？ なぜ…》
+Dialogue: 0,0:02:23.32,0:02:25.80,Default,,0,0,0,,{\i1}O que significa isso?\NComo?!{\i0}
+Dialogue: 0,00:02:27.16,00:02:31.16,JPN TOP,,0,0,0,,(ネジ)ハァ ハァ ハァ…｡
+Dialogue: 0,0:02:30.83,0:02:34.52,Default,,0,0,0,,{\i1}Como ele a conseguiu desviar\N15 centímetros de seu ponto vital?!{\i0}
+Dialogue: 0,00:02:31.16,00:02:35.67,JPN TOP,,0,0,0,,(鬼童丸)《なぜ急所から15cmも上にズレた!?》
+Dialogue: 0,00:02:35.67,00:02:42.19,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:02:42.19,00:02:45.19,JPN TOP,,0,0,0,,(鬼童丸)《そうか… あのチャクラ｡
+Dialogue: 0,0:02:42.32,0:02:44.72,Default,,0,0,0,,{\i1}Entendi. Aquele chacra.{\i0}
+Dialogue: 0,0:02:44.96,0:02:48.28,Default,,0,0,0,,{\i1}Ele estava emitindo chacra\No tempo todo{\i0}
+Dialogue: 0,00:02:45.19,00:02:48.70,JPN TOP,,0,0,0,,こいつ 今度は常にチャクラを放出して
+Dialogue: 0,0:02:48.40,0:02:50.40,Default,,0,0,0,,{\i1}e cobriu a área em volta dele.{\i0}
+Dialogue: 0,00:02:48.70,00:02:51.64,JPN TOP,,0,0,0,,自分の周囲を覆っていたのか｡
+Dialogue: 0,00:02:51.64,00:02:55.65,JPN TOP,,0,0,0,,それも あれほどの広範囲を｡
+Dialogue: 0,0:02:51.72,0:02:54.24,Default,,0,0,0,,{\i1}E amplamente.{\i0}
+Dialogue: 0,00:02:55.65,00:02:58.15,JPN TOP,,0,0,0,,道理で矢を感知したうえ
+Dialogue: 0,0:02:55.82,0:02:59.54,Default,,0,0,0,,{\i1}Não me admira\Nele ter conseguido detectar a flecha{\i0}
+Dialogue: 0,00:02:58.15,00:03:01.66,JPN TOP,,0,0,0,,その軌道をチャクラでズラすこともできたわけだ｡
+Dialogue: 0,0:02:59.66,0:03:01.54,Default,,0,0,0,,{\i1}e desviar a trajetória dela.{\i0}
+Dialogue: 0,00:03:01.66,00:03:05.17,JPN TOP,,0,0,0,,ヘッヘヘヘ｡
+Dialogue: 0,0:03:04.90,0:03:09.74,Default,,0,0,0,,{\i1}Mas emitir tanto chacra constantemente\Né morte certa.{\i0}
+Dialogue: 0,00:03:05.17,00:03:08.67,JPN TOP,,0,0,0,,しかし あれだけのチャクラを常に放出し続けるのは
+Dialogue: 0,00:03:08.67,00:03:11.18,JPN TOP,,0,0,0,,死の苦しみ｡
+Dialogue: 0,00:03:11.18,00:03:13.68,JPN TOP,,0,0,0,,そうまでしなければよけられない｡
+Dialogue: 0,0:03:11.22,0:03:13.78,Default,,0,0,0,,{\i1}Se ele não for tão longe,\Nnão consegue se esquivar.{\i0}
+Dialogue: 0,00:03:13.68,00:03:16.19,JPN TOP,,0,0,0,,つまり 間違いない｡
+Dialogue: 0,0:03:13.90,0:03:16.06,Default,,0,0,0,,{\i1}Ou seja, eu estou certo.{\i0}
+Dialogue: 0,00:03:16.19,00:03:19.69,JPN TOP,,0,0,0,,想定したとおり さっきの矢は
+Dialogue: 0,0:03:16.26,0:03:17.74,Default,,0,0,0,,{\i1}É como imaginei.{\i0}
+Dialogue: 0,0:03:18.30,0:03:22.22,Default,,0,0,0,,{\i1}A flecha era totalmente\Ninvisível para ele.{\i0}
+Dialogue: 0,00:03:19.69,00:03:23.70,JPN TOP,,0,0,0,,一切 ヤツの目には見えていない！》
+Dialogue: 0,00:03:23.70,00:03:26.71,JPN TOP,,0,0,0,,(ネジ)《ムダな攻撃は仕掛けてこない…｡
+Dialogue: 0,0:03:24.10,0:03:26.70,Default,,0,0,0,,{\i1}Ele não faz ataques inúteis.{\i0}
+Dialogue: 0,00:03:26.71,00:03:31.21,JPN TOP,,0,0,0,,そして その結果からきちんと情報をくみ取る…》
+Dialogue: 0,0:03:26.90,0:03:30.10,Default,,0,0,0,,{\i1}E a partir dos resultados,\Nele examina a informação com exatidão.{\i0}
+Dialogue: 0,00:03:35.23,00:03:37.73,JPN TOP,,0,0,0,,がっ！
+Dialogue: 0,00:03:37.73,00:03:41.74,JPN TOP,,0,0,0,,(ネジ)《そして この眼の欠点にも気付いている！
+Dialogue: 0,0:03:37.78,0:03:41.06,Default,,0,0,0,,{\i1}E ele também descobriu\Na fraqueza dos meus olhos.{\i0}
+Dialogue: 0,0:03:41.18,0:03:42.66,Default,,0,0,0,,{\i1}Impressionante.{\i0}
+Dialogue: 0,00:03:41.74,00:03:43.74,JPN TOP,,0,0,0,,さすがだ》
+Dialogue: 0,0:03:45.62,0:03:47.74,Default,,0,0,0,,{\i1}De todos os inimigos\Ncom quem lutei até agora,{\i0}
+Dialogue: 0,00:03:45.75,00:03:50.69,JPN TOP,,0,0,0,,(ネジ)《今まで戦った敵の中でこいつは いちばん強い！》
+Dialogue: 0,0:03:47.86,0:03:49.54,Default,,0,0,0,,{\i1}esse cara é o mais forte.{\i0}
+Dialogue: 0,00:03:50.69,00:03:52.69,JPN TOP,,0,0,0,,(鬼童丸)《フン！
+Dialogue: 0,0:03:52.30,0:03:54.58,Default,,0,0,0,,{\i1}Ele tem uma visão de 360 graus.{\i0}
+Dialogue: 0,0:03:55.70,0:03:58.26,Default,,0,0,0,,{\i1}E ele detecta infalivelmente os ataques{\i0}
+Dialogue: 0,0:03:58.38,0:04:02.18,Default,,0,0,0,,{\i1}que penetram a circunferência\Nde cerca 50 metros em volta dele.{\i0}
+Dialogue: 0,0:04:03.80,0:04:05.12,Default,,0,0,0,,{\i1}Mas, por alguma razão,{\i0}
+Dialogue: 0,0:04:05.24,0:04:08.32,Default,,0,0,0,,{\i1}houve facas kunai de que não\Nconseguiu escapar completamente.{\i0}
+Dialogue: 0,0:04:09.68,0:04:11.96,Default,,0,0,0,,{\i1}Por que não conseguiu escapar delas?{\i0}
+Dialogue: 0,0:04:13.08,0:04:15.84,Default,,0,0,0,,{\i1}Porque não consegue vê-las.{\i0}
+Dialogue: 0,0:04:16.84,0:04:21.16,Default,,0,0,0,,{\i1}Ou seja, até seu Jutsu Visual\Ntem um pequeno ponto cego.{\i0}
+Dialogue: 0,0:04:22.28,0:04:25.52,Default,,0,0,0,,{\i1}Se não consegue ver as kunai\Nentrando no ponto cego,{\i0}
+Dialogue: 0,0:04:25.63,0:04:27.16,Default,,0,0,0,,{\i1}ele não consegue reagir.{\i0}
+Dialogue: 0,0:04:27.63,0:04:30.07,Default,,0,0,0,,{\i1}Ele estava lidando\Ncom os ataques do ponto cego{\i0}
+Dialogue: 0,0:04:30.19,0:04:32.56,Default,,0,0,0,,{\i1}com aquela técnica de defesa.{\i0}
+Dialogue: 0,0:04:33.28,0:04:36.96,Default,,0,0,0,,{\i1}E analisei todos os ataques\Nque executei{\i0}
+Dialogue: 0,0:04:37.07,0:04:39.16,Default,,0,0,0,,{\i1}e os percebi perfeitamente.{\i0}
+Dialogue: 0,0:04:40.12,0:04:42.60,Default,,0,0,0,,{\i1}Mesmo antes\Nda sua primeira vértebra torácica{\i0}
+Dialogue: 0,0:04:42.72,0:04:46.12,Default,,0,0,0,,{\i1}existe um ponto cego que se expande\Na partir de um ponto muito pequeno.{\i0}
+Dialogue: 0,0:04:58.28,0:05:01.04,Default,,0,0,0,,{\i1}De fato, se ele se mover\Ne não estabilizar o ponto cego,{\i0}
+Dialogue: 0,0:05:01.16,0:05:04.07,Default,,0,0,0,,{\i1}fica difícil mirar lá\Ncom uma flecha.{\i0}
+Dialogue: 0,0:05:04.19,0:05:07.63,Default,,0,0,0,,{\i1}Mas um truque como esse\Nnão me engana.{\i0}
+Dialogue: 0,0:05:10.60,0:05:13.56,Default,,0,0,0,,{\i1}O Punho Suave é inútil\Nse você não chega perto do seu inimigo.{\i0}
+Dialogue: 0,0:05:13.68,0:05:18.24,Default,,0,0,0,,{\i1}E não pode se dar ao luxo de pensar\Nem se aproximar de mim agora.{\i0}
+Dialogue: 0,0:05:18.88,0:05:20.92,Default,,0,0,0,,{\i1}Trata-se de escapar agora...{\i0}
+Dialogue: 0,0:05:21.63,0:05:25.92,Default,,0,0,0,,{\i1}Lutando ou não,\Nvocê vai morrer de qualquer jeito.{\i0}
+Dialogue: 0,0:05:32.64,0:05:34.84,Default,,0,0,0,,{\i1}Parece que só sobrou\Num pouco de chacra.{\i0}
+Dialogue: 0,0:05:37.00,0:05:39.36,Default,,0,0,0,,{\i1}O destino do personagem pequeno\Nem um jogo fácil{\i0}
+Dialogue: 0,0:05:39.48,0:05:41.24,Default,,0,0,0,,{\i1}é ser destruído imediatamente.{\i0}
+Dialogue: 0,0:05:45.04,0:05:46.20,Default,,0,0,0,,{\i1}É inútil!{\i0}
+Dialogue: 0,0:06:55.05,0:06:56.17,Default,,0,0,0,,{\i1}Uma teia?{\i0}
+Dialogue: 0,0:06:57.73,0:06:59.77,Default,,0,0,0,,{\i1}Entendi, com essa teia...{\i0}
+Dialogue: 0,0:07:04.45,0:07:07.29,Default,,0,0,0,,{\i1}Desta vez, a trajetória\Nfoi desviada pela árvore.{\i0}
+Dialogue: 0,0:07:15.17,0:07:16.97,Default,,0,0,0,,{\i1}Se for esse o caso,{\i0}
+Dialogue: 0,0:07:17.17,0:07:20.49,Default,,0,0,0,,{\i1}vou acrescentar\Num pouco de rotação.{\i0}
+Dialogue: 0,0:07:20.61,0:07:22.25,Default,,0,0,0,,{\i1}Mesmo que atinja uma árvore,{\i0}
+Dialogue: 0,0:07:22.37,0:07:26.17,Default,,0,0,0,,{\i1}vai atravessá-la\Ne a trajetória não será desviada.{\i0}
+Dialogue: 0,0:07:26.29,0:07:28.37,Default,,0,0,0,,{\i1}E, como antes,{\i0}
+Dialogue: 0,0:07:28.49,0:07:31.13,Default,,0,0,0,,{\i1}vou controlar a flecha\Naté 45 metros de distância dele,{\i0}
+Dialogue: 0,0:07:31.25,0:07:33.69,Default,,0,0,0,,{\i1}usando uma teia com chacra\Nfluindo por ela.{\i0}
+Dialogue: 0,0:07:34.13,0:07:36.17,Default,,0,0,0,,{\i1}Vou mirar no alvo em movimento{\i0}
+Dialogue: 0,0:07:36.29,0:07:39.37,Default,,0,0,0,,{\i1}e lançar a flecha no ponto cego\Ncom um ataque preciso.{\i0}
+Dialogue: 0,0:07:43.53,0:07:45.29,Default,,0,0,0,,{\i1}Ainda está de pé?{\i0}
+Dialogue: 0,0:07:46.17,0:07:50.01,Default,,0,0,0,,{\i1}Ele é forte...\NMuito mais forte do que eu.{\i0}
+Dialogue: 0,0:07:51.49,0:07:53.53,Default,,0,0,0,,{\i1}Quase não me resta chacra.{\i0}
+Dialogue: 0,0:07:54.25,0:07:57.09,Default,,0,0,0,,{\i1}Não conseguirei escapar\Ncompletamente do próximo ataque.{\i0}
+Dialogue: 0,0:07:58.33,0:07:59.49,Default,,0,0,0,,{\i1}É isso o fim?{\i0}
+Dialogue: 0,0:08:02.05,0:08:04.05,Default,,0,0,0,,{\i1}Vou vencer,\Naconteça o que acontecer.{\i0}
+Dialogue: 0,0:08:09.69,0:08:12.45,Default,,0,0,0,,{\i1}Naruto, me pergunto o que você faria.{\i0}
+Dialogue: 0,0:08:15.37,0:08:16.77,Default,,0,0,0,,Já tive o suficiente.
+Dialogue: 0,0:08:18.61,0:08:21.53,Default,,0,0,0,,Não posso me esquivar mesmo.
+Dialogue: 0,0:08:28.01,0:08:31.09,Default,,0,0,0,,{\i1}Ele parou de se mexer.\NDesistiu?{\i0}
+Dialogue: 0,0:08:32.13,0:08:34.37,Default,,0,0,0,,{\i1}Mas só para ter certeza...{\i0}
+Dialogue: 0,0:08:35.09,0:08:39.13,Default,,0,0,0,,{\i1}Poder destrutivo máximo\Ncom 120% de precisão.{\i0}
+Dialogue: 0,0:09:01.01,0:09:02.13,Default,,0,0,0,,Peguei-o!
+Dialogue: 0,0:09:27.65,0:09:28.69,Default,,0,0,0,,{\i1}É isso.{\i0}
+Dialogue: 0,0:09:30.05,0:09:31.29,Default,,0,0,0,,{\i1}Punho Suave!{\i0}
+Dialogue: 0,0:10:06.53,0:10:09.93,Default,,0,0,0,,{\i1}O quê? Ele ainda...?!{\i0}
+Dialogue: 0,0:10:10.05,0:10:13.69,Default,,0,0,0,,{\i1}Não! Meu ataque deveria tê-lo matado.{\i0}
+Dialogue: 0,0:10:14.37,0:10:16.81,Default,,0,0,0,,{\i1}Uma substância com base de chacra{\i0}
+Dialogue: 0,0:10:16.97,0:10:19.09,Default,,0,0,0,,{\i1}é inútil contra o Punho Suave.{\i0}
+Dialogue: 0,0:10:20.33,0:10:21.45,Default,,0,0,0,,{\i1}Punho Suave...{\i0}
+Dialogue: 0,0:10:21.57,0:10:23.48,Default,,0,0,0,,{\i1}Entendi, nos seus momentos finais,{\i0}
+Dialogue: 0,0:10:23.60,0:10:26.05,Default,,0,0,0,,{\i1}ele canalizou\No seu último chacra pela teia.{\i0}
+Dialogue: 0,0:10:35.25,0:10:36.29,Default,,0,0,0,,{\i1}Oito corvos...{\i0}
+Dialogue: 0,0:10:39.13,0:10:41.01,Default,,0,0,0,,{\i1}De novo, não consegui ver um deles.{\i0}
+Dialogue: 0,0:10:45.37,0:10:46.53,Default,,0,0,0,,{\i1}O que houve com ele?{\i0}
+Dialogue: 0,0:10:55.05,0:10:57.49,Default,,0,0,0,,{\i1}Ele danificou vários\Ndos meus órgãos internos.{\i0}
+Dialogue: 0,0:10:57.61,0:11:00.09,Default,,0,0,0,,{\i1}Mas ainda posso me mexer.{\i0}
+Dialogue: 0,0:11:09.09,0:11:10.37,Default,,0,0,0,,{\i1}Seu fracassado...{\i0}
+Dialogue: 0,0:11:12.05,0:11:13.17,Default,,0,0,0,,{\i1}Eu já disse.{\i0}
+Dialogue: 0,0:11:14.47,0:11:18.67,Default,,0,0,0,,{\i1}Não sei quando desistir!{\i0}
+Dialogue: 0,0:11:20.99,0:11:24.55,Default,,0,0,0,,{\i1}Por que tenta ir contra\Nseu destino tanto assim?{\i0}
+Dialogue: 0,0:11:25.63,0:11:29.79,Default,,0,0,0,,{\i1}Porque me chamaram de... fracassado.{\i0}
+Dialogue: 0,0:11:33.27,0:11:36.79,Default,,0,0,0,,{\i1}Mas se vai dizer que isso é fútil,\Nnão precisa fazer nada.{\i0}
+Dialogue: 0,0:11:36.91,0:11:41.75,Default,,0,0,0,,{\i1}Depois que eu me tornar o Hokage,\Nvou mudar o Clã Hyuga.{\i0}
+Dialogue: 0,0:11:43.47,0:11:45.51,Default,,0,0,0,,{\i1}O Ninjutsu em que você é bom?{\i0}
+Dialogue: 0,0:11:46.43,0:11:47.63,Default,,0,0,0,,{\i1}Eu fui descuidado...{\i0}
+Dialogue: 0,0:11:49.31,0:11:54.51,Default,,0,0,0,,{\i1}O Jutsu de Clone\Nera o Ninjutsu em que eu era péssimo.{\i0}
+Dialogue: 0,0:11:57.35,0:12:00.55,Default,,0,0,0,,{\i1}Não reclame de coisas chatas\Ncomo destino{\i0}
+Dialogue: 0,0:12:01.15,0:12:03.99,Default,,0,0,0,,{\i1}e como ele não pode ser mudado.{\i0}
+Dialogue: 0,0:12:04.75,0:12:07.43,Default,,0,0,0,,{\i1}Diferente de mim,{\i0}
+Dialogue: 0,0:12:07.55,0:12:09.35,Default,,0,0,0,,{\i1}você não é um fracasso.{\i0}
+Dialogue: 0,0:12:13.75,0:12:14.87,Default,,0,0,0,,{\i1}Naruto...{\i0}
+Dialogue: 0,0:12:15.47,0:12:17.99,Default,,0,0,0,,Agora ficamos nós três.
+Dialogue: 0,0:12:18.83,0:12:21.11,Default,,0,0,0,,Não se preocupe com essas coisas.
+Dialogue: 0,0:12:21.27,0:12:23.47,Default,,0,0,0,,Choji e Neji vão nos alcançar logo.
+Dialogue: 0,0:12:26.87,0:12:28.75,Default,,0,0,0,,Choji tem o trunfo.
+Dialogue: 0,0:12:29.55,0:12:33.51,Default,,0,0,0,,E lutei com o Neji na Prova Chunin,\Nentão eu sei...
+Dialogue: 0,0:12:34.31,0:12:35.35,Default,,0,0,0,,Sabe o quê?
+Dialogue: 0,0:12:36.99,0:12:41.59,Default,,0,0,0,,Que ele é um verdadeiro gênio.\NAcredite!
+Dialogue: 0,0:12:44.39,0:12:45.99,Default,,0,0,0,,{\i1}Não posso perder.{\i0}
+Dialogue: 0,0:12:47.51,0:12:50.23,Default,,0,0,0,,{\i1}Não interessa se é um inimigo\Nmuito mais forte do que eu{\i0}
+Dialogue: 0,0:12:50.35,0:12:51.95,Default,,0,0,0,,{\i1}ou se este corpo falhar...{\i0}
+Dialogue: 0,0:12:52.75,0:12:54.55,Default,,0,0,0,,{\i1}Não posso perder!{\i0}
+Dialogue: 0,0:12:56.99,0:13:00.27,Default,,0,0,0,,{\i1}Tenho um motivo para não perder.{\i0}
+Dialogue: 0,0:13:12.91,0:13:15.75,Default,,0,0,0,,{\i1}Tive dificuldades dessa vez.{\i0}
+Dialogue: 0,0:13:19.95,0:13:21.35,Default,,0,0,0,,{\i1}Brinquei demais.{\i0}
+Dialogue: 0,0:13:51.31,0:13:53.47,Default,,0,0,0,,{\i1}Não consigo usar chacra.{\i0}
+Dialogue: 0,0:13:53.59,0:13:56.07,Default,,0,0,0,,Como? Você deveria ter morrido\Ninstantaneamente.
+Dialogue: 0,0:13:56.47,0:13:57.79,Default,,0,0,0,,Como pode estar vivo?!
+Dialogue: 0,0:13:58.59,0:14:00.79,Default,,0,0,0,,Não consegui escapar completamente.
+Dialogue: 0,0:14:01.87,0:14:04.71,Default,,0,0,0,,Então, estava preparado\Npara levar o golpe de propósito.
+Dialogue: 0,0:14:06.47,0:14:10.07,Default,,0,0,0,,E eu conheço a minha fraqueza\Nmuito melhor do que você.
+Dialogue: 0,0:14:11.15,0:14:14.03,Default,,0,0,0,,{\i1}Havia oito corvos, não?{\i0}
+Dialogue: 0,0:14:15.51,0:14:17.63,Default,,0,0,0,,O Byakugan tem um ponto cego.
+Dialogue: 0,0:14:18.55,0:14:22.43,Default,,0,0,0,,No entanto, se eu soubesse\Nque seu ataque viria apenas de lá,
+Dialogue: 0,0:14:22.83,0:14:26.39,Default,,0,0,0,,poderia liberar meu chacra apenas\Nnaquele ponto cego e detectar o ataque.
+Dialogue: 0,0:14:27.15,0:14:32.59,Default,,0,0,0,,Não é tão difícil\Ndesviar a mira alguns centímetros.
+Dialogue: 0,0:14:32.79,0:14:35.75,Default,,0,0,0,,Eu seria gravemente ferido,\Nmas evitaria a morte instantânea.
+Dialogue: 0,0:14:40.15,0:14:41.95,Default,,0,0,0,,Então levou o golpe de propósito?
+Dialogue: 0,0:14:42.11,0:14:44.63,Default,,0,0,0,,Isso não muda o fato\Nde que vai morrer aqui.
+Dialogue: 0,0:14:45.71,0:14:47.59,Default,,0,0,0,,Como pode ir tão longe?!
+Dialogue: 0,0:14:49.15,0:14:53.83,Default,,0,0,0,,De todos os inimigos,\Nvocê é o mais forte com quem já lutei.
+Dialogue: 0,0:14:55.15,0:14:58.47,Default,,0,0,0,,Mas há um motivo\Npelo qual não posso perder.
+Dialogue: 0,0:15:01.15,0:15:05.47,Default,,0,0,0,,De todos aqueles com quem lutei,
+Dialogue: 0,0:15:06.39,0:15:07.99,Default,,0,0,0,,o mais forte me disse isso...
+Dialogue: 0,0:15:11.39,0:15:15.15,Default,,0,0,0,,"Diferente de mim,\Nvocê não é um fracasso!"
+Dialogue: 0,0:15:16.75,0:15:17.87,Default,,0,0,0,,Ele disse isso.
+Dialogue: 0,0:15:19.87,0:15:22.15,Default,,0,0,0,,Fui chamado de gênio o tempo todo.
+Dialogue: 0,0:15:23.27,0:15:25.47,Default,,0,0,0,,Então, não posso perder.
+Dialogue: 0,0:15:26.43,0:15:28.15,Default,,0,0,0,,E pelo bem desses caras
+Dialogue: 0,0:15:28.51,0:15:31.39,Default,,0,0,0,,que acreditam que esta pessoa monótona\Ne pequena é um gênio.
+Dialogue: 0,0:15:40.71,0:15:43.71,Default,,0,0,0,,"O destino de um personagem pequeno\Nem um jogo é ser destruído logo."
+Dialogue: 0,0:15:43.99,0:15:45.59,Default,,0,0,0,,Você disse isso, não disse?
+Dialogue: 0,0:15:56.23,0:15:57.91,Default,,0,0,0,,Veja esta situação.
+Dialogue: 0,0:16:01.55,0:16:05.43,Default,,0,0,0,,Coisas como o destino\Nnão são determinadas por alguém.
+Dialogue: 0,0:16:10.79,0:16:12.03,Default,,0,0,0,,Eu me pergunto.
+Dialogue: 0,0:16:12.75,0:16:15.31,Default,,0,0,0,,Parece que você também vai morrer.
+Dialogue: 0,0:16:21.79,0:16:24.67,Default,,0,0,0,,{\i1}Neji, viva.{\i0}
+Dialogue: 0,0:16:24.91,0:16:26.91,Default,,0,0,0,,{\i1}Mais do que qualquer um no clã,{\i0}
+Dialogue: 0,0:16:27.03,0:16:29.75,Default,,0,0,0,,{\i1}você é o mais amado\Npela habilidade Hyuga.{\i0}
+Dialogue: 0,0:16:32.99,0:16:37.63,Default,,0,0,0,,Não posso morrer tão facilmente.
+Dialogue: 0,0:16:39.91,0:16:44.03,Default,,0,0,0,,Mesmo se for forte,\Nnão pode deter a corrente agora.
+Dialogue: 0,0:16:44.91,0:16:49.31,Default,,0,0,0,,O Mestre Sasuke foi para\Na Aldeia do Som por vontade própria.
+Dialogue: 0,0:16:55.75,0:16:58.79,Default,,0,0,0,,{\i1}Sasuke está na escuridão agora.{\i0}
+Dialogue: 0,0:17:06.69,0:17:07.73,Default,,0,0,0,,Não...
+Dialogue: 0,0:17:10.21,0:17:15.05,Default,,0,0,0,,{\i1}Naruto, seus olhos\Nsão melhores que os meus.{\i0}
+Dialogue: 0,0:17:16.97,0:17:22.53,Default,,0,0,0,,Existe uma pessoa que pode\Nencontrá-lo na escuridão e salvá-lo.
+Dialogue: 0,0:17:24.45,0:17:26.81,Default,,0,0,0,,O Mestre Sasuke pertence\Nao Senhor Orochimaru.
+Dialogue: 0,0:17:29.73,0:17:31.93,Default,,0,0,0,,Não importa quem seja,\Nnão pode salvar...
+Dialogue: 0,0:17:32.05,0:17:33.09,Default,,0,0,0,,Ele pode salvá-lo!
+Dialogue: 0,0:17:40.64,0:17:45.12,Default,,0,0,0,,{\i1}Porque, Naruto, você...{\i0}
+Dialogue: 0,0:17:48.77,0:17:51.81,Default,,0,0,0,,{\i1}Você me salvou da escuridão.{\i0}
+Dialogue: 0,0:18:01.93,0:18:03.73,Default,,0,0,0,,Falando besteira até o fim...
+Dialogue: 0,0:18:06.97,0:18:08.01,Default,,0,0,0,,Mas...
+Dialogue: 0,0:18:09.09,0:18:13.12,Default,,0,0,0,,{\i1}Não fui pressionado tanto\Ndesde Kimimaro.{\i0}
+Dialogue: 0,0:18:20.81,0:18:22.77,Default,,0,0,0,,{\i1}Droga.{\i0}
+Dialogue: 0,0:19:35.64,0:19:36.77,Default,,0,0,0,,{\i1}Pessoal.{\i0}
+Dialogue: 0,0:19:42.17,0:19:43.36,Default,,0,0,0,,{\i1}Vou deixar o resto{\i0}
+Dialogue: 0,0:19:44.85,0:19:46.09,Default,,0,0,0,,{\i1}para vocês.{\i0}
+Dialogue: 0,null,null,JPN TOP,,0,0,0,,度｡
+Dialogue: 0,null,null,JPN TOP,,0,0,0,,ｍ内の空間への攻撃は
+Dialogue: 0,00:04:00.21,00:04:03.71,JPN TOP,,0,0,0,,確実に感知する｡
+Dialogue: 0,00:04:03.71,00:04:09.23,JPN TOP,,0,0,0,,しかし なぜかよけ切れないクナイがあった｡
+Dialogue: 0,00:04:09.23,00:04:12.73,JPN TOP,,0,0,0,,なぜ よけ切れないのか｡
+Dialogue: 0,00:04:12.73,00:04:16.74,JPN TOP,,0,0,0,,それは 見えていないからだ｡
+Dialogue: 0,00:04:16.74,00:04:18.74,JPN TOP,,0,0,0,,つまり ヤツの瞳術にも
+Dialogue: 0,00:04:18.74,00:04:22.25,JPN TOP,,0,0,0,,盲点ともいえる僅かな死角がある｡
+Dialogue: 0,00:04:22.25,00:04:24.76,JPN TOP,,0,0,0,,その死角に入ったクナイは
+Dialogue: 0,00:04:24.76,00:04:27.76,JPN TOP,,0,0,0,,見ることができず反応できない｡
+Dialogue: 0,00:04:27.76,00:04:29.77,JPN TOP,,0,0,0,,だから あの防御技で
+Dialogue: 0,00:04:29.77,00:04:33.27,JPN TOP,,0,0,0,,その死角からの攻撃に対処していたのだ｡
+Dialogue: 0,00:04:33.27,00:04:37.78,JPN TOP,,0,0,0,,そして 俺は ヤツに仕掛けたすべての攻撃を分析し
+Dialogue: 0,00:04:37.78,00:04:40.29,JPN TOP,,0,0,0,,完全に把握した｡
+Dialogue: 0,00:04:40.29,00:04:42.79,JPN TOP,,0,0,0,,ヤツの第一胸椎の真後ろに
+Dialogue: 0,00:04:42.79,00:04:46.80,JPN TOP,,0,0,0,,ほんの僅かな点から広がる死角が存在する｡
+Dialogue: 0,00:04:46.80,00:04:49.31,JPN TOP,,0,0,0,,ん？》
+Dialogue: 0,00:04:49.31,00:04:56.75,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:04:56.75,00:04:58.76,JPN TOP,,0,0,0,,(鬼童丸)《ハッハハハ…｡
+Dialogue: 0,00:04:58.76,00:05:01.76,JPN TOP,,0,0,0,,確かに動いて死角を固定させなければ
+Dialogue: 0,00:05:01.76,00:05:04.77,JPN TOP,,0,0,0,,矢で そこを狙うのは難しくなる｡
+Dialogue: 0,00:05:04.77,00:05:08.27,JPN TOP,,0,0,0,,だが その程度 俺には関係ねえ》
+Dialogue: 0,00:05:10.78,00:05:13.79,JPN TOP,,0,0,0,,(鬼童丸)《柔拳は敵に近づかねば無意味｡
+Dialogue: 0,00:05:13.79,00:05:18.80,JPN TOP,,0,0,0,,もっとも 今のお前に 俺に近づこうと考える余裕はない｡
+Dialogue: 0,00:05:18.80,00:05:21.80,JPN TOP,,0,0,0,,今は どう逃げるかだ｡
+Dialogue: 0,00:05:21.80,00:05:23.81,JPN TOP,,0,0,0,,あがこうが あがくまいが
+Dialogue: 0,00:05:23.81,00:05:26.81,JPN TOP,,0,0,0,,どちらにせよ お前は死ぬがな》
+Dialogue: 0,00:05:26.81,00:05:31.82,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:05:31.82,00:05:35.33,JPN TOP,,0,0,0,,(鬼童丸)《フンチャクラも残り少ないようだな》
+Dialogue: 0,00:05:37.34,00:05:41.84,JPN TOP,,0,0,0,,(鬼童丸)＜簡単なゲームの雑魚キャラはすぐに やられる運命だ！＞
+Dialogue: 0,00:05:41.84,00:05:45.35,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:05:45.35,00:05:47.35,JPN TOP,,0,0,0,,(鬼童丸)《ムダだ！》
+Dialogue: 0,00:06:54.45,00:06:56.45,JPN TOP,,0,0,0,,(ネジ)《あっ… 糸！
+Dialogue: 0,00:06:56.45,00:06:59.96,JPN TOP,,0,0,0,,そうか この糸で…》
+Dialogue: 0,00:07:02.46,00:07:03.97,JPN TOP,,0,0,0,,(鬼童丸)《チッ｡
+Dialogue: 0,00:07:03.97,00:07:06.97,JPN TOP,,0,0,0,,今度は 木で少し軌道がズレたか》
+Dialogue: 0,00:07:10.98,00:07:14.49,JPN TOP,,0,0,0,,(ネジ)くっ… ハァ ハァ…｡
+Dialogue: 0,00:07:14.49,00:07:16.49,JPN TOP,,0,0,0,,(鬼童丸)《ならば 今度は
+Dialogue: 0,00:07:16.49,00:07:20.00,JPN TOP,,0,0,0,,さらに回転を加えるぜよ｡
+Dialogue: 0,00:07:20.00,00:07:23.01,JPN TOP,,0,0,0,,これで木に当たっても木を削り飛ばし
+Dialogue: 0,00:07:23.01,00:07:25.51,JPN TOP,,0,0,0,,軌道がズレることはない｡
+Dialogue: 0,00:07:25.51,00:07:29.52,JPN TOP,,0,0,0,,そして さっきと同じくチャクラを通わせた糸で
+Dialogue: 0,null,null,JPN TOP,,0,0,0,,ｍ手前までコントロール｡
+Dialogue: 0,00:07:33.03,00:07:35.53,JPN TOP,,0,0,0,,動く標的に狙いをつけ
+Dialogue: 0,00:07:35.53,00:07:39.47,JPN TOP,,0,0,0,,ピンポイントで矢を死角の中へ ぶち込む！》
+Dialogue: 0,00:07:39.47,00:07:42.48,JPN TOP,,0,0,0,,(ネジ)ぐっ…！ ハァ ハァ…｡
+Dialogue: 0,00:07:42.48,00:07:45.48,JPN TOP,,0,0,0,,(鬼童丸)《まだ立ってくるか…》
+Dialogue: 0,00:07:45.48,00:07:50.49,JPN TOP,,0,0,0,,(ネジ)《強い…ヤツは俺よりも はるかに強い｡
+Dialogue: 0,00:07:50.49,00:07:53.50,JPN TOP,,0,0,0,,もうチャクラも ほとんどない｡
+Dialogue: 0,00:07:53.50,00:07:57.01,JPN TOP,,0,0,0,,恐らく次の攻撃はかわし切れない｡
+Dialogue: 0,00:07:57.01,00:07:59.01,JPN TOP,,0,0,0,,ここまでか！》
+Dialogue: 0,00:08:01.01,00:08:04.02,JPN TOP,,0,0,0,,(ﾅﾙﾄ)＜絶対 勝つ！＞
+Dialogue: 0,00:08:04.02,00:08:06.53,JPN TOP,,0,0,0,,あっ｡
+Dialogue: 0,00:08:06.53,00:08:09.03,JPN TOP,,0,0,0,,(ネジ)フフ…｡
+Dialogue: 0,00:08:09.03,00:08:12.53,JPN TOP,,0,0,0,,(ネジ)《ナルト…お前なら どうするかな？》
+Dialogue: 0,00:08:14.54,00:08:17.55,JPN TOP,,0,0,0,,(ネジ)もういい｡
+Dialogue: 0,00:08:17.55,00:08:22.05,JPN TOP,,0,0,0,,どうせ よけられはしないのだからな｡
+Dialogue: 0,00:08:25.56,00:08:29.07,JPN TOP,,0,0,0,,(鬼童丸)《ん？ 動きを止めたな｡
+Dialogue: 0,00:08:29.07,00:08:31.08,JPN TOP,,0,0,0,,諦めたか？
+Dialogue: 0,00:08:31.08,00:08:34.08,JPN TOP,,0,0,0,,だが 念には念をぜよ｡
+Dialogue: 0,null,null,JPN TOP,,0,0,0,,％
+Dialogue: 0,00:08:37.09,00:08:41.03,JPN TOP,,0,0,0,,破壊力 超最大！》
+Dialogue: 0,00:08:41.03,00:08:51.04,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:08:51.05,00:08:53.05,JPN TOP,,0,0,0,,(ネジ)うっ…！
+Dialogue: 0,00:08:53.05,00:09:00.57,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:09:00.57,00:09:02.57,JPN TOP,,0,0,0,,(鬼童丸)《しとめた！》
+Dialogue: 0,00:09:02.57,00:09:04.07,JPN TOP,,0,0,0,,がっ！
+Dialogue: 0,00:09:04.07,00:09:14.08,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:09:24.62,00:09:26.62,JPN TOP,,0,0,0,,(ネジ)フッ｡
+Dialogue: 0,00:09:26.62,00:09:29.63,JPN TOP,,0,0,0,,(ネジ)《ここだ！
+Dialogue: 0,00:09:29.63,00:09:31.63,JPN TOP,,0,0,0,,柔拳！》
+Dialogue: 0,00:09:31.63,00:09:41.64,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:09:51.67,00:10:00.69,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:10:00.69,00:10:02.69,JPN TOP,,0,0,0,,(鬼童丸)うっ！
+Dialogue: 0,00:10:02.69,00:10:05.70,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:10:05.70,00:10:09.71,JPN TOP,,0,0,0,,(鬼童丸)《な… 何だと？ ヤツは まだ!?
+Dialogue: 0,00:10:09.71,00:10:13.71,JPN TOP,,0,0,0,,いや… 今の一撃で確実に しとめたはず…》
+Dialogue: 0,00:10:13.71,00:10:16.22,JPN TOP,,0,0,0,,(ネジ)＜チャクラをもとにした物質など
+Dialogue: 0,00:10:16.22,00:10:19.73,JPN TOP,,0,0,0,,柔拳の前では意味を成さない＞
+Dialogue: 0,00:10:19.73,00:10:24.23,JPN TOP,,0,0,0,,(鬼童丸)《柔拳… そうか死に際に最後のチャクラを
+Dialogue: 0,00:10:24.23,00:10:26.24,JPN TOP,,0,0,0,,糸に流し込まれたか！》
+Dialogue: 0,00:10:26.24,00:10:31.25,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:10:31.25,00:10:34.76,JPN TOP,,0,0,0,,(ｶﾗｽの鳴き声)
+Dialogue: 0,00:10:34.76,00:10:38.26,JPN TOP,,0,0,0,,(ネジ)《８羽…｡
+Dialogue: 0,00:10:38.26,00:10:41.27,JPN TOP,,0,0,0,,また１羽 見えなかった…》
+Dialogue: 0,00:10:44.21,00:10:46.71,JPN TOP,,0,0,0,,(ネジ)《ヤツは…》
+Dialogue: 0,00:10:53.73,00:10:57.23,JPN TOP,,0,0,0,,(鬼童丸)《くっ…臓器のいくつかが損傷した｡
+Dialogue: 0,00:10:57.23,00:11:00.24,JPN TOP,,0,0,0,,が どうにか動ける！》
+Dialogue: 0,00:11:02.74,00:11:08.26,JPN TOP,,0,0,0,,ハァ ハァ ハァ…｡
+Dialogue: 0,00:11:08.26,00:11:11.26,JPN TOP,,0,0,0,,(ネジ)＜落ちこぼれめ＞
+Dialogue: 0,00:11:11.26,00:11:15.77,JPN TOP,,0,0,0,,＜言っただろ 俺は…
+Dialogue: 0,00:11:15.77,00:11:18.78,JPN TOP,,0,0,0,,諦めが悪ぃんだって…＞
+Dialogue: 0,00:11:18.78,00:11:20.78,JPN TOP,,0,0,0,,＜フン｡
+Dialogue: 0,00:11:20.78,00:11:24.79,JPN TOP,,0,0,0,,どうして そこまで自分の運命に逆らおうとする？＞
+Dialogue: 0,00:11:24.79,00:11:27.79,JPN TOP,,0,0,0,,＜落ちこぼれだと…
+Dialogue: 0,00:11:27.79,00:11:30.30,JPN TOP,,0,0,0,,言われたからだ！＞
+Dialogue: 0,00:11:32.30,00:11:36.31,JPN TOP,,0,0,0,,＜お前が無理だっつうならもう何もしなくていい！
+Dialogue: 0,00:11:36.31,00:11:38.82,JPN TOP,,0,0,0,,俺が火影になってから
+Dialogue: 0,00:11:38.82,00:11:42.26,JPN TOP,,0,0,0,,日向を変えてやるよ！＞
+Dialogue: 0,00:11:42.26,00:11:45.76,JPN TOP,,0,0,0,,(ネジ)＜お前の得意忍術か…｡
+Dialogue: 0,00:11:45.76,00:11:48.27,JPN TOP,,0,0,0,,うかつだった…＞
+Dialogue: 0,00:11:48.27,00:11:50.27,JPN TOP,,0,0,0,,＜分身の術は
+Dialogue: 0,00:11:50.27,00:11:54.78,JPN TOP,,0,0,0,,俺の いちばん苦手な忍術だったんだ＞
+Dialogue: 0,00:11:56.79,00:12:00.29,JPN TOP,,0,0,0,,＜運命がどうとか変われねえとか
+Dialogue: 0,00:12:00.29,00:12:04.30,JPN TOP,,0,0,0,,そんな つまんねえことメソメソ言ってんじゃねえよ｡
+Dialogue: 0,00:12:04.30,00:12:07.31,JPN TOP,,0,0,0,,お前は 俺と違って
+Dialogue: 0,00:12:07.31,00:12:09.31,JPN TOP,,0,0,0,,落ちこぼれじゃねえんだから＞
+Dialogue: 0,00:12:12.82,00:12:14.82,JPN TOP,,0,0,0,,(ネジ)《ナルト！》
+Dialogue: 0,00:12:14.82,00:12:18.33,JPN TOP,,0,0,0,,(キバ)これで 俺たち３人になっちまったな｡
+Dialogue: 0,00:12:18.33,00:12:20.83,JPN TOP,,0,0,0,,そんなこと気にすんなよ｡
+Dialogue: 0,00:12:20.83,00:12:23.84,JPN TOP,,0,0,0,,チョウジもネジもすぐに追いつく！
+Dialogue: 0,00:12:26.35,00:12:28.85,JPN TOP,,0,0,0,,チョウジは切り札持ってたし
+Dialogue: 0,00:12:28.85,00:12:33.86,JPN TOP,,0,0,0,,ネジは 一度 中忍試験で戦ったから分かるんだ｡
+Dialogue: 0,00:12:33.86,00:12:35.86,JPN TOP,,0,0,0,,何が？
+Dialogue: 0,00:12:35.86,00:12:38.87,JPN TOP,,0,0,0,,あいつは
+Dialogue: 0,00:12:38.87,00:12:41.87,JPN TOP,,0,0,0,,ホントの天才だってばよ！
+Dialogue: 0,00:12:43.81,00:12:46.82,JPN TOP,,0,0,0,,(ネジ)《負けるわけにはいかない！
+Dialogue: 0,00:12:46.82,00:12:49.83,JPN TOP,,0,0,0,,俺よりもはるかに強い敵だろうと…
+Dialogue: 0,00:12:49.83,00:12:52.33,JPN TOP,,0,0,0,,この身が朽ちようとも…
+Dialogue: 0,00:12:52.33,00:12:54.33,JPN TOP,,0,0,0,,負けるわけにはいかない！》
+Dialogue: 0,00:12:56.34,00:12:58.34,JPN TOP,,0,0,0,,(ネジ)《負けられない理由が
+Dialogue: 0,00:12:58.34,00:13:00.85,JPN TOP,,0,0,0,,俺にはある！》
+Dialogue: 0,00:13:00.85,00:13:10.86,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:13:12.37,00:13:15.88,JPN TOP,,0,0,0,,(鬼童丸)《チッ今回は てこずっちまったぜよ》
+Dialogue: 0,00:13:15.88,00:13:19.38,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:13:19.38,00:13:21.89,JPN TOP,,0,0,0,,(鬼童丸)《遊び過ぎ…》
+Dialogue: 0,00:13:21.89,00:13:23.89,JPN TOP,,0,0,0,,(鬼童丸)あっ！
+Dialogue: 0,00:13:23.89,00:13:25.90,JPN TOP,,0,0,0,,ハァ～！
+Dialogue: 0,00:13:25.90,00:13:27.90,JPN TOP,,0,0,0,,(鬼童丸)うわ～！
+Dialogue: 0,00:13:27.90,00:13:37.91,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:13:37.92,00:13:39.86,JPN TOP,,0,0,0,,(鬼童丸)うぅ！
+Dialogue: 0,00:13:39.86,00:13:49.87,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:13:50.88,00:13:52.88,JPN TOP,,0,0,0,,(鬼童丸)《チャクラが練れない…》
+Dialogue: 0,00:13:52.88,00:13:55.89,JPN TOP,,0,0,0,,(鬼童丸)なぜだ… 即死のはずだ！
+Dialogue: 0,00:13:55.89,00:13:58.40,JPN TOP,,0,0,0,,なぜ 生きている!?
+Dialogue: 0,00:13:58.40,00:14:01.40,JPN TOP,,0,0,0,,(ネジ)どうせ よけ切れはしないのだからな｡
+Dialogue: 0,00:14:01.40,00:14:05.41,JPN TOP,,0,0,0,,だから わざと受ける覚悟が決まった｡
+Dialogue: 0,00:14:05.41,00:14:10.42,JPN TOP,,0,0,0,,そして 俺は お前よりもずっと俺の弱点を知っていた｡
+Dialogue: 0,00:14:10.42,00:14:14.93,JPN TOP,,0,0,0,,(ネジ)《８羽…だったか？》
+Dialogue: 0,00:14:14.93,00:14:17.93,JPN TOP,,0,0,0,,(ネジ)この白眼には死角がある｡
+Dialogue: 0,00:14:17.93,00:14:22.44,JPN TOP,,0,0,0,,しかし お前の攻撃がそこからしか来ないことが分かれば
+Dialogue: 0,00:14:22.44,00:14:26.95,JPN TOP,,0,0,0,,その死角だけにチャクラを放出し攻撃を感知｡
+Dialogue: 0,00:14:26.95,00:14:30.46,JPN TOP,,0,0,0,,僅か数cm 狙いを外すだけの動きをするのは
+Dialogue: 0,00:14:30.46,00:14:32.46,JPN TOP,,0,0,0,,さほど難しくはない｡
+Dialogue: 0,00:14:32.46,00:14:35.97,JPN TOP,,0,0,0,,重傷は負うが 即死は避けられる｡
+Dialogue: 0,00:14:35.97,00:14:38.48,JPN TOP,,0,0,0,,ハァ ハァ…｡
+Dialogue: 0,00:14:38.48,00:14:41.92,JPN TOP,,0,0,0,,ヘッヘヘ… わざと受けたのか｡
+Dialogue: 0,00:14:41.92,00:14:45.42,JPN TOP,,0,0,0,,死ぬことには変わりねえってのに｡
+Dialogue: 0,00:14:45.42,00:14:48.43,JPN TOP,,0,0,0,,どうして そこまでできる？
+Dialogue: 0,00:14:48.43,00:14:50.93,JPN TOP,,0,0,0,,(ネジ)お前は
+Dialogue: 0,00:14:50.93,00:14:54.44,JPN TOP,,0,0,0,,今まで戦った敵の中でいちばん強い｡
+Dialogue: 0,00:14:54.44,00:14:58.95,JPN TOP,,0,0,0,,だが 俺には負けられない理由がある｡
+Dialogue: 0,00:15:00.95,00:15:02.96,JPN TOP,,0,0,0,,(ネジ)俺が今までに戦った
+Dialogue: 0,00:15:02.96,00:15:05.96,JPN TOP,,0,0,0,,すべての者の中でいちばん強いヤツが
+Dialogue: 0,00:15:05.96,00:15:08.47,JPN TOP,,0,0,0,,俺に こう言ってくれた｡
+Dialogue: 0,00:15:10.97,00:15:16.49,JPN TOP,,0,0,0,,(ネジ･ﾅﾙﾄ)｢お前は俺と違って落ちこぼれなんかじゃない｣｡
+Dialogue: 0,00:15:16.49,00:15:18.49,JPN TOP,,0,0,0,,(ネジ)…とな｡
+Dialogue: 0,00:15:19.99,00:15:23.00,JPN TOP,,0,0,0,,(ネジ)俺は常に天才と呼ばれてきた｡
+Dialogue: 0,00:15:23.00,00:15:26.00,JPN TOP,,0,0,0,,だから負けるわけにはいかない｡
+Dialogue: 0,00:15:26.00,00:15:28.51,JPN TOP,,0,0,0,,凡小な俺を
+Dialogue: 0,00:15:28.51,00:15:32.02,JPN TOP,,0,0,0,,天才と信じているあいつらのためにもな｡
+Dialogue: 0,00:15:32.02,00:15:39.03,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:15:39.03,00:15:43.97,JPN TOP,,0,0,0,,(ネジ)フッ… ｢雑魚キャラはすぐに やられる運命だ｣｡
+Dialogue: 0,00:15:43.97,00:15:46.48,JPN TOP,,0,0,0,,お前は そう言ったな｡
+Dialogue: 0,00:15:46.48,00:15:49.48,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:15:49.48,00:15:51.49,JPN TOP,,0,0,0,,ぐっ！ はっ！
+Dialogue: 0,00:15:51.49,00:15:56.50,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:15:56.50,00:15:58.50,JPN TOP,,0,0,0,,(ネジ)この状況を見ろ｡
+Dialogue: 0,00:15:58.50,00:16:01.51,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:16:01.51,00:16:03.51,JPN TOP,,0,0,0,,(ネジ)運命なんて
+Dialogue: 0,00:16:03.51,00:16:06.02,JPN TOP,,0,0,0,,誰かが決めるもんじゃない！
+Dialogue: 0,00:16:06.02,00:16:10.53,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:16:10.53,00:16:12.53,JPN TOP,,0,0,0,,(鬼童丸)どうだかな？
+Dialogue: 0,00:16:12.53,00:16:16.04,JPN TOP,,0,0,0,,お前も死にそうじゃねえかよ｡
+Dialogue: 0,00:16:16.04,00:16:21.55,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:16:21.55,00:16:25.06,JPN TOP,,0,0,0,,(ﾋｻﾞｼ)＜ネジ お前は生きろ｡
+Dialogue: 0,00:16:25.06,00:16:30.07,JPN TOP,,0,0,0,,お前は一族の誰よりも日向の才に愛された男だ＞
+Dialogue: 0,00:16:30.07,00:16:32.57,JPN TOP,,0,0,0,,(ネジ)ぐっ…！
+Dialogue: 0,00:16:32.57,00:16:38.08,JPN TOP,,0,0,0,,俺は… そう簡単には死ねないんだよ｡
+Dialogue: 0,00:16:38.08,00:16:41.52,JPN TOP,,0,0,0,,ヘッ 強がっても
+Dialogue: 0,00:16:41.52,00:16:45.03,JPN TOP,,0,0,0,,もう流れを止めることはできやしねえぜよ｡
+Dialogue: 0,00:16:45.03,00:16:50.03,JPN TOP,,0,0,0,,サスケ様は己から望んで音へ走った｡
+Dialogue: 0,00:16:52.04,00:16:55.05,JPN TOP,,0,0,0,,ハァ ハァ…｡
+Dialogue: 0,00:16:55.05,00:17:00.06,JPN TOP,,0,0,0,,(ネジ)＜サスケは今 闇の中にいる＞
+Dialogue: 0,00:17:00.06,00:17:04.56,JPN TOP,,0,0,0,,(ネジ)ハァ ハァ ハァ…｡
+Dialogue: 0,00:17:06.57,00:17:08.57,JPN TOP,,0,0,0,,(ネジ)いや｡
+Dialogue: 0,00:17:10.08,00:17:12.08,JPN TOP,,0,0,0,,＜ナルト｡
+Dialogue: 0,00:17:12.08,00:17:16.09,JPN TOP,,0,0,0,,お前は 俺よりいい眼を持ってる＞
+Dialogue: 0,00:17:16.09,00:17:20.10,JPN TOP,,0,0,0,,サスケを闇から見つけ出し
+Dialogue: 0,00:17:20.10,00:17:23.11,JPN TOP,,0,0,0,,救い出せるヤツがいる｡
+Dialogue: 0,00:17:23.11,00:17:27.61,JPN TOP,,0,0,0,,(鬼童丸)ヘッサスケ様は大蛇丸様のものだ｡
+Dialogue: 0,00:17:29.62,00:17:32.12,JPN TOP,,0,0,0,,(鬼童丸)たとえ誰であっても救い出せは…｡
+Dialogue: 0,00:17:32.12,00:17:34.13,JPN TOP,,0,0,0,,(ネジ)出せるさ！
+Dialogue: 0,00:17:37.13,00:17:40.57,JPN TOP,,0,0,0,,ハァ ハァ…｡
+Dialogue: 0,00:17:40.57,00:17:42.58,JPN TOP,,0,0,0,,(ネジ)《なぜなら
+Dialogue: 0,00:17:42.58,00:17:46.08,JPN TOP,,0,0,0,,ナルト お前は…》
+Dialogue: 0,00:17:48.59,00:17:52.59,JPN TOP,,0,0,0,,(ネジ)《俺を闇の中から救い出した！》
+Dialogue: 0,00:17:59.11,00:18:01.61,JPN TOP,,0,0,0,,ぐっ… がっ！
+Dialogue: 0,00:18:01.61,00:18:04.12,JPN TOP,,0,0,0,,最後まで ざれ言を…｡
+Dialogue: 0,00:18:04.12,00:18:07.13,JPN TOP,,0,0,0,,うっ！ ぐはっ！
+Dialogue: 0,00:18:07.13,00:18:09.13,JPN TOP,,0,0,0,,(鬼童丸)《とはいえ…
+Dialogue: 0,00:18:09.13,00:18:14.14,JPN TOP,,0,0,0,,ここまで追い込まれたのは君麻呂以来だぜ》
+Dialogue: 0,00:18:14.14,00:18:15.64,JPN TOP,,0,0,0,,ハァ…｡
+Dialogue: 0,00:18:15.64,00:18:18.65,JPN TOP,,0,0,0,,(ネジ)ハァ ハァ…｡
+Dialogue: 0,00:18:20.65,00:18:23.66,JPN TOP,,0,0,0,,(鬼童丸)《チクショウが…》
+Dialogue: 0,00:18:23.66,00:18:28.16,JPN TOP,,0,0,0,,(鼓動)
+Dialogue: 0,00:18:30.67,00:18:40.68,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:18:50.65,00:19:00.66,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:19:10.69,00:19:20.70,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:19:30.73,00:19:35.24,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:19:35.24,00:19:37.24,JPN TOP,,0,0,0,,(ネジ)《みんな…》
+Dialogue: 0,00:19:37.24,00:19:42.25,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:19:42.25,00:19:44.75,JPN TOP,,0,0,0,,(ネジ)《後は…
+Dialogue: 0,00:19:44.75,00:19:46.76,JPN TOP,,0,0,0,,頼んだぞ…》
+Dialogue: 0,00:19:46.76,00:19:56.77,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:20:06.80,00:20:16.81,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:20:26.84,00:20:36.85,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:20:46.81,00:20:56.82,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:21:41.32,00:21:45.83,JPN TOP,,0,0,0,,♬(ｴﾝﾃﾞｨﾝｸﾞﾃｰﾏ)
+Dialogue: 0,00:21:45.83,00:21:48.33,JPN TOP,,0,0,0,,♬ はじめて君としゃべった
+Dialogue: 0,00:21:48.33,00:21:51.34,JPN TOP,,0,0,0,,♬ 君は笑ってくれた
+Dialogue: 0,00:21:51.34,00:21:53.85,JPN TOP,,0,0,0,,♬ はじめて君としゃべれた
+Dialogue: 0,00:21:53.85,00:21:56.85,JPN TOP,,0,0,0,,♬ 僕のこの言葉で
+Dialogue: 0,00:21:56.85,00:21:59.36,JPN TOP,,0,0,0,,♬ 僕なんかがしゃべりかけたら
+Dialogue: 0,00:21:59.36,00:22:02.36,JPN TOP,,0,0,0,,♬ 迷惑に思うかな
+Dialogue: 0,00:22:02.36,00:22:04.87,JPN TOP,,0,0,0,,♬ そんな不安を抱えて
+Dialogue: 0,00:22:04.87,00:22:07.81,JPN TOP,,0,0,0,,♬ 勇気を出してみたよ
+Dialogue: 0,00:22:07.81,00:22:10.81,JPN TOP,,0,0,0,,♬ うまくしゃべれない僕の
+Dialogue: 0,00:22:10.81,00:22:13.82,JPN TOP,,0,0,0,,♬ 不器用な話
+Dialogue: 0,00:22:13.82,00:22:16.32,JPN TOP,,0,0,0,,♬ 君は耳をそらさずに
+Dialogue: 0,00:22:16.32,00:22:19.83,JPN TOP,,0,0,0,,♬ ちゃんと聞いてくれたよ
+Dialogue: 0,00:22:19.83,00:22:22.84,JPN TOP,,0,0,0,,♬ それだけで僕は
+Dialogue: 0,00:22:22.84,00:22:25.84,JPN TOP,,0,0,0,,♬ 浮かれてしまうのさ
+Dialogue: 0,00:22:25.84,00:22:28.35,JPN TOP,,0,0,0,,♬ だけど君は僕なんて
+Dialogue: 0,00:22:28.35,00:22:32.86,JPN TOP,,0,0,0,,♬ 何とも思ってないよね
+Dialogue: 0,00:22:32.86,00:22:36.36,JPN TOP,,0,0,0,,♬ 切ないよ だけど
+Dialogue: 0,00:22:36.36,00:22:38.87,JPN TOP,,0,0,0,,♬ はじめて君としゃべった
+Dialogue: 0,00:22:38.87,00:22:42.38,JPN TOP,,0,0,0,,♬ 君は笑ってくれた
+Dialogue: 0,00:22:42.38,00:22:44.88,JPN TOP,,0,0,0,,♬ はじめて君としゃべれた
+Dialogue: 0,00:22:44.88,00:22:47.89,JPN TOP,,0,0,0,,♬ 僕のこの言葉で
+Dialogue: 0,00:22:47.89,00:22:50.39,JPN TOP,,0,0,0,,♬ はじめて君としゃべった
+Dialogue: 0,00:22:50.39,00:22:53.40,JPN TOP,,0,0,0,,♬ 君が笑ってくれた
+Dialogue: 0,00:22:53.40,00:22:55.90,JPN TOP,,0,0,0,,♬ はじめて君としゃべれた
+Dialogue: 0,00:22:55.90,00:22:59.41,JPN TOP,,0,0,0,,♬ 僕のこの言葉で
+Dialogue: 0,00:22:59.41,00:23:03.42,JPN TOP,,0,0,0,,♬ はじめて君としゃべった
+Dialogue: 0,00:23:03.42,00:23:07.92,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:23:11.87,00:23:13.87,JPN TOP,,0,0,0,,(赤丸のほえ声)(キバ)〈やっほ～！
+Dialogue: 0,00:23:13.87,00:23:15.88,JPN TOP,,0,0,0,,敵さん かなり近くにいるぜ！〉
+Dialogue: 0,00:23:15.88,00:23:17.88,JPN TOP,,0,0,0,,〈よっしゃ！ このまま一気に追いつくってばよ！〉
+Dialogue: 0,00:23:17.88,00:23:21.39,JPN TOP,,0,0,0,,(ｼｶﾏﾙ)〈人数でいや こっちが上だうまくすりゃ 次で奪い返せるぜ〉
+Dialogue: 0,00:23:21.39,00:23:24.39,JPN TOP,,0,0,0,,(キバ)〈おう！ ４対２ともなりゃ負ける気がしねえ！〉
+Dialogue: 0,00:23:24.39,00:23:26.40,JPN TOP,,0,0,0,,〈４対２？〉(キバ)〈相手の倍だぜ！〉
+Dialogue: 0,00:23:26.40,00:23:28.40,JPN TOP,,0,0,0,,〈なぁなぁ俺ら４人も いたっけか？〉
+Dialogue: 0,00:23:28.40,00:23:31.91,JPN TOP,,0,0,0,,(キバ)〈アホか お前は！俺 赤丸 シカマル お前｡
+Dialogue: 0,00:23:31.91,00:23:33.91,JPN TOP,,0,0,0,,どっからどう数えても４人じゃねえか！〉
+Dialogue: 0,00:23:33.91,00:23:35.41,JPN TOP,,0,0,0,,(赤丸のほえ声)

@@ -1,0 +1,549 @@
+[Script Info]
+; This is an Advanced Sub Station Alpha v4+ script.
+ScriptType: v4.00+
+Collisions: Normal
+PlayDepth: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: JPN TOP,Noto Sans,24,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,1.7,1,8,10,10,5,1
+Style: Gen_Main,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,1,2,0010,0010,0018,1
+Style: Gen_Italics,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,-1,0,0,100,100,0,0,1,2,1,2,0010,0010,0018,1
+Style: Gen_Main_Up,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00000000,&H00090909,0,0,0,0,100,100,0,0,1,2,1,8,0010,0010,0018,1
+Style: Gen_Italics_top,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,-1,0,0,100,100,0,0,1,2,1,8,0010,0010,0018,1
+Style: Gen_TitleEp,Trebuchet MS,20,&H000121C8,&H000000FF,&H00060503,&H00060503,-1,0,0,0,100,100,0,0,1,3,1,8,0020,0020,0030,1
+Style: Gen_Avance,Arial,20,&H000D00D3,&H000000FF,&H00060503,&H00000000,-1,0,0,0,100,100,0,0,1,3,2,8,0020,0020,0100,1
+Style: Gen_Name,Times New Roman,20,&H001845E6,&H000000FF,&H00FFFFFF,&H00FFFFFF,-1,0,0,0,100,100,0,0,1,2,1,9,0035,0035,0020,1
+Style: Naruto_Nota,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00262626,&H00505050,0,-1,0,0,100,100,0,0,1,2,1,8,0010,0010,0018,1
+Style: Cart_A_Tre,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00303030,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+Style: Cart_B_Tre,Trebuchet MS,20,&H00323232,&H000000FF,&H00D9D9D9,&H00D9D9D9,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+Style: Cart_C_Tre,Trebuchet MS,20,&H00323232,&H000000FF,&H00FFFFFF,&H00FFFFFF,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+Style: Cart_A_Tim,Times New Roman,20,&H00FFFFFF,&H000000FF,&H00060606,&H00060606,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+Style: Cart_B_Tim,Times New Roman,20,&H00323232,&H000000FF,&H00D9D9D9,&H00D9D9D9,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+Style: Cart_C_Tim,Times New Roman,20,&H00323232,&H000000FF,&H00FFFFFF,&H00FFFFFF,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,00:00:00.36,00:00:03.36,JPN TOP,,0,0,0,,♬ 踏み込むぜアクセル
+Dialogue: 0,00:00:03.36,00:00:07.38,JPN TOP,,0,0,0,,♬ 駆け引きは無いさ､そうだよ
+Dialogue: 0,00:00:07.38,00:00:11.39,JPN TOP,,0,0,0,,♬ 夜をぬける
+Dialogue: 0,00:00:11.39,00:00:14.40,JPN TOP,,0,0,0,,♬ ねじ込むさ最後に
+Dialogue: 0,00:00:14.40,00:00:17.91,JPN TOP,,0,0,0,,♬ 差し引きゼロさ､そうだよ
+Dialogue: 0,00:00:17.91,00:00:23.43,JPN TOP,,0,0,0,,♬ 日々を削る
+Dialogue: 0,00:00:23.43,00:00:26.43,JPN TOP,,0,0,0,,♬ 心をそっと
+Dialogue: 0,00:00:26.43,00:00:28.94,JPN TOP,,0,0,0,,♬ 開いて ギュっと
+Dialogue: 0,00:00:28.94,00:00:32.45,JPN TOP,,0,0,0,,♬ 引き寄せたら
+Dialogue: 0,00:00:32.45,00:00:34.46,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:00:34.46,00:00:36.97,JPN TOP,,0,0,0,,♬ 届くよきっと
+Dialogue: 0,00:00:36.97,00:00:41.98,JPN TOP,,0,0,0,,♬ 伝うよもっと さあ
+Dialogue: 0,00:00:41.98,00:00:50.00,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:00:50.00,00:00:52.51,JPN TOP,,0,0,0,,♬ 生き急いで
+Dialogue: 0,00:00:52.51,00:00:55.45,JPN TOP,,0,0,0,,♬ 搾り取って
+Dialogue: 0,00:00:55.45,00:00:57.96,JPN TOP,,0,0,0,,♬ 縺れる足だけど前より
+Dialogue: 0,00:00:57.96,00:01:00.97,JPN TOP,,0,0,0,,♬ ずっとそう､遠くへ
+Dialogue: 0,00:01:00.97,00:01:03.48,JPN TOP,,0,0,0,,♬ 奪い取って
+Dialogue: 0,00:01:03.48,00:01:06.49,JPN TOP,,0,0,0,,♬ 掴んだって
+Dialogue: 0,00:01:06.49,00:01:08.99,JPN TOP,,0,0,0,,♬ 君じゃないなら意味は無いのさ
+Dialogue: 0,00:01:08.99,00:01:11.00,JPN TOP,,0,0,0,,♬ だから､嗚呼､
+Dialogue: 0,00:01:11.00,00:01:15.51,JPN TOP,,0,0,0,,♬ 遥か彼方
+Dialogue: 0,00:01:15.51,00:01:22.03,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:01:33.02,00:01:35.53,JPN TOP,,0,0,0,,(ドス)努力だけじゃ どうにもならない
+Dialogue: 0,0:01:33.52,0:01:39.71,Gen_Main,,0,0,0,,Te demostraré que hay muros\Nque no puedes escalar solo con esfuerzo.
+Dialogue: 0,00:01:35.53,00:01:39.54,JPN TOP,,0,0,0,,壁というものを教えてあげるよ｡
+Dialogue: 0,00:01:41.05,00:01:44.05,JPN TOP,,0,0,0,,(キン)フフ｡(ザク)ヘッ｡
+Dialogue: 0,0:01:48.55,0:01:54.56,Cart_A_Tre,,0,0,0,,¡Sakura florece!\NLa determinación de su espalda
+Dialogue: 0,0:01:50.79,0:01:53.76,Gen_Main,,0,0,0,,¡Sakura florece!\NLa determinación de su espalda.
+Dialogue: 0,00:01:56.02,00:02:06.04,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:02:13.58,00:02:16.59,JPN TOP,,0,0,0,,(リー)ハァ ハァ ハァ…｡
+Dialogue: 0,00:02:16.59,00:02:18.59,JPN TOP,,0,0,0,,ん!?
+Dialogue: 0,00:02:18.59,00:02:24.11,JPN TOP,,0,0,0,,(ドス)君の技は確かに速い｡
+Dialogue: 0,0:02:19.06,0:02:22.51,Gen_Main,,0,0,0,,Tu técnica es muy rápida.
+Dialogue: 0,00:02:24.11,00:02:26.62,JPN TOP,,0,0,0,,だが 僕たちの技は
+Dialogue: 0,0:02:24.69,0:02:29.29,Gen_Main,,0,0,0,,Pero las nuestras\Nvan a la velocidad del sonido.
+Dialogue: 0,00:02:26.62,00:02:29.63,JPN TOP,,0,0,0,,それを超える音速だ｡
+Dialogue: 0,00:02:29.63,00:02:32.64,JPN TOP,,0,0,0,,(おう吐する音)
+Dialogue: 0,00:02:32.64,00:02:34.64,JPN TOP,,0,0,0,,(ｻｸﾗ)リーさん！
+Dialogue: 0,0:02:33.23,0:02:34.57,Gen_Main,,0,0,0,,¡Lee-san!
+Dialogue: 0,00:02:34.64,00:02:37.65,JPN TOP,,0,0,0,,(ﾘｰの せきこみ)
+Dialogue: 0,00:02:37.65,00:02:39.15,JPN TOP,,0,0,0,,あ…｡
+Dialogue: 0,00:02:44.17,00:02:46.67,JPN TOP,,0,0,0,,(リー)《左耳が…》
+Dialogue: 0,0:02:44.61,0:02:46.22,Gen_Main,,0,0,0,,Mi oído izquierdo…
+Dialogue: 0,00:02:48.18,00:02:52.13,JPN TOP,,0,0,0,,(ドス)ちょっとした仕掛けがあってね｡
+Dialogue: 0,0:02:48.60,0:02:51.78,Gen_Main,,0,0,0,,Es cierto que tengo un pequeño truco.
+Dialogue: 0,00:02:52.13,00:02:55.64,JPN TOP,,0,0,0,,かわしてもダメなんだよ｡
+Dialogue: 0,0:02:52.58,0:02:58.36,Gen_Main,,0,0,0,,Es inútil que esquives mis ataques.
+Dialogue: 0,00:02:55.64,00:03:00.15,JPN TOP,,0,0,0,,僕の攻撃はね｡
+Dialogue: 0,00:03:00.15,00:03:02.66,JPN TOP,,0,0,0,,《一体 何を？》
+Dialogue: 0,0:03:00.62,0:03:02.39,Gen_Italics,,0,0,0,,¿Qué hizo?
+Dialogue: 0,00:03:02.66,00:03:05.16,JPN TOP,,0,0,0,,(ドス)フフフ…｡
+Dialogue: 0,00:03:05.16,00:03:07.17,JPN TOP,,0,0,0,,音だよ｡
+Dialogue: 0,0:03:05.76,0:03:07.38,Gen_Main,,0,0,0,,Es el sonido.
+Dialogue: 0,00:03:07.17,00:03:12.19,JPN TOP,,0,0,0,,拳は かわしても音が君を攻撃したのさ｡
+Dialogue: 0,0:03:07.76,0:03:12.30,Gen_Main,,0,0,0,,Aunque esquives mi puño,\Nel sonido te atacó.
+Dialogue: 0,00:03:12.19,00:03:15.19,JPN TOP,,0,0,0,,(リー)《音…》
+Dialogue: 0,0:03:12.30,0:03:13.54,Gen_Main,,0,0,0,,¿El sonido?
+Dialogue: 0,00:03:15.19,00:03:20.21,JPN TOP,,0,0,0,,(ドス)音ってのは そもそも何なのか 知っていますか？
+Dialogue: 0,0:03:15.71,0:03:19.98,Gen_Main,,0,0,0,,¿Saben lo que es el sonido?
+Dialogue: 0,00:03:20.21,00:03:23.72,JPN TOP,,0,0,0,,振動？(ドス)ご名答｡
+Dialogue: 0,0:03:20.78,0:03:21.94,Gen_Main,,0,0,0,,¿Vibraciones?
+Dialogue: 0,0:03:22.35,0:03:23.94,Gen_Main,,0,0,0,,Correcto.
+Dialogue: 0,00:03:23.72,00:03:27.73,JPN TOP,,0,0,0,,音が聞こえるということはつまり
+Dialogue: 0,0:03:23.94,0:03:27.56,Gen_Main,,0,0,0,,Oímos cualquier sonido
+Dialogue: 0,00:03:27.73,00:03:29.74,JPN TOP,,0,0,0,,空気が揺れているのを
+Dialogue: 0,0:03:27.95,0:03:33.19,Gen_Main,,0,0,0,,porque el tímpano\Ndetecta las vibraciones del aire.
+Dialogue: 0,00:03:29.74,00:03:34.25,JPN TOP,,0,0,0,,耳の鼓膜がキャッチするということ｡
+Dialogue: 0,00:03:34.25,00:03:36.76,JPN TOP,,0,0,0,,そして 人間の鼓膜は
+Dialogue: 0,0:03:34.40,0:03:40.40,Gen_Main,,0,0,0,,El tímpano humano se rompe\Nsi se superan los 150 fonios.
+Dialogue: 0,0:03:41.20,0:03:46.80,Gen_Main,,0,0,0,,Además, sacudir los conductos\Ncirculares que hay más al fondo
+Dialogue: 0,0:03:48.00,0:03:51.61,Gen_Main,,0,0,0,,hace que se pierda el equilibrio.
+Dialogue: 0,0:03:56.24,0:04:01.05,Gen_Main,,0,0,0,,Pasarás un tiempo\Nsin poder moverte a voluntad.
+Dialogue: 0,0:04:02.25,0:04:06.65,Gen_Main,,0,0,0,,Las técnicas anticuadas de taijutsu\Nno nos harán nada.
+Dialogue: 0,0:04:08.32,0:04:11.13,Gen_Main,,0,0,0,,No lo hiciste mal,
+Dialogue: 0,0:04:11.13,0:04:13.52,Gen_Main,,0,0,0,,pero también viste mi técnica,
+Dialogue: 0,0:04:13.52,0:04:15.93,Gen_Main,,0,0,0,,así que no saldrás ileso de aquí.
+Dialogue: 0,0:04:19.14,0:04:23.14,Gen_Main,,0,0,0,,Yo controlo las ondas ultrasónicas\Ny la presión del aire
+Dialogue: 0,0:04:23.14,0:04:25.94,Gen_Main,,0,0,0,,hasta hacer polvo incluso las rocas.
+Dialogue: 0,0:04:26.81,0:04:28.02,Gen_Main,,0,0,0,,¡Omote Renge!
+Dialogue: 0,0:04:26.81,0:04:28.02,Naruto_Nota,,0,0,0,,Loto Primario
+Dialogue: 0,0:04:31.38,0:04:37.00,Gen_Main,,0,0,0,,No me costó enviar aire al suelo\Ny hacer que la tierra fuera un colchón.
+Dialogue: 0,0:04:38.52,0:04:42.42,Gen_Main,,0,0,0,,No tengo nada que envidiar\Nde tus estúpidas técnicas.
+Dialogue: 0,0:04:49.40,0:04:51.40,Gen_Italics,,0,0,0,,Maldición…
+Dialogue: 0,0:04:57.97,0:05:01.17,Gen_Main,,0,0,0,,Lee, la condición para usar esta técnica
+Dialogue: 0,0:05:01.17,0:05:04.78,Gen_Main,,0,0,0,,es que necesites proteger\Na alguien que te importa.
+Dialogue: 0,0:05:05.18,0:05:09.18,Gen_Main,,0,0,0,,¿Proteger a alguien que me importa?
+Dialogue: 0,0:05:13.82,0:05:18.62,Gen_Main,,0,0,0,,Pero estoy orgulloso de ti\Npor aprenderla.
+Dialogue: 0,0:05:20.78,0:05:22.76,Gen_Main,,0,0,0,,Bien hecho, Lee.
+Dialogue: 0,0:05:24.38,0:05:26.36,Gen_Italics,,0,0,0,,Maldición.
+Dialogue: 0,0:05:28.37,0:05:29.97,Gen_Main,,0,0,0,,Muy bien.
+Dialogue: 0,0:05:30.54,0:05:33.24,Gen_Main,,0,0,0,,¡Tú serás la siguiente!
+Dialogue: 0,0:05:33.24,0:05:34.21,Gen_Italics,,0,0,0,,¡No!
+Dialogue: 0,0:05:34.21,0:05:35.44,Gen_Italics,,0,0,0,,¡Ya viene!
+Dialogue: 0,0:05:41.95,0:05:42.88,Gen_Main,,0,0,0,,¡Imposible!
+Dialogue: 0,0:05:42.88,0:05:44.12,Gen_Italics,,0,0,0,,¿Lee-san?
+Dialogue: 0,0:05:44.12,0:05:46.56,Gen_Main,,0,0,0,,¡Konoha Senpuu!
+Dialogue: 0,0:05:44.12,0:05:46.56,Naruto_Nota,,0,0,0,,Remolino de la Hoja
+Dialogue: 0,0:05:47.79,0:05:51.98,Gen_Main,,0,0,0,,El ataque de antes te afectó.
+Dialogue: 0,0:05:52.39,0:05:54.33,Gen_Main,,0,0,0,,Me sorprendiste,
+Dialogue: 0,0:05:55.12,0:06:00.06,Gen_Main,,0,0,0,,pero no pareces el mismo\Nque usó taijutsu a tal velocidad antes.
+Dialogue: 0,0:06:05.98,0:06:10.94,Gen_Main,,0,0,0,,Mi brazo aumenta hasta el extremo\Nel sonido que se genera en él.
+Dialogue: 0,0:06:11.34,0:06:13.34,Gen_Main,,0,0,0,,Es un altavoz.
+Dialogue: 0,0:06:15.21,0:06:16.38,Gen_Main,,0,0,0,,¡Lee-san!
+Dialogue: 0,0:06:16.78,0:06:20.62,Gen_Main,,0,0,0,,Pero el sonido del impacto\Nno viaja en una sola dirección.
+Dialogue: 0,0:06:20.62,0:06:25.86,Gen_Main,,0,0,0,,Puedo dirigirlo hacia mi oponente\Nmediante chakra.
+Dialogue: 0,0:06:25.86,0:06:27.06,Gen_Main,,0,0,0,,¡Lee-san!
+Dialogue: 0,0:06:31.66,0:06:35.13,Gen_Main,,0,0,0,,Es hora de acabar con esto.
+Dialogue: 0,0:06:35.53,0:06:36.87,Gen_Main,,0,0,0,,¡No te lo permitiré!
+Dialogue: 0,0:06:41.04,0:06:43.44,Gen_Main,,0,0,0,,Rayos…
+Dialogue: 0,0:06:44.57,0:06:49.38,Gen_Main,,0,0,0,,Vayámonos,\Nesos tipos son muy peligrosos.
+Dialogue: 0,0:06:49.78,0:06:53.76,Gen_Main,,0,0,0,,Parece que Sasuke y Naruto\Nsolo están desmayados,
+Dialogue: 0,0:06:53.76,0:06:57.35,Gen_Main,,0,0,0,,pero están superando a Lee,\Ny solo queda Sakura.
+Dialogue: 0,0:06:57.35,0:07:00.16,Gen_Main,,0,0,0,,¿Qué vas a hacer, Ino?
+Dialogue: 0,0:07:00.96,0:07:02.96,Gen_Main,,0,0,0,,¿Que qué haré?
+Dialogue: 0,0:07:03.73,0:07:06.53,Gen_Main,,0,0,0,,Sakura está en peligro.
+Dialogue: 0,0:07:06.53,0:07:08.06,Gen_Main,,0,0,0,,¿No te importa?
+Dialogue: 0,0:07:09.67,0:07:12.47,Gen_Main,,0,0,0,,Solían ser buenas amigas, ¿no?
+Dialogue: 0,0:07:20.48,0:07:22.08,Gen_Main,,0,0,0,,Oye…
+Dialogue: 0,0:07:25.95,0:07:29.55,Gen_Main,,0,0,0,,¿Por qué te pones tan seria, Sakura?
+Dialogue: 0,0:07:31.15,0:07:35.16,Gen_Main,,0,0,0,,Oye, Ino-chan…
+Dialogue: 0,0:07:36.36,0:07:37.99,Gen_Main,,0,0,0,,¿Qué sucede?
+Dialogue: 0,0:07:40.00,0:07:43.20,Gen_Main,,0,0,0,,Oí que te gusta Sasuke-kun.
+Dialogue: 0,0:07:53.18,0:07:58.38,Gen_Main,,0,0,0,,Entonces, a partir de ahora\Nseremos rivales.
+Dialogue: 0,0:08:08.05,0:08:12.86,Gen_Italics,,0,0,0,,¿Por qué recuerdo eso ahora?
+Dialogue: 0,0:08:13.66,0:08:15.66,Gen_Main,,0,0,0,,Oye, Ino.
+Dialogue: 0,0:08:16.46,0:08:18.22,Gen_Main,,0,0,0,,¿Qué harás?
+Dialogue: 0,0:08:18.56,0:08:21.66,Gen_Main,,0,0,0,,Sé lo que pasa,\Npero no puedo hacer nada.
+Dialogue: 0,0:08:21.66,0:08:23.70,Gen_Main,,0,0,0,,Sería temerario salir a ciegas.
+Dialogue: 0,0:08:27.27,0:08:29.68,Gen_Italics,,0,0,0,,Y aunque saliera,
+Dialogue: 0,0:08:30.94,0:08:34.15,Gen_Italics,,0,0,0,,solo conseguiría que me mataran.
+Dialogue: 0,0:08:35.61,0:08:38.08,Gen_Italics,,0,0,0,,¡Yo también puedo hacerlo!
+Dialogue: 0,0:08:43.46,0:08:45.06,Gen_Italics,,0,0,0,,¿Viento?
+Dialogue: 0,0:08:45.46,0:08:47.79,Gen_Italics,,0,0,0,,¡Repelió los shuriken!
+Dialogue: 0,0:08:57.24,0:09:01.24,Gen_Main,,0,0,0,,Tu pelo es más brillante que el mío.
+Dialogue: 0,0:09:01.24,0:09:05.52,Gen_Main,,0,0,0,,Si tienes tiempo para cuidártelo,\Ndeberías pasarlo entrenando.
+Dialogue: 0,0:09:05.52,0:09:08.38,Gen_Main,,0,0,0,,¿Intentas ser seductora?
+Dialogue: 0,0:09:08.38,0:09:15.19,Gen_Main,,0,0,0,,Zaku, mata a ese tal Sasuke\Ndelante de esta tipeja.
+Dialogue: 0,0:09:15.19,0:09:17.20,Gen_Main,,0,0,0,,Buena idea.
+Dialogue: 0,0:09:17.20,0:09:18.86,Gen_Main,,0,0,0,,Oigan…
+Dialogue: 0,0:09:18.86,0:09:21.26,Gen_Italics,,0,0,0,,No se lo permitiré.
+Dialogue: 0,0:09:21.26,0:09:22.23,Gen_Main,,0,0,0,,¡No te muevas!
+Dialogue: 0,0:09:24.96,0:09:26.50,Gen_Main,,0,0,0,,Sakura-san…
+Dialogue: 0,0:09:28.10,0:09:32.90,Gen_Italics,,0,0,0,,No tengo fuerzas.
+Dialogue: 0,0:09:45.72,0:09:46.92,Gen_Italics,,0,0,0,,Yo…
+Dialogue: 0,0:09:48.75,0:09:53.56,Gen_Italics,,0,0,0,,Vuelvo a ser una carga.
+Dialogue: 0,0:09:55.16,0:09:57.56,Gen_Italics,,0,0,0,,Solo dejo que me protejan.
+Dialogue: 0,0:09:58.12,0:09:59.56,Gen_Italics,,0,0,0,,Qué rabia.
+Dialogue: 0,0:10:01.98,0:10:04.37,Gen_Italics,,0,0,0,,Esta vez debía ser yo.
+Dialogue: 0,0:10:05.56,0:10:11.58,Gen_Italics,,0,0,0,,Esta vez tenía que proteger\Na los que me importan.
+Dialogue: 0,0:10:17.11,0:10:19.68,Gen_Main,,0,0,0,,¿Empezamos?
+Dialogue: 0,0:10:36.50,0:10:39.33,Gen_Main,,0,0,0,,¡Sasuke y Naruto también corren peligro!
+Dialogue: 0,0:10:42.70,0:10:45.27,Gen_Italics,,0,0,0,,¿Qué debería hacer?
+Dialogue: 0,0:10:53.21,0:10:54.18,Gen_Main,,0,0,0,,Es inútil.
+Dialogue: 0,0:10:55.78,0:10:58.58,Gen_Main,,0,0,0,,No me harás nada con eso.
+Dialogue: 0,0:11:02.46,0:11:04.39,Gen_Main,,0,0,0,,¿De qué hablas?
+Dialogue: 0,0:11:05.59,0:11:06.86,Gen_Main,,0,0,0,,¿Qué?
+Dialogue: 0,0:11:26.78,0:11:32.15,Gen_Italics,,0,0,0,,Siempre creí que era una buena ninja.
+Dialogue: 0,0:11:35.02,0:11:38.63,Gen_Italics,,0,0,0,,Siempre digo que me gusta Sasuke-kun.
+Dialogue: 0,0:11:40.77,0:11:44.46,Gen_Italics,,0,0,0,,Siempre critico a Naruto\Ncomo si fuera mejor que él.
+Dialogue: 0,0:11:46.07,0:11:52.09,Gen_Italics,,0,0,0,,Pero lo único que hacía\Nera ver sus espaldas.
+Dialogue: 0,0:11:54.81,0:11:56.41,Gen_Italics,,0,0,0,,Y aun así…
+Dialogue: 0,0:11:57.18,0:11:59.04,Gen_Main,,0,0,0,,¡Retroceda, señor!
+Dialogue: 0,0:12:08.25,0:12:09.45,Gen_Main,,0,0,0,,¡Quédate atrás!
+Dialogue: 0,0:12:18.40,0:12:22.97,Gen_Main,,0,0,0,,Vamos a descontrolarnos.
+Dialogue: 0,0:12:32.44,0:12:35.71,Gen_Italics,,0,0,0,,Esto es lo único que se me ocurre\Npara derrotarlo.
+Dialogue: 0,0:12:36.11,0:12:37.19,Gen_Main,,0,0,0,,¡Sasuke!
+Dialogue: 0,0:12:50.06,0:12:52.66,Gen_Main,,0,0,0,,¡Te tengo!
+Dialogue: 0,0:12:54.26,0:12:58.67,Gen_Italics,,0,0,0,,Ellos siempre pelearon protegiéndome.
+Dialogue: 0,0:13:06.91,0:13:08.11,Gen_Italics,,0,0,0,,Lee-san.
+Dialogue: 0,0:13:09.19,0:13:12.11,Gen_Italics,,0,0,0,,Dijiste que te gustaba, y…
+Dialogue: 0,0:13:14.18,0:13:16.19,Gen_Main,,0,0,0,,Te protegeré hasta la muerte.
+Dialogue: 0,0:13:20.89,0:13:22.86,Gen_Main,,0,0,0,,¡Omote Renge!
+Dialogue: 0,0:13:20.89,0:13:22.86,Naruto_Nota,,0,0,0,,Loto Primario
+Dialogue: 0,0:13:25.39,0:13:29.29,Gen_Italics,,0,0,0,,Arriesgaste la vida\Ncombatiendo conmigo a tu espalda.
+Dialogue: 0,0:13:30.63,0:13:34.24,Gen_Italics,,0,0,0,,Siento que me enseñaste algo.
+Dialogue: 0,0:13:37.69,0:13:40.08,Gen_Main,,0,0,0,,¡Sakura-chan!
+Dialogue: 0,0:13:40.49,0:13:42.08,Gen_Main,,0,0,0,,Sakura-san.
+Dialogue: 0,0:13:45.28,0:13:48.75,Gen_Italics,,0,0,0,,Yo también quiero ser como ustedes.
+Dialogue: 0,0:13:53.96,0:13:56.69,Gen_Italics,,0,0,0,,Esta vez…
+Dialogue: 0,0:13:59.09,0:14:01.10,Gen_Italics,,0,0,0,,observen…
+Dialogue: 0,0:14:03.10,0:14:04.70,Gen_Italics,,0,0,0,,¡mi espalda!
+Dialogue: 0,0:14:09.23,0:14:10.60,Gen_Italics,,0,0,0,,¿Sakura?
+Dialogue: 0,0:14:11.81,0:14:13.01,Gen_Main,,0,0,0,,Sakura-san…
+Dialogue: 0,0:14:15.81,0:14:17.28,Gen_Main,,0,0,0,,¡Mátala!
+Dialogue: 0,0:14:21.42,0:14:22.95,Gen_Italics,,0,0,0,,Ese sello…
+Dialogue: 0,0:14:28.89,0:14:30.32,Gen_Main,,0,0,0,,¿Un sustituto?
+Dialogue: 0,0:14:31.53,0:14:32.73,Gen_Italics,,0,0,0,,¿Está a la derecha?
+Dialogue: 0,0:14:33.13,0:14:34.73,Gen_Italics,,0,0,0,,¿Por quién me tomas?
+Dialogue: 0,0:14:34.73,0:14:38.81,Gen_Italics,,0,0,0,,Tienes agallas para enfrentarme\Ncon un ninjutsu tan básico.
+Dialogue: 0,0:14:39.77,0:14:41.37,Gen_Main,,0,0,0,,¡Aléjate, Kin!
+Dialogue: 0,0:14:43.00,0:14:44.21,Gen_Main,,0,0,0,,¡Es inútil!
+Dialogue: 0,0:14:44.60,0:14:48.47,Gen_Italics,,0,0,0,,Presión del aire: 100 %.\NOndas supersónicas: 100 %.
+Dialogue: 0,0:14:49.49,0:14:50.94,Gen_Italics,,0,0,0,,¿No sabe hacer otra cosa?
+Dialogue: 0,0:14:51.34,0:14:52.95,Gen_Main,,0,0,0,,¡Zankuuha!
+Dialogue: 0,0:14:51.34,0:14:52.95,Naruto_Nota,,0,0,0,,Ondas de Aire Decapitadoras
+Dialogue: 0,0:14:55.35,0:14:57.15,Gen_Italics,,0,0,0,,Sé que estás arriba.
+Dialogue: 0,0:15:00.09,0:15:04.06,Gen_Main,,0,0,0,,El mismo truco no funcionará\N20 veces seguidas.
+Dialogue: 0,0:15:04.33,0:15:06.86,Gen_Main,,0,0,0,,Con esto tengo suficiente\Npara derrotarte.
+Dialogue: 0,0:15:10.43,0:15:12.43,Gen_Main,,0,0,0,,¿Dónde aparecerás ahora?
+Dialogue: 0,0:15:14.70,0:15:15.90,Gen_Main,,0,0,0,,¿Qué?
+Dialogue: 0,0:15:16.77,0:15:19.50,Gen_Italics,,0,0,0,,¡No era un sustituto!
+Dialogue: 0,0:15:29.31,0:15:31.28,Gen_Main,,0,0,0,,¡Suéltame!
+Dialogue: 0,0:15:35.75,0:15:37.37,Gen_Italics,,0,0,0,,Sakura…
+Dialogue: 0,0:15:46.56,0:15:50.73,Gen_Main,,0,0,0,,Siempre se burlan de ti\Nllamándote frentuda, ¿no?
+Dialogue: 0,0:15:53.94,0:15:55.21,Gen_Main,,0,0,0,,¿Quién eres?
+Dialogue: 0,0:15:55.61,0:16:00.41,Gen_Main,,0,0,0,,Me llamo Ino Yamanaka. ¿Y tú?
+Dialogue: 0,0:16:01.21,0:16:04.82,Gen_Main,,0,0,0,,Sakura.
+Dialogue: 0,0:16:04.82,0:16:10.82,Gen_Main,,0,0,0,,¿Qué? No te oí. Dilo más alto.
+Dialogue: 0,0:16:12.42,0:16:14.42,Gen_Main,,0,0,0,,¡Sakura Haruno!
+Dialogue: 0,0:16:15.23,0:16:18.03,Gen_Main,,0,0,0,,Ya veo.
+Dialogue: 0,0:16:18.03,0:16:23.23,Gen_Main,,0,0,0,,Tienes mucha frente, ¿eh, frentuda?
+Dialogue: 0,0:16:24.57,0:16:29.77,Gen_Main,,0,0,0,,¿Por eso la escondes con el flequillo,\Ncomo un fantasma?
+Dialogue: 0,0:16:36.55,0:16:38.31,Gen_Main,,0,0,0,,Te llamas Sakura, ¿verdad?
+Dialogue: 0,0:16:38.31,0:16:39.35,Gen_Main,,0,0,0,,Sí.
+Dialogue: 0,0:16:41.51,0:16:47.02,Gen_Main,,0,0,0,,Vuelve mañana.\NTe daré algo que te gustará.
+Dialogue: 0,0:16:49.59,0:16:51.59,Gen_Main,,0,0,0,,¡Suéltame!
+Dialogue: 0,0:16:53.26,0:16:58.07,Gen_Main,,0,0,0,,¿Ves? Así estás mucho más linda.
+Dialogue: 0,0:16:58.07,0:17:00.04,Gen_Main,,0,0,0,,Te doy ese listón.
+Dialogue: 0,0:17:00.43,0:17:02.84,Gen_Main,,0,0,0,,Gracias.
+Dialogue: 0,0:17:04.83,0:17:06.05,Gen_Main,,0,0,0,,Pero…
+Dialogue: 0,0:17:06.05,0:17:07.65,Gen_Main,,0,0,0,,Pero ¿qué?
+Dialogue: 0,0:17:08.35,0:17:09.64,Gen_Main,,0,0,0,,La frente…
+Dialogue: 0,0:17:10.41,0:17:14.98,Gen_Main,,0,0,0,,Como la escondes,\Nse burlan aún más de ti.
+Dialogue: 0,0:17:15.79,0:17:21.41,Gen_Main,,0,0,0,,Eres linda, así que ve\Ncon la cabeza bien alta.
+Dialogue: 0,0:17:21.79,0:17:23.46,Gen_Italics,,0,0,0,,Ino-chan…
+Dialogue: 0,0:17:26.63,0:17:31.43,Gen_Main,,0,0,0,,¿Quién es esa chica, Ino-chan?
+Dialogue: 0,0:17:31.43,0:17:32.90,Gen_Main,,0,0,0,,Se llama Sakura.
+Dialogue: 0,0:17:33.30,0:17:35.71,Gen_Main,,0,0,0,,Vamos, saluda.
+Dialogue: 0,0:17:37.70,0:17:38.89,Gen_Main,,0,0,0,,Encantada.
+Dialogue: 0,0:17:42.75,0:17:50.08,Gen_Main,,0,0,0,,¿Saben qué? ¡Me gusta alguien!\N¿Quién creen que es?
+Dialogue: 0,0:17:50.49,0:17:52.09,Gen_Main,,0,0,0,,Sé breve.
+Dialogue: 0,0:17:52.49,0:17:55.05,Gen_Main,,0,0,0,,Espero que no digas que es Sasuke-kun.
+Dialogue: 0,0:17:56.66,0:17:58.02,Gen_Main,,0,0,0,,¿Cómo lo supiste?
+Dialogue: 0,0:17:58.42,0:18:03.50,Gen_Main,,0,0,0,,¿No lo sabes?\NSasuke-kun es el chico más popular.
+Dialogue: 0,0:18:03.50,0:18:08.70,Gen_Main,,0,0,0,,¿De verdad?\NEntonces, tengo muchas rivales…
+Dialogue: 0,0:18:08.70,0:18:10.70,Gen_Main,,0,0,0,,¿Qué hago?
+Dialogue: 0,0:18:11.10,0:18:16.33,Gen_Main,,0,0,0,,Últimamente Sakura\Nestá más alegre, ¿verdad, Ino?
+Dialogue: 0,0:18:18.31,0:18:20.85,Gen_Main,,0,0,0,,Solo se hace la fuerte.
+Dialogue: 0,0:18:25.02,0:18:26.22,Gen_Main,,0,0,0,,Ino-chan.
+Dialogue: 0,0:18:27.01,0:18:31.29,Gen_Main,,0,0,0,,Oí que a Sasuke-kun\Nle gustan las chicas con pelo largo.
+Dialogue: 0,0:18:31.29,0:18:36.87,Gen_Main,,0,0,0,,Con pelo largo… Con pelo largo…
+Dialogue: 0,0:18:37.63,0:18:39.23,Gen_Italics,,0,0,0,,Sakura…
+Dialogue: 0,0:18:40.03,0:18:44.04,Gen_Main,,0,0,0,,Oí que te gusta Sasuke-kun.
+Dialogue: 0,0:18:45.67,0:18:48.47,Gen_Main,,0,0,0,,A partir de ahora, seremos rivales.
+Dialogue: 0,0:18:52.47,0:18:55.45,Gen_Main,,0,0,0,,Te creció mucho el pelo.
+Dialogue: 0,0:18:55.85,0:18:57.05,Gen_Main,,0,0,0,,¡Ino!
+Dialogue: 0,0:18:57.71,0:18:59.05,Gen_Main,,0,0,0,,¿Por qué?
+Dialogue: 0,0:19:00.25,0:19:04.39,Gen_Main,,0,0,0,,¿Por qué te tocó a ti\Nen el equipo de Sasuke?
+Dialogue: 0,0:19:05.19,0:19:08.37,Gen_Main,,0,0,0,,No volveré a perder contra ti.
+Dialogue: 0,0:19:08.76,0:19:15.85,Gen_Main,,0,0,0,,Yo tampoco perderé contra ti en nada.
+Dialogue: 0,0:19:32.08,0:19:33.68,Gen_Italics,,0,0,0,,¡Sakura!
+Dialogue: 0,0:19:38.95,0:19:41.62,Gen_Italics,,0,0,0,,Debo hacerlo yo.
+Dialogue: 0,0:19:56.71,0:19:58.47,Gen_Main,,0,0,0,,Ya está bien.
+Dialogue: 0,0:19:58.87,0:20:00.88,Gen_Main,,0,0,0,,Esto va mal.
+Dialogue: 0,0:20:02.09,0:20:04.08,Gen_Main,,0,0,0,,¡Oye, Ino!
+Dialogue: 0,0:20:07.25,0:20:10.87,Gen_Italics,,0,0,0,,Debo protegerlos a todos.
+Dialogue: 0,0:20:11.83,0:20:13.39,Gen_Main,,0,0,0,,¡Estúpida mocosa!
+Dialogue: 0,0:20:30.44,0:20:32.91,Gen_Main,,0,0,0,,Se unió más gente rara.
+Dialogue: 0,0:20:32.91,0:20:34.51,Gen_Main,,0,0,0,,Ino…
+Dialogue: 0,0:20:37.31,0:20:41.38,Gen_Main,,0,0,0,,Juré que no perdería contra ti.
+Dialogue: 0,null,null,JPN TOP,,0,0,0,,ホンを超える音で破れる｡
+Dialogue: 0,00:03:40.77,00:03:46.79,JPN TOP,,0,0,0,,また さらに奥深くにある三半規管に衝撃を与えることで
+Dialogue: 0,00:03:46.79,00:03:51.80,JPN TOP,,0,0,0,,全身のバランスを失う｡
+Dialogue: 0,00:03:53.24,00:03:56.25,JPN TOP,,0,0,0,,(ドス)フフフフ…｡
+Dialogue: 0,00:03:56.25,00:04:01.77,JPN TOP,,0,0,0,,君は当分 満足に体を動かすこともできないよ｡
+Dialogue: 0,00:04:01.77,00:04:06.78,JPN TOP,,0,0,0,,(ザク)俺たちに 古くせぇ体術なんて通じねえんだよ｡
+Dialogue: 0,00:04:08.29,00:04:11.30,JPN TOP,,0,0,0,,(ザク)まぁ 途中までは よかったが
+Dialogue: 0,00:04:11.30,00:04:16.31,JPN TOP,,0,0,0,,俺の術まで披露したんだそううまくは行かねえよ｡
+Dialogue: 0,00:04:18.82,00:04:22.83,JPN TOP,,0,0,0,,俺は超音波と空気圧を自由に操り
+Dialogue: 0,00:04:22.83,00:04:26.34,JPN TOP,,0,0,0,,岩ですら破壊する力を持つ｡
+Dialogue: 0,00:04:26.34,00:04:28.35,JPN TOP,,0,0,0,,(リー)＜表･[外:9A4D3B93F5ABFF78DA43BEB12CF7F1BE]華！＞
+Dialogue: 0,00:04:31.36,00:04:35.37,JPN TOP,,0,0,0,,(ザク)地面に空気を送り込んで土をクッションに変えることも
+Dialogue: 0,00:04:35.37,00:04:38.38,JPN TOP,,0,0,0,,思いのままだ｡
+Dialogue: 0,00:04:38.38,00:04:42.39,JPN TOP,,0,0,0,,お前の くっだらねえ技とは違うんだよ｡
+Dialogue: 0,00:04:46.40,00:04:49.41,JPN TOP,,0,0,0,,フフフ…｡
+Dialogue: 0,00:04:49.41,00:04:51.92,JPN TOP,,0,0,0,,(リー)《チクショ～》
+Dialogue: 0,00:04:57.87,00:05:02.38,JPN TOP,,0,0,0,,(ガイ)＜リー この技を使っていいとき それは
+Dialogue: 0,00:05:02.38,00:05:05.39,JPN TOP,,0,0,0,,大切な人を守るときだ＞
+Dialogue: 0,00:05:05.39,00:05:09.90,JPN TOP,,0,0,0,,＜大切な人を守るとき…＞
+Dialogue: 0,00:05:13.92,00:05:18.43,JPN TOP,,0,0,0,,(ガイ)＜それにしても よく体得しやがったな こいつ～｡
+Dialogue: 0,00:05:18.43,00:05:20.44,JPN TOP,,0,0,0,,ハハハハ…｡
+Dialogue: 0,00:05:20.44,00:05:23.95,JPN TOP,,0,0,0,,よくやったぞ リー＞
+Dialogue: 0,00:05:23.95,00:05:27.96,JPN TOP,,0,0,0,,(リー)《チクショ～》
+Dialogue: 0,00:05:27.96,00:05:30.47,JPN TOP,,0,0,0,,(ドス)よ～し｡
+Dialogue: 0,00:05:30.47,00:05:33.48,JPN TOP,,0,0,0,,次は君だ～！
+Dialogue: 0,00:05:33.48,00:05:35.98,JPN TOP,,0,0,0,,くっそ～！《来る！》
+Dialogue: 0,00:05:41.50,00:05:44.51,JPN TOP,,0,0,0,,(ドス)何!? バカな！《リーさん!?》
+Dialogue: 0,00:05:44.51,00:05:47.02,JPN TOP,,0,0,0,,木ノ葉旋風！
+Dialogue: 0,00:05:47.02,00:05:48.52,JPN TOP,,0,0,0,,あっ！
+Dialogue: 0,00:05:48.52,00:05:51.97,JPN TOP,,0,0,0,,(ドス)やはり さっきの攻撃効いてるみたいだね｡
+Dialogue: 0,00:05:51.97,00:05:54.97,JPN TOP,,0,0,0,,少々  驚かされましたが
+Dialogue: 0,00:05:54.97,00:05:57.98,JPN TOP,,0,0,0,,あの せん光のような連続体術が
+Dialogue: 0,00:05:57.98,00:06:00.99,JPN TOP,,0,0,0,,面影もないじゃないですか｡
+Dialogue: 0,00:06:00.99,00:06:03.00,JPN TOP,,0,0,0,,フッ｡
+Dialogue: 0,00:06:06.01,00:06:09.02,JPN TOP,,0,0,0,,(ドス)この腕は内部で発生した音を
+Dialogue: 0,00:06:09.02,00:06:14.53,JPN TOP,,0,0,0,,極限にまで増幅するいわばスピーカーなんだよ｡
+Dialogue: 0,00:06:14.53,00:06:17.04,JPN TOP,,0,0,0,,リーさん！
+Dialogue: 0,00:06:17.04,00:06:21.05,JPN TOP,,0,0,0,,(ドス)しかも 衝撃音は腕の方向にとらわれず
+Dialogue: 0,00:06:21.05,00:06:23.06,JPN TOP,,0,0,0,,僕のチャクラにより
+Dialogue: 0,00:06:23.06,00:06:26.07,JPN TOP,,0,0,0,,狙った獲物に必ず集束される｡(リー)あ～！
+Dialogue: 0,00:06:26.07,00:06:28.07,JPN TOP,,0,0,0,,リーさん！
+Dialogue: 0,00:06:28.07,00:06:30.08,JPN TOP,,0,0,0,,(リー)あ…｡
+Dialogue: 0,00:06:31.58,00:06:35.60,JPN TOP,,0,0,0,,(ドス)さ～て じゃあ 仕上げだ｡
+Dialogue: 0,00:06:35.60,00:06:37.60,JPN TOP,,0,0,0,,させないわ！
+Dialogue: 0,00:06:40.61,00:06:44.62,JPN TOP,,0,0,0,,(ドス)あ～ もう…｡
+Dialogue: 0,00:06:44.62,00:06:49.64,JPN TOP,,0,0,0,,(ﾁｮｳｼﾞ)ねぇ 逃げようあいつら 相当ヤバいよ｡
+Dialogue: 0,00:06:49.64,00:06:54.08,JPN TOP,,0,0,0,,(ｼｶﾏﾙ)サスケとナルトは気絶してるだけみてぇだが
+Dialogue: 0,00:06:54.08,00:06:57.59,JPN TOP,,0,0,0,,あのリーですらボコられてサクラ１人だ｡
+Dialogue: 0,00:06:57.59,00:07:01.11,JPN TOP,,0,0,0,,お前は どうすんだよ？ いの｡
+Dialogue: 0,00:07:01.11,00:07:04.11,JPN TOP,,0,0,0,,(いの)どうするって…｡
+Dialogue: 0,00:07:04.11,00:07:08.62,JPN TOP,,0,0,0,,つうか サクラ ヤベェぜいいのかよ？
+Dialogue: 0,00:07:10.13,00:07:13.14,JPN TOP,,0,0,0,,(ｼｶﾏﾙ)お前ら 昔 親友だったんだろ？
+Dialogue: 0,00:07:20.66,00:07:22.67,JPN TOP,,0,0,0,,＜ねぇ ねぇ＞
+Dialogue: 0,00:07:26.18,00:07:30.19,JPN TOP,,0,0,0,,＜何よ サクラかしこまっちゃって＞
+Dialogue: 0,00:07:31.70,00:07:36.21,JPN TOP,,0,0,0,,＜あのね いのちゃんもさ…＞
+Dialogue: 0,00:07:36.21,00:07:40.22,JPN TOP,,0,0,0,,＜だから 何よ＞
+Dialogue: 0,00:07:40.22,00:07:43.23,JPN TOP,,0,0,0,,＜サスケ君のこと好きなんだってね＞
+Dialogue: 0,00:07:43.23,00:07:45.24,JPN TOP,,0,0,0,,＜え？＞
+Dialogue: 0,00:07:53.19,00:07:57.21,JPN TOP,,0,0,0,,＜じゃあ これからは私たち
+Dialogue: 0,00:07:57.21,00:07:59.21,JPN TOP,,0,0,0,,ライバルだね＞
+Dialogue: 0,00:08:08.24,00:08:10.25,JPN TOP,,0,0,0,,(いの)《何で…
+Dialogue: 0,00:08:10.25,00:08:13.76,JPN TOP,,0,0,0,,何で あんな時のこと思い出してんのよ》
+Dialogue: 0,00:08:13.76,00:08:16.77,JPN TOP,,0,0,0,,(ｼｶﾏﾙ)おい いの！
+Dialogue: 0,00:08:16.77,00:08:18.77,JPN TOP,,0,0,0,,どうすんだよ｡
+Dialogue: 0,00:08:18.77,00:08:21.78,JPN TOP,,0,0,0,,分かってるけどどうしようもないじゃない｡
+Dialogue: 0,00:08:21.78,00:08:24.79,JPN TOP,,0,0,0,,うかつには出ていけないでしょ｡
+Dialogue: 0,00:08:27.30,00:08:31.31,JPN TOP,,0,0,0,,(いの)《今 私が出ていったって
+Dialogue: 0,00:08:31.31,00:08:34.82,JPN TOP,,0,0,0,,間違いなく やられるだけよ》
+Dialogue: 0,00:08:36.32,00:08:39.33,JPN TOP,,0,0,0,,《私だって… 私だって！》
+Dialogue: 0,00:08:40.84,00:08:42.34,JPN TOP,,0,0,0,,(ザク)ハッ！
+Dialogue: 0,00:08:42.34,00:08:43.85,JPN TOP,,0,0,0,,うっ｡
+Dialogue: 0,00:08:43.85,00:08:48.36,JPN TOP,,0,0,0,,《空気圧…手裏剣が はね返された！》
+Dialogue: 0,00:08:53.81,00:08:55.31,JPN TOP,,0,0,0,,あっ｡
+Dialogue: 0,00:08:57.32,00:09:01.83,JPN TOP,,0,0,0,,(キン)私よりいいツヤしてんじゃない これ｡
+Dialogue: 0,00:09:01.83,00:09:05.85,JPN TOP,,0,0,0,,髪に気を使う暇があったら修業しろ！
+Dialogue: 0,00:09:05.85,00:09:08.85,JPN TOP,,0,0,0,,いっちょ前に色気づきやがって｡
+Dialogue: 0,00:09:08.85,00:09:12.36,JPN TOP,,0,0,0,,ザク この色気虫の目の前で
+Dialogue: 0,00:09:12.36,00:09:15.37,JPN TOP,,0,0,0,,そのサスケとかいうヤツを殺しなよ｡
+Dialogue: 0,00:09:15.37,00:09:19.39,JPN TOP,,0,0,0,,(ザク)あ～ いいね｡(ドス)おいおい｡
+Dialogue: 0,00:09:19.39,00:09:21.89,JPN TOP,,0,0,0,,《そんなこと させないわ！》
+Dialogue: 0,00:09:21.89,00:09:23.90,JPN TOP,,0,0,0,,(キン)動くな！
+Dialogue: 0,00:09:25.40,00:09:28.41,JPN TOP,,0,0,0,,(リー)《サクラさん…》
+Dialogue: 0,00:09:28.41,00:09:33.92,JPN TOP,,0,0,0,,《体に… 力が入らない》
+Dialogue: 0,00:09:46.47,00:09:48.98,JPN TOP,,0,0,0,,《私…
+Dialogue: 0,00:09:48.98,00:09:54.99,JPN TOP,,0,0,0,,また 足手まといにしかなってないじゃない｡
+Dialogue: 0,00:09:54.99,00:09:58.50,JPN TOP,,0,0,0,,いつだって守られてるだけ｡
+Dialogue: 0,00:09:58.50,00:10:02.52,JPN TOP,,0,0,0,,悔しい｡
+Dialogue: 0,00:10:02.52,00:10:06.03,JPN TOP,,0,0,0,,今度こそはって思ってた｡
+Dialogue: 0,00:10:06.03,00:10:10.04,JPN TOP,,0,0,0,,今度こそは 大切な人たちを
+Dialogue: 0,00:10:10.04,00:10:13.04,JPN TOP,,0,0,0,,私が守らなきゃって》
+Dialogue: 0,00:10:17.56,00:10:20.57,JPN TOP,,0,0,0,,じゃあ やるか｡
+Dialogue: 0,00:10:20.57,00:10:30.59,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:10:37.12,00:10:40.63,JPN TOP,,0,0,0,,おい サスケとナルトもヤベェぜ｡
+Dialogue: 0,00:10:43.14,00:10:46.64,JPN TOP,,0,0,0,,(いの)《ど… どうしたらいいの？》
+Dialogue: 0,00:10:54.10,00:10:56.11,JPN TOP,,0,0,0,,むだよ｡
+Dialogue: 0,00:10:56.11,00:10:59.62,JPN TOP,,0,0,0,,私に そんなものは効かない｡
+Dialogue: 0,00:11:02.63,00:11:06.14,JPN TOP,,0,0,0,,何を言ってるの？
+Dialogue: 0,00:11:06.14,00:11:08.14,JPN TOP,,0,0,0,,何!?
+Dialogue: 0,00:11:25.97,00:11:28.92,JPN TOP,,0,0,0,,《私は いつも
+Dialogue: 0,00:11:28.92,00:11:32.42,JPN TOP,,0,0,0,,一人前の忍者のつもりでいて…》
+Dialogue: 0,00:11:34.43,00:11:38.94,JPN TOP,,0,0,0,,《サスケ君のこと いつも好きだと言っといて…》
+Dialogue: 0,00:11:40.45,00:11:45.97,JPN TOP,,0,0,0,,《ナルトに いつも偉そうに説教しといて
+Dialogue: 0,00:11:45.97,00:11:48.48,JPN TOP,,0,0,0,,私は ただ
+Dialogue: 0,00:11:48.48,00:11:52.48,JPN TOP,,0,0,0,,いつも２人の後ろ姿を見てただけ》
+Dialogue: 0,00:11:54.49,00:11:57.00,JPN TOP,,0,0,0,,《それなのに…》
+Dialogue: 0,00:11:57.00,00:11:59.51,JPN TOP,,0,0,0,,＜おじさん 下がって！＞
+Dialogue: 0,00:12:03.02,00:12:04.52,JPN TOP,,0,0,0,,＜あっ！＞
+Dialogue: 0,00:12:08.03,00:12:10.04,JPN TOP,,0,0,0,,(ｻｽｹ)＜下がってろ！＞
+Dialogue: 0,00:12:15.56,00:12:18.06,JPN TOP,,0,0,0,,(ﾅﾙﾄ)＜フッ｡
+Dialogue: 0,00:12:18.06,00:12:22.58,JPN TOP,,0,0,0,,さ～て 暴れるぜ～！＞
+Dialogue: 0,00:12:22.58,00:12:30.03,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:12:30.03,00:12:32.04,JPN TOP,,0,0,0,,＜うわ～！＞
+Dialogue: 0,00:12:32.04,00:12:36.05,JPN TOP,,0,0,0,,《こいつを倒すにはもう この手しかねえ！》
+Dialogue: 0,00:12:36.05,00:12:38.06,JPN TOP,,0,0,0,,＜サスケ！＞
+Dialogue: 0,00:12:40.56,00:12:43.57,JPN TOP,,0,0,0,,＜うお～！＞
+Dialogue: 0,00:12:50.09,00:12:53.60,JPN TOP,,0,0,0,,＜ここだ～！＞
+Dialogue: 0,00:12:53.60,00:12:56.11,JPN TOP,,0,0,0,,《２人は いつも
+Dialogue: 0,00:12:56.11,00:12:59.12,JPN TOP,,0,0,0,,私をかばって戦ってくれた》
+Dialogue: 0,00:12:59.12,00:13:07.15,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:13:07.15,00:13:12.66,JPN TOP,,0,0,0,,《リーさん あなたは私のこと好きだと言って…》
+Dialogue: 0,00:13:14.17,00:13:16.67,JPN TOP,,0,0,0,,(リー)＜死ぬまで あなたを守る＞
+Dialogue: 0,00:13:18.68,00:13:21.19,JPN TOP,,0,0,0,,(リー)＜ハァ～！
+Dialogue: 0,00:13:21.19,00:13:23.19,JPN TOP,,0,0,0,,表･[外:9A4D3B93F5ABFF78DA43BEB12CF7F1BE]華！＞
+Dialogue: 0,00:13:25.20,00:13:30.65,JPN TOP,,0,0,0,,《私を背に命懸けで戦ってくれた｡
+Dialogue: 0,00:13:30.65,00:13:34.66,JPN TOP,,0,0,0,,あなたに教えてもらった気がするの》
+Dialogue: 0,00:13:37.67,00:13:40.18,JPN TOP,,0,0,0,,《サ～クラちゃん》
+Dialogue: 0,00:13:40.18,00:13:42.68,JPN TOP,,0,0,0,,《サクラさん》
+Dialogue: 0,00:13:42.68,00:13:45.19,JPN TOP,,0,0,0,,《フッ…》
+Dialogue: 0,00:13:45.19,00:13:49.20,JPN TOP,,0,0,0,,《私も あなたたちみたいになりたい》
+Dialogue: 0,00:13:53.72,00:13:59.23,JPN TOP,,0,0,0,,《みんな 今度は
+Dialogue: 0,00:13:59.23,00:14:02.74,JPN TOP,,0,0,0,,私の後ろ姿を
+Dialogue: 0,00:14:02.74,00:14:05.25,JPN TOP,,0,0,0,,しっかり見ててください！》
+Dialogue: 0,00:14:09.26,00:14:11.77,JPN TOP,,0,0,0,,(いの)《サクラ？》
+Dialogue: 0,00:14:11.77,00:14:14.78,JPN TOP,,0,0,0,,サクラさん…｡
+Dialogue: 0,00:14:14.78,00:14:17.79,JPN TOP,,0,0,0,,チッ… キン やれ！
+Dialogue: 0,00:14:20.80,00:14:23.30,JPN TOP,,0,0,0,,(ザク)《フン あの印…》
+Dialogue: 0,00:14:28.32,00:14:31.26,JPN TOP,,0,0,0,,(キン)変わり身の術！
+Dialogue: 0,00:14:31.26,00:14:34.77,JPN TOP,,0,0,0,,(ザク)《右か ナメてんのか？
+Dialogue: 0,00:14:34.77,00:14:36.78,JPN TOP,,0,0,0,,そんな基礎中の基礎忍術で
+Dialogue: 0,00:14:36.78,00:14:39.79,JPN TOP,,0,0,0,,俺に向かってくるなんてよ》
+Dialogue: 0,00:14:39.79,00:14:42.80,JPN TOP,,0,0,0,,(ザク)キン 離れろ！
+Dialogue: 0,00:14:42.80,00:14:44.80,JPN TOP,,0,0,0,,むだだ！
+Dialogue: 0,null,null,JPN TOP,,0,0,0,,％超音波０％ 出力》
+Dialogue: 0,00:14:49.32,00:14:51.32,JPN TOP,,0,0,0,,(ザク)バカの一つ覚えか｡
+Dialogue: 0,00:14:51.32,00:14:53.33,JPN TOP,,0,0,0,,斬空波！
+Dialogue: 0,00:14:54.83,00:14:57.84,JPN TOP,,0,0,0,,(ザク)ヘッ バレバレ 上だ｡
+Dialogue: 0,00:15:00.35,00:15:04.36,JPN TOP,,0,0,0,,２度も３度も通用しねえって言ってんだろうがよ！
+Dialogue: 0,00:15:04.36,00:15:07.37,JPN TOP,,0,0,0,,てめぇは これで十分だ！
+Dialogue: 0,00:15:09.38,00:15:12.88,JPN TOP,,0,0,0,,ヘッ 次は どこだ？
+Dialogue: 0,00:15:14.89,00:15:16.90,JPN TOP,,0,0,0,,(ザク)《何だと!?
+Dialogue: 0,00:15:16.90,00:15:19.91,JPN TOP,,0,0,0,,今度は変わり身じゃねえ！》
+Dialogue: 0,00:15:19.91,00:15:21.91,JPN TOP,,0,0,0,,(ザク)うわっ！
+Dialogue: 0,00:15:29.37,00:15:31.38,JPN TOP,,0,0,0,,(ザク)放せ こら！
+Dialogue: 0,00:15:31.38,00:15:34.39,JPN TOP,,0,0,0,,うっ うっ うっ！
+Dialogue: 0,00:15:34.39,00:15:37.90,JPN TOP,,0,0,0,,(殴る音)(いの)《サクラ…》
+Dialogue: 0,00:15:37.90,00:15:46.92,JPN TOP,,0,0,0,,(泣き声)
+Dialogue: 0,00:15:46.92,00:15:51.43,JPN TOP,,0,0,0,,＜あんた いっつもデコリーンっていじめられてんのね＞
+Dialogue: 0,00:15:53.94,00:15:58.96,JPN TOP,,0,0,0,,＜誰？＞(いの)＜私は山中いのってぇの｡
+Dialogue: 0,00:15:58.96,00:16:01.47,JPN TOP,,0,0,0,,あんたは？＞
+Dialogue: 0,00:16:01.47,00:16:05.48,JPN TOP,,0,0,0,,＜私… サクラ…＞
+Dialogue: 0,00:16:05.48,00:16:08.49,JPN TOP,,0,0,0,,(いの)＜ん～？ 聞こえないよ｡
+Dialogue: 0,00:16:08.49,00:16:12.50,JPN TOP,,0,0,0,,もっと大きな声で言ってみ＞
+Dialogue: 0,00:16:12.50,00:16:15.01,JPN TOP,,0,0,0,,＜春野サクラ！＞
+Dialogue: 0,00:16:15.01,00:16:18.52,JPN TOP,,0,0,0,,(いの)＜ふ～ん なるほど｡
+Dialogue: 0,00:16:18.52,00:16:21.02,JPN TOP,,0,0,0,,あんた おデコ広いんだ｡
+Dialogue: 0,00:16:21.02,00:16:24.54,JPN TOP,,0,0,0,,で デコリーンね｡
+Dialogue: 0,00:16:24.54,00:16:28.05,JPN TOP,,0,0,0,,それで前髪でおデコ隠してんだ｡
+Dialogue: 0,00:16:28.05,00:16:31.55,JPN TOP,,0,0,0,,幽霊みたいに＞＜うぅ…＞
+Dialogue: 0,00:16:36.51,00:16:40.51,JPN TOP,,0,0,0,,＜サクラだっけ？＞＜うん…＞
+Dialogue: 0,00:16:42.02,00:16:45.03,JPN TOP,,0,0,0,,＜あんたあしたも ここに来なよ｡
+Dialogue: 0,00:16:45.03,00:16:49.04,JPN TOP,,0,0,0,,いいもの あげるからさ＞＜え？＞
+Dialogue: 0,00:16:50.55,00:16:53.56,JPN TOP,,0,0,0,,(ザク)クソッ 放せ！
+Dialogue: 0,00:16:53.56,00:16:58.57,JPN TOP,,0,0,0,,(いの)＜ほら こっちのほうがかわいいよ サクラは｡
+Dialogue: 0,00:16:58.57,00:17:00.58,JPN TOP,,0,0,0,,そのリボン あげる＞
+Dialogue: 0,00:17:00.58,00:17:03.58,JPN TOP,,0,0,0,,＜あ… ありがとう＞
+Dialogue: 0,00:17:05.09,00:17:08.10,JPN TOP,,0,0,0,,＜でも…＞＜でも 何？＞
+Dialogue: 0,00:17:08.10,00:17:10.61,JPN TOP,,0,0,0,,＜おデコが…＞
+Dialogue: 0,00:17:10.61,00:17:16.12,JPN TOP,,0,0,0,,＜それって 隠してるからよけいバカにされんのよ｡
+Dialogue: 0,00:17:16.12,00:17:18.13,JPN TOP,,0,0,0,,サクラは顔かわいいんだから
+Dialogue: 0,00:17:18.13,00:17:21.64,JPN TOP,,0,0,0,,堂々としてればいいの 堂々と！＞
+Dialogue: 0,00:17:21.64,00:17:24.15,JPN TOP,,0,0,0,,《いのちゃん…》
+Dialogue: 0,00:17:27.16,00:17:31.60,JPN TOP,,0,0,0,,(女の子)＜あ～！ねぇ 誰？ その子 いのちゃん＞
+Dialogue: 0,00:17:31.60,00:17:33.61,JPN TOP,,0,0,0,,＜サクラっていうの｡
+Dialogue: 0,00:17:33.61,00:17:36.62,JPN TOP,,0,0,0,,ほら あいさつしなよ＞
+Dialogue: 0,00:17:38.12,00:17:40.13,JPN TOP,,0,0,0,,＜よろしく＞
+Dialogue: 0,00:17:43.14,00:17:45.14,JPN TOP,,0,0,0,,＜みんな 聞いて聞いて！
+Dialogue: 0,00:17:45.14,00:17:49.16,JPN TOP,,0,0,0,,私 好きな人ができたの｡
+Dialogue: 0,00:17:49.16,00:17:51.16,JPN TOP,,0,0,0,,誰だと思う？＞
+Dialogue: 0,00:17:51.16,00:17:53.17,JPN TOP,,0,0,0,,(男の子)＜手短に話せ＞
+Dialogue: 0,00:17:53.17,00:17:55.68,JPN TOP,,0,0,0,,(女の子１)＜サスケ君とか言わないでよ＞
+Dialogue: 0,00:17:55.68,00:17:59.19,JPN TOP,,0,0,0,,＜えっ 何で分かったの？＞
+Dialogue: 0,00:17:59.19,00:18:01.69,JPN TOP,,0,0,0,,(女の子１)＜何言ってんの サスケ君は
+Dialogue: 0,00:18:01.69,00:18:04.20,JPN TOP,,0,0,0,,モテまくり人気ナンバーワンなのよ＞
+Dialogue: 0,00:18:04.20,00:18:06.71,JPN TOP,,0,0,0,,＜えっ そうなんだ｡
+Dialogue: 0,00:18:06.71,00:18:11.22,JPN TOP,,0,0,0,,うわ～ ライバル多いのかどうしよう＞
+Dialogue: 0,00:18:11.22,00:18:13.73,JPN TOP,,0,0,0,,(女の子２)＜ねぇ いの｡
+Dialogue: 0,00:18:13.73,00:18:17.24,JPN TOP,,0,0,0,,最近 サクラ明るくなったわよね＞
+Dialogue: 0,00:18:18.74,00:18:21.75,JPN TOP,,0,0,0,,＜強がって はしゃいでるだけよ＞
+Dialogue: 0,00:18:21.75,00:18:25.26,JPN TOP,,0,0,0,,(殴る音)
+Dialogue: 0,00:18:25.26,00:18:28.77,JPN TOP,,0,0,0,,＜いのちゃん！ サスケ君って
+Dialogue: 0,00:18:28.77,00:18:32.28,JPN TOP,,0,0,0,,長い髪の女の子が好きらしいのね＞
+Dialogue: 0,00:18:38.24,00:18:40.74,JPN TOP,,0,0,0,,(いの)《サクラ…》
+Dialogue: 0,00:18:40.74,00:18:46.26,JPN TOP,,0,0,0,,＜いのちゃんも サスケ君のこと好きなんだってね｡
+Dialogue: 0,00:18:46.26,00:18:49.27,JPN TOP,,0,0,0,,これからはライバルだね＞
+Dialogue: 0,00:18:52.78,00:18:56.79,JPN TOP,,0,0,0,,(いの)＜髪 ずいぶん伸びたわね＞
+Dialogue: 0,00:18:56.79,00:19:00.80,JPN TOP,,0,0,0,,＜いの＞(いの)＜何で…
+Dialogue: 0,00:19:00.80,00:19:05.32,JPN TOP,,0,0,0,,何で あんたがサスケ君と一緒のチームなのよ！＞
+Dialogue: 0,00:19:05.32,00:19:09.33,JPN TOP,,0,0,0,,＜いのには もう負けない＞
+Dialogue: 0,00:19:09.33,00:19:11.34,JPN TOP,,0,0,0,,＜私だって｡
+Dialogue: 0,00:19:11.34,00:19:14.35,JPN TOP,,0,0,0,,サクラ あんたにだけは
+Dialogue: 0,00:19:14.35,00:19:16.85,JPN TOP,,0,0,0,,どんなことだって負けないわよ＞
+Dialogue: 0,00:19:16.85,00:19:26.87,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:19:32.90,00:19:34.91,JPN TOP,,0,0,0,,(いの)《サクラ…》
+Dialogue: 0,00:19:34.91,00:19:39.92,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:19:39.92,00:19:42.93,JPN TOP,,0,0,0,,《私は… 私が…》
+Dialogue: 0,00:19:42.93,00:19:52.95,JPN TOP,,0,0,0,,(殴る音)
+Dialogue: 0,00:19:57.47,00:19:59.48,JPN TOP,,0,0,0,,いいかげんにしろ｡
+Dialogue: 0,00:19:59.48,00:20:02.49,JPN TOP,,0,0,0,,(ﾁｮｳｼﾞ)ヤバいよ｡
+Dialogue: 0,00:20:02.49,00:20:04.99,JPN TOP,,0,0,0,,(ｼｶﾏﾙ)おい いの！
+Dialogue: 0,00:20:08.00,00:20:12.52,JPN TOP,,0,0,0,,《私が みんなを守んなきゃ！》
+Dialogue: 0,00:20:12.52,00:20:14.53,JPN TOP,,0,0,0,,このガキ！
+Dialogue: 0,00:20:14.53,00:20:24.55,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:20:27.06,00:20:29.07,JPN TOP,,0,0,0,,《え？》
+Dialogue: 0,00:20:29.07,00:20:34.02,JPN TOP,,0,0,0,,フッ また変なのが出てきたな｡
+Dialogue: 0,00:20:34.02,00:20:36.02,JPN TOP,,0,0,0,,いの｡
+Dialogue: 0,00:20:38.03,00:20:42.54,JPN TOP,,0,0,0,,サクラ あんたには負けないって約束したでしょ？
+Dialogue: 0,00:20:42.54,00:20:44.55,JPN TOP,,0,0,0,,あ…｡
+Dialogue: 0,00:20:56.17,00:20:59.68,JPN TOP,,0,0,0,,♬ ねぇ 聞こえますか？
+Dialogue: 0,00:20:59.68,00:21:04.20,JPN TOP,,0,0,0,,♬ 空は 果てしなく
+Dialogue: 0,00:21:04.20,00:21:08.71,JPN TOP,,0,0,0,,♬ 青く澄んでいて
+Dialogue: 0,00:21:08.71,00:21:13.23,JPN TOP,,0,0,0,,♬ 海は 限りなく
+Dialogue: 0,00:21:13.23,00:21:17.74,JPN TOP,,0,0,0,,♬ 広大でいて
+Dialogue: 0,00:21:17.74,00:21:22.19,JPN TOP,,0,0,0,,♬ 君は いつまでも
+Dialogue: 0,00:21:22.19,00:21:27.20,JPN TOP,,0,0,0,,♬ 笑顔でいて
+Dialogue: 0,00:21:27.20,00:21:29.71,JPN TOP,,0,0,0,,♬ じゃないと
+Dialogue: 0,00:21:29.71,00:21:32.72,JPN TOP,,0,0,0,,♬ 泣いちゃうから
+Dialogue: 0,00:21:32.72,00:21:36.73,JPN TOP,,0,0,0,,♬ 周りを見まわさなくても
+Dialogue: 0,00:21:36.73,00:21:40.74,JPN TOP,,0,0,0,,♬ もう いいんだよ
+Dialogue: 0,00:21:40.74,00:21:43.75,JPN TOP,,0,0,0,,♬ この手の中には
+Dialogue: 0,00:21:43.75,00:21:49.27,JPN TOP,,0,0,0,,♬ みんながいるから
+Dialogue: 0,00:21:49.27,00:21:52.28,JPN TOP,,0,0,0,,♬ 泣きたくなって
+Dialogue: 0,00:21:52.28,00:21:54.78,JPN TOP,,0,0,0,,♬ 逃げたくなって
+Dialogue: 0,00:21:54.78,00:21:59.30,JPN TOP,,0,0,0,,♬ 幸せを忘れてしまったら
+Dialogue: 0,00:21:59.30,00:22:03.31,JPN TOP,,0,0,0,,♬ みな歌え
+Dialogue: 0,00:22:03.31,00:22:06.32,JPN TOP,,0,0,0,,♬ 光が生まれ
+Dialogue: 0,00:22:06.32,00:22:08.32,JPN TOP,,0,0,0,,♬ 闇が生まれた
+Dialogue: 0,00:22:08.32,00:22:10.83,JPN TOP,,0,0,0,,♬ 二つは一つ
+Dialogue: 0,00:22:10.83,00:22:13.34,JPN TOP,,0,0,0,,♬ ハルモニア 感じて
+Dialogue: 0,00:22:13.34,00:22:17.85,JPN TOP,,0,0,0,,♬ テレパシー
+Dialogue: 0,00:22:17.85,00:22:23.36,JPN TOP,,0,0,0,,♬ ねぇ 聞こえますか？
+Dialogue: 0,00:22:26.81,00:22:30.32,JPN TOP,,0,0,0,,〈すごい これがいのチームの戦い？
+Dialogue: 0,00:22:30.32,00:22:32.33,JPN TOP,,0,0,0,,何て計算された布陣なの｡
+Dialogue: 0,00:22:32.33,00:22:34.84,JPN TOP,,0,0,0,,悔しいけど 強い｡
+Dialogue: 0,00:22:34.84,00:22:37.34,JPN TOP,,0,0,0,,これなら 音のヤツらだって…｡
+Dialogue: 0,00:22:37.34,00:22:39.85,JPN TOP,,0,0,0,,もうヤツらの好きにはさせないわ｡
+Dialogue: 0,00:22:39.85,00:22:42.36,JPN TOP,,0,0,0,,サスケ君は私たちが…｡
+Dialogue: 0,00:22:42.36,00:22:45.36,JPN TOP,,0,0,0,,えっ 何？ この感じ〉
+Dialogue: 0,00:22:49.38,00:22:52.39,JPN TOP,,0,0,0,,〈一体 何が起こっているの？〉
+Dialogue: 0,00:23:06.43,00:23:09.10,JPN TOP,,0,0,0,,(ﾅﾚｰｼｮﾝ)〈第１次大規模侵攻｡
+Dialogue: 0,00:23:09.10,00:23:12.95,JPN TOP,,0,0,0,,それは かつて行われた近接する異世界
+Dialogue: 0,00:23:12.95,00:23:16.96,JPN TOP,,0,0,0,,ネイバーフッドからの侵略行為だった〉
+Dialogue: 0,00:23:16.96,00:23:21.14,JPN TOP,,0,0,0,,〈そして４年半を経て 今 再び 三門市は

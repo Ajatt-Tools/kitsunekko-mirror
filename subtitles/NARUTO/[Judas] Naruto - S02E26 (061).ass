@@ -1,0 +1,574 @@
+[Script Info]
+; This is an Advanced Sub Station Alpha v4+ script.
+ScriptType: v4.00+
+Collisions: Normal
+PlayDepth: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: JPN TOP,Noto Sans,24,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,1.7,1,8,10,10,5,1
+Style: Gen_Main,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,1,2,0010,0010,0018,1
+Style: Gen_Italics,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,-1,0,0,100,100,0,0,1,2,1,2,0010,0010,0018,1
+Style: Gen_Main_Up,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00000000,&H00090909,0,0,0,0,100,100,0,0,1,2,1,8,0010,0010,0018,1
+Style: Gen_Italics_top,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,-1,0,0,100,100,0,0,1,2,1,8,0010,0010,0018,1
+Style: Gen_TitleEp,Trebuchet MS,20,&H000121C8,&H000000FF,&H00060503,&H00060503,-1,0,0,0,100,100,0,0,1,3,1,8,0020,0020,0030,1
+Style: Gen_Avance,Arial,20,&H000D00D3,&H000000FF,&H00060503,&H00000000,-1,0,0,0,100,100,0,0,1,3,2,8,0020,0020,0100,1
+Style: Gen_Name,Times New Roman,20,&H001845E6,&H000000FF,&H00FFFFFF,&H00FFFFFF,-1,0,0,0,100,100,0,0,1,2,1,9,0035,0035,0020,1
+Style: Naruto_Nota,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00262626,&H00505050,0,-1,0,0,100,100,0,0,1,2,1,8,0010,0010,0018,1
+Style: Cart_A_Tre,Trebuchet MS,20,&H00FFFFFF,&H000000FF,&H00303030,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+Style: Cart_B_Tre,Trebuchet MS,20,&H00323232,&H000000FF,&H00D9D9D9,&H00D9D9D9,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+Style: Cart_C_Tre,Trebuchet MS,20,&H00323232,&H000000FF,&H00FFFFFF,&H00FFFFFF,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+Style: Cart_A_Tim,Times New Roman,20,&H00FFFFFF,&H000000FF,&H00060606,&H00060606,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+Style: Cart_B_Tim,Times New Roman,20,&H00323232,&H000000FF,&H00D9D9D9,&H00D9D9D9,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+Style: Cart_C_Tim,Times New Roman,20,&H00323232,&H000000FF,&H00FFFFFF,&H00FFFFFF,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0020,1
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,00:00:00.64,00:00:04.65,JPN TOP,,0,0,0,,♬ 自分らしさを力に
+Dialogue: 0,00:00:04.65,00:00:08.16,JPN TOP,,0,0,0,,♬ 迷いながらでもいい
+Dialogue: 0,00:00:08.16,00:00:13.17,JPN TOP,,0,0,0,,♬ 歩き出して
+Dialogue: 0,00:00:13.17,00:00:15.17,JPN TOP,,0,0,0,,♬ もう一回
+Dialogue: 0,00:00:15.17,00:00:18.18,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:00:18.18,00:00:21.68,JPN TOP,,0,0,0,,♬ 誰かの期待にずっと応え
+Dialogue: 0,00:00:21.68,00:00:25.69,JPN TOP,,0,0,0,,♬ 誉められるのが好きなのですか
+Dialogue: 0,00:00:25.69,00:00:29.20,JPN TOP,,0,0,0,,♬ なりたい自分を摺り替えても
+Dialogue: 0,00:00:29.20,00:00:32.71,JPN TOP,,0,0,0,,♬ 笑顔はいつでも素敵ですか
+Dialogue: 0,00:00:32.71,00:00:36.71,JPN TOP,,0,0,0,,♬ 始まりだけ
+Dialogue: 0,00:00:36.71,00:00:40.22,JPN TOP,,0,0,0,,♬ 夢見て起きる
+Dialogue: 0,00:00:40.22,00:00:44.23,JPN TOP,,0,0,0,,♬ その先なら
+Dialogue: 0,00:00:44.23,00:00:49.74,JPN TOP,,0,0,0,,♬ いつか自分の腕で
+Dialogue: 0,00:00:49.74,00:00:53.75,JPN TOP,,0,0,0,,♬ そうだ 大事な物は いつも
+Dialogue: 0,00:00:53.75,00:00:57.69,JPN TOP,,0,0,0,,♬ 形のないものだけ
+Dialogue: 0,00:00:57.69,00:01:01.70,JPN TOP,,0,0,0,,♬ 手に入れても なくしても
+Dialogue: 0,00:01:01.70,00:01:04.70,JPN TOP,,0,0,0,,♬ 気付かぬまま
+Dialogue: 0,00:01:04.70,00:01:09.21,JPN TOP,,0,0,0,,♬ そうさ 悲しみをやさしさに
+Dialogue: 0,00:01:09.21,00:01:13.22,JPN TOP,,0,0,0,,♬ 自分らしさを力に
+Dialogue: 0,00:01:13.22,00:01:16.73,JPN TOP,,0,0,0,,♬ 迷いながらでもいい
+Dialogue: 0,00:01:16.73,00:01:21.74,JPN TOP,,0,0,0,,♬ 歩き出して
+Dialogue: 0,00:01:21.74,00:01:24.24,JPN TOP,,0,0,0,,♬ もう一回
+Dialogue: 0,00:01:35.25,00:01:37.26,JPN TOP,,0,0,0,,(ｲﾙｶ)ハァ…｡
+Dialogue: 0,00:01:43.77,00:01:46.28,JPN TOP,,0,0,0,,(ｲﾙｶ)《相手は あのネジか｡
+Dialogue: 0,0:01:44.28,0:01:46.69,Gen_Italics,,0,0,0,,Su oponente es Neji.
+Dialogue: 0,00:01:46.28,00:01:49.28,JPN TOP,,0,0,0,,本選は予選とは まるで違う｡
+Dialogue: 0,0:01:47.09,0:01:49.49,Gen_Italics,,0,0,0,,No será como la ronda preliminar.
+Dialogue: 0,00:01:49.28,00:01:51.78,JPN TOP,,0,0,0,,やはり ナルトには…》
+Dialogue: 0,0:01:50.30,0:01:52.06,Gen_Italics,,0,0,0,,Naruto lo tendrá difícil.
+Dialogue: 0,00:02:10.76,00:02:16.27,JPN TOP,,0,0,0,,(ｶﾌﾞﾄ)少しは楽しませてくれよナルト君｡
+Dialogue: 0,0:02:11.34,0:02:15.75,Gen_Main,,0,0,0,,Espero que me entretengas, Naruto-kun.
+Dialogue: 0,00:02:16.27,00:02:20.77,JPN TOP,,0,0,0,,僕には これから きつ～いお仕事が待ってるんだからね｡
+Dialogue: 0,0:02:16.95,0:02:21.35,Gen_Main,,0,0,0,,Porque me espera un trabajo muy duro.
+Dialogue: 0,0:02:22.75,0:02:28.76,Cart_A_Tre,,0,0,0,,¡Sin puntos ciegos!\N¡Otra defensa impecable!
+Dialogue: 0,0:02:23.77,0:02:27.16,Gen_Main,,0,0,0,,¡Sin puntos ciegos!\N¡Otra defensa impecable!
+Dialogue: 0,00:02:32.80,00:02:35.30,JPN TOP,,0,0,0,,(ﾅﾙﾄ)ハァ～！行くぜ～！
+Dialogue: 0,0:02:33.66,0:02:35.23,Gen_Main,,0,0,0,,¡Vamos!
+Dialogue: 0,00:02:36.81,00:02:39.31,JPN TOP,,0,0,0,,ハァ～！オラオラオラ…！
+Dialogue: 0,00:02:40.82,00:02:42.82,JPN TOP,,0,0,0,,ハァ～！
+Dialogue: 0,00:02:42.82,00:02:51.77,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:02:51.77,00:02:54.28,JPN TOP,,0,0,0,,この～！ ハァ～！
+Dialogue: 0,0:02:52.12,0:02:53.72,Gen_Main,,0,0,0,,¡Ya verás!
+Dialogue: 0,00:02:54.28,00:02:56.28,JPN TOP,,0,0,0,,トリャ！
+Dialogue: 0,00:02:56.28,00:02:59.29,JPN TOP,,0,0,0,,この！ この！ この…！
+Dialogue: 0,0:02:57.28,0:02:58.89,Gen_Main,,0,0,0,,¡Toma, toma!
+Dialogue: 0,00:03:01.29,00:03:04.80,JPN TOP,,0,0,0,,くそ 全然 捕まんねえってばよ｡
+Dialogue: 0,0:03:02.03,0:03:05.00,Gen_Main,,0,0,0,,No hay forma de atraparlo.
+Dialogue: 0,00:03:06.80,00:03:09.81,JPN TOP,,0,0,0,,(ネジ)俺も そうばかじゃないと言ったろ？
+Dialogue: 0,0:03:07.26,0:03:10.23,Gen_Main,,0,0,0,,No soy idiota.
+Dialogue: 0,00:03:09.81,00:03:16.82,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:03:16.82,00:03:19.33,JPN TOP,,0,0,0,,(ネジ)《本体なら…
+Dialogue: 0,0:03:17.24,0:03:21.54,Gen_Italics,,0,0,0,,Sé cuál es el verdadero.
+Dialogue: 0,00:03:19.33,00:03:21.33,JPN TOP,,0,0,0,,分かってんだよ！》
+Dialogue: 0,00:03:23.34,00:03:25.34,JPN TOP,,0,0,0,,テ～イ！
+Dialogue: 0,00:03:26.84,00:03:28.35,JPN TOP,,0,0,0,,(ﾋﾅﾀ)あっ！
+Dialogue: 0,00:03:28.35,00:03:30.85,JPN TOP,,0,0,0,,(ネジ)点穴を突かれるのを恐れて
+Dialogue: 0,0:03:28.68,0:03:34.69,Gen_Main,,0,0,0,,El que menos atacó por miedo\Na que cerrara sus puntos de presión.
+Dialogue: 0,00:03:30.85,00:03:34.36,JPN TOP,,0,0,0,,攻撃回数が最も少ない１体｡
+Dialogue: 0,00:03:34.36,00:03:36.36,JPN TOP,,0,0,0,,お前が攻撃すればするほど
+Dialogue: 0,0:03:34.69,0:03:39.09,Gen_Main,,0,0,0,,Cuanto más me atacabas,\Nmás te delatabas.
+Dialogue: 0,00:03:36.36,00:03:38.87,JPN TOP,,0,0,0,,その１体が明白になる｡
+Dialogue: 0,00:03:38.87,00:03:40.87,JPN TOP,,0,0,0,,うっ！
+Dialogue: 0,00:03:42.37,00:03:44.38,JPN TOP,,0,0,0,,本体は お前だ｡
+Dialogue: 0,0:03:42.63,0:03:44.67,Gen_Main,,0,0,0,,Tú eres el verdadero.
+Dialogue: 0,00:03:44.38,00:03:47.88,JPN TOP,,0,0,0,,(ﾋﾅﾀ)ナルト君｡(ｺﾃﾂ)ここまでだな｡
+Dialogue: 0,0:03:44.67,0:03:46.28,Gen_Main,,0,0,0,,¡Naruto-kun!
+Dialogue: 0,0:03:46.28,0:03:48.14,Gen_Main,,0,0,0,,Hasta aquí llegó.
+Dialogue: 0,00:03:52.33,00:03:54.83,JPN TOP,,0,0,0,,(ネジ)だから むだだと言ったのだ｡
+Dialogue: 0,0:03:52.97,0:03:54.94,Gen_Main,,0,0,0,,Ya dije que era inútil.
+Dialogue: 0,00:03:54.83,00:03:57.34,JPN TOP,,0,0,0,,(せきこみ)
+Dialogue: 0,00:03:57.34,00:04:00.34,JPN TOP,,0,0,0,,(ﾋﾅﾀ)《ナルト君 負けないで》
+Dialogue: 0,0:03:57.75,0:04:00.52,Gen_Main,,0,0,0,,Naruto-kun, no pierdas.
+Dialogue: 0,00:04:00.34,00:04:02.35,JPN TOP,,0,0,0,,うっ…｡
+Dialogue: 0,00:04:02.35,00:04:06.36,JPN TOP,,0,0,0,,ハハハハ… だから
+Dialogue: 0,0:04:04.92,0:04:09.99,Gen_Main,,0,0,0,,Y yo dije que no decidas por los demás.
+Dialogue: 0,00:04:06.36,00:04:09.86,JPN TOP,,0,0,0,,勝手に決めんなって言ってんだろうが｡
+Dialogue: 0,00:04:09.86,00:04:11.87,JPN TOP,,0,0,0,,ん？ あっ｡
+Dialogue: 0,00:04:11.87,00:04:13.87,JPN TOP,,0,0,0,,まさか…｡
+Dialogue: 0,0:04:12.86,0:04:14.06,Gen_Main,,0,0,0,,No puede ser.
+Dialogue: 0,00:04:16.38,00:04:18.88,JPN TOP,,0,0,0,,ハァ～！
+Dialogue: 0,00:04:18.88,00:04:22.39,JPN TOP,,0,0,0,,(キバ)よっしゃ～！行け～ ナルト！
+Dialogue: 0,0:04:19.33,0:04:22.37,Gen_Main,,0,0,0,,¡Sí! ¡Ve por él, Naruto!
+Dialogue: 0,00:04:22.39,00:04:24.89,JPN TOP,,0,0,0,,ナルト君！
+Dialogue: 0,0:04:23.17,0:04:24.84,Gen_Main,,0,0,0,,¡Naruto-kun!
+Dialogue: 0,00:04:24.89,00:04:26.90,JPN TOP,,0,0,0,,(ネジ)《俺の考えの裏をかいて
+Dialogue: 0,0:04:25.20,0:04:30.31,Gen_Italics,,0,0,0,,¿Me leyó el pensamiento e hizo\Nque uno de los clones atacara menos?
+Dialogue: 0,00:04:26.90,00:04:30.40,JPN TOP,,0,0,0,,分身の１体にわざと引かせていただと!?》
+Dialogue: 0,00:04:30.40,00:04:34.91,JPN TOP,,0,0,0,,そもそも こっちは玉砕覚悟で突っ込んでんだってばよ！
+Dialogue: 0,0:04:30.78,0:04:35.22,Gen_Main,,0,0,0,,¡Estoy preparado para morir peleando!
+Dialogue: 0,00:04:34.91,00:04:36.92,JPN TOP,,0,0,0,,そらっ！
+Dialogue: 0,00:04:36.92,00:04:38.92,JPN TOP,,0,0,0,,《やった！》
+Dialogue: 0,0:04:37.28,0:04:38.25,Gen_Italics,,0,0,0,,¡Lo tengo!
+Dialogue: 0,00:04:40.42,00:04:42.93,JPN TOP,,0,0,0,,うっ…｡
+Dialogue: 0,00:04:42.93,00:04:44.93,JPN TOP,,0,0,0,,あ～！
+Dialogue: 0,00:04:44.93,00:04:46.93,JPN TOP,,0,0,0,,(ﾋｱｼ)あれは…｡
+Dialogue: 0,0:04:45.06,0:04:46.23,Gen_Main,,0,0,0,,Eso es…
+Dialogue: 0,00:04:48.94,00:04:50.94,JPN TOP,,0,0,0,,うっ！
+Dialogue: 0,0:04:59.87,0:05:02.48,Gen_Main,,0,0,0,,¿Qué fue eso?
+Dialogue: 0,00:04:59.90,00:05:02.90,JPN TOP,,0,0,0,,な… 何だ？ 今の｡
+Dialogue: 0,00:05:02.90,00:05:05.91,JPN TOP,,0,0,0,,勝ったと思ったか？
+Dialogue: 0,0:05:03.68,0:05:05.51,Gen_Main,,0,0,0,,¿Pensaste que me habías vencido?
+Dialogue: 0,00:05:05.91,00:05:07.41,JPN TOP,,0,0,0,,くっ｡
+Dialogue: 0,00:05:07.41,00:05:08.91,JPN TOP,,0,0,0,,(いの)何で？
+Dialogue: 0,0:05:07.88,0:05:09.08,Gen_Main,,0,0,0,,¿Qué pasó?
+Dialogue: 0,00:05:08.91,00:05:11.92,JPN TOP,,0,0,0,,(ｻｸﾗ)ナルトのパンチは当たったはずよ｡
+Dialogue: 0,0:05:09.08,0:05:11.45,Gen_Main,,0,0,0,,Si el puñetazo de Naruto lo golpeó.
+Dialogue: 0,00:05:11.92,00:05:13.92,JPN TOP,,0,0,0,,あれは…｡
+Dialogue: 0,0:05:12.65,0:05:13.92,Gen_Main,,0,0,0,,Eso es…
+Dialogue: 0,00:05:17.43,00:05:19.93,JPN TOP,,0,0,0,,回天…｡
+Dialogue: 0,0:05:17.89,0:05:19.76,Gen_Main,,0,0,0,,Kaiten…
+Dialogue: 0,0:05:17.89,0:05:19.76,Naruto_Nota,,0,0,0,,Giro Celestial
+Dialogue: 0,00:05:22.94,00:05:26.45,JPN TOP,,0,0,0,,(ﾃﾝﾃﾝ)《あれがネジの防御よ》
+Dialogue: 0,0:05:23.52,0:05:25.70,Gen_Italics,,0,0,0,,Esa es la defensa de Neji.
+Dialogue: 0,00:05:26.45,00:05:28.45,JPN TOP,,0,0,0,,この野郎…｡
+Dialogue: 0,0:05:26.90,0:05:28.17,Gen_Main,,0,0,0,,Desgraciado.
+Dialogue: 0,00:05:28.45,00:05:30.46,JPN TOP,,0,0,0,,ナメんなよ！
+Dialogue: 0,0:05:28.97,0:05:30.58,Gen_Main,,0,0,0,,¡No me subestimes!
+Dialogue: 0,00:05:34.47,00:05:36.97,JPN TOP,,0,0,0,,(ﾃﾝﾃﾝ)《ネジの白眼の最大視界は
+Dialogue: 0,0:05:34.51,0:05:38.61,Gen_Italics,,0,0,0,,El Byakugan de Neji\Ntiene una visión de casi 360 grados.
+Dialogue: 0,0:05:39.81,0:05:43.41,Gen_Italics,,0,0,0,,Con él percibe\Ntodos los ataques del enemigo
+Dialogue: 0,0:05:45.55,0:05:49.95,Gen_Italics,,0,0,0,,y empieza su método de defensa,\Nel Hakkeshou Kaiten.
+Dialogue: 0,0:05:45.55,0:05:49.95,Naruto_Nota,,0,0,0,,Ocho Trigramas: Palma de Giro Celestial
+Dialogue: 0,0:06:09.31,0:06:14.51,Gen_Italics,,0,0,0,,Cuando el ataque va a impactar,\Nexpulsa chakra por todo su cuerpo.
+Dialogue: 0,0:06:14.51,0:06:17.31,Gen_Italics,,0,0,0,,Ese chakra absorbe el impacto
+Dialogue: 0,0:06:17.31,0:06:22.00,Gen_Italics,,0,0,0,,y Neji lo repele\Nhaciendo girar su cuerpo.
+Dialogue: 0,0:06:22.79,0:06:27.59,Gen_Italics,,0,0,0,,Generalmente, es complicado controlar\Nel chakra que se expulsa.
+Dialogue: 0,0:06:27.59,0:06:33.23,Gen_Italics,,0,0,0,,Los jounin solo lo expulsan por manos\No piernas para realizar alguna técnica.
+Dialogue: 0,0:06:34.03,0:06:36.43,Gen_Italics,,0,0,0,,Pero con su dominio del Puño Blando,
+Dialogue: 0,0:06:36.43,0:06:42.84,Gen_Italics,,0,0,0,,Neji expulsa chakra por todo el cuerpo\Ny bloquea con él los ataques físicos.
+Dialogue: 0,0:06:43.87,0:06:48.24,Gen_Italics,,0,0,0,,En otras palabras,\Nsupera incluso el poder de Gaara.
+Dialogue: 0,0:06:48.64,0:06:50.65,Gen_Italics,,0,0,0,,Es otra defensa impecable.
+Dialogue: 0,0:06:57.75,0:06:59.35,Gen_Main,,0,0,0,,Esa técnica es tuya.
+Dialogue: 0,0:06:59.35,0:07:01.76,Gen_Main,,0,0,0,,El Kaiten es de la rama principal.
+Dialogue: 0,0:07:01.76,0:07:06.18,Gen_Main,,0,0,0,,Es una técnica que solo se enseña\Nal heredero del clan.
+Dialogue: 0,0:07:06.80,0:07:10.00,Gen_Main,,0,0,0,,Pero él la creó por sí mismo.
+Dialogue: 0,0:07:10.40,0:07:13.77,Gen_Main,,0,0,0,,Es increíble que llegue hasta tal punto.
+Dialogue: 0,0:07:14.96,0:07:16.97,Gen_Italics,,0,0,0,,Todavía los sorprenderá más.
+Dialogue: 0,0:07:16.97,0:07:20.01,Gen_Italics,,0,0,0,,Neji aún no muestra todo su poder.
+Dialogue: 0,0:07:20.41,0:07:22.80,Gen_Main,,0,0,0,,Maldita sea.
+Dialogue: 0,0:07:22.80,0:07:24.98,Gen_Main,,0,0,0,,Se acabó.
+Dialogue: 0,0:07:25.78,0:07:29.55,Gen_Main,,0,0,0,,Estás dentro del área de mis Hakke.
+Dialogue: 0,0:07:25.78,0:07:29.55,Naruto_Nota,,0,0,0,,Ocho Trigramas
+Dialogue: 0,0:07:40.86,0:07:42.86,Gen_Main,,0,0,0,,Puño Blando…
+Dialogue: 0,0:07:43.66,0:07:46.08,Gen_Main,,0,0,0,,Hakke Rokujuuyonshou.
+Dialogue: 0,0:07:43.66,0:07:46.08,Naruto_Nota,,0,0,0,,Ocho Trigramas: Sesenta y cuatro palmas
+Dialogue: 0,0:07:46.43,0:07:49.02,Gen_Main,,0,0,0,,Esa postura…
+Dialogue: 0,0:07:57.46,0:08:00.91,Gen_Main,,0,0,0,,¡Hakke: Nishou!
+Dialogue: 0,0:07:57.46,0:08:00.91,Naruto_Nota,,0,0,0,,Dos Palmas
+Dialogue: 0,0:08:03.55,0:08:05.32,Gen_Main,,0,0,0,,¡Yonshou!
+Dialogue: 0,0:08:03.55,0:08:05.32,Naruto_Nota,,0,0,0,,Cuatro Palmas
+Dialogue: 0,0:08:06.28,0:08:07.59,Gen_Main,,0,0,0,,¡Hasshou!
+Dialogue: 0,0:08:06.28,0:08:07.59,Naruto_Nota,,0,0,0,,Ocho Palmas
+Dialogue: 0,0:08:08.76,0:08:10.62,Gen_Main,,0,0,0,,¡Juurokushou!
+Dialogue: 0,0:08:08.76,0:08:10.62,Naruto_Nota,,0,0,0,,Dieciséis Palmas
+Dialogue: 0,0:08:11.42,0:08:12.89,Gen_Main,,0,0,0,,¡Sanjuunishou!
+Dialogue: 0,0:08:11.42,0:08:12.89,Naruto_Nota,,0,0,0,,Trenta y dos Palmas
+Dialogue: 0,0:08:15.66,0:08:17.40,Gen_Main,,0,0,0,,¡Rokujuuyonshou!
+Dialogue: 0,0:08:15.66,0:08:17.40,Naruto_Nota,,0,0,0,,Sesenta y cuatro Palmas
+Dialogue: 0,0:08:22.37,0:08:25.57,Gen_Italics,,0,0,0,,¿La rama secundaria\Nsuperará a la principal?
+Dialogue: 0,0:08:39.18,0:08:40.65,Gen_Main,,0,0,0,,Creo que se acabó.
+Dialogue: 0,0:08:46.56,0:08:49.18,Gen_Italics,,0,0,0,,Su talento es aterrador.
+Dialogue: 0,0:08:49.18,0:08:52.12,Gen_Italics,,0,0,0,,La técnica de línea sucesoria\Nde los Hyuga
+Dialogue: 0,0:08:52.12,0:08:58.44,Gen_Italics,,0,0,0,,resultó ser más poderosa\Nen un chico que nunca será heredero.
+Dialogue: 0,0:08:59.87,0:09:04.54,Gen_Italics,,0,0,0,,Hizashi, quizás el clan\Ndebió quedar en tus manos.
+Dialogue: 0,0:09:05.34,0:09:08.95,Gen_Main,,0,0,0,,Te cerré los 64 puntos\Nde presión del cuerpo.
+Dialogue: 0,0:09:08.95,0:09:10.95,Gen_Main,,0,0,0,,Ya no puedes ni levantarte.
+Dialogue: 0,0:09:14.46,0:09:16.12,Gen_Main,,0,0,0,,Maldita sea.
+Dialogue: 0,0:09:17.20,0:09:18.52,Gen_Main,,0,0,0,,¿Te da rabia?
+Dialogue: 0,0:09:18.52,0:09:23.72,Gen_Main,,0,0,0,,Te arrodillas ante un poder invariable\Ny reconoces tu impotencia.
+Dialogue: 0,0:09:24.53,0:09:29.57,Gen_Main,,0,0,0,,Creer que los sueños se cumplen\Ncon esfuerzo es una simple ilusión.
+Dialogue: 0,0:09:31.57,0:09:34.30,Gen_Main,,0,0,0,,¿Estás bien, Hinata?
+Dialogue: 0,0:09:34.30,0:09:36.92,Gen_Main,,0,0,0,,Me lo imaginaba.
+Dialogue: 0,0:09:36.92,0:09:38.28,Gen_Main,,0,0,0,,Naruto…
+Dialogue: 0,0:10:09.10,0:10:10.71,Gen_Italics,,0,0,0,,Cejudo.
+Dialogue: 0,0:10:13.11,0:10:14.72,Gen_Italics,,0,0,0,,Hinata.
+Dialogue: 0,0:10:21.68,0:10:23.75,Gen_Main,,0,0,0,,Maldición.
+Dialogue: 0,0:10:32.59,0:10:34.26,Gen_Main,,0,0,0,,Naruto…
+Dialogue: 0,0:10:44.81,0:10:48.01,Gen_Main,,0,0,0,,Es imposible.
+Dialogue: 0,0:10:50.01,0:10:56.38,Gen_Main,,0,0,0,,Ya te dije que no me rindo fácilmente.
+Dialogue: 0,0:11:05.66,0:11:07.22,Gen_Main,,0,0,0,,No puede ser.
+Dialogue: 0,0:11:09.22,0:11:12.20,Gen_Main,,0,0,0,,Estás sangrando.
+Dialogue: 0,0:11:12.20,0:11:13.26,Gen_Main,,0,0,0,,¿Qué sucede?
+Dialogue: 0,0:11:14.06,0:11:17.67,Gen_Main,,0,0,0,,¿Aún no te recuperas de ese combate?
+Dialogue: 0,0:11:18.63,0:11:20.64,Gen_Main,,0,0,0,,Sé fuerte, Hinata.
+Dialogue: 0,0:11:26.31,0:11:27.90,Gen_Main,,0,0,0,,Deja que la examine.
+Dialogue: 0,0:11:29.11,0:11:30.18,Gen_Main,,0,0,0,,¿Quién eres?
+Dialogue: 0,0:11:30.98,0:11:33.65,Gen_Main,,0,0,0,,No pretendo nada sospechoso.
+Dialogue: 0,0:11:34.45,0:11:38.34,Gen_Main,,0,0,0,,Ya es suficiente.\NSeguir no cambiará nada.
+Dialogue: 0,0:11:38.34,0:11:40.26,Gen_Main,,0,0,0,,Y no te guardo ningún rencor.
+Dialogue: 0,0:11:40.86,0:11:42.86,Gen_Main,,0,0,0,,Cierra el pico.
+Dialogue: 0,0:11:42.86,0:11:46.93,Gen_Main,,0,0,0,,Yo sí te guardo rencor.
+Dialogue: 0,0:11:46.93,0:11:48.60,Gen_Main,,0,0,0,,¿De qué hablas?
+Dialogue: 0,0:11:48.60,0:11:53.00,Gen_Main,,0,0,0,,Con lo fuerte que eres…
+Dialogue: 0,0:11:53.56,0:11:56.62,Gen_Main,,0,0,0,,¿Por qué nos miras\Ncomo si lo supieras todo?
+Dialogue: 0,0:11:57.00,0:11:59.81,Gen_Main,,0,0,0,,¿Por qué presionaste\Na Hinata de tal forma
+Dialogue: 0,0:11:59.81,0:12:02.58,Gen_Main,,0,0,0,,cuando se estaba esforzando?
+Dialogue: 0,0:12:03.38,0:12:05.78,Gen_Main,,0,0,0,,A ti no te incumbe.
+Dialogue: 0,0:12:06.35,0:12:11.15,Gen_Main,,0,0,0,,Te burlaste de Hinata\Ny la trataste como una inútil.
+Dialogue: 0,0:12:11.15,0:12:16.52,Gen_Main,,0,0,0,,No sé qué pasó entre la rama principal\Ny rama la secundaria,
+Dialogue: 0,0:12:17.29,0:12:23.03,Gen_Main,,0,0,0,,pero no pienso perdonar a escoria\Nque llama inútiles a otros.
+Dialogue: 0,0:12:28.40,0:12:30.00,Gen_Main,,0,0,0,,¿Qué haces?
+Dialogue: 0,0:12:30.00,0:12:32.40,Gen_Main,,0,0,0,,Tranquilo, soy médico.
+Dialogue: 0,0:12:34.17,0:12:38.58,Gen_Main,,0,0,0,,Está bien. Si insistes, te contaré…
+Dialogue: 0,0:12:39.61,0:12:42.01,Gen_Main,,0,0,0,,el odioso destino de los Hyuga.
+Dialogue: 0,0:12:43.88,0:12:47.89,Gen_Main,,0,0,0,,Cada generación del clan principal\Nhereda una técnica secreta.
+Dialogue: 0,0:12:48.95,0:12:51.02,Gen_Main,,0,0,0,,Una técnica de sellado.
+Dialogue: 0,0:12:51.82,0:12:53.99,Gen_Main,,0,0,0,,¿De sellado?
+Dialogue: 0,0:12:58.90,0:13:02.87,Gen_Main,,0,0,0,,El sello representa un pájaro enjaulado,
+Dialogue: 0,0:13:03.27,0:13:07.84,Gen_Main,,0,0,0,,y es el símbolo de los que no pueden\Nescapar de su destino.
+Dialogue: 0,0:13:20.10,0:13:22.55,Gen_Main,,0,0,0,,¿Qué es eso?
+Dialogue: 0,0:13:32.83,0:13:35.59,Gen_Main,,0,0,0,,¿Ese es el sello?
+Dialogue: 0,0:13:36.83,0:13:38.84,Gen_Main,,0,0,0,,Cuando tenía cuatro años,
+Dialogue: 0,0:13:38.84,0:13:44.04,Gen_Main,,0,0,0,,me grabaron este abominable sello\Nen la frente con esa técnica.
+Dialogue: 0,0:13:46.44,0:13:50.84,Gen_Main,,0,0,0,,Aquel día se celebraba\Nuna gran ceremonia en Konoha.
+Dialogue: 0,0:13:51.24,0:13:54.55,Gen_Main,,0,0,0,,Llevábamos tiempo en conflicto\Ncon el País del Rayo,
+Dialogue: 0,0:13:54.55,0:13:57.04,Gen_Main,,0,0,0,,pero se decidió\Nformar un pacto de alianza,
+Dialogue: 0,0:13:57.04,0:14:00.54,Gen_Main,,0,0,0,,y vino el líder shinobi\Nde la Aldea Oculta de la Nube.
+Dialogue: 0,0:14:02.12,0:14:07.70,Gen_Main,,0,0,0,,Todo el mundo, de genin a jounin,\Nparticipó en la ceremonia.
+Dialogue: 0,0:14:07.70,0:14:10.10,Gen_Main,,0,0,0,,Todos menos un clan:
+Dialogue: 0,0:14:10.97,0:14:13.37,Gen_Main,,0,0,0,,el clan Hyuga.
+Dialogue: 0,0:14:13.77,0:14:18.57,Gen_Main,,0,0,0,,Porque aquel día, la heredera\Nde la rama principal cumplía tres años.
+Dialogue: 0,0:14:21.38,0:14:23.95,Gen_Main,,0,0,0,,Hinata-sama cumplía tres años.
+Dialogue: 0,0:14:36.79,0:14:39.19,Gen_Main,,0,0,0,,Mi padre, Hizashi Hyuga,
+Dialogue: 0,0:14:39.19,0:14:44.40,Gen_Main,,0,0,0,,y el padre de Hinata-sama,\NHiashi Hyuga-sama, eran gemelos.
+Dialogue: 0,0:14:45.38,0:14:48.97,Gen_Main,,0,0,0,,Pero Hiashi-sama\Npertenece a la rama principal
+Dialogue: 0,0:14:48.97,0:14:52.57,Gen_Main,,0,0,0,,porque llegó antes al mundo.
+Dialogue: 0,0:14:53.37,0:14:56.88,Gen_Main,,0,0,0,,Y mi padre fue relegado a la secundaria.
+Dialogue: 0,0:14:59.31,0:15:03.32,Gen_Main,,0,0,0,,Felicidades.\NHinata-sama ya tiene tres años.
+Dialogue: 0,0:15:03.32,0:15:04.45,Gen_Main,,0,0,0,,Gracias.
+Dialogue: 0,0:15:12.69,0:15:15.50,Gen_Main,,0,0,0,,Es muy linda, padre.
+Dialogue: 0,0:15:20.93,0:15:23.34,Gen_Main,,0,0,0,,¿Qué sucede, padre?
+Dialogue: 0,0:15:24.54,0:15:26.81,Gen_Main,,0,0,0,,No es nada.
+Dialogue: 0,0:15:28.81,0:15:32.85,Gen_Main,,0,0,0,,Neji queda en tus manos, Hizashi.
+Dialogue: 0,0:15:32.85,0:15:34.01,Gen_Main,,0,0,0,,Sí.
+Dialogue: 0,0:15:35.02,0:15:38.52,Gen_Main,,0,0,0,,Cuando la heredera\Nde la rama principal cumplió tres años,
+Dialogue: 0,0:15:40.92,0:15:44.76,Gen_Main,,0,0,0,,yo recibí este sello y me convertí\Nen un pájaro enjaulado
+Dialogue: 0,0:15:45.10,0:15:46.92,Gen_Main,,0,0,0,,en la rama secundaria.
+Dialogue: 0,0:15:46.92,0:15:49.58,Gen_Main,,0,0,0,,¿Qué necesidad tienen de hacer eso?
+Dialogue: 0,0:15:49.58,0:15:52.77,Gen_Main,,0,0,0,,¿Por qué se dividen en ramas?
+Dialogue: 0,0:15:52.77,0:15:56.24,Gen_Main,,0,0,0,,¿Qué sentido tiene\Nformar una familia tan rara?
+Dialogue: 0,0:15:56.24,0:16:00.24,Gen_Main,,0,0,0,,El sello de mi frente\Nno es de decoración.
+Dialogue: 0,0:16:09.38,0:16:11.22,Gen_Main,,0,0,0,,Posiciona bien las piernas.
+Dialogue: 0,0:16:11.22,0:16:12.32,Gen_Main,,0,0,0,,Sí.
+Dialogue: 0,0:16:19.46,0:16:20.72,Gen_Main,,0,0,0,,Escúchame, Neji,
+Dialogue: 0,0:16:20.72,0:16:28.26,Gen_Main,,0,0,0,,vivirás para proteger a Hinata-sama\Ny el poder de los Hyuga.
+Dialogue: 0,0:16:28.68,0:16:30.26,Gen_Main,,0,0,0,,Sí, padre.
+Dialogue: 0,0:16:52.16,0:16:53.42,Gen_Italics,,0,0,0,,¿Instinto asesino?
+Dialogue: 0,0:17:02.32,0:17:03.27,Gen_Main,,0,0,0,,¡Padre!
+Dialogue: 0,0:17:06.47,0:17:08.77,Gen_Main,,0,0,0,,¿Qué sucede, padre?
+Dialogue: 0,0:17:09.17,0:17:11.18,Gen_Main,,0,0,0,,Márchense.
+Dialogue: 0,0:17:11.18,0:17:14.71,Gen_Main,,0,0,0,,No perdonaré más estupideces\Na partir de hoy.
+Dialogue: 0,0:17:15.51,0:17:19.12,Gen_Main,,0,0,0,,No olviden cuál es su destino.
+Dialogue: 0,0:17:22.85,0:17:24.85,Gen_Main,,0,0,0,,Con este sello,
+Dialogue: 0,0:17:24.85,0:17:28.84,Gen_Main,,0,0,0,,la rama principal\Nnos infunde el miedo a la muerte.
+Dialogue: 0,0:17:30.73,0:17:32.83,Gen_Main,,0,0,0,,Un signo de alguien de la rama principal
+Dialogue: 0,0:17:32.83,0:17:36.44,Gen_Main,,0,0,0,,puede destruir los nervios craneales\Nde los de la secundaria.
+Dialogue: 0,0:17:37.23,0:17:39.67,Gen_Main,,0,0,0,,No les cuesta nada matarnos.
+Dialogue: 0,0:17:40.47,0:17:44.64,Gen_Main,,0,0,0,,Y el sello solo desaparece\Nuna vez mueres,
+Dialogue: 0,0:17:45.44,0:17:48.26,Gen_Main,,0,0,0,,bloqueando el poder del Byakugan.
+Dialogue: 0,0:17:52.48,0:17:56.88,Gen_Main,,0,0,0,,El clan Hyuga posee\Nuna poderosa técnica de línea sucesoria.
+Dialogue: 0,0:17:57.29,0:18:00.89,Gen_Main,,0,0,0,,Infinidad de gente\Ndesea descubrir sus secretos.
+Dialogue: 0,0:18:02.49,0:18:07.70,Gen_Main,,0,0,0,,La rama secundaria vive solo\Npara proteger a la principal.
+Dialogue: 0,0:18:07.70,0:18:10.63,Gen_Main,,0,0,0,,El sello no les permite rebelarse,
+Dialogue: 0,0:18:10.63,0:18:15.04,Gen_Main,,0,0,0,,y a la vez protege los secretos\Nde la técnica de línea sucesoria.
+Dialogue: 0,0:18:15.04,0:18:17.04,Gen_Main,,0,0,0,,Es un sistema eficiente.
+Dialogue: 0,0:18:17.81,0:18:19.01,Gen_Main,,0,0,0,,Al final…
+Dialogue: 0,0:18:20.61,0:18:22.54,Gen_Main,,0,0,0,,ocurrió aquel incidente.
+Dialogue: 0,0:18:23.34,0:18:25.36,Gen_Main,,0,0,0,,Mi padre…
+Dialogue: 0,0:18:26.55,0:18:28.78,Gen_Main,,0,0,0,,fue asesinado por la rama principal.
+Dialogue: 0,0:18:32.45,0:18:36.22,Gen_Main,,0,0,0,,Una noche,\Nalguien intentó raptar a Hinata-sama.
+Dialogue: 0,0:19:02.41,0:19:06.42,Gen_Main,,0,0,0,,Hiashi-sama fue a rescatarla\Ny mató al secuestrador.
+Dialogue: 0,0:19:07.32,0:19:11.89,Gen_Main,,0,0,0,,Era de noche y escondía su rostro\Nbajo una máscara.
+Dialogue: 0,0:19:12.69,0:19:15.36,Gen_Main,,0,0,0,,¿Quién crees que era?
+Dialogue: 0,0:19:15.36,0:19:20.17,Gen_Main,,0,0,0,,Era el que recién firmó\Nun pacto de alianza,
+Dialogue: 0,0:19:20.17,0:19:22.60,Gen_Main,,0,0,0,,el líder shinobi del País del Rayo.
+Dialogue: 0,0:19:23.00,0:19:27.01,Gen_Main,,0,0,0,,Estaba claro que en realidad vino\Npor los secretos del Byakugan.
+Dialogue: 0,0:19:27.81,0:19:33.81,Gen_Main,,0,0,0,,Pero el País del Rayo aprovechó\Nque habíamos matado a uno de sus ninjas
+Dialogue: 0,0:19:33.81,0:19:38.78,Gen_Main,,0,0,0,,para imponer una condición excesiva\Npor romper el pacto.
+Dialogue: 0,0:19:44.76,0:19:47.56,Gen_Main,,0,0,0,,Konoha y el Rayo discutieron,
+Dialogue: 0,0:19:47.56,0:19:49.56,Gen_Main,,0,0,0,,casi iniciando una guerra.
+Dialogue: 0,0:19:50.63,0:19:55.44,Gen_Main,,0,0,0,,Pero para evitar la guerra,\NKonoha hizo un trato con el Rayo.
+Dialogue: 0,0:19:55.83,0:19:57.20,Gen_Main,,0,0,0,,¿Un trato?
+Dialogue: 0,0:19:57.60,0:20:03.17,Gen_Main,,0,0,0,,El Rayo pidió el cuerpo de alguien\Ncon Byakugan de la rama principal.
+Dialogue: 0,0:20:03.97,0:20:07.98,Gen_Main,,0,0,0,,Es decir, el cadáver de Hiashi-sama.
+Dialogue: 0,0:20:10.36,0:20:13.55,Gen_Main,,0,0,0,,Y Konoha aceptó.
+Dialogue: 0,0:20:13.55,0:20:16.39,Gen_Italics,,0,0,0,,¿Qué? Pero mi padre…
+Dialogue: 0,0:20:16.79,0:20:20.26,Gen_Main,,0,0,0,,Así se evitó una guerra.
+Dialogue: 0,0:20:20.98,0:20:26.66,Gen_Main,,0,0,0,,Para proteger a la rama principal\Nmataron a un doble de Hiashi-sama.
+Dialogue: 0,0:20:27.00,0:20:29.50,Gen_Main,,0,0,0,,¡La paz se consiguió\Na costa de mi padre!
+Dialogue: 0,0:20:29.90,0:20:34.97,Gen_Main,,0,0,0,,La muerte es la única forma\Nde librarse de este abominable sello.
+Dialogue: 0,0:20:35.37,0:20:37.37,Gen_Main,,0,0,0,,Eran igual de poderosos.
+Dialogue: 0,0:20:37.37,0:20:40.94,Gen_Main,,0,0,0,,Pese a ser gemelos,\Nnacer antes o después…
+Dialogue: 0,0:20:42.14,0:20:44.95,Gen_Main,,0,0,0,,es lo que decidió sus destinos.
+Dialogue: 0,0:20:50.19,0:20:52.15,Gen_Main,,0,0,0,,Y en este combate,
+Dialogue: 0,0:20:52.55,0:20:57.63,Gen_Main,,0,0,0,,tu destino se decidió\Ncuando te tocó enfrentarme.
+Dialogue: 0,null,null,JPN TOP,,0,0,0,,度｡
+Dialogue: 0,00:05:39.48,00:05:43.48,JPN TOP,,0,0,0,,そして その白眼で相手の攻撃をすべて感知》
+Dialogue: 0,00:05:45.49,00:05:49.99,JPN TOP,,0,0,0,,(ﾃﾝﾃﾝ)《ここからネジの防御法八卦掌回天は始まるのよ！》
+Dialogue: 0,00:05:55.44,00:05:56.94,JPN TOP,,0,0,0,,(ネジ)ハァ～！
+Dialogue: 0,00:05:56.94,00:05:59.45,JPN TOP,,0,0,0,,うっ…！
+Dialogue: 0,00:05:59.45,00:06:01.45,JPN TOP,,0,0,0,,うわ～！
+Dialogue: 0,00:06:01.45,00:06:08.97,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:06:08.97,00:06:10.97,JPN TOP,,0,0,0,,(ﾃﾝﾃﾝ)《攻撃を受ける瞬間
+Dialogue: 0,00:06:10.97,00:06:14.48,JPN TOP,,0,0,0,,体中のチャクラ穴からチャクラを大量放出｡
+Dialogue: 0,00:06:14.48,00:06:16.98,JPN TOP,,0,0,0,,そのチャクラで敵の攻撃を受け止め
+Dialogue: 0,00:06:16.98,00:06:19.49,JPN TOP,,0,0,0,,自分の体をコマのように円運動させ
+Dialogue: 0,00:06:19.49,00:06:21.99,JPN TOP,,0,0,0,,逃がして はじき返す｡
+Dialogue: 0,00:06:21.99,00:06:25.50,JPN TOP,,0,0,0,,本来 チャクラ穴から放出されるチャクラは
+Dialogue: 0,00:06:25.50,00:06:29.01,JPN TOP,,0,0,0,,コントロールが難しく上忍といえども手や足
+Dialogue: 0,00:06:29.01,00:06:33.52,JPN TOP,,0,0,0,,体の一部からの放出を技に利用する程度｡
+Dialogue: 0,00:06:33.52,00:06:36.52,JPN TOP,,0,0,0,,けれど 柔拳を極めたネジは
+Dialogue: 0,00:06:36.52,00:06:38.53,JPN TOP,,0,0,0,,体全体からチャクラを放出し
+Dialogue: 0,00:06:38.53,00:06:43.54,JPN TOP,,0,0,0,,その放出力だけで物理的攻撃を完封してしまう｡
+Dialogue: 0,00:06:43.54,00:06:48.05,JPN TOP,,0,0,0,,つまり それはあの我愛羅以上の力を持った
+Dialogue: 0,00:06:48.05,00:06:51.05,JPN TOP,,0,0,0,,もう一つの絶対防御》
+Dialogue: 0,00:06:57.00,00:06:59.50,JPN TOP,,0,0,0,,(ﾊﾅﾋﾞ)あ… あれは父上の…｡
+Dialogue: 0,00:06:59.50,00:07:01.51,JPN TOP,,0,0,0,,回天は日向宗家
+Dialogue: 0,00:07:01.51,00:07:06.52,JPN TOP,,0,0,0,,つまり日向の跡目だけに代々 伝えられる秘術だ｡
+Dialogue: 0,00:07:06.52,00:07:10.02,JPN TOP,,0,0,0,,それを独自で作り上げたというのか｡
+Dialogue: 0,00:07:10.02,00:07:14.03,JPN TOP,,0,0,0,,何というヤツだまさか ここまで…｡
+Dialogue: 0,00:07:14.03,00:07:16.54,JPN TOP,,0,0,0,,(ﾃﾝﾃﾝ)《驚くのは まだまだよ｡
+Dialogue: 0,00:07:16.54,00:07:20.04,JPN TOP,,0,0,0,,ネジの本当の力は ここから》
+Dialogue: 0,00:07:20.04,00:07:22.55,JPN TOP,,0,0,0,,く… くそ～！
+Dialogue: 0,00:07:22.55,00:07:25.55,JPN TOP,,0,0,0,,(ネジ)これで終わりだ｡
+Dialogue: 0,00:07:25.55,00:07:29.56,JPN TOP,,0,0,0,,お前は 俺の八卦の領域内にいる｡
+Dialogue: 0,00:07:41.08,00:07:43.59,JPN TOP,,0,0,0,,柔拳法
+Dialogue: 0,00:07:43.59,00:07:46.09,JPN TOP,,0,0,0,,八卦六十四掌｡
+Dialogue: 0,00:07:46.09,00:07:49.10,JPN TOP,,0,0,0,,まさか あの構えは…｡
+Dialogue: 0,00:07:49.10,00:07:57.05,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:07:57.05,00:07:59.05,JPN TOP,,0,0,0,,(ネジ)八卦
+Dialogue: 0,00:07:59.05,00:08:01.06,JPN TOP,,0,0,0,,二掌！
+Dialogue: 0,00:08:03.56,00:08:05.57,JPN TOP,,0,0,0,,(ネジ)四掌！
+Dialogue: 0,00:08:05.57,00:08:07.57,JPN TOP,,0,0,0,,八掌！
+Dialogue: 0,00:08:09.07,00:08:11.08,JPN TOP,,0,0,0,,(ネジ)十六掌！
+Dialogue: 0,00:08:11.08,00:08:13.08,JPN TOP,,0,0,0,,三十二掌！
+Dialogue: 0,00:08:14.59,00:08:18.09,JPN TOP,,0,0,0,,あっ！(ネジ)六十四掌！
+Dialogue: 0,00:08:20.60,00:08:22.10,JPN TOP,,0,0,0,,あっ！
+Dialogue: 0,00:08:22.10,00:08:25.60,JPN TOP,,0,0,0,,(ﾋｱｼ)《分家の者が宗家を超えるか》
+Dialogue: 0,00:08:29.11,00:08:32.12,JPN TOP,,0,0,0,,ハァ～！
+Dialogue: 0,00:08:39.13,00:08:41.14,JPN TOP,,0,0,0,,(ｹﾞﾝﾏ)終了だな｡
+Dialogue: 0,00:08:46.65,00:08:49.15,JPN TOP,,0,0,0,,(ﾋｱｼ)《まさに恐るべき才能よ｡
+Dialogue: 0,00:08:49.15,00:08:52.09,JPN TOP,,0,0,0,,日向の血継限界の力が
+Dialogue: 0,00:08:52.09,00:08:55.10,JPN TOP,,0,0,0,,決して跡を継げぬ分家の子に
+Dialogue: 0,00:08:55.10,00:08:59.61,JPN TOP,,0,0,0,,これほど色濃く受け継がれていようとは…｡
+Dialogue: 0,00:08:59.61,00:09:05.12,JPN TOP,,0,0,0,,ヒザシよやはり日向の家は お前が…》
+Dialogue: 0,null,null,JPN TOP,,0,0,0,,個の点穴を突いた｡
+Dialogue: 0,00:09:08.63,00:09:12.13,JPN TOP,,0,0,0,,お前は もう立てもしない｡
+Dialogue: 0,00:09:12.13,00:09:16.14,JPN TOP,,0,0,0,,うっ… くそ…｡
+Dialogue: 0,00:09:16.14,00:09:18.65,JPN TOP,,0,0,0,,フッ 悔しいか？
+Dialogue: 0,00:09:18.65,00:09:21.65,JPN TOP,,0,0,0,,変えようのない力の前にひざまずき
+Dialogue: 0,00:09:21.65,00:09:24.16,JPN TOP,,0,0,0,,己の無力を知る｡
+Dialogue: 0,00:09:24.16,00:09:27.66,JPN TOP,,0,0,0,,努力すれば必ず夢が かなうなんてのは
+Dialogue: 0,00:09:27.66,00:09:29.67,JPN TOP,,0,0,0,,ただの幻想だ｡
+Dialogue: 0,00:09:29.67,00:09:31.17,JPN TOP,,0,0,0,,(せきこみ)
+Dialogue: 0,00:09:31.17,00:09:34.18,JPN TOP,,0,0,0,,(キバ)お… おい ヒナタお前 大丈夫かよ？
+Dialogue: 0,00:09:34.18,00:09:38.69,JPN TOP,,0,0,0,,(いの)あっちゃ～！ やっぱね～｡ナルト…｡
+Dialogue: 0,00:09:38.69,00:09:48.70,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:09:58.73,00:10:08.74,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:10:08.75,00:10:10.75,JPN TOP,,0,0,0,,《ゲジマユ…》
+Dialogue: 0,00:10:13.26,00:10:15.26,JPN TOP,,0,0,0,,《ヒナタ…》
+Dialogue: 0,00:10:15.26,00:10:21.27,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:10:21.27,00:10:23.77,JPN TOP,,0,0,0,,くっそ～｡
+Dialogue: 0,00:10:25.28,00:10:26.78,JPN TOP,,0,0,0,,(キバ)ん？
+Dialogue: 0,00:10:32.29,00:10:34.30,JPN TOP,,0,0,0,,ナルト｡
+Dialogue: 0,00:10:38.31,00:10:43.31,JPN TOP,,0,0,0,,ハァ ハァ ハァ…｡
+Dialogue: 0,00:10:44.82,00:10:48.83,JPN TOP,,0,0,0,,こいつ… ばかな｡
+Dialogue: 0,00:10:48.83,00:10:51.77,JPN TOP,,0,0,0,,ハハハ… 言っただろ？
+Dialogue: 0,00:10:51.77,00:10:56.77,JPN TOP,,0,0,0,,俺は諦めが悪ぃんだって｡
+Dialogue: 0,00:11:05.32,00:11:07.32,JPN TOP,,0,0,0,,ばかな！
+Dialogue: 0,00:11:07.32,00:11:08.83,JPN TOP,,0,0,0,,(せきこみ)
+Dialogue: 0,00:11:08.83,00:11:13.34,JPN TOP,,0,0,0,,おい お前 血出てんじゃねえかよ｡(ｺﾃﾂ)どうした？
+Dialogue: 0,00:11:13.34,00:11:17.84,JPN TOP,,0,0,0,,(ﾋﾅﾀのせきこみ)(キバ)お前 まだ試合のﾀﾞﾒｰｼﾞが｡
+Dialogue: 0,00:11:17.84,00:11:20.85,JPN TOP,,0,0,0,,ヒナタ しっかりしろ！(ﾋﾅﾀのせきこみ)
+Dialogue: 0,00:11:20.85,00:11:23.85,JPN TOP,,0,0,0,,(ﾋﾅﾀのせきこみ)
+Dialogue: 0,00:11:25.86,00:11:28.37,JPN TOP,,0,0,0,,(ｶﾌﾞﾄ)僕が診てあげよう｡
+Dialogue: 0,00:11:28.37,00:11:30.37,JPN TOP,,0,0,0,,あんたは？
+Dialogue: 0,00:11:30.37,00:11:33.88,JPN TOP,,0,0,0,,(ｶﾌﾞﾄ)まっ 怪しい者じゃないよ｡
+Dialogue: 0,00:11:33.88,00:11:37.88,JPN TOP,,0,0,0,,(ネジ)もうやめておけこれ以上やっても同じだ｡
+Dialogue: 0,00:11:37.88,00:11:39.82,JPN TOP,,0,0,0,,別に お前に恨みはない｡
+Dialogue: 0,00:11:39.82,00:11:42.83,JPN TOP,,0,0,0,,フッ うるせぇってばよ｡
+Dialogue: 0,00:11:42.83,00:11:46.33,JPN TOP,,0,0,0,,んなこと言ってもこっちには しっかりあるんだよ｡
+Dialogue: 0,00:11:46.33,00:11:48.34,JPN TOP,,0,0,0,,何の話だ？
+Dialogue: 0,00:11:48.34,00:11:53.35,JPN TOP,,0,0,0,,何で…何でお前は そんなに強ぇのに
+Dialogue: 0,00:11:53.35,00:11:56.85,JPN TOP,,0,0,0,,何で全部 見透かしたような目して
+Dialogue: 0,00:11:56.85,00:11:59.36,JPN TOP,,0,0,0,,あんなに頑張ってるヒナタのことを
+Dialogue: 0,00:11:59.36,00:12:02.87,JPN TOP,,0,0,0,,精神的に追い込むようなことしやがったんだ!?
+Dialogue: 0,00:12:02.87,00:12:06.37,JPN TOP,,0,0,0,,お前には関係のない話だ｡
+Dialogue: 0,00:12:06.37,00:12:08.38,JPN TOP,,0,0,0,,ヒナタをばかにして
+Dialogue: 0,00:12:08.38,00:12:11.38,JPN TOP,,0,0,0,,落ちこぼれだと勝手に決めつけやがって…｡
+Dialogue: 0,00:12:11.38,00:12:13.39,JPN TOP,,0,0,0,,宗家だか分家だか
+Dialogue: 0,00:12:13.39,00:12:16.89,JPN TOP,,0,0,0,,何があったかそんなの知んねえけどな｡
+Dialogue: 0,00:12:16.89,00:12:20.40,JPN TOP,,0,0,0,,他人を落ちこぼれ呼ばわりするくそ野郎は
+Dialogue: 0,00:12:20.40,00:12:22.90,JPN TOP,,0,0,0,,俺が絶対 許さねえ！
+Dialogue: 0,00:12:27.42,00:12:29.42,JPN TOP,,0,0,0,,(キバ)おい あんたは…｡
+Dialogue: 0,00:12:29.42,00:12:33.43,JPN TOP,,0,0,0,,(ｶﾌﾞﾄ)大丈夫 僕は医者だから｡
+Dialogue: 0,00:12:33.43,00:12:35.43,JPN TOP,,0,0,0,,(ネジ)分かった｡
+Dialogue: 0,00:12:35.43,00:12:39.44,JPN TOP,,0,0,0,,いいだろうそこまで言うなら教えてやる｡
+Dialogue: 0,00:12:39.44,00:12:42.44,JPN TOP,,0,0,0,,日向の憎しみの運命を！
+Dialogue: 0,00:12:43.88,00:12:48.39,JPN TOP,,0,0,0,,(ネジ)日向宗家には代々 伝わる秘伝忍術がある｡
+Dialogue: 0,00:12:48.39,00:12:51.40,JPN TOP,,0,0,0,,それが呪印術｡
+Dialogue: 0,00:12:51.40,00:12:53.90,JPN TOP,,0,0,0,,呪印術？
+Dialogue: 0,00:12:58.41,00:13:02.92,JPN TOP,,0,0,0,,その呪いの印は籠の中の鳥を意味し
+Dialogue: 0,00:13:02.92,00:13:07.93,JPN TOP,,0,0,0,,それは逃れられない運命に縛られた者の証し｡
+Dialogue: 0,00:13:07.93,00:13:17.45,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:13:17.45,00:13:19.95,JPN TOP,,0,0,0,,ん？
+Dialogue: 0,00:13:19.95,00:13:22.46,JPN TOP,,0,0,0,,な… 何だ？
+Dialogue: 0,00:13:22.46,00:13:31.98,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:13:31.98,00:13:36.49,JPN TOP,,0,0,0,,そ… その印が…｡
+Dialogue: 0,00:13:36.49,00:13:38.99,JPN TOP,,0,0,0,,４歳のある日
+Dialogue: 0,00:13:38.99,00:13:40.93,JPN TOP,,0,0,0,,俺は その呪印術により
+Dialogue: 0,00:13:40.93,00:13:44.43,JPN TOP,,0,0,0,,この忌まわしい印を額に刻まれた｡
+Dialogue: 0,00:13:45.94,00:13:47.94,JPN TOP,,0,0,0,,(ネジ)その日 木ノ葉の里では
+Dialogue: 0,00:13:47.94,00:13:50.95,JPN TOP,,0,0,0,,盛大なセレモニーが行われていた｡
+Dialogue: 0,00:13:50.95,00:13:53.45,JPN TOP,,0,0,0,,長年 木ノ葉と争っていた
+Dialogue: 0,00:13:53.45,00:13:56.96,JPN TOP,,0,0,0,,雷の国 雲隠れの里の忍頭が
+Dialogue: 0,00:13:56.96,00:14:01.47,JPN TOP,,0,0,0,,同盟条約の締結のために来訪した日でもあった｡
+Dialogue: 0,00:14:01.47,00:14:04.98,JPN TOP,,0,0,0,,しかし 木ノ葉の上忍から下忍に至るまで
+Dialogue: 0,00:14:04.98,00:14:07.48,JPN TOP,,0,0,0,,誰もが参加したそのセレモニーに
+Dialogue: 0,00:14:07.48,00:14:10.49,JPN TOP,,0,0,0,,出席していない一族があった｡
+Dialogue: 0,00:14:10.49,00:14:13.49,JPN TOP,,0,0,0,,それが日向一族｡
+Dialogue: 0,00:14:13.49,00:14:16.50,JPN TOP,,0,0,0,,その日は宗家の跡継ぎが３つになる
+Dialogue: 0,00:14:16.50,00:14:18.50,JPN TOP,,0,0,0,,待望の日だったからだ｡
+Dialogue: 0,00:14:21.01,00:14:24.02,JPN TOP,,0,0,0,,ヒナタ様の３歳の誕生日だ｡
+Dialogue: 0,00:14:24.02,00:14:34.03,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:14:36.54,00:14:39.05,JPN TOP,,0,0,0,,(ネジ)俺の父 日向ヒザシと
+Dialogue: 0,00:14:39.05,00:14:42.49,JPN TOP,,0,0,0,,あそこにいるヒナタ様の父日向ヒアシ様は
+Dialogue: 0,00:14:42.49,00:14:44.99,JPN TOP,,0,0,0,,双子の兄弟だった｡
+Dialogue: 0,00:14:44.99,00:14:49.00,JPN TOP,,0,0,0,,しかしヒナタ様の父 ヒアシ様は
+Dialogue: 0,00:14:49.00,00:14:53.01,JPN TOP,,0,0,0,,この世に先に生まれた長男宗家の者｡
+Dialogue: 0,00:14:53.01,00:14:57.51,JPN TOP,,0,0,0,,そして次男である俺の父は分家の者｡
+Dialogue: 0,00:14:59.02,00:15:03.03,JPN TOP,,0,0,0,,(ﾋｻﾞｼ)＜ヒナタ様も もう３つにおめでとうございます＞
+Dialogue: 0,00:15:03.03,00:15:05.03,JPN TOP,,0,0,0,,(ﾋｱｼ)＜ああ＞
+Dialogue: 0,00:15:09.54,00:15:11.04,JPN TOP,,0,0,0,,＜あっ＞
+Dialogue: 0,00:15:12.55,00:15:16.05,JPN TOP,,0,0,0,,＜かわいい子ですね 父上＞
+Dialogue: 0,00:15:20.56,00:15:24.07,JPN TOP,,0,0,0,,＜どうしたのです？ 父上＞
+Dialogue: 0,00:15:24.07,00:15:28.58,JPN TOP,,0,0,0,,(ﾋｻﾞｼ)＜ん… いや 何でもない＞
+Dialogue: 0,00:15:28.58,00:15:30.58,JPN TOP,,0,0,0,,(ﾋｱｼ)＜では…
+Dialogue: 0,00:15:30.58,00:15:34.59,JPN TOP,,0,0,0,,ネジを預かるぞ ヒザシ＞(ﾋｻﾞｼ)＜はい＞
+Dialogue: 0,00:15:34.59,00:15:39.09,JPN TOP,,0,0,0,,(ネジ)宗家の跡継ぎが育ち３つになった時…｡
+Dialogue: 0,00:15:41.04,00:15:45.04,JPN TOP,,0,0,0,,(ネジ)俺は呪印を刻まれ籠の中の鳥となった｡
+Dialogue: 0,00:15:45.04,00:15:47.05,JPN TOP,,0,0,0,,日向の分家にな！
+Dialogue: 0,00:15:47.05,00:15:49.55,JPN TOP,,0,0,0,,どうしてそんなことする必要があんだよ？
+Dialogue: 0,00:15:49.55,00:15:52.56,JPN TOP,,0,0,0,,宗家とか分家とか分けることに…｡
+Dialogue: 0,00:15:52.56,00:15:56.57,JPN TOP,,0,0,0,,そんな へんてこな印にどんな意味があんだってばよ？
+Dialogue: 0,00:15:56.57,00:16:00.57,JPN TOP,,0,0,0,,この額の印はただの飾りじゃないんだよ｡
+Dialogue: 0,00:16:02.58,00:16:09.59,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:16:09.59,00:16:13.10,JPN TOP,,0,0,0,,(ﾋｱｼ)＜足抜きが甘い＞(ﾋﾅﾀ)＜はい｡
+Dialogue: 0,00:16:13.10,00:16:15.61,JPN TOP,,0,0,0,,ハァ～！
+Dialogue: 0,00:16:15.61,00:16:17.61,JPN TOP,,0,0,0,,フッ！＞
+Dialogue: 0,00:16:19.11,00:16:22.62,JPN TOP,,0,0,0,,＜いいか？ ネジあの宗家のヒナタ様
+Dialogue: 0,00:16:22.62,00:16:25.12,JPN TOP,,0,0,0,,お前は あのお方をお守りして
+Dialogue: 0,00:16:25.12,00:16:28.63,JPN TOP,,0,0,0,,日向の能力を守るために生きるのだ＞
+Dialogue: 0,00:16:28.63,00:16:31.14,JPN TOP,,0,0,0,,＜はい！ 父上＞
+Dialogue: 0,00:16:31.14,00:16:41.15,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:16:51.11,00:16:53.11,JPN TOP,,0,0,0,,(ﾋｱｼ)《ん？ 殺気！》
+Dialogue: 0,00:16:53.11,00:16:54.62,JPN TOP,,0,0,0,,＜タァ～！＞
+Dialogue: 0,00:16:54.62,00:16:58.12,JPN TOP,,0,0,0,,＜うっ あ～！ う～！
+Dialogue: 0,00:16:58.12,00:17:01.63,JPN TOP,,0,0,0,,うわ～！ あ～！
+Dialogue: 0,00:17:01.63,00:17:03.63,JPN TOP,,0,0,0,,頭が！＞(ネジ)＜父上！＞
+Dialogue: 0,00:17:03.63,00:17:06.64,JPN TOP,,0,0,0,,(ﾋｻﾞｼ)＜う～！ う～！＞
+Dialogue: 0,00:17:06.64,00:17:09.15,JPN TOP,,0,0,0,,(ネジ)＜父上 どうしたの？＞(ﾋｻﾞｼ)＜あ～！＞
+Dialogue: 0,00:17:09.15,00:17:11.15,JPN TOP,,0,0,0,,＜帰るがよい｡
+Dialogue: 0,00:17:11.15,00:17:15.16,JPN TOP,,0,0,0,,愚か者を許すのはきょうかぎりだ｡
+Dialogue: 0,00:17:15.16,00:17:18.66,JPN TOP,,0,0,0,,おのが宿命を決して忘れるでないぞ＞
+Dialogue: 0,00:17:18.66,00:17:20.67,JPN TOP,,0,0,0,,(ﾋｻﾞｼ)＜あ～！＞
+Dialogue: 0,00:17:23.17,00:17:26.68,JPN TOP,,0,0,0,,(ネジ)この呪印はいわば宗家が分家に与える
+Dialogue: 0,00:17:26.68,00:17:29.18,JPN TOP,,0,0,0,,死という絶対的恐怖｡
+Dialogue: 0,00:17:30.69,00:17:33.19,JPN TOP,,0,0,0,,宗家が結ぶ秘印は
+Dialogue: 0,00:17:33.19,00:17:37.20,JPN TOP,,0,0,0,,分家の者の脳神経を簡単に破壊する｡
+Dialogue: 0,00:17:37.20,00:17:40.64,JPN TOP,,0,0,0,,無論 殺すことも容易だ｡
+Dialogue: 0,00:17:40.64,00:17:42.65,JPN TOP,,0,0,0,,そして この呪印は
+Dialogue: 0,00:17:42.65,00:17:45.15,JPN TOP,,0,0,0,,死んだときのみ消えてくれる｡
+Dialogue: 0,00:17:45.15,00:17:48.65,JPN TOP,,0,0,0,,白眼の能力を封印してな｡
+Dialogue: 0,00:17:52.67,00:17:57.18,JPN TOP,,0,0,0,,(ネジ)日向家は 最も特異な血継限界を持つ一族だ｡
+Dialogue: 0,00:17:57.18,00:18:01.18,JPN TOP,,0,0,0,,その特異能力の秘密を狙う者は後を絶たない｡
+Dialogue: 0,00:18:02.69,00:18:04.69,JPN TOP,,0,0,0,,(ネジ)つまり この呪印は
+Dialogue: 0,00:18:04.69,00:18:07.70,JPN TOP,,0,0,0,,宗家を守るためにのみ分家は生かされ
+Dialogue: 0,00:18:07.70,00:18:11.20,JPN TOP,,0,0,0,,分家が宗家に逆らうことを決して許さず
+Dialogue: 0,00:18:11.20,00:18:15.21,JPN TOP,,0,0,0,,日向の白眼という血継限界を永ごう守るために作られた
+Dialogue: 0,00:18:15.21,00:18:17.72,JPN TOP,,0,0,0,,効率のいいシステムなんだ｡
+Dialogue: 0,00:18:17.72,00:18:20.22,JPN TOP,,0,0,0,,そして
+Dialogue: 0,00:18:20.22,00:18:23.23,JPN TOP,,0,0,0,,あの事件が起きた｡
+Dialogue: 0,00:18:23.23,00:18:26.73,JPN TOP,,0,0,0,,俺の父親は…
+Dialogue: 0,00:18:26.73,00:18:29.24,JPN TOP,,0,0,0,,宗家に殺されたんだ｡
+Dialogue: 0,00:18:32.25,00:18:36.75,JPN TOP,,0,0,0,,(ネジ)ある夜 ヒナタ様が何者かに さらわれかけた｡
+Dialogue: 0,00:18:36.75,00:18:46.76,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:18:56.73,00:19:02.24,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:19:02.24,00:19:04.74,JPN TOP,,0,0,0,,(ネジ)その時 ヒアシ様はすぐに駆けつけ
+Dialogue: 0,00:19:04.74,00:19:07.25,JPN TOP,,0,0,0,,そいつを殺した｡
+Dialogue: 0,00:19:07.25,00:19:12.26,JPN TOP,,0,0,0,,暗がりで しかもマスクで顔を隠していた そいつ
+Dialogue: 0,00:19:12.26,00:19:15.77,JPN TOP,,0,0,0,,一体 誰だったと思う？
+Dialogue: 0,00:19:15.77,00:19:17.77,JPN TOP,,0,0,0,,そいつは…
+Dialogue: 0,00:19:17.77,00:19:20.27,JPN TOP,,0,0,0,,同盟条約を結んだばかりの
+Dialogue: 0,00:19:20.27,00:19:23.28,JPN TOP,,0,0,0,,雷の国の忍頭だった｡
+Dialogue: 0,00:19:23.28,00:19:27.79,JPN TOP,,0,0,0,,初めから 白眼の秘密を狙ってやって来たことは明らかだ｡
+Dialogue: 0,00:19:27.79,00:19:30.29,JPN TOP,,0,0,0,,しかし 雷の国は
+Dialogue: 0,00:19:30.29,00:19:33.80,JPN TOP,,0,0,0,,計画失敗で自国の忍が殺されたことをいいことに
+Dialogue: 0,00:19:33.80,00:19:36.31,JPN TOP,,0,0,0,,木ノ葉の条約違反として
+Dialogue: 0,00:19:36.31,00:19:38.81,JPN TOP,,0,0,0,,理不尽な条件を突きつけてきた｡
+Dialogue: 0,00:19:44.82,00:19:47.83,JPN TOP,,0,0,0,,(ネジ)当然 木ノ葉と雷はこじれに こじれ
+Dialogue: 0,00:19:47.83,00:19:50.33,JPN TOP,,0,0,0,,戦争にまで なりかけた｡
+Dialogue: 0,00:19:50.33,00:19:53.34,JPN TOP,,0,0,0,,しかし 戦争を避けたい木ノ葉は
+Dialogue: 0,00:19:53.34,00:19:57.85,JPN TOP,,0,0,0,,雷と ある裏取引をした｡取引？
+Dialogue: 0,00:19:57.85,00:20:00.35,JPN TOP,,0,0,0,,(ネジ)雷側の要求は
+Dialogue: 0,00:20:00.35,00:20:03.86,JPN TOP,,0,0,0,,白眼の血継限界を持つ日向宗家
+Dialogue: 0,00:20:03.86,00:20:08.37,JPN TOP,,0,0,0,,つまり ヒアシ様の死体を渡せというものだった｡
+Dialogue: 0,00:20:10.37,00:20:13.88,JPN TOP,,0,0,0,,(ネジ)そして木ノ葉は その条件をのんだ｡
+Dialogue: 0,00:20:13.88,00:20:16.89,JPN TOP,,0,0,0,,(ﾊﾅﾋﾞ)《えっ でも 父上は…》
+Dialogue: 0,00:20:16.89,00:20:20.90,JPN TOP,,0,0,0,,(ネジ)そして 無事 戦争は回避された｡
+Dialogue: 0,00:20:20.90,00:20:23.40,JPN TOP,,0,0,0,,宗家を守るため
+Dialogue: 0,00:20:23.40,00:20:26.91,JPN TOP,,0,0,0,,日向ヒアシの影武者として殺された
+Dialogue: 0,00:20:26.91,00:20:29.91,JPN TOP,,0,0,0,,俺の父親のおかげでな！
+Dialogue: 0,00:20:29.91,00:20:32.92,JPN TOP,,0,0,0,,この忌まわしい呪印から逃れるには
+Dialogue: 0,00:20:32.92,00:20:35.42,JPN TOP,,0,0,0,,死ぬ以外に方法はない｡
+Dialogue: 0,00:20:35.42,00:20:37.43,JPN TOP,,0,0,0,,力も ほぼ同じ｡
+Dialogue: 0,00:20:37.43,00:20:41.87,JPN TOP,,0,0,0,,双子なのに先に生まれるか 後に生まれるか
+Dialogue: 0,00:20:41.87,00:20:45.87,JPN TOP,,0,0,0,,そこで運命は すでに決まっていたのだ｡
+Dialogue: 0,00:20:50.39,00:20:52.89,JPN TOP,,0,0,0,,そして この試合
+Dialogue: 0,00:20:52.89,00:20:54.90,JPN TOP,,0,0,0,,お前の運命も
+Dialogue: 0,00:20:54.90,00:20:57.90,JPN TOP,,0,0,0,,俺が相手になった時点で決まっている！
+Dialogue: 0,00:21:41.46,00:21:46.97,JPN TOP,,0,0,0,,♬(ｴﾝﾃﾞｨﾝｸﾞﾃｰﾏ)
+Dialogue: 0,00:21:46.97,00:21:50.47,JPN TOP,,0,0,0,,♬ ジャンプ一番スラムダンクかますタイソン
+Dialogue: 0,00:21:50.47,00:21:53.98,JPN TOP,,0,0,0,,♬ あれもこれも土足でハグ･キッス･I LOVE YOU
+Dialogue: 0,00:21:53.98,00:21:57.49,JPN TOP,,0,0,0,,♬ ヨガを極めますカレー嫌いマサラさん
+Dialogue: 0,00:21:57.49,00:22:01.00,JPN TOP,,0,0,0,,♬ へたれ闘牛士サンチェス オーレイ！
+Dialogue: 0,00:22:01.00,00:22:04.00,JPN TOP,,0,0,0,,♬ 世界中ほら 笑ってる空
+Dialogue: 0,00:22:04.00,00:22:07.44,JPN TOP,,0,0,0,,♬ 見上げて さあ立ち上がって
+Dialogue: 0,00:22:07.44,00:22:12.95,JPN TOP,,0,0,0,,♬ Oh Yeah
+Dialogue: 0,00:22:12.95,00:22:22.96,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:22:24.98,00:22:27.98,JPN TOP,,0,0,0,,♬ 黒鉛掘りに没頭ポディマハッタヤサンも
+Dialogue: 0,00:22:27.98,00:22:31.99,JPN TOP,,0,0,0,,♬ 北京ダック ﾜｲﾔｰｱｸｼｮﾝチャリで急ぐチェン･リー
+Dialogue: 0,00:22:31.99,00:22:35.50,JPN TOP,,0,0,0,,♬ ＭＹコテカ大事に磨き上げるポポさん
+Dialogue: 0,00:22:35.50,00:22:38.50,JPN TOP,,0,0,0,,♬ お手を拝借ジャパニーズ･ピーポー
+Dialogue: 0,00:22:38.50,00:22:42.01,JPN TOP,,0,0,0,,♬ 世界中ほら 笑ってる空
+Dialogue: 0,00:22:42.01,00:22:45.02,JPN TOP,,0,0,0,,♬ 見上げて さあ立ち上がって
+Dialogue: 0,00:22:45.02,00:22:50.53,JPN TOP,,0,0,0,,♬ Oh Yeah
+Dialogue: 0,00:22:50.53,00:22:52.03,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:22:52.03,00:22:55.04,JPN TOP,,0,0,0,,♬ 世界中ほら 変わってく
+Dialogue: 0,00:22:55.04,00:22:58.54,JPN TOP,,0,0,0,,♬ 皆頑張って Ｓｏ立ち上がって
+Dialogue: 0,00:22:58.54,00:23:04.05,JPN TOP,,0,0,0,,♬ Oh Yeah
+Dialogue: 0,00:23:04.05,00:23:09.56,JPN TOP,,0,0,0,,♬～
+Dialogue: 0,00:23:12.51,00:23:16.01,JPN TOP,,0,0,0,,〈俺の点穴 ホントに全部閉じちまったのか？
+Dialogue: 0,00:23:16.01,00:23:19.02,JPN TOP,,0,0,0,,くそ～ 全身のチャクラというチャクラが
+Dialogue: 0,00:23:19.02,00:23:22.02,JPN TOP,,0,0,0,,全く感じらんねえまるでエロ仙人との修業で
+Dialogue: 0,00:23:22.02,00:23:24.53,JPN TOP,,0,0,0,,チャクラ使い切った時みたいな｡
+Dialogue: 0,00:23:24.53,00:23:28.54,JPN TOP,,0,0,0,,待てよ そうか 見てやがれ｡
+Dialogue: 0,00:23:28.54,00:23:32.04,JPN TOP,,0,0,0,,何が何でも チャクラひねり出してやるからよ！〉
+Dialogue: 0,00:23:35.05,00:23:37.05,JPN TOP,,0,0,0,,〈ハァ～！〉
