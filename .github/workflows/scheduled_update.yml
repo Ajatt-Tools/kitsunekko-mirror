@@ -42,6 +42,9 @@ jobs:
       - name: Remove duplicates
         run: bash scripts/remove-duplicates.sh
 
+      - name: Remove large files
+        run: find subtitles -type f -regextype posix-extended -iregex '.*\.(ass|srt)$' -size +10M -print -delete
+
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
