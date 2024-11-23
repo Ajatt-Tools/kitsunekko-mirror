@@ -1,0 +1,1314 @@
+[Script Info]
+; Font Subset: 743F3BBE - Bourton Script Bold
+; Font Subset: 45763B8F - 方正中雅宋_GBK
+; Font Subset: EA2607C0 - FOT-Pearl Std L
+; Font Subset: BC7DE84B - 方正FW珍珠体 简繁
+; Font Subset: AA2DEB3E - 方正喵汪体
+; Font Subset: 102F61B9 - 汉仪正圆-65S
+; Font Subset: 393C60DD - FOT-Stick Std B
+; Font Subset: FF3AC7B8 - 汉仪正圆-85S
+; Font Subset: D4D75C9A - 华康翩翩体W5-A
+; Font Subset: CF81393B - FOT-Seurat ProN DB
+; Font Subset: EBF93319 - 方正稚艺_GBK
+; Font Subset: 01A9EFEC - FOT-Seurat ProN B
+Title: [XKsub] Horimiya [02][CHS_JPN][WebRip]
+Original Script: XKsub
+Original Translation: 蕊先生
+Original Editing: 蕊先生 Needfire-Gl
+Original Timing: Needfire-Gl
+Script Updated By: Mekozoko
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Staff,AA2DEB3E,65.0,&H00000000,&H00FFFFFF,&H00000000,&H007F3D04,0,0,0,0,100.0,100.0,0.0,0.0,1,0.0,0.0,8,10,10,30,1
+Style: Logo,AA2DEB3E,70.0,&H00000000,&H00FFFFFF,&H0042142A,&H00000000,0,0,0,0,100.0,100.0,0.0,0.0,1,0.0,0.0,5,10,10,20,1
+Style: OPJP,393C60DD,70.0,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100.0,100.0,0.0,0.0,1,0.0,0.0,3,10,100,20,1
+Style: OPCN,EBF93319,55.0,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100.0,100.0,0.0,0.0,1,0.0,0.0,7,100,10,20,1
+Style: EDJP,01A9EFEC,60.0,&H00DA9735,&H00FFFFFF,&H00FFFFFF,&H00000000,0,0,0,0,100.0,100.0,3.0,0.0,1,4.0,0.0,2,10,10,20,1
+Style: EDCN,FF3AC7B8,69.0,&H00BD69FF,&H00FFFFFF,&H00FFFFFF,&H00000000,0,0,0,0,100.0,100.0,3.0,0.0,1,4.0,0.0,8,10,10,20,1
+Style: Title,D4D75C9A,80.0,&H0031050E,&HFFFFFFFF,&H005EEDF3,&H00000000,-1,0,0,0,100.0,100.0,0.0,0.0,1,0.0,0.0,5,10,10,20,1
+Style: Title_Next,FF3AC7B8,87.0,&H00CF9159,&H00FFFFFF,&H00FFFFFF,&H00000000,0,0,0,0,100.0,100.0,0.0,0.0,1,4.0,0.0,7,535,10,940,1
+Style: Screen,102F61B9,70.0,&H00FFFFFF,&H00FFFFFF,&H0042142A,&H00000000,0,0,0,0,100.0,100.0,0.0,0.0,1,0.0,0.0,5,10,10,20,1
+Style: CHI,102F61B9,87.0,&H00FFFFFF,&H00FFFFFF,&H00C55E06,&H007F3D04,0,0,0,0,100.0,100.0,0.0,0.0,1,3.0,1.0,2,10,10,70,1
+Style: CHI_Up,102F61B9,87.0,&H00FFFFFF,&H00FFFFFF,&H00C55E06,&H007F3D04,0,0,0,0,100.0,100.0,0.0,0.0,1,3.0,1.0,8,10,10,65,1
+Style: JAP,CF81393B,62.0,&H00FFFFFF,&H00FFFFFF,&H00C55E06,&H007F3D04,0,0,0,0,100.0,100.0,0.0,0.0,1,3.0,1.0,2,10,10,20,1
+Style: JAP_Up,CF81393B,62.0,&H00FFFFFF,&H00FFFFFF,&H00C55E06,&H007F3D04,0,0,0,0,100.0,100.0,0.0,0.0,1,3.0,1.0,8,10,10,5,1
+Style: Default,Arial,20.0,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100.0,100.0,0.0,0.0,1,2.0,2.0,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,code once,flash_table = {{4456,4581,4706,4831,4873,5374,5457,5582,5666,9999,9999}, {4501,4626,4709,4834,4918,5043,5126,9999,9999,9999,9999}, {4489,4614,4656,4781,4864,4990,5240,5365,5448,5573,5657}, {4474,4599,4641,4766,4849,9999,9999,9999,9999,9999,9999}}    function SwitchColor(color, delay)        local result = ""    local times = #flash_table[1]            for i = 1, times do            result = result .."\\t(" .. flash_table[_G.tonumber(_G.string.sub(line.actor,2,2))][i]-1+delay .. "," .. flash_table[_G.tonumber(_G.string.sub(line.actor,2,2))][i]+delay .. ",\\c" .. color[i%2+1] .. ")" .. ""        end            return result    end
+Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,code line,fxgroup.A = (_G.string.sub(line.actor,1,1) == "A")    fxgroup.B = (_G.string.sub(line.actor,1,1) == "B")    fxgroup.C = (_G.string.sub(line.actor,1,1) == "C")    fxgroup.D = (_G.string.sub(line.actor,1,1) == "D")    fxgroup.E = (_G.string.sub(line.actor,1,1) == "E")    fxgroup.F = (_G.string.sub(line.actor,1,1) == "F")    fxgroup.G = (_G.string.sub(line.actor,1,1) == "G")    frame_width = math.ceil(line.width/2)    fad_no = _G.tonumber(_G.string.sub(line.actor,2,2))
+Comment: 0,0:00:00.00,0:00:00.00,OPCN,,0,0,0,code line,fxgroup.A = (_G.string.sub(line.actor,1,1) == "A")    fxgroup.B = (_G.string.sub(line.actor,1,1) == "B")    fxgroup.C = (_G.string.sub(line.actor,1,1) == "C")    fxgroup.D = (_G.string.sub(line.actor,1,1) == "D")    fxgroup.E = (_G.string.sub(line.actor,1,1) == "E")    fxgroup.F = (_G.string.sub(line.actor,1,1) == "F")    fxgroup.G = (_G.string.sub(line.actor,1,1) == "G")    frame_width = math.ceil(line.width/2)    fad_no = _G.tonumber(_G.string.sub(line.actor,2,2))
+Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template line keeptags fxgroup A,!retime("line",-300,0)!{\pos(!$x-10!,!$y+10!)\blur3\fad(300,300)\c&H000000&}
+Comment: 1,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template line keeptags fxgroup A,!retime("line",-300,0)!{\pos($x,$y)\bord1\fad(300,300)}
+Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template line notext fxgroup A,!retime("line",-300,0)!{\p1\an7\xshad-5\yshad5\pos($lcenter,!$lmiddle+5!)\fad(300,300)}m !-20-frame_width! -40 l !-20-frame_width! 40 l !20+frame_width! 40 l !20+frame_width! -40 m !-10-frame_width! -30 l !10+frame_width! -30 l !10+frame_width! 30 l !-10-frame_width! 30
+Comment: 1,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template line keeptags fxgroup B,!retime("line",-300,0)!{\fscx1\t(0,500,0.5,\fscx100)\c&H000000&\blur5\t(0,500,\blur0)\fad(300,!fad_no==2 and 305 or 0!)!SwitchColor({"&H000000&","&HFFFFFF&"}, 300)!}
+Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template line notext fxgroup B,!retime("line",-300,0)!{\p1\an5\fscx1\t(0,500,0.5,\fscx100)\fscy180\pos(!$lright+15!,!$lbottom+5!)\blur5\t(0,500,\blur0)\fad(300,!fad_no==2 and 305 or 0!)!SwitchColor({"&HFFFFFF&","&HF3C870&"}, 300)!}m !-12-frame_width! -20 b !-17-frame_width! -20 !-20-frame_width! -17 !-20-frame_width! -12 l !-20-frame_width! 12 b !-20-frame_width! 17 !-17-frame_width! 20 !-12-frame_width! 20 l !12+frame_width! 20 b !17+frame_width! 20 !20+frame_width! 17 !20+frame_width! 12 l !20+frame_width! -12 b !20+frame_width! -17 !17+frame_width! -20 !12+frame_width! -20 l !-12+frame_width! -20
+Comment: 1,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template line keeptags fxgroup C,!retime("line",-300,0)!{\fscx1\t(0,500,0.5,\fscx100)\c&H000000&\t(819,1028,\c&HD0A2FB&)\t(1791,2791,\c&H05DB8E&)\t(3154,4154,\c&H1F20CC&)\t(4517,5517,\c&HA8A7A2&)\blur5\t(0,500,\blur0)\fad(300,300)}
+Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template line notext fxgroup C,!retime("preline",-300,1028)!{\p1\an5\fscx1\t(0,500,0.5,\fscx100)\fscy180\pos(!$lright+15!,!$lbottom+5!)\blur5\t(0,500,\blur0)\fad(300,200)}m !-12-frame_width! -20 b !-17-frame_width! -20 !-20-frame_width! -17 !-20-frame_width! -12 l !-20-frame_width! 12 b !-20-frame_width! 17 !-17-frame_width! 20 !-12-frame_width! 20 l !12+frame_width! 20 b !17+frame_width! 20 !20+frame_width! 17 !20+frame_width! 12 l !20+frame_width! -12 b !20+frame_width! -17 !17+frame_width! -20 !12+frame_width! -20 l !-12+frame_width! -20
+Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template line keeptags fxgroup D,{\an2\bord2\3c&HFFFFFF&}
+Comment: 1,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template line keeptags fxgroup E,!retime("line",-300,0)!{\pos($x,$y)\fad(!fad_no==1 and 1300 or 300!,!fad_no==1 and 300 or 700!)\c&HFFFFFF&}
+Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template line notext fxgroup E,!retime("line",-300,0)!{\p1\an7\fscy300\1a&H50&\pos($lcenter,!$lmiddle+5!)\bord7\c&HF1BE3A&\3c&HFFFFFF&\fad(!fad_no==1 and 1300 or 300!,!fad_no==1 and 300 or 700!)}m !-10-frame_width! -10 l !-10-frame_width! 10 l !10+frame_width! 10 l !10+frame_width! -10
+Comment: 1,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template line keeptags fxgroup F,!retime("line",-300,0)!{\c&HFFFFFF&\shad2\t(5699,5700,\c&H000000&\shad0)\t(5919,5920,\c&HFFFFFF&\shad2)\t(6109,6110,\c&H000000&\shad0)\move($lcenter,$lbottom,!meta.res_x/2+$lwidth/2!,$lbottom,0,5486)\fad(500,0)}
+Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template line notext fxgroup F,!retime("line",5400,0)!{\p1\an7\fscy300\pos(!meta.res_x/2!,!$lmiddle+5!)\bord7\c&HFCD97F&\3c&HFFFFFF&\t(219,220,\alpha&HFF&)\t(409,410,\alpha&H00&)}m !-10-frame_width! -10 l !-10-frame_width! 10 l !10+frame_width! 10 l !10+frame_width! -10
+Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template line fxgroup G,!retime("line",(fad_no==3 and -300 or 0),0)!{\an7\fnFOT-Pearl Std L\fs80\shad2\blur1\pos(960,980)\fad(!fad_no==3 and 300 or 0!,!fad_no==2 and 300 or 0!)}
+Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template line notext fxgroup G,!retime("line",(fad_no==3 and -300 or 0),0)!{\p1\an5\fscx500\frz30\shad2\blur1\pos(960,980)\fad(!fad_no==3 and 300 or 0!,!fad_no==2 and 300 or 0!)}m 0 0 l 50 0 l 50 3 l 0 3
+Comment: 0,0:00:00.00,0:00:00.00,OPCN,,0,0,0,template line keeptags fxgroup A,!retime("line",-300,0)!{\pos(!$x-10!,!$y+10!)\blur3\fad(300,300)\c&H000000&}
+Comment: 1,0:00:00.00,0:00:00.00,OPCN,,0,0,0,template line keeptags fxgroup A,!retime("line",-300,0)!{\pos($x,$y)\bord1\fad(300,300)}
+Comment: 0,0:00:00.00,0:00:00.00,OPCN,,0,0,0,template line notext fxgroup A,!retime("line",-300,0)!{\p1\an7\xshad-5\yshad5\pos($lcenter,$lmiddle)\fad(300,300)}m !-20-frame_width! -40 l !-20-frame_width! 40 l !20+frame_width! 40 l !20+frame_width! -40 m !-10-frame_width! -30 l !10+frame_width! -30 l !10+frame_width! 30 l !-10-frame_width! 30
+Comment: 1,0:00:00.00,0:00:00.00,OPCN,,0,0,0,template line keeptags fxgroup B,!retime("line",-300,0)!{\fscx1\t(0,500,0.5,\fscx100)\c&H000000&\blur5\t(0,500,\blur0)\fad(300,!fad_no==2 and 305 or 0!)!SwitchColor({"&H000000&","&HFFFFFF&"}, 300)!}
+Comment: 0,0:00:00.00,0:00:00.00,OPCN,,0,0,0,template line notext fxgroup B,!retime("line",-300,0)!{\p1\an7\fscx1\t(0,500,0.5,\fscx100)\fscy180\pos(!$lleft-20!,!$ltop-10!)\blur5\t(0,500,\blur0)\fad(300,!fad_no==2 and 305 or 0!)!SwitchColor({"&HFFFFFF&","&HF3C870&"}, 300)!}m 8 0 b 3 0 0 3 0 8 l 0 32 b 0 37 3 40 8 40 l !32+2*frame_width! 40 b !37+2*frame_width! 40 !40+2*frame_width! 37 !40+2*frame_width! 32 l !40+2*frame_width! 8 b !40+2*frame_width! 3 !37+2*frame_width! 0 !32+2*frame_width! 0
+Comment: 1,0:00:00.00,0:00:00.00,OPCN,,0,0,0,template line keeptags fxgroup C,!retime("line",-300,0)!{\fscx1\t(0,500,0.5,\fscx100)\c&H000000&\t(819,1028,\c&HD0A2FB&)\t(1791,2791,\c&H05DB8E&)\t(3154,4154,\c&H1F20CC&)\t(4517,5517,\c&HA8A7A2&)\blur5\t(0,500,\blur0)\fad(300,300)}
+Comment: 0,0:00:00.00,0:00:00.00,OPCN,,0,0,0,template line notext fxgroup C,!retime("preline",-300,1028)!{\p1\an7\fscx1\t(0,500,0.5,\fscx100)\fscy180\pos(!$lleft-20!,!$ltop-10!)\blur5\t(0,500,\blur0)\fad(300,200)}m 8 0 b 3 0 0 3 0 8 l 0 32 b 0 37 3 40 8 40 l !32+2*frame_width! 40 b !37+2*frame_width! 40 !40+2*frame_width! 37 !40+2*frame_width! 32 l !40+2*frame_width! 8 b !40+2*frame_width! 3 !37+2*frame_width! 0 !32+2*frame_width! 0
+Comment: 0,0:00:00.00,0:00:00.00,OPCN,,0,0,0,template line keeptags fxgroup D,{\an8\bord2\3c&HFFFFFF&}
+Comment: 1,0:00:00.00,0:00:00.00,OPCN,,0,0,0,template line keeptags fxgroup E,!retime("line",-300,0)!{\pos($x,$y)\fad(!fad_no==1 and 1300 or 300!,!fad_no==1 and 300 or 700!)\c&HFFFFFF&}
+Comment: 0,0:00:00.00,0:00:00.00,OPCN,,0,0,0,template line notext fxgroup E,!retime("line",-300,0)!{\p1\an7\fscy300\1a&H50&\pos($lcenter,$lmiddle)\bord7\c&HF1BE3A&\3c&HFFFFFF&\fad(!fad_no==1 and 1300 or 300!,!fad_no==1 and 300 or 700!)}m !-10-frame_width! -10 l !-10-frame_width! 10 l !10+frame_width! 10 l !10+frame_width! -10
+Comment: 1,0:00:00.00,0:00:00.00,OPCN,,0,0,0,template line keeptags fxgroup F,!retime("line",-300,0)!{\c&HFFFFFF&\shad2\t(5699,5700,\c&H000000&\shad0)\t(5919,5920,\c&HFFFFFF&\shad2)\t(6109,6110,\c&H000000&\shad0)\move($lcenter,$ltop,!meta.res_x/2-$lwidth/2!,$ltop,0,5486)\fad(500,0)}
+Comment: 0,0:00:00.00,0:00:00.00,OPCN,,0,0,0,template line notext fxgroup F,!retime("line",5400,0)!{\p1\an7\fscy300\pos(!meta.res_x/2!,$lmiddle)\bord7\c&HFCD97F&\3c&HFFFFFF&\t(219,220,\alpha&HFF&)\t(409,410,\alpha&H00&)}m !-10-frame_width! -10 l !-10-frame_width! 10 l !10+frame_width! 10 l !10+frame_width! -10
+Comment: 0,0:00:00.00,0:00:00.00,OPCN,,0,0,0,template line fxgroup G,!retime("line",(fad_no==3 and -300 or 0),0)!{\an3\fn方正FW珍珠体 简繁\b0\fs66\shad2\blur1\pos(960,980)\fad(!fad_no==3 and 300 or 0!,!fad_no==2 and 300 or 0!)}
+Comment: 0,0:00:00.00,0:00:00.00,EDJP,,0,0,0,template line,!retime("line",-200,0)!{\pos($x,$y)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}
+Comment: 0,0:00:00.00,0:00:00.00,EDJP,,0,0,0,template line,!retime("line",-200,0)!!maxloop(remember("edjp_n", math.ceil($lheight/5)-1))!{\pos($x,$y)\c!_G.Yutils.ass.interpolate_coloralpha((j-1)/recall.edjp_n+(j-1)/recall.edjp_n/recall.edjp_n, "&HA35AFE&", "&HCC8297&",  "&HFFAD07&")!\clip($lleft,!$ltop+j*5!,$lright,!$ltop+(j+1)*5!)\fad(300,300)}
+Comment: 0,0:00:00.00,0:00:00.00,EDCN,,0,0,0,template line,!retime("line",-200,0)!{\pos($x,$y)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}
+Comment: 0,0:00:00.00,0:00:00.00,EDCN,,0,0,0,template line,!retime("line",-200,0)!!maxloop(remember("edcn_n", math.ceil($lheight/5)-3))!{\pos($x,$y)\c!_G.Yutils.ass.interpolate_coloralpha((j-1)/recall.edcn_n+(j-1)/recall.edcn_n/recall.edcn_n, "&HA35AFE&", "&HCC8297&",  "&HFFAD07&")!\clip($lleft,!$ltop+j*5!,$lright,!$ltop+(j+1)*5!)\fad(300,300)}
+Comment: 0,0:00:00.00,0:00:00.00,Title_Next,,0,0,0,template line,!maxloop(remember("title_n", math.ceil($lheight/5)-4))!{\pos($x,$y)\c!_G.Yutils.ass.interpolate_coloralpha((j-1)/recall.title_n+(j-1)/recall.title_n/recall.title_n, "&HBD7177&", "&HD18C6F&", "&HED8B26&")!\clip($lleft,!$ltop+j*5!,$lright,!$ltop+(j+1)*5!)\alpha&HFF&\t(0,400,0.8,\alpha&H00&)}
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,----------STAFF----------
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,----------LOGO----------
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,----------OP「色香水」----------
+Comment: 0,0:01:20.51,0:01:23.64,OPJP,A1,0,0,0,karaoke,きっと消えない　{\alpha&HFF&\t(1730,2030,\alpha&H00&)}今日は言えない
+Comment: 0,0:01:23.98,0:01:27.06,OPJP,A2,0,0,0,karaoke,元どおりにはもうできない
+Comment: 0,0:01:27.23,0:01:30.98,OPJP,A3,0,0,0,karaoke,あの頃に　{\alpha&HFF&\t(1680,1980,\alpha&H00&)}君を{\alpha&HFF&\t(2820,3120,\alpha&H00&)}残したまま
+Comment: 0,0:01:44.45,0:01:50.21,OPJP,B1,0,0,0,karaoke,記憶の中では　{\alpha&HFF&\blur10\t(2450,2750,\alpha&H00&\blur0)}晴れ{\alpha&HFF&\blur10\t(3260,3560,\alpha&H00&\blur0)}間の{\alpha&HFF&\blur10\t(4070,4370,\alpha&H00&\blur0)}部屋
+Comment: 0,0:01:50.88,0:01:56.51,OPJP,B2,0,0,0,karaoke,惹かれ合えばサラバ　{\alpha&HFF&\blur10\t(2450,2750,\alpha&H00&\blur0)}知り{\alpha&HFF&\blur10\t(3260,3560,\alpha&H00&\blur0)}たく{\alpha&HFF&\blur10\t(4070,4370,\alpha&H00&\blur0)}ない
+Comment: 0,0:01:57.43,0:02:03.18,OPJP,B3,0,0,0,karaoke,思い出せば今も　{\alpha&HFF&\blur10\t(2450,2750,\alpha&H00&\blur0)}ふわ{\alpha&HFF&\blur10\t(3260,3560,\alpha&H00&\blur0)}っと香{\alpha&HFF&\blur10\t(4070,4370,\alpha&H00&\blur0)}る
+Comment: 0,0:02:03.89,0:02:08.85,OPJP,B4,0,0,0,karaoke,君と僕は同じ　{\alpha&HFF&\blur10\t(2450,2750,\alpha&H00&\blur0)\c&HB45204&}色{\alpha&HFF&\blur10\t(3260,3560,\alpha&H00&\blur0)\c&H325A9B&}香{\alpha&HFF&\blur10\t(4070,4370,\alpha&H00&\blur0)\c&HB03A9B&}水
+Comment: 0,0:02:09.40,0:02:15.57,OPJP,C,0,0,0,karaoke,ほんの少し　背伸びをして歩いた道
+Comment: 0,0:02:15.86,0:02:18.91,OPJP,D,0,0,0,karaoke,{\fad(300,0)\pos(480,1040)\c&H000000&}ビードロの靴
+Comment: 0,0:02:15.86,0:02:18.91,OPJP,D,0,0,0,karaoke,{\c&H1F20CC&\t(1397,1398,\alpha&HFF&\fad(300,0)\pos(480,1040)}ビードロの靴
+Comment: 0,0:02:15.86,0:02:18.91,OPJP,D,0,0,0,karaoke,{\fad(300,0)\pos(1440,1040)\c&H000000&}移り変わる季節模様
+Comment: 0,0:02:15.86,0:02:18.91,OPJP,D,0,0,0,karaoke,{\c&H1F20CC&\t(729,730,\alpha&HFF&\fad(300,0)\pos(1440,1040)}移り変わる季節模様
+Comment: 0,0:02:18.91,0:02:19.95,OPJP,D,0,0,0,karaoke,{\fscy100\t(26,860,\fscy57.84)\fscx100\t(26,860,\fscx57.84)\c&H000000&\move(480,1040,673.9,819.33,26,860)}ビードロの靴
+Comment: 0,0:02:18.91,0:02:19.95,OPJP,D,0,0,0,karaoke,{\fscy100\t(26,860,\fscy57.84)\fscx100\t(26,860,\fscx57.84)\c&H000000&\move(1440,1040,1229.2,819.33,26,860)}移り変わる季節模様
+Comment: 0,0:02:19.95,0:02:22.99,OPJP,D,0,0,0,karaoke,{\fscx57.84\fscy57.84\c&H000000&\move(673.9,819.33,673.9,546.75,29,279)\fad(0,1000)}ビードロの靴
+Comment: 0,0:02:19.95,0:02:22.99,OPJP,D,0,0,0,karaoke,{\fscx57.84\fscy57.84\c&H000000&\move(1229.2,819.33,1229.2,1059.65,29,279)\fad(0,1000)}移り変わる季節模様
+Comment: 0,0:02:22.12,0:02:25.37,OPJP,E1,0,0,0,karaoke,きっと消えない　{\alpha&HFF&\blur10\t(1640,1940,\alpha&H00&\blur0)}今日は言えない
+Comment: 0,0:02:25.58,0:02:28.62,OPJP,E2,0,0,0,karaoke,元どおりにはもうできない
+Comment: 0,0:02:28.83,0:02:35.00,OPJP,F,0,0,0,karaoke,あの頃に隠した　{\t(2501,3294,\c&H523A98&)\t(4127,4128,\c&HFFFFFF&)\t(4544,4545,\c&HF7EA53&)\t(4960,4961,\c&HFFFFFF&)\t(5378,5379,\c&HF7EA53&)\t(5699,5700,\c&H000000&\shad0)\t(5919,5920,\c&HFFFFFF&\shad2)\t(6109,6110,\c&H000000&\shad0)}本物{\c&HFFFFFF&\t(5699,5700,\c&H000000&\shad0)\t(5919,5920,\c&HFFFFFF&\shad2)\t(6109,6110,\c&H000000&\shad0)}はどこ
+Comment: 0,0:02:35.00,0:02:38.05,OPJP,G1,0,0,0,karaoke,怒ってくれない　解ってくれない
+Comment: 0,0:02:38.05,0:02:42.35,OPJP,G2,0,0,0,karaoke,思ってもただ　募ってしまうだけ
+Comment: 0,0:02:43.01,0:02:50.02,OPJP,G3,0,0,0,karaoke,懐かしい匂いと　この歌が残る
+Comment: 0,0:01:20.51,0:01:23.64,OPCN,A1,0,0,0,karaoke,回忆不会消逝  {\alpha&HFF&\t(1730,2030,\alpha&H00&)}只是不愿言及
+Comment: 0,0:01:23.98,0:01:27.06,OPCN,A2,0,0,0,karaoke,一如往昔不过是忆如往昔
+Comment: 0,0:01:27.23,0:01:30.98,OPCN,A3,0,0,0,karaoke,只因我那时  {\alpha&HFF&\t(1680,1980,\alpha&H00&)}把你{\alpha&HFF&\t(2820,3120,\alpha&H00&)}留在原地
+Comment: 0,0:01:44.45,0:01:50.21,OPCN,B1,0,0,0,karaoke,彼时阳光透过云隙  {\alpha&HFF&\blur10\t(2450,2750,\alpha&H00&\blur0)}缓缓{\alpha&HFF&\blur10\t(3260,3560,\alpha&H00&\blur0)}洒落{\alpha&HFF&\blur10\t(4070,4370,\alpha&H00&\blur0)}房间满地
+Comment: 0,0:01:50.88,0:01:56.51,OPCN,B2,0,0,0,karaoke,你我虽曾心有灵犀  {\alpha&HFF&\blur10\t(2450,2750,\alpha&H00&\blur0)}却都{\alpha&HFF&\blur10\t(3260,3560,\alpha&H00&\blur0)}只愿{\alpha&HFF&\blur10\t(4070,4370,\alpha&H00&\blur0)}保持神秘
+Comment: 0,0:01:57.43,0:02:03.18,OPCN,B3,0,0,0,karaoke,回忆悄悄浮现至今  {\alpha&HFF&\blur10\t(2450,2750,\alpha&H00&\blur0)}芬芳{\alpha&HFF&\blur10\t(3260,3560,\alpha&H00&\blur0)}缕缕{\alpha&HFF&\blur10\t(4070,4370,\alpha&H00&\blur0)}宛若涟漪
+Comment: 0,0:02:03.89,0:02:08.85,OPCN,B4,0,0,0,karaoke,原来你我早已染上  {\alpha&HFF&\blur10\t(2450,2750,\alpha&H00&\blur0)\c&HB45204&}彼此{\alpha&HFF&\blur10\t(3260,3560,\alpha&H00&\blur0)\c&H325A9B&}同色{\c&H40C9F6&}的{\alpha&HFF&\blur10\t(4070,4370,\alpha&H00&\blur0)\c&HB03A9B&}香水气
+Comment: 0,0:02:09.40,0:02:15.57,OPCN,C,0,0,0,karaoke,踮起脚尖些许  沿途留下一路印迹
+Comment: 0,0:02:15.86,0:02:18.91,OPCN,D,0,0,0,karaoke,{\fad(300,0)\pos(480,60)\c&H000000&}玻璃鞋上走过
+Comment: 0,0:02:15.86,0:02:18.91,OPCN,D,0,0,0,karaoke,{\c&H1F20CC&\t(729,730,\alphaFF)\fad(300,0)\pos(480,60)}玻璃鞋上走过
+Comment: 0,0:02:15.86,0:02:18.91,OPCN,D,0,0,0,karaoke,{\fad(300,0)\pos(1440,60)\c&H000000&}看那四时流转更替
+Comment: 0,0:02:15.86,0:02:18.91,OPCN,D,0,0,0,karaoke,{\c&H1F20CC&\t(1397,1398,\alphaFF)\fad(300,0)\pos(1440,60)}看那四时流转更替
+Comment: 0,0:02:18.91,0:02:19.95,OPCN,D,0,0,0,karaoke,{\fscy100\t(26,860,\fscy58.12)\fscx100\t(26,860,\fscx58.12)\c&H000000&\move(480,60,673.69,276.69,26,860)}玻璃鞋上走过
+Comment: 0,0:02:18.91,0:02:19.95,OPCN,D,0,0,0,karaoke,{\fscy100\t(26,860,\fscy58.12)\fscx100\t(26,860,\fscx58.12)\c&H000000&\move(1440,60,1231.63,276.69,26,860)}看那四时流转更替
+Comment: 0,0:02:19.95,0:02:22.99,OPCN,D,0,0,0,karaoke,{\fscx58.12\fscy58.12\c&H000000&\move(673.69,276.69,673.69,5.86,29,279)\fad(0,1000)}玻璃鞋上走过
+Comment: 0,0:02:19.95,0:02:22.99,OPCN,D,0,0,0,karaoke,{\fscx58.12\fscy58.12\c&H000000&\move(1231.63,276.69,1231.63,517.01,29,279)\fad(0,1000)}看那四时流转更替
+Comment: 0,0:02:22.12,0:02:25.37,OPCN,E1,0,0,0,karaoke,回忆不会消逝  {\alpha&HFF&\blur10\t(1640,1940,\alpha&H00&\blur0)}只是不愿言及
+Comment: 0,0:02:25.58,0:02:28.62,OPCN,E2,0,0,0,karaoke,一如往昔不过是忆如往昔
+Comment: 0,0:02:28.83,0:02:35.00,OPCN,F,0,0,0,karaoke,心思藏进过去  {\t(2501,3294,\c&H523A98&)\t(4127,4128,\c&HFFFFFF&)\t(4544,4545,\c&HF7EA53&)\t(4960,4961,\c&HFFFFFF&)\t(5378,5379,\c&HF7EA53&)\t(5699,5700,\c&H000000&\shad0)\t(5919,5920,\c&HFFFFFF&\shad2)\t(6109,6110,\c&H000000&\shad0)}真假虚实{\c&HFFFFFF&\t(5699,5700,\c&H000000&\shad0)\t(5919,5920,\c&HFFFFFF&\shad2)\t(6109,6110,\c&H000000&\shad0)}要如何寻觅
+Comment: 0,0:02:35.00,0:02:38.05,OPCN,G1,0,0,0,karaoke,若是不因我气  亦是不知我心
+Comment: 0,0:02:38.05,0:02:42.35,OPCN,G2,0,0,0,karaoke,思来想去只能  任凭情绪堆积
+Comment: 0,0:02:43.01,0:02:50.02,OPCN,G3,0,0,0,karaoke,唯有这熟悉香气  随歌声与我相依
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,----------ED「約束」----------
+Comment: 0,0:22:19.91,0:22:25.61,EDJP,,0,0,0,karaoke,久しぶりにさ　夢を見たんだ
+Comment: 0,0:22:26.05,0:22:30.32,EDJP,,0,0,0,karaoke,月が綺麗な夜に
+Comment: 0,0:22:32.21,0:22:37.85,EDJP,,0,0,0,karaoke,「また明日ね」と　手を振る君の
+Comment: 0,0:22:38.10,0:22:42.34,EDJP,,0,0,0,karaoke,姿が名残惜しくて
+Comment: 0,0:22:44.29,0:22:49.89,EDJP,,0,0,0,karaoke,長袖のシャツに　見覚えある道
+Comment: 0,0:22:50.16,0:22:54.12,EDJP,,0,0,0,karaoke,少し寂しそうに見えた
+Comment: 0,0:22:55.57,0:23:01.35,EDJP,,0,0,0,karaoke,胸が苦しくなるけど暖かい
+Comment: 0,0:23:02.64,0:23:07.30,EDJP,,0,0,0,karaoke,気づいた　冬の朝だ
+Comment: 0,0:23:08.97,0:23:12.90,EDJP,,0,0,0,karaoke,約束するよ
+Comment: 0,0:23:14.33,0:23:20.57,EDJP,,0,0,0,karaoke,近くにいるから見えないものほど
+Comment: 0,0:23:21.24,0:23:25.12,EDJP,,0,0,0,karaoke,大事にするよ
+Comment: 0,0:23:26.60,0:23:30.68,EDJP,,0,0,0,karaoke,言葉にできないんだけどね
+Comment: 0,0:22:19.91,0:22:25.61,EDCN,,0,0,0,karaoke,已是许久未见  而今梦境重现
+Comment: 0,0:22:26.05,0:22:30.32,EDCN,,0,0,0,karaoke,降临在这片如水月夜
+Comment: 0,0:22:32.21,0:22:37.85,EDCN,,0,0,0,karaoke,道一声「明天见」  你挥挥手走远
+Comment: 0,0:22:38.10,0:22:42.34,EDCN,,0,0,0,karaoke,那道身影我不舍分别
+Comment: 0,0:22:44.29,0:22:49.89,EDCN,,0,0,0,karaoke,你穿着长袖衫  走过熟悉的街
+Comment: 0,0:22:50.16,0:22:54.12,EDCN,,0,0,0,karaoke,稍稍显得有些顾影自怜
+Comment: 0,0:22:55.57,0:23:01.35,EDCN,,0,0,0,karaoke,胸中隐隐作痛却也暖意绵绵
+Comment: 0,0:23:02.64,0:23:07.30,EDCN,,0,0,0,karaoke,在这个冬日清晨  悄然发觉
+Comment: 0,0:23:08.97,0:23:12.90,EDCN,,0,0,0,karaoke,在此与你相约
+Comment: 0,0:23:14.33,0:23:20.57,EDCN,,0,0,0,karaoke,越近在眼前越好似天边
+Comment: 0,0:23:21.24,0:23:25.12,EDCN,,0,0,0,karaoke,定会珍藏心间
+Comment: 0,0:23:26.60,0:23:30.68,EDCN,,0,0,0,karaoke,无须言表自会化作诗篇
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,----------TITLE-----------
+Comment: 0,0:23:36.60,0:23:40.02,Title_Next,,0,0,0,karaoke,所以说，没事的。
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,----------SCREEN-----------
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,----------TEXT-CN-----------
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,----------TEXT-JP-----------
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,----------FX-----------
+
+Dialogue: 0,0:01:31.52,0:01:36.99,Staff,,0,0,0,,{\b1\bord0.2\frz2\fax-0.07\fad(200,1000)}本字幕由星空字幕组制作　并基于AGPLv3协议许可使用
+Dialogue: 0,0:01:31.52,0:01:36.99,Staff,,0,0,0,,{\p1\an4\fscx840\fscy200\frz3\pos(560,120)\fad(200,1000)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 0,0:01:31.52,0:01:36.99,Staff,,0,0,0,,{\p1\an4\fscx870\fscy200\frz3\pos(1100,100)\fad(200,1000)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 0,0:01:31.52,0:01:36.99,Staff,,0,0,0,,{\fscy100\t(25,5447,\fscy107.02)\fscx100\t(25,5447,\fscx107.02)\alpha&HFF&\t(0,200,\alpha&H00&)\t(4460,5460,\alpha&HFF&)\b1\bord1\frz4.5\fax-0.07\fs80\move(233.86,239.73,179.49,219.18,25,5447)}蕊先生
+Dialogue: 0,0:01:31.52,0:01:36.99,Staff,,0,0,0,,{\fscy100\t(25,5447,\fscy107.02)\fscx100\t(25,5447,\fscx107.02)\alpha&HFF&\t(0,200,\alpha&H00&)\t(4460,5460,\alpha&HFF&)\an1\fn743F3BBE\fs35\fsp2\frz4.5\bord0.2\move(212.38,220.11,156.5,198.19,25,5447)}Translation / Editing
+Dialogue: 0,0:01:31.52,0:01:36.99,Staff,,0,0,0,,{\fscy100\t(25,5447,\fscy107.02)\alpha&HFF&\t(0,200,\alpha&H00&)\t(4460,5460,\alpha&HFF&)\p1\an4\fscx490\t(25,5447,\fscx524.38)\frz4.5\move(215.49,237.86,159.83,217.18,25,5447)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 0,0:01:31.52,0:01:36.99,Staff,,0,0,0,,{\fscy100\t(25,5447,\fscy107.02)\alpha&HFF&\t(0,200,\alpha&H00&)\t(4460,5460,\alpha&HFF&)\p1\an4\fscx310\t(25,5447,\fscx331.75)\frz4.5\move(386.06,223.29,342.37,201.59,25,5447)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 0,0:01:31.52,0:01:36.99,Staff,,0,0,0,,{\fscy100\t(25,5447,\fscy107.02)\fscx100\t(25,5447,\fscx107.02)\alpha&HFF&\t(0,200,\alpha&H00&)\t(4460,5460,\alpha&HFF&)\b1\bord1\frz4.5\fax-0.07\fs80\move(662.43,239.73,641.63,219.18,25,5447)}Needfire-Gl
+Dialogue: 0,0:01:31.52,0:01:36.99,Staff,,0,0,0,,{\fscy100\t(25,5447,\fscy107.02)\fscx100\t(25,5447,\fscx107.02)\alpha&HFF&\t(0,200,\alpha&H00&)\t(4460,5460,\alpha&HFF&)\an1\fn743F3BBE\fs35\fsp2\frz4.5\bord0.2\move(640.95,220.11,618.65,198.19,25,5447)}Timing / Quality Control
+Dialogue: 0,0:01:31.52,0:01:36.99,Staff,,0,0,0,,{\fscy100\t(25,5447,\fscy107.02)\alpha&HFF&\t(0,200,\alpha&H00&)\t(4460,5460,\alpha&HFF&)\p1\an4\fscx280\t(25,5447,\fscx299.64)\frz4.5\move(644.06,237.86,621.97,217.18,25,5447)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 0,0:01:31.52,0:01:36.99,Staff,,0,0,0,,{\fscy100\t(25,5447,\fscy107.02)\alpha&HFF&\t(0,200,\alpha&H00&)\t(4460,5460,\alpha&HFF&)\p1\an4\fscx650\t(25,5447,\fscx695.6)\frz4.5\move(759.06,228.86,745.04,207.55,25,5447)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 0,0:01:31.52,0:01:36.99,Staff,,0,0,0,,{\fscy100\t(25,5447,\fscy107.02)\fscx100\t(25,5447,\fscx107.02)\alpha&HFF&\t(0,200,\alpha&H00&)\t(4460,5460,\alpha&HFF&)\b1\bord1\frz4.5\fax-0.07\fs80\move(1135.29,239.73,1147.66,219.18,25,5447)}Mekozoko
+Dialogue: 0,0:01:31.52,0:01:36.99,Staff,,0,0,0,,{\fscy100\t(25,5447,\fscy107.02)\fscx100\t(25,5447,\fscx107.02)\alpha&HFF&\t(0,200,\alpha&H00&)\t(4460,5460,\alpha&HFF&)\an1\fn743F3BBE\fs35\fsp2\frz4.5\bord0.2\move(1113.81,220.11,1124.67,198.19,25,5447)}Typesetting / Text Effect
+Dialogue: 0,0:01:31.52,0:01:36.99,Staff,,0,0,0,,{\fscy100\t(25,5447,\fscy107.02)\alpha&HFF&\t(0,200,\alpha&H00&)\t(4460,5460,\alpha&HFF&)\p1\an4\fscx450\t(25,5447,\fscx481.57)\frz4.5\move(1116.92,237.86,1128,217.18,25,5447)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 0,0:01:31.52,0:01:36.99,Staff,,0,0,0,,{\fscy100\t(25,5447,\fscy107.02)\alpha&HFF&\t(0,200,\alpha&H00&)\t(4460,5460,\alpha&HFF&)\p1\an4\fscx500\t(25,5447,\fscx535.08)\frz4.5\move(1279.06,225.86,1301.52,204.34,25,5447)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 0,0:01:31.52,0:01:36.99,Staff,,0,0,0,,{\fscy100\t(25,5447,\fscy107.02)\fscx100\t(25,5447,\fscx107.02)\alpha&HFF&\t(0,200,\alpha&H00&)\t(4460,5460,\alpha&HFF&)\b1\bord1\frz4.5\fax-0.07\fs80\move(1583.86,239.73,1627.7,219.18,25,5447)}想换Whitley
+Dialogue: 0,0:01:31.52,0:01:36.99,Staff,,0,0,0,,{\fscy100\t(25,5447,\fscy107.02)\fscx100\t(25,5447,\fscx107.02)\alpha&HFF&\t(0,200,\alpha&H00&)\t(4460,5460,\alpha&HFF&)\an1\fn743F3BBE\fs35\fsp2\frz4.5\bord0.2\move(1662.38,220.11,1704.72,198.19,25,5447)}Encoding
+Dialogue: 0,0:01:31.52,0:01:36.99,Staff,,0,0,0,,{\fscy100\t(25,5447,\fscy107.02)\alpha&HFF&\t(0,200,\alpha&H00&)\t(4460,5460,\alpha&HFF&)\p1\an4\fscx400\t(25,5447,\fscx428.06)\frz4.5\move(1660.06,237.86,1702.23,217.18,25,5447)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 1,0:01:31.52,0:01:43.20,Logo,,0,0,0,,{\fscy100\t(25,11662,\fscy116.16)\fscx100\t(25,11662,\fscx116.16)\an1\fn743F3BBE\fs35\fsp2\frz4.5\bord0.2\alpha&HFF&\t(0,200,\alpha&H00&)\move(982.67,780,986.86,815,25,11662)}Presented  by XKsub
+Dialogue: 0,0:01:31.52,0:01:43.20,Logo,,0,0,0,,{\fscy100\t(25,11662,\fscy116.16)\fscx100\t(25,11662,\fscx116.16)\alpha&HFF&\t(5000,8000,\alpha&H00&)\an1\fn743F3BBE\fs35\fsp2\frz4.5\blur3\c&HB70007&\move(982.67,780,990.86,815,25,11662)}Presented  by XKsub
+Dialogue: 0,0:01:31.52,0:01:43.20,Logo,,0,0,0,,{\fscy100\t(25,11662,\fscy116.16)\fscx100\t(25,11662,\fscx116.16)\alpha&HFF&\t(5000,8000,\alpha&H00&)\an1\fn743F3BBE\fs35\fsp2\frz4.5\blur3\c&H3D01FF&\move(982.67,780,982.86,815,25,11662)}Presented  by XKsub
+Dialogue: 1,0:01:43.20,0:01:43.75,Logo,,0,0,0,,{\fscy116.16\fscx116.16\an1\fn743F3BBE\fs35\fsp2\frz4.5\bord0.2\clip(0,750,1920,830)\t(482,483,\clip(632,750,1293,830))\t(523,524,\clip(796,750,1130,830))\t(224,524,\alpha90)\pos(986.86,815)}Presented  by XKsub
+Dialogue: 0,0:01:43.20,0:01:43.75,Logo,,0,0,0,,{\fscy116.16\fscx116.16\an1\fn743F3BBE\fs35\fsp2\frz4.5\blur3\c&HB70007&\clip(0,750,1920,830)\t(440,441,\clip(468,750,1458,830))\t(482,483,\clip(632,750,1293,830))\t(523,524,\clip(796,750,1130,830))\t(224,524,\alpha90)\move(990.86,815,1320.86,815)}Presented  by XKsub
+Dialogue: 0,0:01:43.20,0:01:43.75,Logo,,0,0,0,,{\fscy116.16\fscx116.16\an1\fn743F3BBE\fs35\fsp2\frz4.5\blur3\c&H3D01FF&\clip(0,750,1920,830)\t(482,483,\clip(632,750,1293,830))\t(523,524,\clip(796,750,1130,830))\t(224,524,\alpha90)\move(982.86,815,652.86,815)}Presented  by XKsub
+Dialogue: 1,0:01:31.52,0:01:43.20,Logo,,0,0,0,,{\fscy100\t(25,11662,\fscy116.16)\p1\an4\fscx430\t(25,11662,\fscx499.48)\frz4.5\alpha&HFF&\t(0,200,\alpha&H00&)\move(982,795,986.08,832.42,25,11662)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 0,0:01:31.52,0:01:43.20,Logo,,0,0,0,,{\fscy100\t(25,11662,\fscy116.16)\p1\an4\fscx430\t(25,11662,\fscx499.48)\frz4.5\alpha&HFF&\t(5000,8000,\alpha&H00&)\blur3\c&HB70007&\move(982,795,990.08,832.42,25,11662)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 0,0:01:31.52,0:01:43.20,Logo,,0,0,0,,{\fscy100\t(25,11662,\fscy116.16)\p1\an4\fscx430\t(25,11662,\fscx499.48)\frz4.5\alpha&HFF&\t(5000,8000,\alpha&H00&)\blur3\c&H3D01FF&\move(982,795,982.08,832.42,25,11662)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 1,0:01:43.20,0:01:43.75,Logo,,0,0,0,,{\fscy116.16\p1\an4\fscx499.48\frz4.5\clip(0,750,1920,850)\t(523,524,\clip(796,750,1130,850))\t(224,524,\alpha90)\pos(986.08,832.42)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 0,0:01:43.20,0:01:43.75,Logo,,0,0,0,,{\fscy116.16\p1\an4\fscx499.48\frz4.5\blur3\c&HB70007&\t(224,524,\alpha90)\clip(0,750,1920,850)\t(482,483,\clip(632,750,1293,850))\t(523,524,\clip(796,750,1130,850))\move(990.08,832.42,1320.08,832.42)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 0,0:01:43.20,0:01:43.75,Logo,,0,0,0,,{\fscy116.16\p1\an4\fscx499.48\frz4.5\blur3\c&H3D01FF&\t(224,524,\alpha90)\clip(0,750,1920,850)\t(523,524,\clip(796,750,1130,850))\move(982.08,832.42,652.08,832.42)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 1,0:01:31.52,0:01:43.20,Logo,,0,0,0,,{\fscy100\t(25,11662,\fscy116.16)\p1\an4\fscx320\t(25,11662,\fscx371.71)\frz4.5\alpha&HFF&\t(0,200,\alpha&H00&)\move(1170,779,1204.46,813.84,25,11662)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 0,0:01:31.52,0:01:43.20,Logo,,0,0,0,,{\fscy100\t(25,11662,\fscy116.16)\p1\an4\fscx320\t(25,11662,\fscx371.71)\frz4.5\alpha&HFF&\t(5000,8000,\alpha&H00&)\blur3\c&HB70007&\move(1170,779,1208.46,813.84,25,11662)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 0,0:01:31.52,0:01:43.20,Logo,,0,0,0,,{\fscy100\t(25,11662,\fscy116.16)\p1\an4\fscx320\t(25,11662,\fscx371.71)\frz4.5\alpha&HFF&\t(5000,8000,\alpha&H00&)\blur3\c&H3D01FF&\move(1170,779,1200.46,813.84,25,11662)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 1,0:01:43.20,0:01:43.75,Logo,,0,0,0,,{\fscy116.16\p1\an4\fscx371.71\frz4.5\t(224,524,\alpha90)\clip(0,750,1920,850)\t(482,483,\clip(632,750,1293,850))\t(523,524,\clip(796,750,1130,850))\pos(1204.46,813.84)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 0,0:01:43.20,0:01:43.75,Logo,,0,0,0,,{\fscy116.16\p1\an4\fscx371.71\frz4.5\blur3\c&HB70007&\t(224,524,\alpha90)\clip(0,780,1920,1000)\t(440,441,\clip(468,780,1458,1000))\t(482,483,\clip(632,780,1293,1000))\t(523,524,\clip(796,780,1130,1000))\move(1208.46,813.84,1538.46,813.84)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 0,0:01:43.20,0:01:43.75,Logo,,0,0,0,,{\fscy116.16\p1\an4\fscx371.71\frz4.5\blur3\c&H3D01FF&\move(1200.46,813.84,870.46,813.84)}m 0 0 l 30 0 l 30 2 l 0 2
+Dialogue: 1,0:01:31.52,0:01:43.20,Logo,,0,0,0,,{\fscy100\t(25,11662,\fscy115.28)\fscx100\t(25,11662,\fscx115.28)\alpha&HFF&\t(0,200,\alpha&H00&)\an8\b1\bord1\fs150\frz3\fax-0.07\move(960,790,958.1,817.94,25,11662)}堀与宫村
+Dialogue: 0,0:01:31.52,0:01:43.20,Logo,,0,0,0,,{\fscy100\t(25,11662,\fscy115.28)\fscx100\t(25,11662,\fscx115.28)\alpha&HFF&\t(5000,8000,\alpha&H00&)\an8\b1\bord1\fs150\blur5\frz3\fax-0.07\move(960,790,970.1,817.94,25,11662)\c&HCC282E&\3c&HCC282E&}堀与宫村
+Dialogue: 0,0:01:31.52,0:01:43.20,Logo,,0,0,0,,{\fscy100\t(25,11662,\fscy115.28)\fscx100\t(25,11662,\fscx115.28)\alpha&HFF&\t(5000,8000,\alpha&H00&)\an8\b1\bord1\fs150\blur5\frz3\fax-0.07\move(960,790,946.1,817.94,25,11662)\c&H7753EE&\3c&H7753EE&}堀与宫村
+Dialogue: 1,0:01:43.20,0:01:43.75,Logo,,0,0,0,,{\fscy115.28\fscx115.28\an8\b1\bord1\fs150\pos(958.1,817.94)\clip(680,792.308,1229.231,1000)\t(523,524,\clip(796,792.308,1130,1000))\t(224,524,\alpha90)\frz3\fax-0.07}堀与宫村
+Dialogue: 0,0:01:43.20,0:01:43.75,Logo,,0,0,0,,{\fscy115.28\fscx115.28\an8\b1\bord1\fs150\blur5\move(972,817.94,1302,817.94)\c&HCC282E&\3c&HCC282E&\t(224,524,\alpha90)\clip(0,780,1920,1000)\t(440,441,\clip(468,780,1458,1000))\t(482,483,\clip(632,780,1293,1000))\t(523,524,\clip(796,780,1130,1000))\frz3\fax-0.07}堀与宫村
+Dialogue: 0,0:01:43.20,0:01:43.75,Logo,,0,0,0,,{\fscy115.28\fscx115.28\an8\b1\bord1\fs150\blur5\move(944,817.94,614,817.94)\c&H7753EE&\3c&H7753EE&\t(224,524,\alpha90)\clip(0,780,1920,1000)\t(440,441,\clip(468,780,1458,1000))\t(482,483,\clip(632,780,1293,1000))\t(523,524,\clip(796,780,1130,1000))\frz3\fax-0.07}堀与宫村
+Dialogue: 0,0:02:55.69,0:03:01.03,Title,,0,0,0,,{\an1\c&HAC92EF&\frz7\kf110\pos(998,165)}每个人，并非只有一面。
+Dialogue: 0,0:00:16.49,0:00:18.49,Screen,,0,0,0,,{\an2\b1\pos(865,210)\fax-0.03\frz1.871\bord6\c&H9D56EC&\3c&H6BD7F2&}勇气百分{\c&HEEC973&}百{\c&H9D56EC&} ♪ {\c&HB9EF9E&}飓风{\c&HE1ADF4&}之星
+Dialogue: 0,0:00:16.49,0:00:18.49,Screen,,0,0,0,,{\an2\b1\pos(865,210)\fax-0.03\frz1.871\bord3\c&H9D56EC&\3c&HFFFFFF&}勇气百分{\c&HEEC973&}百{\c&H9D56EC&} ♪ {\c&HB9EF9E&}飓风{\c&HE1ADF4&}之星
+Dialogue: 0,0:04:58.40,0:05:02.40,Screen,,0,0,0,,{\an3\fn45763B8F\fs100\fsp5\c&H041634&\pos(1921,341)}成绩优异者
+Dialogue: 0,0:05:02.40,0:05:10.41,Screen,,0,0,0,,{\an2\fn45763B8F\fs32\fsp7\c&H041634&\pos(960,136)}成绩优异者·第二学年
+Dialogue: 0,0:13:01.92,0:13:05.93,Screen,,0,0,0,,{\fscy93.89\t(22,3984,\fscy100)\fscx93.89\t(22,3984,\fscx100)\an2\fn45763B8F\fs80\fsp5\c&H17579A&\frx10\fax-0.1\frz343\move(1366.24,239.58,1390,220,22,3984)}财务报告书
+Dialogue: 1,0:00:06.81,0:00:08.48,CHI,,0,0,0,,今天真是帮大忙了
+Dialogue: 1,0:00:09.11,0:00:12.49,CHI,,0,0,0,,最近创太特别能吃  每次采购都很愁人
+Dialogue: 1,0:00:12.49,0:00:15.16,CHI,,0,0,0,,哈哈  正在长身体嘛
+Dialogue: 1,0:00:18.49,0:00:22.37,CHI,,0,0,0,,来吧  勇气十足的飓风之星
+Dialogue: 1,0:00:22.37,0:00:25.00,CHI,,0,0,0,,时间到了  我们这就出发
+Dialogue: 1,0:00:25.00,0:00:28.00,CHI,,0,0,0,,相信伙伴  我们勇往直前
+Dialogue: 1,0:00:28.00,0:00:28.75,CHI,,0,0,0,,一定…
+Dialogue: 1,0:00:29.21,0:00:30.26,CHI,,0,0,0,,是动漫歌啊
+Dialogue: 1,0:00:31.84,0:00:33.42,CHI,,0,0,0,,我…我唱出来了?
+Dialogue: 1,0:00:33.42,0:00:36.51,CHI,,0,0,0,,嗯  堀同学歌唱得真好啊
+Dialogue: 1,0:00:36.80,0:00:38.51,CHI,,0,0,0,,才没这回事呢
+Dialogue: 1,0:00:38.89,0:00:40.68,CHI,,0,0,0,,而且我居然在外面唱起来了
+Dialogue: 1,0:00:41.56,0:00:42.81,CHI,,0,0,0,,可得注意了
+Dialogue: 1,0:00:42.81,0:00:44.85,CHI,,0,0,0,,这有什么  喜欢动漫歌而已嘛
+Dialogue: 1,0:00:45.44,0:00:48.52,CHI,,0,0,0,,我说不上喜欢  是创太喜欢
+Dialogue: 1,0:00:49.23,0:00:53.03,CHI,,0,0,0,,他还有CD  听得多了我也就跟着记住了
+Dialogue: 1,0:00:53.78,0:00:56.53,CHI,,0,0,0,,堀同学呢?  你喜欢听什么歌
+Dialogue: 1,0:00:57.20,0:00:59.70,CHI,,0,0,0,,我吗?  我喜欢…
+Dialogue: 1,0:01:00.74,0:01:03.58,CHI,,0,0,0,,我…我竟然对流行歌一无所知
+Dialogue: 1,0:01:03.58,0:01:05.79,CHI,,0,0,0,,动漫歌倒是能张口就来
+Dialogue: 1,0:01:10.17,0:01:11.34,CHI,,0,0,0,,我回来了
+Dialogue: 1,0:01:12.26,0:01:13.46,CHI,,0,0,0,,你回来啦
+Dialogue: 1,0:01:15.59,0:01:17.72,CHI,,0,0,0,,咦  妈妈?
+Dialogue: 1,0:01:17.72,0:01:18.80,CHI,,0,0,0,,嗨~
+Dialogue: 1,0:02:50.77,0:02:55.02,CHI,,0,0,0,,这样啊  所以最近都是那位哥哥在陪你玩啊
+Dialogue: 1,0:02:55.02,0:02:56.07,CHI,,0,0,0,,嗯  是
+Dialogue: 1,0:02:56.65,0:02:58.95,CHI,,0,0,0,,哥哥总是陪我一起玩
+Dialogue: 1,0:02:58.95,0:03:01.03,CHI,,0,0,0,,还给我买了图画书呢
+Dialogue: 1,0:03:01.03,0:03:03.03,CHI,,0,0,0,,哇  真是太好了
+Dialogue: 1,0:03:03.78,0:03:05.28,CHI,,0,0,0,,京子也真不赖嘛
+Dialogue: 1,0:03:05.70,0:03:07.54,CHI,,0,0,0,,他人怎么样?  帅不帅?
+Dialogue: 1,0:03:09.29,0:03:13.92,CHI,,0,0,0,,他啊  就像是侦探故事里的犯人那样的黑衣人
+Dialogue: 1,0:03:18.59,0:03:22.22,CHI,,0,0,0,,京子  人家那么照顾你  怎么能这么说呢
+Dialogue: 1,0:03:22.22,0:03:23.55,CHI,,0,0,0,,可是…
+Dialogue: 1,0:03:24.93,0:03:27.85,CHI,,0,0,0,,真想和他单独聊一聊啊
+Dialogue: 1,0:03:28.47,0:03:30.31,CHI,,0,0,0,,你想和他单独聊什么啊
+Dialogue: 1,0:03:30.85,0:03:32.06,CHI,,0,0,0,,好了  可以啦
+Dialogue: 1,0:03:32.48,0:03:35.90,CHI,,0,0,0,,啊  真舒服啊  谢谢
+Dialogue: 1,0:03:36.90,0:03:39.07,CHI,,0,0,0,,所以呢  那孩子叫什么?
+Dialogue: 1,0:03:39.40,0:03:39.78,CHI,,0,0,0,,诶?
+Dialogue: 1,0:03:40.40,0:03:41.32,CHI,,0,0,0,,你的犯人同学
+Dialogue: 1,0:03:43.07,0:03:44.82,CHI,,0,0,0,,他叫宫村…
+Dialogue: 1,0:03:45.12,0:03:46.33,CHI,,0,0,0,,宫村君?
+Dialogue: 1,0:03:46.33,0:03:49.33,CHI,,0,0,0,,嗯  宫村…  宫…
+Dialogue: 1,0:03:50.33,0:03:53.29,CHI,,0,0,0,,宫村他名字…叫什么来着?
+Dialogue: 1,0:03:58.88,0:03:59.55,CHI,,0,0,0,,真完蛋
+Dialogue: 1,0:04:00.26,0:04:03.34,CHI,,0,0,0,,宫村来我家做客明明有一段时间了
+Dialogue: 1,0:04:03.84,0:04:05.76,CHI,,0,0,0,,我竟然连他的名字都不知道
+Dialogue: 1,0:04:07.01,0:04:09.77,CHI,,0,0,0,,点名册老师是会带走的啊
+Dialogue: 1,0:04:13.60,0:04:15.56,CHI,,0,0,0,,干脆  直接找他问好了
+Dialogue: 1,0:04:18.77,0:04:21.69,CHI,,0,0,0,,宫村啊  你叫什么名字呀?
+Dialogue: 1,0:04:21.69,0:04:22.49,CHI,,0,0,0,,啥?
+Dialogue: 1,0:04:23.40,0:04:26.49,CHI,,0,0,0,,不可以啊  这可是万万不该做的事啊
+Dialogue: 1,0:04:26.95,0:04:28.16,CHI,,0,0,0,,去换衣服吧
+Dialogue: 1,0:04:30.37,0:04:32.91,CHI,,0,0,0,,宫村  今天体育课
+Dialogue: 1,0:04:32.91,0:04:34.21,CHI,,0,0,0,,记得是要一起上
+Dialogue: 1,0:04:34.92,0:04:35.58,CHI,,0,0,0,,切
+Dialogue: 1,0:04:35.58,0:04:36.13,CHI,,0,0,0,,嗯?
+Dialogue: 1,0:04:36.58,0:04:40.05,CHI,,0,0,0,,倒是来个人叫一下他名字啊  真是没用
+Dialogue: 1,0:04:40.05,0:04:43.05,CHI,,0,0,0,,哇啊啊啊  堀同学在偷看!
+Dialogue: 1,0:04:43.55,0:04:44.63,CHI,,0,0,0,,堀同学?
+Dialogue: 1,0:04:45.13,0:04:48.72,CHI,,0,0,0,,小堀  你欲求不满吗  竟然还去偷看
+Dialogue: 1,0:04:49.39,0:04:50.01,CHI,,0,0,0,,嗯
+Dialogue: 1,0:05:00.94,0:05:01.73,CHI,,0,0,0,,那家伙…
+Dialogue: 1,0:05:03.03,0:05:05.32,CHI,,0,0,0,,那家伙的脑子但凡好使一点
+Dialogue: 1,0:05:06.11,0:05:08.07,CHI,,0,0,0,,堀  要回去了吗
+Dialogue: 1,0:05:08.07,0:05:10.41,CHI,,0,0,0,,透啊  来得正是时候
+Dialogue: 1,0:05:11.08,0:05:12.79,CHI,,0,900,0,,有件关于宫村的事正好想问你…
+Dialogue: 1,0:05:12.66,0:05:13.41,CHI,,600,0,0,,宫村的事?
+Dialogue: 1,0:05:14.75,0:05:17.96,CHI,,0,0,0,,我才…刚刚被甩  情伤未愈
+Dialogue: 1,0:05:19.96,0:05:21.80,CHI,,0,0,0,,等…  要你何用!
+Dialogue: 1,0:05:24.26,0:05:27.34,CHI,,0,0,0,,没想到问个名字居然会累成这样
+Dialogue: 1,0:05:28.34,0:05:30.10,CHI,,0,0,0,,我说京子啊
+Dialogue: 1,0:05:30.10,0:05:32.64,CHI,,0,0,0,,你这是在抗议妈妈做的咖喱下不了嘴吗
+Dialogue: 1,0:05:32.64,0:05:35.06,CHI,,0,0,0,,已经连吃三天了啊  你的速食咖喱
+Dialogue: 1,0:05:35.48,0:05:39.73,CHI,,0,0,0,,我问你哦  明天休息他会来家里吗?  你的宫村君
+Dialogue: 1,0:05:40.98,0:05:42.07,CHI,,0,0,0,,应该来吧
+Dialogue: 1,0:05:42.40,0:05:44.28,CHI,,0,0,0,,诶  真的吗
+Dialogue: 1,0:05:44.28,0:05:47.78,CHI,,0,0,0,,怎么办啊  真叫人期待呢
+Dialogue: 1,0:05:47.78,0:05:50.32,CHI,,0,0,0,,他又不是过来见你的
+Dialogue: 1,0:05:52.03,0:05:54.33,CHI,,0,0,0,,说不定  他会向老妈报上大名
+Dialogue: 1,0:05:54.87,0:05:55.33,CHI,,0,0,0,,棒!
+Dialogue: 1,0:06:01.17,0:06:05.30,CHI,,0,0,0,,你好呀  等你很久了哦  快进来快进来
+Dialogue: 1,0:06:06.76,0:06:07.76,CHI,,0,0,0,,打扰了
+Dialogue: 1,0:06:09.34,0:06:11.22,CHI,,0,0,0,,是…是堀妈妈
+Dialogue: 1,0:06:12.05,0:06:13.18,CHI,,0,0,0,,还是头一回见
+Dialogue: 1,0:06:13.72,0:06:15.89,CHI,,0,0,0,,啊  这是一点心意
+Dialogue: 1,0:06:15.89,0:06:17.77,CHI,,0,0,0,,哎呀  谢谢你
+Dialogue: 1,0:06:19.73,0:06:23.86,CHI,,0,0,0,,真是不好意思  京子正好出门买东西去了
+Dialogue: 1,0:06:24.15,0:06:25.99,CHI,,0,0,0,,我常听她提起你呢
+Dialogue: 1,0:06:26.90,0:06:27.90,CHI_Up,,0,0,0,,我回来啦
+Dialogue: 1,0:06:27.49,0:06:29.86,CHI,,0,0,0,,对了  还没自我介绍…
+Dialogue: 1,0:06:30.11,0:06:31.82,CHI,,0,0,0,,啊  哥哥来了
+Dialogue: 1,0:06:32.78,0:06:35.29,CHI,,0,0,0,,哇  真是个好名字
+Dialogue: 1,0:06:36.58,0:06:38.37,CHI,,0,0,0,,本来还想和你多聊一会的
+Dialogue: 1,0:06:39.04,0:06:41.17,CHI,,0,0,0,,不过我之后还有工作
+Dialogue: 1,0:06:41.17,0:06:44.05,CHI,,0,0,0,,没事  我也正准备回去呢
+Dialogue: 1,0:06:44.05,0:06:46.92,CHI,,0,0,0,,哥哥要走了吗  不要嘛
+Dialogue: 1,0:06:49.05,0:06:51.30,CHI,,0,0,0,,一直以来真是谢谢你了
+Dialogue: 1,0:06:53.55,0:06:54.14,CHI,,0,0,0,,您客气了
+Dialogue: 1,0:06:55.01,0:06:57.18,CHI,,0,0,0,,所以  我妈呢?
+Dialogue: 1,0:06:57.48,0:07:00.02,CHI,,0,0,0,,阿姨她  去工作了
+Dialogue: 1,0:07:01.35,0:07:02.56,CHI,,0,0,0,,蛋糕要吃哪块?
+Dialogue: 1,0:07:03.15,0:07:04.15,CHI,,0,0,0,,草莓的
+Dialogue: 1,0:07:04.15,0:07:05.57,CHI,,0,0,0,,那个女人
+Dialogue: 1,0:07:05.57,0:07:08.69,CHI,,0,0,0,,打发我去买东西是为了和他单独说话啊
+Dialogue: 1,0:07:09.11,0:07:12.62,CHI,,0,0,0,,真是的  小学毕业以后就没被叫过名字了
+Dialogue: 1,0:07:12.62,0:07:13.82,CHI,,0,0,0,,真不习惯呢
+Dialogue: 1,0:07:15.12,0:07:16.70,CHI,,0,0,0,,诶  怎么叫的?
+Dialogue: 1,0:07:17.16,0:07:19.16,CHI,,0,0,0,,就是说  直接叫名字啊
+Dialogue: 1,0:07:19.16,0:07:20.58,CHI,,0,0,0,,不是这个意思
+Dialogue: 1,0:07:20.58,0:07:22.21,CHI,,0,0,0,,啊  你说叫法?
+Dialogue: 1,0:07:22.63,0:07:24.25,CHI,,0,0,0,,嗯嗯  嗯嗯
+Dialogue: 1,0:07:24.50,0:07:25.59,CHI,,0,0,0,,名字加「君」
+Dialogue: 1,0:07:25.59,0:07:27.67,CHI,,0,0,0,,话说回来  阿姨可真年轻啊
+Dialogue: 1,0:07:28.71,0:07:32.34,CHI,,0,0,0,,我和这个男人有在同一个频道上说过话吗
+Dialogue: 1,0:07:32.93,0:07:36.01,CHI,,0,0,0,,真是的  也不是那个意思
+Dialogue: 1,0:07:36.89,0:07:40.23,CHI,,0,0,0,,总觉得你  这几天有点奇怪
+Dialogue: 1,0:07:40.23,0:07:41.77,CHI,,0,0,0,,哪…哪里怪了
+Dialogue: 1,0:07:42.10,0:07:45.11,CHI,,0,0,0,,比如  偷看男生换衣服什么的
+Dialogue: 1,0:07:45.69,0:07:46.77,CHI,,0,0,0,,那是个误会
+Dialogue: 1,0:07:48.32,0:07:52.15,CHI,,0,0,0,,难道是因为  你有在意的人吗
+Dialogue: 1,0:07:57.20,0:07:58.08,CHI,,0,0,0,,其实…
+Dialogue: 1,0:08:02.92,0:08:04.42,CHI,,0,0,0,,我…我名字?
+Dialogue: 1,0:08:05.13,0:08:07.42,CHI,,0,0,0,,就为这事才一直犯愁的吗
+Dialogue: 1,0:08:07.96,0:08:10.72,CHI,,0,0,0,,不过竟然是因为…因为名字
+Dialogue: 1,0:08:10.42,0:08:12.43,CHI_Up,,0,0,0,,姐姐你好逊  好逊啊
+Dialogue: 1,0:08:12.68,0:08:14.97,CHI,,0,0,0,,这种事我怎么好意思开口问啊
+Dialogue: 1,0:08:14.97,0:08:16.18,CHI,,0,0,0,,笔借我一下
+Dialogue: 1,0:08:16.89,0:08:17.97,CHI,,0,0,0,,稍等一下
+Dialogue: 1,0:08:17.30,0:08:18.93,CHI_Up,,0,0,0,,好逊  好逊
+Dialogue: 1,0:08:17.97,0:08:19.22,CHI,,0,0,0,,说什么呢  你这小鬼…
+Dialogue: 1,0:08:19.81,0:08:22.69,CHI_Up,,0,0,0,,你就是逊嘛  好痛啦
+Dialogue: 1,0:08:21.14,0:08:21.60,CHI,,0,0,0,,给
+Dialogue: 1,0:08:26.69,0:08:29.19,CHI,,0,0,0,,宫村…伊澄
+Dialogue: 1,0:08:29.44,0:08:31.57,CHI,,0,0,0,,啊  抱歉  忘注假名了
+Dialogue: 1,0:08:32.03,0:08:32.40,CHI,,0,0,0,,拿过来
+Dialogue: 1,0:08:32.40,0:08:33.20,CHI,,0,0,0,,我会念啦
+Dialogue: 1,0:08:33.86,0:08:36.87,CHI,,0,0,0,,总之  我就先收下了
+Dialogue: 1,0:08:37.62,0:08:39.20,CHI,,0,0,0,,说不定什么时候会忘呢
+Dialogue: 1,0:08:39.79,0:08:42.37,CHI,,0,0,0,,可以的话  希望你好好记住它
+Dialogue: 1,0:08:42.37,0:08:44.08,CHI,,0,0,0,,我…我知道啦
+Dialogue: 1,0:08:44.79,0:08:46.71,CHI,,0,0,0,,念出声记起来会更容易哦
+Dialogue: 1,0:08:48.42,0:08:50.46,CHI,,0,0,0,,伊…{\alpha&HFF&\t(1020,1030,\alpha&H00&)}伊澄
+Dialogue: 1,0:08:50.88,0:08:51.38,CHI,,0,0,0,,没错
+Dialogue: 1,0:08:52.72,0:08:53.34,CHI,,0,0,0,,堀同学
+Dialogue: 1,0:08:58.43,0:09:02.10,CHI,,0,0,0,,感觉怪怪的  还是叫宫村好了
+Dialogue: 1,0:09:02.56,0:09:04.48,CHI,,0,0,0,,堀同学你真是的
+Dialogue: 1,0:09:05.39,0:09:09.11,CHI,,0,0,0,,宫村啊  你才是不知道我叫什么名字吧
+Dialogue: 1,0:09:09.48,0:09:11.15,CHI,,0,0,0,,诶?  不是京子吗
+Dialogue: 1,0:09:14.07,0:09:16.32,CHI,,0,0,0,,我怎么跟个傻子似的
+Dialogue: 1,0:09:16.32,0:09:18.45,CHI,,0,0,0,,堀同学有的时候有点呆啊
+Dialogue: 1,0:09:19.53,0:09:22.12,CHI,,0,0,0,,要…要笑就尽管笑好了
+Dialogue: 1,0:09:22.41,0:09:24.41,CHI,,0,0,0,,可是  笑的话你会生气吧
+Dialogue: 1,0:09:24.41,0:09:25.62,CHI,,0,0,0,,那还用说
+Dialogue: 1,0:09:27.46,0:09:28.63,CHI,,0,0,0,,不讲理
+Dialogue: 1,0:09:35.76,0:09:37.09,CHI,,0,0,0,,抱歉了  堀同学
+Dialogue: 1,0:09:37.72,0:09:39.55,CHI,,0,0,0,,总是麻烦你做这些杂活
+Dialogue: 1,0:09:39.97,0:09:43.02,CHI,,0,0,0,,没事没事  毕竟是仙石君你拜托我的嘛
+Dialogue: 1,0:09:43.60,0:09:45.60,CHI,,0,0,0,,哎呀  真是帮大忙了
+Dialogue: 1,0:09:47.10,0:09:49.56,CHI,,0,0,0,,樱  这个先放你那里
+Dialogue: 1,0:09:49.98,0:09:50.36,CHI,,0,0,0,,嗯
+Dialogue: 1,0:09:51.44,0:09:54.57,CHI,,0,0,0,,果然还是要让优秀的人来做才对
+Dialogue: 1,0:09:54.82,0:09:56.57,CHI,,0,0,0,,诶  是…是吗
+Dialogue: 1,0:09:57.03,0:09:59.12,CHI,,0,0,0,,虽然很不好意思  堀同学
+Dialogue: 1,0:09:59.87,0:10:01.58,CHI,,0,0,0,,这些也想请你帮帮忙
+Dialogue: 1,0:10:03.08,0:10:04.91,CHI,,0,0,0,,抱…抱歉啊  堀同学
+Dialogue: 1,0:10:05.50,0:10:08.08,CHI,,0,0,0,,现在学生会成员都忙成一团
+Dialogue: 1,0:10:10.33,0:10:12.67,CHI,,0,0,0,,真拿你没办法  仙石君
+Dialogue: 1,0:10:17.09,0:10:18.84,CHI,,0,0,0,,小堀  黑眼圈
+Dialogue: 1,0:10:19.47,0:10:20.14,CHI,,0,0,0,,不是吧
+Dialogue: 1,0:10:23.22,0:10:25.27,CHI,,0,0,0,,又是学生会的杂活?
+Dialogue: 1,0:10:25.27,0:10:26.35,CHI,,0,0,0,,是啊
+Dialogue: 1,0:10:27.02,0:10:29.73,CHI,,0,0,0,,为什么学生会的工作要你来做啊
+Dialogue: 1,0:10:30.31,0:10:33.44,CHI,,0,0,0,,学生会才刚刚改选  他们也不容易吧
+Dialogue: 1,0:10:34.02,0:10:35.19,CHI,,0,0,0,,这是理由?
+Dialogue: 1,0:10:35.90,0:10:38.90,CHI,,0,0,0,,可是连重要的工作也交给你也太奇怪了
+Dialogue: 1,0:10:38.90,0:10:40.87,CHI,,0,0,0,,不过是看你好使唤而已
+Dialogue: 1,0:10:41.28,0:10:44.29,CHI,,0,0,0,,就算如此  能帮上忙不是也挺好的
+Dialogue: 1,0:10:44.29,0:10:46.12,CHI,,0,0,0,,什么啊  才不好呢
+Dialogue: 1,0:10:46.70,0:10:48.04,CHI,,0,0,0,,好辛苦啊
+Dialogue: 1,0:10:48.04,0:10:48.87,CHI,,0,0,0,,嗯
+Dialogue: 1,0:10:49.33,0:10:54.34,CHI,,0,0,0,,怎么说呢  我们这两个笨蛋真是一点忙也帮不上啊
+Dialogue: 1,0:10:54.34,0:10:55.30,CHI,,0,0,0,,确实
+Dialogue: 1,0:10:55.96,0:10:59.38,CHI,,0,0,0,,说起来年级第一  就是仙石会长吧
+Dialogue: 1,0:10:59.38,0:11:00.13,CHI,,0,0,0,,真的假的
+Dialogue: 1,0:11:01.30,0:11:03.14,CHI,,0,0,0,,他也很受女生欢迎
+Dialogue: 1,0:11:03.14,0:11:07.64,CHI,,0,0,0,,堀同学或多或少  也是抱有好感才去帮忙的吧
+Dialogue: 1,0:11:16.03,0:11:17.32,CHI,,0,0,0,,堀同学在吗?
+Dialogue: 1,0:11:18.86,0:11:20.53,CHI,,0,0,0,,啊  绫崎同学
+Dialogue: 1,0:11:26.12,0:11:28.33,CHI,,0,0,0,,这些是交给我做的文件和册子
+Dialogue: 1,0:11:28.75,0:11:29.87,CHI,,0,0,0,,有点沉拿得动吗?
+Dialogue: 1,0:11:30.62,0:11:33.33,CHI,,0,0,0,,可以的  谢谢你
+Dialogue: 1,0:11:33.75,0:11:35.84,CHI,,0,0,0,,呜哇  美少女啊
+Dialogue: 1,0:11:36.34,0:11:38.71,CHI,,0,0,0,,她就是仙石会长的女朋友
+Dialogue: 1,0:11:38.71,0:11:40.59,CHI,,0,0,0,,一对金童玉女啊
+Dialogue: 1,0:11:40.59,0:11:43.09,CHI,,0,0,0,,绫崎同学也是学生会成员呢
+Dialogue: 1,0:11:44.39,0:11:46.22,CHI,,0,0,0,,不过她好像不怎么工作
+Dialogue: 1,0:11:46.22,0:11:47.89,CHI,,0,0,0,,就像是个吉祥物
+Dialogue: 1,0:11:47.89,0:11:51.77,CHI,,0,0,0,,诶  那就是说这位美少女的工作都推给堀来做了?
+Dialogue: 1,0:11:51.77,0:11:53.85,CHI,,0,0,0,,真是的  别这么说嘛
+Dialogue: 1,0:11:54.10,0:11:58.36,CHI,,0,0,0,,虽然刚才那些工作  的确应该由绫崎同学来做
+Dialogue: 1,0:11:58.94,0:12:01.90,CHI,,0,0,0,,完全被当成工具人使唤了…
+Dialogue: 1,0:12:10.08,0:12:11.91,CHI,,0,0,0,,那我就先回去了
+Dialogue: 1,0:12:13.21,0:12:13.87,CHI,,0,0,0,,嗯
+Dialogue: 1,0:12:15.42,0:12:18.30,CHI,,0,0,0,,堀同学  她不要紧吧
+Dialogue: 1,0:12:22.51,0:12:25.64,CHI,,0,0,0,,要是做个蛋糕带过去  她能打起精神来吗
+Dialogue: 1,0:12:27.35,0:12:28.47,CHI,,0,0,0,,好疼
+Dialogue: 1,0:12:28.47,0:12:30.39,CHI,,0,0,0,,那…那个  你没事吧
+Dialogue: 1,0:12:31.06,0:12:32.31,CHI,,0,0,0,,真是的
+Dialogue: 1,0:12:33.19,0:12:35.40,CHI,,0,0,0,,你倒是好好看路啊
+Dialogue: 1,0:12:35.69,0:12:37.77,CHI_Up,,0,0,0,,诶?  我有好好看路…
+Dialogue: 1,0:12:36.65,0:12:40.28,CHI,,0,0,0,,礼美很赶时间的  快来帮帮我
+Dialogue: 1,0:12:41.57,0:12:44.91,CHI,,0,0,0,,啊  樱又该嫌我慢吞吞的了
+Dialogue: 1,0:12:47.87,0:12:48.78,CHI,,0,0,0,,啊  还有这个
+Dialogue: 1,0:12:48.99,0:12:52.41,CHI,,0,0,0,,那个啊  那份应该用不上了  帮我扔掉吧
+Dialogue: 1,0:12:52.41,0:12:53.62,CHI,,0,0,0,,先走了
+Dialogue: 1,0:12:53.62,0:12:55.42,CHI,,0,0,0,,啥?!
+Dialogue: 1,0:12:56.58,0:12:59.00,CHI,,0,0,0,,有的没的说了一通就跑掉了
+Dialogue: 1,0:13:24.19,0:13:24.95,CHI,,0,0,0,,嗯?
+Dialogue: 1,0:13:26.70,0:13:27.45,CHI_Up,,0,0,0,,什么情况
+Dialogue: 1,0:13:27.45,0:13:28.41,CHI_Up,,0,0,0,,怎么了?
+Dialogue: 1,0:13:28.41,0:13:32.08,CHI,,0,0,0,,我都说了  交给我的事都已经做好了
+Dialogue: 1,0:13:32.66,0:13:34.96,CHI,,0,0,0,,可是  文件确实少了啊
+Dialogue: 1,0:13:35.29,0:13:37.33,CHI_Up,,0,0,0,,我们都找遍了也还是没有
+Dialogue: 1,0:13:36.87,0:13:39.17,CHI,,0,0,0,,怎么了?  出什么事了?
+Dialogue: 1,0:13:40.00,0:13:41.92,CHI,,0,0,0,,宫村  快来帮帮忙啊
+Dialogue: 1,0:13:41.92,0:13:43.46,CHI,,0,0,0,,小堀  小堀她…
+Dialogue: 1,0:13:44.09,0:13:44.97,CHI,,0,0,0,,堀同学?
+Dialogue: 1,0:13:44.97,0:13:47.47,CHI,,0,0,0,,学生会的人在找堀麻烦呢
+Dialogue: 1,0:13:48.68,0:13:52.97,CHI,,0,0,0,,我昨天确实都交给她了  包括那份财务文件
+Dialogue: 1,0:13:53.39,0:13:54.81,CHI,,0,0,0,,没错吧  绫崎同学
+Dialogue: 1,0:13:57.10,0:13:58.98,CHI,,0,0,0,,礼美说她并不清楚
+Dialogue: 1,0:14:00.11,0:14:02.61,CHI,,0,0,0,,你并没有当场确认要转交的文件对吧
+Dialogue: 1,0:14:03.15,0:14:04.99,CHI,,0,0,0,,可那是…  因为她…
+Dialogue: 1,0:14:04.99,0:14:07.24,CHI,,0,0,0,,当然  我们确实也有责任
+Dialogue: 1,0:14:07.70,0:14:11.41,CHI,,0,0,0,,不过  这还要看昨天礼美收到的文件中
+Dialogue: 1,0:14:11.41,0:14:13.74,CHI,,0,0,0,,是不是真有那份财务文件吧
+Dialogue: 1,0:14:14.41,0:14:16.75,CHI,,0,0,0,,堀同学  你真的交给她了吗
+Dialogue: 1,0:14:20.58,0:14:21.63,CHI,,0,0,0,,我交给她了
+Dialogue: 1,0:14:22.80,0:14:26.26,CHI,,0,0,0,,但说实话  当时太累了所以记不太清了
+Dialogue: 1,0:14:26.55,0:14:27.88,CHI_Up,,0,0,0,,堀同学竟然偷工减料了?
+Dialogue: 1,0:14:27.88,0:14:29.68,CHI_Up,,0,0,0,,是一班那个堀吗?
+Dialogue: 1,0:14:29.68,0:14:33.10,CHI_Up,,0,0,0,,就是因为交给她的文件不见了  害得工作都给耽误了
+Dialogue: 1,0:14:33.60,0:14:36.77,CHI_Up,,0,0,0,,怎么这样  会长好可怜
+Dialogue: 1,0:14:37.10,0:14:41.52,CHI,,0,0,0,,如果错是在你  你只要道个歉就行了  堀同学
+Dialogue: 1,0:14:43.27,0:14:44.32,CHI,,0,0,0,,仙石你个混蛋
+Dialogue: 1,0:14:44.82,0:14:46.53,CHI,,0,0,0,,别冲动啊  石川
+Dialogue: 1,0:14:46.74,0:14:47.95,CHI,,0,0,0,,你们不要这样
+Dialogue: 1,0:14:47.95,0:14:51.45,CHI,,0,0,0,,小堀确实都做好了  我在旁边一直看着呢
+Dialogue: 1,0:14:51.99,0:14:53.37,CHI,,0,0,0,,昨天都交给你们了
+Dialogue: 1,0:14:55.99,0:14:59.41,CHI_Up,,0,0,0,,也就是说  只要堀同学道歉不就行了
+Dialogue: 1,0:15:00.04,0:15:02.04,CHI_Up,,0,0,0,,快点道个歉吧
+Dialogue: 1,0:15:02.46,0:15:03.25,CHI,,0,0,0,,石川同学
+Dialogue: 1,0:15:03.88,0:15:04.55,CHI,,0,0,0,,宫村
+Dialogue: 1,0:15:04.80,0:15:07.13,CHI,,0,0,0,,麻烦你  包和这个
+Dialogue: 1,0:15:07.59,0:15:08.30,CHI,,0,0,0,,帮我拿一下
+Dialogue: 1,0:15:09.26,0:15:11.47,CHI,,0,0,0,,你怎么想  堀同学
+Dialogue: 1,0:15:16.60,0:15:17.18,CHI,,0,0,0,,对…
+Dialogue: 1,0:15:17.18,0:15:19.56,CHI,,0,0,0,,不用道歉的  堀同学
+Dialogue: 1,0:15:20.48,0:15:21.56,CHI,,0,0,0,,不用道歉
+Dialogue: 1,0:15:22.31,0:15:24.40,CHI,,0,0,0,,宫…村
+Dialogue: 1,0:15:27.53,0:15:28.57,CHI,,0,0,0,,你是谁
+Dialogue: 1,0:15:29.11,0:15:30.03,CHI,,0,0,0,,会长
+Dialogue: 1,0:15:39.04,0:15:40.33,CHI,,0,0,0,,你在干什么啊
+Dialogue: 1,0:15:40.58,0:15:42.29,CHI,,0,0,0,,仙…仙石君
+Dialogue: 1,0:15:43.17,0:15:45.79,CHI,,0,0,0,,我我我们…反对暴力
+Dialogue: 1,0:15:45.79,0:15:47.09,CHI,,0,0,0,,为什么你要…
+Dialogue: 1,0:15:48.76,0:15:50.47,CHI,,0,0,0,,要找的是这个吗?
+Dialogue: 1,0:15:50.84,0:15:53.80,CHI,,0,0,0,,财务文件  怎么会在你那里
+Dialogue: 1,0:15:54.26,0:15:56.47,CHI,,0,0,0,,是我昨天碰巧捡到的
+Dialogue: 1,0:15:57.31,0:16:00.02,CHI,,0,0,0,,不过绫崎同学让我扔掉就好
+Dialogue: 1,0:16:00.02,0:16:01.60,CHI,,0,0,0,,礼美才没说过那种…
+Dialogue: 1,0:16:10.28,0:16:13.61,CHI,,0,0,0,,哦…  是那时候
+Dialogue: 1,0:16:15.45,0:16:19.62,CHI,,0,0,0,,礼—美—
+Dialogue: 1,0:16:25.08,0:16:27.63,CHI,,0,0,0,,对…对不起!
+Dialogue: 1,0:16:28.67,0:16:31.47,CHI_Up,,0,0,0,,所以  根本就不是堀同学的错咯
+Dialogue: 1,0:16:31.47,0:16:32.59,CHI_Up,,0,0,0,,到底什么情况
+Dialogue: 1,0:16:33.18,0:16:33.68,CHI_Up,,0,0,0,,谁知道
+Dialogue: 1,0:16:47.40,0:16:50.15,CHI,,0,0,0,,算了  误会解开了就好
+Dialogue: 1,0:16:51.53,0:16:53.61,CHI,,0,0,0,,不过差点就要哭出来了
+Dialogue: 1,0:16:54.07,0:16:57.12,CHI,,0,0,0,,我们小堀很靠谱的  当然不会出错
+Dialogue: 1,0:16:57.32,0:16:58.53,CHI,,0,0,0,,可饶了我吧
+Dialogue: 1,0:16:59.24,0:17:01.87,CHI,,0,0,0,,不过  这次多亏有宫村  才只是虚惊一场
+Dialogue: 1,0:17:02.29,0:17:03.37,CHI,,0,0,0,,谢谢你
+Dialogue: 1,0:17:05.08,0:17:06.17,CHI,,0,0,0,,碰巧而已
+Dialogue: 1,0:17:06.79,0:17:09.38,CHI,,0,0,0,,可是啊  要是就为了解开误会
+Dialogue: 1,0:17:09.38,0:17:11.88,CHI,,0,0,0,,也犯不上来一记头槌吧
+Dialogue: 1,0:17:12.21,0:17:15.59,CHI,,0,0,0,,那是因为  就觉得有一股无名火
+Dialogue: 1,0:17:17.64,0:17:18.85,CHI,,0,0,0,,有件事我有些在意
+Dialogue: 1,0:17:19.81,0:17:22.89,CHI,,0,0,0,,堀同学  是不是有什么把柄在会长那里啊
+Dialogue: 1,0:17:23.27,0:17:23.89,CHI,,0,0,0,,诶?
+Dialogue: 1,0:17:24.39,0:17:28.11,CHI,,0,0,0,,因为  堀同学对会长提出的要求言听计从
+Dialogue: 1,0:17:28.11,0:17:28.90,CHI,,0,0,0,,总感觉…
+Dialogue: 1,0:17:28.90,0:17:29.65,CHI,,0,0,0,,不对劲
+Dialogue: 1,0:17:30.86,0:17:31.78,CHI,,0,0,0,,为什么呢?
+Dialogue: 1,0:17:32.07,0:17:36.78,CHI,,0,0,0,,讨厌啦  我是看学生会那么辛苦
+Dialogue: 1,0:17:36.78,0:17:40.91,CHI,,0,0,0,,而且我和仙石…君  也是从小一起长大的
+Dialogue: 1,0:17:41.79,0:17:44.71,CHI,,0,0,0,,仙石  你个爱哭的胆小鬼
+Dialogue: 1,0:17:44.71,0:17:47.04,CHI,,0,0,0,,哇  不要这样嘛  小京
+Dialogue: 1,0:17:47.79,0:17:50.17,CHI,,0,0,0,,我也讨厌吃青豆啊
+Dialogue: 1,0:17:50.46,0:17:52.00,CHI,,0,0,0,,石头剪子布
+Dialogue: 1,0:17:52.80,0:17:56.05,CHI,,0,0,0,,上了高中  我就不要再当小京的跟班狗了
+Dialogue: 1,0:17:56.47,0:17:59.55,CHI,,0,0,0,,跟班狗?  原来你是这么想的吗
+Dialogue: 1,0:18:00.55,0:18:02.06,CHI,,0,0,0,,可真笑死我了
+Dialogue: 1,0:18:03.43,0:18:05.60,CHI,,0,0,0,,上了高中不许你再直呼我名字了
+Dialogue: 1,0:18:05.60,0:18:08.02,CHI,,0,0,0,,我还要好好享受高中生活呢
+Dialogue: 1,0:18:09.52,0:18:13.07,CHI,,0,0,0,,不然的话  我就把你这么多年的黑料全抖出去
+Dialogue: 1,0:18:13.32,0:18:15.24,CHI,,0,0,0,,哟  比如?
+Dialogue: 1,0:18:15.24,0:18:17.20,CHI,,0,0,0,,就是这个  就是这种态度
+Dialogue: 1,0:18:17.74,0:18:19.11,CHI,,0,0,0,,我知道啦
+Dialogue: 1,0:18:19.11,0:18:23.08,CHI,,0,0,0,,仙…仙…仙石「君」?
+Dialogue: 1,0:18:24.87,0:18:28.08,CHI,,0,0,0,,没错没错  请多关照咯  「堀」同学
+Dialogue: 1,0:18:32.75,0:18:35.76,CHI,,0,0,0,,我们真的  只是儿时玩伴哦
+Dialogue: 1,0:18:36.34,0:18:38.09,CHI,,0,0,0,,这里面一定有鬼
+Dialogue: 1,0:18:46.39,0:18:47.52,CHI,,0,0,0,,早上好  会长
+Dialogue: 1,0:18:49.31,0:18:50.98,CHI,,0,0,0,,您贵安
+Dialogue: 1,0:18:53.15,0:18:56.23,CHI,,0,0,0,,仙石他  心理阴影又多了一分
+Dialogue: 1,0:19:06.50,0:19:07.37,CHI,,0,0,0,,我跟你说啊
+Dialogue: 1,0:19:08.66,0:19:10.87,CHI,,0,0,0,,堀她生日就快到了
+Dialogue: 1,0:19:11.12,0:19:12.88,CHI,,0,0,0,,诶?  真的吗
+Dialogue: 1,0:19:12.88,0:19:14.63,CHI,,0,0,0,,就在三月末
+Dialogue: 1,0:19:15.09,0:19:17.63,CHI,,0,0,0,,啊  是在春假假期啊
+Dialogue: 1,0:19:17.88,0:19:20.63,CHI,,0,0,0,,我想送她点什么礼物
+Dialogue: 1,0:19:20.93,0:19:24.64,CHI,,0,0,0,,可是吧  我毕竟被她甩过一次  是不是挺招人烦啊
+Dialogue: 1,0:19:24.64,0:19:26.64,CHI,,0,0,0,,是你想多了吧
+Dialogue: 1,0:19:26.97,0:19:29.64,CHI,,0,0,0,,想送礼物给她  又不是什么坏事
+Dialogue: 1,0:19:30.06,0:19:33.65,CHI,,0,0,0,,可是堀喜欢什么  我一点头绪都没有啊
+Dialogue: 1,0:19:34.40,0:19:35.65,CHI,,0,0,0,,重要的是心意
+Dialogue: 1,0:19:36.19,0:19:37.19,CHI,,0,0,0,,送什么都可以吧
+Dialogue: 1,0:19:37.82,0:19:38.94,CHI,,0,0,0,,小饰品什么的…
+Dialogue: 1,0:19:38.94,0:19:40.82,CHI,,0,0,0,,不不  小饰品有点过了吧
+Dialogue: 1,0:19:41.57,0:19:42.95,CHI,,0,0,0,,那就…送个小摆件?
+Dialogue: 1,0:19:42.95,0:19:45.87,CHI,,0,0,0,,宫村你知道堀她喜欢些什么吗
+Dialogue: 1,0:19:48.04,0:19:49.25,CHI,,0,0,0,,生日礼物吗
+Dialogue: 1,0:19:50.58,0:19:53.17,CHI,,0,0,0,,换做是我要送她什么好呢
+Dialogue: 1,0:20:05.68,0:20:09.93,CHI,,0,0,0,,姐姐  三月放了假  哥哥每天都会来玩吗?
+Dialogue: 1,0:20:11.14,0:20:13.02,CHI,,0,0,0,,每天都来是不可能啦
+Dialogue: 1,0:20:13.69,0:20:17.44,CHI,,0,0,0,,宫村他也不会一直都来我们家的
+Dialogue: 1,0:20:17.69,0:20:20.69,CHI,,0,0,0,,那…哥哥还能来多久呢
+Dialogue: 1,0:20:20.69,0:20:22.24,CHI,,0,0,0,,到高中毕业吗?
+Dialogue: 1,0:20:25.78,0:20:28.58,CHI,,0,0,0,,宫村还能来我家多久
+Dialogue: 1,0:20:29.83,0:20:32.83,CHI,,0,0,0,,你问我  我也不知道啊
+Dialogue: 1,0:20:34.17,0:20:38.21,CHI,,0,0,0,,姐姐  要是哥哥不来了你不会难过吗
+Dialogue: 1,0:20:38.50,0:20:40.05,CHI,,0,0,0,,我会特别难过的
+Dialogue: 1,0:20:42.17,0:20:42.80,CHI,,0,0,0,,堀同学
+Dialogue: 1,0:20:45.22,0:20:47.97,CHI,,0,0,0,,换做是我…  我也会难过的
+Dialogue: 1,0:20:50.02,0:20:52.02,CHI,,0,0,0,,姐姐真是一点都不坦诚呢
+Dialogue: 1,0:20:52.93,0:20:54.19,CHI,,0,0,0,,你…你可真烦
+Dialogue: 1,0:21:01.49,0:21:02.90,CHI,,0,0,0,,生日快乐
+Dialogue: 1,0:21:02.90,0:21:04.24,CHI,,0,0,0,,祝你生日快乐
+Dialogue: 1,0:21:04.53,0:21:06.28,CHI,,0,0,0,,啊  是我生日啊
+Dialogue: 1,0:21:07.07,0:21:09.62,CHI,,0,0,0,,放了春假我差点就给忘了
+Dialogue: 1,0:21:10.08,0:21:10.99,CHI,,0,0,0,,谢谢你们
+Dialogue: 1,0:21:11.58,0:21:14.25,CHI,,0,0,0,,这是我的礼物  Happy Birthday!
+Dialogue: 1,0:21:18.13,0:21:20.17,CHI,,0,0,0,,哇  这是什么?
+Dialogue: 1,0:21:20.17,0:21:23.30,CHI,,0,0,0,,现在的年轻人都爱听的吗?  流行歌?
+Dialogue: 1,0:21:23.84,0:21:26.55,CHI,,0,0,0,,嗯  虽然都是些我喜欢的吧
+Dialogue: 1,0:21:27.97,0:21:30.31,CHI,,0,0,0,,谢谢你  宫村
+Dialogue: 1,0:21:32.18,0:21:32.93,CHI,,0,0,0,,真不可思议
+Dialogue: 1,0:21:34.64,0:21:37.85,CHI,,0,0,0,,他怎么会知道  我想要什么呢
+Dialogue: 1,0:21:39.82,0:21:40.73,CHI,,0,0,0,,真是个怪人
+Dialogue: 1,0:21:48.37,0:21:52.04,CHI,,0,0,0,,过了这个生日  春假也该结束了呢
+Dialogue: 1,0:21:57.00,0:21:57.58,CHI,,0,0,0,,嗯
+Dialogue: 1,0:22:07.51,0:22:09.39,CHI,,0,0,0,,就要高三了啊
+Dialogue: 0,0:00:06.81,0:00:08.48,JAP,,0,0,0,,今日は助かったわ
+Dialogue: 0,0:00:09.11,0:00:12.49,JAP,,0,0,0,,最近創太がよく食べるから　買い出しが大変で
+Dialogue: 0,0:00:12.49,0:00:15.16,JAP,,0,0,0,,あはは　育ち盛りだね
+Dialogue: 0,0:00:18.49,0:00:22.37,JAP,,0,0,0,,ほら　勇気のハリケンスター
+Dialogue: 0,0:00:22.37,0:00:25.00,JAP,,0,0,0,,時間だ　この先を
+Dialogue: 0,0:00:25.00,0:00:28.00,JAP,,0,0,0,,仲間を信じ　駆け上がる
+Dialogue: 0,0:00:28.00,0:00:28.75,JAP,,0,0,0,,きっと…
+Dialogue: 0,0:00:29.21,0:00:30.26,JAP,,0,0,0,,アニソンだ
+Dialogue: 0,0:00:31.84,0:00:33.42,JAP,,0,0,0,,う…歌ってた?
+Dialogue: 0,0:00:33.42,0:00:36.51,JAP,,0,0,0,,うん　堀さん歌上手だね
+Dialogue: 0,0:00:36.80,0:00:38.51,JAP,,0,0,0,,そんなことないわよ
+Dialogue: 0,0:00:38.89,0:00:40.68,JAP,,0,0,0,,ていうか外で歌うとか
+Dialogue: 0,0:00:41.56,0:00:42.81,JAP,,0,0,0,,気をつけよ
+Dialogue: 0,0:00:42.81,0:00:44.85,JAP,,0,0,0,,いいんじゃない　アニソン好きでも
+Dialogue: 0,0:00:45.44,0:00:48.52,JAP,,0,0,0,,好きっていうか　創太が好きなの
+Dialogue: 0,0:00:49.23,0:00:53.03,JAP,,0,0,0,,CDも持ってるし　何度も聞きたがるから覚えちゃったのよ
+Dialogue: 0,0:00:53.78,0:00:56.53,JAP,,0,0,0,,堀さんは?　どんなのが好きなの
+Dialogue: 0,0:00:57.20,0:00:59.70,JAP,,0,0,0,,私?　私は…
+Dialogue: 0,0:01:00.74,0:01:03.58,JAP,,0,0,0,,は…流行りの曲が分からない
+Dialogue: 0,0:01:03.58,0:01:05.79,JAP,,0,0,0,,アニソンは完璧に歌えるのに
+Dialogue: 0,0:01:10.17,0:01:11.34,JAP,,0,0,0,,ただいまー
+Dialogue: 0,0:01:12.26,0:01:13.46,JAP,,0,0,0,,おかえりー
+Dialogue: 0,0:01:15.59,0:01:17.72,JAP,,0,0,0,,あれ　ママ?
+Dialogue: 0,0:01:17.72,0:01:18.80,JAP,,0,0,0,,ハ～イ
+Dialogue: 0,0:02:50.77,0:02:55.02,JAP,,0,0,0,,へえ　じゃあ最近はそのお兄ちゃんと遊んでるの
+Dialogue: 0,0:02:55.02,0:02:56.07,JAP,,0,0,0,,うん　そう
+Dialogue: 0,0:02:56.65,0:02:58.95,JAP,,0,0,0,,いっつもね遊んでくれるの
+Dialogue: 0,0:02:58.95,0:03:01.03,JAP,,0,0,0,,絵本も買ってくれたんだ
+Dialogue: 0,0:03:01.03,0:03:03.03,JAP,,0,0,0,,まあ　よかったわね
+Dialogue: 0,0:03:03.78,0:03:05.28,JAP,,0,0,0,,京子ったらやるわね
+Dialogue: 0,0:03:05.70,0:03:07.54,JAP,,0,0,0,,どんな子?　かっこいい?
+Dialogue: 0,0:03:09.29,0:03:13.92,JAP,,0,0,0,,なんか　探偵モノに出てくる犯人みたいに黒い人
+Dialogue: 0,0:03:18.59,0:03:22.22,JAP,,0,0,0,,京子　あなたお世話になってるのに　どういう例えなの
+Dialogue: 0,0:03:22.22,0:03:23.55,JAP,,0,0,0,,だって…
+Dialogue: 0,0:03:24.93,0:03:27.85,JAP,,0,0,0,,一度二人きりでお話ししてみたいわ
+Dialogue: 0,0:03:28.47,0:03:30.31,JAP,,0,0,0,,二人きりで何話すのよ
+Dialogue: 0,0:03:30.85,0:03:32.06,JAP,,0,0,0,,はい　終わり
+Dialogue: 0,0:03:32.48,0:03:35.90,JAP,,0,0,0,,あー　気持ちよかった　ありがとう
+Dialogue: 0,0:03:36.90,0:03:39.07,JAP,,0,0,0,,それで　その子のお名前は?
+Dialogue: 0,0:03:39.40,0:03:39.78,JAP,,0,0,0,,え?
+Dialogue: 0,0:03:40.40,0:03:41.32,JAP,,0,0,0,,犯人さん
+Dialogue: 0,0:03:43.07,0:03:44.82,JAP,,0,0,0,,名前は宮村…
+Dialogue: 0,0:03:45.12,0:03:46.33,JAP,,0,0,0,,宮村君?
+Dialogue: 0,0:03:46.33,0:03:49.33,JAP,,0,0,0,,うん　宮村…　み…
+Dialogue: 0,0:03:50.33,0:03:53.29,JAP,,0,0,0,,宮村の下の名前って…何?
+Dialogue: 0,0:03:58.88,0:03:59.55,JAP,,0,0,0,,ヤバい
+Dialogue: 0,0:04:00.26,0:04:03.34,JAP,,0,0,0,,宮村が家に来るようになってから結構経つのに
+Dialogue: 0,0:04:03.84,0:04:05.76,JAP,,0,0,0,,下の名前が分からないなんて
+Dialogue: 0,0:04:07.01,0:04:09.77,JAP,,0,0,0,,出席簿は先生が持っていっちゃうしなあ
+Dialogue: 0,0:04:13.60,0:04:15.56,JAP,,0,0,0,,いっそ聞くか　本人に
+Dialogue: 0,0:04:18.77,0:04:21.69,JAP,,0,0,0,,宮村って　名前なんて言うの?
+Dialogue: 0,0:04:21.69,0:04:22.49,JAP,,0,0,0,,え?
+Dialogue: 0,0:04:23.40,0:04:26.49,JAP,,0,0,0,,ダメだわ　一番やっちゃいけないことだわ
+Dialogue: 0,0:04:26.95,0:04:28.16,JAP,,0,0,0,,更衣室行こうぜ
+Dialogue: 0,0:04:30.37,0:04:32.91,JAP,,0,0,0,,宮村　今日の体育ってさ
+Dialogue: 0,0:04:32.91,0:04:34.21,JAP,,0,0,0,,確か合同だよ
+Dialogue: 0,0:04:34.92,0:04:35.58,JAP,,0,0,0,,チッ
+Dialogue: 0,0:04:35.58,0:04:36.13,JAP,,0,0,0,,ん?
+Dialogue: 0,0:04:36.58,0:04:40.05,JAP,,0,0,0,,誰か一人くらい名前で呼べよ　使えないわね
+Dialogue: 0,0:04:40.05,0:04:43.05,JAP,,0,0,0,,わあああ　堀さんが覗いてる!
+Dialogue: 0,0:04:43.55,0:04:44.63,JAP,,0,0,0,,堀さん?
+Dialogue: 0,0:04:45.13,0:04:48.72,JAP,,0,0,0,,堀　欲求不満なの　覗きなんて
+Dialogue: 0,0:04:49.39,0:04:50.01,JAP,,0,0,0,,うん
+Dialogue: 0,0:05:00.94,0:05:01.73,JAP,,0,0,0,,せめて…
+Dialogue: 0,0:05:03.03,0:05:05.32,JAP,,0,0,0,,せめてアイツの頭がよければ
+Dialogue: 0,0:05:06.11,0:05:08.07,JAP,,0,0,0,,堀　もう帰るのか
+Dialogue: 0,0:05:08.07,0:05:10.41,JAP,,0,0,0,,透　いい所に
+Dialogue: 0,0:05:11.08,0:05:12.79,JAP,,0,900,0,,宮村のことでちょっと聞きた…
+Dialogue: 0,0:05:12.66,0:05:13.41,JAP,,600,0,0,,宮村の?
+Dialogue: 0,0:05:14.75,0:05:17.96,JAP,,0,0,0,,俺…今フラれて　傷心中
+Dialogue: 0,0:05:19.96,0:05:21.80,JAP,,0,0,0,,ちょっ…　使えねえ!
+Dialogue: 0,0:05:24.26,0:05:27.34,JAP,,0,0,0,,名前一つ聞くのにこんなに疲れるとか
+Dialogue: 0,0:05:28.34,0:05:30.10,JAP,,0,0,0,,ちょっと京子
+Dialogue: 0,0:05:30.10,0:05:32.64,JAP,,0,0,0,,ママのカレーが食べられないって言うの
+Dialogue: 0,0:05:32.64,0:05:35.06,JAP,,0,0,0,,もう3日目だよ　レトルトカレー
+Dialogue: 0,0:05:35.48,0:05:39.73,JAP,,0,0,0,,ねえ　明日は休日だけど来るの?　宮村君
+Dialogue: 0,0:05:40.98,0:05:42.07,JAP,,0,0,0,,来るんじゃない
+Dialogue: 0,0:05:42.40,0:05:44.28,JAP,,0,0,0,,えー　本当
+Dialogue: 0,0:05:44.28,0:05:47.78,JAP,,0,0,0,,どうしましょ　テンション上がるわあ
+Dialogue: 0,0:05:47.78,0:05:50.32,JAP,,0,0,0,,別にママに会いに来るんじゃないわよ
+Dialogue: 0,0:05:52.03,0:05:54.33,JAP,,0,0,0,,もしかしたら　ママに名前言うかも
+Dialogue: 0,0:05:54.87,0:05:55.33,JAP,,0,0,0,,よし!
+Dialogue: 0,0:06:01.17,0:06:05.30,JAP,,0,0,0,,こんにちは　待ってたのよ　上がって上がって
+Dialogue: 0,0:06:06.76,0:06:07.76,JAP,,0,0,0,,お邪魔します
+Dialogue: 0,0:06:09.34,0:06:11.22,JAP,,0,0,0,,ほ…堀母だ
+Dialogue: 0,0:06:12.05,0:06:13.18,JAP,,0,0,0,,初めて会った
+Dialogue: 0,0:06:13.72,0:06:15.89,JAP,,0,0,0,,あ　これどうぞ
+Dialogue: 0,0:06:15.89,0:06:17.77,JAP,,0,0,0,,あら　ありがとう
+Dialogue: 0,0:06:19.73,0:06:23.86,JAP,,0,0,0,,ごめんなさいね　京子はちょうど買い物に行ってて
+Dialogue: 0,0:06:24.15,0:06:25.99,JAP,,0,0,0,,お話は色々聞いてたのよ
+Dialogue: 0,0:06:26.90,0:06:27.90,JAP_Up,,0,0,0,,ただいま
+Dialogue: 0,0:06:27.49,0:06:29.86,JAP,,0,0,0,,あ　遅れましたが…
+Dialogue: 0,0:06:30.11,0:06:31.82,JAP,,0,0,0,,あ　お兄ちゃん
+Dialogue: 0,0:06:32.78,0:06:35.29,JAP,,0,0,0,,まあ　すてきな名前
+Dialogue: 0,0:06:36.58,0:06:38.37,JAP,,0,0,0,,もっとお話ししたいんだけど
+Dialogue: 0,0:06:39.04,0:06:41.17,JAP,,0,0,0,,これから仕事に戻らないと
+Dialogue: 0,0:06:41.17,0:06:44.05,JAP,,0,0,0,,あ　自分もすぐ帰りますから
+Dialogue: 0,0:06:44.05,0:06:46.92,JAP,,0,0,0,,お兄ちゃん帰っちゃうの　ヤダー
+Dialogue: 0,0:06:49.05,0:06:51.30,JAP,,0,0,0,,いつも本当にありがとうね
+Dialogue: 0,0:06:53.55,0:06:54.14,JAP,,0,0,0,,いえ
+Dialogue: 0,0:06:55.01,0:06:57.18,JAP,,0,0,0,,で　ママは?
+Dialogue: 0,0:06:57.48,0:07:00.02,JAP,,0,0,0,,ええと　お仕事に
+Dialogue: 0,0:07:01.35,0:07:02.56,JAP,,0,0,0,,ケーキどれにする?
+Dialogue: 0,0:07:03.15,0:07:04.15,JAP,,0,0,0,,イチゴの
+Dialogue: 0,0:07:04.15,0:07:05.57,JAP,,0,0,0,,あの女
+Dialogue: 0,0:07:05.57,0:07:08.69,JAP,,0,0,0,,買い物行けって言ったのは二人で話すためか
+Dialogue: 0,0:07:09.11,0:07:12.62,JAP,,0,0,0,,もー　小学校ぶりに下の名前で呼ばれたよ
+Dialogue: 0,0:07:12.62,0:07:13.82,JAP,,0,0,0,,照れるね
+Dialogue: 0,0:07:15.12,0:07:16.70,JAP,,0,0,0,,え　なんて?
+Dialogue: 0,0:07:17.16,0:07:19.16,JAP,,0,0,0,,だから　下の名前で
+Dialogue: 0,0:07:19.16,0:07:20.58,JAP,,0,0,0,,そうじゃなくて
+Dialogue: 0,0:07:20.58,0:07:22.21,JAP,,0,0,0,,ああ　呼び方?
+Dialogue: 0,0:07:22.63,0:07:24.25,JAP,,0,0,0,,うんうん　うんうん
+Dialogue: 0,0:07:24.50,0:07:25.59,JAP,,0,0,0,,「君」付け
+Dialogue: 0,0:07:25.59,0:07:27.67,JAP,,0,0,0,,ていうか　お母さん若いよね
+Dialogue: 0,0:07:28.71,0:07:32.34,JAP,,0,0,0,,この男と一度だって会話が噛み合ったことがあっただろうか
+Dialogue: 0,0:07:32.93,0:07:36.01,JAP,,0,0,0,,あーもー　そうじゃなくって
+Dialogue: 0,0:07:36.89,0:07:40.23,JAP,,0,0,0,,なんか堀さん　ここんとこ変だよ
+Dialogue: 0,0:07:40.23,0:07:41.77,JAP,,0,0,0,,なっ…何がよ
+Dialogue: 0,0:07:42.10,0:07:45.11,JAP,,0,0,0,,ほら　男子の着替え覗いてみたり
+Dialogue: 0,0:07:45.69,0:07:46.77,JAP,,0,0,0,,それは誤解よ
+Dialogue: 0,0:07:48.32,0:07:52.15,JAP,,0,0,0,,もしかして　誰か気になってるとか
+Dialogue: 0,0:07:57.20,0:07:58.08,JAP,,0,0,0,,実は…
+Dialogue: 0,0:08:02.92,0:08:04.42,JAP,,0,0,0,,なっ…名前?
+Dialogue: 0,0:08:05.13,0:08:07.42,JAP,,0,0,0,,そんなことでずっと悩んでたの
+Dialogue: 0,0:08:07.96,0:08:10.72,JAP,,0,0,0,,しっかし名前…名前かあ
+Dialogue: 0,0:08:10.42,0:08:12.43,JAP_Up,,0,0,0,,お姉ちゃんダッセー　ダッセー
+Dialogue: 0,0:08:12.68,0:08:14.97,JAP,,0,0,0,,聞けないじゃん　本人にさ
+Dialogue: 0,0:08:14.97,0:08:16.18,JAP,,0,0,0,,ペン借りるよ
+Dialogue: 0,0:08:16.89,0:08:17.97,JAP,,0,0,0,,ちょっと待ってね
+Dialogue: 0,0:08:17.30,0:08:18.93,JAP_Up,,0,0,0,,ダッセー　ダッセー
+Dialogue: 0,0:08:17.97,0:08:19.22,JAP,,0,0,0,,何よ　この…
+Dialogue: 0,0:08:19.81,0:08:22.69,JAP_Up,,0,0,0,,だってダッセーじゃん　痛いよ
+Dialogue: 0,0:08:21.14,0:08:21.60,JAP,,0,0,0,,はい
+Dialogue: 0,0:08:26.69,0:08:29.19,JAP,,0,0,0,,みやむら…いずみ
+Dialogue: 0,0:08:29.44,0:08:31.57,JAP,,0,0,0,,あ　ゴメン　ふりがな忘れた
+Dialogue: 0,0:08:32.03,0:08:32.40,JAP,,0,0,0,,貸して
+Dialogue: 0,0:08:32.40,0:08:33.20,JAP,,0,0,0,,読めるわよ
+Dialogue: 0,0:08:33.86,0:08:36.87,JAP,,0,0,0,,まあ　一応もらっておくわよ
+Dialogue: 0,0:08:37.62,0:08:39.20,JAP,,0,0,0,,忘れるかもしれないし
+Dialogue: 0,0:08:39.79,0:08:42.37,JAP,,0,0,0,,できれば　忘れないでくれると
+Dialogue: 0,0:08:42.37,0:08:44.08,JAP,,0,0,0,,わ…分かってるわよ
+Dialogue: 0,0:08:44.79,0:08:46.71,JAP,,0,0,0,,声に出すと覚えやすいよ
+Dialogue: 0,0:08:48.42,0:08:50.46,JAP,,0,0,0,,い…{\alpha&HFF&\t(1020,1030,\alpha&H00&)}いずみ
+Dialogue: 0,0:08:50.88,0:08:51.38,JAP,,0,0,0,,はい
+Dialogue: 0,0:08:52.72,0:08:53.34,JAP,,0,0,0,,堀さん
+Dialogue: 0,0:08:58.43,0:09:02.10,JAP,,0,0,0,,なんか変な感じ　やっぱ宮村でいいや
+Dialogue: 0,0:09:02.56,0:09:04.48,JAP,,0,0,0,,もう　堀さんてば
+Dialogue: 0,0:09:05.39,0:09:09.11,JAP,,0,0,0,,宮村　アンタこそ私の名前知らないんじゃない
+Dialogue: 0,0:09:09.48,0:09:11.15,JAP,,0,0,0,,え?　京子でしょ
+Dialogue: 0,0:09:14.07,0:09:16.32,JAP,,0,0,0,,私がバカみたいじゃない
+Dialogue: 0,0:09:16.32,0:09:18.45,JAP,,0,0,0,,堀さんってたまにアホっぽいな
+Dialogue: 0,0:09:19.53,0:09:22.12,JAP,,0,0,0,,わ…笑いたきゃ笑いなさいよ
+Dialogue: 0,0:09:22.41,0:09:24.41,JAP,,0,0,0,,だって　笑ったら怒るでしょ
+Dialogue: 0,0:09:24.41,0:09:25.62,JAP,,0,0,0,,当たり前じゃない
+Dialogue: 0,0:09:27.46,0:09:28.63,JAP,,0,0,0,,理不尽
+Dialogue: 0,0:09:35.76,0:09:37.09,JAP,,0,0,0,,ごめんね　堀さん
+Dialogue: 0,0:09:37.72,0:09:39.55,JAP,,0,0,0,,忙しい中雑用なんて
+Dialogue: 0,0:09:39.97,0:09:43.02,JAP,,0,0,0,,いーよいーよ　仙石君の頼みだもん
+Dialogue: 0,0:09:43.60,0:09:45.60,JAP,,0,0,0,,いやあ　本当に助かるよ
+Dialogue: 0,0:09:47.10,0:09:49.56,JAP,,0,0,0,,桜　ちょっとこれ預かってて
+Dialogue: 0,0:09:49.98,0:09:50.36,JAP,,0,0,0,,うん
+Dialogue: 0,0:09:51.44,0:09:54.57,JAP,,0,0,0,,やっぱり優秀な人にやってもらうのが一番だ
+Dialogue: 0,0:09:54.82,0:09:56.57,JAP,,0,0,0,,え　そ…そう
+Dialogue: 0,0:09:57.03,0:09:59.12,JAP,,0,0,0,,それでなんだけど　堀さん
+Dialogue: 0,0:09:59.87,0:10:01.58,JAP,,0,0,0,,これもやっておいてくれないかな
+Dialogue: 0,0:10:03.08,0:10:04.91,JAP,,0,0,0,,ご…ごめんね　堀さん
+Dialogue: 0,0:10:05.50,0:10:08.08,JAP,,0,0,0,,今生徒会のみんなバタバタしてて
+Dialogue: 0,0:10:10.33,0:10:12.67,JAP,,0,0,0,,仕方ないなあ　仙石君
+Dialogue: 0,0:10:17.09,0:10:18.84,JAP,,0,0,0,,堀　クマ
+Dialogue: 0,0:10:19.47,0:10:20.14,JAP,,0,0,0,,うっそ
+Dialogue: 0,0:10:23.22,0:10:25.27,JAP,,0,0,0,,例の生徒会のやつ?
+Dialogue: 0,0:10:25.27,0:10:26.35,JAP,,0,0,0,,まあ
+Dialogue: 0,0:10:27.02,0:10:29.73,JAP,,0,0,0,,なんで生徒会の仕事を堀がやんのよ
+Dialogue: 0,0:10:30.31,0:10:33.44,JAP,,0,0,0,,引き継いだばかりだし　生徒会も大変なんでしょ
+Dialogue: 0,0:10:34.02,0:10:35.19,JAP,,0,0,0,,そういうもん?
+Dialogue: 0,0:10:35.90,0:10:38.90,JAP,,0,0,0,,でも重要なのも堀がやるっておかしいじゃん
+Dialogue: 0,0:10:38.90,0:10:40.87,JAP,,0,0,0,,堀は使われてるだけだよ
+Dialogue: 0,0:10:41.28,0:10:44.29,JAP,,0,0,0,,だとしても　役に立つんだからいいじゃない
+Dialogue: 0,0:10:44.29,0:10:46.12,JAP,,0,0,0,,えー　よくない
+Dialogue: 0,0:10:46.70,0:10:48.04,JAP,,0,0,0,,大変そうだな
+Dialogue: 0,0:10:48.04,0:10:48.87,JAP,,0,0,0,,うん
+Dialogue: 0,0:10:49.33,0:10:54.34,JAP,,0,0,0,,なんつーか　俺らバカに手伝えることなんか何一つないな
+Dialogue: 0,0:10:54.34,0:10:55.30,JAP,,0,0,0,,確かに
+Dialogue: 0,0:10:55.96,0:10:59.38,JAP,,0,0,0,,そういえば学年一位は　仙石会長なんだよね
+Dialogue: 0,0:10:59.38,0:11:00.13,JAP,,0,0,0,,マジか
+Dialogue: 0,0:11:01.30,0:11:03.14,JAP,,0,0,0,,女子にも人気だし
+Dialogue: 0,0:11:03.14,0:11:07.64,JAP,,0,0,0,,堀さんも少なからず　好意を持ってるから手伝ってんじゃない
+Dialogue: 0,0:11:16.03,0:11:17.32,JAP,,0,0,0,,堀さんっている?
+Dialogue: 0,0:11:18.86,0:11:20.53,JAP,,0,0,0,,あ　綾崎さん
+Dialogue: 0,0:11:26.12,0:11:28.33,JAP,,0,0,0,,これ　頼まれてたファイルと冊子
+Dialogue: 0,0:11:28.75,0:11:29.87,JAP,,0,0,0,,重いけど大丈夫?
+Dialogue: 0,0:11:30.62,0:11:33.33,JAP,,0,0,0,,大丈夫　ありがとう
+Dialogue: 0,0:11:33.75,0:11:35.84,JAP,,0,0,0,,うわあ　美少女
+Dialogue: 0,0:11:36.34,0:11:38.71,JAP,,0,0,0,,あれが仙石会長の彼女よ
+Dialogue: 0,0:11:38.71,0:11:40.59,JAP,,0,0,0,,美男美女カップルじゃん
+Dialogue: 0,0:11:40.59,0:11:43.09,JAP,,0,0,0,,綾崎さんも生徒会なんだけどね
+Dialogue: 0,0:11:44.39,0:11:46.22,JAP,,0,0,0,,あんまり仕事してないみたい
+Dialogue: 0,0:11:46.22,0:11:47.89,JAP,,0,0,0,,マスコット的存在だ
+Dialogue: 0,0:11:47.89,0:11:51.77,JAP,,0,0,0,,え　じゃあ美少女の仕事が堀に回ってるってこと?
+Dialogue: 0,0:11:51.77,0:11:53.85,JAP,,0,0,0,,やだなあ　そんな言い方
+Dialogue: 0,0:11:54.10,0:11:58.36,JAP,,0,0,0,,確かにさっきの仕事　綾崎さんの分担だけど
+Dialogue: 0,0:11:58.94,0:12:01.90,JAP,,0,0,0,,確実に仕事回されてるって…
+Dialogue: 0,0:12:10.08,0:12:11.91,JAP,,0,0,0,,じゃあ私は帰るわね
+Dialogue: 0,0:12:13.21,0:12:13.87,JAP,,0,0,0,,うん
+Dialogue: 0,0:12:15.42,0:12:18.30,JAP,,0,0,0,,堀さん　大丈夫だろうか
+Dialogue: 0,0:12:22.51,0:12:25.64,JAP,,0,0,0,,ケーキ作って持ってったら　堀さん元気出るかな
+Dialogue: 0,0:12:27.35,0:12:28.47,JAP,,0,0,0,,いったあ
+Dialogue: 0,0:12:28.47,0:12:30.39,JAP,,0,0,0,,あ…あの　大丈夫ですか
+Dialogue: 0,0:12:31.06,0:12:32.31,JAP,,0,0,0,,もー
+Dialogue: 0,0:12:33.19,0:12:35.40,JAP,,0,0,0,,ちゃんと前見て歩いてよね
+Dialogue: 0,0:12:35.69,0:12:37.77,JAP_Up,,0,0,0,,え?　俺前見て…
+Dialogue: 0,0:12:36.65,0:12:40.28,JAP,,0,0,0,,レミ急いでるのに　早く手伝って
+Dialogue: 0,0:12:41.57,0:12:44.91,JAP,,0,0,0,,あ　また桜に遅いって言われるよお
+Dialogue: 0,0:12:47.87,0:12:48.78,JAP,,0,0,0,,あ　コレ
+Dialogue: 0,0:12:48.99,0:12:52.41,JAP,,0,0,0,,えーっと　多分それもう要らないやつだから　捨てといて
+Dialogue: 0,0:12:52.41,0:12:53.62,JAP,,0,0,0,,じゃーね
+Dialogue: 0,0:12:53.62,0:12:55.42,JAP,,0,0,0,,えええ?!
+Dialogue: 0,0:12:56.58,0:12:59.00,JAP,,0,0,0,,言うだけ言われて去られてしまった
+Dialogue: 0,0:13:24.19,0:13:24.95,JAP,,0,0,0,,ん?
+Dialogue: 0,0:13:26.70,0:13:27.45,JAP_Up,,0,0,0,,どうしたの
+Dialogue: 0,0:13:27.45,0:13:28.41,JAP_Up,,0,0,0,,なんだ?
+Dialogue: 0,0:13:28.41,0:13:32.08,JAP,,0,0,0,,だから　私は頼まれたものは全部やったって
+Dialogue: 0,0:13:32.66,0:13:34.96,JAP,,0,0,0,,でも　書類が足りないのよ
+Dialogue: 0,0:13:35.29,0:13:37.33,JAP_Up,,0,0,0,,どこを探しても見つからないし
+Dialogue: 0,0:13:36.87,0:13:39.17,JAP,,0,0,0,,何?　なんの騒ぎ?
+Dialogue: 0,0:13:40.00,0:13:41.92,JAP,,0,0,0,,宮村　助けてよお
+Dialogue: 0,0:13:41.92,0:13:43.46,JAP,,0,0,0,,堀が　堀が…
+Dialogue: 0,0:13:44.09,0:13:44.97,JAP,,0,0,0,,堀さん?
+Dialogue: 0,0:13:44.97,0:13:47.47,JAP,,0,0,0,,堀が生徒会に言いがかりつけられてんだ
+Dialogue: 0,0:13:48.68,0:13:52.97,JAP,,0,0,0,,昨日ちゃんと全部渡したわよ　その会計書類も全部
+Dialogue: 0,0:13:53.39,0:13:54.81,JAP,,0,0,0,,そうでしょ　綾崎さん
+Dialogue: 0,0:13:57.10,0:13:58.98,JAP,,0,0,0,,レミは知らないって言ってるよ
+Dialogue: 0,0:14:00.11,0:14:02.61,JAP,,0,0,0,,その場で書類の確認をしなかったんでしょ
+Dialogue: 0,0:14:03.15,0:14:04.99,JAP,,0,0,0,,それは…　そっちが…
+Dialogue: 0,0:14:04.99,0:14:07.24,JAP,,0,0,0,,確かに　こっちにも非はあるけど
+Dialogue: 0,0:14:07.70,0:14:11.41,JAP,,0,0,0,,でも　それは昨日レミが受け取ったものの中に
+Dialogue: 0,0:14:11.41,0:14:13.74,JAP,,0,0,0,,会計書類があったかにもよるんじゃない
+Dialogue: 0,0:14:14.41,0:14:16.75,JAP,,0,0,0,,堀さん　本当に渡したの
+Dialogue: 0,0:14:20.58,0:14:21.63,JAP,,0,0,0,,渡したわよ
+Dialogue: 0,0:14:22.80,0:14:26.26,JAP,,0,0,0,,でも正直　疲れててよく覚えてない
+Dialogue: 0,0:14:26.55,0:14:27.88,JAP_Up,,0,0,0,,堀さんが手抜いたの?
+Dialogue: 0,0:14:27.88,0:14:29.68,JAP_Up,,0,0,0,,堀って1組の?
+Dialogue: 0,0:14:29.68,0:14:33.10,JAP_Up,,0,0,0,,頼んだ書類がないせいで　作業が遅れてるんだって
+Dialogue: 0,0:14:33.60,0:14:36.77,JAP_Up,,0,0,0,,えー　会長かわいそう
+Dialogue: 0,0:14:37.10,0:14:41.52,JAP,,0,0,0,,そっちに非があるなら　謝ってほしいだけなんだよ　堀さん
+Dialogue: 0,0:14:43.27,0:14:44.32,JAP,,0,0,0,,テメ…仙石
+Dialogue: 0,0:14:44.82,0:14:46.53,JAP,,0,0,0,,落ち着けって　石川
+Dialogue: 0,0:14:46.74,0:14:47.95,JAP,,0,0,0,,やめてよお
+Dialogue: 0,0:14:47.95,0:14:51.45,JAP,,0,0,0,,堀はちゃんとやったもん　私ずっと見てたもん
+Dialogue: 0,0:14:51.99,0:14:53.37,JAP,,0,0,0,,昨日渡したもん
+Dialogue: 0,0:14:55.99,0:14:59.41,JAP_Up,,0,0,0,,ていうかさ　堀さんが謝ればいいんじゃない
+Dialogue: 0,0:15:00.04,0:15:02.04,JAP_Up,,0,0,0,,早く謝んなよ
+Dialogue: 0,0:15:02.46,0:15:03.25,JAP,,0,0,0,,石川君
+Dialogue: 0,0:15:03.88,0:15:04.55,JAP,,0,0,0,,宮村
+Dialogue: 0,0:15:04.80,0:15:07.13,JAP,,0,0,0,,悪いけど　カバンとこれ
+Dialogue: 0,0:15:07.59,0:15:08.30,JAP,,0,0,0,,ちょっと持ってて
+Dialogue: 0,0:15:09.26,0:15:11.47,JAP,,0,0,0,,どう　堀さん
+Dialogue: 0,0:15:16.60,0:15:17.18,JAP,,0,0,0,,ご…
+Dialogue: 0,0:15:17.18,0:15:19.56,JAP,,0,0,0,,言わなくていいよ　堀さん
+Dialogue: 0,0:15:20.48,0:15:21.56,JAP,,0,0,0,,言わなくていい
+Dialogue: 0,0:15:22.31,0:15:24.40,JAP,,0,0,0,,宮…村
+Dialogue: 0,0:15:27.53,0:15:28.57,JAP,,0,0,0,,なんだ君は
+Dialogue: 0,0:15:29.11,0:15:30.03,JAP,,0,0,0,,会長
+Dialogue: 0,0:15:39.04,0:15:40.33,JAP,,0,0,0,,何してんのよ
+Dialogue: 0,0:15:40.58,0:15:42.29,JAP,,0,0,0,,せっ…仙石君
+Dialogue: 0,0:15:43.17,0:15:45.79,JAP,,0,0,0,,ぼぼぼ…暴力反対
+Dialogue: 0,0:15:45.79,0:15:47.09,JAP,,0,0,0,,どうしてこんな…
+Dialogue: 0,0:15:48.76,0:15:50.47,JAP,,0,0,0,,探し物ってコレ?
+Dialogue: 0,0:15:50.84,0:15:53.80,JAP,,0,0,0,,会計書類　なんであなたが
+Dialogue: 0,0:15:54.26,0:15:56.47,JAP,,0,0,0,,昨日ちょっとした偶然で拾ったんだ
+Dialogue: 0,0:15:57.31,0:16:00.02,JAP,,0,0,0,,綾崎さんには捨てといてって言われたけど
+Dialogue: 0,0:16:00.02,0:16:01.60,JAP,,0,0,0,,レミそんなこと言ってな…
+Dialogue: 0,0:16:10.28,0:16:13.61,JAP,,0,0,0,,あ…　あの時
+Dialogue: 0,0:16:15.45,0:16:19.62,JAP,,0,0,0,,レーミー
+Dialogue: 0,0:16:25.08,0:16:27.63,JAP,,0,0,0,,ご…ごめんなさーい!
+Dialogue: 0,0:16:28.67,0:16:31.47,JAP_Up,,0,0,0,,結局　堀さんは悪くなかったってこと
+Dialogue: 0,0:16:31.47,0:16:32.59,JAP_Up,,0,0,0,,何があったの
+Dialogue: 0,0:16:33.18,0:16:33.68,JAP_Up,,0,0,0,,さあ
+Dialogue: 0,0:16:47.40,0:16:50.15,JAP,,0,0,0,,ま　誤解がとけてよかったわ
+Dialogue: 0,0:16:51.53,0:16:53.61,JAP,,0,0,0,,ちょっと泣きそうになったけど
+Dialogue: 0,0:16:54.07,0:16:57.12,JAP,,0,0,0,,堀はしっかり者だもん　当然だよねー
+Dialogue: 0,0:16:57.32,0:16:58.53,JAP,,0,0,0,,よしてよ
+Dialogue: 0,0:16:59.24,0:17:01.87,JAP,,0,0,0,,でも　宮村のおかげで　本当助かったわ
+Dialogue: 0,0:17:02.29,0:17:03.37,JAP,,0,0,0,,ありがとう
+Dialogue: 0,0:17:05.08,0:17:06.17,JAP,,0,0,0,,偶然だけどね
+Dialogue: 0,0:17:06.79,0:17:09.38,JAP,,0,0,0,,でもよ　誤解とくだけなら
+Dialogue: 0,0:17:09.38,0:17:11.88,JAP,,0,0,0,,頭突きは必要なかったんじゃないのか
+Dialogue: 0,0:17:12.21,0:17:15.59,JAP,,0,0,0,,アレは　なんとなくムカついたから
+Dialogue: 0,0:17:17.64,0:17:18.85,JAP,,0,0,0,,気になってたんだけど
+Dialogue: 0,0:17:19.81,0:17:22.89,JAP,,0,0,0,,堀さんって　会長に弱みでも握られてるの
+Dialogue: 0,0:17:23.27,0:17:23.89,JAP,,0,0,0,,え?
+Dialogue: 0,0:17:24.39,0:17:28.11,JAP,,0,0,0,,だって　堀さんが言いなりで頼み事聞いてるのって
+Dialogue: 0,0:17:28.11,0:17:28.90,JAP,,0,0,0,,なんか…
+Dialogue: 0,0:17:28.90,0:17:29.65,JAP,,0,0,0,,変だ
+Dialogue: 0,0:17:30.86,0:17:31.78,JAP,,0,0,0,,なんで?
+Dialogue: 0,0:17:32.07,0:17:36.78,JAP,,0,0,0,,やだなー　私は生徒会大変そうだなって
+Dialogue: 0,0:17:36.78,0:17:40.91,JAP,,0,0,0,,それに仙石…君とは　幼なじみっていうかあ
+Dialogue: 0,0:17:41.79,0:17:44.71,JAP,,0,0,0,,仙石　すぐ泣く弱虫
+Dialogue: 0,0:17:44.71,0:17:47.04,JAP,,0,0,0,,わーん　やめてよ　京ちゃん
+Dialogue: 0,0:17:47.79,0:17:50.17,JAP,,0,0,0,,僕もグリーンピース嫌いなのに
+Dialogue: 0,0:17:50.46,0:17:52.00,JAP,,0,0,0,,じゃんけんぽん
+Dialogue: 0,0:17:52.80,0:17:56.05,JAP,,0,0,0,,高校に入ったら　京ちゃんの犬は卒業する
+Dialogue: 0,0:17:56.47,0:17:59.55,JAP,,0,0,0,,犬って?　そんな風に思ってたの
+Dialogue: 0,0:18:00.55,0:18:02.06,JAP,,0,0,0,,超ウケるんだけど
+Dialogue: 0,0:18:03.43,0:18:05.60,JAP,,0,0,0,,高校では呼び捨て禁止
+Dialogue: 0,0:18:05.60,0:18:08.02,JAP,,0,0,0,,俺は高校生活を楽しみたいんだ
+Dialogue: 0,0:18:09.52,0:18:13.07,JAP,,0,0,0,,じゃないと　京ちゃんのこれまでの所業をばらす
+Dialogue: 0,0:18:13.32,0:18:15.24,JAP,,0,0,0,,ほー　どんな?
+Dialogue: 0,0:18:15.24,0:18:17.20,JAP,,0,0,0,,ほら　それ　そういうところ
+Dialogue: 0,0:18:17.74,0:18:19.11,JAP,,0,0,0,,分かったわよ
+Dialogue: 0,0:18:19.11,0:18:23.08,JAP,,0,0,0,,せ…せ…仙石「君」?
+Dialogue: 0,0:18:24.87,0:18:28.08,JAP,,0,0,0,,そうそう　よろしくね　「堀」さん
+Dialogue: 0,0:18:32.75,0:18:35.76,JAP,,0,0,0,,ほんと　ただの幼なじみよ
+Dialogue: 0,0:18:36.34,0:18:38.09,JAP,,0,0,0,,絶対何かあるな
+Dialogue: 0,0:18:46.39,0:18:47.52,JAP,,0,0,0,,おはよう　会長
+Dialogue: 0,0:18:49.31,0:18:50.98,JAP,,0,0,0,,おはようございまーす
+Dialogue: 0,0:18:53.15,0:18:56.23,JAP,,0,0,0,,仙石は　新しいトラウマを抱えた
+Dialogue: 0,0:19:06.50,0:19:07.37,JAP,,0,0,0,,あのさあ
+Dialogue: 0,0:19:08.66,0:19:10.87,JAP,,0,0,0,,もう少しで堀の誕生日なんだわ
+Dialogue: 0,0:19:11.12,0:19:12.88,JAP,,0,0,0,,え?　そうなの
+Dialogue: 0,0:19:12.88,0:19:14.63,JAP,,0,0,0,,3月の終わりなんだよ
+Dialogue: 0,0:19:15.09,0:19:17.63,JAP,,0,0,0,,あ　春休み中ってことかあ
+Dialogue: 0,0:19:17.88,0:19:20.63,JAP,,0,0,0,,なんかあげようと思ってんだけどさ
+Dialogue: 0,0:19:20.93,0:19:24.64,JAP,,0,0,0,,なんかさあ　一回フラれたのに　ぶっちゃけウゼーよな
+Dialogue: 0,0:19:24.64,0:19:26.64,JAP,,0,0,0,,そんなことないんじゃないかな
+Dialogue: 0,0:19:26.97,0:19:29.64,JAP,,0,0,0,,あげたいって思うの　いけないことじゃないし
+Dialogue: 0,0:19:30.06,0:19:33.65,JAP,,0,0,0,,でも堀が喜ぶモノって　全然分かんねえんだよな
+Dialogue: 0,0:19:34.40,0:19:35.65,JAP,,0,0,0,,気持ちだよ
+Dialogue: 0,0:19:36.19,0:19:37.19,JAP,,0,0,0,,なんでもいいんじゃない
+Dialogue: 0,0:19:37.82,0:19:38.94,JAP,,0,0,0,,アクセとか…
+Dialogue: 0,0:19:38.94,0:19:40.82,JAP,,0,0,0,,いや　アクセは重いだろ
+Dialogue: 0,0:19:41.57,0:19:42.95,JAP,,0,0,0,,じゃあ…置物系?
+Dialogue: 0,0:19:42.95,0:19:45.87,JAP,,0,0,0,,宮村は堀の好きなモンとか何か知らね
+Dialogue: 0,0:19:48.04,0:19:49.25,JAP,,0,0,0,,プレゼントかあ
+Dialogue: 0,0:19:50.58,0:19:53.17,JAP,,0,0,0,,俺なら堀さんに何あげるかな
+Dialogue: 0,0:20:05.68,0:20:09.93,JAP,,0,0,0,,ねえ　3月の休みに入ったら　お兄ちゃん毎日遊びに来る?
+Dialogue: 0,0:20:11.14,0:20:13.02,JAP,,0,0,0,,毎日は来れないよ
+Dialogue: 0,0:20:13.69,0:20:17.44,JAP,,0,0,0,,宮村もいつまでもずっと来てくれるわけじゃないんだから
+Dialogue: 0,0:20:17.69,0:20:20.69,JAP,,0,0,0,,じゃあ…いつまで来てくれるの
+Dialogue: 0,0:20:20.69,0:20:22.24,JAP,,0,0,0,,高校卒業まで?
+Dialogue: 0,0:20:25.78,0:20:28.58,JAP,,0,0,0,,いつまで宮村がウチに来てくれるかなんて
+Dialogue: 0,0:20:29.83,0:20:32.83,JAP,,0,0,0,,そんなの　私も知らないわよ
+Dialogue: 0,0:20:34.17,0:20:38.21,JAP,,0,0,0,,お姉ちゃんは　お兄ちゃんが来なくなったら嫌じゃないの
+Dialogue: 0,0:20:38.50,0:20:40.05,JAP,,0,0,0,,僕はすっごく嫌あ
+Dialogue: 0,0:20:42.17,0:20:42.80,JAP,,0,0,0,,堀さん
+Dialogue: 0,0:20:45.22,0:20:47.97,JAP,,0,0,0,,そんなの…　私だって嫌
+Dialogue: 0,0:20:50.02,0:20:52.02,JAP,,0,0,0,,お姉ちゃんって素直じゃないよね
+Dialogue: 0,0:20:52.93,0:20:54.19,JAP,,0,0,0,,う…うるさいっ
+Dialogue: 0,0:21:01.49,0:21:02.90,JAP,,0,0,0,,おめでとう
+Dialogue: 0,0:21:02.90,0:21:04.24,JAP,,0,0,0,,お誕生日おめでとう
+Dialogue: 0,0:21:04.53,0:21:06.28,JAP,,0,0,0,,あ　誕生日
+Dialogue: 0,0:21:07.07,0:21:09.62,JAP,,0,0,0,,春休み入っちゃったし忘れるところだった
+Dialogue: 0,0:21:10.08,0:21:10.99,JAP,,0,0,0,,ありがとう
+Dialogue: 0,0:21:11.58,0:21:14.25,JAP,,0,0,0,,これは俺から　ハッピーバースデー!
+Dialogue: 0,0:21:18.13,0:21:20.17,JAP,,0,0,0,,わっ　これは何?
+Dialogue: 0,0:21:20.17,0:21:23.30,JAP,,0,0,0,,最近の若者がこぞって聞く曲?　流行りの?
+Dialogue: 0,0:21:23.84,0:21:26.55,JAP,,0,0,0,,うん　自分の好きなやつだけど
+Dialogue: 0,0:21:27.97,0:21:30.31,JAP,,0,0,0,,ありがとう　宮村
+Dialogue: 0,0:21:32.18,0:21:32.93,JAP,,0,0,0,,不思議だ
+Dialogue: 0,0:21:34.64,0:21:37.85,JAP,,0,0,0,,なんで分かったんだろう　私の欲しいもの
+Dialogue: 0,0:21:39.82,0:21:40.73,JAP,,0,0,0,,変なやつ
+Dialogue: 0,0:21:48.37,0:21:52.04,JAP,,0,0,0,,誕生日が来たってことは　春休みも終わりね
+Dialogue: 0,0:21:57.00,0:21:57.58,JAP,,0,0,0,,うん
+Dialogue: 0,0:22:07.51,0:22:09.39,JAP,,0,0,0,,もう3年生か
+Dialogue: 0,0:01:20.21,0:01:23.64,OPJP,A1,0,0,0,fx,{\pos(1810,1070)\blur3\fad(300,300)\c&H000000&}きっと消えない　{\alpha&HFF&\t(1730,2030,\alpha&H00&)}今日は言えない
+Dialogue: 1,0:01:20.21,0:01:23.64,OPJP,A1,0,0,0,fx,{\pos(1820,1060)\bord1\fad(300,300)}きっと消えない　{\alpha&HFF&\t(1730,2030,\alpha&H00&)}今日は言えない
+Dialogue: 0,0:01:20.21,0:01:23.64,OPJP,A1,0,0,0,fx,{\p1\an7\xshad-5\yshad5\pos(1456,1030)\fad(300,300)}m -384 -40 l -384 40 l 384 40 l 384 -40 m -374 -30 l 374 -30 l 374 30 l -374 30
+Dialogue: 0,0:01:23.68,0:01:27.06,OPJP,A2,0,0,0,fx,{\pos(1810,1070)\blur3\fad(300,300)\c&H000000&}元どおりにはもうできない
+Dialogue: 1,0:01:23.68,0:01:27.06,OPJP,A2,0,0,0,fx,{\pos(1820,1060)\bord1\fad(300,300)}元どおりにはもうできない
+Dialogue: 0,0:01:23.68,0:01:27.06,OPJP,A2,0,0,0,fx,{\p1\an7\xshad-5\yshad5\pos(1530,1030)\fad(300,300)}m -311 -40 l -311 40 l 311 40 l 311 -40 m -301 -30 l 301 -30 l 301 30 l -301 30
+Dialogue: 0,0:01:26.93,0:01:30.98,OPJP,A3,0,0,0,fx,{\pos(1810,1070)\blur3\fad(300,300)\c&H000000&}あの頃に　{\alpha&HFF&\t(1680,1980,\alpha&H00&)}君を{\alpha&HFF&\t(2820,3120,\alpha&H00&)}残したまま
+Dialogue: 1,0:01:26.93,0:01:30.98,OPJP,A3,0,0,0,fx,{\pos(1820,1060)\bord1\fad(300,300)}あの頃に　{\alpha&HFF&\t(1680,1980,\alpha&H00&)}君を{\alpha&HFF&\t(2820,3120,\alpha&H00&)}残したまま
+Dialogue: 0,0:01:26.93,0:01:30.98,OPJP,A3,0,0,0,fx,{\p1\an7\xshad-5\yshad5\pos(1528,1030)\fad(300,300)}m -313 -40 l -313 40 l 313 40 l 313 -40 m -303 -30 l 303 -30 l 303 30 l -303 30
+Dialogue: 1,0:01:44.15,0:01:50.21,OPJP,B1,0,0,0,fx,{\fscx1\t(0,500,0.5,\fscx100)\c&H000000&\blur5\t(0,500,\blur0)\fad(300,0)\t(4755,4756,\c&HFFFFFF&)\t(4880,4881,\c&H000000&)\t(5005,5006,\c&HFFFFFF&)\t(5130,5131,\c&H000000&)\t(5172,5173,\c&HFFFFFF&)\t(5673,5674,\c&H000000&)\t(5756,5757,\c&HFFFFFF&)\t(5881,5882,\c&H000000&)\t(5965,5966,\c&HFFFFFF&)\t(10298,10299,\c&H000000&)\t(10298,10299,\c&HFFFFFF&)}記憶の中では　{\alpha&HFF&\blur10\t(2450,2750,\alpha&H00&\blur0)}晴れ{\alpha&HFF&\blur10\t(3260,3560,\alpha&H00&\blur0)}間の{\alpha&HFF&\blur10\t(4070,4370,\alpha&H00&\blur0)}部屋
+Dialogue: 0,0:01:44.15,0:01:50.21,OPJP,B1,0,0,0,fx,{\p1\an5\fscx1\t(0,500,0.5,\fscx100)\fscy180\pos(1835,1065)\blur5\t(0,500,\blur0)\fad(300,0)\t(4755,4756,\c&HF3C870&)\t(4880,4881,\c&HFFFFFF&)\t(5005,5006,\c&HF3C870&)\t(5130,5131,\c&HFFFFFF&)\t(5172,5173,\c&HF3C870&)\t(5673,5674,\c&HFFFFFF&)\t(5756,5757,\c&HF3C870&)\t(5881,5882,\c&HFFFFFF&)\t(5965,5966,\c&HF3C870&)\t(10298,10299,\c&HFFFFFF&)\t(10298,10299,\c&HF3C870&)}m -329 -20 b -334 -20 -337 -17 -337 -12 l -337 12 b -337 17 -334 20 -329 20 l 329 20 b 334 20 337 17 337 12 l 337 -12 b 337 -17 334 -20 329 -20 l 305 -20
+Dialogue: 1,0:01:50.58,0:01:56.51,OPJP,B2,0,0,0,fx,{\fscx1\t(0,500,0.5,\fscx100)\c&H000000&\blur5\t(0,500,\blur0)\fad(300,305)\t(4800,4801,\c&HFFFFFF&)\t(4925,4926,\c&H000000&)\t(5008,5009,\c&HFFFFFF&)\t(5133,5134,\c&H000000&)\t(5217,5218,\c&HFFFFFF&)\t(5342,5343,\c&H000000&)\t(5425,5426,\c&HFFFFFF&)\t(10298,10299,\c&H000000&)\t(10298,10299,\c&HFFFFFF&)\t(10298,10299,\c&H000000&)\t(10298,10299,\c&HFFFFFF&)}惹かれ合えばサラバ　{\alpha&HFF&\blur10\t(2450,2750,\alpha&H00&\blur0)}知り{\alpha&HFF&\blur10\t(3260,3560,\alpha&H00&\blur0)}たく{\alpha&HFF&\blur10\t(4070,4370,\alpha&H00&\blur0)}ない
+Dialogue: 0,0:01:50.58,0:01:56.51,OPJP,B2,0,0,0,fx,{\p1\an5\fscx1\t(0,500,0.5,\fscx100)\fscy180\pos(1835,1065)\blur5\t(0,500,\blur0)\fad(300,305)\t(4800,4801,\c&HF3C870&)\t(4925,4926,\c&HFFFFFF&)\t(5008,5009,\c&HF3C870&)\t(5133,5134,\c&HFFFFFF&)\t(5217,5218,\c&HF3C870&)\t(5342,5343,\c&HFFFFFF&)\t(5425,5426,\c&HF3C870&)\t(10298,10299,\c&HFFFFFF&)\t(10298,10299,\c&HF3C870&)\t(10298,10299,\c&HFFFFFF&)\t(10298,10299,\c&HF3C870&)}m -401 -20 b -406 -20 -409 -17 -409 -12 l -409 12 b -409 17 -406 20 -401 20 l 401 20 b 406 20 409 17 409 12 l 409 -12 b 409 -17 406 -20 401 -20 l 377 -20
+Dialogue: 1,0:01:57.13,0:02:03.18,OPJP,B3,0,0,0,fx,{\fscx1\t(0,500,0.5,\fscx100)\c&H000000&\blur5\t(0,500,\blur0)\fad(300,0)\t(4788,4789,\c&HFFFFFF&)\t(4913,4914,\c&H000000&)\t(4955,4956,\c&HFFFFFF&)\t(5080,5081,\c&H000000&)\t(5163,5164,\c&HFFFFFF&)\t(5289,5290,\c&H000000&)\t(5539,5540,\c&HFFFFFF&)\t(5664,5665,\c&H000000&)\t(5747,5748,\c&HFFFFFF&)\t(5872,5873,\c&H000000&)\t(5956,5957,\c&HFFFFFF&)}思い出せば今も　{\alpha&HFF&\blur10\t(2450,2750,\alpha&H00&\blur0)}ふわ{\alpha&HFF&\blur10\t(3260,3560,\alpha&H00&\blur0)}っと香{\alpha&HFF&\blur10\t(4070,4370,\alpha&H00&\blur0)}る
+Dialogue: 0,0:01:57.13,0:02:03.18,OPJP,B3,0,0,0,fx,{\p1\an5\fscx1\t(0,500,0.5,\fscx100)\fscy180\pos(1835,1065)\blur5\t(0,500,\blur0)\fad(300,0)\t(4788,4789,\c&HF3C870&)\t(4913,4914,\c&HFFFFFF&)\t(4955,4956,\c&HF3C870&)\t(5080,5081,\c&HFFFFFF&)\t(5163,5164,\c&HF3C870&)\t(5289,5290,\c&HFFFFFF&)\t(5539,5540,\c&HF3C870&)\t(5664,5665,\c&HFFFFFF&)\t(5747,5748,\c&HF3C870&)\t(5872,5873,\c&HFFFFFF&)\t(5956,5957,\c&HF3C870&)}m -353 -20 b -358 -20 -361 -17 -361 -12 l -361 12 b -361 17 -358 20 -353 20 l 353 20 b 358 20 361 17 361 12 l 361 -12 b 361 -17 358 -20 353 -20 l 329 -20
+Dialogue: 1,0:02:03.59,0:02:08.85,OPJP,B4,0,0,0,fx,{\fscx1\t(0,500,0.5,\fscx100)\c&H000000&\blur5\t(0,500,\blur0)\fad(300,0)\t(4773,4774,\c&HFFFFFF&)\t(4898,4899,\c&H000000&)\t(4940,4941,\c&HFFFFFF&)\t(5065,5066,\c&H000000&)\t(5148,5149,\c&HFFFFFF&)\t(10298,10299,\c&H000000&)\t(10298,10299,\c&HFFFFFF&)\t(10298,10299,\c&H000000&)\t(10298,10299,\c&HFFFFFF&)\t(10298,10299,\c&H000000&)\t(10298,10299,\c&HFFFFFF&)}君と僕は同じ　{\alpha&HFF&\blur10\t(2450,2750,\alpha&H00&\blur0)\c&HB45204&}色{\alpha&HFF&\blur10\t(3260,3560,\alpha&H00&\blur0)\c&H325A9B&}香{\alpha&HFF&\blur10\t(4070,4370,\alpha&H00&\blur0)\c&HB03A9B&}水
+Dialogue: 0,0:02:03.59,0:02:08.85,OPJP,B4,0,0,0,fx,{\p1\an5\fscx1\t(0,500,0.5,\fscx100)\fscy180\pos(1835,1065)\blur5\t(0,500,\blur0)\fad(300,0)\t(4773,4774,\c&HF3C870&)\t(4898,4899,\c&HFFFFFF&)\t(4940,4941,\c&HF3C870&)\t(5065,5066,\c&HFFFFFF&)\t(5148,5149,\c&HF3C870&)\t(10298,10299,\c&HFFFFFF&)\t(10298,10299,\c&HF3C870&)\t(10298,10299,\c&HFFFFFF&)\t(10298,10299,\c&HF3C870&)\t(10298,10299,\c&HFFFFFF&)\t(10298,10299,\c&HF3C870&)}m -256 -20 b -261 -20 -264 -17 -264 -12 l -264 12 b -264 17 -261 20 -256 20 l 256 20 b 261 20 264 17 264 12 l 264 -12 b 264 -17 261 -20 256 -20 l 232 -20
+Dialogue: 1,0:02:09.10,0:02:15.57,OPJP,C,0,0,0,fx,{\fscx1\t(0,500,0.5,\fscx100)\c&H000000&\t(819,1028,\c&HD0A2FB&)\t(1791,2791,\c&H05DB8E&)\t(3154,4154,\c&H1F20CC&)\t(4517,5517,\c&HA8A7A2&)\blur5\t(0,500,\blur0)\fad(300,300)}ほんの少し　背伸びをして歩いた道
+Dialogue: 0,0:02:09.10,0:02:10.42,OPJP,C,0,0,0,fx,{\p1\an5\fscx1\t(0,500,0.5,\fscx100)\fscy180\pos(1835,1065)\blur5\t(0,500,\blur0)\fad(300,200)}m -400 -20 b -405 -20 -408 -17 -408 -12 l -408 12 b -408 17 -405 20 -400 20 l 400 20 b 405 20 408 17 408 12 l 408 -12 b 408 -17 405 -20 400 -20 l 376 -20
+Dialogue: 0,0:02:15.86,0:02:18.91,OPJP,D,0,0,0,fx,{\an2\bord2\3c&HFFFFFF&}{\fad(300,0)\pos(480,1040)\c&H000000&}ビードロの靴
+Dialogue: 0,0:02:15.86,0:02:18.91,OPJP,D,0,0,0,fx,{\an2\bord2\3c&HFFFFFF&}{\c&H1F20CC&\t(1397,1398,\alpha&HFF&\fad(300,0))\pos(480,1040)}ビードロの靴
+Dialogue: 0,0:02:15.86,0:02:18.91,OPJP,D,0,0,0,fx,{\an2\bord2\3c&HFFFFFF&}{\fad(300,0)\pos(1440,1040)\c&H000000&}移り変わる季節模様
+Dialogue: 0,0:02:15.86,0:02:18.91,OPJP,D,0,0,0,fx,{\an2\bord2\3c&HFFFFFF&}{\c&H1F20CC&\t(729,730,\alpha&HFF&\fad(300,0))\pos(1440,1040)}移り変わる季節模様
+Dialogue: 0,0:02:18.91,0:02:19.95,OPJP,D,0,0,0,fx,{\an2\bord2\3c&HFFFFFF&}{\fscy100\t(26,860,\fscy57.84)\fscx100\t(26,860,\fscx57.84)\c&H000000&\move(480,1040,673.9,819.33,26,860)}ビードロの靴
+Dialogue: 0,0:02:18.91,0:02:19.95,OPJP,D,0,0,0,fx,{\an2\bord2\3c&HFFFFFF&}{\fscy100\t(26,860,\fscy57.84)\fscx100\t(26,860,\fscx57.84)\c&H000000&\move(1440,1040,1229.2,819.33,26,860)}移り変わる季節模様
+Dialogue: 0,0:02:19.95,0:02:22.99,OPJP,D,0,0,0,fx,{\an2\bord2\3c&HFFFFFF&}{\fscx57.84\fscy57.84\c&H000000&\move(673.9,819.33,673.9,546.75,29,279)\fad(0,1000)}ビードロの靴
+Dialogue: 0,0:02:19.95,0:02:22.99,OPJP,D,0,0,0,fx,{\an2\bord2\3c&HFFFFFF&}{\fscx57.84\fscy57.84\c&H000000&\move(1229.2,819.33,1229.2,1059.65,29,279)\fad(0,1000)}移り変わる季節模様
+Dialogue: 1,0:02:21.82,0:02:25.37,OPJP,E1,0,0,0,fx,{\pos(1820,1060)\fad(1300,300)\c&HFFFFFF&}きっと消えない　{\alpha&HFF&\blur10\t(1640,1940,\alpha&H00&\blur0)}今日は言えない
+Dialogue: 0,0:02:21.82,0:02:25.37,OPJP,E1,0,0,0,fx,{\p1\an7\fscy300\1a&H50&\pos(1456,1030)\bord7\c&HF1BE3A&\3c&HFFFFFF&\fad(1300,300)}m -374 -10 l -374 10 l 374 10 l 374 -10
+Dialogue: 1,0:02:25.28,0:02:28.62,OPJP,E2,0,0,0,fx,{\pos(1820,1060)\fad(300,700)\c&HFFFFFF&}元どおりにはもうできない
+Dialogue: 0,0:02:25.28,0:02:28.62,OPJP,E2,0,0,0,fx,{\p1\an7\fscy300\1a&H50&\pos(1530,1030)\bord7\c&HF1BE3A&\3c&HFFFFFF&\fad(300,700)}m -301 -10 l -301 10 l 301 10 l 301 -10
+Dialogue: 1,0:02:28.53,0:02:35.00,OPJP,F,0,0,0,fx,{\c&HFFFFFF&\shad2\t(5699,5700,\c&H000000&\shad0)\t(5919,5920,\c&HFFFFFF&\shad2)\t(6109,6110,\c&H000000&\shad0)\move(1504,1060,1276.5,1060,0,5486)\fad(500,0)}あの頃に隠した　{\t(2501,3294,\c&H523A98&)\t(4127,4128,\c&HFFFFFF&)\t(4544,4545,\c&HF7EA53&)\t(4960,4961,\c&HFFFFFF&)\t(5378,5379,\c&HF7EA53&)\t(5699,5700,\c&H000000&\shad0)\t(5919,5920,\c&HFFFFFF&\shad2)\t(6109,6110,\c&H000000&\shad0)}本物{\c&HFFFFFF&\t(5699,5700,\c&H000000&\shad0)\t(5919,5920,\c&HFFFFFF&\shad2)\t(6109,6110,\c&H000000&\shad0)}はどこ
+Dialogue: 0,0:02:34.23,0:02:35.00,OPJP,F,0,0,0,fx,{\p1\an7\fscy300\pos(960,1030)\bord7\c&HFCD97F&\3c&HFFFFFF&\t(219,220,\alpha&HFF&)\t(409,410,\alpha&H00&)}m -327 -10 l -327 10 l 327 10 l 327 -10
+Dialogue: 0,0:02:35.00,0:02:38.05,OPJP,G1,0,0,0,fx,{\an7\fnEA2607C0\fs80\shad2\blur1\pos(960,980)\fad(0,0)}怒ってくれない　解ってくれない
+Dialogue: 0,0:02:35.00,0:02:38.05,OPJP,G1,0,0,0,fx,{\p1\an5\fscx500\frz30\shad2\blur1\pos(960,980)\fad(0,0)}m 0 0 l 50 0 l 50 3 l 0 3
+Dialogue: 0,0:02:38.05,0:02:42.35,OPJP,G2,0,0,0,fx,{\an7\fnEA2607C0\fs80\shad2\blur1\pos(960,980)\fad(0,300)}思ってもただ　募ってしまうだけ
+Dialogue: 0,0:02:38.05,0:02:42.35,OPJP,G2,0,0,0,fx,{\p1\an5\fscx500\frz30\shad2\blur1\pos(960,980)\fad(0,300)}m 0 0 l 50 0 l 50 3 l 0 3
+Dialogue: 0,0:02:42.71,0:02:50.02,OPJP,G3,0,0,0,fx,{\an7\fnEA2607C0\fs80\shad2\blur1\pos(960,980)\fad(300,0)}懐かしい匂いと　この歌が残る
+Dialogue: 0,0:02:42.71,0:02:50.02,OPJP,G3,0,0,0,fx,{\p1\an5\fscx500\frz30\shad2\blur1\pos(960,980)\fad(300,0)}m 0 0 l 50 0 l 50 3 l 0 3
+Dialogue: 0,0:01:20.21,0:01:23.64,OPCN,A1,0,0,0,fx,{\pos(90,30)\blur3\fad(300,300)\c&H000000&}回忆不会消逝  {\alpha&HFF&\t(1730,2030,\alpha&H00&)}只是不愿言及
+Dialogue: 1,0:01:20.21,0:01:23.64,OPCN,A1,0,0,0,fx,{\pos(100,20)\bord1\fad(300,300)}回忆不会消逝  {\alpha&HFF&\t(1730,2030,\alpha&H00&)}只是不愿言及
+Dialogue: 0,0:01:20.21,0:01:23.64,OPCN,A1,0,0,0,fx,{\p1\an7\xshad-5\yshad5\pos(404,48)\fad(300,300)}m -324 -40 l -324 40 l 324 40 l 324 -40 m -314 -30 l 314 -30 l 314 30 l -314 30
+Dialogue: 0,0:01:23.68,0:01:27.06,OPCN,A2,0,0,0,fx,{\pos(90,30)\blur3\fad(300,300)\c&H000000&}一如往昔不过是忆如往昔
+Dialogue: 1,0:01:23.68,0:01:27.06,OPCN,A2,0,0,0,fx,{\pos(100,20)\bord1\fad(300,300)}一如往昔不过是忆如往昔
+Dialogue: 0,0:01:23.68,0:01:27.06,OPCN,A2,0,0,0,fx,{\p1\an7\xshad-5\yshad5\pos(360,48)\fad(300,300)}m -280 -40 l -280 40 l 280 40 l 280 -40 m -270 -30 l 270 -30 l 270 30 l -270 30
+Dialogue: 0,0:01:26.93,0:01:30.98,OPCN,A3,0,0,0,fx,{\pos(90,30)\blur3\fad(300,300)\c&H000000&}只因我那时  {\alpha&HFF&\t(1680,1980,\alpha&H00&)}把你{\alpha&HFF&\t(2820,3120,\alpha&H00&)}留在原地
+Dialogue: 1,0:01:26.93,0:01:30.98,OPCN,A3,0,0,0,fx,{\pos(100,20)\bord1\fad(300,300)}只因我那时  {\alpha&HFF&\t(1680,1980,\alpha&H00&)}把你{\alpha&HFF&\t(2820,3120,\alpha&H00&)}留在原地
+Dialogue: 0,0:01:26.93,0:01:30.98,OPCN,A3,0,0,0,fx,{\p1\an7\xshad-5\yshad5\pos(380,48)\fad(300,300)}m -300 -40 l -300 40 l 300 40 l 300 -40 m -290 -30 l 290 -30 l 290 30 l -290 30
+Dialogue: 1,0:01:44.15,0:01:50.21,OPCN,B1,0,0,0,fx,{\fscx1\t(0,500,0.5,\fscx100)\c&H000000&\blur5\t(0,500,\blur0)\fad(300,0)\t(4755,4756,\c&HFFFFFF&)\t(4880,4881,\c&H000000&)\t(5005,5006,\c&HFFFFFF&)\t(5130,5131,\c&H000000&)\t(5172,5173,\c&HFFFFFF&)\t(5673,5674,\c&H000000&)\t(5756,5757,\c&HFFFFFF&)\t(5881,5882,\c&H000000&)\t(5965,5966,\c&HFFFFFF&)\t(10298,10299,\c&H000000&)\t(10298,10299,\c&HFFFFFF&)}彼时阳光透过云隙  {\alpha&HFF&\blur10\t(2450,2750,\alpha&H00&\blur0)}缓缓{\alpha&HFF&\blur10\t(3260,3560,\alpha&H00&\blur0)}洒落{\alpha&HFF&\blur10\t(4070,4370,\alpha&H00&\blur0)}房间满地
+Dialogue: 0,0:01:44.15,0:01:50.21,OPCN,B1,0,0,0,fx,{\p1\an7\fscx1\t(0,500,0.5,\fscx100)\fscy180\pos(80,10)\blur5\t(0,500,\blur0)\fad(300,0)\t(4755,4756,\c&HF3C870&)\t(4880,4881,\c&HFFFFFF&)\t(5005,5006,\c&HF3C870&)\t(5130,5131,\c&HFFFFFF&)\t(5172,5173,\c&HF3C870&)\t(5673,5674,\c&HFFFFFF&)\t(5756,5757,\c&HF3C870&)\t(5881,5882,\c&HFFFFFF&)\t(5965,5966,\c&HF3C870&)\t(10298,10299,\c&HFFFFFF&)\t(10298,10299,\c&HF3C870&)}m 8 0 b 3 0 0 3 0 8 l 0 32 b 0 37 3 40 8 40 l 830 40 b 835 40 838 37 838 32 l 838 8 b 838 3 835 0 830 0
+Dialogue: 1,0:01:50.58,0:01:56.51,OPCN,B2,0,0,0,fx,{\fscx1\t(0,500,0.5,\fscx100)\c&H000000&\blur5\t(0,500,\blur0)\fad(300,305)\t(4800,4801,\c&HFFFFFF&)\t(4925,4926,\c&H000000&)\t(5008,5009,\c&HFFFFFF&)\t(5133,5134,\c&H000000&)\t(5217,5218,\c&HFFFFFF&)\t(5342,5343,\c&H000000&)\t(5425,5426,\c&HFFFFFF&)\t(10298,10299,\c&H000000&)\t(10298,10299,\c&HFFFFFF&)\t(10298,10299,\c&H000000&)\t(10298,10299,\c&HFFFFFF&)}你我虽曾心有灵犀  {\alpha&HFF&\blur10\t(2450,2750,\alpha&H00&\blur0)}却都{\alpha&HFF&\blur10\t(3260,3560,\alpha&H00&\blur0)}只愿{\alpha&HFF&\blur10\t(4070,4370,\alpha&H00&\blur0)}保持神秘
+Dialogue: 0,0:01:50.58,0:01:56.51,OPCN,B2,0,0,0,fx,{\p1\an7\fscx1\t(0,500,0.5,\fscx100)\fscy180\pos(80,10)\blur5\t(0,500,\blur0)\fad(300,305)\t(4800,4801,\c&HF3C870&)\t(4925,4926,\c&HFFFFFF&)\t(5008,5009,\c&HF3C870&)\t(5133,5134,\c&HFFFFFF&)\t(5217,5218,\c&HF3C870&)\t(5342,5343,\c&HFFFFFF&)\t(5425,5426,\c&HF3C870&)\t(10298,10299,\c&HFFFFFF&)\t(10298,10299,\c&HF3C870&)\t(10298,10299,\c&HFFFFFF&)\t(10298,10299,\c&HF3C870&)}m 8 0 b 3 0 0 3 0 8 l 0 32 b 0 37 3 40 8 40 l 830 40 b 835 40 838 37 838 32 l 838 8 b 838 3 835 0 830 0
+Dialogue: 1,0:01:57.13,0:02:03.18,OPCN,B3,0,0,0,fx,{\fscx1\t(0,500,0.5,\fscx100)\c&H000000&\blur5\t(0,500,\blur0)\fad(300,0)\t(4788,4789,\c&HFFFFFF&)\t(4913,4914,\c&H000000&)\t(4955,4956,\c&HFFFFFF&)\t(5080,5081,\c&H000000&)\t(5163,5164,\c&HFFFFFF&)\t(5289,5290,\c&H000000&)\t(5539,5540,\c&HFFFFFF&)\t(5664,5665,\c&H000000&)\t(5747,5748,\c&HFFFFFF&)\t(5872,5873,\c&H000000&)\t(5956,5957,\c&HFFFFFF&)}回忆悄悄浮现至今  {\alpha&HFF&\blur10\t(2450,2750,\alpha&H00&\blur0)}芬芳{\alpha&HFF&\blur10\t(3260,3560,\alpha&H00&\blur0)}缕缕{\alpha&HFF&\blur10\t(4070,4370,\alpha&H00&\blur0)}宛若涟漪
+Dialogue: 0,0:01:57.13,0:02:03.18,OPCN,B3,0,0,0,fx,{\p1\an7\fscx1\t(0,500,0.5,\fscx100)\fscy180\pos(80,10)\blur5\t(0,500,\blur0)\fad(300,0)\t(4788,4789,\c&HF3C870&)\t(4913,4914,\c&HFFFFFF&)\t(4955,4956,\c&HF3C870&)\t(5080,5081,\c&HFFFFFF&)\t(5163,5164,\c&HF3C870&)\t(5289,5290,\c&HFFFFFF&)\t(5539,5540,\c&HF3C870&)\t(5664,5665,\c&HFFFFFF&)\t(5747,5748,\c&HF3C870&)\t(5872,5873,\c&HFFFFFF&)\t(5956,5957,\c&HF3C870&)}m 8 0 b 3 0 0 3 0 8 l 0 32 b 0 37 3 40 8 40 l 830 40 b 835 40 838 37 838 32 l 838 8 b 838 3 835 0 830 0
+Dialogue: 1,0:02:03.59,0:02:08.85,OPCN,B4,0,0,0,fx,{\fscx1\t(0,500,0.5,\fscx100)\c&H000000&\blur5\t(0,500,\blur0)\fad(300,0)\t(4773,4774,\c&HFFFFFF&)\t(4898,4899,\c&H000000&)\t(4940,4941,\c&HFFFFFF&)\t(5065,5066,\c&H000000&)\t(5148,5149,\c&HFFFFFF&)\t(10298,10299,\c&H000000&)\t(10298,10299,\c&HFFFFFF&)\t(10298,10299,\c&H000000&)\t(10298,10299,\c&HFFFFFF&)\t(10298,10299,\c&H000000&)\t(10298,10299,\c&HFFFFFF&)}原来你我早已染上  {\alpha&HFF&\blur10\t(2450,2750,\alpha&H00&\blur0)\c&HB45204&}彼此{\alpha&HFF&\blur10\t(3260,3560,\alpha&H00&\blur0)\c&H325A9B&}同色{\c&H40C9F6&}的{\alpha&HFF&\blur10\t(4070,4370,\alpha&H00&\blur0)\c&HB03A9B&}香水气
+Dialogue: 0,0:02:03.59,0:02:08.85,OPCN,B4,0,0,0,fx,{\p1\an7\fscx1\t(0,500,0.5,\fscx100)\fscy180\pos(80,10)\blur5\t(0,500,\blur0)\fad(300,0)\t(4773,4774,\c&HF3C870&)\t(4898,4899,\c&HFFFFFF&)\t(4940,4941,\c&HF3C870&)\t(5065,5066,\c&HFFFFFF&)\t(5148,5149,\c&HF3C870&)\t(10298,10299,\c&HFFFFFF&)\t(10298,10299,\c&HF3C870&)\t(10298,10299,\c&HFFFFFF&)\t(10298,10299,\c&HF3C870&)\t(10298,10299,\c&HFFFFFF&)\t(10298,10299,\c&HF3C870&)}m 8 0 b 3 0 0 3 0 8 l 0 32 b 0 37 3 40 8 40 l 830 40 b 835 40 838 37 838 32 l 838 8 b 838 3 835 0 830 0
+Dialogue: 1,0:02:09.10,0:02:15.57,OPCN,C,0,0,0,fx,{\fscx1\t(0,500,0.5,\fscx100)\c&H000000&\t(819,1028,\c&HD0A2FB&)\t(1791,2791,\c&H05DB8E&)\t(3154,4154,\c&H1F20CC&)\t(4517,5517,\c&HA8A7A2&)\blur5\t(0,500,\blur0)\fad(300,300)}踮起脚尖些许  沿途留下一路印迹
+Dialogue: 0,0:02:09.10,0:02:10.42,OPCN,C,0,0,0,fx,{\p1\an7\fscx1\t(0,500,0.5,\fscx100)\fscy180\pos(80,10)\blur5\t(0,500,\blur0)\fad(300,200)}m 8 0 b 3 0 0 3 0 8 l 0 32 b 0 37 3 40 8 40 l 734 40 b 739 40 742 37 742 32 l 742 8 b 742 3 739 0 734 0
+Dialogue: 0,0:02:15.86,0:02:18.91,OPCN,D,0,0,0,fx,{\an8\bord2\3c&HFFFFFF&}{\fad(300,0)\pos(480,60)\c&H000000&}玻璃鞋上走过
+Dialogue: 0,0:02:15.86,0:02:18.91,OPCN,D,0,0,0,fx,{\an8\bord2\3c&HFFFFFF&}{\c&H1F20CC&\t(729,730,\alphaFF)\fad(300,0)\pos(480,60)}玻璃鞋上走过
+Dialogue: 0,0:02:15.86,0:02:18.91,OPCN,D,0,0,0,fx,{\an8\bord2\3c&HFFFFFF&}{\fad(300,0)\pos(1440,60)\c&H000000&}看那四时流转更替
+Dialogue: 0,0:02:15.86,0:02:18.91,OPCN,D,0,0,0,fx,{\an8\bord2\3c&HFFFFFF&}{\c&H1F20CC&\t(1397,1398,\alphaFF)\fad(300,0)\pos(1440,60)}看那四时流转更替
+Dialogue: 0,0:02:18.91,0:02:19.95,OPCN,D,0,0,0,fx,{\an8\bord2\3c&HFFFFFF&}{\fscy100\t(26,860,\fscy58.12)\fscx100\t(26,860,\fscx58.12)\c&H000000&\move(480,60,673.69,276.69,26,860)}玻璃鞋上走过
+Dialogue: 0,0:02:18.91,0:02:19.95,OPCN,D,0,0,0,fx,{\an8\bord2\3c&HFFFFFF&}{\fscy100\t(26,860,\fscy58.12)\fscx100\t(26,860,\fscx58.12)\c&H000000&\move(1440,60,1231.63,276.69,26,860)}看那四时流转更替
+Dialogue: 0,0:02:19.95,0:02:22.99,OPCN,D,0,0,0,fx,{\an8\bord2\3c&HFFFFFF&}{\fscx58.12\fscy58.12\c&H000000&\move(673.69,276.69,673.69,5.86,29,279)\fad(0,1000)}玻璃鞋上走过
+Dialogue: 0,0:02:19.95,0:02:22.99,OPCN,D,0,0,0,fx,{\an8\bord2\3c&HFFFFFF&}{\fscx58.12\fscy58.12\c&H000000&\move(1231.63,276.69,1231.63,517.01,29,279)\fad(0,1000)}看那四时流转更替
+Dialogue: 1,0:02:21.82,0:02:25.37,OPCN,E1,0,0,0,fx,{\pos(100,20)\fad(1300,300)\c&HFFFFFF&}回忆不会消逝  {\alpha&HFF&\blur10\t(1640,1940,\alpha&H00&\blur0)}只是不愿言及
+Dialogue: 0,0:02:21.82,0:02:25.37,OPCN,E1,0,0,0,fx,{\p1\an7\fscy300\1a&H50&\pos(404,48)\bord7\c&HF1BE3A&\3c&HFFFFFF&\fad(1300,300)}m -314 -10 l -314 10 l 314 10 l 314 -10
+Dialogue: 1,0:02:25.28,0:02:28.62,OPCN,E2,0,0,0,fx,{\pos(100,20)\fad(300,700)\c&HFFFFFF&}一如往昔不过是忆如往昔
+Dialogue: 0,0:02:25.28,0:02:28.62,OPCN,E2,0,0,0,fx,{\p1\an7\fscy300\1a&H50&\pos(360,48)\bord7\c&HF1BE3A&\3c&HFFFFFF&\fad(300,700)}m -270 -10 l -270 10 l 270 10 l 270 -10
+Dialogue: 1,0:02:28.53,0:02:35.00,OPCN,F,0,0,0,fx,{\c&HFFFFFF&\shad2\t(5699,5700,\c&H000000&\shad0)\t(5919,5920,\c&HFFFFFF&\shad2)\t(6109,6110,\c&H000000&\shad0)\move(474,20,585.5,20,0,5486)\fad(500,0)}心思藏进过去  {\t(2501,3294,\c&H523A98&)\t(4127,4128,\c&HFFFFFF&)\t(4544,4545,\c&HF7EA53&)\t(4960,4961,\c&HFFFFFF&)\t(5378,5379,\c&HF7EA53&)\t(5699,5700,\c&H000000&\shad0)\t(5919,5920,\c&HFFFFFF&\shad2)\t(6109,6110,\c&H000000&\shad0)}真假虚实{\c&HFFFFFF&\t(5699,5700,\c&H000000&\shad0)\t(5919,5920,\c&HFFFFFF&\shad2)\t(6109,6110,\c&H000000&\shad0)}要如何寻觅
+Dialogue: 0,0:02:34.23,0:02:35.00,OPCN,F,0,0,0,fx,{\p1\an7\fscy300\pos(960,48)\bord7\c&HFCD97F&\3c&HFFFFFF&\t(219,220,\alpha&HFF&)\t(409,410,\alpha&H00&)}m -385 -10 l -385 10 l 385 10 l 385 -10
+Dialogue: 0,0:02:35.00,0:02:38.05,OPCN,G1,0,0,0,fx,{\an3\fnBC7DE84B\b0\fs66\shad2\blur1\pos(960,980)\fad(0,0)}若是不因我气  亦是不知我心
+Dialogue: 0,0:02:38.05,0:02:42.35,OPCN,G2,0,0,0,fx,{\an3\fnBC7DE84B\b0\fs66\shad2\blur1\pos(960,980)\fad(0,300)}思来想去只能  任凭情绪堆积
+Dialogue: 0,0:02:42.71,0:02:50.02,OPCN,G3,0,0,0,fx,{\an3\fnBC7DE84B\b0\fs66\shad2\blur1\pos(960,980)\fad(300,0)}唯有这熟悉香气  随歌声与我相依
+Dialogue: 0,0:22:19.71,0:22:25.61,EDJP,,0,0,0,fx,{\pos(960,1060)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}久しぶりにさ　夢を見たんだ
+Dialogue: 0,0:22:19.71,0:22:25.61,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HA35AFE&\clip(638,1005,1282,1010)\fad(300,300)}久しぶりにさ　夢を見たんだ
+Dialogue: 0,0:22:19.71,0:22:25.61,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HAB62EA&\clip(638,1010,1282,1015)\fad(300,300)}久しぶりにさ　夢を見たんだ
+Dialogue: 0,0:22:19.71,0:22:25.61,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HB36AD5&\clip(638,1015,1282,1020)\fad(300,300)}久しぶりにさ　夢を見たんだ
+Dialogue: 0,0:22:19.71,0:22:25.61,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HBB72C1&\clip(638,1020,1282,1025)\fad(300,300)}久しぶりにさ　夢を見たんだ
+Dialogue: 0,0:22:19.71,0:22:25.61,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HC47AAC&\clip(638,1025,1282,1030)\fad(300,300)}久しぶりにさ　夢を見たんだ
+Dialogue: 0,0:22:19.71,0:22:25.61,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HCC8298&\clip(638,1030,1282,1035)\fad(300,300)}久しぶりにさ　夢を見たんだ
+Dialogue: 0,0:22:19.71,0:22:25.61,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HD68A7C&\clip(638,1035,1282,1040)\fad(300,300)}久しぶりにさ　夢を見たんだ
+Dialogue: 0,0:22:19.71,0:22:25.61,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HE0935F&\clip(638,1040,1282,1045)\fad(300,300)}久しぶりにさ　夢を見たんだ
+Dialogue: 0,0:22:19.71,0:22:25.61,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HEA9B43&\clip(638,1045,1282,1050)\fad(300,300)}久しぶりにさ　夢を見たんだ
+Dialogue: 0,0:22:19.71,0:22:25.61,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HF4A426&\clip(638,1050,1282,1055)\fad(300,300)}久しぶりにさ　夢を見たんだ
+Dialogue: 0,0:22:19.71,0:22:25.61,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HFEAC09&\clip(638,1055,1282,1060)\fad(300,300)}久しぶりにさ　夢を見たんだ
+Dialogue: 0,0:22:25.85,0:22:30.32,EDJP,,0,0,0,fx,{\pos(960,1060)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}月が綺麗な夜に
+Dialogue: 0,0:22:25.85,0:22:30.32,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HA35AFE&\clip(787,1005,1133,1010)\fad(300,300)}月が綺麗な夜に
+Dialogue: 0,0:22:25.85,0:22:30.32,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HAB62EA&\clip(787,1010,1133,1015)\fad(300,300)}月が綺麗な夜に
+Dialogue: 0,0:22:25.85,0:22:30.32,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HB36AD5&\clip(787,1015,1133,1020)\fad(300,300)}月が綺麗な夜に
+Dialogue: 0,0:22:25.85,0:22:30.32,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HBB72C1&\clip(787,1020,1133,1025)\fad(300,300)}月が綺麗な夜に
+Dialogue: 0,0:22:25.85,0:22:30.32,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HC47AAC&\clip(787,1025,1133,1030)\fad(300,300)}月が綺麗な夜に
+Dialogue: 0,0:22:25.85,0:22:30.32,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HCC8298&\clip(787,1030,1133,1035)\fad(300,300)}月が綺麗な夜に
+Dialogue: 0,0:22:25.85,0:22:30.32,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HD68A7C&\clip(787,1035,1133,1040)\fad(300,300)}月が綺麗な夜に
+Dialogue: 0,0:22:25.85,0:22:30.32,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HE0935F&\clip(787,1040,1133,1045)\fad(300,300)}月が綺麗な夜に
+Dialogue: 0,0:22:25.85,0:22:30.32,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HEA9B43&\clip(787,1045,1133,1050)\fad(300,300)}月が綺麗な夜に
+Dialogue: 0,0:22:25.85,0:22:30.32,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HF4A426&\clip(787,1050,1133,1055)\fad(300,300)}月が綺麗な夜に
+Dialogue: 0,0:22:25.85,0:22:30.32,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HFEAC09&\clip(787,1055,1133,1060)\fad(300,300)}月が綺麗な夜に
+Dialogue: 0,0:22:32.01,0:22:37.85,EDJP,,0,0,0,fx,{\pos(960,1060)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}「また明日ね」と　手を振る君の
+Dialogue: 0,0:22:32.01,0:22:37.85,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HA35AFE&\clip(589,1005,1331,1010)\fad(300,300)}「また明日ね」と　手を振る君の
+Dialogue: 0,0:22:32.01,0:22:37.85,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HAB62EA&\clip(589,1010,1331,1015)\fad(300,300)}「また明日ね」と　手を振る君の
+Dialogue: 0,0:22:32.01,0:22:37.85,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HB36AD5&\clip(589,1015,1331,1020)\fad(300,300)}「また明日ね」と　手を振る君の
+Dialogue: 0,0:22:32.01,0:22:37.85,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HBB72C1&\clip(589,1020,1331,1025)\fad(300,300)}「また明日ね」と　手を振る君の
+Dialogue: 0,0:22:32.01,0:22:37.85,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HC47AAC&\clip(589,1025,1331,1030)\fad(300,300)}「また明日ね」と　手を振る君の
+Dialogue: 0,0:22:32.01,0:22:37.85,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HCC8298&\clip(589,1030,1331,1035)\fad(300,300)}「また明日ね」と　手を振る君の
+Dialogue: 0,0:22:32.01,0:22:37.85,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HD68A7C&\clip(589,1035,1331,1040)\fad(300,300)}「また明日ね」と　手を振る君の
+Dialogue: 0,0:22:32.01,0:22:37.85,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HE0935F&\clip(589,1040,1331,1045)\fad(300,300)}「また明日ね」と　手を振る君の
+Dialogue: 0,0:22:32.01,0:22:37.85,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HEA9B43&\clip(589,1045,1331,1050)\fad(300,300)}「また明日ね」と　手を振る君の
+Dialogue: 0,0:22:32.01,0:22:37.85,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HF4A426&\clip(589,1050,1331,1055)\fad(300,300)}「また明日ね」と　手を振る君の
+Dialogue: 0,0:22:32.01,0:22:37.85,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HFEAC09&\clip(589,1055,1331,1060)\fad(300,300)}「また明日ね」と　手を振る君の
+Dialogue: 0,0:22:37.90,0:22:42.34,EDJP,,0,0,0,fx,{\pos(960,1060)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}姿が名残惜しくて
+Dialogue: 0,0:22:37.90,0:22:42.34,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HA35AFE&\clip(762,1005,1158,1010)\fad(300,300)}姿が名残惜しくて
+Dialogue: 0,0:22:37.90,0:22:42.34,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HAB62EA&\clip(762,1010,1158,1015)\fad(300,300)}姿が名残惜しくて
+Dialogue: 0,0:22:37.90,0:22:42.34,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HB36AD5&\clip(762,1015,1158,1020)\fad(300,300)}姿が名残惜しくて
+Dialogue: 0,0:22:37.90,0:22:42.34,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HBB72C1&\clip(762,1020,1158,1025)\fad(300,300)}姿が名残惜しくて
+Dialogue: 0,0:22:37.90,0:22:42.34,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HC47AAC&\clip(762,1025,1158,1030)\fad(300,300)}姿が名残惜しくて
+Dialogue: 0,0:22:37.90,0:22:42.34,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HCC8298&\clip(762,1030,1158,1035)\fad(300,300)}姿が名残惜しくて
+Dialogue: 0,0:22:37.90,0:22:42.34,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HD68A7C&\clip(762,1035,1158,1040)\fad(300,300)}姿が名残惜しくて
+Dialogue: 0,0:22:37.90,0:22:42.34,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HE0935F&\clip(762,1040,1158,1045)\fad(300,300)}姿が名残惜しくて
+Dialogue: 0,0:22:37.90,0:22:42.34,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HEA9B43&\clip(762,1045,1158,1050)\fad(300,300)}姿が名残惜しくて
+Dialogue: 0,0:22:37.90,0:22:42.34,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HF4A426&\clip(762,1050,1158,1055)\fad(300,300)}姿が名残惜しくて
+Dialogue: 0,0:22:37.90,0:22:42.34,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HFEAC09&\clip(762,1055,1158,1060)\fad(300,300)}姿が名残惜しくて
+Dialogue: 0,0:22:44.09,0:22:49.89,EDJP,,0,0,0,fx,{\pos(960,1060)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}長袖のシャツに　見覚えある道
+Dialogue: 0,0:22:44.09,0:22:49.89,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HA35AFE&\clip(614,1005,1306,1010)\fad(300,300)}長袖のシャツに　見覚えある道
+Dialogue: 0,0:22:44.09,0:22:49.89,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HAB62EA&\clip(614,1010,1306,1015)\fad(300,300)}長袖のシャツに　見覚えある道
+Dialogue: 0,0:22:44.09,0:22:49.89,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HB36AD5&\clip(614,1015,1306,1020)\fad(300,300)}長袖のシャツに　見覚えある道
+Dialogue: 0,0:22:44.09,0:22:49.89,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HBB72C1&\clip(614,1020,1306,1025)\fad(300,300)}長袖のシャツに　見覚えある道
+Dialogue: 0,0:22:44.09,0:22:49.89,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HC47AAC&\clip(614,1025,1306,1030)\fad(300,300)}長袖のシャツに　見覚えある道
+Dialogue: 0,0:22:44.09,0:22:49.89,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HCC8298&\clip(614,1030,1306,1035)\fad(300,300)}長袖のシャツに　見覚えある道
+Dialogue: 0,0:22:44.09,0:22:49.89,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HD68A7C&\clip(614,1035,1306,1040)\fad(300,300)}長袖のシャツに　見覚えある道
+Dialogue: 0,0:22:44.09,0:22:49.89,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HE0935F&\clip(614,1040,1306,1045)\fad(300,300)}長袖のシャツに　見覚えある道
+Dialogue: 0,0:22:44.09,0:22:49.89,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HEA9B43&\clip(614,1045,1306,1050)\fad(300,300)}長袖のシャツに　見覚えある道
+Dialogue: 0,0:22:44.09,0:22:49.89,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HF4A426&\clip(614,1050,1306,1055)\fad(300,300)}長袖のシャツに　見覚えある道
+Dialogue: 0,0:22:44.09,0:22:49.89,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HFEAC09&\clip(614,1055,1306,1060)\fad(300,300)}長袖のシャツに　見覚えある道
+Dialogue: 0,0:22:49.96,0:22:54.12,EDJP,,0,0,0,fx,{\pos(960,1060)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}少し寂しそうに見えた
+Dialogue: 0,0:22:49.96,0:22:54.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HA35AFE&\clip(713,1005,1207,1010)\fad(300,300)}少し寂しそうに見えた
+Dialogue: 0,0:22:49.96,0:22:54.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HAB62EA&\clip(713,1010,1207,1015)\fad(300,300)}少し寂しそうに見えた
+Dialogue: 0,0:22:49.96,0:22:54.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HB36AD5&\clip(713,1015,1207,1020)\fad(300,300)}少し寂しそうに見えた
+Dialogue: 0,0:22:49.96,0:22:54.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HBB72C1&\clip(713,1020,1207,1025)\fad(300,300)}少し寂しそうに見えた
+Dialogue: 0,0:22:49.96,0:22:54.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HC47AAC&\clip(713,1025,1207,1030)\fad(300,300)}少し寂しそうに見えた
+Dialogue: 0,0:22:49.96,0:22:54.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HCC8298&\clip(713,1030,1207,1035)\fad(300,300)}少し寂しそうに見えた
+Dialogue: 0,0:22:49.96,0:22:54.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HD68A7C&\clip(713,1035,1207,1040)\fad(300,300)}少し寂しそうに見えた
+Dialogue: 0,0:22:49.96,0:22:54.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HE0935F&\clip(713,1040,1207,1045)\fad(300,300)}少し寂しそうに見えた
+Dialogue: 0,0:22:49.96,0:22:54.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HEA9B43&\clip(713,1045,1207,1050)\fad(300,300)}少し寂しそうに見えた
+Dialogue: 0,0:22:49.96,0:22:54.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HF4A426&\clip(713,1050,1207,1055)\fad(300,300)}少し寂しそうに見えた
+Dialogue: 0,0:22:49.96,0:22:54.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HFEAC09&\clip(713,1055,1207,1060)\fad(300,300)}少し寂しそうに見えた
+Dialogue: 0,0:22:55.37,0:23:01.35,EDJP,,0,0,0,fx,{\pos(960,1060)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}胸が苦しくなるけど暖かい
+Dialogue: 0,0:22:55.37,0:23:01.35,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HA35AFE&\clip(663,1005,1257,1010)\fad(300,300)}胸が苦しくなるけど暖かい
+Dialogue: 0,0:22:55.37,0:23:01.35,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HAB62EA&\clip(663,1010,1257,1015)\fad(300,300)}胸が苦しくなるけど暖かい
+Dialogue: 0,0:22:55.37,0:23:01.35,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HB36AD5&\clip(663,1015,1257,1020)\fad(300,300)}胸が苦しくなるけど暖かい
+Dialogue: 0,0:22:55.37,0:23:01.35,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HBB72C1&\clip(663,1020,1257,1025)\fad(300,300)}胸が苦しくなるけど暖かい
+Dialogue: 0,0:22:55.37,0:23:01.35,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HC47AAC&\clip(663,1025,1257,1030)\fad(300,300)}胸が苦しくなるけど暖かい
+Dialogue: 0,0:22:55.37,0:23:01.35,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HCC8298&\clip(663,1030,1257,1035)\fad(300,300)}胸が苦しくなるけど暖かい
+Dialogue: 0,0:22:55.37,0:23:01.35,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HD68A7C&\clip(663,1035,1257,1040)\fad(300,300)}胸が苦しくなるけど暖かい
+Dialogue: 0,0:22:55.37,0:23:01.35,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HE0935F&\clip(663,1040,1257,1045)\fad(300,300)}胸が苦しくなるけど暖かい
+Dialogue: 0,0:22:55.37,0:23:01.35,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HEA9B43&\clip(663,1045,1257,1050)\fad(300,300)}胸が苦しくなるけど暖かい
+Dialogue: 0,0:22:55.37,0:23:01.35,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HF4A426&\clip(663,1050,1257,1055)\fad(300,300)}胸が苦しくなるけど暖かい
+Dialogue: 0,0:22:55.37,0:23:01.35,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HFEAC09&\clip(663,1055,1257,1060)\fad(300,300)}胸が苦しくなるけど暖かい
+Dialogue: 0,0:23:02.44,0:23:07.30,EDJP,,0,0,0,fx,{\pos(960,1060)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}気づいた　冬の朝だ
+Dialogue: 0,0:23:02.44,0:23:07.30,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HA35AFE&\clip(737,1005,1183,1010)\fad(300,300)}気づいた　冬の朝だ
+Dialogue: 0,0:23:02.44,0:23:07.30,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HAB62EA&\clip(737,1010,1183,1015)\fad(300,300)}気づいた　冬の朝だ
+Dialogue: 0,0:23:02.44,0:23:07.30,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HB36AD5&\clip(737,1015,1183,1020)\fad(300,300)}気づいた　冬の朝だ
+Dialogue: 0,0:23:02.44,0:23:07.30,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HBB72C1&\clip(737,1020,1183,1025)\fad(300,300)}気づいた　冬の朝だ
+Dialogue: 0,0:23:02.44,0:23:07.30,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HC47AAC&\clip(737,1025,1183,1030)\fad(300,300)}気づいた　冬の朝だ
+Dialogue: 0,0:23:02.44,0:23:07.30,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HCC8298&\clip(737,1030,1183,1035)\fad(300,300)}気づいた　冬の朝だ
+Dialogue: 0,0:23:02.44,0:23:07.30,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HD68A7C&\clip(737,1035,1183,1040)\fad(300,300)}気づいた　冬の朝だ
+Dialogue: 0,0:23:02.44,0:23:07.30,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HE0935F&\clip(737,1040,1183,1045)\fad(300,300)}気づいた　冬の朝だ
+Dialogue: 0,0:23:02.44,0:23:07.30,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HEA9B43&\clip(737,1045,1183,1050)\fad(300,300)}気づいた　冬の朝だ
+Dialogue: 0,0:23:02.44,0:23:07.30,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HF4A426&\clip(737,1050,1183,1055)\fad(300,300)}気づいた　冬の朝だ
+Dialogue: 0,0:23:02.44,0:23:07.30,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HFEAC09&\clip(737,1055,1183,1060)\fad(300,300)}気づいた　冬の朝だ
+Dialogue: 0,0:23:08.77,0:23:12.90,EDJP,,0,0,0,fx,{\pos(960,1060)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}約束するよ
+Dialogue: 0,0:23:08.77,0:23:12.90,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HA35AFE&\clip(836,1005,1084,1010)\fad(300,300)}約束するよ
+Dialogue: 0,0:23:08.77,0:23:12.90,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HAB62EA&\clip(836,1010,1084,1015)\fad(300,300)}約束するよ
+Dialogue: 0,0:23:08.77,0:23:12.90,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HB36AD5&\clip(836,1015,1084,1020)\fad(300,300)}約束するよ
+Dialogue: 0,0:23:08.77,0:23:12.90,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HBB72C1&\clip(836,1020,1084,1025)\fad(300,300)}約束するよ
+Dialogue: 0,0:23:08.77,0:23:12.90,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HC47AAC&\clip(836,1025,1084,1030)\fad(300,300)}約束するよ
+Dialogue: 0,0:23:08.77,0:23:12.90,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HCC8298&\clip(836,1030,1084,1035)\fad(300,300)}約束するよ
+Dialogue: 0,0:23:08.77,0:23:12.90,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HD68A7C&\clip(836,1035,1084,1040)\fad(300,300)}約束するよ
+Dialogue: 0,0:23:08.77,0:23:12.90,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HE0935F&\clip(836,1040,1084,1045)\fad(300,300)}約束するよ
+Dialogue: 0,0:23:08.77,0:23:12.90,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HEA9B43&\clip(836,1045,1084,1050)\fad(300,300)}約束するよ
+Dialogue: 0,0:23:08.77,0:23:12.90,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HF4A426&\clip(836,1050,1084,1055)\fad(300,300)}約束するよ
+Dialogue: 0,0:23:08.77,0:23:12.90,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HFEAC09&\clip(836,1055,1084,1060)\fad(300,300)}約束するよ
+Dialogue: 0,0:23:14.13,0:23:20.57,EDJP,,0,0,0,fx,{\pos(960,1060)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}近くにいるから見えないものほど
+Dialogue: 0,0:23:14.13,0:23:20.57,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HA35AFE&\clip(589,1005,1331,1010)\fad(300,300)}近くにいるから見えないものほど
+Dialogue: 0,0:23:14.13,0:23:20.57,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HAB62EA&\clip(589,1010,1331,1015)\fad(300,300)}近くにいるから見えないものほど
+Dialogue: 0,0:23:14.13,0:23:20.57,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HB36AD5&\clip(589,1015,1331,1020)\fad(300,300)}近くにいるから見えないものほど
+Dialogue: 0,0:23:14.13,0:23:20.57,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HBB72C1&\clip(589,1020,1331,1025)\fad(300,300)}近くにいるから見えないものほど
+Dialogue: 0,0:23:14.13,0:23:20.57,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HC47AAC&\clip(589,1025,1331,1030)\fad(300,300)}近くにいるから見えないものほど
+Dialogue: 0,0:23:14.13,0:23:20.57,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HCC8298&\clip(589,1030,1331,1035)\fad(300,300)}近くにいるから見えないものほど
+Dialogue: 0,0:23:14.13,0:23:20.57,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HD68A7C&\clip(589,1035,1331,1040)\fad(300,300)}近くにいるから見えないものほど
+Dialogue: 0,0:23:14.13,0:23:20.57,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HE0935F&\clip(589,1040,1331,1045)\fad(300,300)}近くにいるから見えないものほど
+Dialogue: 0,0:23:14.13,0:23:20.57,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HEA9B43&\clip(589,1045,1331,1050)\fad(300,300)}近くにいるから見えないものほど
+Dialogue: 0,0:23:14.13,0:23:20.57,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HF4A426&\clip(589,1050,1331,1055)\fad(300,300)}近くにいるから見えないものほど
+Dialogue: 0,0:23:14.13,0:23:20.57,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HFEAC09&\clip(589,1055,1331,1060)\fad(300,300)}近くにいるから見えないものほど
+Dialogue: 0,0:23:21.04,0:23:25.12,EDJP,,0,0,0,fx,{\pos(960,1060)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}大事にするよ
+Dialogue: 0,0:23:21.04,0:23:25.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HA35AFE&\clip(812,1005,1108,1010)\fad(300,300)}大事にするよ
+Dialogue: 0,0:23:21.04,0:23:25.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HAB62EA&\clip(812,1010,1108,1015)\fad(300,300)}大事にするよ
+Dialogue: 0,0:23:21.04,0:23:25.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HB36AD5&\clip(812,1015,1108,1020)\fad(300,300)}大事にするよ
+Dialogue: 0,0:23:21.04,0:23:25.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HBB72C1&\clip(812,1020,1108,1025)\fad(300,300)}大事にするよ
+Dialogue: 0,0:23:21.04,0:23:25.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HC47AAC&\clip(812,1025,1108,1030)\fad(300,300)}大事にするよ
+Dialogue: 0,0:23:21.04,0:23:25.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HCC8298&\clip(812,1030,1108,1035)\fad(300,300)}大事にするよ
+Dialogue: 0,0:23:21.04,0:23:25.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HD68A7C&\clip(812,1035,1108,1040)\fad(300,300)}大事にするよ
+Dialogue: 0,0:23:21.04,0:23:25.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HE0935F&\clip(812,1040,1108,1045)\fad(300,300)}大事にするよ
+Dialogue: 0,0:23:21.04,0:23:25.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HEA9B43&\clip(812,1045,1108,1050)\fad(300,300)}大事にするよ
+Dialogue: 0,0:23:21.04,0:23:25.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HF4A426&\clip(812,1050,1108,1055)\fad(300,300)}大事にするよ
+Dialogue: 0,0:23:21.04,0:23:25.12,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HFEAC09&\clip(812,1055,1108,1060)\fad(300,300)}大事にするよ
+Dialogue: 0,0:23:26.40,0:23:30.68,EDJP,,0,0,0,fx,{\pos(960,1060)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}言葉にできないんだけどね
+Dialogue: 0,0:23:26.40,0:23:30.68,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HA35AFE&\clip(663,1005,1257,1010)\fad(300,300)}言葉にできないんだけどね
+Dialogue: 0,0:23:26.40,0:23:30.68,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HAB62EA&\clip(663,1010,1257,1015)\fad(300,300)}言葉にできないんだけどね
+Dialogue: 0,0:23:26.40,0:23:30.68,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HB36AD5&\clip(663,1015,1257,1020)\fad(300,300)}言葉にできないんだけどね
+Dialogue: 0,0:23:26.40,0:23:30.68,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HBB72C1&\clip(663,1020,1257,1025)\fad(300,300)}言葉にできないんだけどね
+Dialogue: 0,0:23:26.40,0:23:30.68,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HC47AAC&\clip(663,1025,1257,1030)\fad(300,300)}言葉にできないんだけどね
+Dialogue: 0,0:23:26.40,0:23:30.68,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HCC8298&\clip(663,1030,1257,1035)\fad(300,300)}言葉にできないんだけどね
+Dialogue: 0,0:23:26.40,0:23:30.68,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HD68A7C&\clip(663,1035,1257,1040)\fad(300,300)}言葉にできないんだけどね
+Dialogue: 0,0:23:26.40,0:23:30.68,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HE0935F&\clip(663,1040,1257,1045)\fad(300,300)}言葉にできないんだけどね
+Dialogue: 0,0:23:26.40,0:23:30.68,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HEA9B43&\clip(663,1045,1257,1050)\fad(300,300)}言葉にできないんだけどね
+Dialogue: 0,0:23:26.40,0:23:30.68,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HF4A426&\clip(663,1050,1257,1055)\fad(300,300)}言葉にできないんだけどね
+Dialogue: 0,0:23:26.40,0:23:30.68,EDJP,,0,0,0,fx,{\pos(960,1060)\c&HFEAC09&\clip(663,1055,1257,1060)\fad(300,300)}言葉にできないんだけどね
+Dialogue: 0,0:22:19.71,0:22:25.61,EDCN,,0,0,0,fx,{\pos(960,20)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}已是许久未见  而今梦境重现
+Dialogue: 0,0:22:19.71,0:22:25.61,EDCN,,0,0,0,fx,{\pos(960,20)\c&HA35AFE&\clip(636,25,1284,30)\fad(300,300)}已是许久未见  而今梦境重现
+Dialogue: 0,0:22:19.71,0:22:25.61,EDCN,,0,0,0,fx,{\pos(960,20)\c&HAB62EA&\clip(636,30,1284,35)\fad(300,300)}已是许久未见  而今梦境重现
+Dialogue: 0,0:22:19.71,0:22:25.61,EDCN,,0,0,0,fx,{\pos(960,20)\c&HB36AD5&\clip(636,35,1284,40)\fad(300,300)}已是许久未见  而今梦境重现
+Dialogue: 0,0:22:19.71,0:22:25.61,EDCN,,0,0,0,fx,{\pos(960,20)\c&HBB72C1&\clip(636,40,1284,45)\fad(300,300)}已是许久未见  而今梦境重现
+Dialogue: 0,0:22:19.71,0:22:25.61,EDCN,,0,0,0,fx,{\pos(960,20)\c&HC47AAC&\clip(636,45,1284,50)\fad(300,300)}已是许久未见  而今梦境重现
+Dialogue: 0,0:22:19.71,0:22:25.61,EDCN,,0,0,0,fx,{\pos(960,20)\c&HCC8298&\clip(636,50,1284,55)\fad(300,300)}已是许久未见  而今梦境重现
+Dialogue: 0,0:22:19.71,0:22:25.61,EDCN,,0,0,0,fx,{\pos(960,20)\c&HD68A7C&\clip(636,55,1284,60)\fad(300,300)}已是许久未见  而今梦境重现
+Dialogue: 0,0:22:19.71,0:22:25.61,EDCN,,0,0,0,fx,{\pos(960,20)\c&HE0935F&\clip(636,60,1284,65)\fad(300,300)}已是许久未见  而今梦境重现
+Dialogue: 0,0:22:19.71,0:22:25.61,EDCN,,0,0,0,fx,{\pos(960,20)\c&HEA9B43&\clip(636,65,1284,70)\fad(300,300)}已是许久未见  而今梦境重现
+Dialogue: 0,0:22:19.71,0:22:25.61,EDCN,,0,0,0,fx,{\pos(960,20)\c&HF4A426&\clip(636,70,1284,75)\fad(300,300)}已是许久未见  而今梦境重现
+Dialogue: 0,0:22:19.71,0:22:25.61,EDCN,,0,0,0,fx,{\pos(960,20)\c&HFEAC09&\clip(636,75,1284,80)\fad(300,300)}已是许久未见  而今梦境重现
+Dialogue: 0,0:22:25.85,0:22:30.32,EDCN,,0,0,0,fx,{\pos(960,20)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}降临在这片如水月夜
+Dialogue: 0,0:22:25.85,0:22:30.32,EDCN,,0,0,0,fx,{\pos(960,20)\c&HA35AFE&\clip(735,25,1185,30)\fad(300,300)}降临在这片如水月夜
+Dialogue: 0,0:22:25.85,0:22:30.32,EDCN,,0,0,0,fx,{\pos(960,20)\c&HAB62EA&\clip(735,30,1185,35)\fad(300,300)}降临在这片如水月夜
+Dialogue: 0,0:22:25.85,0:22:30.32,EDCN,,0,0,0,fx,{\pos(960,20)\c&HB36AD5&\clip(735,35,1185,40)\fad(300,300)}降临在这片如水月夜
+Dialogue: 0,0:22:25.85,0:22:30.32,EDCN,,0,0,0,fx,{\pos(960,20)\c&HBB72C1&\clip(735,40,1185,45)\fad(300,300)}降临在这片如水月夜
+Dialogue: 0,0:22:25.85,0:22:30.32,EDCN,,0,0,0,fx,{\pos(960,20)\c&HC47AAC&\clip(735,45,1185,50)\fad(300,300)}降临在这片如水月夜
+Dialogue: 0,0:22:25.85,0:22:30.32,EDCN,,0,0,0,fx,{\pos(960,20)\c&HCC8298&\clip(735,50,1185,55)\fad(300,300)}降临在这片如水月夜
+Dialogue: 0,0:22:25.85,0:22:30.32,EDCN,,0,0,0,fx,{\pos(960,20)\c&HD68A7C&\clip(735,55,1185,60)\fad(300,300)}降临在这片如水月夜
+Dialogue: 0,0:22:25.85,0:22:30.32,EDCN,,0,0,0,fx,{\pos(960,20)\c&HE0935F&\clip(735,60,1185,65)\fad(300,300)}降临在这片如水月夜
+Dialogue: 0,0:22:25.85,0:22:30.32,EDCN,,0,0,0,fx,{\pos(960,20)\c&HEA9B43&\clip(735,65,1185,70)\fad(300,300)}降临在这片如水月夜
+Dialogue: 0,0:22:25.85,0:22:30.32,EDCN,,0,0,0,fx,{\pos(960,20)\c&HF4A426&\clip(735,70,1185,75)\fad(300,300)}降临在这片如水月夜
+Dialogue: 0,0:22:25.85,0:22:30.32,EDCN,,0,0,0,fx,{\pos(960,20)\c&HFEAC09&\clip(735,75,1185,80)\fad(300,300)}降临在这片如水月夜
+Dialogue: 0,0:22:32.01,0:22:37.85,EDCN,,0,0,0,fx,{\pos(960,20)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}道一声「明天见」  你挥挥手走远
+Dialogue: 0,0:22:32.01,0:22:37.85,EDCN,,0,0,0,fx,{\pos(960,20)\c&HA35AFE&\clip(586,25,1334,30)\fad(300,300)}道一声「明天见」  你挥挥手走远
+Dialogue: 0,0:22:32.01,0:22:37.85,EDCN,,0,0,0,fx,{\pos(960,20)\c&HAB62EA&\clip(586,30,1334,35)\fad(300,300)}道一声「明天见」  你挥挥手走远
+Dialogue: 0,0:22:32.01,0:22:37.85,EDCN,,0,0,0,fx,{\pos(960,20)\c&HB36AD5&\clip(586,35,1334,40)\fad(300,300)}道一声「明天见」  你挥挥手走远
+Dialogue: 0,0:22:32.01,0:22:37.85,EDCN,,0,0,0,fx,{\pos(960,20)\c&HBB72C1&\clip(586,40,1334,45)\fad(300,300)}道一声「明天见」  你挥挥手走远
+Dialogue: 0,0:22:32.01,0:22:37.85,EDCN,,0,0,0,fx,{\pos(960,20)\c&HC47AAC&\clip(586,45,1334,50)\fad(300,300)}道一声「明天见」  你挥挥手走远
+Dialogue: 0,0:22:32.01,0:22:37.85,EDCN,,0,0,0,fx,{\pos(960,20)\c&HCC8298&\clip(586,50,1334,55)\fad(300,300)}道一声「明天见」  你挥挥手走远
+Dialogue: 0,0:22:32.01,0:22:37.85,EDCN,,0,0,0,fx,{\pos(960,20)\c&HD68A7C&\clip(586,55,1334,60)\fad(300,300)}道一声「明天见」  你挥挥手走远
+Dialogue: 0,0:22:32.01,0:22:37.85,EDCN,,0,0,0,fx,{\pos(960,20)\c&HE0935F&\clip(586,60,1334,65)\fad(300,300)}道一声「明天见」  你挥挥手走远
+Dialogue: 0,0:22:32.01,0:22:37.85,EDCN,,0,0,0,fx,{\pos(960,20)\c&HEA9B43&\clip(586,65,1334,70)\fad(300,300)}道一声「明天见」  你挥挥手走远
+Dialogue: 0,0:22:32.01,0:22:37.85,EDCN,,0,0,0,fx,{\pos(960,20)\c&HF4A426&\clip(586,70,1334,75)\fad(300,300)}道一声「明天见」  你挥挥手走远
+Dialogue: 0,0:22:32.01,0:22:37.85,EDCN,,0,0,0,fx,{\pos(960,20)\c&HFEAC09&\clip(586,75,1334,80)\fad(300,300)}道一声「明天见」  你挥挥手走远
+Dialogue: 0,0:22:37.90,0:22:42.34,EDCN,,0,0,0,fx,{\pos(960,20)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}那道身影我不舍分别
+Dialogue: 0,0:22:37.90,0:22:42.34,EDCN,,0,0,0,fx,{\pos(960,20)\c&HA35AFE&\clip(735,25,1185,30)\fad(300,300)}那道身影我不舍分别
+Dialogue: 0,0:22:37.90,0:22:42.34,EDCN,,0,0,0,fx,{\pos(960,20)\c&HAB62EA&\clip(735,30,1185,35)\fad(300,300)}那道身影我不舍分别
+Dialogue: 0,0:22:37.90,0:22:42.34,EDCN,,0,0,0,fx,{\pos(960,20)\c&HB36AD5&\clip(735,35,1185,40)\fad(300,300)}那道身影我不舍分别
+Dialogue: 0,0:22:37.90,0:22:42.34,EDCN,,0,0,0,fx,{\pos(960,20)\c&HBB72C1&\clip(735,40,1185,45)\fad(300,300)}那道身影我不舍分别
+Dialogue: 0,0:22:37.90,0:22:42.34,EDCN,,0,0,0,fx,{\pos(960,20)\c&HC47AAC&\clip(735,45,1185,50)\fad(300,300)}那道身影我不舍分别
+Dialogue: 0,0:22:37.90,0:22:42.34,EDCN,,0,0,0,fx,{\pos(960,20)\c&HCC8298&\clip(735,50,1185,55)\fad(300,300)}那道身影我不舍分别
+Dialogue: 0,0:22:37.90,0:22:42.34,EDCN,,0,0,0,fx,{\pos(960,20)\c&HD68A7C&\clip(735,55,1185,60)\fad(300,300)}那道身影我不舍分别
+Dialogue: 0,0:22:37.90,0:22:42.34,EDCN,,0,0,0,fx,{\pos(960,20)\c&HE0935F&\clip(735,60,1185,65)\fad(300,300)}那道身影我不舍分别
+Dialogue: 0,0:22:37.90,0:22:42.34,EDCN,,0,0,0,fx,{\pos(960,20)\c&HEA9B43&\clip(735,65,1185,70)\fad(300,300)}那道身影我不舍分别
+Dialogue: 0,0:22:37.90,0:22:42.34,EDCN,,0,0,0,fx,{\pos(960,20)\c&HF4A426&\clip(735,70,1185,75)\fad(300,300)}那道身影我不舍分别
+Dialogue: 0,0:22:37.90,0:22:42.34,EDCN,,0,0,0,fx,{\pos(960,20)\c&HFEAC09&\clip(735,75,1185,80)\fad(300,300)}那道身影我不舍分别
+Dialogue: 0,0:22:44.09,0:22:49.89,EDCN,,0,0,0,fx,{\pos(960,20)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}你穿着长袖衫  走过熟悉的街
+Dialogue: 0,0:22:44.09,0:22:49.89,EDCN,,0,0,0,fx,{\pos(960,20)\c&HA35AFE&\clip(636,25,1284,30)\fad(300,300)}你穿着长袖衫  走过熟悉的街
+Dialogue: 0,0:22:44.09,0:22:49.89,EDCN,,0,0,0,fx,{\pos(960,20)\c&HAB62EA&\clip(636,30,1284,35)\fad(300,300)}你穿着长袖衫  走过熟悉的街
+Dialogue: 0,0:22:44.09,0:22:49.89,EDCN,,0,0,0,fx,{\pos(960,20)\c&HB36AD5&\clip(636,35,1284,40)\fad(300,300)}你穿着长袖衫  走过熟悉的街
+Dialogue: 0,0:22:44.09,0:22:49.89,EDCN,,0,0,0,fx,{\pos(960,20)\c&HBB72C1&\clip(636,40,1284,45)\fad(300,300)}你穿着长袖衫  走过熟悉的街
+Dialogue: 0,0:22:44.09,0:22:49.89,EDCN,,0,0,0,fx,{\pos(960,20)\c&HC47AAC&\clip(636,45,1284,50)\fad(300,300)}你穿着长袖衫  走过熟悉的街
+Dialogue: 0,0:22:44.09,0:22:49.89,EDCN,,0,0,0,fx,{\pos(960,20)\c&HCC8298&\clip(636,50,1284,55)\fad(300,300)}你穿着长袖衫  走过熟悉的街
+Dialogue: 0,0:22:44.09,0:22:49.89,EDCN,,0,0,0,fx,{\pos(960,20)\c&HD68A7C&\clip(636,55,1284,60)\fad(300,300)}你穿着长袖衫  走过熟悉的街
+Dialogue: 0,0:22:44.09,0:22:49.89,EDCN,,0,0,0,fx,{\pos(960,20)\c&HE0935F&\clip(636,60,1284,65)\fad(300,300)}你穿着长袖衫  走过熟悉的街
+Dialogue: 0,0:22:44.09,0:22:49.89,EDCN,,0,0,0,fx,{\pos(960,20)\c&HEA9B43&\clip(636,65,1284,70)\fad(300,300)}你穿着长袖衫  走过熟悉的街
+Dialogue: 0,0:22:44.09,0:22:49.89,EDCN,,0,0,0,fx,{\pos(960,20)\c&HF4A426&\clip(636,70,1284,75)\fad(300,300)}你穿着长袖衫  走过熟悉的街
+Dialogue: 0,0:22:44.09,0:22:49.89,EDCN,,0,0,0,fx,{\pos(960,20)\c&HFEAC09&\clip(636,75,1284,80)\fad(300,300)}你穿着长袖衫  走过熟悉的街
+Dialogue: 0,0:22:49.96,0:22:54.12,EDCN,,0,0,0,fx,{\pos(960,20)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}稍稍显得有些顾影自怜
+Dialogue: 0,0:22:49.96,0:22:54.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HA35AFE&\clip(710,25,1210,30)\fad(300,300)}稍稍显得有些顾影自怜
+Dialogue: 0,0:22:49.96,0:22:54.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HAB62EA&\clip(710,30,1210,35)\fad(300,300)}稍稍显得有些顾影自怜
+Dialogue: 0,0:22:49.96,0:22:54.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HB36AD5&\clip(710,35,1210,40)\fad(300,300)}稍稍显得有些顾影自怜
+Dialogue: 0,0:22:49.96,0:22:54.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HBB72C1&\clip(710,40,1210,45)\fad(300,300)}稍稍显得有些顾影自怜
+Dialogue: 0,0:22:49.96,0:22:54.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HC47AAC&\clip(710,45,1210,50)\fad(300,300)}稍稍显得有些顾影自怜
+Dialogue: 0,0:22:49.96,0:22:54.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HCC8298&\clip(710,50,1210,55)\fad(300,300)}稍稍显得有些顾影自怜
+Dialogue: 0,0:22:49.96,0:22:54.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HD68A7C&\clip(710,55,1210,60)\fad(300,300)}稍稍显得有些顾影自怜
+Dialogue: 0,0:22:49.96,0:22:54.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HE0935F&\clip(710,60,1210,65)\fad(300,300)}稍稍显得有些顾影自怜
+Dialogue: 0,0:22:49.96,0:22:54.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HEA9B43&\clip(710,65,1210,70)\fad(300,300)}稍稍显得有些顾影自怜
+Dialogue: 0,0:22:49.96,0:22:54.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HF4A426&\clip(710,70,1210,75)\fad(300,300)}稍稍显得有些顾影自怜
+Dialogue: 0,0:22:49.96,0:22:54.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HFEAC09&\clip(710,75,1210,80)\fad(300,300)}稍稍显得有些顾影自怜
+Dialogue: 0,0:22:55.37,0:23:01.35,EDCN,,0,0,0,fx,{\pos(960,20)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}胸中隐隐作痛却也暖意绵绵
+Dialogue: 0,0:22:55.37,0:23:01.35,EDCN,,0,0,0,fx,{\pos(960,20)\c&HA35AFE&\clip(661,25,1259,30)\fad(300,300)}胸中隐隐作痛却也暖意绵绵
+Dialogue: 0,0:22:55.37,0:23:01.35,EDCN,,0,0,0,fx,{\pos(960,20)\c&HAB62EA&\clip(661,30,1259,35)\fad(300,300)}胸中隐隐作痛却也暖意绵绵
+Dialogue: 0,0:22:55.37,0:23:01.35,EDCN,,0,0,0,fx,{\pos(960,20)\c&HB36AD5&\clip(661,35,1259,40)\fad(300,300)}胸中隐隐作痛却也暖意绵绵
+Dialogue: 0,0:22:55.37,0:23:01.35,EDCN,,0,0,0,fx,{\pos(960,20)\c&HBB72C1&\clip(661,40,1259,45)\fad(300,300)}胸中隐隐作痛却也暖意绵绵
+Dialogue: 0,0:22:55.37,0:23:01.35,EDCN,,0,0,0,fx,{\pos(960,20)\c&HC47AAC&\clip(661,45,1259,50)\fad(300,300)}胸中隐隐作痛却也暖意绵绵
+Dialogue: 0,0:22:55.37,0:23:01.35,EDCN,,0,0,0,fx,{\pos(960,20)\c&HCC8298&\clip(661,50,1259,55)\fad(300,300)}胸中隐隐作痛却也暖意绵绵
+Dialogue: 0,0:22:55.37,0:23:01.35,EDCN,,0,0,0,fx,{\pos(960,20)\c&HD68A7C&\clip(661,55,1259,60)\fad(300,300)}胸中隐隐作痛却也暖意绵绵
+Dialogue: 0,0:22:55.37,0:23:01.35,EDCN,,0,0,0,fx,{\pos(960,20)\c&HE0935F&\clip(661,60,1259,65)\fad(300,300)}胸中隐隐作痛却也暖意绵绵
+Dialogue: 0,0:22:55.37,0:23:01.35,EDCN,,0,0,0,fx,{\pos(960,20)\c&HEA9B43&\clip(661,65,1259,70)\fad(300,300)}胸中隐隐作痛却也暖意绵绵
+Dialogue: 0,0:22:55.37,0:23:01.35,EDCN,,0,0,0,fx,{\pos(960,20)\c&HF4A426&\clip(661,70,1259,75)\fad(300,300)}胸中隐隐作痛却也暖意绵绵
+Dialogue: 0,0:22:55.37,0:23:01.35,EDCN,,0,0,0,fx,{\pos(960,20)\c&HFEAC09&\clip(661,75,1259,80)\fad(300,300)}胸中隐隐作痛却也暖意绵绵
+Dialogue: 0,0:23:02.44,0:23:07.30,EDCN,,0,0,0,fx,{\pos(960,20)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}在这个冬日清晨  悄然发觉
+Dialogue: 0,0:23:02.44,0:23:07.30,EDCN,,0,0,0,fx,{\pos(960,20)\c&HA35AFE&\clip(661,25,1259,30)\fad(300,300)}在这个冬日清晨  悄然发觉
+Dialogue: 0,0:23:02.44,0:23:07.30,EDCN,,0,0,0,fx,{\pos(960,20)\c&HAB62EA&\clip(661,30,1259,35)\fad(300,300)}在这个冬日清晨  悄然发觉
+Dialogue: 0,0:23:02.44,0:23:07.30,EDCN,,0,0,0,fx,{\pos(960,20)\c&HB36AD5&\clip(661,35,1259,40)\fad(300,300)}在这个冬日清晨  悄然发觉
+Dialogue: 0,0:23:02.44,0:23:07.30,EDCN,,0,0,0,fx,{\pos(960,20)\c&HBB72C1&\clip(661,40,1259,45)\fad(300,300)}在这个冬日清晨  悄然发觉
+Dialogue: 0,0:23:02.44,0:23:07.30,EDCN,,0,0,0,fx,{\pos(960,20)\c&HC47AAC&\clip(661,45,1259,50)\fad(300,300)}在这个冬日清晨  悄然发觉
+Dialogue: 0,0:23:02.44,0:23:07.30,EDCN,,0,0,0,fx,{\pos(960,20)\c&HCC8298&\clip(661,50,1259,55)\fad(300,300)}在这个冬日清晨  悄然发觉
+Dialogue: 0,0:23:02.44,0:23:07.30,EDCN,,0,0,0,fx,{\pos(960,20)\c&HD68A7C&\clip(661,55,1259,60)\fad(300,300)}在这个冬日清晨  悄然发觉
+Dialogue: 0,0:23:02.44,0:23:07.30,EDCN,,0,0,0,fx,{\pos(960,20)\c&HE0935F&\clip(661,60,1259,65)\fad(300,300)}在这个冬日清晨  悄然发觉
+Dialogue: 0,0:23:02.44,0:23:07.30,EDCN,,0,0,0,fx,{\pos(960,20)\c&HEA9B43&\clip(661,65,1259,70)\fad(300,300)}在这个冬日清晨  悄然发觉
+Dialogue: 0,0:23:02.44,0:23:07.30,EDCN,,0,0,0,fx,{\pos(960,20)\c&HF4A426&\clip(661,70,1259,75)\fad(300,300)}在这个冬日清晨  悄然发觉
+Dialogue: 0,0:23:02.44,0:23:07.30,EDCN,,0,0,0,fx,{\pos(960,20)\c&HFEAC09&\clip(661,75,1259,80)\fad(300,300)}在这个冬日清晨  悄然发觉
+Dialogue: 0,0:23:08.77,0:23:12.90,EDCN,,0,0,0,fx,{\pos(960,20)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}在此与你相约
+Dialogue: 0,0:23:08.77,0:23:12.90,EDCN,,0,0,0,fx,{\pos(960,20)\c&HA35AFE&\clip(810,25,1110,30)\fad(300,300)}在此与你相约
+Dialogue: 0,0:23:08.77,0:23:12.90,EDCN,,0,0,0,fx,{\pos(960,20)\c&HAB62EA&\clip(810,30,1110,35)\fad(300,300)}在此与你相约
+Dialogue: 0,0:23:08.77,0:23:12.90,EDCN,,0,0,0,fx,{\pos(960,20)\c&HB36AD5&\clip(810,35,1110,40)\fad(300,300)}在此与你相约
+Dialogue: 0,0:23:08.77,0:23:12.90,EDCN,,0,0,0,fx,{\pos(960,20)\c&HBB72C1&\clip(810,40,1110,45)\fad(300,300)}在此与你相约
+Dialogue: 0,0:23:08.77,0:23:12.90,EDCN,,0,0,0,fx,{\pos(960,20)\c&HC47AAC&\clip(810,45,1110,50)\fad(300,300)}在此与你相约
+Dialogue: 0,0:23:08.77,0:23:12.90,EDCN,,0,0,0,fx,{\pos(960,20)\c&HCC8298&\clip(810,50,1110,55)\fad(300,300)}在此与你相约
+Dialogue: 0,0:23:08.77,0:23:12.90,EDCN,,0,0,0,fx,{\pos(960,20)\c&HD68A7C&\clip(810,55,1110,60)\fad(300,300)}在此与你相约
+Dialogue: 0,0:23:08.77,0:23:12.90,EDCN,,0,0,0,fx,{\pos(960,20)\c&HE0935F&\clip(810,60,1110,65)\fad(300,300)}在此与你相约
+Dialogue: 0,0:23:08.77,0:23:12.90,EDCN,,0,0,0,fx,{\pos(960,20)\c&HEA9B43&\clip(810,65,1110,70)\fad(300,300)}在此与你相约
+Dialogue: 0,0:23:08.77,0:23:12.90,EDCN,,0,0,0,fx,{\pos(960,20)\c&HF4A426&\clip(810,70,1110,75)\fad(300,300)}在此与你相约
+Dialogue: 0,0:23:08.77,0:23:12.90,EDCN,,0,0,0,fx,{\pos(960,20)\c&HFEAC09&\clip(810,75,1110,80)\fad(300,300)}在此与你相约
+Dialogue: 0,0:23:14.13,0:23:20.57,EDCN,,0,0,0,fx,{\pos(960,20)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}越近在眼前越好似天边
+Dialogue: 0,0:23:14.13,0:23:20.57,EDCN,,0,0,0,fx,{\pos(960,20)\c&HA35AFE&\clip(710,25,1210,30)\fad(300,300)}越近在眼前越好似天边
+Dialogue: 0,0:23:14.13,0:23:20.57,EDCN,,0,0,0,fx,{\pos(960,20)\c&HAB62EA&\clip(710,30,1210,35)\fad(300,300)}越近在眼前越好似天边
+Dialogue: 0,0:23:14.13,0:23:20.57,EDCN,,0,0,0,fx,{\pos(960,20)\c&HB36AD5&\clip(710,35,1210,40)\fad(300,300)}越近在眼前越好似天边
+Dialogue: 0,0:23:14.13,0:23:20.57,EDCN,,0,0,0,fx,{\pos(960,20)\c&HBB72C1&\clip(710,40,1210,45)\fad(300,300)}越近在眼前越好似天边
+Dialogue: 0,0:23:14.13,0:23:20.57,EDCN,,0,0,0,fx,{\pos(960,20)\c&HC47AAC&\clip(710,45,1210,50)\fad(300,300)}越近在眼前越好似天边
+Dialogue: 0,0:23:14.13,0:23:20.57,EDCN,,0,0,0,fx,{\pos(960,20)\c&HCC8298&\clip(710,50,1210,55)\fad(300,300)}越近在眼前越好似天边
+Dialogue: 0,0:23:14.13,0:23:20.57,EDCN,,0,0,0,fx,{\pos(960,20)\c&HD68A7C&\clip(710,55,1210,60)\fad(300,300)}越近在眼前越好似天边
+Dialogue: 0,0:23:14.13,0:23:20.57,EDCN,,0,0,0,fx,{\pos(960,20)\c&HE0935F&\clip(710,60,1210,65)\fad(300,300)}越近在眼前越好似天边
+Dialogue: 0,0:23:14.13,0:23:20.57,EDCN,,0,0,0,fx,{\pos(960,20)\c&HEA9B43&\clip(710,65,1210,70)\fad(300,300)}越近在眼前越好似天边
+Dialogue: 0,0:23:14.13,0:23:20.57,EDCN,,0,0,0,fx,{\pos(960,20)\c&HF4A426&\clip(710,70,1210,75)\fad(300,300)}越近在眼前越好似天边
+Dialogue: 0,0:23:14.13,0:23:20.57,EDCN,,0,0,0,fx,{\pos(960,20)\c&HFEAC09&\clip(710,75,1210,80)\fad(300,300)}越近在眼前越好似天边
+Dialogue: 0,0:23:21.04,0:23:25.12,EDCN,,0,0,0,fx,{\pos(960,20)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}定会珍藏心间
+Dialogue: 0,0:23:21.04,0:23:25.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HA35AFE&\clip(810,25,1110,30)\fad(300,300)}定会珍藏心间
+Dialogue: 0,0:23:21.04,0:23:25.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HAB62EA&\clip(810,30,1110,35)\fad(300,300)}定会珍藏心间
+Dialogue: 0,0:23:21.04,0:23:25.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HB36AD5&\clip(810,35,1110,40)\fad(300,300)}定会珍藏心间
+Dialogue: 0,0:23:21.04,0:23:25.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HBB72C1&\clip(810,40,1110,45)\fad(300,300)}定会珍藏心间
+Dialogue: 0,0:23:21.04,0:23:25.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HC47AAC&\clip(810,45,1110,50)\fad(300,300)}定会珍藏心间
+Dialogue: 0,0:23:21.04,0:23:25.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HCC8298&\clip(810,50,1110,55)\fad(300,300)}定会珍藏心间
+Dialogue: 0,0:23:21.04,0:23:25.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HD68A7C&\clip(810,55,1110,60)\fad(300,300)}定会珍藏心间
+Dialogue: 0,0:23:21.04,0:23:25.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HE0935F&\clip(810,60,1110,65)\fad(300,300)}定会珍藏心间
+Dialogue: 0,0:23:21.04,0:23:25.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HEA9B43&\clip(810,65,1110,70)\fad(300,300)}定会珍藏心间
+Dialogue: 0,0:23:21.04,0:23:25.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HF4A426&\clip(810,70,1110,75)\fad(300,300)}定会珍藏心间
+Dialogue: 0,0:23:21.04,0:23:25.12,EDCN,,0,0,0,fx,{\pos(960,20)\c&HFEAC09&\clip(810,75,1110,80)\fad(300,300)}定会珍藏心间
+Dialogue: 0,0:23:26.40,0:23:30.68,EDCN,,0,0,0,fx,{\pos(960,20)\1a&HFF&\fad(300,300)\3c&H000000&\bord2\blur7}无须言表自会化作诗篇
+Dialogue: 0,0:23:26.40,0:23:30.68,EDCN,,0,0,0,fx,{\pos(960,20)\c&HA35AFE&\clip(710,25,1210,30)\fad(300,300)}无须言表自会化作诗篇
+Dialogue: 0,0:23:26.40,0:23:30.68,EDCN,,0,0,0,fx,{\pos(960,20)\c&HAB62EA&\clip(710,30,1210,35)\fad(300,300)}无须言表自会化作诗篇
+Dialogue: 0,0:23:26.40,0:23:30.68,EDCN,,0,0,0,fx,{\pos(960,20)\c&HB36AD5&\clip(710,35,1210,40)\fad(300,300)}无须言表自会化作诗篇
+Dialogue: 0,0:23:26.40,0:23:30.68,EDCN,,0,0,0,fx,{\pos(960,20)\c&HBB72C1&\clip(710,40,1210,45)\fad(300,300)}无须言表自会化作诗篇
+Dialogue: 0,0:23:26.40,0:23:30.68,EDCN,,0,0,0,fx,{\pos(960,20)\c&HC47AAC&\clip(710,45,1210,50)\fad(300,300)}无须言表自会化作诗篇
+Dialogue: 0,0:23:26.40,0:23:30.68,EDCN,,0,0,0,fx,{\pos(960,20)\c&HCC8298&\clip(710,50,1210,55)\fad(300,300)}无须言表自会化作诗篇
+Dialogue: 0,0:23:26.40,0:23:30.68,EDCN,,0,0,0,fx,{\pos(960,20)\c&HD68A7C&\clip(710,55,1210,60)\fad(300,300)}无须言表自会化作诗篇
+Dialogue: 0,0:23:26.40,0:23:30.68,EDCN,,0,0,0,fx,{\pos(960,20)\c&HE0935F&\clip(710,60,1210,65)\fad(300,300)}无须言表自会化作诗篇
+Dialogue: 0,0:23:26.40,0:23:30.68,EDCN,,0,0,0,fx,{\pos(960,20)\c&HEA9B43&\clip(710,65,1210,70)\fad(300,300)}无须言表自会化作诗篇
+Dialogue: 0,0:23:26.40,0:23:30.68,EDCN,,0,0,0,fx,{\pos(960,20)\c&HF4A426&\clip(710,70,1210,75)\fad(300,300)}无须言表自会化作诗篇
+Dialogue: 0,0:23:26.40,0:23:30.68,EDCN,,0,0,0,fx,{\pos(960,20)\c&HFEAC09&\clip(710,75,1210,80)\fad(300,300)}无须言表自会化作诗篇
+Dialogue: 0,0:23:36.60,0:23:40.02,Title_Next,,0,0,0,fx,{\pos(535,940)\c&HBD7177&\clip(535,945,1008,950)\alpha&HFF&\t(0,400,0.8,\alpha&H00&)}所以说，没事的。
+Dialogue: 0,0:23:36.60,0:23:40.02,Title_Next,,0,0,0,fx,{\pos(535,940)\c&HC07576&\clip(535,950,1008,955)\alpha&HFF&\t(0,400,0.8,\alpha&H00&)}所以说，没事的。
+Dialogue: 0,0:23:36.60,0:23:40.02,Title_Next,,0,0,0,fx,{\pos(535,940)\c&HC37975&\clip(535,955,1008,960)\alpha&HFF&\t(0,400,0.8,\alpha&H00&)}所以说，没事的。
+Dialogue: 0,0:23:36.60,0:23:40.02,Title_Next,,0,0,0,fx,{\pos(535,940)\c&HC67D73&\clip(535,960,1008,965)\alpha&HFF&\t(0,400,0.8,\alpha&H00&)}所以说，没事的。
+Dialogue: 0,0:23:36.60,0:23:40.02,Title_Next,,0,0,0,fx,{\pos(535,940)\c&HC98272&\clip(535,965,1008,970)\alpha&HFF&\t(0,400,0.8,\alpha&H00&)}所以说，没事的。
+Dialogue: 0,0:23:36.60,0:23:40.02,Title_Next,,0,0,0,fx,{\pos(535,940)\c&HCC8671&\clip(535,970,1008,975)\alpha&HFF&\t(0,400,0.8,\alpha&H00&)}所以说，没事的。
+Dialogue: 0,0:23:36.60,0:23:40.02,Title_Next,,0,0,0,fx,{\pos(535,940)\c&HCF8A70&\clip(535,975,1008,980)\alpha&HFF&\t(0,400,0.8,\alpha&H00&)}所以说，没事的。
+Dialogue: 0,0:23:36.60,0:23:40.02,Title_Next,,0,0,0,fx,{\pos(535,940)\c&HD38C6A&\clip(535,980,1008,985)\alpha&HFF&\t(0,400,0.8,\alpha&H00&)}所以说，没事的。
+Dialogue: 0,0:23:36.60,0:23:40.02,Title_Next,,0,0,0,fx,{\pos(535,940)\c&HD78C5F&\clip(535,985,1008,990)\alpha&HFF&\t(0,400,0.8,\alpha&H00&)}所以说，没事的。
+Dialogue: 0,0:23:36.60,0:23:40.02,Title_Next,,0,0,0,fx,{\pos(535,940)\c&HDC8C53&\clip(535,990,1008,995)\alpha&HFF&\t(0,400,0.8,\alpha&H00&)}所以说，没事的。
+Dialogue: 0,0:23:36.60,0:23:40.02,Title_Next,,0,0,0,fx,{\pos(535,940)\c&HE08B48&\clip(535,995,1008,1000)\alpha&HFF&\t(0,400,0.8,\alpha&H00&)}所以说，没事的。
+Dialogue: 0,0:23:36.60,0:23:40.02,Title_Next,,0,0,0,fx,{\pos(535,940)\c&HE48B3D&\clip(535,1000,1008,1005)\alpha&HFF&\t(0,400,0.8,\alpha&H00&)}所以说，没事的。
+Dialogue: 0,0:23:36.60,0:23:40.02,Title_Next,,0,0,0,fx,{\pos(535,940)\c&HE88B32&\clip(535,1005,1008,1010)\alpha&HFF&\t(0,400,0.8,\alpha&H00&)}所以说，没事的。
+Dialogue: 0,0:23:36.60,0:23:40.02,Title_Next,,0,0,0,fx,{\pos(535,940)\c&HED8B27&\clip(535,1010,1008,1015)\alpha&HFF&\t(0,400,0.8,\alpha&H00&)}所以说，没事的。
