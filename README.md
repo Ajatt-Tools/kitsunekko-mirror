@@ -1,5 +1,8 @@
 # kitsunekko mirror
 
+[![Chat](https://img.shields.io/badge/chat-join-green?style=for-the-badge&logo=Telegram&logoColor=green)](https://tatsumoto.neocities.org/blog/join-our-community)
+[![Support](https://img.shields.io/badge/support-developer-orange?style=for-the-badge&logo=Patreon&logoColor=orange)](https://tatsumoto.neocities.org/blog/donating-to-tatsumoto)
+
 ### *📣 updates every 3 hours*
 
 This repository contains `srt` and `ass` subtitle files for Japanese anime and TV shows.
