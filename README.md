@@ -23,6 +23,10 @@ Run the following command.
 git clone --depth 1 "https://github.com/Ajatt-Tools/kitsunekko-mirror.git"
 ```
 
+> [!NOTE]  
+> We recommend running the GNU operating system when working with this repository.
+> For more information, read [this article](https://tatsumoto.neocities.org/blog/our-immersion-learning-toolset#gnu-linux).
+
 ## Usage
 
 Once you have the subtitles downloaded,
