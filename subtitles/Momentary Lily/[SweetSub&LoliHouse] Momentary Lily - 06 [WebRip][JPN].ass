@@ -1,0 +1,720 @@
+﻿[Script Info]
+Title: [SweetSub] Momentary Lily - 06
+ScriptType: v4.00+
+PlayResX: 1920
+LayoutResX: 1920
+PlayResY: 1080
+LayoutResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Source Han Sans SC Medium,90,&H00F0F0F0,&H00000000,&H00000000,&H00000000,0,0,0,0,100,100,0.1,0,1,3,0,2,30,30,25,1
+Style: Text - JP,Source Han Sans,60,&H00F0F0F0,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0.1,0,1,3,0,2,20,20,40,1
+Style: Text - JP - top,Source Han Sans,60,&H00F0F0F0,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0.1,0,1,3,0,8,20,20,20,1
+Style: ED01_JP,FOT-Klee Pro DB,60,&H00F0F0F0,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,0,1,20,20,40,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:21:40.03,0:21:40.07,ED01_JP,,0,0,0,,{=6}Using The0x539's Templater
+Comment: 10,0:21:40.03,0:21:40.03,ED01_JP,body,0,0,0,template line style ED01_JP style ED01_CN,{\blur0.56\bord0}
+Comment: 8,0:21:40.03,0:21:40.03,ED01_JP,glow,0,0,0,template line style ED01_JP,{\blur6\bord2.4}
+Comment: 8,0:21:52.26,0:23:08.54,ED01_JP,backup,0,0,0,,{\an1\frz0\pos(50.07,994.98)}楽しいなんて  思う暇もないくらい
+Comment: 8,0:21:40.03,0:21:40.03,ED01_JP,position,0,0,0,mixin line style ED01_JP,{\pos(50.07,994.98)}
+Comment: 8,0:21:40.03,0:21:40.03,ED01_JP,sync,0,0,0,mixin line style ED01_JP style ED01_CN actor verse,{!set("sync",-200)!!set("fade",200)!!set("sync_crossfade",150)!}
+Comment: 8,0:21:40.03,0:21:40.03,ED01_JP,sync,0,0,0,mixin line style ED01_JP style ED01_CN actor chorus,{!set("sync",-160)!!set("fade",150)!!set("sync_crossfade",100)!}
+Comment: 8,0:21:40.03,0:21:40.03,ED01_JP,retime sync,0,0,0,mixin line style ED01_JP style ED01_CN,{!retime("line",sync,sync+sync_crossfade)!}
+Comment: 8,0:21:40.03,0:21:40.03,ED01_JP,alpha,0,0,0,mixin line style ED01_JP style ED01_CN t_actor body,{\alpha&HFF&\t(0,!fade!,1,\alpha&H00&)\t(!line.duration-fade!,!line.duration!,1.25,\alpha&HFF&)}
+Comment: 8,0:21:40.03,0:21:40.03,ED01_JP,alpha,0,0,0,mixin line style ED01_JP style ED01_CN t_actor glow,{!set("glowalpha","&H40&")!}
+Comment: 8,0:21:40.03,0:21:40.03,ED01_JP,alpha,0,0,0,mixin line style ED01_JP style ED01_CN t_actor glow actor chorus1,{!set("glowalpha","&H30&")!}
+Comment: 8,0:21:40.03,0:21:40.03,ED01_JP,alpha,0,0,0,mixin line style ED01_JP style ED01_CN t_actor glow actor chorus2,{!set("glowalpha","&H3B&")!}
+Comment: 8,0:21:40.03,0:21:40.03,ED01_JP,alpha,0,0,0,mixin line style ED01_JP style ED01_CN t_actor glow,{\alpha&HFF&\t(0,!fade!,0.75,\alpha!glowalpha!)\t(!line.duration-fade!,!line.duration!,1.25,\alpha&HFF&)}
+Comment: 8,0:21:40.03,0:21:40.03,ED01_JP,backup,0,0,0,,{\c&HE9E5FD&\2c&H625781&\3c&H332D82&}c1: (93, 9, 1); c3: (0, 0, 0), c2: (42, 19, 1)\N; c2d: (38, 28, -2); glow ED01_CN: (3.5, 6, -1)
+Comment: 8,0:21:40.03,0:21:40.03,ED01_JP,colour,0,0,0,mixin line style ED01_JP style ED01_CN,{!set("c1","&HE7E4FD&")!!set("c3","&H000000&")!!set("c2","&H625781&")!!set("c2d","&H332D82&")!!set("offset",15)!!set("attack",75)!!set("decay",900)!!set("release",1500)!}
+Comment: 8,0:21:40.03,0:21:40.03,ED01_JP,colour,0,0,0,mixin line style ED01_JP style ED01_CN t_actor body,{\c!c1!}
+Comment: 8,0:21:40.03,0:21:40.03,ED01_JP,colour,0,0,0,mixin syl style ED01_JP t_actor glow,{\c!c3!\3c!c3!\t(!syl.start_time+offset!,!syl.start_time+offset+attack!,\c!c2!\3c!c2!)\t(!syl.start_time+offset+attack!,!syl.start_time+offset+attack+decay!,\c!c2d!\3c!c2d!)\t(!math.max(syl.start_time+offset+attack+decay,syl.end_time+offset)!,!math.max(syl.start_time+offset+attack+decay,syl.end_time+offset)+release!,\c!c3!\3c!c3!)}
+Comment: 0,0:21:52.53,0:21:55.30,ED01_JP,verse,0,0,0,karaoke,{\k18}見{\k37}上{\k22}げ{\k32}た{\k109}空{\k59}
+Comment: 0,0:21:55.30,0:22:02.31,ED01_JP,verse,0,0,0,karaoke,{\k54}君{\k20}の{\k59}声{\k86}が{\k44}  {\k243}響い{\k33}て{\k92}く{\k70}
+Comment: 0,0:22:02.31,0:22:08.06,ED01_JP,verse,0,0,0,karaoke,{\k49}一{\k22}人{\k42}じゃ{\k27}な{\k40}い{\k60}って{\k40} {\k20} あ{\k33}た{\k22}た{\k34}か{\k36}く{\k75}て{\k75}
+Comment: 0,0:22:08.06,0:22:15.02,ED01_JP,verse,0,0,0,karaoke,{\k32}な{\k36}ぜ{\k36}か{\k102}胸{\k35}が{\k42}ぎゅ{\k27}っ{\k68}と{\k68}な{\k34}る{\k41}よ{\k175}
+Comment: 0,0:22:15.02,0:22:24.67,ED01_JP,verse,0,0,0,karaoke,{\k57}楽{\k50}し{\k64}い{\k38}な{\k31}ん{\k82}て{\k61}  {\k72}思{\k34}う{\k69}暇{\k70}も{\k36}な{\k100}い{\k36}く{\k83}らい{\k82}
+Comment: 0,0:22:24.67,0:22:29.99,ED01_JP,verse,0,0,0,karaoke,{\k33}あ{\k12}っ{\k15}と{\k21}い{\k20}う{\k36}間{\k145}に{\k44}過{\k22}ぎ{\k31}る{\k38}時{\k99}間{\k16}
+Comment: 0,0:22:29.99,0:22:36.58,ED01_JP,verse,0,0,0,karaoke,{\k25}た{\k134}だ{\k57}一{\k18}緒{\k70}に{\k13}い{\k38}た{\k34}い{\k36}だ{\k171}け{\k63}
+Comment: 0,0:22:36.60,0:22:39.43,ED01_JP,chorus chorus1,0,0,0,karaoke,{\k41}今{\k17}が{\k13}リ{\k41}ア{\k15}ル{\k27}な{\k27}ん{\k65}だ{\k37}
+Comment: 0,0:22:39.43,0:22:42.55,ED01_JP,chorus chorus1,0,0,0,karaoke,{\k15}こ{\k21}れ{\k20}が{\k15}リ{\k39}ア{\k16}ル{\k27}な{\k27}ん{\k82}だ{\k50}
+Comment: 0,0:22:42.55,0:22:47.77,ED01_JP,chorus chorus1,0,0,0,karaoke,{\k106}隣{\k30}で{\k60}笑{\k18}う{\k49}君{\k54}が{\k36}ま{\k15}ぶ{\k33}し{\k22}く{\k67}て{\k32}
+Comment: 0,0:22:47.77,0:22:50.59,ED01_JP,chorus chorus2,0,0,0,karaoke,{\k13}こ{\k26}ん{\k11}な{\k69}幸{\k45}せ{\k18}な{\k64}ら{\k36}
+Comment: 0,0:22:50.59,0:22:53.73,ED01_JP,chorus chorus2,0,0,0,karaoke,{\k24}ず{\k13}っ{\k15}と{\k55}続{\k16}い{\k34}て{\k23}ほ{\k92}しい{\k42}
+Comment: 0,0:22:53.73,0:22:59.48,ED01_JP,chorus chorus2,0,0,0,karaoke,{\k106}君{\k36}と{\k34}い{\k103}る{\k36}こ{\k27}の{\k60}瞬{\k36}間{\k37}だ{\k17}け{\k59}は{\k24}
+Comment: 0,0:22:59.48,0:23:08.76,ED01_JP,chorus,0,0,0,karaoke,{\k15}間{\k61}違{\k31}い{\k16}な{\k135}く{\k32}正{\k38}真{\k56}正{\k108}銘{\k29}ぜ{\k20}ん{\k126}ぶ{\k119}{\k17}リ{\k25}ア{\k62}ル{\k38}
+Dialogue: 9,0:00:02.48,0:00:05.29,Text - JP,Rat,0,0,0,,整備チュー　整備チュー！
+Dialogue: 9,0:00:08.03,0:00:10.28,Text - JP,Sazanka,0,0,0,,マジ　ヤバいじゃ～ん！
+Dialogue: 9,0:00:11.20,0:00:13.28,Text - JP,Erika,0,0,0,,さんちゃん　待って～！
+Dialogue: 9,0:00:13.28,0:00:15.93,Text - JP,Renge,0,0,0,,ま　待ってくださ～い！
+Dialogue: 9,0:00:22.14,0:00:23.49,Text - JP,Sazanka,0,0,0,,テン上げじゃん
+Dialogue: 9,0:00:23.49,0:00:25.29,Text - JP,Sazanka,0,0,0,,マジ　武陵桃源！
+Dialogue: 9,0:00:25.66,0:00:27.53,Text - JP,Erika,0,0,0,,桃源郷のこと？
+Dialogue: 9,0:00:27.53,0:00:32.13,Text - JP,Erika,0,0,0,,ラットちゃんがプール使えるようにしてくれたの\Nおねえちゃんもうれしい
+Dialogue: 9,0:00:32.13,0:00:33.69,Text - JP,Erika,0,800,0,,ありがとう
+Dialogue: 9,0:00:32.49,0:00:33.98,Text - JP,Sazanka,0,0,0,,あざ～っす！
+Dialogue: 9,0:00:36.01,0:00:40.77,Text - JP,Hinageshi,0,0,0,,こんなとこわざわざ整備してるラットの目的がわからねえ
+Dialogue: 9,0:00:43.41,0:00:45.10,Text - JP,Renge,0,0,0,,記憶はないんですけど
+Dialogue: 9,0:00:45.10,0:00:48.32,Text - JP,Renge,0,0,0,,友達とプールに来たことないって確信してます
+Dialogue: 9,0:00:48.32,0:00:49.40,Text - JP,Renge,0,0,0,,か　割烹！
+Dialogue: 9,0:00:53.31,0:00:55.56,Text - JP,Ayame,0,0,0,,この姿　ギルティだ
+Dialogue: 9,0:00:55.95,0:00:57.96,Text - JP,Sazanka,0,0,0,,な～んで　上着着てんの？
+Dialogue: 9,0:00:57.96,0:00:59.68,Text - JP,Sazanka,0,0,0,,あやめマジ似合ってるじゃん
+Dialogue: 9,0:00:59.68,0:01:00.53,Text - JP,Ayame,0,0,0,,似合ってない
+Dialogue: 9,0:01:00.53,0:01:01.33,Text - JP,Sazanka,0,0,0,,もう～！
+Dialogue: 9,0:01:10.50,0:01:13.46,Text - JP,Sazanka,0,0,0,,マジ「立てば芍薬座れば牡丹」
+Dialogue: 9,0:01:13.77,0:01:14.97,Text - JP,Ayame,0,0,0,,大げさな！
+Dialogue: 9,0:01:14.97,0:01:16.63,Text - JP,Ayame,0,0,0,,あ～　もう！
+Dialogue: 9,0:01:16.63,0:01:17.62,Text - JP,Ayame,0,0,0,,ギルティ！
+Dialogue: 9,0:01:17.62,0:01:19.97,Text - JP,Ayame,0,0,0,,なんでこんなことに～？
+Dialogue: 9,0:02:51.16,0:02:53.60,Text - JP - top,Erika,0,0,0,EP05,お話しできればよかったのにね
+Dialogue: 9,0:02:53.60,0:02:56.89,Text - JP - top,Renge,0,0,0,EP05,人見知りしちゃいますけど　そう思います
+Dialogue: 9,0:02:56.89,0:02:58.10,Text - JP,Hinageshi,0,0,0,EP05,ひなもだ
+Dialogue: 9,0:02:58.10,0:03:00.97,Text - JP,Sazanka,0,0,0,EP05,お墓作るのマジ慣れたくない
+Dialogue: 9,0:03:02.70,0:03:04.29,Text - JP,Ayame,0,0,0,EP05,そうだ　れんげ
+Dialogue: 9,0:03:04.29,0:03:06.75,Text - JP,Ayame,0,0,0,EP05,しとろんさんの状況はどうだ？
+Dialogue: 9,0:03:06.75,0:03:08.39,Text - JP,Renge,0,0,0,EP05,あっ　えっと…
+Dialogue: 9,0:03:10.79,0:03:12.29,Text - JP,Sazanka,0,0,0,EP05,どうしたん？
+Dialogue: 9,0:03:12.29,0:03:16.42,Text - JP,Renge,0,0,0,EP05,しとろんさんの書き込みに\N他のアカウントからレスが入ってます
+Dialogue: 9,0:03:16.42,0:03:17.46,Text - JP,Ayame,0,0,0,EP05,なんだと!?
+Dialogue: 9,0:03:17.46,0:03:18.16,Text - JP,Ayame,0,0,0,,本当か？
+Dialogue: 9,0:03:18.16,0:03:18.81,Text - JP,Sazanka,0,0,0,EP05,マジで？
+Dialogue: 9,0:03:18.81,0:03:22.02,Text - JP,Renge,0,0,0,EP05,レスしたのがベルさんっていうアカウントです
+Dialogue: 9,0:03:22.02,0:03:25.85,Text - JP,Renge,0,0,0,EP05,「初めまして　突然話しかけてすみません」
+Dialogue: 9,0:03:28.13,0:03:31.26,Text - JP,Renge,0,0,0,EP05,「あなたは人間ですか…？」
+Dialogue: 9,0:03:36.36,0:03:40.02,Text - JP,Ayame,0,0,0,,ベルさんも　しとろんさんが人間かは半信半疑か
+Dialogue: 9,0:03:40.02,0:03:43.09,Text - JP,Renge,0,0,0,,「あまりに失礼な質問で　申し訳ありません」
+Dialogue: 9,0:03:43.09,0:03:46.37,Text - JP,Renge,0,0,0,,ってちゃんと謝って話を続けています
+Dialogue: 9,0:03:46.68,0:03:49.20,Text - JP,Ayame,0,0,0,,しとろんさんは返事をしているのか？
+Dialogue: 9,0:03:49.20,0:03:50.62,Text - JP,Renge,0,0,0,,う　うん
+Dialogue: 9,0:03:50.62,0:03:52.16,Text - JP,Renge,0,0,0,,「初めまして」
+Dialogue: 9,0:03:52.16,0:03:54.83,Text - JP,Renge,0,0,0,,「話しかけていただきありがとうございます」
+Dialogue: 9,0:03:55.20,0:03:58.92,Text - JP,Renge,0,0,0,,「私以外の生存者の方とお話しできてうれしいです」
+Dialogue: 9,0:03:58.92,0:04:01.22,Text - JP,Ayame,0,0,0,,こっちも対応が丁寧だ
+Dialogue: 9,0:04:01.22,0:04:05.07,Text - JP,Renge,0,0,0,,「ただ　ベルさんが私たちが人間なのか不安なように」
+Dialogue: 9,0:04:05.07,0:04:08.35,Text - JP,Renge,0,0,0,,「私たちもベルさんが人間なのかわかりません」
+Dialogue: 9,0:04:08.62,0:04:13.70,Text - JP,Renge,0,0,0,,「このまま会話を続けて情報を\N明かすことは大きなリスクを伴いますので」
+Dialogue: 9,0:04:13.70,0:04:17.61,Text - JP,Renge,0,0,0,,「まずは　お互いが人間であることを\N証明できればと思います」
+Dialogue: 9,0:04:18.22,0:04:19.49,Text - JP,Erika,0,0,0,,慎重ね
+Dialogue: 9,0:04:19.49,0:04:21.36,Text - JP,Hinageshi,0,0,0,,命に関わるからな
+Dialogue: 9,0:04:21.64,0:04:23.07,Text - JP,Ayame,0,0,0,,ベルさんの反応は？
+Dialogue: 9,0:04:23.07,0:04:28.08,Text - JP,Renge,0,0,0,,「お気持ちはわかります\N少々時間をいただき　DM をお送りします」
+Dialogue: 9,0:04:28.66,0:04:29.73,Text - JP,Renge,0,0,0,,DM って？
+Dialogue: 9,0:04:29.73,0:04:33.46,Text - JP,Sazanka,0,0,0,,公開じゃなくて　個人的にメッセージを送るってこと
+Dialogue: 9,0:04:33.46,0:04:36.32,Text - JP,Renge,0,0,0,,あっ　へぇ
+Dialogue: 9,0:04:36.82,0:04:38.84,Text - JP,Renge,0,0,0,,やりとりは　ここまでですね
+Dialogue: 9,0:04:38.84,0:04:42.13,Text - JP,Ayame,0,0,0,,あとは公開じゃないからわからないか…
+Dialogue: 9,0:04:42.13,0:04:44.00,Text - JP,Ayame,0,0,0,,自分たちはこのアカウント
+Dialogue: 9,0:04:44.00,0:04:47.59,Text - JP,Ayame,0,0,0,,しとろんさんの実在を前提に　都心へ向かっている
+Dialogue: 9,0:04:47.59,0:04:53.17,Text - JP,Ayame,0,0,0,,ただ　しとろんさんが本物の人間かどうか\Nこれまで疑いの余地があった
+Dialogue: 9,0:04:53.17,0:04:59.06,Text - JP,Renge,0,0,0,,ワイルドハントが人間をおびき寄せるために \NSNS を利用しているかもってことですよね？
+Dialogue: 9,0:04:59.46,0:05:03.14,Text - JP,Hinageshi,0,0,0,,しとろんのアカウントは写真が更新されただけだったから
+Dialogue: 9,0:05:03.14,0:05:05.86,Text - JP,Hinageshi,0,0,0,,Bot 自動更新かもしれないと疑ってた
+Dialogue: 9,0:05:05.86,0:05:09.78,Text - JP,Erika,0,0,0,,でも　このやりとり　たぶん本物の人間よね
+Dialogue: 9,0:05:09.78,0:05:12.87,Text - JP,Renge,0,0,0,,ベルさんってアカウントも本物に見えます
+Dialogue: 9,0:05:12.87,0:05:15.79,Text - JP,Erika,0,0,0,,どちらかが　ゆりちゃんが捜してた友達
+Dialogue: 9,0:05:15.79,0:05:18.21,Text - JP,Erika,0,0,0,,白雪ねりねちゃんだったらいいわね
+Dialogue: 9,0:05:18.21,0:05:20.96,Text - JP,Ayame,0,0,0,,そこまで　うまくいくとは思えないが…
+Dialogue: 9,0:05:20.96,0:05:23.88,Text - JP,Ayame,0,0,0,,とはいえ　ここまで人間らしいなら
+Dialogue: 9,0:05:23.88,0:05:26.30,Text - JP,Ayame,0,0,0,,アプローチを前倒しする意味が出てくる
+Dialogue: 9,0:05:26.58,0:05:30.31,Text - JP,Erika,0,0,0,,しとろんさんに連絡を取って　合流を目指すのね？
+Dialogue: 9,0:05:30.31,0:05:31.22,Text - JP,Ayame,0,0,0,,そうだ！
+Dialogue: 9,0:05:31.22,0:05:35.42,Text - JP,Renge,0,0,0,,でも　人間かどうかの証明ってどうすればいいんだろう？
+Dialogue: 9,0:05:35.42,0:05:36.64,Text - JP,Hinageshi,0,0,0,,哲学かよ？
+Dialogue: 9,0:05:36.64,0:05:40.94,Text - JP,Ayame,0,0,0,,そもそも　ネットワーク上での人間の証明とは何だ？
+Dialogue: 9,0:05:43.58,0:05:46.01,Text - JP,Erika,0,0,0,,決まったパネルを選ぶわよね？
+Dialogue: 9,0:05:46.01,0:05:48.29,Text - JP,Hinageshi,0,0,0,,それはこっちが試されるやつ
+Dialogue: 9,0:05:48.29,0:05:49.20,Text - JP,Erika,0,0,0,,あら！
+Dialogue: 9,0:05:50.39,0:05:52.63,Text - JP,Ayame,0,0,0,,文章は証明にならない！
+Dialogue: 9,0:05:54.00,0:05:58.37,Text - JP,Hinageshi,0,0,0,,うちにいた頃 PC \Nでスパムみたいな文章のアカウント見たし
+Dialogue: 9,0:05:58.37,0:06:01.71,Text - JP,Renge,0,0,0,,しゃ　写真なら　大丈夫じゃないですか～!?
+Dialogue: 9,0:06:01.71,0:06:05.13,Text - JP,Ayame,0,0,0,,ネット上で拾ったものをアップすれば偽造できる
+Dialogue: 9,0:06:06.72,0:06:09.27,Text - JP,Hinageshi,0,0,0,,無断転載絶対だめだ！
+Dialogue: 9,0:06:11.14,0:06:13.46,Text - JP,Erika,0,0,0,,じゃあ動画はどうかしら？
+Dialogue: 9,0:06:13.46,0:06:15.52,Text - JP,Ayame,0,0,0,,そっちも無断転載できるし
+Dialogue: 9,0:06:15.52,0:06:17.72,Text - JP,Ayame,0,0,0,,ディープフェイクの可能性もある
+Dialogue: 9,0:06:17.72,0:06:19.94,Text - JP,Erika,0,0,0,,ディ　ディープフェイク？
+Dialogue: 9,0:06:20.27,0:06:23.45,Text - JP,Hinageshi,0,0,0,,SNS で人間証明って無理じゃね？
+Dialogue: 9,0:06:30.12,0:06:32.31,Text - JP,Sazanka,0,0,0,,じゃあ　やることは決まりじゃん！
+Dialogue: 9,0:06:32.91,0:06:34.25,Text - JP,,0,0,0,,ジャーン！
+Dialogue: 9,0:06:34.25,0:06:36.07,Text - JP,Sazanka,0,0,0,,エモい動画を撮る！
+Dialogue: 9,0:06:37.86,0:06:39.75,Text - JP,Erika,0,0,0,,エモい動画？
+Dialogue: 9,0:06:40.42,0:06:42.13,Text - JP,Renge,0,0,0,,エモい動画？
+Dialogue: 9,0:06:42.71,0:06:44.49,Text - JP,Hinageshi,0,0,0,,エ　エモ？
+Dialogue: 9,0:06:47.42,0:06:50.43,Text - JP,Ayame,0,0,0,,や　やはり納得がいかない
+Dialogue: 9,0:06:50.86,0:06:54.43,Text - JP,Ayame,0,0,0,,なにゆえプールで水着動画を撮る必要があるのだ？
+Dialogue: 9,0:06:54.76,0:06:59.66,Text - JP,Sazanka,0,0,0,,だって　ワイルドハントはプールで\Nエモい動画撮ったりしないじゃん
+Dialogue: 9,0:07:00.64,0:07:02.14,Text - JP,Ayame,0,0,0,,た　確かに！
+Dialogue: 9,0:07:02.14,0:07:04.42,Text - JP,Ayame,0,0,0,,そんな発想が出るとは思えない！
+Dialogue: 9,0:07:04.42,0:07:09.15,Text - JP,Hinageshi,0,0,0,,ワイルドハントは夏イベント \NSSR キャラみたいなことしねえしな
+Dialogue: 9,0:07:09.15,0:07:14.16,Text - JP,Erika,0,0,0,,プール動画ならおねえちゃんたちの人間証明ができるわね
+Dialogue: 9,0:07:15.05,0:07:17.45,Text - JP,Ayame,0,0,0,,こ　これが人間の証明でいいのか？
+Dialogue: 9,0:07:17.78,0:07:20.46,Text - JP,Ayame,0,0,0,,しかし　これしか思いつかない
+Dialogue: 9,0:07:20.46,0:07:24.14,Text - JP,Renge,0,0,0,,今回の敵はなんとかなる相手でよかったです
+Dialogue: 9,0:07:24.14,0:07:25.67,Text - JP,Erika,0,0,0,,れんげちゃん　強いから
+Dialogue: 9,0:07:25.67,0:07:28.05,Text - JP,Hinageshi,0,0,0,,周囲の警戒も万全
+Dialogue: 9,0:07:28.05,0:07:31.71,Text - JP,Hinageshi,0,0,0,,グレイプニルの限界までハッキングして探査させてる
+Dialogue: 9,0:07:31.71,0:07:34.19,Text - JP,Ayame,0,0,0,,リスクがないなら　それでいいか
+Dialogue: 9,0:07:34.64,0:07:36.96,Text - JP,Sazanka,0,0,0,,れんれん　スマホ借りていい？
+Dialogue: 9,0:07:36.96,0:07:39.25,Text - JP,Sazanka,0,0,0,,ウチらスマホなくしちゃってるしさ～
+Dialogue: 9,0:07:39.25,0:07:40.39,Text - JP,Renge,0,0,0,,あっ　うん
+Dialogue: 9,0:07:40.82,0:07:42.16,Text - JP,Renge,0,0,0,,ど　どうぞ
+Dialogue: 9,0:07:42.16,0:07:43.15,Text - JP,Sazanka,0,0,0,,サンキュー！
+Dialogue: 9,0:07:43.44,0:07:46.17,Text - JP,Sazanka,0,0,0,,じゃあ　まずはウチとあやめで～
+Dialogue: 9,0:07:46.17,0:07:47.73,Text - JP,Sazanka,0,0,0,,うえ～い！
+Dialogue: 9,0:07:49.60,0:07:51.18,Text - JP,Ayame,0,0,0,,のせるな！
+Dialogue: 9,0:07:51.18,0:07:52.03,Text - JP,Sazanka,0,0,0,,チッ
+Dialogue: 9,0:07:52.03,0:07:53.91,Text - JP,Sazanka,0,0,0,,マジもうちょいだったのに
+Dialogue: 9,0:07:53.91,0:07:56.70,Text - JP,Ayame,0,0,0,,これじゃあただの浮かれた動画だろう
+Dialogue: 9,0:07:56.70,0:07:59.40,Text - JP,Sazanka,0,0,0,,じゃあマジどんなエモい動画撮んの？
+Dialogue: 9,0:08:00.42,0:08:01.94,Text - JP,Ayame,0,0,0,,そ　それは…
+Dialogue: 9,0:08:01.94,0:08:04.92,Text - JP,Ayame,0,0,0,,自分はそういうの撮ったことないから…
+Dialogue: 9,0:08:04.92,0:08:06.46,Text - JP,Erika,0,0,0,,エモい動画…
+Dialogue: 9,0:08:06.46,0:08:10.88,Text - JP,Erika,0,0,0,,そういえば前にゆりちゃんが動画撮ろうって話してたわね
+Dialogue: 9,0:08:11.20,0:08:12.38,Text - JP,Renge,0,0,0,,ゆりちゃんが？
+Dialogue: 9,0:08:12.38,0:08:13.13,Text - JP,Erika,0,0,0,,うん
+Dialogue: 9,0:08:13.13,0:08:15.89,Text - JP,Erika,0,0,0,,みんなの動画を残しておきたいねって
+Dialogue: 9,0:08:15.89,0:08:17.60,Text - JP,Sazanka,0,0,0,,あった　あった
+Dialogue: 9,0:08:17.60,0:08:21.18,Text - JP,Sazanka,0,0,0,,投稿サイトのおもしろい動画の話で盛り上がったときじゃん
+Dialogue: 9,0:08:21.18,0:08:25.48,Text - JP,Hinageshi,0,0,0,,でもスマホないし　ビデオも探したけど手に入らなかった
+Dialogue: 9,0:08:26.21,0:08:30.61,Text - JP,Ayame,0,0,0,,家電量販店の多くがワイルドハントに荒らされていたからな
+Dialogue: 9,0:08:30.99,0:08:34.61,Text - JP,Sazanka,0,0,0,,マジ　ゆりちと動画撮っておきたかったし
+Dialogue: 9,0:08:42.89,0:08:46.33,Text - JP,Renge,0,0,0,,じゃ　じゃあ撮ってみませんか　そういう動画
+Dialogue: 9,0:08:46.33,0:08:47.38,Text - JP,Sazanka,0,0,0,,それな！
+Dialogue: 9,0:08:47.38,0:08:49.79,Text - JP,Erika,0,0,0,,おねえちゃん　いいわよいいわよ！
+Dialogue: 9,0:08:49.79,0:08:53.42,Text - JP,Ayame,0,0,0,,しとろんさんへのコンタクト用だということを忘れずにな
+Dialogue: 9,0:08:53.74,0:08:56.55,Text - JP,Renge,0,0,0,,そ　それで　どんな動画にするんですか？
+Dialogue: 9,0:08:56.86,0:08:59.10,Text - JP,Erika,0,0,0,,おねえちゃんの知恵袋！
+Dialogue: 9,0:08:59.10,0:09:01.47,Text - JP,Erika,0,0,0,,動画といえば　ゲーム実況ね
+Dialogue: 9,0:09:01.47,0:09:04.06,Text - JP,Erika,0,0,0,,ひなちゃんと一緒に観たことあるわ！
+Dialogue: 9,0:09:04.49,0:09:05.89,Text - JP,Sazanka,0,0,0,,マジ　それな！
+Dialogue: 9,0:09:05.89,0:09:07.80,Text - JP,Ayame,0,0,0,,そうか？本当にそうか？
+Dialogue: 9,0:09:07.80,0:09:08.69,Text - JP,Sazanka,0,0,0,,マジマジ！
+Dialogue: 9,0:09:08.69,0:09:10.98,Text - JP,Hinageshi,0,0,0,,雑な思い込みだな
+Dialogue: 9,0:09:10.98,0:09:12.59,Text - JP,Erika,0,900,0,,いいわよ　いいわよ～！
+Dialogue: 9,0:09:11.36,0:09:12.99,Text - JP,Hinageshi,700,0,0,,まぁ　いいけど
+Dialogue: 9,0:09:12.59,0:09:14.49,Text - JP,Sazanka,0,400,0,,マジ楽しみじゃん！
+Dialogue: 9,0:09:12.98,0:09:13.92,Text - JP,Ayame,0,1300,0,,ギルティ！
+Dialogue: 9,0:09:27.46,0:09:29.21,Text - JP,Erika,0,0,0,,ひなちゃ～ん！
+Dialogue: 9,0:09:29.80,0:09:30.91,Text - JP,Hinageshi,0,0,0,,クリアしたぞ
+Dialogue: 9,0:09:30.91,0:09:32.17,Text - JP,Sazanka,0,0,0,,マジ地味じゃん！
+Dialogue: 9,0:09:32.51,0:09:35.88,Text - JP,Sazanka,0,0,0,,しかもゲーム実況なのに　ゲーム映ってないし
+Dialogue: 9,0:09:32.95,0:09:35.62,Text - JP - top,Erika,0,0,0,,おねえちゃん　いいわよいいわよ
+Dialogue: 9,0:09:35.88,0:09:37.93,Text - JP,Renge,0,0,0,,じ　実況もしてないです
+Dialogue: 9,0:09:38.47,0:09:40.39,Text - JP,Hinageshi,0,0,0,,トークスキルねえんだよ！
+Dialogue: 9,0:09:41.22,0:09:43.72,Text - JP,Erika,0,0,0,,おねえちゃんは　いいと思ったわ！
+Dialogue: 9,0:09:43.72,0:09:46.90,Text - JP,Erika,0,0,0,,ひなちゃんかわいくかっこよく映ってる～！
+Dialogue: 9,0:09:46.90,0:09:48.40,Text - JP,Ayame,0,0,0,,これは… 事故だな
+Dialogue: 9,0:09:48.99,0:09:51.90,Text - JP,Hinageshi,0,0,0,,実況ナメんな　あれは特殊スキルだ！
+Dialogue: 9,0:09:51.90,0:09:57.55,Text - JP,Hinageshi,0,0,0,,RTA の大会でも　プレイヤーとは別に解説者を\N立てることは認められてんだ！
+Dialogue: 9,0:09:57.55,0:10:01.28,Text - JP,Hinageshi,0,0,0,,あと　ガバプレイを入れて　露骨な人間アピールはしてる
+Dialogue: 9,0:10:01.65,0:10:03.21,Text - JP,Erika,0,0,0,,ずっと上手だったけど
+Dialogue: 9,0:10:03.21,0:10:05.31,Text - JP,Erika,0,0,0,,どの辺りがガバプレイなの？
+Dialogue: 9,0:10:06.33,0:10:09.54,Text - JP,Hinageshi,0,0,0,,細かすぎて伝わらない　ガバプレイだったか
+Dialogue: 9,0:10:09.54,0:10:11.23,Text - JP,Ayame,0,0,0,,べ　べ　別の案にしよう
+Dialogue: 9,0:10:11.23,0:10:13.13,Text - JP,Sazanka,0,0,0,,マジ　ドンドンじゃ～ん！
+Dialogue: 9,0:10:13.63,0:10:15.67,Text - JP,Sazanka,0,0,0,,動画といえば　チャレンジ系！
+Dialogue: 9,0:10:15.67,0:10:18.90,Text - JP,Ayame,0,0,0,,うん　テーマを決めて　何かしてみる動画だな
+Dialogue: 9,0:10:18.90,0:10:20.68,Text - JP,Erika,0,0,0,,は～い！はいはい　はい！
+Dialogue: 9,0:10:20.68,0:10:23.31,Text - JP,Erika,0,0,0,,そこでおねえちゃんの出番ね！
+Dialogue: 9,0:10:23.31,0:10:25.75,Text - JP,Erika,0,0,0,,プランク限界までやってみた！
+Dialogue: 9,0:10:26.97,0:10:30.35,Text - JP,Sazanka,0,0,0,,プランク限界までやってみた!!
+Dialogue: 9,0:10:52.79,0:10:54.76,Text - JP,Ayame,0,0,0,,見ているだけでキツい
+Dialogue: 9,0:10:54.76,0:10:56.45,Text - JP,Renge,0,0,0,,あれ　キツいんですか？
+Dialogue: 9,0:10:56.45,0:10:58.68,Text - JP,Sazanka,0,0,0,,ダイエットのためにやったことあるけど
+Dialogue: 9,0:10:58.68,0:11:00.02,Text - JP,Sazanka,0,0,0,,マジヤバい
+Dialogue: 9,0:11:00.02,0:11:01.84,Text - JP,Hinageshi,0,0,0,,鍛えるってやらされた
+Dialogue: 9,0:11:01.84,0:11:03.64,Text - JP,Hinageshi,0,0,0,,ひなは 20 秒でだめ
+Dialogue: 9,0:11:04.49,0:11:06.37,Text - JP,Renge,0,0,0,,そこまで　つらいんですか？
+Dialogue: 9,0:11:06.37,0:11:08.18,Text - JP,Hinageshi,0,0,0,,えりねえは　モンスターだ
+Dialogue: 9,0:11:13.98,0:11:16.11,Text - JP,Hinageshi,0,0,0,,10 分くらいたってるか
+Dialogue: 9,0:11:16.11,0:11:19.78,Text - JP,Ayame,0,0,0,,海兵隊でも 4 分で十分だと聞いたことがある
+Dialogue: 9,0:11:19.78,0:11:21.76,Text - JP,Sazanka,0,0,0,,マジモンスターじゃん！
+Dialogue: 9,0:11:21.76,0:11:23.45,Text - JP,Ayame,0,0,0,,確かにすごいが…
+Dialogue: 9,0:11:23.45,0:11:25.63,Text - JP,Sazanka,0,0,0,,マジ　ヤバいほど地味…
+Dialogue: 9,0:11:25.63,0:11:27.23,Text - JP,Renge,0,0,0,,動き全然ないです
+Dialogue: 9,0:11:27.23,0:11:30.00,Text - JP,Erika,0,0,0,,世界記録は 9 時間だったかしら
+Dialogue: 9,0:11:30.81,0:11:33.42,Text - JP,Hinageshi,0,0,0,,な　何と戦ってるんだ！
+Dialogue: 9,0:11:33.42,0:11:35.20,Text - JP,Ayame,0,0,0,,終わりだ！終わり～！
+Dialogue: 9,0:11:35.20,0:11:37.00,Text - JP,Erika,0,0,0,,えっ？そうなの？
+Dialogue: 9,0:11:38.60,0:11:41.33,Text - JP,Erika,0,0,0,,おねえちゃん大変だったわ
+Dialogue: 9,0:11:41.33,0:11:42.72,Text - JP,Erika,0,0,0,,どうかしら？
+Dialogue: 9,0:11:42.72,0:11:45.46,Text - JP,Hinageshi,0,0,0,,それは　大変な顔じゃねえし！
+Dialogue: 9,0:11:45.46,0:11:49.10,Text - JP,Hinageshi,0,0,0,,10 分間ピクリとも動かないのは人間に見えねえんだよ！
+Dialogue: 9,0:11:49.10,0:11:51.94,Text - JP,Sazanka,0,0,0,,やっぱ～　マジかわいいやつじゃん
+Dialogue: 9,0:11:52.24,0:11:53.71,Text - JP,Ayame,0,0,0,,わかるように言え
+Dialogue: 9,0:11:53.71,0:11:55.42,Text - JP,Ayame,0,0,0,,動物動画のことか？
+Dialogue: 9,0:11:55.42,0:11:56.58,Text - JP,Sazanka,0,0,0,,それな！
+Dialogue: 9,0:11:56.58,0:11:58.19,Text - JP,Hinageshi,0,0,0,,今のでなんでわかった？
+Dialogue: 9,0:11:58.51,0:12:01.29,Text - JP,Ayame,0,0,0,,だけど　動物はほとんど見かけない
+Dialogue: 9,0:12:01.29,0:12:05.57,Text - JP,Erika,0,0,0,,人がいなくなったら\Nいっぱい出てきてもおかしくないのにね～
+Dialogue: 9,0:12:05.57,0:12:09.00,Text - JP,Renge,0,0,0,,ワイルドハントに消されちゃったのかな？
+Dialogue: 9,0:12:09.00,0:12:10.57,Text - JP,Ayame,0,0,0,,可能性はある
+Dialogue: 9,0:12:10.57,0:12:12.00,Text - JP,Sazanka,0,0,0,,じゃあ　どうすんの？
+Dialogue: 9,0:12:12.00,0:12:13.93,Text - JP,Hinageshi,0,0,0,,呼んでおいた
+Dialogue: 9,0:12:17.34,0:12:19.90,Text - JP,Hinageshi,0,0,0,,この子　手が空いたから
+Dialogue: 9,0:12:23.62,0:12:26.74,Text - JP - top,Text,0,0,0,,チューチュー… 回転チュー…
+Dialogue: 9,0:12:24.22,0:12:25.97,Text - JP,Hinageshi,0,0,0,,自由自在だ
+Dialogue: 9,0:12:25.97,0:12:27.64,Text - JP,Sazanka,0,0,0,,マジ地味じゃん！
+Dialogue: 9,0:12:28.26,0:12:31.73,Text - JP,Hinageshi,0,0,0,,じゃあ掃除か整備をしてるとこでも撮影するか？
+Dialogue: 9,0:12:31.73,0:12:32.99,Text - JP,Sazanka,0,0,0,,それも地味！
+Dialogue: 9,0:12:32.99,0:12:35.19,Text - JP,Sazanka,0,0,0,,なんか派手なことできねえの？
+Dialogue: 9,0:12:35.19,0:12:38.25,Text - JP,Hinageshi,0,0,0,,機能が限定されてんだよ
+Dialogue: 9,0:12:41.57,0:12:45.20,Text - JP,Hinageshi,0,0,0,,ここを　こうして　ああして…
+Dialogue: 9,0:12:45.20,0:12:47.70,Text - JP,Rat,0,0,0,,自爆チュー！自爆チュー！
+Dialogue: 9,0:12:47.70,0:12:51.20,Text - JP,Sazanka,1200,0,0,,やめて　やめて…
+Dialogue: 9,0:12:49.36,0:12:51.20,Text - JP,Hinageshi,0,0,0,,スリリング
+Dialogue: 9,0:12:51.20,0:12:53.72,Text - JP - top,Rat,0,0,0,,脱出チュー！
+Dialogue: 9,0:12:52.02,0:12:54.58,Text - JP,Ayame,0,0,0,,動物が自爆する　動物動画があるか？
+Dialogue: 9,0:12:54.58,0:12:55.63,Text - JP,Hinageshi,0,0,0,,オンリーワン
+Dialogue: 9,0:12:55.63,0:13:01.80,Text - JP,Sazanka,0,0,0,,あっ　東北の山にさ　出てきて破裂する\Nネズミの妖怪がマジいるんだよね
+Dialogue: 9,0:13:01.80,0:13:03.09,Text - JP,Ayame,0,0,0,,怖い話をするな！
+Dialogue: 9,0:13:03.10,0:13:07.55,Text - JP,Rat,0,0,0,,や　やっぱり　さっきのチャレンジの方向がいい気がします
+Dialogue: 9,0:13:07.55,0:13:10.32,Text - JP,Erika,0,0,0,,スクワットなら　動きがあるわ
+Dialogue: 9,0:13:10.32,0:13:11.72,Text - JP,Ayame,0,0,0,,筋トレから離れろ！
+Dialogue: 9,0:13:11.72,0:13:12.88,Text - JP,Erika,0,0,0,,れんげちゃん！
+Dialogue: 9,0:13:13.45,0:13:14.91,Text - JP,Renge,0,0,0,,何ですか？
+Dialogue: 9,0:13:14.91,0:13:16.47,Text - JP,Sazanka,0,0,0,,れんれんの番
+Dialogue: 9,0:13:17.11,0:13:19.31,Text - JP,Erika,0,0,0,,もうすぐ　お昼でしょう？
+Dialogue: 9,0:13:20.51,0:13:23.74,Text - JP,Sazanka,0,0,0,,おにぎり何個食べれるかチャレンジ！
+Dialogue: 9,0:13:23.74,0:13:26.51,Text - JP,Renge,0,0,0,,こ　これ全部食べるんですか？
+Dialogue: 9,0:13:28.11,0:13:29.34,Text - JP,Renge,0,0,0,,恥ずかしい～！
+Dialogue: 9,0:13:29.34,0:13:31.21,Text - JP,Ayame,0,0,0,,遠慮なく食べていい
+Dialogue: 9,0:13:31.21,0:13:34.59,Text - JP,Erika,0,0,0,,ちょっと古くなっちゃってた　お米を炊いたの
+Dialogue: 9,0:13:34.59,0:13:35.96,Text - JP,Renge,0,0,0,,ホントですか？
+Dialogue: 9,0:13:35.96,0:13:37.95,Text - JP,Renge,0,0,0,,わ　わかりました！
+Dialogue: 9,0:13:37.95,0:13:39.13,Text - JP,Renge,0,0,0,,頑張ります！
+Dialogue: 9,0:13:39.13,0:13:41.50,Text - JP,Renge,0,0,0,,いただきま～す！
+Dialogue: 9,0:13:43.77,0:13:45.45,Text - JP,Sazanka,0,0,0,,どうしたん　れんれん？
+Dialogue: 9,0:13:45.45,0:13:49.12,Text - JP,Renge,0,0,0,,き　緊張して食欲がなくなっちゃいました
+Dialogue: 9,0:13:49.51,0:13:50.77,Text - JP,Hinageshi,0,0,0,,デバフ入ったか!?
+Dialogue: 9,0:13:50.77,0:13:52.69,Text - JP,Ayame,0,0,0,,ただ　おにぎり食べただけの動画だ！
+Dialogue: 9,0:13:52.69,0:13:56.43,Text - JP,Renge,0,0,0,,おにぎりさん　ごめんなさ～い！
+Dialogue: 9,0:13:56.82,0:14:00.08,Text - JP,Renge,0,0,0,,おにぎりは　この後みんなでおいしくいただきました
+Dialogue: 9,0:14:00.08,0:14:01.69,Text - JP,All,0,0,0,,いただきま～す！
+Dialogue: 9,0:14:02.41,0:14:04.07,Text - JP,Erika,0,0,0,,おねえちゃん　思いついたわ！
+Dialogue: 9,0:14:10.32,0:14:12.62,Text - JP,Ayame,0,0,0,,う　歌ってみたがある
+Dialogue: 9,0:14:12.62,0:14:14.62,Text - JP,Erika; Sazanka,0,0,0,,「私は～」
+Dialogue: 9,0:14:15.00,0:14:16.50,Text - JP,Hinageshi,0,0,0,,もう　ゲームでいいだろ
+Dialogue: 9,0:14:19.00,0:14:21.04,Text - JP,Ayame,0,0,0,,ギ　ギルティだ！
+Dialogue: 9,0:14:21.04,0:14:23.01,Text - JP,Ayame,0,0,0,,明らかに迷走している！
+Dialogue: 9,0:14:23.01,0:14:25.67,Text - JP,Ayame,0,0,0,,自分たちはいったい何をしているんだ？
+Dialogue: 9,0:14:25.67,0:14:28.19,Text - JP,Sazanka,0,0,0,,ウチらマジ向いてなくない
+Dialogue: 9,0:14:28.19,0:14:29.93,Text - JP,Erika,0,0,0,,筋トレならできるのに
+Dialogue: 9,0:14:29.93,0:14:31.51,Text - JP,Hinageshi,0,0,0,,HP 尽きた
+Dialogue: 9,0:14:32.25,0:14:33.51,Text - JP,Renge,0,0,0,,あの～
+Dialogue: 9,0:14:34.13,0:14:35.57,Text - JP,Sazanka,0,0,0,,どうした　れんれん？
+Dialogue: 9,0:14:34.77,0:14:35.57,Text - JP,Renge,800,0,0,,あの
+Dialogue: 9,0:14:35.57,0:14:37.52,Text - JP,Renge,800,0,0,,割烹動画はだめですか？
+Dialogue: 9,0:14:38.45,0:14:40.02,Text - JP,All,0,0,0,,それだ！
+Dialogue: 9,0:14:40.52,0:14:42.27,Text - JP,Sazanka,0,0,0,,じゃあ　スタート
+Dialogue: 9,0:14:47.31,0:14:49.43,Text - JP,Erika,0,0,0,,れんげちゃん　頑張って！
+Dialogue: 9,0:14:49.43,0:14:50.36,Text - JP,Renge,0,0,0,,はい！
+Dialogue: 9,0:14:50.36,0:14:52.42,Text - JP,Erika,0,0,0,,おねえちゃんがついてるわ～！
+Dialogue: 9,0:14:52.94,0:14:53.78,Text - JP,Renge,0,0,0,,えっと～
+Dialogue: 9,0:14:53.78,0:14:55.37,Text - JP,Ayame,0,0,0,,いつもの割烹でいい
+Dialogue: 9,0:14:55.88,0:14:57.58,Text - JP,Sazanka,0,0,0,,れんれん　マジ大丈夫？
+Dialogue: 9,0:14:57.58,0:14:58.67,Text - JP,Renge,0,0,0,,はい！
+Dialogue: 9,0:14:58.67,0:14:59.88,Text - JP,Renge,0,0,0,,い　いつもの…
+Dialogue: 9,0:14:59.88,0:15:01.67,Text - JP,Renge,0,0,0,,いつもの割烹！
+Dialogue: 9,0:15:01.67,0:15:03.76,Text - JP,Renge,0,0,0,,か　割烹！
+Dialogue: 9,0:15:03.76,0:15:04.99,Text - JP,Sazanka,0,0,0,,かけ声きた！
+Dialogue: 9,0:15:04.99,0:15:06.59,Text - JP,Hinageshi,0,0,0,,バフ入ったな
+Dialogue: 9,0:15:06.59,0:15:08.53,Text - JP,Renge,0,0,0,,れんれんの今日の割烹！
+Dialogue: 9,0:15:08.53,0:15:10.67,Text - JP,Renge,0,0,0,,みんな　こんにちはれんれんだよ
+Dialogue: 9,0:15:10.67,0:15:12.09,Text - JP,Renge,0,0,0,,元気にしてるかな？
+Dialogue: 9,0:15:12.34,0:15:16.30,Text - JP,Renge,0,0,0,,れ　れんれんは緊張しておにぎりが喉を通らないよ
+Dialogue: 9,0:15:16.30,0:15:19.89,Text - JP,Renge,0,0,0,,チャ　チャンネル登録はここからお願いします！
+Dialogue: 9,0:15:19.89,0:15:21.85,Text - JP,Hinageshi,0,0,0,,チャンネルはねえよ
+Dialogue: 9,0:15:20.89,0:15:22.70,Text - JP - top,Renge,0,0,0,,こんなにたくさんの缶詰
+Dialogue: 9,0:15:22.70,0:15:24.88,Text - JP - top,Renge,0,0,0,,これは限定のカレー缶!?
+Dialogue: 9,0:15:24.01,0:15:25.90,Text - JP,Sazanka,0,0,0,,応援の課金がカレーじゃん？
+Dialogue: 9,0:15:25.90,0:15:27.81,Text - JP,Renge,0,0,0,,む　無理しちゃだめ…
+Dialogue: 9,0:15:27.81,0:15:29.90,Text - JP,Renge,0,0,0,,まだ割烹してないんだから
+Dialogue: 9,0:15:29.90,0:15:31.91,Text - JP,Renge,0,0,0,,か　『割烹の歌』歌います！
+Dialogue: 9,0:15:31.91,0:15:34.41,Text - JP,Renge,0,0,0,,「缶詰は～　開ける～」
+Dialogue: 9,0:15:32.14,0:15:34.41,Text - JP - top,Erika,0,0,0,,おねえちゃん　いいわよ　いいわよ
+Dialogue: 9,0:15:35.05,0:15:36.62,Text - JP,Renge,0,0,0,,ご　ごめんなさい
+Dialogue: 9,0:15:36.99,0:15:39.67,Text - JP,Renge,0,0,0,,割烹しなきゃって　すごく緊張してたら
+Dialogue: 9,0:15:39.67,0:15:41.60,Text - JP,Renge,0,0,0,,何もわからなくなって…
+Dialogue: 9,0:15:41.60,0:15:44.83,Text - JP,Ayame,0,0,0,,いや　自分たちこそ　無理をさせてしまった
+Dialogue: 9,0:15:44.83,0:15:47.67,Text - JP,Erika,0,0,0,,撮影されるのって緊張するものね
+Dialogue: 9,0:15:48.19,0:15:52.45,Text - JP,Renge,0,0,0,,割烹動画いいアイデアだと思うんですけど
+Dialogue: 9,0:15:52.45,0:15:54.22,Text - JP,Renge,0,0,0,,私がこんなんじゃ…
+Dialogue: 9,0:15:57.02,0:15:59.30,Text - JP,Sazanka,0,0,0,,緊張はわかったけどさ
+Dialogue: 9,0:15:59.30,0:16:00.40,Text - JP,Sazanka,0,0,0,,ってかれんれん
+Dialogue: 9,0:16:00.40,0:16:03.44,Text - JP,Sazanka,0,0,0,,ウチらといるときはマジ結構普通にしゃべるじゃん
+Dialogue: 9,0:16:04.15,0:16:05.77,Text - JP,Renge,0,0,0,,そ　そういえば…
+Dialogue: 9,0:16:06.12,0:16:09.04,Text - JP,Erika,0,0,0,,初めて会ったときは緊張してたけど
+Dialogue: 9,0:16:09.04,0:16:10.53,Text - JP,Erika,0,0,0,,今は平気よね
+Dialogue: 9,0:16:10.86,0:16:13.40,Text - JP,Renge,0,0,0,,ゆ　ゆりちゃんのおかげです
+Dialogue: 9,0:16:13.40,0:16:15.53,Text - JP,Renge,0,0,0,,優しく気遣ってくれました
+Dialogue: 9,0:16:15.53,0:16:16.99,Text - JP,Yuri,0,0,0,,{\fad(300,300)}れんげちゃん！
+Dialogue: 7,0:16:16.65,0:16:17.51,Text - JP,Renge,0,0,0,,{\fad(300,300)}はい！
+Dialogue: 9,0:16:16.99,0:16:18.75,Text - JP,Yuri,0,0,0,,{\fad(300,300)}改めまして私たち…
+Dialogue: 9,0:16:21.89,0:16:23.62,Text - JP,Hinageshi,0,0,0,,ゆりくんのは　天然
+Dialogue: 9,0:16:23.62,0:16:27.25,Text - JP,Sazanka,0,0,0,,じゃ　じゃあさ　ウチらも一緒に映ればいいじゃん！
+Dialogue: 9,0:16:28.11,0:16:29.67,Text - JP,Sazanka,0,0,0,,みんなで　割烹すんの！
+Dialogue: 9,0:16:29.93,0:16:32.59,Text - JP,Erika,0,0,0,,おねえちゃん　いいわよいいわよ～！
+Dialogue: 9,0:16:32.59,0:16:35.30,Text - JP,Hinageshi,0,0,0,,えりねえ　料理できねえだろう
+Dialogue: 9,0:16:35.66,0:16:37.48,Text - JP,Ayame,0,0,0,,自分も料理はできない
+Dialogue: 9,0:16:37.48,0:16:39.62,Text - JP,Ayame,0,0,0,,でも　手伝うことはできるぞ
+Dialogue: 9,0:16:39.62,0:16:40.81,Text - JP,Sazanka,0,0,0,,れんれん　どう？
+Dialogue: 9,0:16:41.15,0:16:42.56,Text - JP,Renge,0,0,0,,そ　それなら！
+Dialogue: 9,0:16:42.91,0:16:45.44,Text - JP,Renge,0,0,0,,みんながいてくれるなら　きっと…
+Dialogue: 9,0:16:46.59,0:16:47.79,Text - JP,Renge,0,0,0,,せ～の…
+Dialogue: 9,0:16:47.79,0:16:50.50,Text - JP,All,0,0,0,,しとろんさん　こんにちは～
+Dialogue: 9,0:16:50.50,0:16:52.69,Text - JP,Renge,0,0,0,,チームえみゅーのプールサイド割烹
+Dialogue: 9,0:16:52.69,0:16:55.53,Text - JP,Renge,0,0,0,,今日はプールといえばの焼きそばを作りま～す！
+Dialogue: 9,0:16:56.71,0:16:58.69,Text - JP,Renge,0,0,0,,割烹！
+Dialogue: 9,0:16:58.69,0:17:00.30,Text - JP,All,0,0,0,,割烹！
+Dialogue: 9,0:17:00.30,0:17:03.40,Text - JP,All,0,0,0,,廃墟 3 分簡単かっぽ～！
+Dialogue: 9,0:17:03.40,0:17:05.21,Text - JP,Renge,0,0,0,,用意するものはこちらになります
+Dialogue: 9,0:17:08.00,0:17:12.07,Text - JP,Renge,0,0,0,,ネギとキャベツをたっぷり入れてカップ焼きそばを作ります
+Dialogue: 9,0:17:12.07,0:17:14.72,Text - JP,Renge,0,0,0,,3 分たったら　お湯を捨てます
+Dialogue: 9,0:17:15.97,0:17:18.98,Text - JP,Renge,0,0,0,,鉄板を熱して　ごま油を引きましょう
+Dialogue: 9,0:17:18.98,0:17:23.81,Text - JP,Renge,0,0,0,,炒めるときイカの燻製と乾燥サクラエビを一緒に割烹します
+Dialogue: 9,0:17:23.81,0:17:28.19,Text - JP,Renge,0,0,0,,付属のソースとオイスターソースを\N入れるともっとおいしくなります
+Dialogue: 9,0:17:28.19,0:17:31.34,Text - JP,Renge,0,0,0,,イカ　エビ　カキ　海の割烹です
+Dialogue: 9,0:17:37.01,0:17:39.24,Text - JP,All,0,0,0,,いただきま～す！
+Dialogue: 9,0:17:39.56,0:17:41.45,Text - JP,Sazanka,0,0,0,,マジいい感じじゃん！
+Dialogue: 9,0:17:41.45,0:17:43.78,Text - JP,Hinageshi,0,0,0,,ってか　間延びしてっから　編集する
+Dialogue: 9,0:17:43.78,0:17:46.46,Text - JP,Erika,0,0,0,,でも　おねえちゃん　すごくいいと思うわ！
+Dialogue: 9,0:17:47.37,0:17:50.46,Text - JP,Ayame,0,0,0,,みんなで一緒にいる動画ってなかったから
+Dialogue: 9,0:17:52.33,0:17:56.47,Text - JP,Erika,0,0,0,,ゆりちゃんがいたときに動画撮れてたらって思っちゃうわね
+Dialogue: 9,0:17:59.59,0:18:00.43,Text - JP,Yuri,0,0,0,,ホントだ！
+Dialogue: 9,0:18:02.07,0:18:03.12,Text - JP,Sazanka,0,0,0,,マジさ
+Dialogue: 9,0:18:03.12,0:18:05.80,Text - JP,Sazanka,0,0,0,,いつ誰がいなくなってもおかしくねえし
+Dialogue: 9,0:18:05.80,0:18:07.35,Text - JP,Sazanka,0,0,0,,残していきたいよな
+Dialogue: 9,0:18:07.76,0:18:10.61,Text - JP,Renge,0,0,0,,わ　私　頑張って割烹動画作ります！
+Dialogue: 9,0:18:10.61,0:18:12.76,Text - JP,Erika,0,0,0,,おねえちゃんは筋トレ動画！
+Dialogue: 9,0:18:12.76,0:18:14.40,Text - JP,Hinageshi,0,0,0,,マジやめろ！
+Dialogue: 9,0:18:14.40,0:18:15.88,Text - JP,Erika,0,0,0,,ひなちゃ～ん
+Dialogue: 9,0:18:15.88,0:18:17.69,Text - JP,Erika,0,0,0,,ゲーム配信していいから
+Dialogue: 9,0:18:17.69,0:18:20.58,Text - JP,Hinageshi,0,0,0,,向いてないって言ってんだろう！
+Dialogue: 9,0:18:22.74,0:18:23.78,Text - JP,Renge,0,0,0,,あやちゃん!?
+Dialogue: 9,0:18:23.78,0:18:26.58,Text - JP,Sazanka,0,0,0,,なに？ウチマジヤバいこと言った？
+Dialogue: 9,0:18:26.58,0:18:27.14,Text - JP,Sazanka,0,0,0,,ごめん
+Dialogue: 9,0:18:27.14,0:18:28.33,Text - JP,Ayame,0,0,0,,違うんだ…
+Dialogue: 9,0:18:29.21,0:18:31.73,Text - JP,Ayame,0,0,0,,動画は撮りたいんだ　みんなで
+Dialogue: 9,0:18:31.73,0:18:36.05,Text - JP,Ayame,0,0,0,,自分もゆりと一緒に撮れなかったことを後悔してるから
+Dialogue: 9,0:18:36.92,0:18:40.05,Text - JP,Ayame,0,0,0,,でも　もう誰もいなくなってほしくない
+Dialogue: 9,0:18:40.40,0:18:42.55,Text - JP,Ayame,0,0,0,,お願いだから　いなくならないで
+Dialogue: 9,0:18:44.61,0:18:45.86,Text - JP,Sazanka,0,0,0,,あやめ
+Dialogue: 9,0:18:45.86,0:18:47.47,Text - JP,Sazanka,0,0,0,,マジ当然じゃん
+Dialogue: 9,0:18:49.46,0:18:51.26,Text - JP,Renge,0,0,0,,いなくならないです
+Dialogue: 9,0:18:51.26,0:18:52.59,Text - JP,Renge,0,0,0,,ずっと友達で
+Dialogue: 9,0:18:52.59,0:18:54.11,Text - JP,Renge,0,0,0,,ずっと一緒にいたいです
+Dialogue: 9,0:18:56.43,0:18:57.31,Text - JP,Ayame,0,0,0,,うん！
+Dialogue: 9,0:19:00.70,0:19:03.43,Text - JP,Renge,0,0,0,,ホントは　約束できなくても
+Dialogue: 9,0:19:03.43,0:19:06.22,Text - JP,Renge,0,0,0,,それでも　一緒にいたいな
+Dialogue: 9,0:19:08.10,0:19:10.99,Text - JP,Ayame,0,0,0,,それでは　さっきの料理動画を投稿して
+Dialogue: 9,0:19:10.99,0:19:13.38,Text - JP,Ayame,0,0,0,,しとろんさんに接触しようと思う
+Dialogue: 9,0:19:14.01,0:19:15.58,Text - JP,Renge,0,0,0,,あ　あの…
+Dialogue: 9,0:19:17.32,0:19:19.52,Text - JP,Renge,0,0,0,,水着すっごく恥ずかしいです！
+Dialogue: 9,0:19:19.52,0:19:20.98,Text - JP,Ayame,0,0,0,,今それ言うか!?
+Dialogue: 9,0:19:20.98,0:19:21.89,Text - JP,Ayame,0,0,0,,自分もだ！
+Dialogue: 9,0:19:22.37,0:19:25.60,Text - JP,Hinageshi,0,0,0,,顔出し個人情報的にどうかと…
+Dialogue: 9,0:19:25.60,0:19:27.10,Text - JP,Ayame,0,0,0,,それも今言うか!?
+Dialogue: 9,0:19:27.39,0:19:30.14,Text - JP,Sazanka,0,0,0,,みんなマジテン上げだったかんな～
+Dialogue: 9,0:19:30.14,0:19:31.39,Text - JP,Erika,0,0,0,,ね～！
+Dialogue: 9,0:19:31.39,0:19:33.32,Text - JP,Ayame,0,0,0,,ギ　ギルティ！
+Dialogue: 9,0:19:33.32,0:19:36.65,Text - JP,Ayame,0,0,0,,だから　そこまでする必要があるかと言っただろう！
+Dialogue: 9,0:19:36.94,0:19:39.10,Text - JP,Ayame,0,0,0,,{あっ！}もう…
+Dialogue: 9,0:19:39.10,0:19:40.20,Text - JP,Renge,0,0,0,,{わ　}私も～！
+Dialogue: 9,0:19:40.86,0:19:45.74,Text - JP,Erika,0,0,0,,でも　ワイルドハントの\N成り済ましじゃないってわかってもらうことはできるわ
+Dialogue: 9,0:19:45.74,0:19:47.71,Text - JP,Sazanka,0,0,0,,いいじゃん　いっとこ～
+Dialogue: 9,0:19:48.15,0:19:49.70,Text - JP,Sazanka,0,0,0,,アップおけまる
+Dialogue: 9,0:19:49.70,0:19:50.87,Text - JP,Ayame,0,0,0,,さっちー！
+Dialogue: 9,0:19:51.90,0:19:56.02,Text - JP,Sazanka,0,0,0,,しとしとフォローして～　あとはレス入れるだけ
+Dialogue: 9,0:19:56.02,0:19:57.50,Text - JP,Ayame,0,0,0,,後戻りできない…
+Dialogue: 9,0:20:00.78,0:20:02.26,Text - JP,Ayame,0,0,0,,どうした　さっち？
+Dialogue: 9,0:20:02.26,0:20:04.00,Text - JP,Sazanka,0,0,0,,しとしとの投稿…
+Dialogue: 9,0:20:04.80,0:20:06.30,Text - JP,Sazanka,0,0,0,,マジヤバい！
+Dialogue: 9,0:20:16.75,0:20:19.73,Text - JP,Ayame,0,0,0,,「ここには近づかないでください」
+Dialogue: 9,0:20:20.62,0:20:22.86,Text - JP,Renge,0,0,0,,続けて　文章の書き込みだ
+Dialogue: 9,0:20:22.86,0:20:24.90,Text - JP,Renge,0,0,0,,「状況を説明します」
+Dialogue: 9,0:20:24.90,0:20:28.87,Text - JP,Renge,0,0,0,,「機械が私たちのコロニーに迫っていて　たいへん危険です」
+Dialogue: 9,0:20:29.36,0:20:32.41,Text - JP,Renge,0,0,0,,「動画の場所には決して近づかないでください」
+Dialogue: 9,0:20:32.83,0:20:37.92,Text - JP,Renge,0,0,0,,「生存している方が気付いてくれればと\Nこれまで写真を掲載してきました」
+Dialogue: 9,0:20:38.28,0:20:40.53,Text - JP,Renge,0,0,0,,「合流できた人がいました」
+Dialogue: 9,0:20:40.53,0:20:44.82,Text - JP,Renge,0,0,0,,「見守ってくれていた方も人間であることを\N確かめようとすると」
+Dialogue: 9,0:20:44.82,0:20:47.47,Text - JP,Renge,0,0,0,,「お怒りになる方もいたかもしれません」
+Dialogue: 9,0:20:47.82,0:20:49.80,Text - JP,Renge,0,0,0,,「ありがとうございました」
+Dialogue: 9,0:20:49.80,0:20:53.50,Text - JP,Renge,0,0,0,,「このアカウントでまた投稿できることを願っています」
+Dialogue: 9,0:20:53.50,0:20:55.87,Text - JP,Renge,0,0,0,,「皆様に幸運がありますように」
+Dialogue: 9,0:20:57.18,0:20:58.53,Text - JP,Ayame,0,0,0,,まずいな
+Dialogue: 9,0:20:58.53,0:21:01.47,Text - JP,Ayame,0,0,0,,隠れている場所がワイルドハントに見つかった
+Dialogue: 9,0:21:01.47,0:21:04.88,Text - JP,Ayame,0,0,0,,あるいは　ワイルドハントが他の場所から移動してきたか
+Dialogue: 9,0:21:04.88,0:21:05.88,Text - JP,Hinageshi,0,0,0,,どうする？
+Dialogue: 9,0:21:05.88,0:21:07.16,Text - JP,Sazanka,0,0,0,,この場所わかる
+Dialogue: 9,0:21:07.16,0:21:08.28,Text - JP,Sazanka,0,0,0,,マジ近いじゃん
+Dialogue: 9,0:21:08.84,0:21:10.29,Text - JP,Renge,0,0,0,,助けに行きます！
+Dialogue: 9,0:21:11.94,0:21:14.19,Text - JP,Renge,0,0,0,,ゆりちゃんならそうしたと思うんです
+Dialogue: 9,0:21:14.19,0:21:17.63,Text - JP,Renge,0,0,0,,しとろんさんが捜していたねりねちゃんじゃなかったとしても
+Dialogue: 9,0:21:17.63,0:21:18.60,Text - JP,Erika,0,0,0,,そうね
+Dialogue: 9,0:21:18.60,0:21:21.63,Text - JP,Erika,0,0,0,,おねえちゃんもゆりちゃんはドンドン行こって言ったと思う
+Dialogue: 9,0:21:21.63,0:21:24.24,Text - JP,Ayame,0,0,0,,助けを求めるメッセージではなく
+Dialogue: 9,0:21:24.24,0:21:26.24,Text - JP,Ayame,0,0,0,,近づかないでと言っている
+Dialogue: 9,0:21:26.73,0:21:29.22,Text - JP,Ayame,0,0,0,,ワイルドハントの成り済ましとは思えない
+Dialogue: 9,0:21:29.49,0:21:30.32,Text - JP,Sazanka,0,0,0,,マジ
+Dialogue: 9,0:21:30.32,0:21:31.06,Text - JP,Sazanka,0,0,0,,決まりじゃん
+Dialogue: 9,0:21:31.48,0:21:33.35,Text - JP,Hinageshi,0,0,0,,救援　オーケーだ
+Dialogue: 9,0:21:33.79,0:21:35.23,Text - JP,Renge,0,0,0,,ドンドン行きましょう！
+Dialogue: 9,0:21:35.50,0:21:37.35,Text - JP,Renge,0,0,0,,しとろんさんを助けに！
+Dialogue: 9,0:23:12.03,0:23:13.53,Text - JP,Ayame,0,0,0,,しとろんさんを助けないと
+Dialogue: 9,0:23:13.53,0:23:15.91,Text - JP,Sazanka,0,0,0,,あやめ　大丈夫だって
+Dialogue: 9,0:23:15.91,0:23:19.39,Text - JP,Sazanka,0,0,0,,ウチもガチ全身全霊　マジ粉骨砕身だし
+Dialogue: 9,0:23:20.17,0:23:21.95,Text - JP,Erika,0,0,0,,さんちゃんの言う通りよ
+Dialogue: 9,0:23:21.95,0:23:24.59,Text - JP,Erika,0,0,0,,おねえちゃんもひなちゃんもついてるんだから
+Dialogue: 9,0:23:24.59,0:23:26.51,Text - JP,Hinageshi,0,0,0,,勝手に入れるなよ
+Dialogue: 9,0:23:26.51,0:23:29.68,Text - JP,Hinageshi,0,0,0,,ひな的にも今はハイリスクハイリターンでいいけどな
+Dialogue: 9,0:23:29.68,0:23:31.14,Text - JP,Renge,0,0,0,,れんげも頑張ります
+Dialogue: 9,0:23:31.14,0:23:33.25,Text - JP,Renge,0,0,0,,れんげたちでしとろんさんを助けましょう
+Dialogue: 9,0:23:33.25,0:23:35.22,Text - JP,Ayame,0,0,0,,そうだな　弱気はギルティだ
+Dialogue: 9,0:23:36.06,0:23:39.39,Text - JP,All,0,500,0,,次回　みんなで戦う塩むすび
+Dialogue: 10,0:21:52.33,0:21:55.25,ED01_JP,verse,0,0,0,fx,{\blur0.56\bord0\pos(50.07,994.98)\alpha&HFF&\t(0,200,1,\alpha&H00&)\t(2720,2920,1.25,\alpha&HFF&)\c&HE7E4FD&}見上げた空
+Dialogue: 8,0:21:52.33,0:21:55.25,ED01_JP,verse,0,0,0,fx,{\blur6\bord2.4\pos(50.07,994.98)\alpha&HFF&\t(0,200,0.75,\alpha&H40&)\t(2720,2920,1.25,\alpha&HFF&)\c&H000000&\3c&H000000&\t(15,90,\c&H625781&\3c&H625781&)\t(90,990,\c&H332D82&\3c&H332D82&)\t(990,2490,\c&H000000&\3c&H000000&)}見{\c&H000000&\3c&H000000&\t(195,270,\c&H625781&\3c&H625781&)\t(270,1170,\c&H332D82&\3c&H332D82&)\t(1170,2670,\c&H000000&\3c&H000000&)}上{\c&H000000&\3c&H000000&\t(565,640,\c&H625781&\3c&H625781&)\t(640,1540,\c&H332D82&\3c&H332D82&)\t(1540,3040,\c&H000000&\3c&H000000&)}げ{\c&H000000&\3c&H000000&\t(785,860,\c&H625781&\3c&H625781&)\t(860,1760,\c&H332D82&\3c&H332D82&)\t(1760,3260,\c&H000000&\3c&H000000&)}た{\c&H000000&\3c&H000000&\t(1105,1180,\c&H625781&\3c&H625781&)\t(1180,2080,\c&H332D82&\3c&H332D82&)\t(2195,3695,\c&H000000&\3c&H000000&)}空
+Dialogue: 10,0:21:55.10,0:22:02.26,ED01_JP,verse,0,0,0,fx,{\blur0.56\bord0\pos(50.07,994.98)\alpha&HFF&\t(0,200,1,\alpha&H00&)\t(6960,7160,1.25,\alpha&HFF&)\c&HE7E4FD&}君の声が  響いてく
+Dialogue: 8,0:21:55.10,0:22:02.26,ED01_JP,verse,0,0,0,fx,{\blur6\bord2.4\pos(50.07,994.98)\alpha&HFF&\t(0,200,0.75,\alpha&H40&)\t(6960,7160,1.25,\alpha&HFF&)\c&H000000&\3c&H000000&\t(15,90,\c&H625781&\3c&H625781&)\t(90,990,\c&H332D82&\3c&H332D82&)\t(990,2490,\c&H000000&\3c&H000000&)}君{\c&H000000&\3c&H000000&\t(555,630,\c&H625781&\3c&H625781&)\t(630,1530,\c&H332D82&\3c&H332D82&)\t(1530,3030,\c&H000000&\3c&H000000&)}の{\c&H000000&\3c&H000000&\t(755,830,\c&H625781&\3c&H625781&)\t(830,1730,\c&H332D82&\3c&H332D82&)\t(1730,3230,\c&H000000&\3c&H000000&)}声{\c&H000000&\3c&H000000&\t(1345,1420,\c&H625781&\3c&H625781&)\t(1420,2320,\c&H332D82&\3c&H332D82&)\t(2320,3820,\c&H000000&\3c&H000000&)}が{\c&H000000&\3c&H000000&\t(2205,2280,\c&H625781&\3c&H625781&)\t(2280,3180,\c&H332D82&\3c&H332D82&)\t(3180,4680,\c&H000000&\3c&H000000&)}  {\c&H000000&\3c&H000000&\t(2645,2720,\c&H625781&\3c&H625781&)\t(2720,3620,\c&H332D82&\3c&H332D82&)\t(5075,6575,\c&H000000&\3c&H000000&)}響い{\c&H000000&\3c&H000000&\t(5075,5150,\c&H625781&\3c&H625781&)\t(5150,6050,\c&H332D82&\3c&H332D82&)\t(6050,7550,\c&H000000&\3c&H000000&)}て{\c&H000000&\3c&H000000&\t(5405,5480,\c&H625781&\3c&H625781&)\t(5480,6380,\c&H332D82&\3c&H332D82&)\t(6380,7880,\c&H000000&\3c&H000000&)}く
+Dialogue: 10,0:22:02.11,0:22:08.01,ED01_JP,verse,0,0,0,fx,{\blur0.56\bord0\pos(50.07,994.98)\alpha&HFF&\t(0,200,1,\alpha&H00&)\t(5700,5900,1.25,\alpha&HFF&)\c&HE7E4FD&}一人じゃないって  あたたかくて
+Dialogue: 8,0:22:02.11,0:22:08.01,ED01_JP,verse,0,0,0,fx,{\blur6\bord2.4\pos(50.07,994.98)\alpha&HFF&\t(0,200,0.75,\alpha&H40&)\t(5700,5900,1.25,\alpha&HFF&)\c&H000000&\3c&H000000&\t(15,90,\c&H625781&\3c&H625781&)\t(90,990,\c&H332D82&\3c&H332D82&)\t(990,2490,\c&H000000&\3c&H000000&)}一{\c&H000000&\3c&H000000&\t(505,580,\c&H625781&\3c&H625781&)\t(580,1480,\c&H332D82&\3c&H332D82&)\t(1480,2980,\c&H000000&\3c&H000000&)}人{\c&H000000&\3c&H000000&\t(725,800,\c&H625781&\3c&H625781&)\t(800,1700,\c&H332D82&\3c&H332D82&)\t(1700,3200,\c&H000000&\3c&H000000&)}じゃ{\c&H000000&\3c&H000000&\t(1145,1220,\c&H625781&\3c&H625781&)\t(1220,2120,\c&H332D82&\3c&H332D82&)\t(2120,3620,\c&H000000&\3c&H000000&)}な{\c&H000000&\3c&H000000&\t(1415,1490,\c&H625781&\3c&H625781&)\t(1490,2390,\c&H332D82&\3c&H332D82&)\t(2390,3890,\c&H000000&\3c&H000000&)}い{\c&H000000&\3c&H000000&\t(1815,1890,\c&H625781&\3c&H625781&)\t(1890,2790,\c&H332D82&\3c&H332D82&)\t(2790,4290,\c&H000000&\3c&H000000&)}って{\c&H000000&\3c&H000000&\t(2415,2490,\c&H625781&\3c&H625781&)\t(2490,3390,\c&H332D82&\3c&H332D82&)\t(3390,4890,\c&H000000&\3c&H000000&)} {\c&H000000&\3c&H000000&\t(2815,2890,\c&H625781&\3c&H625781&)\t(2890,3790,\c&H332D82&\3c&H332D82&)\t(3790,5290,\c&H000000&\3c&H000000&)} あ{\c&H000000&\3c&H000000&\t(3015,3090,\c&H625781&\3c&H625781&)\t(3090,3990,\c&H332D82&\3c&H332D82&)\t(3990,5490,\c&H000000&\3c&H000000&)}た{\c&H000000&\3c&H000000&\t(3345,3420,\c&H625781&\3c&H625781&)\t(3420,4320,\c&H332D82&\3c&H332D82&)\t(4320,5820,\c&H000000&\3c&H000000&)}た{\c&H000000&\3c&H000000&\t(3565,3640,\c&H625781&\3c&H625781&)\t(3640,4540,\c&H332D82&\3c&H332D82&)\t(4540,6040,\c&H000000&\3c&H000000&)}か{\c&H000000&\3c&H000000&\t(3905,3980,\c&H625781&\3c&H625781&)\t(3980,4880,\c&H332D82&\3c&H332D82&)\t(4880,6380,\c&H000000&\3c&H000000&)}く{\c&H000000&\3c&H000000&\t(4265,4340,\c&H625781&\3c&H625781&)\t(4340,5240,\c&H332D82&\3c&H332D82&)\t(5240,6740,\c&H000000&\3c&H000000&)}て
+Dialogue: 10,0:22:07.86,0:22:14.97,ED01_JP,verse,0,0,0,fx,{\blur0.56\bord0\pos(50.07,994.98)\alpha&HFF&\t(0,200,1,\alpha&H00&)\t(6910,7110,1.25,\alpha&HFF&)\c&HE7E4FD&}なぜか胸がぎゅっとなるよ
+Dialogue: 8,0:22:07.86,0:22:14.97,ED01_JP,verse,0,0,0,fx,{\blur6\bord2.4\pos(50.07,994.98)\alpha&HFF&\t(0,200,0.75,\alpha&H40&)\t(6910,7110,1.25,\alpha&HFF&)\c&H000000&\3c&H000000&\t(15,90,\c&H625781&\3c&H625781&)\t(90,990,\c&H332D82&\3c&H332D82&)\t(990,2490,\c&H000000&\3c&H000000&)}な{\c&H000000&\3c&H000000&\t(335,410,\c&H625781&\3c&H625781&)\t(410,1310,\c&H332D82&\3c&H332D82&)\t(1310,2810,\c&H000000&\3c&H000000&)}ぜ{\c&H000000&\3c&H000000&\t(695,770,\c&H625781&\3c&H625781&)\t(770,1670,\c&H332D82&\3c&H332D82&)\t(1670,3170,\c&H000000&\3c&H000000&)}か{\c&H000000&\3c&H000000&\t(1055,1130,\c&H625781&\3c&H625781&)\t(1130,2030,\c&H332D82&\3c&H332D82&)\t(2075,3575,\c&H000000&\3c&H000000&)}胸{\c&H000000&\3c&H000000&\t(2075,2150,\c&H625781&\3c&H625781&)\t(2150,3050,\c&H332D82&\3c&H332D82&)\t(3050,4550,\c&H000000&\3c&H000000&)}が{\c&H000000&\3c&H000000&\t(2425,2500,\c&H625781&\3c&H625781&)\t(2500,3400,\c&H332D82&\3c&H332D82&)\t(3400,4900,\c&H000000&\3c&H000000&)}ぎゅ{\c&H000000&\3c&H000000&\t(2845,2920,\c&H625781&\3c&H625781&)\t(2920,3820,\c&H332D82&\3c&H332D82&)\t(3820,5320,\c&H000000&\3c&H000000&)}っ{\c&H000000&\3c&H000000&\t(3115,3190,\c&H625781&\3c&H625781&)\t(3190,4090,\c&H332D82&\3c&H332D82&)\t(4090,5590,\c&H000000&\3c&H000000&)}と{\c&H000000&\3c&H000000&\t(3795,3870,\c&H625781&\3c&H625781&)\t(3870,4770,\c&H332D82&\3c&H332D82&)\t(4770,6270,\c&H000000&\3c&H000000&)}な{\c&H000000&\3c&H000000&\t(4475,4550,\c&H625781&\3c&H625781&)\t(4550,5450,\c&H332D82&\3c&H332D82&)\t(5450,6950,\c&H000000&\3c&H000000&)}る{\c&H000000&\3c&H000000&\t(4815,4890,\c&H625781&\3c&H625781&)\t(4890,5790,\c&H332D82&\3c&H332D82&)\t(5790,7290,\c&H000000&\3c&H000000&)}よ
+Dialogue: 10,0:22:14.82,0:22:24.62,ED01_JP,verse,0,0,0,fx,{\blur0.56\bord0\pos(50.07,994.98)\alpha&HFF&\t(0,200,1,\alpha&H00&)\t(9600,9800,1.25,\alpha&HFF&)\c&HE7E4FD&}楽しいなんて  思う暇もないくらい
+Dialogue: 8,0:22:14.82,0:22:24.62,ED01_JP,verse,0,0,0,fx,{\blur6\bord2.4\pos(50.07,994.98)\alpha&HFF&\t(0,200,0.75,\alpha&H40&)\t(9600,9800,1.25,\alpha&HFF&)\c&H000000&\3c&H000000&\t(15,90,\c&H625781&\3c&H625781&)\t(90,990,\c&H332D82&\3c&H332D82&)\t(990,2490,\c&H000000&\3c&H000000&)}楽{\c&H000000&\3c&H000000&\t(585,660,\c&H625781&\3c&H625781&)\t(660,1560,\c&H332D82&\3c&H332D82&)\t(1560,3060,\c&H000000&\3c&H000000&)}し{\c&H000000&\3c&H000000&\t(1085,1160,\c&H625781&\3c&H625781&)\t(1160,2060,\c&H332D82&\3c&H332D82&)\t(2060,3560,\c&H000000&\3c&H000000&)}い{\c&H000000&\3c&H000000&\t(1725,1800,\c&H625781&\3c&H625781&)\t(1800,2700,\c&H332D82&\3c&H332D82&)\t(2700,4200,\c&H000000&\3c&H000000&)}な{\c&H000000&\3c&H000000&\t(2105,2180,\c&H625781&\3c&H625781&)\t(2180,3080,\c&H332D82&\3c&H332D82&)\t(3080,4580,\c&H000000&\3c&H000000&)}ん{\c&H000000&\3c&H000000&\t(2415,2490,\c&H625781&\3c&H625781&)\t(2490,3390,\c&H332D82&\3c&H332D82&)\t(3390,4890,\c&H000000&\3c&H000000&)}て{\c&H000000&\3c&H000000&\t(3235,3310,\c&H625781&\3c&H625781&)\t(3310,4210,\c&H332D82&\3c&H332D82&)\t(4210,5710,\c&H000000&\3c&H000000&)}  {\c&H000000&\3c&H000000&\t(3845,3920,\c&H625781&\3c&H625781&)\t(3920,4820,\c&H332D82&\3c&H332D82&)\t(4820,6320,\c&H000000&\3c&H000000&)}思{\c&H000000&\3c&H000000&\t(4565,4640,\c&H625781&\3c&H625781&)\t(4640,5540,\c&H332D82&\3c&H332D82&)\t(5540,7040,\c&H000000&\3c&H000000&)}う{\c&H000000&\3c&H000000&\t(4905,4980,\c&H625781&\3c&H625781&)\t(4980,5880,\c&H332D82&\3c&H332D82&)\t(5880,7380,\c&H000000&\3c&H000000&)}暇{\c&H000000&\3c&H000000&\t(5595,5670,\c&H625781&\3c&H625781&)\t(5670,6570,\c&H332D82&\3c&H332D82&)\t(6570,8070,\c&H000000&\3c&H000000&)}も{\c&H000000&\3c&H000000&\t(6295,6370,\c&H625781&\3c&H625781&)\t(6370,7270,\c&H332D82&\3c&H332D82&)\t(7270,8770,\c&H000000&\3c&H000000&)}な{\c&H000000&\3c&H000000&\t(6655,6730,\c&H625781&\3c&H625781&)\t(6730,7630,\c&H332D82&\3c&H332D82&)\t(7655,9155,\c&H000000&\3c&H000000&)}い{\c&H000000&\3c&H000000&\t(7655,7730,\c&H625781&\3c&H625781&)\t(7730,8630,\c&H332D82&\3c&H332D82&)\t(8630,10130,\c&H000000&\3c&H000000&)}く{\c&H000000&\3c&H000000&\t(8015,8090,\c&H625781&\3c&H625781&)\t(8090,8990,\c&H332D82&\3c&H332D82&)\t(8990,10490,\c&H000000&\3c&H000000&)}らい
+Dialogue: 10,0:22:24.47,0:22:29.94,ED01_JP,verse,0,0,0,fx,{\blur0.56\bord0\pos(50.07,994.98)\alpha&HFF&\t(0,200,1,\alpha&H00&)\t(5270,5470,1.25,\alpha&HFF&)\c&HE7E4FD&}あっという間に過ぎる時間
+Dialogue: 8,0:22:24.47,0:22:29.94,ED01_JP,verse,0,0,0,fx,{\blur6\bord2.4\pos(50.07,994.98)\alpha&HFF&\t(0,200,0.75,\alpha&H40&)\t(5270,5470,1.25,\alpha&HFF&)\c&H000000&\3c&H000000&\t(15,90,\c&H625781&\3c&H625781&)\t(90,990,\c&H332D82&\3c&H332D82&)\t(990,2490,\c&H000000&\3c&H000000&)}あ{\c&H000000&\3c&H000000&\t(345,420,\c&H625781&\3c&H625781&)\t(420,1320,\c&H332D82&\3c&H332D82&)\t(1320,2820,\c&H000000&\3c&H000000&)}っ{\c&H000000&\3c&H000000&\t(465,540,\c&H625781&\3c&H625781&)\t(540,1440,\c&H332D82&\3c&H332D82&)\t(1440,2940,\c&H000000&\3c&H000000&)}と{\c&H000000&\3c&H000000&\t(615,690,\c&H625781&\3c&H625781&)\t(690,1590,\c&H332D82&\3c&H332D82&)\t(1590,3090,\c&H000000&\3c&H000000&)}い{\c&H000000&\3c&H000000&\t(825,900,\c&H625781&\3c&H625781&)\t(900,1800,\c&H332D82&\3c&H332D82&)\t(1800,3300,\c&H000000&\3c&H000000&)}う{\c&H000000&\3c&H000000&\t(1025,1100,\c&H625781&\3c&H625781&)\t(1100,2000,\c&H332D82&\3c&H332D82&)\t(2000,3500,\c&H000000&\3c&H000000&)}間{\c&H000000&\3c&H000000&\t(1385,1460,\c&H625781&\3c&H625781&)\t(1460,2360,\c&H332D82&\3c&H332D82&)\t(2835,4335,\c&H000000&\3c&H000000&)}に{\c&H000000&\3c&H000000&\t(2835,2910,\c&H625781&\3c&H625781&)\t(2910,3810,\c&H332D82&\3c&H332D82&)\t(3810,5310,\c&H000000&\3c&H000000&)}過{\c&H000000&\3c&H000000&\t(3275,3350,\c&H625781&\3c&H625781&)\t(3350,4250,\c&H332D82&\3c&H332D82&)\t(4250,5750,\c&H000000&\3c&H000000&)}ぎ{\c&H000000&\3c&H000000&\t(3495,3570,\c&H625781&\3c&H625781&)\t(3570,4470,\c&H332D82&\3c&H332D82&)\t(4470,5970,\c&H000000&\3c&H000000&)}る{\c&H000000&\3c&H000000&\t(3805,3880,\c&H625781&\3c&H625781&)\t(3880,4780,\c&H332D82&\3c&H332D82&)\t(4780,6280,\c&H000000&\3c&H000000&)}時{\c&H000000&\3c&H000000&\t(4185,4260,\c&H625781&\3c&H625781&)\t(4260,5160,\c&H332D82&\3c&H332D82&)\t(5175,6675,\c&H000000&\3c&H000000&)}間
+Dialogue: 10,0:22:29.79,0:22:36.53,ED01_JP,verse,0,0,0,fx,{\blur0.56\bord0\pos(50.07,994.98)\alpha&HFF&\t(0,200,1,\alpha&H00&)\t(6540,6740,1.25,\alpha&HFF&)\c&HE7E4FD&}ただ一緒にいたいだけ
+Dialogue: 8,0:22:29.79,0:22:36.53,ED01_JP,verse,0,0,0,fx,{\blur6\bord2.4\pos(50.07,994.98)\alpha&HFF&\t(0,200,0.75,\alpha&H40&)\t(6540,6740,1.25,\alpha&HFF&)\c&H000000&\3c&H000000&\t(15,90,\c&H625781&\3c&H625781&)\t(90,990,\c&H332D82&\3c&H332D82&)\t(990,2490,\c&H000000&\3c&H000000&)}た{\c&H000000&\3c&H000000&\t(265,340,\c&H625781&\3c&H625781&)\t(340,1240,\c&H332D82&\3c&H332D82&)\t(1605,3105,\c&H000000&\3c&H000000&)}だ{\c&H000000&\3c&H000000&\t(1605,1680,\c&H625781&\3c&H625781&)\t(1680,2580,\c&H332D82&\3c&H332D82&)\t(2580,4080,\c&H000000&\3c&H000000&)}一{\c&H000000&\3c&H000000&\t(2175,2250,\c&H625781&\3c&H625781&)\t(2250,3150,\c&H332D82&\3c&H332D82&)\t(3150,4650,\c&H000000&\3c&H000000&)}緒{\c&H000000&\3c&H000000&\t(2355,2430,\c&H625781&\3c&H625781&)\t(2430,3330,\c&H332D82&\3c&H332D82&)\t(3330,4830,\c&H000000&\3c&H000000&)}に{\c&H000000&\3c&H000000&\t(3055,3130,\c&H625781&\3c&H625781&)\t(3130,4030,\c&H332D82&\3c&H332D82&)\t(4030,5530,\c&H000000&\3c&H000000&)}い{\c&H000000&\3c&H000000&\t(3185,3260,\c&H625781&\3c&H625781&)\t(3260,4160,\c&H332D82&\3c&H332D82&)\t(4160,5660,\c&H000000&\3c&H000000&)}た{\c&H000000&\3c&H000000&\t(3565,3640,\c&H625781&\3c&H625781&)\t(3640,4540,\c&H332D82&\3c&H332D82&)\t(4540,6040,\c&H000000&\3c&H000000&)}い{\c&H000000&\3c&H000000&\t(3905,3980,\c&H625781&\3c&H625781&)\t(3980,4880,\c&H332D82&\3c&H332D82&)\t(4880,6380,\c&H000000&\3c&H000000&)}だ{\c&H000000&\3c&H000000&\t(4265,4340,\c&H625781&\3c&H625781&)\t(4340,5240,\c&H332D82&\3c&H332D82&)\t(5975,7475,\c&H000000&\3c&H000000&)}け
+Dialogue: 10,0:22:36.44,0:22:39.37,ED01_JP,chorus chorus1,0,0,0,fx,{\blur0.56\bord0\pos(50.07,994.98)\alpha&HFF&\t(0,150,1,\alpha&H00&)\t(2780,2930,1.25,\alpha&HFF&)\c&HE7E4FD&}今がリアルなんだ
+Dialogue: 8,0:22:36.44,0:22:39.37,ED01_JP,chorus chorus1,0,0,0,fx,{\blur6\bord2.4\pos(50.07,994.98)\alpha&HFF&\t(0,150,0.75,\alpha&H30&)\t(2780,2930,1.25,\alpha&HFF&)\c&H000000&\3c&H000000&\t(15,90,\c&H625781&\3c&H625781&)\t(90,990,\c&H332D82&\3c&H332D82&)\t(990,2490,\c&H000000&\3c&H000000&)}今{\c&H000000&\3c&H000000&\t(425,500,\c&H625781&\3c&H625781&)\t(500,1400,\c&H332D82&\3c&H332D82&)\t(1400,2900,\c&H000000&\3c&H000000&)}が{\c&H000000&\3c&H000000&\t(595,670,\c&H625781&\3c&H625781&)\t(670,1570,\c&H332D82&\3c&H332D82&)\t(1570,3070,\c&H000000&\3c&H000000&)}リ{\c&H000000&\3c&H000000&\t(725,800,\c&H625781&\3c&H625781&)\t(800,1700,\c&H332D82&\3c&H332D82&)\t(1700,3200,\c&H000000&\3c&H000000&)}ア{\c&H000000&\3c&H000000&\t(1135,1210,\c&H625781&\3c&H625781&)\t(1210,2110,\c&H332D82&\3c&H332D82&)\t(2110,3610,\c&H000000&\3c&H000000&)}ル{\c&H000000&\3c&H000000&\t(1285,1360,\c&H625781&\3c&H625781&)\t(1360,2260,\c&H332D82&\3c&H332D82&)\t(2260,3760,\c&H000000&\3c&H000000&)}な{\c&H000000&\3c&H000000&\t(1555,1630,\c&H625781&\3c&H625781&)\t(1630,2530,\c&H332D82&\3c&H332D82&)\t(2530,4030,\c&H000000&\3c&H000000&)}ん{\c&H000000&\3c&H000000&\t(1825,1900,\c&H625781&\3c&H625781&)\t(1900,2800,\c&H332D82&\3c&H332D82&)\t(2800,4300,\c&H000000&\3c&H000000&)}だ
+Dialogue: 10,0:22:39.27,0:22:42.49,ED01_JP,chorus chorus1,0,0,0,fx,{\blur0.56\bord0\pos(50.07,994.98)\alpha&HFF&\t(0,150,1,\alpha&H00&)\t(3070,3220,1.25,\alpha&HFF&)\c&HE7E4FD&}これがリアルなんだ
+Dialogue: 8,0:22:39.27,0:22:42.49,ED01_JP,chorus chorus1,0,0,0,fx,{\blur6\bord2.4\pos(50.07,994.98)\alpha&HFF&\t(0,150,0.75,\alpha&H30&)\t(3070,3220,1.25,\alpha&HFF&)\c&H000000&\3c&H000000&\t(15,90,\c&H625781&\3c&H625781&)\t(90,990,\c&H332D82&\3c&H332D82&)\t(990,2490,\c&H000000&\3c&H000000&)}こ{\c&H000000&\3c&H000000&\t(165,240,\c&H625781&\3c&H625781&)\t(240,1140,\c&H332D82&\3c&H332D82&)\t(1140,2640,\c&H000000&\3c&H000000&)}れ{\c&H000000&\3c&H000000&\t(375,450,\c&H625781&\3c&H625781&)\t(450,1350,\c&H332D82&\3c&H332D82&)\t(1350,2850,\c&H000000&\3c&H000000&)}が{\c&H000000&\3c&H000000&\t(575,650,\c&H625781&\3c&H625781&)\t(650,1550,\c&H332D82&\3c&H332D82&)\t(1550,3050,\c&H000000&\3c&H000000&)}リ{\c&H000000&\3c&H000000&\t(725,800,\c&H625781&\3c&H625781&)\t(800,1700,\c&H332D82&\3c&H332D82&)\t(1700,3200,\c&H000000&\3c&H000000&)}ア{\c&H000000&\3c&H000000&\t(1115,1190,\c&H625781&\3c&H625781&)\t(1190,2090,\c&H332D82&\3c&H332D82&)\t(2090,3590,\c&H000000&\3c&H000000&)}ル{\c&H000000&\3c&H000000&\t(1275,1350,\c&H625781&\3c&H625781&)\t(1350,2250,\c&H332D82&\3c&H332D82&)\t(2250,3750,\c&H000000&\3c&H000000&)}な{\c&H000000&\3c&H000000&\t(1545,1620,\c&H625781&\3c&H625781&)\t(1620,2520,\c&H332D82&\3c&H332D82&)\t(2520,4020,\c&H000000&\3c&H000000&)}ん{\c&H000000&\3c&H000000&\t(1815,1890,\c&H625781&\3c&H625781&)\t(1890,2790,\c&H332D82&\3c&H332D82&)\t(2790,4290,\c&H000000&\3c&H000000&)}だ
+Dialogue: 10,0:22:42.39,0:22:47.71,ED01_JP,chorus chorus1,0,0,0,fx,{\blur0.56\bord0\pos(50.07,994.98)\alpha&HFF&\t(0,150,1,\alpha&H00&)\t(5170,5320,1.25,\alpha&HFF&)\c&HE7E4FD&}隣で笑う君がまぶしくて
+Dialogue: 8,0:22:42.39,0:22:47.71,ED01_JP,chorus chorus1,0,0,0,fx,{\blur6\bord2.4\pos(50.07,994.98)\alpha&HFF&\t(0,150,0.75,\alpha&H30&)\t(5170,5320,1.25,\alpha&HFF&)\c&H000000&\3c&H000000&\t(15,90,\c&H625781&\3c&H625781&)\t(90,990,\c&H332D82&\3c&H332D82&)\t(1075,2575,\c&H000000&\3c&H000000&)}隣{\c&H000000&\3c&H000000&\t(1075,1150,\c&H625781&\3c&H625781&)\t(1150,2050,\c&H332D82&\3c&H332D82&)\t(2050,3550,\c&H000000&\3c&H000000&)}で{\c&H000000&\3c&H000000&\t(1375,1450,\c&H625781&\3c&H625781&)\t(1450,2350,\c&H332D82&\3c&H332D82&)\t(2350,3850,\c&H000000&\3c&H000000&)}笑{\c&H000000&\3c&H000000&\t(1975,2050,\c&H625781&\3c&H625781&)\t(2050,2950,\c&H332D82&\3c&H332D82&)\t(2950,4450,\c&H000000&\3c&H000000&)}う{\c&H000000&\3c&H000000&\t(2155,2230,\c&H625781&\3c&H625781&)\t(2230,3130,\c&H332D82&\3c&H332D82&)\t(3130,4630,\c&H000000&\3c&H000000&)}君{\c&H000000&\3c&H000000&\t(2645,2720,\c&H625781&\3c&H625781&)\t(2720,3620,\c&H332D82&\3c&H332D82&)\t(3620,5120,\c&H000000&\3c&H000000&)}が{\c&H000000&\3c&H000000&\t(3185,3260,\c&H625781&\3c&H625781&)\t(3260,4160,\c&H332D82&\3c&H332D82&)\t(4160,5660,\c&H000000&\3c&H000000&)}ま{\c&H000000&\3c&H000000&\t(3545,3620,\c&H625781&\3c&H625781&)\t(3620,4520,\c&H332D82&\3c&H332D82&)\t(4520,6020,\c&H000000&\3c&H000000&)}ぶ{\c&H000000&\3c&H000000&\t(3695,3770,\c&H625781&\3c&H625781&)\t(3770,4670,\c&H332D82&\3c&H332D82&)\t(4670,6170,\c&H000000&\3c&H000000&)}し{\c&H000000&\3c&H000000&\t(4025,4100,\c&H625781&\3c&H625781&)\t(4100,5000,\c&H332D82&\3c&H332D82&)\t(5000,6500,\c&H000000&\3c&H000000&)}く{\c&H000000&\3c&H000000&\t(4245,4320,\c&H625781&\3c&H625781&)\t(4320,5220,\c&H332D82&\3c&H332D82&)\t(5220,6720,\c&H000000&\3c&H000000&)}て
+Dialogue: 10,0:22:47.61,0:22:50.53,ED01_JP,chorus chorus2,0,0,0,fx,{\blur0.56\bord0\pos(50.07,994.98)\alpha&HFF&\t(0,150,1,\alpha&H00&)\t(2770,2920,1.25,\alpha&HFF&)\c&HE7E4FD&}こんな幸せなら
+Dialogue: 8,0:22:47.61,0:22:50.53,ED01_JP,chorus chorus2,0,0,0,fx,{\blur6\bord2.4\pos(50.07,994.98)\alpha&HFF&\t(0,150,0.75,\alpha&H3B&)\t(2770,2920,1.25,\alpha&HFF&)\c&H000000&\3c&H000000&\t(15,90,\c&H625781&\3c&H625781&)\t(90,990,\c&H332D82&\3c&H332D82&)\t(990,2490,\c&H000000&\3c&H000000&)}こ{\c&H000000&\3c&H000000&\t(145,220,\c&H625781&\3c&H625781&)\t(220,1120,\c&H332D82&\3c&H332D82&)\t(1120,2620,\c&H000000&\3c&H000000&)}ん{\c&H000000&\3c&H000000&\t(405,480,\c&H625781&\3c&H625781&)\t(480,1380,\c&H332D82&\3c&H332D82&)\t(1380,2880,\c&H000000&\3c&H000000&)}な{\c&H000000&\3c&H000000&\t(515,590,\c&H625781&\3c&H625781&)\t(590,1490,\c&H332D82&\3c&H332D82&)\t(1490,2990,\c&H000000&\3c&H000000&)}幸{\c&H000000&\3c&H000000&\t(1205,1280,\c&H625781&\3c&H625781&)\t(1280,2180,\c&H332D82&\3c&H332D82&)\t(2180,3680,\c&H000000&\3c&H000000&)}せ{\c&H000000&\3c&H000000&\t(1655,1730,\c&H625781&\3c&H625781&)\t(1730,2630,\c&H332D82&\3c&H332D82&)\t(2630,4130,\c&H000000&\3c&H000000&)}な{\c&H000000&\3c&H000000&\t(1835,1910,\c&H625781&\3c&H625781&)\t(1910,2810,\c&H332D82&\3c&H332D82&)\t(2810,4310,\c&H000000&\3c&H000000&)}ら
+Dialogue: 10,0:22:50.43,0:22:53.67,ED01_JP,chorus chorus2,0,0,0,fx,{\blur0.56\bord0\pos(50.07,994.98)\alpha&HFF&\t(0,150,1,\alpha&H00&)\t(3090,3240,1.25,\alpha&HFF&)\c&HE7E4FD&}ずっと続いてほしい
+Dialogue: 8,0:22:50.43,0:22:53.67,ED01_JP,chorus chorus2,0,0,0,fx,{\blur6\bord2.4\pos(50.07,994.98)\alpha&HFF&\t(0,150,0.75,\alpha&H3B&)\t(3090,3240,1.25,\alpha&HFF&)\c&H000000&\3c&H000000&\t(15,90,\c&H625781&\3c&H625781&)\t(90,990,\c&H332D82&\3c&H332D82&)\t(990,2490,\c&H000000&\3c&H000000&)}ず{\c&H000000&\3c&H000000&\t(255,330,\c&H625781&\3c&H625781&)\t(330,1230,\c&H332D82&\3c&H332D82&)\t(1230,2730,\c&H000000&\3c&H000000&)}っ{\c&H000000&\3c&H000000&\t(385,460,\c&H625781&\3c&H625781&)\t(460,1360,\c&H332D82&\3c&H332D82&)\t(1360,2860,\c&H000000&\3c&H000000&)}と{\c&H000000&\3c&H000000&\t(535,610,\c&H625781&\3c&H625781&)\t(610,1510,\c&H332D82&\3c&H332D82&)\t(1510,3010,\c&H000000&\3c&H000000&)}続{\c&H000000&\3c&H000000&\t(1085,1160,\c&H625781&\3c&H625781&)\t(1160,2060,\c&H332D82&\3c&H332D82&)\t(2060,3560,\c&H000000&\3c&H000000&)}い{\c&H000000&\3c&H000000&\t(1245,1320,\c&H625781&\3c&H625781&)\t(1320,2220,\c&H332D82&\3c&H332D82&)\t(2220,3720,\c&H000000&\3c&H000000&)}て{\c&H000000&\3c&H000000&\t(1585,1660,\c&H625781&\3c&H625781&)\t(1660,2560,\c&H332D82&\3c&H332D82&)\t(2560,4060,\c&H000000&\3c&H000000&)}ほ{\c&H000000&\3c&H000000&\t(1815,1890,\c&H625781&\3c&H625781&)\t(1890,2790,\c&H332D82&\3c&H332D82&)\t(2790,4290,\c&H000000&\3c&H000000&)}しい
+Dialogue: 10,0:22:53.57,0:22:59.42,ED01_JP,chorus chorus2,0,0,0,fx,{\blur0.56\bord0\pos(50.07,994.98)\alpha&HFF&\t(0,150,1,\alpha&H00&)\t(5700,5850,1.25,\alpha&HFF&)\c&HE7E4FD&}君といるこの瞬間だけは
+Dialogue: 8,0:22:53.57,0:22:59.42,ED01_JP,chorus chorus2,0,0,0,fx,{\blur6\bord2.4\pos(50.07,994.98)\alpha&HFF&\t(0,150,0.75,\alpha&H3B&)\t(5700,5850,1.25,\alpha&HFF&)\c&H000000&\3c&H000000&\t(15,90,\c&H625781&\3c&H625781&)\t(90,990,\c&H332D82&\3c&H332D82&)\t(1075,2575,\c&H000000&\3c&H000000&)}君{\c&H000000&\3c&H000000&\t(1075,1150,\c&H625781&\3c&H625781&)\t(1150,2050,\c&H332D82&\3c&H332D82&)\t(2050,3550,\c&H000000&\3c&H000000&)}と{\c&H000000&\3c&H000000&\t(1435,1510,\c&H625781&\3c&H625781&)\t(1510,2410,\c&H332D82&\3c&H332D82&)\t(2410,3910,\c&H000000&\3c&H000000&)}い{\c&H000000&\3c&H000000&\t(1775,1850,\c&H625781&\3c&H625781&)\t(1850,2750,\c&H332D82&\3c&H332D82&)\t(2805,4305,\c&H000000&\3c&H000000&)}る{\c&H000000&\3c&H000000&\t(2805,2880,\c&H625781&\3c&H625781&)\t(2880,3780,\c&H332D82&\3c&H332D82&)\t(3780,5280,\c&H000000&\3c&H000000&)}こ{\c&H000000&\3c&H000000&\t(3165,3240,\c&H625781&\3c&H625781&)\t(3240,4140,\c&H332D82&\3c&H332D82&)\t(4140,5640,\c&H000000&\3c&H000000&)}の{\c&H000000&\3c&H000000&\t(3435,3510,\c&H625781&\3c&H625781&)\t(3510,4410,\c&H332D82&\3c&H332D82&)\t(4410,5910,\c&H000000&\3c&H000000&)}瞬{\c&H000000&\3c&H000000&\t(4035,4110,\c&H625781&\3c&H625781&)\t(4110,5010,\c&H332D82&\3c&H332D82&)\t(5010,6510,\c&H000000&\3c&H000000&)}間{\c&H000000&\3c&H000000&\t(4395,4470,\c&H625781&\3c&H625781&)\t(4470,5370,\c&H332D82&\3c&H332D82&)\t(5370,6870,\c&H000000&\3c&H000000&)}だ{\c&H000000&\3c&H000000&\t(4765,4840,\c&H625781&\3c&H625781&)\t(4840,5740,\c&H332D82&\3c&H332D82&)\t(5740,7240,\c&H000000&\3c&H000000&)}け{\c&H000000&\3c&H000000&\t(4935,5010,\c&H625781&\3c&H625781&)\t(5010,5910,\c&H332D82&\3c&H332D82&)\t(5910,7410,\c&H000000&\3c&H000000&)}は
+Dialogue: 10,0:22:59.32,0:23:08.70,ED01_JP,chorus,0,0,0,fx,{\blur0.56\bord0\pos(50.07,994.98)\alpha&HFF&\t(0,150,1,\alpha&H00&)\t(9230,9380,1.25,\alpha&HFF&)\c&HE7E4FD&}間違いなく正真正銘ぜんぶリアル
+Dialogue: 8,0:22:59.32,0:23:08.70,ED01_JP,chorus,0,0,0,fx,{\blur6\bord2.4\pos(50.07,994.98)\alpha&HFF&\t(0,150,0.75,\alpha&H40&)\t(9230,9380,1.25,\alpha&HFF&)\c&H000000&\3c&H000000&\t(15,90,\c&H625781&\3c&H625781&)\t(90,990,\c&H332D82&\3c&H332D82&)\t(990,2490,\c&H000000&\3c&H000000&)}間{\c&H000000&\3c&H000000&\t(165,240,\c&H625781&\3c&H625781&)\t(240,1140,\c&H332D82&\3c&H332D82&)\t(1140,2640,\c&H000000&\3c&H000000&)}違{\c&H000000&\3c&H000000&\t(775,850,\c&H625781&\3c&H625781&)\t(850,1750,\c&H332D82&\3c&H332D82&)\t(1750,3250,\c&H000000&\3c&H000000&)}い{\c&H000000&\3c&H000000&\t(1085,1160,\c&H625781&\3c&H625781&)\t(1160,2060,\c&H332D82&\3c&H332D82&)\t(2060,3560,\c&H000000&\3c&H000000&)}な{\c&H000000&\3c&H000000&\t(1245,1320,\c&H625781&\3c&H625781&)\t(1320,2220,\c&H332D82&\3c&H332D82&)\t(2595,4095,\c&H000000&\3c&H000000&)}く{\c&H000000&\3c&H000000&\t(2595,2670,\c&H625781&\3c&H625781&)\t(2670,3570,\c&H332D82&\3c&H332D82&)\t(3570,5070,\c&H000000&\3c&H000000&)}正{\c&H000000&\3c&H000000&\t(2915,2990,\c&H625781&\3c&H625781&)\t(2990,3890,\c&H332D82&\3c&H332D82&)\t(3890,5390,\c&H000000&\3c&H000000&)}真{\c&H000000&\3c&H000000&\t(3295,3370,\c&H625781&\3c&H625781&)\t(3370,4270,\c&H332D82&\3c&H332D82&)\t(4270,5770,\c&H000000&\3c&H000000&)}正{\c&H000000&\3c&H000000&\t(3855,3930,\c&H625781&\3c&H625781&)\t(3930,4830,\c&H332D82&\3c&H332D82&)\t(4935,6435,\c&H000000&\3c&H000000&)}銘{\c&H000000&\3c&H000000&\t(4935,5010,\c&H625781&\3c&H625781&)\t(5010,5910,\c&H332D82&\3c&H332D82&)\t(5910,7410,\c&H000000&\3c&H000000&)}ぜ{\c&H000000&\3c&H000000&\t(5225,5300,\c&H625781&\3c&H625781&)\t(5300,6200,\c&H332D82&\3c&H332D82&)\t(6200,7700,\c&H000000&\3c&H000000&)}ん{\c&H000000&\3c&H000000&\t(5425,5500,\c&H625781&\3c&H625781&)\t(5500,6400,\c&H332D82&\3c&H332D82&)\t(6685,8185,\c&H000000&\3c&H000000&)}ぶ{\c&H000000&\3c&H000000&\t(6685,6760,\c&H625781&\3c&H625781&)\t(6760,7660,\c&H332D82&\3c&H332D82&)\t(7875,9375,\c&H000000&\3c&H000000&)\c&H000000&\3c&H000000&\t(7875,7950,\c&H625781&\3c&H625781&)\t(7950,8850,\c&H332D82&\3c&H332D82&)\t(8850,10350,\c&H000000&\3c&H000000&)}リ{\c&H000000&\3c&H000000&\t(8045,8120,\c&H625781&\3c&H625781&)\t(8120,9020,\c&H332D82&\3c&H332D82&)\t(9020,10520,\c&H000000&\3c&H000000&)}ア{\c&H000000&\3c&H000000&\t(8295,8370,\c&H625781&\3c&H625781&)\t(8370,9270,\c&H332D82&\3c&H332D82&)\t(9270,10770,\c&H000000&\3c&H000000&)}ル
+
+[Aegisub Extradata]
+Data: 0,_aegi_folddata,e0;1;1
+Data: 1,_aegi_folddata,e1;1;1
+Data: 2,_aegi_folddata,e0;1;2
+Data: 3,_aegi_folddata,e1;1;2
+Data: 6,_aegi_folddata,e0;1;3
+Data: 7,_aegi_folddata,e1;1;3
+Data: 10,_aegi_folddata,e0;1;6
+Data: 11,_aegi_folddata,e1;1;6
+Data: 17,_aegi_folddata,e0;1;9
+Data: 18,_aegi_folddata,e1;1;9
+Data: 21,_aegi_folddata,e0;1;10
+Data: 22,_aegi_folddata,e1;1;10
+Data: 23,a-mo,e{"uuid"#3A"c7362b7c-cbea-410a-aa37-ac24b1068819"#2C"originalText"#3A"{\\bord0\\c&H544A3F&\\fsp0.1\\fs90\\fscx102\\org(616.3#2C247.6)\\fry0\\frx0.85\\frz10.51\\fax-0.02\\clip(m 148.37 402.3 l 1577.23 136.39 1678.89 614.82 218.3 892.93)\\blur0.6\\pos(236.75#2C352.83)}#E4#BD#A0#E6#98#AF#E4#BA#BA#E7#B1#BB#E5#90#97#E2#80#A6#EF#BC#9F"}
+Data: 24,_aegi_folddata,e0;1;11
+Data: 25,_aegi_folddata,e1;1;11
+Data: 40,a-mo,e{"uuid"#3A"2b1db26f-e825-41a2-97c8-a2f64b411704"#2C"originalText"#3A"{\\bord0\\c&H0F11EB&\\blur0.53\\4a&HFF&\\frz11.63\\pos(362.84#2C598.01)}#E7#9B#97#E5#9B#BE"}
+Data: 41,a-mo,e{"uuid"#3A"d206998b-a5e4-4124-aa04-bd6d14a35d84"#2C"originalText"#3A"{\\bord1.7\\blur0.53\\3c&HFEFEFD&\\c&HFEFEFD&\\4a&HFF&\\frz11.63\\pos(362.84#2C598.01)}#E7#9B#97#E5#9B#BE"}
+Data: 42,a-mo,e{"uuid"#3A"1b03b9a1-a49d-41c3-b75c-357e756325fa"#2C"originalText"#3A"{\\bord3.5\\c&H0A070E&\\blur0.53\\3c&H0A070E&\\frz11.63\\pos(362.84#2C598.01)}#E7#9B#97#E5#9B#BE"}
+Data: 43,_aegi_folddata,e0;1;14
+Data: 44,_aegi_folddata,e1;1;14
+Data: 49,_aegi_folddata,e0;1;16
+Data: 50,_aegi_folddata,e1;1;16
+Data: 79,a-mo,e{"uuid"#3A"a4f7e10d-8326-4441-a0d5-dc382f6089e5"#2C"originalText"#3A"{\\bord0\\c&HC58EEC&\\blur0.53\\an1\\frz270\\fn@HYQiHei-75S\\4a&HFF&\\pos(1493.77#2C151.94)}#E5#95#8A#E5#93#87#E5#95#8A#E5#93#87"}
+Data: 80,a-mo,e{"uuid"#3A"d51a7f84-a72d-4c6e-beb6-ebeba6fa7c66"#2C"originalText"#3A"{\\bord1.7\\blur0.53\\3c&H2B1C48&\\c&H2B1C48&\\an1\\frz270\\fn@HYQiHei-75S\\pos(1493.77#2C151.94)}#E5#95#8A#E5#93#87#E5#95#8A#E5#93#87"}
+Data: 81,a-mo,e{"uuid"#3A"f4e974d7-8c81-4ed5-9205-78c45743f021"#2C"originalText"#3A"{\\bord0\\c&HC58DED&\\blur0.53\\an1\\frz270\\fn@HYQiHei-75S\\4a&HFF&\\pos(149.94#2C222.99)}#E5#95#8A#E5#93#87#E5#95#8A#E5#93#87"}
+Data: 82,a-mo,e{"uuid"#3A"7a57dfa5-f7b0-455c-ae6f-97f0db5ff1d3"#2C"originalText"#3A"{\\bord1.7\\blur0.53\\3c&H2B1C48&\\c&H2B1C48&\\an1\\frz270\\fn@HYQiHei-75S\\pos(149.94#2C222.99)}#E5#95#8A#E5#93#87#E5#95#8A#E5#93#87"}
+Data: 83,_aegi_folddata,e0;1;17
+Data: 84,_aegi_folddata,e1;1;17
+Data: 85,_aegi_folddata,e0;1;18
+Data: 86,_aegi_folddata,e1;1;18
+Data: 87,_aegi_folddata,e0;1;19
+Data: 88,_aegi_folddata,e1;1;19
+Data: 89,_aegi_folddata,e0;1;20
+Data: 90,_aegi_folddata,e1;1;20
+Data: 95,a-mo,e{"originalText"#3A"{\\fad(200#2C0)\\bord0\\blur0.53\\c&H1E77E7&\\pos(221.06#2C210.53)\\4a&HFF&}#E5#95#BE"#2C"uuid"#3A"8972ab44-c11d-448a-a9fe-d281f66a0e8b"}
+Data: 96,a-mo,e{"originalText"#3A"{\\fad(200#2C0)\\bord3.5\\blur0.53\\3c&HEDF3F5&\\c&HEDF3F5&\\pos(221.06#2C210.53)\\1a&HFF&\\t(155#2C200#2C\\1a&H00&)}#E5#95#BE"#2C"uuid"#3A"e981d366-6ee4-4af1-a4dd-c107773bb7a5"}
+Data: 97,_aegi_folddata,e0;1;21
+Data: 98,_aegi_folddata,e1;1;21
+Data: 101,_aegi_folddata,e0;1;22
+Data: 102,_aegi_folddata,e1;1;22
+Data: 103,_aegi_folddata,e0;1;23
+Data: 104,_aegi_folddata,e1;1;23
+Data: 105,_aegi_folddata,e0;1;24
+Data: 106,_aegi_folddata,e1;1;24
+Data: 109,_aegi_folddata,e0;1;25
+Data: 110,_aegi_folddata,e1;1;25
+Data: 113,_aegi_folddata,e0;1;26
+Data: 114,_aegi_folddata,e1;1;26
+Data: 115,_aegi_folddata,e0;1;27
+Data: 116,_aegi_folddata,e1;1;27
+Data: 117,a-mo,e{"uuid"#3A"865093d3-8dd6-4f5b-8cfc-a01f8ece2277"#2C"originalText"#3A"{\\bord0\\blur0.7\\fs62\\c&H6D7B8C&\\fscx112\\fsp13\\frz15.4\\fax0.313\\pos(317.99#2C14.73)}#E8#AF#B7#E4#B8#8D#E8#A6#81#E9#9D#A0#E8#BF#91#E8#BF#99#E9#87#8C"}
+Data: 118,_aegi_folddata,e0;1;28
+Data: 119,_aegi_folddata,e1;1;28
+Data: 120,_aegi_folddata,e0;1;29
+Data: 121,_aegi_folddata,e1;1;29
+Data: 122,_aegi_folddata,e0;1;30
+Data: 123,_aegi_folddata,e1;1;30
+Data: 124,_aegi_folddata,e0;1;31
+Data: 125,_aegi_folddata,e1;1;31
+Data: 126,_aegi_folddata,e0;1;32
+Data: 127,_aegi_folddata,e1;1;32
+Data: 128,_aegi_folddata,e0;1;33
+Data: 129,_aegi_folddata,e1;1;33
+Data: 137,a-mo,u?S*V>7FE)DIC-W9Y-4AU9DAN9D6C9CUU.49R,4EQ:DEN-D*C:4)Q.$"G.'9W)CQC<X*J:WFO97R5:8BU)DIC?VR=:G&E+$%Q-$!M-#F=8'-G3$:%.D1S.S:=8'*M>8)Q,D5T8&RC<X*E-&R=.'%G3%:'*FR=='^T+$EW-#YS.#QR-$=O/$-J@?_^HO;?A?74A?_]A?7ED_7EK??;B/3YCO;VN_GDDOGRP_GRP/?#EOG>IO_^HC*^
+Data: 138,a-mo,u?S*V>7FE)DIC.T=S-D=S9W)N:G9V93UU:D-Z,7)X:G9N/$=Y-D=X:'%W-7&C)CQC<X*J:WFO97R5:8BU)DIC?VR=:G&E+$%Q-$!M-#F=8$.D*EB'2%:'2E%G8&RD*EB'2%:'2E%G8&RC<(6S-#YV-VR=9G^S:$-O-FR=-7%G3%:'*FR=>#AZ.45M-4!Q-#R=8$&B*EAQ-#9J8&RQ<X-I/49Q,D)U,$%Q.SYY-SF^\\W?ZJ["Z:/"\\S"Z;30Z;3JZZK%Z,C+ZL7X[;//[<'`[<']ZY+3[:WC\\W?)HU
+Data: 139,_aegi_folddata,e0;1;34
+Data: 140,_aegi_folddata,e1;1;34
+Data: 145,_aegi_folddata,e0;1;38
+Data: 146,_aegi_folddata,e1;1;38
+Data: 153,_aegi_folddata,e0;1;39
+Data: 154,_aegi_folddata,e1;1;39
+Data: 155,_aegi_folddata,e0;1;40
+Data: 156,_aegi_folddata,e1;1;40
+Data: 157,_aegi_folddata,e0;1;41
+Data: 158,_aegi_folddata,e1;1;41
+Data: 1433,_aegi_perspective_ambient_plane,e946.330;422.859#7C1085.855;452.809#7C1080.236;506.960#7C940.112;478.418
+Data: 1434,_aegi_perspective_ambient_plane,e946.223;422.814#7C1085.888;452.801#7C1080.246;506.958#7C940.144;478.418
+Data: 1435,_aegi_perspective_ambient_plane,e946.093;422.752#7C1085.881;452.787#7C1080.237;506.954#7C940.183;478.422
+Data: 1436,_aegi_perspective_ambient_plane,e724.582;319.344#7C1006.964;345.025#7C1007.307;453.073#7C724.114;429.440
+Data: 1437,_aegi_perspective_ambient_plane,e724.608;319.358#7C1006.988;345.000#7C1007.323;453.092#7C724.205;429.424
+Data: 1438,_aegi_perspective_ambient_plane,e724.648;319.369#7C1006.991;345.002#7C1007.322;453.095#7C724.206;429.420
+Data: 1439,_aegi_perspective_ambient_plane,e493.518;229.555#7C933.078;227.223#7C951.265;392.788#7C507.375;397.313
+Data: 1440,_aegi_perspective_ambient_plane,e493.513;229.555#7C933.078;227.223#7C951.265;392.788#7C507.375;397.313
+Data: 1441,_aegi_perspective_ambient_plane,e493.513;229.564#7C933.078;227.226#7C951.269;392.786#7C507.375;397.314
+Data: 1442,_aegi_perspective_ambient_plane,e371.000;216.446#7C876.616;175.782#7C910.283;366.582#7C400.555;410.141
+Data: 1443,_aegi_perspective_ambient_plane,e370.485;216.321#7C876.822;175.605#7C910.235;366.629#7C400.765;410.086
+Data: 1444,_aegi_perspective_ambient_plane,e370.449;216.320#7C876.829;175.599#7C910.231;366.628#7C400.785;410.083
+Data: 1445,_aegi_perspective_ambient_plane,e258.521;214.144#7C816.971;143.223#7C865.277;352.688#7C303.224;426.718
+Data: 1446,_aegi_perspective_ambient_plane,e258.566;214.143#7C816.971;143.221#7C865.277;352.694#7C303.227;426.715
+Data: 1447,_aegi_perspective_ambient_plane,e258.627;214.163#7C816.961;143.225#7C865.291;352.695#7C303.230;426.711
+Data: 1448,_aegi_perspective_ambient_plane,e275.115;194.037#7C834.008;154.603#7C870.922;363.803#7C308.044;407.916
+Data: 1449,_aegi_perspective_ambient_plane,e275.145;194.043#7C834.003;154.604#7C870.924;363.805#7C308.045;407.914
+Data: 1450,_aegi_perspective_ambient_plane,e275.173;194.050#7C834.000;154.601#7C870.934;363.808#7C308.049;407.909
+Data: 1451,_aegi_perspective_ambient_plane,e289.937;174.762#7C853.750;163.384#7C878.990;375.231#7C312.435;392.368
+Data: 1452,_aegi_perspective_ambient_plane,e289.949;174.766#7C853.750;163.381#7C878.994;375.233#7C312.441;392.366
+Data: 1453,_aegi_perspective_ambient_plane,e290.078;174.821#7C853.746;163.367#7C879.039;375.250#7C312.457;392.348
+Data: 1454,_aegi_perspective_ambient_plane,e307.335;156.202#7C870.995;173.633#7C883.446;386.649#7C318.750;373.676
+Data: 1455,_aegi_perspective_ambient_plane,e307.371;156.211#7C870.960;173.629#7C883.462;386.652#7C318.754;373.684
+Data: 1456,_aegi_perspective_ambient_plane,e307.497;156.305#7C870.980;173.643#7C883.510;386.652#7C318.766;373.659
+Data: 1457,_aegi_perspective_ambient_plane,e329.874;142.261#7C883.590;184.679#7C886.389;395.288#7C328.469;353.964
+Data: 1458,_aegi_perspective_ambient_plane,e329.860;142.260#7C883.593;184.683#7C886.392;395.287#7C328.456;353.967
+Data: 1459,_aegi_perspective_ambient_plane,e329.856;142.262#7C883.589;184.681#7C886.396;395.284#7C328.445;353.973
+Data: 1460,_aegi_perspective_ambient_plane,e307.294;156.192#7C871.041;173.625#7C883.449;386.662#7C318.779;373.660
+Data: 1461,_aegi_perspective_ambient_plane,e307.353;156.232#7C870.996;173.636#7C883.474;386.654#7C318.768;373.662
+Data: 1462,_aegi_perspective_ambient_plane,e307.296;156.187#7C870.993;173.630#7C883.438;386.649#7C318.759;373.678
+Data: 1463,_aegi_perspective_ambient_plane,e290.048;174.778#7C853.758;163.346#7C879.004;375.261#7C312.490;392.335
+Data: 1464,_aegi_perspective_ambient_plane,e290.005;174.781#7C853.777;163.333#7C879.004;375.258#7C312.513;392.335
+Data: 1465,_aegi_perspective_ambient_plane,e289.932;174.750#7C853.754;163.353#7C878.987;375.243#7C312.483;392.358
+Data: 1466,_aegi_perspective_ambient_plane,e275.228;194.051#7C834.018;154.576#7C870.939;363.817#7C308.097;407.877
+Data: 1467,_aegi_perspective_ambient_plane,e275.156;194.042#7C834.030;154.586#7C870.920;363.815#7C308.096;407.887
+Data: 1468,_aegi_perspective_ambient_plane,e275.109;194.032#7C834.018;154.586#7C870.914;363.812#7C308.095;407.894
+Data: 1469,_aegi_perspective_ambient_plane,e258.101;214.089#7C817.095;143.094#7C865.213;352.734#7C303.603;426.580
+Data: 1470,_aegi_perspective_ambient_plane,e258.078;214.090#7C817.103;143.088#7C865.209;352.733#7C303.622;426.574
+Data: 1471,_aegi_perspective_ambient_plane,e258.045;214.090#7C817.106;143.084#7C865.208;352.732#7C303.632;426.571
+Data: 1472,_aegi_perspective_ambient_plane,e275.093;194.027#7C834.019;154.586#7C870.914;363.813#7C308.092;407.896
+Data: 1473,_aegi_perspective_ambient_plane,e275.093;194.027#7C834.017;154.588#7C870.915;363.813#7C308.090;407.896
+Data: 1474,_aegi_perspective_ambient_plane,e275.140;194.060#7C834.029;154.608#7C870.929;363.816#7C308.098;407.875
+Data: 1475,_aegi_perspective_ambient_plane,e289.863;174.712#7C853.796;163.365#7C878.803;375.218#7C312.481;392.363
+Data: 1476,_aegi_perspective_ambient_plane,e289.852;174.694#7C853.808;163.365#7C878.720;375.210#7C312.480;392.368
+Data: 1477,_aegi_perspective_ambient_plane,e290.093;174.769#7C853.802;163.376#7C878.596;375.198#7C312.485;392.347
+Data: 1478,_aegi_perspective_ambient_plane,e307.181;155.886#7C870.823;173.680#7C882.143;386.453#7C318.724;373.781
+Data: 1479,_aegi_perspective_ambient_plane,e307.236;155.880#7C870.690;173.692#7C882.063;386.445#7C318.711;373.803
+Data: 1480,_aegi_perspective_ambient_plane,e307.204;155.874#7C870.859;173.684#7C882.004;386.441#7C318.751;373.769
+Data: 1481,_aegi_perspective_ambient_plane,e329.942;142.066#7C883.329;184.829#7C885.492;395.060#7C328.056;354.091
+Data: 1482,_aegi_perspective_ambient_plane,e329.947;142.062#7C883.287;184.832#7C885.463;395.053#7C328.045;354.102
+Data: 1483,_aegi_perspective_ambient_plane,e329.968;142.060#7C883.210;184.834#7C885.433;395.045#7C328.033;354.115
+Data: 1484,_aegi_perspective_ambient_plane,e307.169;155.757#7C870.467;173.759#7C881.539;386.364#7C318.705;373.843
+Data: 1485,_aegi_perspective_ambient_plane,e307.218;155.740#7C870.184;173.811#7C881.406;386.334#7C318.660;373.882
+Data: 1486,_aegi_perspective_ambient_plane,e307.364;155.790#7C869.598;173.897#7C881.385;386.308#7C318.579;373.955
+Data: 1487,_aegi_perspective_ambient_plane,e290.005;174.554#7C853.476;163.440#7C877.974;375.144#7C312.420;392.437
+Data: 1488,_aegi_perspective_ambient_plane,e289.926;174.543#7C853.402;163.465#7C877.951;375.123#7C312.409;392.472
+Data: 1489,_aegi_perspective_ambient_plane,e289.904;174.524#7C853.187;163.511#7C877.935;375.114#7C312.363;392.513
+Data: 1490,_aegi_perspective_ambient_plane,e275.240;194.034#7C833.962;154.614#7C870.827;363.802#7C308.047;407.905
+Data: 1491,_aegi_perspective_ambient_plane,e275.228;194.045#7C833.959;154.613#7C870.867;363.819#7C308.053;407.903
+Data: 1492,_aegi_perspective_ambient_plane,e275.120;194.015#7C833.964;154.629#7C870.831;363.801#7C308.036;407.920
+Data: 1493,_aegi_perspective_ambient_plane,e257.999;213.976#7C816.809;143.294#7C864.822;352.667#7C303.240;426.774
+Data: 1494,_aegi_perspective_ambient_plane,e258.009;213.974#7C816.762;143.311#7C864.817;352.665#7C303.232;426.782
+Data: 1495,_aegi_perspective_ambient_plane,e258.006;213.975#7C816.775;143.307#7C864.822;352.666#7C303.235;426.778
+Data: 1496,_aegi_perspective_ambient_plane,e275.116;194.013#7C833.955;154.634#7C870.829;363.803#7C308.033;407.923
+Data: 1497,_aegi_perspective_ambient_plane,e275.117;194.016#7C833.949;154.636#7C870.831;363.800#7C308.032;407.923
+Data: 1498,_aegi_perspective_ambient_plane,e275.368;194.102#7C833.880;154.668#7C870.874;363.809#7C308.027;407.909
+Data: 1499,_aegi_perspective_ambient_plane,e289.972;174.543#7C852.814;163.644#7C877.921;375.092#7C312.279;392.557
+Data: 1500,_aegi_perspective_ambient_plane,e289.979;174.551#7C852.672;163.644#7C877.990;375.103#7C312.284;392.577
+Data: 1501,_aegi_perspective_ambient_plane,e290.169;174.616#7C852.792;163.649#7C877.942;375.098#7C312.291;392.547
+Data: 1502,_aegi_perspective_ambient_plane,e307.780;156.081#7C866.790;174.316#7C881.786;386.264#7C318.287;374.219
+Data: 1503,_aegi_perspective_ambient_plane,e307.813;156.064#7C867.003;174.313#7C881.696;386.248#7C318.265;374.205
+Data: 1504,_aegi_perspective_ambient_plane,e307.711;155.965#7C867.643;174.257#7C881.488;386.233#7C318.298;374.150
+Data: 1505,_aegi_perspective_ambient_plane,e330.096;142.099#7C882.256;184.970#7C885.347;394.975#7C327.896;354.220
+Data: 1506,_aegi_perspective_ambient_plane,e330.111;142.137#7C882.228;184.968#7C885.507;395.004#7C327.886;354.217
+Data: 1507,_aegi_perspective_ambient_plane,e330.145;142.268#7C882.725;184.873#7C886.187;395.163#7C327.916;354.144
+Data: 1508,_aegi_perspective_ambient_plane,e307.298;156.188#7C871.016;173.639#7C883.457;386.640#7C318.689;373.685
+Data: 1509,_aegi_perspective_ambient_plane,e307.374;156.232#7C870.964;173.653#7C883.482;386.633#7C318.676;373.685
+Data: 1510,_aegi_perspective_ambient_plane,e307.332;156.190#7C870.940;173.646#7C883.448;386.628#7C318.666;373.709
+Data: 1511,_aegi_perspective_ambient_plane,e290.081;174.782#7C853.724;163.360#7C879.002;375.232#7C312.429;392.347
+Data: 1512,_aegi_perspective_ambient_plane,e290.155;174.863#7C853.730;163.367#7C879.054;375.233#7C312.434;392.336
+Data: 1513,_aegi_perspective_ambient_plane,e289.939;174.754#7C853.737;163.381#7C878.980;375.221#7C312.411;392.375
+Data: 1514,_aegi_perspective_ambient_plane,e275.232;194.055#7C834.001;154.601#7C870.946;363.810#7C308.040;407.897
+Data: 1515,_aegi_perspective_ambient_plane,e275.162;194.048#7C834.011;154.617#7C870.926;363.806#7C308.029;407.910
+Data: 1516,_aegi_perspective_ambient_plane,e275.113;194.036#7C833.998;154.615#7C870.921;363.804#7C308.031;407.915
+Data: 1517,_aegi_perspective_ambient_plane,e258.022;214.061#7C816.989;143.226#7C865.197;352.663#7C303.233;426.737
+Data: 1518,_aegi_perspective_ambient_plane,e258.023;214.061#7C816.990;143.230#7C865.198;352.665#7C303.232;426.735
+Data: 1519,_aegi_perspective_ambient_plane,e258.022;214.061#7C816.994;143.228#7C865.201;352.665#7C303.232;426.735
+Data: 1520,_aegi_perspective_ambient_plane,e275.114;194.031#7C833.997;154.614#7C870.913;363.805#7C308.032;407.916
+Data: 1521,_aegi_perspective_ambient_plane,e275.123;194.031#7C833.996;154.610#7C870.916;363.805#7C308.034;407.916
+Data: 1522,_aegi_perspective_ambient_plane,e275.148;194.040#7C833.994;154.607#7C870.931;363.809#7C308.042;407.909
+Data: 1523,_aegi_perspective_ambient_plane,e289.934;174.749#7C853.737;163.375#7C878.992;375.230#7C312.412;392.380
+Data: 1524,_aegi_perspective_ambient_plane,e289.936;174.752#7C853.736;163.377#7C878.993;375.229#7C312.411;392.380
+Data: 1525,_aegi_perspective_ambient_plane,e290.248;174.904#7C853.695;163.413#7C879.047;375.231#7C312.411;392.362
+Data: 1526,_aegi_perspective_ambient_plane,e307.328;156.191#7C870.977;173.653#7C883.451;386.637#7C318.670;373.694
+Data: 1527,_aegi_perspective_ambient_plane,e307.351;156.195#7C870.941;173.654#7C883.461;386.639#7C318.665;373.702
+Data: 1528,_aegi_perspective_ambient_plane,e307.572;156.344#7C870.954;173.691#7C883.514;386.639#7C318.676;373.667
+Data: 1529,_aegi_perspective_ambient_plane,e330.000;142.281#7C883.432;184.811#7C886.449;395.251#7C328.023;354.028
+Data: 1530,_aegi_perspective_ambient_plane,e329.990;142.279#7C883.434;184.807#7C886.448;395.250#7C328.023;354.033
+Data: 1531,_aegi_perspective_ambient_plane,e330.030;142.288#7C883.428;184.805#7C886.451;395.254#7C328.019;354.033
+Data: 1532,_aegi_perspective_ambient_plane,e307.305;156.189#7C871.016;173.648#7C883.469;386.656#7C318.697;373.676
+Data: 1533,_aegi_perspective_ambient_plane,e307.390;156.235#7C870.963;173.663#7C883.490;386.649#7C318.684;373.677
+Data: 1534,_aegi_perspective_ambient_plane,e307.353;156.194#7C870.955;173.652#7C883.456;386.646#7C318.681;373.695
+Data: 1535,_aegi_perspective_ambient_plane,e290.088;174.786#7C853.742;163.366#7C878.997;375.247#7C312.438;392.342
+Data: 1536,_aegi_perspective_ambient_plane,e290.003;174.776#7C853.749;163.377#7C878.990;375.240#7C312.437;392.363
+Data: 1537,_aegi_perspective_ambient_plane,e289.971;174.764#7C853.766;163.378#7C878.980;375.241#7C312.437;392.363
+Data: 1538,_aegi_perspective_ambient_plane,e275.246;194.055#7C833.996;154.602#7C870.946;363.817#7C308.050;407.894
+Data: 1539,_aegi_perspective_ambient_plane,e275.191;194.060#7C834.012;154.602#7C870.947;363.822#7C308.057;407.894
+Data: 1540,_aegi_perspective_ambient_plane,e275.092;194.030#7C834.001;154.613#7C870.922;363.808#7C308.040;407.914
+Data: 1541,_aegi_perspective_ambient_plane,e258.312;214.076#7C816.995;143.228#7C865.205;352.692#7C303.230;426.716
+Data: 1542,_aegi_perspective_ambient_plane,e258.338;214.084#7C816.993;143.223#7C865.210;352.690#7C303.230;426.720
+Data: 1543,_aegi_perspective_ambient_plane,e258.350;214.090#7C816.993;143.220#7C865.211;352.688#7C303.229;426.726
+Data: 1544,_aegi_perspective_ambient_plane,e275.128;194.037#7C834.005;154.608#7C870.923;363.814#7C308.057;407.908
+Data: 1545,_aegi_perspective_ambient_plane,e275.207;194.060#7C833.999;154.599#7C870.957;363.827#7C308.065;407.893
+Data: 1546,_aegi_perspective_ambient_plane,e275.243;194.056#7C834.003;154.600#7C870.942;363.818#7C308.056;407.893
+Data: 1547,_aegi_perspective_ambient_plane,e289.913;174.685#7C853.720;163.390#7C878.655;375.205#7C312.459;392.387
+Data: 1548,_aegi_perspective_ambient_plane,e289.946;174.690#7C853.714;163.392#7C878.608;375.203#7C312.476;392.382
+Data: 1549,_aegi_perspective_ambient_plane,e290.002;174.672#7C853.703;163.390#7C878.504;375.203#7C312.481;392.363
+Data: 1550,_aegi_perspective_ambient_plane,e307.127;155.875#7C870.917;173.646#7C882.170;386.469#7C318.807;373.749
+Data: 1551,_aegi_perspective_ambient_plane,e307.265;155.948#7C870.977;173.667#7C882.140;386.457#7C318.795;373.719
+Data: 1552,_aegi_perspective_ambient_plane,e307.083;155.837#7C870.933;173.657#7C882.050;386.453#7C318.806;373.751
+Data: 1553,_aegi_perspective_ambient_plane,e329.864;142.085#7C883.389;184.794#7C885.609;395.091#7C328.172;354.069
+Data: 1554,_aegi_perspective_ambient_plane,e329.911;142.109#7C883.321;184.820#7C885.688;395.098#7C328.098;354.077
+Data: 1555,_aegi_perspective_ambient_plane,e329.958;142.126#7C883.256;184.837#7C885.766;395.106#7C328.039;354.083
+Data: 1556,_aegi_perspective_ambient_plane,e307.449;156.055#7C870.666;173.746#7C882.240;386.449#7C318.725;373.761
+Data: 1557,_aegi_perspective_ambient_plane,e307.348;155.994#7C870.243;173.772#7C882.460;386.473#7C318.617;373.835
+Data: 1558,_aegi_perspective_ambient_plane,e307.350;155.999#7C870.205;173.789#7C882.514;386.459#7C318.588;373.847
+Data: 1559,_aegi_perspective_ambient_plane,e290.132;174.717#7C853.516;163.447#7C878.482;375.189#7C312.433;392.410
+Data: 1560,_aegi_perspective_ambient_plane,e289.893;174.639#7C853.532;163.442#7C878.494;375.181#7C312.411;392.424
+Data: 1561,_aegi_perspective_ambient_plane,e289.895;174.627#7C853.554;163.444#7C878.449;375.178#7C312.394;392.428
+Data: 1562,_aegi_perspective_ambient_plane,e275.166;194.055#7C834.024;154.624#7C870.883;363.809#7C308.060;407.894
+Data: 1563,_aegi_perspective_ambient_plane,e275.122;194.027#7C834.001;154.612#7C870.890;363.807#7C308.040;407.916
+Data: 1564,_aegi_perspective_ambient_plane,e275.129;194.030#7C833.995;154.616#7C870.900;363.807#7C308.036;407.917
+Data: 1565,_aegi_folddata,e0;1;42
+Data: 1566,_aegi_folddata,e1;1;42
