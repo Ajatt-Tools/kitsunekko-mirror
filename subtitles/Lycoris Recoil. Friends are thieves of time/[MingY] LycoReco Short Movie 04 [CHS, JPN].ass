@@ -1,0 +1,350 @@
+﻿[Script Info]
+Title: [MingY] Lycoris Recoil - Friends are thieves of time. - 04
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+ScaledBorderAndShadow: yes
+WrapStyle: 2
+YCbCr Matrix: TV.709
+LayoutResX: 1920
+LayoutResY: 1080
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Title-furigana,更纱黑体 SC SemiBold,31,&H00FEFEFE,&H000000FF,&H00141414,&H14141414,0,0,0,0,100,100,1.2,0,1,1.25,0,3,0,165,170,1
+Style: Screen-furigana,汉仪正圆-75S,35,&H00FFFFFF,&H00FFFFFF,&H00FFFFFF,&H14444444,0,0,0,0,100,100,1,0,1,0,0,2,30,30,50,1
+Style: JP - Top-furigana,A-OTF Shin Maru Go Pr6N DB,29,&H00FFFFFF,&H00FFFFFF,&H00303030,&H14444444,0,0,0,0,100,100,1,0,1,0.95,0,8,30,30,12,1
+Style: CN - Top-furigana,汉仪正圆-75S,39,&H00FFFFFF,&H000000FF,&H00303030,&H14202020,0,0,0,0,100,100,1,0,1,1.15,0,8,30,30,68,1
+Style: JP-furigana,A-OTF Shin Maru Go Pr6N DB,29,&H00FFFFFF,&H00FFFFFF,&H00303030,&H14444444,0,0,0,0,100,100,2,0,1,0.95,0,2,30,30,12,1
+Style: CN-furigana,汉仪正圆-75S,39,&H00FFFFFF,&H00FFFFFF,&H00303030,&H14444444,0,0,0,0,100,100,1,0,1,1.15,0,2,30,30,55,1
+Style: CN,汉仪正圆-75S,78,&H00FFFFFF,&H00FFFFFF,&H00303030,&H14444444,0,0,0,0,100,100,1,0,1,2.3,0,2,30,30,55,1
+Style: JP,A-OTF Shin Maru Go Pr6N DB,58,&H00FFFFFF,&H00FFFFFF,&H00303030,&H14444444,0,0,0,0,100,100,2,0,1,1.9,0,2,30,30,12,1
+Style: CN - Top,汉仪正圆-75S,78,&H00FFFFFF,&H000000FF,&H00303030,&H14202020,0,0,0,0,100,100,1,0,1,2.3,0,8,30,30,68,1
+Style: JP - Top,A-OTF Shin Maru Go Pr6N DB,58,&H00FFFFFF,&H00FFFFFF,&H00303030,&H14444444,0,0,0,0,100,100,1,0,1,1.9,0,8,30,30,12,1
+Style: Screen,汉仪正圆-75S,70,&H00FFFFFF,&H00FFFFFF,&H00FFFFFF,&H14444444,0,0,0,0,100,100,1,0,1,0,0,2,30,30,50,1
+Style: Title,更纱黑体 SC SemiBold,62,&H00FEFEFE,&H000000FF,&H00141414,&H14141414,0,0,0,0,100,100,1.2,0,1,2.5,0,3,0,165,170,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:00:00.00,0:00:00.00,CN,,0,0,0,,------ Credits ------
+Dialogue: 0,0:00:27.22,0:00:29.52,CN,,0,0,25,,{\an8\fad(0,200)\fs68\blur2}本字幕由 MingYSub 制作
+Dialogue: 1,0:00:27.22,0:00:29.52,CN,,0,0,90,,{\an8\fad(0,200)\fs60\blur2}翻译/时轴：Ming  压制：泠泫凝
+Comment: 0,0:00:00.00,0:00:00.00,Screen,,0,0,0,,------ Title ------
+Comment: 0,0:00:00.00,0:00:00.00,Title,,0,0,0,code,framedur=(_G.aegisub.ms_from_frame(100)-_G.aegisub.ms_from_frame(1))/100
+Comment: 0,0:00:00.00,0:00:00.00,Title,,0,0,0,code syl,num={} for i=1,4 do x=_G.math.random(1,4) while(num[x+4]) do x=_G.math.random(1,4) end num[i]=x num[x+4]=1 end
+Comment: 0,0:00:00.00,0:00:00.00,Title,,0,0,0,code line,style_title={"\\blur2\\alpha1E","\\bord0\\xshad1.1\\4c00FF00\\alpha1E","\\bord0\\xshad-0.9\\4c0000FF\\alpha1E","\\bord0"} tags="\\fad(0,1350)" theme_color={"6C5DF7","EFFF62"}
+Comment: 0,0:00:00.00,0:00:00.00,Title,,0,0,0,template syl loop 16,!relayer(math.floor((j-1)%4))!{!style_title[math.floor((j-1)%4)+1]!!tags!}{\pos($x,$y)}!retime("line",num[math.floor((j-1)/4)+1]*framedur+(syl.i-1)*3*framedur,0)!{\clip(!remember("sx",($left-5)+math.floor((j-1)/4)%2*($right-$left+10)/2)!,!remember("sy",$top-5+math.floor(math.floor((j-1)/4)/2)*($height+10)/2)!,!recall.sx+($right-$left+10)/2!,!recall.sy+($height+10)/2!)}
+Comment: 0,0:00:00.00,0:00:00.00,Title,,0,0,0,template pre-line noblank loop 2,!relayer(4)!!retime("line",($syln*3+j*2.8)*framedur,($syln*3+j*2.8)*framedur+380-$ldur)!{\pos($lx,$ly)}{\clip(!$lleft+10!,0,!$lleft+70!,1080)}{\t(\clip(!$lright+10!,0,!$lright+70!,1080))}{\bord0\c!theme_color[j]!}
+Comment: 0,0:00:27.22,0:00:32.35,Title,,0,140,260,karaoke,{\k}　#{\k}0{\k}4{\k}  {\k}小{\k}心{\k}！
+Comment: 0,0:00:00.00,0:00:00.00,Screen,,0,0,0,,------ Screen ------
+Dialogue: 0,0:02:34.84,0:02:38.85,Screen,,0,0,0,,{\c&H462B0D&\fs70\fsp6\pos(790,416)\frz10.41}幽灵
+Dialogue: 0,0:02:34.84,0:02:38.85,Screen,,0,0,0,,{\c&H0D0D0C&\fs70\fsp2\pos(1036,924)}出现中!!
+Dialogue: 0,0:02:34.84,0:02:38.85,Screen,,0,0,0,,{\fn汉仪正圆-65S\c&H1F1E4A&\fs46\fsp2\pos(1182,410)}别进来!!
+Dialogue: 0,0:02:50.94,0:02:55.61,Screen,,0,0,0,,{\c&H3356C4&\t(3900,4650,\c000000)\fs55\pos(1068.61,460)}整蛊{\c&H0D1620&\t(3900,4650,\c000000)}泷奈\N{\c&H2784CD&\t(3900,4650,\c000000)}大作战
+Comment: 1,0:00:00.00,0:00:00.00,CN,,0,0,0,,------ Dialogue CN ------
+Dialogue: 1,0:00:07.60,0:00:09.20,CN,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}幽灵干的？
+Dialogue: 1,0:00:09.92,0:00:11.45,CN,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}搞什么啊
+Dialogue: 1,0:00:11.45,0:00:13.22,CN,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}千束说的吗
+Dialogue: 1,0:00:13.22,0:00:14.41,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}瑞希小姐也这么说
+Dialogue: 1,0:00:15.86,0:00:18.46,CN,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}幽灵啊 我可从没见过
+Dialogue: 1,0:00:18.46,0:00:19.83,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}骗人的吧
+Dialogue: 1,0:00:20.31,0:00:23.30,CN,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}没关系 摄像头可不会说谎
+Dialogue: 1,0:00:24.09,0:00:25.09,CN,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}要开始了哦
+Dialogue: 1,0:00:32.74,0:00:33.88,CN,Chisato,1200,0,0,,{\3c&H4039D1&\blur3}藏到哪里…
+Dialogue: 1,0:00:32.74,0:00:35.47,CN,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}你要掩盖证据是吧
+Dialogue: 1,0:00:35.47,0:00:36.33,CN,Chisato,0,0,0,,{\3c&H4039D1&\blur3}瑞希
+Dialogue: 1,0:00:36.33,0:00:39.75,CN,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}看来得让老师打你屁股才行了
+Dialogue: 1,0:00:39.75,0:00:43.99,CN,Chisato,0,0,0,,{\3c&H4039D1&\blur3}不不 你不也把店里的酒拿回家了吗
+Dialogue: 1,0:00:44.94,0:00:47.92,CN,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}我们是罪人
+Dialogue: 1,0:00:47.92,0:00:49.61,CN,Chisato,0,0,0,,{\3c&H4039D1&\blur3}不要拿我和你… 一身酒味
+Dialogue: 1,0:00:49.61,0:00:51.49,CN - Top,Chisato,0,0,0,,{\3c&H4039D1&\blur3}别闹了 快住手
+Dialogue: 1,0:00:51.49,0:00:52.44,CN - Top,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}才不一样呢
+Dialogue: 1,0:00:52.44,0:00:54.60,CN - Top,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}我带的都是好酒
+Dialogue: 1,0:00:54.60,0:00:55.92,CN - Top,Mizuki,0,500,0,,{\3c&H969F1C&\blur3}你不会说出去吧？会保密的吧？
+Dialogue: 1,0:00:54.60,0:00:55.92,CN - Top,Chisato,900,0,0,,{\3c&H4039D1&\blur3}不…不是
+Dialogue: 1,0:00:55.92,0:00:58.08,CN - Top,Chisato,0,0,0,,{\3c&H4039D1&\blur3}好啦我知道了 就这一次哦
+Dialogue: 1,0:00:58.88,0:01:01.16,CN - Top,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}你也挺坏的嘛
+Dialogue: 1,0:01:03.04,0:01:04.50,CN - Top,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}是馒头欸
+Dialogue: 1,0:00:49.61,0:00:53.71,CN,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}看吧 我就知道是这么回事
+Dialogue: 1,0:00:58.08,0:01:02.34,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}你听到了吗 是幽灵掩盖了证据
+Dialogue: 1,0:01:06.27,0:01:09.13,CN,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}找到鬼了吗 要倒回去吗
+Dialogue: 1,0:01:09.13,0:01:11.30,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}不 没什么
+Dialogue: 1,0:01:11.30,0:01:15.15,CN - Top,Chisato,0,0,0,,{\3c&H4039D1&\blur3}客人 这就是护发素的效果哟
+Dialogue: 1,0:01:15.15,0:01:17.06,CN - Top,Chisato,0,0,0,,{\3c&H4039D1&\blur3}是不是很顺滑
+Dialogue: 1,0:01:17.06,0:01:19.85,CN - Top,Chisato,0,0,0,,{\3c&H4039D1&\blur3}怎么样 您要买吗
+Dialogue: 1,0:01:19.85,0:01:22.70,CN - Top,Takina,0,0,0,,{\3c&HEE922A&\blur3}不了 我觉得平时应该用不着
+Dialogue: 1,0:01:22.70,0:01:23.77,CN - Top,Chisato,0,0,0,,{\3c&H4039D1&\blur3}为什么啊
+Dialogue: 1,0:01:15.14,0:01:17.06,CN,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}你们在搞什么鬼
+Dialogue: 1,0:01:17.06,0:01:18.79,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}你看成什么了
+Dialogue: 1,0:01:18.79,0:01:21.52,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}只是在让她帮我梳头而已
+Dialogue: 1,0:01:24.31,0:01:25.82,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}这是什么
+Dialogue: 1,0:01:25.82,0:01:26.61,CN,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}哪个
+Dialogue: 1,0:01:26.61,0:01:28.36,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}这里 这里
+Dialogue: 1,0:01:28.36,0:01:29.90,CN - Top,Mika,0,0,0,,{\3c&H68567A&\blur3}健壮的肌肉
+Dialogue: 1,0:01:30.62,0:01:32.02,CN - Top,Mika,0,0,0,,{\3c&H68567A&\blur3}珠穆朗玛峰
+Dialogue: 1,0:01:32.02,0:01:34.94,CN - Top,Mika,0,0,0,,{\3c&H68567A&\blur3}看 砰
+Dialogue: 1,0:01:31.43,0:01:32.98,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}他在看摄像头
+Dialogue: 1,0:01:32.98,0:01:33.89,CN,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}暴露了啊
+Dialogue: 1,0:01:33.89,0:01:36.12,CN,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}下一个 下一个
+Dialogue: 1,0:01:38.21,0:01:39.79,CN,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}你能不能… 你是不是又胖了
+Dialogue: 1,0:01:39.79,0:01:41.08,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}你杀人了吗
+Dialogue: 1,0:01:41.08,0:01:42.83,CN,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}笨蛋 仔细看
+Dialogue: 1,0:01:42.83,0:01:44.29,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}啊 是瑞希小姐
+Dialogue: 1,0:01:44.29,0:01:45.38,CN,Mika,0,0,0,,{\3c&H68567A&\blur3}怎么了
+Dialogue: 1,0:01:45.38,0:01:49.22,CN,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}有人投诉 说店门口躺着一具尸体
+Dialogue: 1,0:01:49.22,0:01:52.73,CN,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}我还没死呢 我才{\fscx25}　{\fscx}20{\fscx25}　{\fscx}多岁
+Dialogue: 1,0:01:52.73,0:01:56.51,CN,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}倒是你多大年纪了 Walnut
+Dialogue: 1,0:01:56.51,0:01:59.74,CN,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}闭嘴 赶紧把这家伙毙了
+Dialogue: 1,0:01:59.74,0:02:02.66,CN,Mika,0,0,0,,{\3c&H68567A&\blur3}别吵了 现在是深夜
+Dialogue: 1,0:02:02.66,0:02:05.35,CN,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}这附近有没有{\fscx25}　{\fscx}Lycoris
+Dialogue: 1,0:02:05.35,0:02:06.40,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}你看到了吗？
+Dialogue: 1,0:02:06.40,0:02:08.11,CN,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}看到了 拍到了什么东西
+Dialogue: 1,0:02:08.90,0:02:10.57,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}等等 看看其他摄像头
+Dialogue: 1,0:02:47.61,0:02:49.39,CN,Mika,0,0,0,,{\3c&H68567A&\blur3}喝下了
+Dialogue: 1,0:02:51.14,0:02:53.38,CN,Mika,0,0,0,,{\3c&H68567A&\blur3}泷奈 等等…等等
+Dialogue: 1,0:02:53.38,0:02:54.79,CN,Mika,0,0,0,,{\3c&H68567A&\blur3}是…是我们
+Dialogue: 1,0:02:54.79,0:02:57.02,CN,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}没错 你快看牌子
+Dialogue: 1,0:02:57.02,0:02:59.02,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}整…整蛊？
+Dialogue: 1,0:02:59.02,0:03:01.24,CN,Chisato,0,0,0,,{\3c&H4039D1&\blur3}对…对对对对
+Dialogue: 1,0:03:01.24,0:03:03.21,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}我还以为要死了
+Dialogue: 1,0:03:03.21,0:03:04.69,CN,Chisato,0,0,0,,{\3c&H4039D1&\blur3}这话该我说才对
+Dialogue: 1,0:03:04.69,0:03:06.56,CN,Mika,0,0,0,,{\3c&H68567A&\blur3}我的腰
+Dialogue: 1,0:03:07.24,0:03:08.30,CN,Mika,0,0,0,,{\3c&H68567A&\blur3}好像闪到了
+Dialogue: 1,0:03:08.30,0:03:11.97,CN,Chisato,0,0,0,,{\3c&H4039D1&\blur3}哎 每次吓唬泷奈都要赌命啊
+Dialogue: 1,0:03:11.97,0:03:14.41,CN,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}不过 倒是听到了不错的叫声
+Dialogue: 1,0:03:17.98,0:03:21.26,CN,Mika,0,0,0,,{\3c&H68567A&\blur3}不信灵异现象的人可不会发出那样的声音
+Dialogue: 1,0:03:21.26,0:03:24.18,CN,Chisato,0,0,0,,{\3c&H4039D1&\blur3}对吧 幽灵是真的存在的 泷奈
+Dialogue: 1,0:03:24.18,0:03:27.14,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}别闹了 把酒钱和餐具赔偿留下来再走
+Dialogue: 1,0:03:29.14,0:03:30.88,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}够了
+Dialogue: 1,0:03:30.88,0:03:33.02,CN,Chisato,0,0,0,,{\3c&H4039D1&\blur3}对了 胡桃去哪了
+Dialogue: 1,0:03:33.02,0:03:35.18,CN,Mika,0,0,0,,{\3c&H68567A&\blur3}早上出门后就没回来
+Dialogue: 1,0:03:35.89,0:03:39.35,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}那刚刚是谁 不是一直和我们在一起吗
+Dialogue: 1,0:03:39.35,0:03:40.57,CN,Chisato,0,0,0,,{\3c&H4039D1&\blur3}谁啊？
+Dialogue: 1,0:03:40.57,0:03:41.52,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}胡桃
+Dialogue: 1,0:03:42.06,0:03:43.31,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}她…她刚刚不是在吗
+Dialogue: 1,0:03:43.31,0:03:44.78,CN,Chisato,0,0,0,,{\3c&H4039D1&\blur3}不…不在啊
+Dialogue: 1,0:03:44.78,0:03:46.18,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}她…她刚才在的吧
+Dialogue: 1,0:03:46.18,0:03:46.75,CN,Chisato,0,0,0,,{\3c&H4039D1&\blur3}在哪里
+Dialogue: 1,0:03:46.75,0:03:48.92,CN,Mika,0,600,0,,{\3c&H68567A&\blur3}喂喂
+Dialogue: 1,0:03:47.42,0:03:48.92,CN,Takina,600,0,0,,{\3c&HEE922A&\blur3}和我在一起
+Dialogue: 1,0:03:48.92,0:03:50.11,CN,Chisato,0,0,0,,{\3c&H4039D1&\blur3}可她不在啊
+Dialogue: 1,0:03:50.11,0:03:51.20,CN,Takina,0,0,0,,{\3c&HEE922A&\blur3}她在的
+Comment: 0,0:00:00.00,0:00:00.00,JP,,0,0,0,,------ Dialogue JP ------
+Dialogue: 0,0:00:07.60,0:00:09.20,JP,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}幽霊の犯行？
+Dialogue: 0,0:00:09.92,0:00:11.45,JP,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}なんだそりゃ
+Dialogue: 0,0:00:11.45,0:00:13.22,JP,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}千束が言ってんのか
+Dialogue: 0,0:00:13.22,0:00:14.41,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}瑞希さんも
+Dialogue: 0,0:00:15.86,0:00:18.46,JP,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}幽霊ね　会ったことないな
+Dialogue: 0,0:00:18.46,0:00:19.83,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}嘘ですよ
+Dialogue: 0,0:00:20.31,0:00:23.30,JP,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}まあ　カメラは嘘をつかない
+Dialogue: 0,0:00:24.09,0:00:25.09,JP,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}始めるぞ
+Dialogue: 0,0:00:32.74,0:00:33.88,JP,Chisato,1200,0,0,,{\3c&H4039D1&\blur3}どっか…
+Dialogue: 0,0:00:32.74,0:00:35.47,JP,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}隠蔽　するのね
+Dialogue: 0,0:00:35.47,0:00:36.33,JP,Chisato,0,0,0,,{\3c&H4039D1&\blur3}ミズキ
+Dialogue: 0,0:00:36.33,0:00:39.75,JP,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}先生にお尻ぺんぺんしてもらわないとね
+Dialogue: 0,0:00:39.75,0:00:43.99,JP,Chisato,0,0,0,,{\3c&H4039D1&\blur3}いやいや　自分だって店の酒持って帰ってるでしょ
+Dialogue: 0,0:00:44.94,0:00:47.92,JP,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}私たち　罪人
+Dialogue: 0,0:00:47.92,0:00:49.61,JP,Chisato,0,0,0,,{\3c&H4039D1&\blur3}一緒に…　酒くさっ
+Dialogue: 0,0:00:49.61,0:00:51.49,JP - Top,Chisato,0,0,0,,{\3c&H4039D1&\blur3}やめて　やめろよ
+Dialogue: 0,0:00:51.49,0:00:52.44,JP - Top,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}同じじゃない
+Dialogue: 0,0:00:52.44,0:00:54.60,JP - Top,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}私は貴重なやつなだけだし
+Dialogue: 0,0:00:54.60,0:00:55.92,JP - Top,Mizuki,0,500,0,,{\3c&H969F1C&\blur3}黙ってる？　黙ってるよね？
+Dialogue: 0,0:00:54.60,0:00:55.92,JP - Top,Chisato,900,0,0,,{\3c&H4039D1&\blur3}ち… 違う
+Dialogue: 0,0:00:55.92,0:00:58.08,JP - Top,Chisato,0,0,0,,{\3c&H4039D1&\blur3}わかったわかった　今回だけね
+Dialogue: 0,0:00:58.88,0:01:01.16,JP - Top,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}そっちも悪よの
+Dialogue: 0,0:01:03.04,0:01:04.50,JP - Top,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}饅頭じゃん
+Dialogue: 0,0:00:49.61,0:00:53.71,JP,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}ほら　こんなことだと思ったんですよ
+Dialogue: 0,0:00:58.08,0:01:02.34,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}聞きました　隠蔽　幽霊が隠蔽しましたよ
+Dialogue: 0,0:01:06.27,0:01:09.13,JP,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}幽霊見つけた　戻すか
+Dialogue: 0,0:01:09.13,0:01:11.30,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}いえ　なんでもないです
+Dialogue: 0,0:01:11.30,0:01:15.15,JP - Top,Chisato,0,0,0,,{\3c&H4039D1&\blur3}ほら　お客さん　これがトリートメントの効果ですわ
+Dialogue: 0,0:01:15.15,0:01:17.06,JP - Top,Chisato,0,0,0,,{\3c&H4039D1&\blur3}すべすべですね
+Dialogue: 0,0:01:17.06,0:01:19.85,JP - Top,Chisato,0,0,0,,{\3c&H4039D1&\blur3}どうですか　お買い求めになりますか
+Dialogue: 0,0:01:19.85,0:01:22.70,JP - Top,Takina,0,0,0,,{\3c&HEE922A&\blur3}いえ　いつもはいらないかなと思います
+Dialogue: 0,0:01:22.70,0:01:23.77,JP - Top,Chisato,0,0,0,,{\3c&H4039D1&\blur3}なんでだよ
+Dialogue: 0,0:01:15.14,0:01:17.06,JP,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}何やってんだお前ら
+Dialogue: 0,0:01:17.06,0:01:18.79,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}何に見えるんですか
+Dialogue: 0,0:01:18.79,0:01:21.52,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}髪といてもらってるだけですよ
+Dialogue: 0,0:01:24.31,0:01:25.82,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}なんですこれ
+Dialogue: 0,0:01:25.82,0:01:26.61,JP,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}どれ
+Dialogue: 0,0:01:26.61,0:01:28.36,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}ここ　ここ
+Dialogue: 0,0:01:28.36,0:01:29.90,JP - Top,Mika,0,0,0,,{\3c&H68567A&\blur3}ナイスバルク
+Dialogue: 0,0:01:30.62,0:01:32.02,JP - Top,Mika,0,0,0,,{\3c&H68567A&\blur3}チョモランマ
+Dialogue: 0,0:01:32.02,0:01:34.94,JP - Top,Mika,0,0,0,,{\3c&H68567A&\blur3}はい　ズドーン
+Dialogue: 0,0:01:31.43,0:01:32.98,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}カメラ見てますよ
+Dialogue: 0,0:01:32.98,0:01:33.89,JP,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}バレてんな
+Dialogue: 0,0:01:33.89,0:01:36.12,JP,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}次だ　次　次
+Dialogue: 0,0:01:38.21,0:01:39.79,JP,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}なんとか…　また太ったか
+Dialogue: 0,0:01:39.79,0:01:41.08,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}殺しですか
+Dialogue: 0,0:01:41.08,0:01:42.83,JP,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}アホ　よく見ろ
+Dialogue: 0,0:01:42.83,0:01:44.29,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}あっ　ミズキさん
+Dialogue: 0,0:01:44.29,0:01:45.38,JP,Mika,0,0,0,,{\3c&H68567A&\blur3}どうした
+Dialogue: 0,0:01:45.38,0:01:49.22,JP,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}苦情だ　店先に死体が転がってるってな
+Dialogue: 0,0:01:49.22,0:01:52.73,JP,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}まだ死なねぇわ　20{\fscx25}　{\fscx}代らぞ
+Dialogue: 0,0:01:52.73,0:01:56.51,JP,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}お前らこそ何歳だ　ウォールナット
+Dialogue: 0,0:01:56.51,0:01:59.74,JP,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}黙れ　もうこいつ撃ち殺せ
+Dialogue: 0,0:01:59.74,0:02:02.66,JP,Mika,0,0,0,,{\3c&H68567A&\blur3}騒ぐな　夜中だぞ
+Dialogue: 0,0:02:02.66,0:02:05.35,JP,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}そこらにリコリスいないか
+Dialogue: 0,0:02:05.35,0:02:06.40,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}見ました？
+Dialogue: 0,0:02:06.40,0:02:08.11,JP,Kurumi,0,0,0,,{\3c&H6CA2C9&\blur3}見た　なんか映った
+Dialogue: 0,0:02:08.90,0:02:10.57,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}ちょっと　他のカメラも
+Dialogue: 0,0:02:47.61,0:02:49.39,JP,Mika,0,0,0,,{\3c&H68567A&\blur3}飲んじゃった
+Dialogue: 0,0:02:51.14,0:02:53.38,JP,Mika,0,0,0,,{\3c&H68567A&\blur3}たきな　まま… 待て待て
+Dialogue: 0,0:02:53.38,0:02:54.79,JP,Mika,0,0,0,,{\3c&H68567A&\blur3}わ… 私たちだ
+Dialogue: 0,0:02:54.79,0:02:57.02,JP,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}そう　見て　プラカード　ほら
+Dialogue: 0,0:02:57.02,0:02:59.02,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}ド… ドッキリ？
+Dialogue: 0,0:02:59.02,0:03:01.24,JP,Chisato,0,0,0,,{\3c&H4039D1&\blur3}そ… そうそうそうそう
+Dialogue: 0,0:03:01.24,0:03:03.21,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}死ぬかと思いましたよ
+Dialogue: 0,0:03:03.21,0:03:04.69,JP,Chisato,0,0,0,,{\3c&H4039D1&\blur3}こっちのセリフなんだけど
+Dialogue: 0,0:03:04.69,0:03:06.56,JP,Mika,0,0,0,,{\3c&H68567A&\blur3}ちょっと腰が
+Dialogue: 0,0:03:07.24,0:03:08.30,JP,Mika,0,0,0,,{\3c&H68567A&\blur3}打ったかな
+Dialogue: 0,0:03:08.30,0:03:11.97,JP,Chisato,0,0,0,,{\3c&H4039D1&\blur3}いや　たきな驚かすのにはいつも命がけだわ
+Dialogue: 0,0:03:11.97,0:03:14.41,JP,Mizuki,0,0,0,,{\3c&H969F1C&\blur3}でも　いい声聞けたわ
+Dialogue: 0,0:03:17.98,0:03:21.26,JP,Mika,0,0,0,,{\3c&H68567A&\blur3}心霊現象を信じない者の声じゃなかったな
+Dialogue: 0,0:03:21.26,0:03:24.18,JP,Chisato,0,0,0,,{\3c&H4039D1&\blur3}ね　霊はいるんだよ　たきな
+Dialogue: 0,0:03:24.18,0:03:27.14,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}いいから　酒代と食器代　置いてってください
+Dialogue: 0,0:03:29.14,0:03:30.88,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}もういい
+Dialogue: 0,0:03:30.88,0:03:33.02,JP,Chisato,0,0,0,,{\3c&H4039D1&\blur3}で　クルミはどこ行った
+Dialogue: 0,0:03:33.02,0:03:35.18,JP,Mika,0,0,0,,{\3c&H68567A&\blur3}朝出てってまだ帰ってないな
+Dialogue: 0,0:03:35.89,0:03:39.35,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}じゃあ　今のは　ずっと一緒にいたじゃないですか
+Dialogue: 0,0:03:39.35,0:03:40.57,JP,Chisato,0,0,0,,{\3c&H4039D1&\blur3}誰が？
+Dialogue: 0,0:03:40.57,0:03:41.52,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}クルミが
+Dialogue: 0,0:03:42.06,0:03:43.31,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}い… いましたよ
+Dialogue: 0,0:03:43.31,0:03:44.78,JP,Chisato,0,0,0,,{\3c&H4039D1&\blur3}い… いないけど
+Dialogue: 0,0:03:44.78,0:03:46.18,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}い… いましたよね
+Dialogue: 0,0:03:46.18,0:03:46.75,JP,Chisato,0,0,0,,{\3c&H4039D1&\blur3}どこに
+Dialogue: 0,0:03:46.75,0:03:48.92,JP,Mika,0,600,0,,{\3c&H68567A&\blur3}おいおい
+Dialogue: 0,0:03:47.42,0:03:48.92,JP,Takina,600,0,0,,{\3c&HEE922A&\blur3}私と一緒に
+Dialogue: 0,0:03:48.92,0:03:50.11,JP,Chisato,0,0,0,,{\3c&H4039D1&\blur3}いないけど
+Dialogue: 0,0:03:50.11,0:03:51.20,JP,Takina,0,0,0,,{\3c&HEE922A&\blur3}いましたよ
+Comment: 0,0:00:00.00,0:00:00.00,CN,,0,0,0,,------ FX ------
+Dialogue: 4,0:00:28.20,0:00:28.58,Title,,0,140,260,fx,{\pos(1780,820)}{\clip(1447,0,1507,1080)}{\t(\clip(1790,0,1850,1080))}{\bord0\c6C5DF7}　#04  小心！
+Dialogue: 4,0:00:28.32,0:00:28.70,Title,,0,140,260,fx,{\pos(1780,820)}{\clip(1447,0,1507,1080)}{\t(\clip(1790,0,1850,1080))}{\bord0\cEFFF62}　#04  小心！
+Dialogue: 0,0:00:27.26,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1437,820)}{\clip(1432,753,1437,758)}
+Dialogue: 1,0:00:27.26,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1437,820)}{\clip(1432,753,1437,758)}
+Dialogue: 2,0:00:27.26,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1437,820)}{\clip(1432,753,1437,758)}
+Dialogue: 3,0:00:27.26,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1437,820)}{\clip(1432,753,1437,758)}
+Dialogue: 0,0:00:27.22,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1437,820)}{\clip(1437,753,1442,758)}
+Dialogue: 1,0:00:27.22,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1437,820)}{\clip(1437,753,1442,758)}
+Dialogue: 2,0:00:27.22,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1437,820)}{\clip(1437,753,1442,758)}
+Dialogue: 3,0:00:27.22,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1437,820)}{\clip(1437,753,1442,758)}
+Dialogue: 0,0:00:27.14,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1437,820)}{\clip(1432,758,1437,763)}
+Dialogue: 1,0:00:27.14,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1437,820)}{\clip(1432,758,1437,763)}
+Dialogue: 2,0:00:27.14,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1437,820)}{\clip(1432,758,1437,763)}
+Dialogue: 3,0:00:27.14,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1437,820)}{\clip(1432,758,1437,763)}
+Dialogue: 0,0:00:27.18,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1437,820)}{\clip(1437,758,1442,763)}
+Dialogue: 1,0:00:27.18,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1437,820)}{\clip(1437,758,1442,763)}
+Dialogue: 2,0:00:27.18,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1437,820)}{\clip(1437,758,1442,763)}
+Dialogue: 3,0:00:27.18,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1437,820)}{\clip(1437,758,1442,763)}
+Dialogue: 0,0:00:27.34,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1524,820)}{\clip(1432,753,1480.5,789)}　#
+Dialogue: 1,0:00:27.34,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1524,820)}{\clip(1432,753,1480.5,789)}　#
+Dialogue: 2,0:00:27.34,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1524,820)}{\clip(1432,753,1480.5,789)}　#
+Dialogue: 3,0:00:27.34,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1524,820)}{\clip(1432,753,1480.5,789)}　#
+Dialogue: 0,0:00:27.30,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1524,820)}{\clip(1480.5,753,1529,789)}　#
+Dialogue: 1,0:00:27.30,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1524,820)}{\clip(1480.5,753,1529,789)}　#
+Dialogue: 2,0:00:27.30,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1524,820)}{\clip(1480.5,753,1529,789)}　#
+Dialogue: 3,0:00:27.30,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1524,820)}{\clip(1480.5,753,1529,789)}　#
+Dialogue: 0,0:00:27.26,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1524,820)}{\clip(1432,789,1480.5,825)}　#
+Dialogue: 1,0:00:27.26,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1524,820)}{\clip(1432,789,1480.5,825)}　#
+Dialogue: 2,0:00:27.26,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1524,820)}{\clip(1432,789,1480.5,825)}　#
+Dialogue: 3,0:00:27.26,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1524,820)}{\clip(1432,789,1480.5,825)}　#
+Dialogue: 0,0:00:27.39,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1524,820)}{\clip(1480.5,789,1529,825)}　#
+Dialogue: 1,0:00:27.39,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1524,820)}{\clip(1480.5,789,1529,825)}　#
+Dialogue: 2,0:00:27.39,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1524,820)}{\clip(1480.5,789,1529,825)}　#
+Dialogue: 3,0:00:27.39,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1524,820)}{\clip(1480.5,789,1529,825)}　#
+Dialogue: 0,0:00:27.47,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1559,820)}{\clip(1519,753,1541.5,789)}0
+Dialogue: 1,0:00:27.47,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1559,820)}{\clip(1519,753,1541.5,789)}0
+Dialogue: 2,0:00:27.47,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1559,820)}{\clip(1519,753,1541.5,789)}0
+Dialogue: 3,0:00:27.47,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1559,820)}{\clip(1519,753,1541.5,789)}0
+Dialogue: 0,0:00:27.39,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1559,820)}{\clip(1541.5,753,1564,789)}0
+Dialogue: 1,0:00:27.39,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1559,820)}{\clip(1541.5,753,1564,789)}0
+Dialogue: 2,0:00:27.39,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1559,820)}{\clip(1541.5,753,1564,789)}0
+Dialogue: 3,0:00:27.39,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1559,820)}{\clip(1541.5,753,1564,789)}0
+Dialogue: 0,0:00:27.51,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1559,820)}{\clip(1519,789,1541.5,825)}0
+Dialogue: 1,0:00:27.51,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1559,820)}{\clip(1519,789,1541.5,825)}0
+Dialogue: 2,0:00:27.51,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1559,820)}{\clip(1519,789,1541.5,825)}0
+Dialogue: 3,0:00:27.51,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1559,820)}{\clip(1519,789,1541.5,825)}0
+Dialogue: 0,0:00:27.43,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1559,820)}{\clip(1541.5,789,1564,825)}0
+Dialogue: 1,0:00:27.43,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1559,820)}{\clip(1541.5,789,1564,825)}0
+Dialogue: 2,0:00:27.43,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1559,820)}{\clip(1541.5,789,1564,825)}0
+Dialogue: 3,0:00:27.43,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1559,820)}{\clip(1541.5,789,1564,825)}0
+Dialogue: 0,0:00:27.55,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1594,820)}{\clip(1554,753,1576.5,789)}4
+Dialogue: 1,0:00:27.55,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1594,820)}{\clip(1554,753,1576.5,789)}4
+Dialogue: 2,0:00:27.55,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1594,820)}{\clip(1554,753,1576.5,789)}4
+Dialogue: 3,0:00:27.55,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1594,820)}{\clip(1554,753,1576.5,789)}4
+Dialogue: 0,0:00:27.59,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1594,820)}{\clip(1576.5,753,1599,789)}4
+Dialogue: 1,0:00:27.59,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1594,820)}{\clip(1576.5,753,1599,789)}4
+Dialogue: 2,0:00:27.59,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1594,820)}{\clip(1576.5,753,1599,789)}4
+Dialogue: 3,0:00:27.59,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1594,820)}{\clip(1576.5,753,1599,789)}4
+Dialogue: 0,0:00:27.63,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1594,820)}{\clip(1554,789,1576.5,825)}4
+Dialogue: 1,0:00:27.63,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1594,820)}{\clip(1554,789,1576.5,825)}4
+Dialogue: 2,0:00:27.63,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1594,820)}{\clip(1554,789,1576.5,825)}4
+Dialogue: 3,0:00:27.63,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1594,820)}{\clip(1554,789,1576.5,825)}4
+Dialogue: 0,0:00:27.51,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1594,820)}{\clip(1576.5,789,1599,825)}4
+Dialogue: 1,0:00:27.51,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1594,820)}{\clip(1576.5,789,1599,825)}4
+Dialogue: 2,0:00:27.51,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1594,820)}{\clip(1576.5,789,1599,825)}4
+Dialogue: 3,0:00:27.51,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1594,820)}{\clip(1576.5,789,1599,825)}4
+Dialogue: 0,0:00:27.72,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1623,820)}{\clip(1618,753,1623,758)}
+Dialogue: 1,0:00:27.72,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1623,820)}{\clip(1618,753,1623,758)}
+Dialogue: 2,0:00:27.72,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1623,820)}{\clip(1618,753,1623,758)}
+Dialogue: 3,0:00:27.72,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1623,820)}{\clip(1618,753,1623,758)}
+Dialogue: 0,0:00:27.63,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1623,820)}{\clip(1623,753,1628,758)}
+Dialogue: 1,0:00:27.63,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1623,820)}{\clip(1623,753,1628,758)}
+Dialogue: 2,0:00:27.63,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1623,820)}{\clip(1623,753,1628,758)}
+Dialogue: 3,0:00:27.63,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1623,820)}{\clip(1623,753,1628,758)}
+Dialogue: 0,0:00:27.76,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1623,820)}{\clip(1618,758,1623,763)}
+Dialogue: 1,0:00:27.76,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1623,820)}{\clip(1618,758,1623,763)}
+Dialogue: 2,0:00:27.76,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1623,820)}{\clip(1618,758,1623,763)}
+Dialogue: 3,0:00:27.76,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1623,820)}{\clip(1618,758,1623,763)}
+Dialogue: 0,0:00:27.67,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1623,820)}{\clip(1623,758,1628,763)}
+Dialogue: 1,0:00:27.67,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1623,820)}{\clip(1623,758,1628,763)}
+Dialogue: 2,0:00:27.67,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1623,820)}{\clip(1623,758,1628,763)}
+Dialogue: 3,0:00:27.67,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1623,820)}{\clip(1623,758,1628,763)}
+Dialogue: 0,0:00:27.88,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1675,820)}{\clip(1618,753,1649,789)}小
+Dialogue: 1,0:00:27.88,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1675,820)}{\clip(1618,753,1649,789)}小
+Dialogue: 2,0:00:27.88,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1675,820)}{\clip(1618,753,1649,789)}小
+Dialogue: 3,0:00:27.88,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1675,820)}{\clip(1618,753,1649,789)}小
+Dialogue: 0,0:00:27.80,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1675,820)}{\clip(1649,753,1680,789)}小
+Dialogue: 1,0:00:27.80,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1675,820)}{\clip(1649,753,1680,789)}小
+Dialogue: 2,0:00:27.80,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1675,820)}{\clip(1649,753,1680,789)}小
+Dialogue: 3,0:00:27.80,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1675,820)}{\clip(1649,753,1680,789)}小
+Dialogue: 0,0:00:27.76,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1675,820)}{\clip(1618,789,1649,825)}小
+Dialogue: 1,0:00:27.76,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1675,820)}{\clip(1618,789,1649,825)}小
+Dialogue: 2,0:00:27.76,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1675,820)}{\clip(1618,789,1649,825)}小
+Dialogue: 3,0:00:27.76,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1675,820)}{\clip(1618,789,1649,825)}小
+Dialogue: 0,0:00:27.84,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1675,820)}{\clip(1649,789,1680,825)}小
+Dialogue: 1,0:00:27.84,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1675,820)}{\clip(1649,789,1680,825)}小
+Dialogue: 2,0:00:27.84,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1675,820)}{\clip(1649,789,1680,825)}小
+Dialogue: 3,0:00:27.84,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1675,820)}{\clip(1649,789,1680,825)}小
+Dialogue: 0,0:00:27.96,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1728,820)}{\clip(1670,753,1701.5,789)}心
+Dialogue: 1,0:00:27.96,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1728,820)}{\clip(1670,753,1701.5,789)}心
+Dialogue: 2,0:00:27.96,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1728,820)}{\clip(1670,753,1701.5,789)}心
+Dialogue: 3,0:00:27.96,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1728,820)}{\clip(1670,753,1701.5,789)}心
+Dialogue: 0,0:00:27.88,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1728,820)}{\clip(1701.5,753,1733,789)}心
+Dialogue: 1,0:00:27.88,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1728,820)}{\clip(1701.5,753,1733,789)}心
+Dialogue: 2,0:00:27.88,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1728,820)}{\clip(1701.5,753,1733,789)}心
+Dialogue: 3,0:00:27.88,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1728,820)}{\clip(1701.5,753,1733,789)}心
+Dialogue: 0,0:00:27.92,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1728,820)}{\clip(1670,789,1701.5,825)}心
+Dialogue: 1,0:00:27.92,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1728,820)}{\clip(1670,789,1701.5,825)}心
+Dialogue: 2,0:00:27.92,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1728,820)}{\clip(1670,789,1701.5,825)}心
+Dialogue: 3,0:00:27.92,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1728,820)}{\clip(1670,789,1701.5,825)}心
+Dialogue: 0,0:00:28.00,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1728,820)}{\clip(1701.5,789,1733,825)}心
+Dialogue: 1,0:00:28.00,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1728,820)}{\clip(1701.5,789,1733,825)}心
+Dialogue: 2,0:00:28.00,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1728,820)}{\clip(1701.5,789,1733,825)}心
+Dialogue: 3,0:00:28.00,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1728,820)}{\clip(1701.5,789,1733,825)}心
+Dialogue: 0,0:00:28.00,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1780,820)}{\clip(1723,753,1754,789)}！
+Dialogue: 1,0:00:28.00,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1780,820)}{\clip(1723,753,1754,789)}！
+Dialogue: 2,0:00:28.00,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1780,820)}{\clip(1723,753,1754,789)}！
+Dialogue: 3,0:00:28.00,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1780,820)}{\clip(1723,753,1754,789)}！
+Dialogue: 0,0:00:28.05,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1780,820)}{\clip(1754,753,1785,789)}！
+Dialogue: 1,0:00:28.05,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1780,820)}{\clip(1754,753,1785,789)}！
+Dialogue: 2,0:00:28.05,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1780,820)}{\clip(1754,753,1785,789)}！
+Dialogue: 3,0:00:28.05,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1780,820)}{\clip(1754,753,1785,789)}！
+Dialogue: 0,0:00:28.13,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1780,820)}{\clip(1723,789,1754,825)}！
+Dialogue: 1,0:00:28.13,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1780,820)}{\clip(1723,789,1754,825)}！
+Dialogue: 2,0:00:28.13,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1780,820)}{\clip(1723,789,1754,825)}！
+Dialogue: 3,0:00:28.13,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1780,820)}{\clip(1723,789,1754,825)}！
+Dialogue: 0,0:00:28.09,0:00:32.35,Title,,0,140,260,fx,{\blur2\alpha1E\fad(0,1350)}{\pos(1780,820)}{\clip(1754,789,1785,825)}！
+Dialogue: 1,0:00:28.09,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad1.1\4c00FF00\alpha1E\fad(0,1350)}{\pos(1780,820)}{\clip(1754,789,1785,825)}！
+Dialogue: 2,0:00:28.09,0:00:32.35,Title,,0,140,260,fx,{\bord0\xshad-0.9\4c0000FF\alpha1E\fad(0,1350)}{\pos(1780,820)}{\clip(1754,789,1785,825)}！
+Dialogue: 3,0:00:28.09,0:00:32.35,Title,,0,140,260,fx,{\bord0\fad(0,1350)}{\pos(1780,820)}{\clip(1754,789,1785,825)}！
