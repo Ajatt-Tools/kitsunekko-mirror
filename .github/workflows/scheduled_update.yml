@@ -12,12 +12,12 @@ jobs:
 
     steps:
       - name: Check out the repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: "3.12"
+          python-version: "3.13"
           cache: "pip"
 
       - name: Install kitsunekko-tools
@@ -52,3 +52,10 @@ jobs:
           commit_user_name: GitHub Actions
           commit_user_email: noreply@github.com
           commit_author: GitHub <noreply@github.com>
+
+      - name: Dispatch Deploy
+        uses: aurelien-baudet/workflow-dispatch@3133c5d135c7dbe4be4f9793872b6ef331b53bc7 # pin@v2
+        with:
+          workflow: Deploy # match workflow name (not filename)
+          token: ${{ secrets.GITHUB_TOKEN }}
+          wait-for-completion: false

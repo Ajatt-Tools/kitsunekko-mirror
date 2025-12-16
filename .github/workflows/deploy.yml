@@ -1,0 +1,54 @@
+name: Deploy
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - subtitles/**
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build and deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: "pip"
+
+      - name: Install kitsunekko-tools
+        run: pip install -r requirements.txt
+
+      - name: Build website
+        shell: bash
+        run: |
+          rm -rf -- _site
+          python -m kitsunekko_tools -c ktools.toml copy_site_resources
+          python -m kitsunekko_tools -c ktools.toml build
+
+      # https://github.com/AnimMouse/setup-rclone/tree/main?tab=readme-ov-file#usage
+      # Encode the rclone.conf file in Base64 using this command: `base64 -w 0 rclone.conf`
+      # and paste it to RCLONE_CONFIG secret.
+      - name: Setup Rclone
+        uses: AnimMouse/setup-rclone@ef6294e97b6f0cbeb6f1a682a15d35a91dd5d0ff
+        with:
+          rclone_config: ${{ secrets.RCLONE_CONFIG }}
+
+      - name: Rclone from pwd to remote
+        shell: bash
+        run: >-
+          rclone -v sync --fast-list --checksum
+          "$PWD/_site" "s3-connect:subtitles.ajatt.top"
+          --exclude ".git/"
+          --delete-excluded
