@@ -11,11 +11,6 @@ main() {
 		exit 1
 	fi
 
-	if ! [[ -f .kitsuignore ]]; then
-		echo "directory doesn't look right."
-		exit 1
-	fi
-
 	if ! command -v fdupes; then
 		echo "fdupes is not installed."
 		exit 1
