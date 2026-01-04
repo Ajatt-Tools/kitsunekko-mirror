@@ -45,6 +45,13 @@ jobs:
       - name: Remove large files
         run: find subtitles -type f -regextype posix-extended -iregex '.*\.(ass|ssa|srt)$' -size +10M -print -delete
 
+      - name: Sync ignore files
+        shell: bash
+        run: >-
+          python -m
+          kitsunekko_tools -c ktools.toml
+          ignore add_all
+
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
