@@ -45,10 +45,13 @@ jobs:
         with:
           rclone_config: ${{ secrets.RCLONE_CONFIG }}
 
+      # https://forum.rclone.org/t/transfers-vs-checker-ratio/142
       - name: Rclone from pwd to remote
         shell: bash
         run: >-
           rclone -v sync --fast-list --checksum
+          --transfers=45 --checkers=50
+          --s3-upload-concurrency "$(nproc)"
           "$PWD/_site" "s3-connect:subtitles.ajatt.top"
           --exclude ".git/"
           --delete-excluded
