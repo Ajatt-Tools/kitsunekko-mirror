@@ -1,24 +1,4 @@
 ﻿[Script Info]
-; Font Subset: 8P9EFVE1 - 筑紫A丸 SC
-; Font Subset: 8VF0IJWO - 獅尾圓體SC-Bold
-; Font Subset: R59R2LK5 - 獅尾圓體SC-Black
-; Font Subset: 5HDFVU1D - 獅尾圓體JP-Bold
-; Font Subset: 2D4IQ58L - 獅尾圓體-Bold
-; Font Subset: I34M4QUA - 獅尾圓體-Black
-; Font Subset: AYK6T8YQ - 悠哉字体
-; Font Subset: 3KI8QOBA - 思源黑体 Medium
-; Font Subset: 4BTWPFZH - 思源黑体 Heavy
-; Font Subset: PFG9KZFV - 思源黑体
-; Font Subset: 9U6TJ759 - 思源宋体
-; Font Subset: DUZD1H76 - Source Han Serif TC
-; Font Subset: SD9BSDL1 - Source Han Serif
-; Font Subset: RL4IBZI8 - Source Han Sans TC Medium
-; Font Subset: S1CU2SA3 - Source Han Sans TC Heavy
-; Font Subset: NOC4AGFB - Source Han Sans TC
-; Font Subset: 2NYHPTY2 - Source Han Sans Heavy
-; Font Subset: Y7YTVMEZ - MiSans Demibold
-; Font Subset: FEWW0KTR - MiSans
-; Font Subset: 28SNCQB3 - FOT-TsukuARdGothic Std E
 Title: Default Aegisub file
 ScriptType: v4.00+
 WrapStyle: 0
@@ -26,6 +6,8 @@ ScaledBorderAndShadow: yes
 YCbCr Matrix: TV.709
 PlayResX: 1920
 PlayResY: 1080
+LayoutResX: 1920
+LayoutResY: 1080
 
 [Aegisub Project Garbage]
 Last Style Storage: Default
@@ -40,14 +22,16 @@ Video Position: 31769
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: SIKANOKO_Bottom,8P9EFVE1,100,&H00F0F0F0,&H000000FF,&H14345B85,&H00000000,-1,0,0,0,100,100,1.1,0,1,5.2,0,2,10,10,25,1
-Style: SIKANOKO_Top,8P9EFVE1,100,&H00F0F0F0,&H000000FF,&H14345B85,&H00000000,-1,0,0,0,100,100,1.1,0,1,5.2,0,8,10,10,15,1
-Style: OP,28SNCQB3,80,&H00F0F0F0,&H000000FF,&H28345B85,&H00000000,-1,0,0,0,100,100,1.1,0,1,5.2,0,2,10,10,30,1
-Style: ED,FEWW0KTR,75,&H00345B85,&H000000FF,&H00F0F0F0,&H00000000,0,0,0,0,100,100,1.1,0,1,5,0,7,0,0,0,1
-Style: Insert_JP,2NYHPTY2,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,0,0,0,0,100,100,1.1,0,1,0.6,0,7,30,30,30,1
+Style: SIKANOKO_Bottom,筑紫A丸 SC,80,&H00F0F0F0,&H000000FF,&H14345B85,&H00000000,-1,0,0,0,100,100,1.1,0,1,5.2,0,2,10,10,25,1
+Style: SIKANOKO_Top,筑紫A丸 SC,80,&H00F0F0F0,&H000000FF,&H14345B85,&H00000000,-1,0,0,0,100,100,1.1,0,1,5.2,0,8,10,10,15,1
+Style: OP,FOT-TsukuARdGothic Std E,80,&H00F0F0F0,&H000000FF,&H28345B85,&H00000000,-1,0,0,0,100,100,1.1,0,1,5.2,0,2,10,10,30,1
+Style: ED,MiSans,75,&H00345B85,&H000000FF,&H00F0F0F0,&H00000000,0,0,0,0,100,100,1.1,0,1,5,0,7,0,0,0,1
+Style: Insert_JP,Source Han Sans Heavy,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,0,0,0,0,100,100,1.1,0,1,0.6,0,7,30,30,30,1
+Style: Insert_karaoke,獅尾圓體SC-Bold,90,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,1.1,0,1,5,3,8,30,30,30,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:08:46.66,0:08:51.72,SIKANOKO_Bottom,旁白,0,0,0,,{\pos(582,942)\fscx60\fscy60\bord4}猫猫
 Dialogue: 0,0:00:50.05,0:00:50.07,OP,,0,0,0,sync,
 Dialogue: 0,0:00:50.53,0:00:50.57,OP,OP,0,0,0,,{\fscx1000\fscy1000\bord0\c&H345B85&\an8\pos(960,720)}ぬん
 Dialogue: 0,0:00:50.57,0:00:50.61,OP,OP,0,0,0,,{\fscx150\fscy150\bord0\c&H345B85&\pos(960,800)}ぬん
@@ -3114,22 +3098,53 @@ Dialogue: 0,0:20:44.55,0:20:48.04,Insert_JP,,0,0,0,fx,{\3c&H345B85&\an9\fade(200
 Dialogue: 0,0:20:44.61,0:20:48.07,Insert_JP,,0,0,0,fx,{\3c&H345B85&\an9\fade(200,200)\blur3\pos(104.0125,30)\t(0,300,\bord1.5)\t(300,600,\bord1.1339745962156)\t(600,900,\bord1.5)\t(900,1200,\bord1.1339745962156)\t(1200,1500,\bord1.5)\t(1500,1800,\bord1.1339745962156)\t(1800,2100,\bord1.5)\t(2100,2400,\bord1.1339745962156)\t(2400,2700,\bord1.5)\t(2700,3000,\bord1.1339745962156)\t(3000,3300,\bord1.5)\t(3300,3600,\bord1.1339745962156)}カ
 Dialogue: 0,0:20:48.90,0:20:54.07,Insert_JP,,0,0,0,fx,{\3c&H345B85&\an9\fade(200,200)\blur3\pos(67.00625,30)\t(0,300,\bord1.1339745962156)\t(300,600,\bord1.5)\t(600,900,\bord1.1339745962156)\t(900,1200,\bord1.5)\t(1200,1500,\bord1.1339745962156)\t(1500,1800,\bord1.5)\t(1800,2100,\bord1.1339745962156)\t(2100,2400,\bord1.5)\t(2400,2700,\bord1.1339745962156)\t(2700,3000,\bord1.5)\t(3000,3300,\bord1.1339745962156)\t(3300,3600,\bord1.5)\t(3600,3900,\bord1.1339745962156)\t(3900,4200,\bord1.5)\t(4200,4500,\bord1.1339745962156)\t(4500,4800,\bord1.5)\t(4800,5100,\bord1.1339745962156)\t(5100,5400,\bord1.5)}シ
 Dialogue: 0,0:20:48.96,0:20:54.10,Insert_JP,,0,0,0,fx,{\3c&H345B85&\an9\fade(200,200)\blur3\pos(104.0125,30)\t(0,300,\bord1.5)\t(300,600,\bord1.1339745962156)\t(600,900,\bord1.5)\t(900,1200,\bord1.1339745962156)\t(1200,1500,\bord1.5)\t(1500,1800,\bord1.1339745962156)\t(1800,2100,\bord1.5)\t(2100,2400,\bord1.1339745962156)\t(2400,2700,\bord1.5)\t(2700,3000,\bord1.1339745962156)\t(3000,3300,\bord1.5)\t(3300,3600,\bord1.1339745962156)\t(3600,3900,\bord1.5)\t(3900,4200,\bord1.1339745962156)\t(4200,4500,\bord1.5)\t(4500,4800,\bord1.1339745962156)\t(4800,5100,\bord1.5)\t(5100,5400,\bord1.1339745962156)}カ
+Dialogue: 0,0:18:07.94,0:18:10.40,Insert_karaoke,,0,0,0,,{\pos(960,310)\shad0\3c&H2F63B2&\bord10\blur8}「成为家人吧、就在日野市里」
+Dialogue: 3,0:18:10.40,0:18:15.70,Insert_karaoke,歌,0,0,0,fx,{\clip(463.24375,0,1456.75625,1080)\t(607,5320,\clip(1456.75625,0,2442.26875,1080))}与伙伴们走散了的鹿鹿仙贝
+Dialogue: 2,0:18:10.40,0:18:16.22,Insert_karaoke,歌,0,0,0,fx,{\3c&HFFFFFF&\4c&HFFFFFF&\c&H0065FF&\bord5\shad3\fad(0,520)\t(5300,5820,\shad0)}与伙伴们走散了的鹿鹿仙贝
+Dialogue: 3,0:18:16.37,0:18:21.31,Insert_karaoke,歌,0,0,0,fx,{\clip(544.703125,0,1375.296875,1080)\t(100,4688,\clip(1375.296875,0,2197.890625,1080))}迷失在街头的鹿鹿仙贝
+Dialogue: 2,0:18:16.37,0:18:21.83,Insert_karaoke,歌,0,0,0,fx,{\3c&HFFFFFF&\4c&HFFFFFF&\c&H0065FF&\bord5\shad3\fad(0,520)\t(4940,5460,\shad0)}迷失在街头的鹿鹿仙贝
+Dialogue: 3,0:18:21.87,0:18:25.17,Insert_karaoke,no-out,0,0,0,fx,{\clip(544.703125,0,1375.296875,1080)\t(148,2984,\clip(1375.296875,0,2197.890625,1080))}就让我将已冻得发抖的
+Dialogue: 2,0:18:21.87,0:18:25.17,Insert_karaoke,no-out,0,0,0,fx,{\3c&HFFFFFF&\4c&HFFFFFF&\c&H0065FF&\bord5\shad3}就让我将已冻得发抖的
+Dialogue: 3,0:18:25.17,0:18:28.90,Insert_karaoke,歌,0,0,0,fx,{\clip(626.1625,0,1293.8375,1080)\t(184,2645,\clip(1293.8375,0,1953.5125,1080))}你抱在怀中回家吧
+Dialogue: 2,0:18:25.17,0:18:29.42,Insert_karaoke,歌,0,0,0,fx,{\3c&HFFFFFF&\4c&HFFFFFF&\c&H0065FF&\bord5\shad3\fad(0,520)\t(3730,4250,\shad0)}你抱在怀中回家吧
+Dialogue: 3,0:18:29.71,0:18:32.91,Insert_karaoke,歌,0,0,0,fx,{\clip(789.08125,0,1130.91875,1080)\t(24,1483,\clip(1130.91875,0,1464.75625,1080))}就在那夜
+Dialogue: 2,0:18:29.71,0:18:33.43,Insert_karaoke,歌,0,0,0,fx,{\3c&HFFFFFF&\4c&HFFFFFF&\c&H0065FF&\bord5\shad3\fad(0,520)\t(3200,3720,\shad0)}就在那夜
+Dialogue: 3,0:18:34.72,0:18:39.16,Insert_karaoke,歌,0,0,0,fx,{\clip(300.325,0,1619.675,1080)\t(19,4315,\clip(1619.675,0,2931.025,1080))}一头和小小一捆的、鹿鹿和鹿鹿仙贝
+Dialogue: 2,0:18:34.72,0:18:39.68,Insert_karaoke,歌,0,0,0,fx,{\3c&HFFFFFF&\4c&HFFFFFF&\c&H0065FF&\bord5\shad3\fad(0,520)\t(4440,4960,\shad0)}一头和小小一捆的、鹿鹿和鹿鹿仙贝
+Dialogue: 3,0:18:40.47,0:18:45.29,Insert_karaoke,歌,0,0,0,fx,{\clip(362.45,0,1557.55,1080)\t(191,3778,\clip(1557.55,0,2744.65,1080))}互帮着 互助着 坚不可摧的联结它
+Dialogue: 2,0:18:40.47,0:18:45.81,Insert_karaoke,歌,0,0,0,fx,{\3c&HFFFFFF&\4c&HFFFFFF&\c&H0065FF&\bord5\shad3\fad(0,520)\t(4820,5340,\shad0)}互帮着 互助着 坚不可摧的联结它
+Dialogue: 3,0:18:45.85,0:18:48.36,Insert_karaoke,no-out,0,0,0,fx,{\clip(748.3515625,0,1171.6484375,1080)\t(275,1693,\clip(1171.6484375,0,1586.9453125,1080))}在心中萌发
+Dialogue: 2,0:18:45.85,0:18:48.36,Insert_karaoke,no-out,0,0,0,fx,{\3c&HFFFFFF&\4c&HFFFFFF&\c&H0065FF&\bord5\shad3}在心中萌发
+Dialogue: 3,0:18:48.36,0:18:52.55,Insert_karaoke,歌,0,0,0,fx,{\clip(503.9734375,0,1416.0265625,1080)\t(184,3562,\clip(1416.0265625,0,2320.0796875,1080))}我们似乎真的成了一个家
+Dialogue: 2,0:18:48.36,0:18:53.07,Insert_karaoke,歌,0,0,0,fx,{\3c&HFFFFFF&\4c&HFFFFFF&\c&H0065FF&\bord5\shad3\fad(0,520)\t(4190,4710,\shad0)}我们似乎真的成了一个家
+Dialogue: 3,0:18:53.61,0:18:59.12,Insert_karaoke,no-out,0,0,0,fx,{\clip(381.784375,0,1538.215625,1080)\t(189,4235,\clip(1538.215625,0,2686.646875,1080))}但是我感觉到了你那寂寞的眼神
+Dialogue: 2,0:18:53.61,0:18:59.12,Insert_karaoke,no-out,0,0,0,fx,{\3c&HFFFFFF&\4c&HFFFFFF&\c&H0065FF&\bord5\shad3}但是我感觉到了你那寂寞的眼神
+Dialogue: 3,0:18:59.12,0:19:01.87,Insert_karaoke,no-out,0,0,0,fx,{\clip(585.4328125,0,1334.5671875,1080)\t(185,2187,\clip(1334.5671875,0,2075.7015625,1080))}其实我也早就已发觉
+Dialogue: 2,0:18:59.12,0:19:01.87,Insert_karaoke,no-out,0,0,0,fx,{\3c&HFFFFFF&\4c&HFFFFFF&\c&H0065FF&\bord5\shad3}其实我也早就已发觉
+Dialogue: 3,0:19:01.87,0:19:04.62,Insert_karaoke,no-out,0,0,0,fx,{\clip(585.4328125,0,1334.5671875,1080)\t(21,2231,\clip(1334.5671875,0,2075.7015625,1080))}你待在日野是不行的
+Dialogue: 2,0:19:01.87,0:19:04.62,Insert_karaoke,no-out,0,0,0,fx,{\3c&HFFFFFF&\4c&HFFFFFF&\c&H0065FF&\bord5\shad3}你待在日野是不行的
+Dialogue: 3,0:19:04.62,0:19:07.38,Insert_karaoke,no-out,0,0,0,fx,{\clip(707.621875,0,1212.378125,1080)\t(107,1775,\clip(1212.378125,0,1709.134375,1080))}奈良的鹿鹿们
+Dialogue: 2,0:19:04.62,0:19:07.38,Insert_karaoke,no-out,0,0,0,fx,{\3c&HFFFFFF&\4c&HFFFFFF&\c&H0065FF&\bord5\shad3}奈良的鹿鹿们
+Dialogue: 3,0:19:07.38,0:19:08.88,Insert_karaoke,no-out,0,0,0,fx,{\clip(829.8109375,0,1090.1890625,1080)\t(100,767,\clip(1090.1890625,0,1342.5671875,1080))}都正在
+Dialogue: 2,0:19:07.38,0:19:08.88,Insert_karaoke,no-out,0,0,0,fx,{\3c&HFFFFFF&\4c&HFFFFFF&\c&H0065FF&\bord5\shad3}都正在
+Dialogue: 3,0:19:08.88,0:19:13.28,Insert_karaoke,歌,0,0,0,fx,{\clip(707.621875,0,1212.378125,1080)\t(18,1603,\clip(1212.378125,0,1709.134375,1080))}呼唤你回家呢
+Dialogue: 2,0:19:08.88,0:19:13.80,Insert_karaoke,歌,0,0,0,fx,{\3c&HFFFFFF&\4c&HFFFFFF&\c&H0065FF&\bord5\shad3\fad(0,520)\t(4400,4920,\shad0)}呼唤你回家呢
 Dialogue: 8,0:00:00.93,0:00:03.40,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}いよいよ新学期が始まりました
-Dialogue: 8,0:00:03.92,0:00:08.61,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}改めて 新生徒会としてこのメンバーで活動していきたいと思います
+Dialogue: 8,0:00:03.92,0:00:08.61,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}改めて 新生徒会としてこのメンバーで\N活動していきたいと思います
 Dialogue: 8,0:00:09.27,0:00:11.48,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}全校生徒の模範となるべく
-Dialogue: 8,0:00:11.48,0:00:16.62,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}みんなで力を合わせて 生徒会を日野南高校を盛り上げていきましょう
+Dialogue: 8,0:00:11.48,0:00:16.62,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}みんなで力を合わせて \N生徒会を日野南高校を盛り上げていきましょう
 Dialogue: 8,0:00:17.11,0:00:19.24,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}クゥ！これこれ！
 Dialogue: 8,0:00:19.24,0:00:22.05,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}今までは鹿乃子のせいでバタバタしてたけど
 Dialogue: 8,0:00:22.05,0:00:25.02,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}本来私はこういうの目指してたんだから
 Dialogue: 8,0:00:25.38,0:00:27.34,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}こしたんは知らなかった
 Dialogue: 8,0:00:27.34,0:00:29.91,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}この生徒会に秘密があること
 Dialogue: 8,0:00:29.91,0:00:30.76,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}それは
-Dialogue: 8,0:00:34.60,0:00:39.14,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}この 3 人の中に シカ部廃部を狙っているやつがいるのである
+Dialogue: 8,0:00:34.60,0:00:39.14,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}この 3 人の中に \Nシカ部廃部を狙っているやつがいるのである
 Dialogue: 8,0:00:39.69,0:00:42.40,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}その頃 狙われているシカ部では
 Dialogue: 8,0:00:43.28,0:00:45.53,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}のこたんが日向ぼっこしていた
 Dialogue: 8,0:00:46.00,0:00:47.10,SIKANOKO_Bottom,鹿乃子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345ECE&}シカ…
 Dialogue: 8,0:00:48.60,0:00:49.73,SIKANOKO_Bottom,鹿乃子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345ECE&}シカ…
-Dialogue: 8,0:02:25.72,0:02:30.78,SIKANOKO_Bottom,虎子,0,0,150,fx,{\pos(960,930)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}仕事が溜まってるから 早速作業に取りかかりましょう えっと
+Dialogue: 8,0:02:25.72,0:02:30.78,SIKANOKO_Bottom,虎子,0,0,150,fx,{\pos(960,930)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}仕事が溜まってるから \N早速作業に取りかかりましょう えっと
 Dialogue: 8,0:02:30.78,0:02:33.77,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}まずは新入生用の冊子作りからね
 Dialogue: 8,0:02:33.77,0:02:35.39,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}これを印刷して
 Dialogue: 8,0:02:35.39,0:02:36.24,SIKANOKO_Bottom,根子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H615BB7&}会長
@@ -3152,7 +3167,7 @@ Dialogue: 8,0:03:15.22,0:03:17.34,SIKANOKO_Bottom,根子,0,0,0,fx,{\pos(960,1055
 Dialogue: 8,0:03:17.34,0:03:19.97,SIKANOKO_Bottom,根子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H615BB7&}何なのぉ
 Dialogue: 8,0:03:20.60,0:03:22.60,SIKANOKO_Bottom,根子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H615BB7&}私は決めたのよ
 Dialogue: 8,0:03:22.60,0:03:25.80,SIKANOKO_Bottom,根子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H615BB7&}こいつにボロを出させて シカ部を廃部に追いやり
-Dialogue: 8,0:03:25.80,0:03:30.48,SIKANOKO_Bottom,根子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H615BB7&}生徒会長の座はもちろん 学校一のマドンナの\N座からも引きずり下ろしてやるって
+Dialogue: 8,0:03:25.80,0:03:30.48,SIKANOKO_Bottom,根子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H615BB7&}生徒会長の座はもちろん \N学校一のマドンナの座からも引きずり下ろしてやるって
 Dialogue: 8,0:03:31.49,0:03:35.49,SIKANOKO_Bottom,根子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H615BB7&}そのためには何かこいつの弱みをつかまないと
 Dialogue: 8,0:03:35.78,0:03:39.51,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}誰が敵なのかあっさり明かすのがこの作品のスタイル
 Dialogue: 8,0:03:40.35,0:03:42.30,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}ありがとう 猫山田さん
@@ -3191,7 +3206,7 @@ Dialogue: 8,0:05:10.07,0:05:13.45,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\b
 Dialogue: 8,0:05:14.50,0:05:17.70,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}新学期早々 大混乱
 Dialogue: 8,0:05:17.93,0:05:19.76,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}い いや さすがにそこまでは
 Dialogue: 8,0:05:20.88,0:05:24.42,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}私のせいで全校生徒から糾弾して
-Dialogue: 8,0:05:24.42,0:05:30.87,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}生徒会への信用は地に落ち 虎視さんの責任を問われ生徒会長の辞任
+Dialogue: 8,0:05:24.42,0:05:30.87,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}生徒会への信用は地に落ち \N虎視さんの責任を問われ生徒会長の辞任
 Dialogue: 8,0:05:30.87,0:05:32.83,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}学校を去るはめに
 Dialogue: 8,0:05:33.20,0:05:35.72,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}あなた 想像力豊かね
 Dialogue: 8,0:05:36.63,0:05:39.71,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}もしそうなったらわたし わたし
@@ -3233,7 +3248,7 @@ Dialogue: 8,0:07:57.00,0:07:58.60,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055
 Dialogue: 8,0:07:58.60,0:08:00.79,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}お力になれずすみません
 Dialogue: 8,0:08:01.86,0:08:03.96,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}もうこんな時間
 Dialogue: 8,0:08:04.20,0:08:06.09,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}早く部活に行かなくちゃ
-Dialogue: 8,0:08:06.46,0:08:11.49,SIKANOKO_Bottom,根子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H615BB7&}しょうがないですね 生徒会室のかぎじめはこっちでやっておきますよ
+Dialogue: 8,0:08:06.46,0:08:11.49,SIKANOKO_Bottom,根子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H615BB7&}しょうがないですね \N生徒会室のかぎじめはこっちでやっておきますよ
 Dialogue: 8,0:08:11.69,0:08:13.09,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}えっいいの
 Dialogue: 8,0:08:13.09,0:08:15.07,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}ハハハ ありがとう
 Dialogue: 8,0:08:15.07,0:08:17.60,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}さすが副会長 頼りになるわ
@@ -3243,7 +3258,7 @@ Dialogue: 8,0:08:31.42,0:08:35.23,SIKANOKO_Bottom,根子,0,0,0,fx,{\pos(960,1055
 Dialogue: 8,0:08:35.60,0:08:37.50,SIKANOKO_Bottom,根子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H615BB7&}それじゃ 私たちも帰りも…
 Dialogue: 8,0:08:38.60,0:08:40.00,SIKANOKO_Bottom,根子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H615BB7&}し しまった
 Dialogue: 8,0:08:40.19,0:08:46.01,SIKANOKO_Bottom,根子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H615BB7&}作業に集中しすぎて シカ部のこと何もできなかった
-Dialogue: 8,0:08:46.66,0:08:51.72,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}がんばれネコちゃん！シカ部廃部への戦いはまだはじまったばかりだ！
+Dialogue: 8,0:08:46.66,0:08:51.72,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}がんばれネコちゃん！\Nシカ部廃部への戦いはまだはじまったばかりだ！
 Dialogue: 8,0:08:51.92,0:08:54.51,SIKANOKO_Bottom,根子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H615BB7&}ニャア！
 Dialogue: 8,0:09:02.46,0:09:04.52,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}わたし 虎視虎子
 Dialogue: 8,0:09:04.52,0:09:07.46,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}シカ部部長兼生徒会長やってます
@@ -3259,7 +3274,7 @@ Dialogue: 8,0:09:36.81,0:09:40.14,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055
 Dialogue: 8,0:09:40.95,0:09:42.96,SIKANOKO_Bottom,千春,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H835F68&}シカ部 いい
 Dialogue: 8,0:09:43.81,0:09:47.69,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}まずい このままだと シカ部でのわたしの本性がバレて
 Dialogue: 8,0:09:48.86,0:09:52.28,SIKANOKO_Bottom,千春,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H835F68&}会長って 元ヤンだったんですね
-Dialogue: 8,0:09:53.24,0:09:59.41,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}ならば ここはひとつ わたしがシカ部でもしっかり\N優等生してるところを見せつけねば
+Dialogue: 8,0:09:53.24,0:09:59.41,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}ならば ここはひとつ わたしがシカ部でも\Nしっかり優等生してるところを見せつけねば
 Dialogue: 8,0:10:00.08,0:10:02.18,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}鹿乃子さん ちょっと
 Dialogue: 8,0:10:02.18,0:10:02.84,SIKANOKO_Bottom,鹿乃子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345ECE&}うん？
 Dialogue: 8,0:10:03.83,0:10:07.76,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}いいか おまえ あいつが帰るまで余計なことすんなよ
@@ -3269,10 +3284,10 @@ Dialogue: 8,0:10:10.20,0:10:12.93,SIKANOKO_Bottom,鹿乃子,0,0,0,fx,{\pos(960,1
 Dialogue: 8,0:10:13.79,0:10:17.36,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}燕谷さん 今日はシカ部に来てくれてありが…
 Dialogue: 8,0:10:18.36,0:10:21.79,SIKANOKO_Bottom,马车芽,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H42907E&}それで つばめ先輩はあきたこまち派
 Dialogue: 8,0:10:21.79,0:10:24.04,SIKANOKO_Bottom,马车芽,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H42907E&}それともゆめぴりか派ですか
-Dialogue: 8,0:10:25.63,0:10:29.94,SIKANOKO_Bottom,馅子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&HAB649F&}お姉ちゃんとのただれた関係にはだれにも割りこませないんだから
+Dialogue: 8,0:10:25.63,0:10:29.94,SIKANOKO_Bottom,馅子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&HAB649F&}お姉ちゃんとのただれた関係には\Nだれにも割りこませないんだから
 Dialogue: 8,0:10:30.52,0:10:31.96,SIKANOKO_Top,虎子,0,0,0,fx,{\pos(960,15)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}イエイ！
 Dialogue: 8,0:10:34.15,0:10:36.74,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}アッハハハハ
-Dialogue: 8,0:10:36.74,0:10:41.58,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}ところで燕谷さんは シカ部がどんな活動をしてるかご存知かしら？
+Dialogue: 8,0:10:36.74,0:10:41.58,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}ところで燕谷さんは \Nシカ部がどんな活動をしてるかご存知かしら？
 Dialogue: 8,0:10:42.64,0:10:43.46,SIKANOKO_Bottom,千春,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H835F68&}活動
 Dialogue: 8,0:10:43.92,0:10:45.29,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}手応えあり！
 Dialogue: 8,0:10:45.59,0:10:50.47,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}ウフフ シカ部って実はいろんな活動をしてるのよ 例えば
@@ -3282,7 +3297,7 @@ Dialogue: 8,0:11:00.04,0:11:01.98,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055
 Dialogue: 8,0:11:02.91,0:11:04.99,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}おい 余計なことすんな
 Dialogue: 8,0:11:04.99,0:11:06.69,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}っていうかなぜこんな映像が
 Dialogue: 8,0:11:07.10,0:11:10.18,SIKANOKO_Bottom,鹿乃子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345ECE&}前回放送の第 3 話の録画だよ
-Dialogue: 8,0:11:10.18,0:11:15.99,SIKANOKO_Bottom,鹿乃子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345ECE&}いかに野生のシカとコミュニケーションをとっているか シカ部の活動を紹介したまでだが？
+Dialogue: 8,0:11:10.18,0:11:15.99,SIKANOKO_Bottom,鹿乃子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345ECE&}いかに野生のシカとコミュニケーションをとっているか \Nシカ部の活動を紹介したまでだが？
 Dialogue: 8,0:11:15.99,0:11:17.93,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}それが余計なの！
 Dialogue: 8,0:11:17.93,0:11:20.08,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}ってか あの鹿野生じゃねぇじゃん
 Dialogue: 8,0:11:20.51,0:11:26.08,SIKANOKO_Bottom,马车芽,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H42907E&}ふむふむ 自作のオリジナルソングとは人に黒歴史ありですね
@@ -3322,12 +3337,12 @@ Dialogue: 8,0:12:54.78,0:12:55.80,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055
 Dialogue: 8,0:12:56.06,0:12:59.17,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}いや 草もらって喜ぶ人間がどこに
 Dialogue: 8,0:13:02.69,0:13:05.81,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}いたー！すごい目の前にいたー！
 Dialogue: 8,0:13:05.81,0:13:08.06,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}うっ おかしい
-Dialogue: 8,0:13:08.06,0:13:13.31,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}なんでさっきからわたしには反応薄いのに 鹿乃子の方は嬉しそうなんだ
+Dialogue: 8,0:13:08.06,0:13:13.31,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}なんでさっきからわたしには反応薄いのに \N鹿乃子の方は嬉しそうなんだ
 Dialogue: 8,0:13:13.64,0:13:16.63,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}私だって後輩になつかれたい
 Dialogue: 8,0:13:16.63,0:13:18.66,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}先輩として慕ってほしい
 Dialogue: 8,0:13:18.98,0:13:21.07,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}鹿乃子に負けたくない
 Dialogue: 8,0:13:21.86,0:13:23.99,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}こしたんはがんばった
-Dialogue: 8,0:13:23.99,0:13:28.56,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}近所のなつかない犬のごとく塩対応を続ける後輩を手なずけようと
+Dialogue: 8,0:13:23.99,0:13:28.56,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}近所のなつかない犬のごとく塩対応を\N続ける後輩を手なずけようと
 Dialogue: 8,0:13:28.56,0:13:31.16,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}手を替え品を替えがんばった
 Dialogue: 8,0:13:31.16,0:13:32.93,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}が しかし
 Dialogue: 8,0:13:33.91,0:13:35.08,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}惨敗
@@ -3341,7 +3356,7 @@ Dialogue: 8,0:13:49.43,0:13:49.98,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055
 Dialogue: 8,0:13:50.53,0:13:51.14,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}そう
 Dialogue: 8,0:13:51.51,0:13:53.60,SIKANOKO_Bottom,鹿乃子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345ECE&}じゃあね また来てね
 Dialogue: 8,0:13:56.03,0:13:56.60,SIKANOKO_Bottom,千春,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H835F68&}はい
-Dialogue: 8,0:13:59.67,0:14:05.00,SIKANOKO_Bottom,鹿乃子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345ECE&}ぬふふん あの草のよさが分かるとは あやつなかなか見る目がある
+Dialogue: 8,0:13:59.67,0:14:05.00,SIKANOKO_Bottom,鹿乃子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345ECE&}ぬふふん あの草のよさが分かるとは \Nあやつなかなか見る目がある
 Dialogue: 8,0:14:06.41,0:14:08.61,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}先輩… 威厳…
 Dialogue: 8,0:14:13.34,0:14:14.23,SIKANOKO_Bottom,千春,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H835F68&}ただいま
 Dialogue: 8,0:14:14.52,0:14:17.16,SIKANOKO_Bottom,善治,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}おお千春 お帰りうん
@@ -3356,7 +3371,7 @@ Dialogue: 8,0:14:36.77,0:14:38.53,SIKANOKO_Bottom,千春,0,0,0,fx,{\pos(960,1055
 Dialogue: 8,0:14:38.53,0:14:42.32,SIKANOKO_Bottom,千春,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H835F68&}間近で見るのこたん先輩 かわいかった
 Dialogue: 8,0:14:42.57,0:14:46.46,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}知り合いのこしたんがいるなら緊張せずに話せるかと思い
 Dialogue: 8,0:14:46.46,0:14:49.57,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}勇気を出してのこたんに会いに行ったのだ
-Dialogue: 8,0:14:49.86,0:14:55.24,SIKANOKO_Bottom,千春,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H835F68&}そういえば のこ先輩と普通におしゃべりできる会長がうらやましくて
+Dialogue: 8,0:14:49.86,0:14:55.24,SIKANOKO_Bottom,千春,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H835F68&}そういえば のこ先輩と普通に\Nおしゃべりできる会長がうらやましくて
 Dialogue: 8,0:14:55.24,0:14:57.15,SIKANOKO_Bottom,千春,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H835F68&}ついじっと見ちゃったの
 Dialogue: 8,0:14:58.11,0:15:00.59,SIKANOKO_Bottom,千春,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H835F68&}気を悪くしてないといいけど
 Dialogue: 8,0:15:04.40,0:15:05.59,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}翌日
@@ -3365,7 +3380,7 @@ Dialogue: 8,0:15:09.88,0:15:13.06,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055
 Dialogue: 8,0:15:20.24,0:15:22.25,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}うあ ご ごめんなさい
 Dialogue: 8,0:15:22.25,0:15:24.36,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}おっ 狸小路さん？
 Dialogue: 8,0:15:24.54,0:15:26.44,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}あっ 会長
-Dialogue: 8,0:15:27.65,0:15:32.74,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}すみません会長 わたしの雑務に ついてきてもらってしまって
+Dialogue: 8,0:15:27.65,0:15:32.74,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}すみません会長 わたしの雑務に \Nついてきてもらってしまって
 Dialogue: 8,0:15:33.15,0:15:36.04,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}気にしないで 私も手が空いてたし
 Dialogue: 8,0:15:36.04,0:15:38.13,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}2 人でやった方が早く終わるもの
 Dialogue: 8,0:15:38.66,0:15:41.38,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}後輩に慕われる先輩その 1
@@ -3375,7 +3390,7 @@ Dialogue: 8,0:15:47.92,0:15:49.50,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055
 Dialogue: 8,0:15:49.50,0:15:52.17,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}備品の数を数えるんだったわね
 Dialogue: 8,0:15:52.17,0:15:55.64,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}それにしても体育倉庫なんて初めて入ったわ
 Dialogue: 8,0:15:55.64,0:15:56.64,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}私もです
-Dialogue: 8,0:15:56.90,0:16:01.52,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}あっ 漫画とかだと 体育倉庫ってよく閉じ込められたりするよね
+Dialogue: 8,0:15:56.90,0:16:01.52,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}あっ 漫画とかだと \N体育倉庫ってよく閉じ込められたりするよね
 Dialogue: 8,0:16:01.52,0:16:04.04,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}後輩に慕われる先輩その 2
 Dialogue: 8,0:16:04.04,0:16:06.15,SIKANOKO_Bottom,旁白,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H345B85&}気さくに冗談とかを言ってくれる
 Dialogue: 8,0:16:06.48,0:16:08.81,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}私たちも 閉じ込められたりして
@@ -3397,7 +3412,7 @@ Dialogue: 8,0:16:51.53,0:16:53.52,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055
 Dialogue: 8,0:16:54.02,0:16:57.77,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}だ だってもう一生ここから出られないかもしれないですし
 Dialogue: 8,0:16:57.77,0:17:01.75,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}んなわけないでしょ何をどう考えたらそうなるの
 Dialogue: 8,0:17:01.75,0:17:05.36,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}密室の体育倉庫といえば ラブコメの定番
-Dialogue: 8,0:17:05.36,0:17:09.73,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}でも私が会長とそんなことになるなんて 恐れ多すぎてありえません
+Dialogue: 8,0:17:05.36,0:17:09.73,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}でも私が会長とそんなことになるなんて \N恐れ多すぎてありえません
 Dialogue: 8,0:17:10.44,0:17:12.84,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}そうなると 残された道は
 Dialogue: 8,0:17:13.22,0:17:15.85,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}誰も助けに来ず 過ぎ去る日々
 Dialogue: 8,0:17:16.40,0:17:19.49,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}尽きる体力 疲弊する精神
@@ -3407,7 +3422,7 @@ Dialogue: 8,0:17:22.80,0:17:25.13,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\b
 Dialogue: 8,0:17:25.13,0:17:29.56,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}未来永劫語り継がれ大して面白くもない動画にされちゃうんだ
 Dialogue: 8,0:17:31.81,0:17:32.74,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}浮いてる
 Dialogue: 8,0:17:33.06,0:17:37.08,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}思考の飛躍がすごい そして想像力豊か
-Dialogue: 8,0:17:37.08,0:17:42.48,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}だ 大丈夫よ そうなる前に 心配した誰かが探しに来てくれるから
+Dialogue: 8,0:17:37.08,0:17:42.48,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}だ 大丈夫よ そうなる前に \N心配した誰かが探しに来てくれるから
 Dialogue: 8,0:17:43.40,0:17:43.94,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}ん？
 Dialogue: 8,0:17:45.45,0:17:47.55,SIKANOKO_Bottom,绢,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H9171B7&}何か 聞こえる
 Dialogue: 8,0:17:47.80,0:17:49.26,SIKANOKO_Bottom,虎子,0,0,0,fx,{\pos(960,1055)\bord3.64\fscx70\fscy70\fn28SNCQB3\3c&H237C99&}この声は
