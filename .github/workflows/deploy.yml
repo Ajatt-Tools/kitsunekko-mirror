@@ -50,7 +50,7 @@ jobs:
         shell: bash
         run: >-
           rclone -v sync --fast-list --checksum
-          --transfers=45 --checkers=50
+          --transfers=25 --checkers=30
           --s3-upload-concurrency "$(nproc)"
           "$PWD/_site" "s3-connect:subtitles.ajatt.top"
           --exclude ".git/"
