@@ -3,7 +3,6 @@
 set -euo pipefail
 
 readonly target_dir=subtitles
-readonly ignore_file=.kitsuignore
 
 main() {
 	if ! cd -- "$target_dir"; then
