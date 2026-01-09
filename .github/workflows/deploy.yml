@@ -39,7 +39,9 @@ jobs:
 
       - name: Disk Info
         shell: bash
-        run: du -sh subtitles
+        run: |
+          du -sh subtitles
+          df -h .
 
       - name: Set up Python
         uses: actions/setup-python@v6
