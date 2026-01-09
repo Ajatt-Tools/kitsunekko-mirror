@@ -1,29 +1,37 @@
 ﻿[Script Info]
+Title: [MingY&LavaAnimeSub] Machikado Mazoku 2-Choume [01].CHS_JPN
 ScriptType: v4.00+
 PlayResX: 1920
 PlayResY: 1080
+LayoutResX: 1920
+LayoutResY: 1080
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: CN,冬青黑体简体中文 W6,68,&H00FFFFFF,&H000000FF,&H00141414,&H14141414,0,0,0,0,100,100,1,0,1,3,0,2,30,30,60,1
-Style: JP,Hiragino Kaku Gothic ProN W6,50,&H00FFFFFF,&H00FFFFFF,&H00141414,&H910E0807,0,0,0,0,100,100,1,0,1,2.2,0,2,30,30,9,1
+Style: JP,Hiragino Kaku Gothic ProN W6,80,&H00FFFFFF,&H00FFFFFF,&H00141414,&H910E0807,0,0,0,0,100,100,0,0,1,3,0,2,30,30,54,1
 Style: OPJP,FOT-Aokane Std EB,65,&H00A066FF,&HFFFFFFFF,&H00FFFFFF,&H28303030,0,0,0,0,100,100,5,0,1,4,0,2,23,23,23,1
 Style: EDJP,FOT-Humming Std D,60,&H00FFFFFF,&HFFFFFFFF,&H00E04137,&H00000000,0,0,0,0,100,100,5,0,1,2,0,2,15,15,20,1
 
 [Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,,------ Template ------
 Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,code all,function char_count(ref) ref=ref or 1 if ci[ref] then ci[ref]=ci[ref]+1 else ci[ref]=1 end  return "" end    shape_heart="m 16 9 b 13 2 5 1 3 8 b 0 16 9 22 16 27 b 23 22 32 16 29 8 b 26 1 19 2 16 9"   backTags="\\bord7\\3cF7994F\\shad2",""
+Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,code line all,ci={} cn=_G.unicode.len(orgline.text_stripped)
 Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,code line all,fxgroup.A = (string.sub(line.actor,1)=="A")   fxgroup.B = (string.sub(line.actor,1)=="B")  fxgroup.C = (string.sub(line.actor,1)=="C")  fxgroup.D = (string.sub(line.actor,1)=="D")  fxgroup.E = (string.sub(line.actor,1)=="E")
+Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template line notext loop 2 fxgroup A,!retime("line",(cn/2+1)*60,(cn/2+1)*60)!{\pos(!$lleft+(j-1)*$lwidth+math.pow(-1,j)*70!,$lmiddle)\fad(400,400)\fscx140\fscy140\an5\p1!backTags!}!shape_heart!
+Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template line notext loop 2 fxgroup A,!retime("line",(cn/2+1)*60,(cn/2+1)*60)!{\pos(!$lleft+(j-1)*$lwidth+math.pow(-1,j)*70!,$lmiddle)\fad(400,400)\fscx140\fscy140\an5\p1}!shape_heart!
 Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template char fxgroup A,!char_count(1)!!retime("line",math.abs(cn/2-ci[1])*60,math.abs(cn/2-ci[1])*60)!{\pos($x,$y)\fad(400,400)!backTags!}
 Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template char fxgroup A,!char_count(2)!!retime("line",math.abs(cn/2-ci[2])*60,math.abs(cn/2-ci[2])*60)!{\pos($x,$y)\fad(400,400)}
 Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template char fxgroup B,!char_count(1)!!retime("line",(ci[1]-1)*60,(ci[1]-1)*60)!{\pos($x,$y)\fad(250,250)!backTags!}
 Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template char fxgroup B,!char_count(2)!!retime("line",(ci[2]-1)*60,(ci[2]-1)*60)!{\pos($x,$y)\fad(250,250)}
 Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template char fxgroup C,!char_count(1)!!retime("line",(ci[1]-1)*60,(ci[1]-1)*60)!{\pos($x,$y)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(!line.duration-200!,!line.duration!,\fscx30\fscy30)!backTags!}
 Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template char fxgroup C,!char_count(2)!!retime("line",(ci[2]-1)*60,(ci[2]-1)*60)!{\pos($x,$y)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(!line.duration-200!,!line.duration!,\fscx30\fscy30)}
+Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template line notext fxgroup D,!maxloop(($ldur-650)/110)!!retime("line",remember("st",((j-1)/(($ldur-650)/110))*($ldur-400)),-$ldur+recall.st+math.random(700,1200))!{\fad(180,180)\fr!math.random(-75,75)!\t(\fr!math.random(-180,180)!)}{\fs!math.random(25,32)!\t(0,!line.duration/3!,\fs!math.random(35,45)!)\t(!line.duration/3*2!,!line.duration!,\fs!math.random(25,35)!)}{\an2\move(!remember("sx",math.random($left-25,$right-20))!,!$top+math.random(-10,8)!,!recall.sx+math.random(-12,24)!,!$bottom+math.random(-20,12)!)}{\cDAFEFF\3cF6FFEE\bord1.8\blur5}{\p1}m 0 0 l 3 -10 l 6 0 l 16 0 l 8 7 l 12 19 l 3 11 l -7 19 l -3 7 l -11 0
 Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template char fxgroup D,!char_count(1)!!retime("line",math.abs(cn/2-ci[1])*60,math.abs(cn/2-ci[1])*60)!{\pos($x,$y)\fad(400,400)!backTags!}
 Comment: 0,0:00:00.00,0:00:00.00,OPJP,,0,0,0,template char fxgroup D,!char_count(2)!!retime("line",math.abs(cn/2-ci[2])*60,math.abs(cn/2-ci[2])*60)!{\pos($x,$y)\fad(400,400)}
 Comment: 0,0:00:00.00,0:00:00.00,EDJP,,0,0,0,template syl fxgroup A,!retime("line",$sstart-50,50)!{\pos($x,$y)\fad(225,225)}{\bord3\blur4\1aFF}
 Comment: 0,0:00:00.00,0:00:00.00,EDJP,,0,0,0,template syl fxgroup A,!retime("line",$sstart-50,50)!{\pos($x,$y)\fad(225,225)}
+Comment: 0,0:00:00.00,0:00:00.00,EDJP,,0,0,0,template line notext fxgroup B,!retime("line",-50,50)!{\pos(!$x+5!,!$bottom+8!)\fad(225,225)}{\bord2.5\blur2\fscx!$lwidth!\3cFFFFFF}{\clip(960,!$ltop-20!,960,!$lbottom+20!)\t(0,225,1.2,\clip(!$lleft-20!,!$ltop-20!,!$lright+20!,!$lbottom+20!))}{\p1}m 0 0 l 100 0 l 100 1 l 0 1
 Comment: 0,0:00:00.00,0:00:00.00,EDJP,,0,0,0,template line noblank fxgroup B,!retime("line",-50,-$ldur+175)!{\move($x,!$y+30!,$x,!$y-12!)\fad(225,0)}{\bord3\blur4\1aFF}{\clip($lleft,!$ltop-50!,$lright,!$lbottom+8!)}
 Comment: 0,0:00:00.00,0:00:00.00,EDJP,,0,0,0,template line noblank fxgroup B,!retime("line",175,-175)!{\move($x,!$y-12!,$x,!$y!,0,200)}{\bord3\blur4\1aFF}
 Comment: 0,0:00:00.00,0:00:00.00,EDJP,,0,0,0,template line noblank fxgroup B,!retime("line",$ldur-175,50)!{\move($x,$y,$x,!$y+30!)\fad(0,225)}{\bord3\blur4\1aFF}{\clip($lleft,!$ltop-50!,$lright,!$lbottom+8!)}
@@ -32,6 +40,8 @@ Comment: 0,0:00:00.00,0:00:00.00,EDJP,,0,0,0,template line noblank fxgroup B,!re
 Comment: 0,0:00:00.00,0:00:00.00,EDJP,,0,0,0,template line noblank fxgroup B,!retime("line",$ldur-175,50)!{\move($x,$y,$x,!$y+30!)\fad(0,225)}{\clip($lleft,!$ltop-50!,$lright,!$lbottom+8!)}
 Comment: 0,0:00:00.00,0:00:00.00,EDJP,,0,0,0,template char fxgroup C,!char_count(1)!!retime("line",(ci[1]-1)*38,(ci[1]-1)*38)!{\pos($center,$middle)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(!line.duration-200!,!line.duration!,\fscx30\fscy30)}{\bord3\blur4\1aFF}
 Comment: 0,0:00:00.00,0:00:00.00,EDJP,,0,0,0,template char fxgroup C,!char_count(2)!!retime("line",(ci[2]-1)*38,(ci[2]-1)*38)!{\pos($center,$middle)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(!line.duration-200!,!line.duration!,\fscx30\fscy30)}
+Comment: 0,0:00:00.00,0:00:00.00,EDJP,,0,0,0,template line notext fxgroup C,!retime("line",-50,cn*38+100-$ldur)!{\move($lleft,$middle,$lright,$middle,50,!line.duration-100!)\an5)\fad(180,180)}{\fscx80\fscy80\t(0,200,\fscx90\fscy90)\t(!line.duration-200!,!line.duration!,\fscx80\fscy80)}{\bord0\blur12\1a70}{\p1}m 0 0 s 100 0 100 100 0 100 c
+Comment: 0,0:00:00.00,0:00:00.00,EDJP,,0,0,0,template char notext fxgroup D,!char_count(1)!!retime("line",(ci[1]-1)*38-50,(ci[1]-1)*38+175-$ldur)!{\pos($center,$middle)\an5)\fad(60,180)}{\fscx20\fscy20\t(0,100,1.2,\fscx82\fscy82)\t(100,!line.duration!,\fscx120\fscy120)}{\bord3\blur2\1aFF}{\p1}m 0 0 s 100 0 100 100 0 100 c
 Comment: 0,0:00:00.00,0:00:00.00,EDJP,,0,0,0,template char fxgroup D,!char_count(2)!!retime("line",(ci[2]-1)*38,(ci[2]-1)*38)!{\pos($center,$middle)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(!line.duration-200!,!line.duration!,\fscx30\fscy30)}{\bord3\blur4\1aFF}
 Comment: 0,0:00:00.00,0:00:00.00,EDJP,,0,0,0,template char fxgroup D,!char_count(3)!!retime("line",(ci[3]-1)*38,(ci[3]-1)*38)!{\pos($center,$middle)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(!line.duration-200!,!line.duration!,\fscx30\fscy30)}
 Comment: 0,0:00:00.00,0:00:00.00,EDJP,,0,0,0,template char fxgroup E,!char_count(1)!!retime("line",(ci[1]-1)*38,(ci[1]-1)*38)!{\pos($center,$middle)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(!line.duration-200!,!line.duration!,\fscx30\fscy30)}{\bord3\blur4\1aFF}
@@ -617,7 +627,7 @@ Dialogue: 0,0:01:33.68,0:01:39.35,OPJP,B,0,0,0,fx,{\pos(490,1057)\fad(250,250)\b
 Dialogue: 0,0:01:33.74,0:01:39.41,OPJP,B,0,0,0,fx,{\pos(540,1057)\fad(250,250)\bord7\3cF7994F\shad2}ち
 Dialogue: 0,0:01:33.80,0:01:39.47,OPJP,B,0,0,0,fx,{\pos(590,1057)\fad(250,250)\bord7\3cF7994F\shad2}ょ
 Dialogue: 0,0:01:33.86,0:01:39.53,OPJP,B,0,0,0,fx,{\pos(640,1057)\fad(250,250)\bord7\3cF7994F\shad2}こ
-Dialogue: 0,0:01:33.92,0:01:39.59,OPJP,B,0,0,0,fx,{\pos(690,1057)\fad(250,250)\bord7\3cF7994F\shad2}　
+Dialogue: 0,0:01:33.92,0:01:39.59,OPJP,B,0,0,0,fx,{\pos(690,1057)\fad(250,250)\bord7\3cF7994F\shad2}
 Dialogue: 0,0:01:33.98,0:01:39.65,OPJP,B,0,0,0,fx,{\pos(740,1057)\fad(250,250)\bord7\3cF7994F\shad2}さ
 Dialogue: 0,0:01:34.04,0:01:39.71,OPJP,B,0,0,0,fx,{\pos(790,1057)\fad(250,250)\bord7\3cF7994F\shad2}じ
 Dialogue: 0,0:01:34.10,0:01:39.77,OPJP,B,0,0,0,fx,{\pos(839,1057)\fad(250,250)\bord7\3cF7994F\shad2}加
@@ -640,7 +650,7 @@ Dialogue: 0,0:01:33.68,0:01:39.35,OPJP,B,0,0,0,fx,{\pos(490,1057)\fad(250,250)}�
 Dialogue: 0,0:01:33.74,0:01:39.41,OPJP,B,0,0,0,fx,{\pos(540,1057)\fad(250,250)}ち
 Dialogue: 0,0:01:33.80,0:01:39.47,OPJP,B,0,0,0,fx,{\pos(590,1057)\fad(250,250)}ょ
 Dialogue: 0,0:01:33.86,0:01:39.53,OPJP,B,0,0,0,fx,{\pos(640,1057)\fad(250,250)}こ
-Dialogue: 0,0:01:33.92,0:01:39.59,OPJP,B,0,0,0,fx,{\pos(690,1057)\fad(250,250)}　
+Dialogue: 0,0:01:33.92,0:01:39.59,OPJP,B,0,0,0,fx,{\pos(690,1057)\fad(250,250)}
 Dialogue: 0,0:01:33.98,0:01:39.65,OPJP,B,0,0,0,fx,{\pos(740,1057)\fad(250,250)}さ
 Dialogue: 0,0:01:34.04,0:01:39.71,OPJP,B,0,0,0,fx,{\pos(790,1057)\fad(250,250)}じ
 Dialogue: 0,0:01:34.10,0:01:39.77,OPJP,B,0,0,0,fx,{\pos(839,1057)\fad(250,250)}加
@@ -664,7 +674,7 @@ Dialogue: 0,0:01:39.41,0:01:44.33,OPJP,B,0,0,0,fx,{\pos(710,1057)\fad(250,250)\b
 Dialogue: 0,0:01:39.47,0:01:44.39,OPJP,B,0,0,0,fx,{\pos(760,1057)\fad(250,250)\bord7\3cF7994F\shad2}ば
 Dialogue: 0,0:01:39.53,0:01:44.45,OPJP,B,0,0,0,fx,{\pos(810,1057)\fad(250,250)\bord7\3cF7994F\shad2}ち
 Dialogue: 0,0:01:39.59,0:01:44.51,OPJP,B,0,0,0,fx,{\pos(860,1057)\fad(250,250)\bord7\3cF7994F\shad2}か
-Dialogue: 0,0:01:39.65,0:01:44.57,OPJP,B,0,0,0,fx,{\pos(910,1057)\fad(250,250)\bord7\3cF7994F\shad2}　
+Dialogue: 0,0:01:39.65,0:01:44.57,OPJP,B,0,0,0,fx,{\pos(910,1057)\fad(250,250)\bord7\3cF7994F\shad2}
 Dialogue: 0,0:01:39.71,0:01:44.63,OPJP,B,0,0,0,fx,{\pos(960,1057)\fad(250,250)\bord7\3cF7994F\shad2}ど
 Dialogue: 0,0:01:39.77,0:01:44.69,OPJP,B,0,0,0,fx,{\pos(1010,1057)\fad(250,250)\bord7\3cF7994F\shad2}ん
 Dialogue: 0,0:01:39.83,0:01:44.75,OPJP,B,0,0,0,fx,{\pos(1060,1057)\fad(250,250)\bord7\3cF7994F\shad2}な
@@ -679,7 +689,7 @@ Dialogue: 0,0:01:39.41,0:01:44.33,OPJP,B,0,0,0,fx,{\pos(710,1057)\fad(250,250)}�
 Dialogue: 0,0:01:39.47,0:01:44.39,OPJP,B,0,0,0,fx,{\pos(760,1057)\fad(250,250)}ば
 Dialogue: 0,0:01:39.53,0:01:44.45,OPJP,B,0,0,0,fx,{\pos(810,1057)\fad(250,250)}ち
 Dialogue: 0,0:01:39.59,0:01:44.51,OPJP,B,0,0,0,fx,{\pos(860,1057)\fad(250,250)}か
-Dialogue: 0,0:01:39.65,0:01:44.57,OPJP,B,0,0,0,fx,{\pos(910,1057)\fad(250,250)}　
+Dialogue: 0,0:01:39.65,0:01:44.57,OPJP,B,0,0,0,fx,{\pos(910,1057)\fad(250,250)}
 Dialogue: 0,0:01:39.71,0:01:44.63,OPJP,B,0,0,0,fx,{\pos(960,1057)\fad(250,250)}ど
 Dialogue: 0,0:01:39.77,0:01:44.69,OPJP,B,0,0,0,fx,{\pos(1010,1057)\fad(250,250)}ん
 Dialogue: 0,0:01:39.83,0:01:44.75,OPJP,B,0,0,0,fx,{\pos(1060,1057)\fad(250,250)}な
@@ -703,7 +713,7 @@ Dialogue: 0,0:01:44.64,0:01:48.85,OPJP,C,0,0,0,fx,{\pos(785,1057)\fad(250,250)}{
 Dialogue: 0,0:01:44.70,0:01:48.91,OPJP,C,0,0,0,fx,{\pos(835,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4010,4210,\fscx30\fscy30)\bord7\3cF7994F\shad2}か
 Dialogue: 0,0:01:44.76,0:01:48.97,OPJP,C,0,0,0,fx,{\pos(885,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4010,4210,\fscx30\fscy30)\bord7\3cF7994F\shad2}せ
 Dialogue: 0,0:01:44.82,0:01:49.03,OPJP,C,0,0,0,fx,{\pos(935,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4010,4210,\fscx30\fscy30)\bord7\3cF7994F\shad2}て
-Dialogue: 0,0:01:44.88,0:01:49.09,OPJP,C,0,0,0,fx,{\pos(985,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4010,4210,\fscx30\fscy30)\bord7\3cF7994F\shad2}　
+Dialogue: 0,0:01:44.88,0:01:49.09,OPJP,C,0,0,0,fx,{\pos(985,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4010,4210,\fscx30\fscy30)\bord7\3cF7994F\shad2}
 Dialogue: 0,0:01:44.94,0:01:49.15,OPJP,C,0,0,0,fx,{\pos(1035,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4010,4210,\fscx30\fscy30)\bord7\3cF7994F\shad2}コ
 Dialogue: 0,0:01:45.00,0:01:49.21,OPJP,C,0,0,0,fx,{\pos(1085,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4010,4210,\fscx30\fscy30)\bord7\3cF7994F\shad2}ア
 Dialogue: 0,0:01:45.06,0:01:49.27,OPJP,C,0,0,0,fx,{\pos(1135,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4010,4210,\fscx30\fscy30)\bord7\3cF7994F\shad2}の
@@ -717,7 +727,7 @@ Dialogue: 0,0:01:44.64,0:01:48.85,OPJP,C,0,0,0,fx,{\pos(785,1057)\fad(250,250)}{
 Dialogue: 0,0:01:44.70,0:01:48.91,OPJP,C,0,0,0,fx,{\pos(835,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4010,4210,\fscx30\fscy30)}か
 Dialogue: 0,0:01:44.76,0:01:48.97,OPJP,C,0,0,0,fx,{\pos(885,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4010,4210,\fscx30\fscy30)}せ
 Dialogue: 0,0:01:44.82,0:01:49.03,OPJP,C,0,0,0,fx,{\pos(935,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4010,4210,\fscx30\fscy30)}て
-Dialogue: 0,0:01:44.88,0:01:49.09,OPJP,C,0,0,0,fx,{\pos(985,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4010,4210,\fscx30\fscy30)}　
+Dialogue: 0,0:01:44.88,0:01:49.09,OPJP,C,0,0,0,fx,{\pos(985,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4010,4210,\fscx30\fscy30)}
 Dialogue: 0,0:01:44.94,0:01:49.15,OPJP,C,0,0,0,fx,{\pos(1035,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4010,4210,\fscx30\fscy30)}コ
 Dialogue: 0,0:01:45.00,0:01:49.21,OPJP,C,0,0,0,fx,{\pos(1085,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4010,4210,\fscx30\fscy30)}ア
 Dialogue: 0,0:01:45.06,0:01:49.27,OPJP,C,0,0,0,fx,{\pos(1135,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4010,4210,\fscx30\fscy30)}の
@@ -734,7 +744,7 @@ Dialogue: 0,0:01:49.03,0:01:53.87,OPJP,C,0,0,0,fx,{\pos(860,1057)\fad(250,250)}{
 Dialogue: 0,0:01:49.09,0:01:53.93,OPJP,C,0,0,0,fx,{\pos(910,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4640,4840,\fscx30\fscy30)\bord7\3cF7994F\shad2}せ
 Dialogue: 0,0:01:49.15,0:01:53.99,OPJP,C,0,0,0,fx,{\pos(960,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4640,4840,\fscx30\fscy30)\bord7\3cF7994F\shad2}た
 Dialogue: 0,0:01:49.21,0:01:54.05,OPJP,C,0,0,0,fx,{\pos(1010,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4640,4840,\fscx30\fscy30)\bord7\3cF7994F\shad2}ら
-Dialogue: 0,0:01:49.27,0:01:54.11,OPJP,C,0,0,0,fx,{\pos(1060,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4640,4840,\fscx30\fscy30)\bord7\3cF7994F\shad2}　
+Dialogue: 0,0:01:49.27,0:01:54.11,OPJP,C,0,0,0,fx,{\pos(1060,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4640,4840,\fscx30\fscy30)\bord7\3cF7994F\shad2}
 Dialogue: 0,0:01:49.33,0:01:54.17,OPJP,C,0,0,0,fx,{\pos(1110,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4640,4840,\fscx30\fscy30)\bord7\3cF7994F\shad2}こ
 Dialogue: 0,0:01:49.39,0:01:54.23,OPJP,C,0,0,0,fx,{\pos(1160,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4640,4840,\fscx30\fscy30)\bord7\3cF7994F\shad2}わ
 Dialogue: 0,0:01:49.45,0:01:54.29,OPJP,C,0,0,0,fx,{\pos(1210,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4640,4840,\fscx30\fscy30)\bord7\3cF7994F\shad2}く
@@ -751,7 +761,7 @@ Dialogue: 0,0:01:49.03,0:01:53.87,OPJP,C,0,0,0,fx,{\pos(860,1057)\fad(250,250)}{
 Dialogue: 0,0:01:49.09,0:01:53.93,OPJP,C,0,0,0,fx,{\pos(910,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4640,4840,\fscx30\fscy30)}せ
 Dialogue: 0,0:01:49.15,0:01:53.99,OPJP,C,0,0,0,fx,{\pos(960,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4640,4840,\fscx30\fscy30)}た
 Dialogue: 0,0:01:49.21,0:01:54.05,OPJP,C,0,0,0,fx,{\pos(1010,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4640,4840,\fscx30\fscy30)}ら
-Dialogue: 0,0:01:49.27,0:01:54.11,OPJP,C,0,0,0,fx,{\pos(1060,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4640,4840,\fscx30\fscy30)}　
+Dialogue: 0,0:01:49.27,0:01:54.11,OPJP,C,0,0,0,fx,{\pos(1060,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4640,4840,\fscx30\fscy30)}
 Dialogue: 0,0:01:49.33,0:01:54.17,OPJP,C,0,0,0,fx,{\pos(1110,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4640,4840,\fscx30\fscy30)}こ
 Dialogue: 0,0:01:49.39,0:01:54.23,OPJP,C,0,0,0,fx,{\pos(1160,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4640,4840,\fscx30\fscy30)}わ
 Dialogue: 0,0:01:49.45,0:01:54.29,OPJP,C,0,0,0,fx,{\pos(1210,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(4640,4840,\fscx30\fscy30)}く
@@ -764,7 +774,7 @@ Dialogue: 0,0:01:54.26,0:01:58.09,OPJP,C,0,0,0,fx,{\pos(785,1057)\fad(250,250)}{
 Dialogue: 0,0:01:54.32,0:01:58.15,OPJP,C,0,0,0,fx,{\pos(835,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(3630,3830,\fscx30\fscy30)\bord7\3cF7994F\shad2}時
 Dialogue: 0,0:01:54.38,0:01:58.21,OPJP,C,0,0,0,fx,{\pos(885,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(3630,3830,\fscx30\fscy30)\bord7\3cF7994F\shad2}に
 Dialogue: 0,0:01:54.44,0:01:58.27,OPJP,C,0,0,0,fx,{\pos(935,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(3630,3830,\fscx30\fscy30)\bord7\3cF7994F\shad2}は
-Dialogue: 0,0:01:54.50,0:01:58.33,OPJP,C,0,0,0,fx,{\pos(985,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(3630,3830,\fscx30\fscy30)\bord7\3cF7994F\shad2}　
+Dialogue: 0,0:01:54.50,0:01:58.33,OPJP,C,0,0,0,fx,{\pos(985,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(3630,3830,\fscx30\fscy30)\bord7\3cF7994F\shad2}
 Dialogue: 0,0:01:54.56,0:01:58.39,OPJP,C,0,0,0,fx,{\pos(1035,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(3630,3830,\fscx30\fscy30)\bord7\3cF7994F\shad2}思
 Dialogue: 0,0:01:54.62,0:01:58.45,OPJP,C,0,0,0,fx,{\pos(1085,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(3630,3830,\fscx30\fscy30)\bord7\3cF7994F\shad2}い
 Dialogue: 0,0:01:54.68,0:01:58.51,OPJP,C,0,0,0,fx,{\pos(1135,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(3630,3830,\fscx30\fscy30)\bord7\3cF7994F\shad2}出
@@ -776,7 +786,7 @@ Dialogue: 0,0:01:54.26,0:01:58.09,OPJP,C,0,0,0,fx,{\pos(785,1057)\fad(250,250)}{
 Dialogue: 0,0:01:54.32,0:01:58.15,OPJP,C,0,0,0,fx,{\pos(835,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(3630,3830,\fscx30\fscy30)}時
 Dialogue: 0,0:01:54.38,0:01:58.21,OPJP,C,0,0,0,fx,{\pos(885,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(3630,3830,\fscx30\fscy30)}に
 Dialogue: 0,0:01:54.44,0:01:58.27,OPJP,C,0,0,0,fx,{\pos(935,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(3630,3830,\fscx30\fscy30)}は
-Dialogue: 0,0:01:54.50,0:01:58.33,OPJP,C,0,0,0,fx,{\pos(985,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(3630,3830,\fscx30\fscy30)}　
+Dialogue: 0,0:01:54.50,0:01:58.33,OPJP,C,0,0,0,fx,{\pos(985,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(3630,3830,\fscx30\fscy30)}
 Dialogue: 0,0:01:54.56,0:01:58.39,OPJP,C,0,0,0,fx,{\pos(1035,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(3630,3830,\fscx30\fscy30)}思
 Dialogue: 0,0:01:54.62,0:01:58.45,OPJP,C,0,0,0,fx,{\pos(1085,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(3630,3830,\fscx30\fscy30)}い
 Dialogue: 0,0:01:54.68,0:01:58.51,OPJP,C,0,0,0,fx,{\pos(1135,1057)\fad(250,250)}{\fscx30\fscy30\t(0,250,\fscx112\fscy112)\t(250,400,\fscx100\fscy100)\t(3630,3830,\fscx30\fscy30)}出
@@ -902,7 +912,7 @@ Dialogue: 0,0:02:10.03,0:02:14.08,OPJP,D,0,0,0,fx,{\pos(846,1057)\fad(400,400)\b
 Dialogue: 0,0:02:09.97,0:02:14.02,OPJP,D,0,0,0,fx,{\pos(895,1057)\fad(400,400)\bord7\3cF7994F\shad2}こ
 Dialogue: 0,0:02:09.97,0:02:14.02,OPJP,D,0,0,0,fx,{\pos(945,1057)\fad(400,400)\bord7\3cF7994F\shad2}と
 Dialogue: 0,0:02:10.03,0:02:14.08,OPJP,D,0,0,0,fx,{\pos(995,1057)\fad(400,400)\bord7\3cF7994F\shad2}も
-Dialogue: 0,0:02:10.09,0:02:14.14,OPJP,D,0,0,0,fx,{\pos(1045,1057)\fad(400,400)\bord7\3cF7994F\shad2}　
+Dialogue: 0,0:02:10.09,0:02:14.14,OPJP,D,0,0,0,fx,{\pos(1045,1057)\fad(400,400)\bord7\3cF7994F\shad2}
 Dialogue: 0,0:02:10.15,0:02:14.20,OPJP,D,0,0,0,fx,{\pos(1095,1057)\fad(400,400)\bord7\3cF7994F\shad2}乗
 Dialogue: 0,0:02:10.21,0:02:14.26,OPJP,D,0,0,0,fx,{\pos(1145,1057)\fad(400,400)\bord7\3cF7994F\shad2}り
 Dialogue: 0,0:02:10.27,0:02:14.32,OPJP,D,0,0,0,fx,{\pos(1195,1057)\fad(400,400)\bord7\3cF7994F\shad2}越
@@ -923,7 +933,7 @@ Dialogue: 0,0:02:10.03,0:02:14.08,OPJP,D,0,0,0,fx,{\pos(846,1057)\fad(400,400)}�
 Dialogue: 0,0:02:09.97,0:02:14.02,OPJP,D,0,0,0,fx,{\pos(895,1057)\fad(400,400)}こ
 Dialogue: 0,0:02:09.97,0:02:14.02,OPJP,D,0,0,0,fx,{\pos(945,1057)\fad(400,400)}と
 Dialogue: 0,0:02:10.03,0:02:14.08,OPJP,D,0,0,0,fx,{\pos(995,1057)\fad(400,400)}も
-Dialogue: 0,0:02:10.09,0:02:14.14,OPJP,D,0,0,0,fx,{\pos(1045,1057)\fad(400,400)}　
+Dialogue: 0,0:02:10.09,0:02:14.14,OPJP,D,0,0,0,fx,{\pos(1045,1057)\fad(400,400)}
 Dialogue: 0,0:02:10.15,0:02:14.20,OPJP,D,0,0,0,fx,{\pos(1095,1057)\fad(400,400)}乗
 Dialogue: 0,0:02:10.21,0:02:14.26,OPJP,D,0,0,0,fx,{\pos(1145,1057)\fad(400,400)}り
 Dialogue: 0,0:02:10.27,0:02:14.32,OPJP,D,0,0,0,fx,{\pos(1195,1057)\fad(400,400)}越
@@ -938,7 +948,7 @@ Dialogue: 0,0:02:14.86,0:02:19.32,OPJP,B,0,0,0,fx,{\pos(785,1057)\fad(250,250)\b
 Dialogue: 0,0:02:14.92,0:02:19.38,OPJP,B,0,0,0,fx,{\pos(835,1057)\fad(250,250)\bord7\3cF7994F\shad2}た
 Dialogue: 0,0:02:14.98,0:02:19.44,OPJP,B,0,0,0,fx,{\pos(885,1057)\fad(250,250)\bord7\3cF7994F\shad2}め
 Dialogue: 0,0:02:15.04,0:02:19.50,OPJP,B,0,0,0,fx,{\pos(935,1057)\fad(250,250)\bord7\3cF7994F\shad2}に
-Dialogue: 0,0:02:15.10,0:02:19.56,OPJP,B,0,0,0,fx,{\pos(985,1057)\fad(250,250)\bord7\3cF7994F\shad2}　
+Dialogue: 0,0:02:15.10,0:02:19.56,OPJP,B,0,0,0,fx,{\pos(985,1057)\fad(250,250)\bord7\3cF7994F\shad2}
 Dialogue: 0,0:02:15.16,0:02:19.62,OPJP,B,0,0,0,fx,{\pos(1035,1057)\fad(250,250)\bord7\3cF7994F\shad2}頑
 Dialogue: 0,0:02:15.22,0:02:19.68,OPJP,B,0,0,0,fx,{\pos(1085,1057)\fad(250,250)\bord7\3cF7994F\shad2}張
 Dialogue: 0,0:02:15.28,0:02:19.74,OPJP,B,0,0,0,fx,{\pos(1135,1057)\fad(250,250)\bord7\3cF7994F\shad2}る
@@ -950,7 +960,7 @@ Dialogue: 0,0:02:14.86,0:02:19.32,OPJP,B,0,0,0,fx,{\pos(785,1057)\fad(250,250)}�
 Dialogue: 0,0:02:14.92,0:02:19.38,OPJP,B,0,0,0,fx,{\pos(835,1057)\fad(250,250)}た
 Dialogue: 0,0:02:14.98,0:02:19.44,OPJP,B,0,0,0,fx,{\pos(885,1057)\fad(250,250)}め
 Dialogue: 0,0:02:15.04,0:02:19.50,OPJP,B,0,0,0,fx,{\pos(935,1057)\fad(250,250)}に
-Dialogue: 0,0:02:15.10,0:02:19.56,OPJP,B,0,0,0,fx,{\pos(985,1057)\fad(250,250)}　
+Dialogue: 0,0:02:15.10,0:02:19.56,OPJP,B,0,0,0,fx,{\pos(985,1057)\fad(250,250)}
 Dialogue: 0,0:02:15.16,0:02:19.62,OPJP,B,0,0,0,fx,{\pos(1035,1057)\fad(250,250)}頑
 Dialogue: 0,0:02:15.22,0:02:19.68,OPJP,B,0,0,0,fx,{\pos(1085,1057)\fad(250,250)}張
 Dialogue: 0,0:02:15.28,0:02:19.74,OPJP,B,0,0,0,fx,{\pos(1135,1057)\fad(250,250)}る
@@ -1010,16 +1020,16 @@ Dialogue: 0,0:22:43.17,0:22:45.48,EDJP,A,0,0,0,fx,{\pos(595,1060)\fad(225,225)}{
 Dialogue: 0,0:22:43.17,0:22:45.48,EDJP,A,0,0,0,fx,{\pos(595,1060)\fad(225,225)}
 Dialogue: 0,0:22:43.17,0:22:45.48,EDJP,A,0,0,0,fx,{\pos(732,1060)\fad(225,225)}{\bord3\blur4\1aFF}また会えたね
 Dialogue: 0,0:22:43.17,0:22:45.48,EDJP,A,0,0,0,fx,{\pos(732,1060)\fad(225,225)}また会えたね
-Dialogue: 0,0:22:43.47,0:22:45.48,EDJP,A,0,0,0,fx,{\pos(891,1060)\fad(225,225)}{\bord3\blur4\1aFF}　
-Dialogue: 0,0:22:43.47,0:22:45.48,EDJP,A,0,0,0,fx,{\pos(891,1060)\fad(225,225)}　
+Dialogue: 0,0:22:43.47,0:22:45.48,EDJP,A,0,0,0,fx,{\pos(891,1060)\fad(225,225)}{\bord3\blur4\1aFF}
+Dialogue: 0,0:22:43.47,0:22:45.48,EDJP,A,0,0,0,fx,{\pos(891,1060)\fad(225,225)}
 Dialogue: 0,0:22:44.39,0:22:45.48,EDJP,A,0,0,0,fx,{\pos(1120,1060)\fad(225,225)}{\bord3\blur4\1aFF}ドラマなんだって？
 Dialogue: 0,0:22:44.39,0:22:45.48,EDJP,A,0,0,0,fx,{\pos(1120,1060)\fad(225,225)}ドラマなんだって？
 Dialogue: 0,0:22:45.38,0:22:48.73,EDJP,A,0,0,0,fx,{\pos(663,1060)\fad(225,225)}{\bord3\blur4\1aFF}
 Dialogue: 0,0:22:45.38,0:22:48.73,EDJP,A,0,0,0,fx,{\pos(663,1060)\fad(225,225)}
 Dialogue: 0,0:22:45.38,0:22:48.73,EDJP,A,0,0,0,fx,{\pos(709,1060)\fad(225,225)}{\bord3\blur4\1aFF}すぐ
 Dialogue: 0,0:22:45.38,0:22:48.73,EDJP,A,0,0,0,fx,{\pos(709,1060)\fad(225,225)}すぐ
-Dialogue: 0,0:22:45.68,0:22:48.73,EDJP,A,0,0,0,fx,{\pos(777,1060)\fad(225,225)}{\bord3\blur4\1aFF}　
-Dialogue: 0,0:22:45.68,0:22:48.73,EDJP,A,0,0,0,fx,{\pos(777,1060)\fad(225,225)}　
+Dialogue: 0,0:22:45.68,0:22:48.73,EDJP,A,0,0,0,fx,{\pos(777,1060)\fad(225,225)}{\bord3\blur4\1aFF}
+Dialogue: 0,0:22:45.68,0:22:48.73,EDJP,A,0,0,0,fx,{\pos(777,1060)\fad(225,225)}
 Dialogue: 0,0:22:46.56,0:22:48.73,EDJP,A,0,0,0,fx,{\pos(1029,1060)\fad(225,225)}{\bord3\blur4\1aFF}教えにも行っちゃうぞ
 Dialogue: 0,0:22:46.56,0:22:48.73,EDJP,A,0,0,0,fx,{\pos(1029,1060)\fad(225,225)}教えにも行っちゃうぞ
 Dialogue: 0,0:22:48.76,0:22:51.73,EDJP,A,0,0,0,fx,{\pos(754,1060)\fad(225,225)}{\bord3\blur4\1aFF}
@@ -1061,7 +1071,7 @@ Dialogue: 0,0:23:03.22,0:23:10.44,EDJP,C,0,0,0,fx,{\pos(777,1030)\an5)\fad(200,2
 Dialogue: 0,0:23:03.26,0:23:10.48,EDJP,C,0,0,0,fx,{\pos(823,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(7020,7220,\fscx30\fscy30)}{\bord3\blur4\1aFF}テ
 Dialogue: 0,0:23:03.30,0:23:10.52,EDJP,C,0,0,0,fx,{\pos(869,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(7020,7220,\fscx30\fscy30)}{\bord3\blur4\1aFF}リ
 Dialogue: 0,0:23:03.34,0:23:10.56,EDJP,C,0,0,0,fx,{\pos(914,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(7020,7220,\fscx30\fscy30)}{\bord3\blur4\1aFF}ー
-Dialogue: 0,0:23:03.37,0:23:10.59,EDJP,C,0,0,0,fx,{\pos(960,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(7020,7220,\fscx30\fscy30)}{\bord3\blur4\1aFF}　
+Dialogue: 0,0:23:03.37,0:23:10.59,EDJP,C,0,0,0,fx,{\pos(960,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(7020,7220,\fscx30\fscy30)}{\bord3\blur4\1aFF}
 Dialogue: 0,0:23:03.41,0:23:10.63,EDJP,C,0,0,0,fx,{\pos(1006,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(7020,7220,\fscx30\fscy30)}{\bord3\blur4\1aFF}く
 Dialogue: 0,0:23:03.45,0:23:10.67,EDJP,C,0,0,0,fx,{\pos(1051,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(7020,7220,\fscx30\fscy30)}{\bord3\blur4\1aFF}ら
 Dialogue: 0,0:23:03.49,0:23:10.71,EDJP,C,0,0,0,fx,{\pos(1097,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(7020,7220,\fscx30\fscy30)}{\bord3\blur4\1aFF}く
@@ -1078,7 +1088,7 @@ Dialogue: 0,0:23:03.22,0:23:10.44,EDJP,C,0,0,0,fx,{\pos(777,1030)\an5\fad(250,25
 Dialogue: 0,0:23:03.26,0:23:10.48,EDJP,C,0,0,0,fx,{\pos(823,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(7020,7220,\fscx30\fscy30)}テ
 Dialogue: 0,0:23:03.30,0:23:10.52,EDJP,C,0,0,0,fx,{\pos(869,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(7020,7220,\fscx30\fscy30)}リ
 Dialogue: 0,0:23:03.34,0:23:10.56,EDJP,C,0,0,0,fx,{\pos(914,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(7020,7220,\fscx30\fscy30)}ー
-Dialogue: 0,0:23:03.37,0:23:10.59,EDJP,C,0,0,0,fx,{\pos(960,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(7020,7220,\fscx30\fscy30)}　
+Dialogue: 0,0:23:03.37,0:23:10.59,EDJP,C,0,0,0,fx,{\pos(960,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(7020,7220,\fscx30\fscy30)}
 Dialogue: 0,0:23:03.41,0:23:10.63,EDJP,C,0,0,0,fx,{\pos(1006,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(7020,7220,\fscx30\fscy30)}く
 Dialogue: 0,0:23:03.45,0:23:10.67,EDJP,C,0,0,0,fx,{\pos(1051,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(7020,7220,\fscx30\fscy30)}ら
 Dialogue: 0,0:23:03.49,0:23:10.71,EDJP,C,0,0,0,fx,{\pos(1097,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(7020,7220,\fscx30\fscy30)}く
@@ -1214,7 +1224,7 @@ Dialogue: 0,0:23:24.95,0:23:30.66,EDJP,D,0,0,0,fx,{\pos(777,1030)\an5)\fad(200,2
 Dialogue: 0,0:23:24.99,0:23:30.70,EDJP,D,0,0,0,fx,{\pos(823,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5510,5710,\fscx30\fscy30)}{\bord3\blur4\1aFF}加
 Dialogue: 0,0:23:25.03,0:23:30.74,EDJP,D,0,0,0,fx,{\pos(869,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5510,5710,\fscx30\fscy30)}{\bord3\blur4\1aFF}減
 Dialogue: 0,0:23:25.06,0:23:30.77,EDJP,D,0,0,0,fx,{\pos(914,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5510,5710,\fscx30\fscy30)}{\bord3\blur4\1aFF}は
-Dialogue: 0,0:23:25.10,0:23:30.81,EDJP,D,0,0,0,fx,{\pos(960,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5510,5710,\fscx30\fscy30)}{\bord3\blur4\1aFF}　
+Dialogue: 0,0:23:25.10,0:23:30.81,EDJP,D,0,0,0,fx,{\pos(960,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5510,5710,\fscx30\fscy30)}{\bord3\blur4\1aFF}
 Dialogue: 0,0:23:25.14,0:23:30.85,EDJP,D,0,0,0,fx,{\pos(1006,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5510,5710,\fscx30\fscy30)}{\bord3\blur4\1aFF}君
 Dialogue: 0,0:23:25.18,0:23:30.89,EDJP,D,0,0,0,fx,{\pos(1051,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5510,5710,\fscx30\fscy30)}{\bord3\blur4\1aFF}に
 Dialogue: 0,0:23:25.22,0:23:30.93,EDJP,D,0,0,0,fx,{\pos(1097,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5510,5710,\fscx30\fscy30)}{\bord3\blur4\1aFF}花
@@ -1233,7 +1243,7 @@ Dialogue: 0,0:23:24.95,0:23:30.66,EDJP,D,0,0,0,fx,{\pos(777,1030)\an5\fad(250,25
 Dialogue: 0,0:23:24.99,0:23:30.70,EDJP,D,0,0,0,fx,{\pos(823,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5510,5710,\fscx30\fscy30)}加
 Dialogue: 0,0:23:25.03,0:23:30.74,EDJP,D,0,0,0,fx,{\pos(869,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5510,5710,\fscx30\fscy30)}減
 Dialogue: 0,0:23:25.06,0:23:30.77,EDJP,D,0,0,0,fx,{\pos(914,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5510,5710,\fscx30\fscy30)}は
-Dialogue: 0,0:23:25.10,0:23:30.81,EDJP,D,0,0,0,fx,{\pos(960,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5510,5710,\fscx30\fscy30)}　
+Dialogue: 0,0:23:25.10,0:23:30.81,EDJP,D,0,0,0,fx,{\pos(960,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5510,5710,\fscx30\fscy30)}
 Dialogue: 0,0:23:25.14,0:23:30.85,EDJP,D,0,0,0,fx,{\pos(1006,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5510,5710,\fscx30\fscy30)}君
 Dialogue: 0,0:23:25.18,0:23:30.89,EDJP,D,0,0,0,fx,{\pos(1051,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5510,5710,\fscx30\fscy30)}に
 Dialogue: 0,0:23:25.22,0:23:30.93,EDJP,D,0,0,0,fx,{\pos(1097,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5510,5710,\fscx30\fscy30)}花
@@ -1276,10 +1286,10 @@ Dialogue: 0,0:23:30.74,0:23:36.54,EDJP,D,0,0,0,fx,{\pos(800,1030)\an5)\fad(200,2
 Dialogue: 0,0:23:30.77,0:23:36.57,EDJP,D,0,0,0,fx,{\pos(846,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}{\bord3\blur4\1aFF}ラ
 Dialogue: 0,0:23:30.81,0:23:36.61,EDJP,D,0,0,0,fx,{\pos(891,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}{\bord3\blur4\1aFF}ゴ
 Dialogue: 0,0:23:30.85,0:23:36.65,EDJP,D,0,0,0,fx,{\pos(937,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}{\bord3\blur4\1aFF}ン
-Dialogue: 0,0:23:30.89,0:23:36.69,EDJP,D,0,0,0,fx,{\pos(983,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}{\bord3\blur4\1aFF}　
+Dialogue: 0,0:23:30.89,0:23:36.69,EDJP,D,0,0,0,fx,{\pos(983,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}{\bord3\blur4\1aFF}
 Dialogue: 0,0:23:30.93,0:23:36.73,EDJP,D,0,0,0,fx,{\pos(1029,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}{\bord3\blur4\1aFF}あ
 Dialogue: 0,0:23:30.96,0:23:36.76,EDJP,D,0,0,0,fx,{\pos(1074,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}{\bord3\blur4\1aFF}あ
-Dialogue: 0,0:23:31.00,0:23:36.80,EDJP,D,0,0,0,fx,{\pos(1120,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}{\bord3\blur4\1aFF}　
+Dialogue: 0,0:23:31.00,0:23:36.80,EDJP,D,0,0,0,fx,{\pos(1120,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}{\bord3\blur4\1aFF}
 Dialogue: 0,0:23:31.04,0:23:36.84,EDJP,D,0,0,0,fx,{\pos(1166,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}{\bord3\blur4\1aFF}ま
 Dialogue: 0,0:23:31.08,0:23:36.88,EDJP,D,0,0,0,fx,{\pos(1211,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}{\bord3\blur4\1aFF}ち
 Dialogue: 0,0:23:31.12,0:23:36.92,EDJP,D,0,0,0,fx,{\pos(1257,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}{\bord3\blur4\1aFF}カ
@@ -1298,10 +1308,10 @@ Dialogue: 0,0:23:30.74,0:23:36.54,EDJP,D,0,0,0,fx,{\pos(800,1030)\an5\fad(250,25
 Dialogue: 0,0:23:30.77,0:23:36.57,EDJP,D,0,0,0,fx,{\pos(846,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}ラ
 Dialogue: 0,0:23:30.81,0:23:36.61,EDJP,D,0,0,0,fx,{\pos(891,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}ゴ
 Dialogue: 0,0:23:30.85,0:23:36.65,EDJP,D,0,0,0,fx,{\pos(937,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}ン
-Dialogue: 0,0:23:30.89,0:23:36.69,EDJP,D,0,0,0,fx,{\pos(983,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}　
+Dialogue: 0,0:23:30.89,0:23:36.69,EDJP,D,0,0,0,fx,{\pos(983,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}
 Dialogue: 0,0:23:30.93,0:23:36.73,EDJP,D,0,0,0,fx,{\pos(1029,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}あ
 Dialogue: 0,0:23:30.96,0:23:36.76,EDJP,D,0,0,0,fx,{\pos(1074,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}あ
-Dialogue: 0,0:23:31.00,0:23:36.80,EDJP,D,0,0,0,fx,{\pos(1120,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}　
+Dialogue: 0,0:23:31.00,0:23:36.80,EDJP,D,0,0,0,fx,{\pos(1120,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}
 Dialogue: 0,0:23:31.04,0:23:36.84,EDJP,D,0,0,0,fx,{\pos(1166,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}ま
 Dialogue: 0,0:23:31.08,0:23:36.88,EDJP,D,0,0,0,fx,{\pos(1211,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}ち
 Dialogue: 0,0:23:31.12,0:23:36.92,EDJP,D,0,0,0,fx,{\pos(1257,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(5600,5800,\fscx30\fscy30)}カ
@@ -1314,7 +1324,7 @@ Dialogue: 0,0:23:36.31,0:23:39.31,EDJP,E,0,0,0,fx,{\pos(777,1030)\an5)\fad(200,2
 Dialogue: 0,0:23:36.35,0:23:39.35,EDJP,E,0,0,0,fx,{\pos(823,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(2800,3000,\fscx30\fscy30)}{\bord3\blur4\1aFF}い
 Dialogue: 0,0:23:36.38,0:23:39.38,EDJP,E,0,0,0,fx,{\pos(869,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(2800,3000,\fscx30\fscy30)}{\bord3\blur4\1aFF}ま
 Dialogue: 0,0:23:36.42,0:23:39.42,EDJP,E,0,0,0,fx,{\pos(914,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(2800,3000,\fscx30\fscy30)}{\bord3\blur4\1aFF}は
-Dialogue: 0,0:23:36.46,0:23:39.46,EDJP,E,0,0,0,fx,{\pos(960,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(2800,3000,\fscx30\fscy30)}{\bord3\blur4\1aFF}　
+Dialogue: 0,0:23:36.46,0:23:39.46,EDJP,E,0,0,0,fx,{\pos(960,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(2800,3000,\fscx30\fscy30)}{\bord3\blur4\1aFF}
 Dialogue: 0,0:23:36.50,0:23:39.50,EDJP,E,0,0,0,fx,{\pos(1006,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(2800,3000,\fscx30\fscy30)}{\bord3\blur4\1aFF}も
 Dialogue: 0,0:23:36.54,0:23:39.54,EDJP,E,0,0,0,fx,{\pos(1051,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(2800,3000,\fscx30\fscy30)}{\bord3\blur4\1aFF}う
 Dialogue: 0,0:23:36.57,0:23:39.57,EDJP,E,0,0,0,fx,{\pos(1097,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(2800,3000,\fscx30\fscy30)}{\bord3\blur4\1aFF}す
@@ -1325,7 +1335,7 @@ Dialogue: 0,0:23:36.31,0:23:39.31,EDJP,E,0,0,0,fx,{\pos(777,1030)\an5\fad(250,25
 Dialogue: 0,0:23:36.35,0:23:39.35,EDJP,E,0,0,0,fx,{\pos(823,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(2800,3000,\fscx30\fscy30)}い
 Dialogue: 0,0:23:36.38,0:23:39.38,EDJP,E,0,0,0,fx,{\pos(869,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(2800,3000,\fscx30\fscy30)}ま
 Dialogue: 0,0:23:36.42,0:23:39.42,EDJP,E,0,0,0,fx,{\pos(914,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(2800,3000,\fscx30\fscy30)}は
-Dialogue: 0,0:23:36.46,0:23:39.46,EDJP,E,0,0,0,fx,{\pos(960,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(2800,3000,\fscx30\fscy30)}　
+Dialogue: 0,0:23:36.46,0:23:39.46,EDJP,E,0,0,0,fx,{\pos(960,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(2800,3000,\fscx30\fscy30)}
 Dialogue: 0,0:23:36.50,0:23:39.50,EDJP,E,0,0,0,fx,{\pos(1006,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(2800,3000,\fscx30\fscy30)}も
 Dialogue: 0,0:23:36.54,0:23:39.54,EDJP,E,0,0,0,fx,{\pos(1051,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(2800,3000,\fscx30\fscy30)}う
 Dialogue: 0,0:23:36.57,0:23:39.57,EDJP,E,0,0,0,fx,{\pos(1097,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(2800,3000,\fscx30\fscy30)}す
@@ -1337,7 +1347,7 @@ Dialogue: 0,0:23:39.35,0:23:43.23,EDJP,E,0,0,0,fx,{\pos(754,1030)\an5)\fad(200,2
 Dialogue: 0,0:23:39.38,0:23:43.26,EDJP,E,0,0,0,fx,{\pos(800,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(3680,3880,\fscx30\fscy30)}{\bord3\blur4\1aFF}そ
 Dialogue: 0,0:23:39.42,0:23:43.30,EDJP,E,0,0,0,fx,{\pos(846,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(3680,3880,\fscx30\fscy30)}{\bord3\blur4\1aFF}っ
 Dialogue: 0,0:23:39.46,0:23:43.34,EDJP,E,0,0,0,fx,{\pos(891,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(3680,3880,\fscx30\fscy30)}{\bord3\blur4\1aFF}と
-Dialogue: 0,0:23:39.50,0:23:43.38,EDJP,E,0,0,0,fx,{\pos(937,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(3680,3880,\fscx30\fscy30)}{\bord3\blur4\1aFF}　
+Dialogue: 0,0:23:39.50,0:23:43.38,EDJP,E,0,0,0,fx,{\pos(937,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(3680,3880,\fscx30\fscy30)}{\bord3\blur4\1aFF}
 Dialogue: 0,0:23:39.54,0:23:43.42,EDJP,E,0,0,0,fx,{\pos(983,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(3680,3880,\fscx30\fscy30)}{\bord3\blur4\1aFF}そ
 Dialogue: 0,0:23:39.57,0:23:43.45,EDJP,E,0,0,0,fx,{\pos(1029,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(3680,3880,\fscx30\fscy30)}{\bord3\blur4\1aFF}の
 Dialogue: 0,0:23:39.61,0:23:43.49,EDJP,E,0,0,0,fx,{\pos(1074,1030)\an5)\fad(200,200)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(3680,3880,\fscx30\fscy30)}{\bord3\blur4\1aFF}花
@@ -1351,7 +1361,7 @@ Dialogue: 0,0:23:39.35,0:23:43.23,EDJP,E,0,0,0,fx,{\pos(754,1030)\an5\fad(250,25
 Dialogue: 0,0:23:39.38,0:23:43.26,EDJP,E,0,0,0,fx,{\pos(800,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(3680,3880,\fscx30\fscy30)}そ
 Dialogue: 0,0:23:39.42,0:23:43.30,EDJP,E,0,0,0,fx,{\pos(846,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(3680,3880,\fscx30\fscy30)}っ
 Dialogue: 0,0:23:39.46,0:23:43.34,EDJP,E,0,0,0,fx,{\pos(891,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(3680,3880,\fscx30\fscy30)}と
-Dialogue: 0,0:23:39.50,0:23:43.38,EDJP,E,0,0,0,fx,{\pos(937,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(3680,3880,\fscx30\fscy30)}　
+Dialogue: 0,0:23:39.50,0:23:43.38,EDJP,E,0,0,0,fx,{\pos(937,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(3680,3880,\fscx30\fscy30)}
 Dialogue: 0,0:23:39.54,0:23:43.42,EDJP,E,0,0,0,fx,{\pos(983,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(3680,3880,\fscx30\fscy30)}そ
 Dialogue: 0,0:23:39.57,0:23:43.45,EDJP,E,0,0,0,fx,{\pos(1029,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(3680,3880,\fscx30\fscy30)}の
 Dialogue: 0,0:23:39.61,0:23:43.49,EDJP,E,0,0,0,fx,{\pos(1074,1030)\an5\fad(250,250)}{\fscx30\fscy30\t(0,200,\fscx112\fscy112)\t(200,370,\fscx100\fscy100)\t(3680,3880,\fscx30\fscy30)}花
