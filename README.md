@@ -24,7 +24,7 @@ Run the following command.
 git clone --depth 1 "https://github.com/Ajatt-Tools/kitsunekko-mirror.git"
 ```
 
-> [!NOTE]  
+> [!NOTE]
 > We recommend running the GNU operating system when working with this repository.
 > For more information, read [this article](https://tatsumoto.neocities.org/blog/our-immersion-learning-toolset#gnu-linux).
 
@@ -46,3 +46,9 @@ Search files on GitHub without cloning the repo
 
 If you want to add, edit, or remove subtitle files in this repository,
 you can do so by [creating a pull request](https://github.com/Ajatt-Tools/kitsunekko-mirror/pulls).
+
+**Add a new file:**
+
+1) Save the file to the "subtitles" directory in the right subdirectory.
+1) Run `ktools ignore add /path/to/file`
+1) Run `git add` and `git commit`.
