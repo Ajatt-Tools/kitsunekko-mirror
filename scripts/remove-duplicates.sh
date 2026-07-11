@@ -1,22 +1,22 @@
 #!/bin/bash
 
-set -euo pipefail
+set -euxo pipefail
 
 readonly target_dir=subtitles
 
 main() {
-	if ! cd -- "$target_dir"; then
-		echo "can't cd to $target_dir"
+	if ! [[ -d $target_dir ]]; then
+		echo "not a directory: $target_dir"
 		exit 1
 	fi
 
-	if ! command -v fdupes; then
+	if ! [[ -x $(command -v fdupes) ]]; then
 		echo "fdupes is not installed."
 		exit 1
 	fi
 
-	fdupes -q -rdNI --order=time --reverse --nohidden .
-	find . -empty -delete
+	fdupes -q -rdNI --order=time --reverse --nohidden "$target_dir"
+	find "$target_dir" -empty -delete
 }
 
 main "$@"
