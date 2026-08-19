@@ -40,6 +40,11 @@ you can use
 and [fzf](https://wiki.archlinux.org/title/Fzf) to search it.
 [Watch a demonstration on ![YouTube](https://raw.githubusercontent.com/Ajatt-Tools/BrowserPlayButton/05300c61bf4abe6adff9a1fcd3b7056bd82efb90/.github/youtube_logo.webp)](https://redirect.invidious.io/watch?v=WVDRbR7C6js).
 
+## Updates
+
+To pull the latest version and update your local copy, run `ktools git pull`
+([kitsunekko-tools](https://github.com/Ajatt-Tools/kitsunekko-tools) must be installed)
+or just `cd /path/to/cloned/repo && git pull`.
 
 ## Github search
 
